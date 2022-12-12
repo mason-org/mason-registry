@@ -2,7 +2,7 @@
     automerge: true,
     platformAutomerge: true,
     automergeType: "pr",
-    commitMessage: "bump({{depname}}): update to {{prettyNewVersion}}",
+    commitMessage: "bump({{depName}}): update to {{prettyNewVersion}}",
     separateMajorMinor: false,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
