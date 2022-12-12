@@ -2,6 +2,9 @@
 name: Package tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -9,24 +12,22 @@ jobs:
     name: Check package diffs
     runs-on: ubuntu-latest
     outputs:
-      changed_files: ${{ steps.changed-packages.outputs.changed_files }}
+      all_changed_files: ${{ steps.changed-packages.outputs.all_changed_files }}
+      any_changed: ${{ steps.changed-packages.outputs.any_changed }}
 
     steps:
       - uses: actions/checkout@v3
-
       - name: Get changed package definitions
         id: changed-packages
-        run: |
-          git fetch origin "$GITHUB_BASE_REF"
-          {
-            echo -n "changed_files=";
-            git diff --name-only FETCH_HEAD packages/*/package.yaml | tr '\n' ' ';
-          } | tee -a "$GITHUB_OUTPUT"
+        uses: tj-actions/changed-files@v34
+        with:
+          files: |
+            packages/**/package.yaml
 
   tests:
     name: Test changed packages
     needs: package-diff
-    if: ${{ needs.package-diff.outputs.changed_files != '' }}
+    if: ${{ needs.package-diff.outputs.any_changed == 'true' }}
     strategy:
       fail-fast: false
       matrix:
@@ -41,7 +42,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - uses: mason-org/actions/tests@v1
         with:
           packages: ${{ needs.package-diff.outputs.changed_files }}
