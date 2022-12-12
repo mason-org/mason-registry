@@ -1,0 +1,19 @@
+---
+name: typescript-language-server
+homepage: https://github.com/typescript-language-server/typescript-language-server
+licenses:
+  - MIT
+description: TypeScript & JavaScript Language Server
+languages:
+  - TypeScript
+  - JavaScript
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/typescript-language-server@1.1.0
+  extra_packages:
+    - typescript
+
+bin:
+  typescript-language-server: npm:typescript-language-server

@@ -1,0 +1,17 @@
+---
+name: shellharden
+description: The corrective bash syntax highlighter LOL
+homepage: https://github.com/anordal/shellharden
+licenses:
+  - MPL-2.0
+languages:
+  - Bash
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:cargo/shellharden@2.0.0
+
+bin:
+  shellharden: cargo:shellharden

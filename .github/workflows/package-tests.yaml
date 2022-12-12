@@ -1,0 +1,59 @@
+---
+name: Package tests
+
+on:
+  pull_request:
+
+jobs:
+  package-diff:
+    name: Check package diffs
+    runs-on: ubuntu-latest
+    outputs:
+      changed_files: ${{ steps.changed-packages.outputs.changed_files }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get changed package definitions
+        id: changed-packages
+        run: |
+          git fetch origin "$GITHUB_BASE_REF"
+          {
+            echo -n "changed_files=";
+            git diff --name-only FETCH_HEAD packages/*/package.yaml | tr '\n' ' ';
+          } | tee -a "$GITHUB_OUTPUT"
+
+  tests:
+    name: Test changed packages
+    needs: package-diff
+    if: ${{ needs.package-diff.outputs.changed_files != '' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - linux_x64
+          - linux_x64_gnu
+          - darwin_x64
+          - darwin_arm64
+          - win_x64
+          - win_arm64
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: mason-org/actions/tests@v1
+        with:
+          packages: ${{ needs.package-diff.outputs.changed_files }}
+          target: ${{ matrix.target }}
+          log_level: DEBUG
+
+  # This job is used for branch protection rule
+  # Add this job to `Status checks that are required`
+  status-check:
+    name: Status check
+    runs-on: ubuntu-latest
+    needs: tests
+    if: failure()
+    steps:
+      - run: exit 1

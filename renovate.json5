@@ -1,0 +1,47 @@
+{
+    automerge: true,
+    platformAutomerge: true,
+    automergeType: "pr",
+    commitMessage: "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
+    commitMessagePrefix: "bump({{depName}}):",
+    commitMessageAction: "update",
+    separateMajorMinor: false,
+    prHourlyLimit: 0,
+    prConcurrentLimit: 0,
+    branchConcurrentLimit: 0,
+    regexManagers: [
+        {
+            fileMatch: "package\\.yaml$",
+            matchStrings: [
+                "pkg:github\\/(?<depName>.+)@(?<currentValue>.+)",
+                "pkg:github\\/(?<depName>.+)@(?<currentValue>.+) # versioning=(?<versioning>.*)",
+            ],
+            datasourceTemplate: "github-releases",
+            versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStrings: [
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
+            ],
+            datasourceTemplate: "crate",
+            // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
+            // We on the other hand do want to treat versions as fixed - so we change versioning strategy.
+            versioningTemplate: "semver",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStrings: [
+                "pkg:golang\\/(?<depName>.+)@(?<currentValue>.+)"
+            ],
+            datasourceTemplate: "go",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStrings: [
+                "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>.+)"
+            ],
+            datasourceTemplate: "{{datasource}}",
+        },
+    ],
+}

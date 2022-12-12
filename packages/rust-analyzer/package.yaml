@@ -1,0 +1,44 @@
+---
+name: rust-analyzer
+homepage: https://github.com/rust-lang/rust-analyzer
+description: |
+  rust-analyzer is an implementation of the Language Server Protocol for the
+  Rust programming language. It provides features like completion and goto
+  definition for many code editors, including VS Code, Emacs and Vim.
+
+  LOL
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Rust
+categories:
+  - LSP
+
+source:
+  id: pkg:github/rust-lang/rust-analyzer@2022-12-12 # versioning=loose
+  asset:
+    - target: linux_x64_gnu
+      file: rust-analyzer-x86_64-unknown-linux-gnu.gz
+      bin: rust-analyzer-x86_64-unknown-linux-gnu
+    - target: linux_arm64_gnu
+      file: rust-analyzer-aarch64-unknown-linux-gnu.gz
+      bin: rust-analyzer-aarch64-unknown-linux-gnu
+    - target: linux_x64
+      file: rust-analyzer-x86_64-unknown-linux-musl.gz
+      bin: rust-analyzer-x86_64-unknown-linux-musl
+    - target: darwin_x64
+      file: rust-analyzer-x86_64-apple-darwin.gz
+      bin: rust-analyzer-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: rust-analyzer-aarch64-apple-darwin.gz
+      bin: rust-analyzer-aarch64-apple-darwin
+    - target: win_x64
+      file: rust-analyzer-x86_64-pc-windows-msvc.gz:rust-analyzer-x86_64-pc-windows-msvc.exe.gz
+      bin: rust-analyzer-x86_64-pc-windows-msvc.exe
+    - target: win_arm64
+      file: rust-analyzer-aarch64-pc-windows-msvc.gz:rust-analyzer-aarch64-pc-windows-msvc.exe.gz
+      bin: rust-analyzer-aarch64-pc-windows-msvc.exe
+
+bin:
+  rust-analyzer: "{{source.asset.bin}}"
