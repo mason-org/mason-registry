@@ -34,12 +34,29 @@ jobs:
         target:
           - linux_x64
           - linux_x64_gnu
+          - linux_arm64
           - darwin_x64
           - darwin_arm64
           - win_x64
           - win_arm64
 
-    runs-on: ubuntu-latest
+        include:
+          - target: linux_x64
+            runs-on: ubuntu-latest
+          - target: linux_x64_gnu
+            runs-on: ubuntu-latest
+          - target: linux_arm64
+            runs-on: ubuntu-latest
+          - target: darwin_x64
+            runs-on: macos-latest
+          - target: darwin_arm64
+            runs-on: macos-latest
+          - target: win_x64
+            runs-on: windows-latest
+          - target: win_arm64
+            runs-on: windows-latest
+
+    runs-on: ${{ matrix.runs-on }}
     steps:
       - uses: actions/checkout@v3
       - uses: mason-org/actions/tests@v1
