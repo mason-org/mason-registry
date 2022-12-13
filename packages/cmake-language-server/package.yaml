@@ -1,6 +1,6 @@
 ---
 name: cmake-language-server
-description: CMake LSP Implementation
+description: CMake LSP Implementation.
 homepage: https://github.com/regen100/cmake-language-server
 licenses:
   - MIT

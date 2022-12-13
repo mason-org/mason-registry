@@ -6,6 +6,8 @@
 
 > Repository of versioned package definitions for [mason.nvim][mason].
 
+*Note: currently in evaluation phase. Package definitions hosted here are not being used by any client.*
+
 # Table of Contents
 
 <!--toc:start-->

@@ -1,6 +1,6 @@
 ---
 name: shellharden
-description: The corrective bash syntax highlighter LOL
+description: The corrective bash syntax highlighter.
 homepage: https://github.com/anordal/shellharden
 licenses:
   - MPL-2.0

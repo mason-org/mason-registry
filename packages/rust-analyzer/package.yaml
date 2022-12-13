@@ -1,12 +1,10 @@
 ---
 name: rust-analyzer
-homepage: https://github.com/rust-lang/rust-analyzer
 description: |
   rust-analyzer is an implementation of the Language Server Protocol for the
   Rust programming language. It provides features like completion and goto
   definition for many code editors, including VS Code, Emacs and Vim.
-
-  LOL
+homepage: https://github.com/rust-lang/rust-analyzer
 licenses:
   - Apache-2.0
   - MIT

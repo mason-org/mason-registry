@@ -1,6 +1,6 @@
 ---
 name: rnix-lsp
-description: Language Server for Nix
+description: Language Server for Nix.
 homepage: https://github.com/nix-community/rnix-lsp
 licenses:
   - MIT
