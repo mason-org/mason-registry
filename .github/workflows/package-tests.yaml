@@ -31,7 +31,7 @@ jobs:
             packages/**/package.yaml
 
   tests:
-    name: Test changed packages
+    name: Test packages
     needs: package-diff
     if: ${{ github.event.inputs.packages || needs.package-diff.outputs.any_changed == 'true' }}
     strategy:
