@@ -1,0 +1,32 @@
+---
+name: jq
+description: Command-line JSON processor.
+homepage: https://github.com/stedolan/jq
+licenses:
+  - MIT
+languages:
+  - JSON
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/stedolan/jq@jq-1.6 # versioning=loose
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: jq-osx-amd64
+      bin: jq-osx-amd64
+    - target: linux_x86
+      file: jq-linux32
+      bin: jq-linux32
+    - target: linux_x64
+      file: jq-linux64
+      bin: jq-linux64
+    - target: win_x86
+      file: jq-win32.exe
+      bin: jq-win32.exe
+    - target: win_x64
+      file: jq-win64.exe
+      bin: jq-win64.exe
+
+bin:
+  jq: "{{source.asset.bin}}"
