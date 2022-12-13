@@ -18,22 +18,16 @@ source:
   asset:
     - target: darwin_x64
       file: buf-Darwin-x86_64
-      bin: buf-Darwin-x86_64
     - target: darwin_arm64
       file: buf-Darwin-arm64
-      bin: buf-Darwin-arm64
     - target: linux_x64
       file: buf-Linux-x86_64
-      bin: buf-Linux-x86_64
     - target: linux_arm64
       file: buf-Linux-aarch64
-      bin: buf-Linux-aarch64
     - target: win_x64
       file: buf-Windows-x86_64.exe
-      bin: buf-Windows-x86_64.exe
     - target: win_arm64
       file: buf-Windows-arm64.exe
-      bin: buf-Windows-arm64.exe
 
 bin:
-  buf: "{{source.asset.bin}}"
+  buf: "{{source.asset.file}}"

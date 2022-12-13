@@ -1,6 +1,6 @@
 ---
 name: isort
-description: isort is a Python utility / library to sort imports alphabetically
+description: isort is a Python utility / library to sort imports alphabetically.
 homepage: https://pypi.org/project/isort/
 licenses:
   - MIT

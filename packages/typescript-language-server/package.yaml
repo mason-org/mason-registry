@@ -1,9 +1,9 @@
 ---
 name: typescript-language-server
+description: TypeScript & JavaScript Language Server.
 homepage: https://github.com/typescript-language-server/typescript-language-server
 licenses:
   - MIT
-description: TypeScript & JavaScript Language Server
 languages:
   - TypeScript
   - JavaScript
