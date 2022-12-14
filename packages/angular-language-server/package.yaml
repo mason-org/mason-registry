@@ -1,0 +1,20 @@
+---
+name: angular-language-server
+description: |
+  The Angular Language Service provides code editors with a way to get completions, errors, hints, and navigation inside
+  Angular templates. It works with external templates in separate HTML files, and also with in-line templates.
+homepage: https://angular.io/guide/language-service
+licenses:
+  - MIT
+languages:
+  - Angular
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40angular/language-server@15.0.2
+  extra_packages:
+    - typescript
+
+bin:
+  ngserver: npm:ngserver
