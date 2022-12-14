@@ -95,7 +95,8 @@ The URL MUST be a [well-formed URL][rfc1738]. The URL scheme MUST be either
 List of licenses associated with this package. MUST contain at least one entry.
 
 The license MUST be a [SPDX-compatible](https://spdx.org/licenses/) license
-identifier.
+identifier. Should the package use a license not available as a SPDX identifier, the license "proprietary" (all lower
+case) MUST be used.
 
 Examples:
 
