@@ -21,9 +21,10 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+).*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
                 "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
-            datasourceTemplate: "crate",
+            datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
             // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
             // We on the other hand do want to treat versions as fixed - so we change versioning strategy.
             versioningTemplate: "semver",
