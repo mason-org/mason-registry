@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/influxdata/flux-lsp@0.8.37?repository_url=https://github.com
+  id: pkg:cargo/influxdata/flux-lsp@0.8.38?repository_url=https://github.com
   supported_platforms:
     - unix
 
