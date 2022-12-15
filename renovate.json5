@@ -21,7 +21,7 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+).*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
                 "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
