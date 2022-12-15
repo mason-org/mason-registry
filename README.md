@@ -1,5 +1,7 @@
+![Linux](https://img.shields.io/badge/Linux-%23.svg?style=flat-square&logo=linux&color=FCC624&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-%23.svg?style=flat-square&logo=apple&color=000000&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-%23.svg?style=flat-square&logo=windows&color=0078D6&logoColor=white)
 [![Package tests](https://github.com/mason-org/mason-registry/actions/workflows/package-tests.yaml/badge.svg)](https://github.com/mason-org/mason-registry/actions/workflows/package-tests.yaml?query=branch%3Amain)
-![Platforms](https://img.shields.io/badge/platform-linux%20macOS%20windows-blue)
 [![Sponsors](https://img.shields.io/github/sponsors/williamboman?style=flat-square)](https://github.com/sponsors/williamboman)
 
 # mason-registry
