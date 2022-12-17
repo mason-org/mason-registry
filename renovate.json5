@@ -15,10 +15,12 @@
             matchStrings: [
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
+                "# renovate:.*extractVersion=(?<extractVersion>[^,\n]+)",
                 "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+            "extractVersionTemplate": "{{{extractVersion}}}"
         },
         {
             fileMatch: "package\\.yaml$",
