@@ -11,17 +11,19 @@
     regexManagers: [
         {
             fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
             matchStrings: [
-                "pkg:github\\/(?<depName>.+)@(?<currentValue>.+)",
-                "pkg:github\\/(?<depName>.+)@(?<currentValue>.+) # versioning=(?<versioning>.*)",
+                "(?<=# renovate:.*versioning=)(?<versioning>[^,]+)?",
+                "(?<=# renovate:.*datasource=)(?<datasource>[^,]+)?",
+                "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
             ],
-            datasourceTemplate: "github-releases",
+            datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
         },
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)\\?.*(?<=repository_url=)(?<githubRepo>https:\\/\\/github\\.com)",
                 "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
