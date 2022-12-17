@@ -14,7 +14,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rust-lang/rust-analyzer@2022-12-05 # renovate:versioning=loose
+  id: pkg:github/rust-lang/rust-analyzer@2022-12-12 # renovate:versioning=loose
   asset:
     - target: linux_x64_gnu
       file: rust-analyzer-x86_64-unknown-linux-gnu.gz

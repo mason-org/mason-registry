@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/stedolan/jq@jq-1.5 # renovate:versioning=loose,extractVersion=(^jq-(?<version>.+))
+  id: pkg:github/stedolan/jq@jq-1.5 # renovate:versioning=loose,extractVersion=^jq-(?<version>.+)
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: jq-osx-amd64
