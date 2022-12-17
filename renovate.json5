@@ -13,8 +13,8 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
-                "(?<=# renovate:.*versioning=)(?<versioning>[^,]+)?",
-                "(?<=# renovate:.*datasource=)(?<datasource>[^,]+)?",
+                "# renovate:.*versioning=(?<versioning>[^,]+)?",
+                "# renovate:.*datasource=(?<datasource>[^,]+)?",
                 "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
@@ -22,8 +22,9 @@
         },
         {
             fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
             matchStrings: [
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)\\?.*(?<=repository_url=)(?<githubRepo>https:\\/\\/github\\.com)",
+                "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
                 "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
