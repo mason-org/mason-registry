@@ -13,8 +13,8 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
-                "# renovate:.*versioning=(?<versioning>[^,]+)?",
-                "# renovate:.*datasource=(?<datasource>[^,]+)?",
+                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
+                "# renovate:.*datasource=(?<datasource>[^,\n]+)",
                 "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
@@ -25,7 +25,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>.+)"
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
             // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
