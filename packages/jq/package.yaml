@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/stedolan/jq@jq-1.5 # renovate:versioning=regex:^jq-(?<major>\\d+)\\.(?<minor>\\d+)$
+  id: pkg:github/stedolan/jq@jq-1.5 # renovate:versioning=regex:^jq-(?<major>\d+)\.(?<minor>\d+)$
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: jq-osx-amd64
