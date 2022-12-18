@@ -82,7 +82,6 @@ jobs:
         with:
           packages: ${{ github.event.inputs.packages || needs.package-diff.outputs.all_changed_files }}
           target: ${{ matrix.target }}
-          log_level: DEBUG
 
   # This job is used for branch protection rule
   # Add this job to `Status checks that are required`
