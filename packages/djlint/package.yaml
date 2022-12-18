@@ -1,0 +1,23 @@
+---
+name: djlint
+description: HTML Template Linter and Formatter. Django - Jinja - Nunjucks - Handlebars - GoLang.
+homepage: https://github.com/Riverside-Healthcare/djLint
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - Django
+  - Go
+  - Nunjucks
+  - Handlebargs
+  - Mustache
+  - Angular
+  - Jinja
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:pypi/djlint@1.19.7
+
+bin:
+  djlint: pypi:djlint
