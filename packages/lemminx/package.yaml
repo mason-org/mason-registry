@@ -15,7 +15,7 @@ source:
     - target: [darwin_x64, darwin_arm64]
       file: lemminx-osx-x86_64.zip
       bin: lemminx-osx-x86_64
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: lemminx-linux.zip
       bin: lemminx-linux
     - target: [win_x86, win_x64]
