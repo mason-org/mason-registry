@@ -42,6 +42,13 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
+                "pkg:gem\\/(?<depName>.+)@(?<currentValue>.+)"
+            ],
+            datasourceTemplate: "rubygems",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStrings: [
                 "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
             datasourceTemplate: "{{datasource}}",
