@@ -1,0 +1,24 @@
+---
+name: ktlint
+description: An anti-bikeshedding Kotlin linter with built-in formatter.
+homepage: https://github.com/pinterest/ktlint
+licenses:
+  - MIT
+languages:
+  - Kotlin
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/pinterest/ktlint@0.47.1
+  asset:
+    - target: [darwin_arm64, darwin_x64, linux_arm, linux_arm64, linux_x86, linux_x64]
+      file: ktlint
+      bin: ktlint
+    - target: [win_arm, win_arm64, win_x86, win_x64]
+      file: ktlint:ktlint.jar
+      bin: java-jar:ktlint.jar
+
+bin:
+  ktlint: "{{source.asset.bin}}"
