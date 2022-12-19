@@ -1,4 +1,8 @@
 {
+    schedule: [
+        "hourly",
+        "at any time"
+    ],
     automerge: true,
     platformAutomerge: true,
     automergeType: "pr",
