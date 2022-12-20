@@ -12,8 +12,7 @@ categories:
 source:
   id: pkg:github/golang/vscode-go@v0.37.0
   asset:
-    - target: [darwin_x64, darwin_arm64, linux_arm, linux_arm64, linux_x86, linux_x64, win_x86, win_x64, win_arm64]
-      file: go-{{ version | trim_start "v" }}.vsix
+    file: go-{{ version | trim_start "v" }}.vsix
 
 bin:
   go-debug-adapter: node:extension/dist/debugAdapter.js
