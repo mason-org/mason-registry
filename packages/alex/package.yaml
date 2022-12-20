@@ -1,0 +1,16 @@
+---
+name: alex
+description: Catch insensitive, inconsiderate writing.
+homepage: https://github.com/get-alex/alex
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/alex@11.0.0
+
+bin:
+  alex: npm:alex
