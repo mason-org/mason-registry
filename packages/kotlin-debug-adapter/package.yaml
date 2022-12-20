@@ -15,7 +15,7 @@ source:
     - target: [darwin_x64, darwin_arm64, linux_x64, linux_arm64]
       file: adapter.zip
       bin: adapter/bin/kotlin-debug-adapter
-    - target: win
+    - target: [win_x64, win_arm64]
       file: adapter.zip
       bin: adapter/bin/kotlin-debug-adapter.bat
 
