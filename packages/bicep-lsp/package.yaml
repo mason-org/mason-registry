@@ -1,0 +1,18 @@
+---
+name: bicep-lsp
+description: Bicep is a declarative language for describing and deploying Azure resources
+homepage: https://github.com/Azure/bicep
+licenses:
+  - MIT
+languages:
+  - Bicep
+categories:
+  - LSP
+
+source:
+  id: pkg:github/Azure/bicep@v0.13.1
+  asset:
+    file: vscode-bicep.vsix
+
+bin:
+  bicep-lsp: dotnet:extension/bicepLanguageServer/Bicep.LangServer.dll
