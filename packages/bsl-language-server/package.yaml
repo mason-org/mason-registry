@@ -1,0 +1,19 @@
+---
+name: bsl-language-server
+description: Implementation of Language Server Protocol for Language 1C (BSL).
+homepage: https://1c-syntax.github.io/bsl-language-server
+licenses:
+  - LGPL-3.0
+languages:
+  - 1С:Enterprise
+  - OneScript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/1c-syntax/bsl-language-server@v0.20.0
+  asset:
+    file: bsl-language-server-{{ version | trim_start "v" }}-exec.jar
+
+bin:
+  bsl-language-server: java-jar:bsl-language-server-{{ version | trim_start "v" }}-exec.jar
