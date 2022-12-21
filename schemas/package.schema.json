@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/package-def",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/package",
     "title": "Mason Registry package schema",
     "description": "Schema for package definitions.",
     "type": "object",
