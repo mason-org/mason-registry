@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/enums/category",
+    "type": "string",
+    "enum": [
+        "Compiler",
+        "DAP",
+        "Formatter",
+        "LSP",
+        "Linter",
+        "Runtime"
+    ]
+}

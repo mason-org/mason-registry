@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/gem",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:gem/.+@.+"
+        },
+        "extra_packages": {
+            "type": "array",
+            "description": "Extra gem packages required by the main package to function.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

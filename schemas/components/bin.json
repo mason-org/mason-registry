@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/bin",
+    "type": "object",
+    "patternProperties": {
+        "^[a-zA-Z0-9_\\-]+$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

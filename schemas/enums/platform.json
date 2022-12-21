@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/enums/platform",
+    "type": "string",
+    "enum": [
+        "darwin_arm64",
+        "darwin_x64",
+        "linux_arm",
+        "linux_arm64",
+        "linux_arm64_gnu",
+        "linux_x64",
+        "linux_x64_gnu",
+        "linux_x86",
+        "linux_x86_gnu",
+        "win_arm",
+        "win_arm64",
+        "win_x64",
+        "win_x86"
+    ]
+}

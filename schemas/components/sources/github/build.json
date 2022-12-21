@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/github/build",
+    "type": "object",
+    "$defs": {
+        "Build": {
+            "type": "object",
+            "required": [
+                "target",
+                "run"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "target": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                            }
+                        },
+                        {
+                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                        }
+                    ]
+                },
+                "run": {
+                    "type": "string",
+                    "description": "The shell script to run. Platform sensitive (bash on Unix, powershell on Windows)."
+                }
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "id",
+        "build"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:github/.+@.+"
+        },
+        "build": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Build"
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "run": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

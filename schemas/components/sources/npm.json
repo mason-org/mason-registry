@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/npm",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:npm/.+@.+"
+        },
+        "extra_packages": {
+            "type": "array",
+            "description": "Extra npm packages required by the main package to function.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

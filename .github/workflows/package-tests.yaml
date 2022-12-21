@@ -30,9 +30,20 @@ jobs:
           files: |
             packages/**/package.yaml
 
+  validate:
+    name: Validate package definitions
+    runs-on: ubuntu-latest
+    needs: package-diff
+    if: ${{ github.event.inputs.packages || needs.package-diff.outputs.any_changed == 'true' }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: mason-org/actions/validate-schema@v1
+        with:
+          packages: ${{ github.event.inputs.packages || needs.package-diff.outputs.all_changed_files }}
+
   tests:
     name: Test packages
-    needs: package-diff
+    needs: [package-diff, validate]
     if: ${{ github.event.inputs.packages || needs.package-diff.outputs.any_changed == 'true' }}
     strategy:
       fail-fast: false

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/cargo",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:cargo/.+@.+"
+        },
+        "supported_platforms": {
+            "type": "array",
+            "description": "List of platforms supported by the cargo package.",
+            "items": {
+                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+            }
+        }
+    }
+}

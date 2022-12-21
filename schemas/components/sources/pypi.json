@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/pypi",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:pypi/.+@.+"
+        },
+        "extra_packages": {
+            "type": "array",
+            "description": "Extra pypi packages required by the main package to function.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

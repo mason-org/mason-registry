@@ -12,7 +12,12 @@ categories:
 source:
   id: pkg:cargo/influxdata/flux-lsp@0.8.39?repository_url=https://github.com
   supported_platforms:
-    - unix
+    - darwin_x64
+    - darwin_arm64
+    - linux_x64
+    - linux_x86
+    - linux_arm64
+    - linux_arm
 
 bin:
   flux-lsp: cargo:flux-lsp
