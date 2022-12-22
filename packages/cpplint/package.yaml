@@ -1,0 +1,17 @@
+---
+name: cpplint
+description: Cpplint is a command-line tool to check C/C++ files for style issues following Google's C++ style guide.
+homepage: https://pypi.org/project/cpplint/
+licenses:
+  - BSD-3-Clause
+languages:
+  - C
+  - C++
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/cpplint@1.6.1
+
+bin:
+  cpplint: pypi:cpplint

@@ -6,6 +6,7 @@
         "darwin_arm64",
         "darwin_x64",
         "linux_arm",
+        "linux_arm_gnu",
         "linux_arm64",
         "linux_arm64_gnu",
         "linux_x64",
