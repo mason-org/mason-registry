@@ -54,9 +54,10 @@ jobs:
           - darwin_x64
           - linux_arm
           - linux_arm64
+          - linux_arm64_gnu
+          - linux_arm_gnu
           - linux_x64
           - linux_x64_gnu
-          - linux_arm64_gnu
           - linux_x86
           - win_arm
           - win_arm64
@@ -71,6 +72,8 @@ jobs:
           - target: linux_x86
             runs-on: ubuntu-latest
           - target: linux_arm
+            runs-on: ubuntu-latest
+          - target: linux_arm_gnu
             runs-on: ubuntu-latest
           - target: linux_arm64
             runs-on: ubuntu-latest

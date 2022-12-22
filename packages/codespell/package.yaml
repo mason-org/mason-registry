@@ -1,0 +1,15 @@
+---
+name: codespell
+description: Check code for common misspellings.
+homepage: https://github.com/codespell-project/codespell
+licenses:
+  - GPL-2.0-or-later
+languages: []
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/codespell@2.2.2
+
+bin:
+  codespell: pypi:codespell

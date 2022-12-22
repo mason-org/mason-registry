@@ -1,0 +1,21 @@
+---
+name: clang-format
+description: clang-format is formatter for C/C++/Java/JavaScript/JSON/Objective-C/Protobuf/C# code.
+homepage: https://pypi.org/project/clang-format/
+licenses:
+  - Apache-2.0
+languages:
+  - C
+  - C#
+  - C++
+  - JSON
+  - Java
+  - JavaScript
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/clang-format@15.0.6
+
+bin:
+  clang-format: pypi:clang-format
