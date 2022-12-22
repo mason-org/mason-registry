@@ -1,0 +1,17 @@
+---
+name: debugpy
+description: An implementation of the Debug Adapter Protocol for Python.
+homepage: https://github.com/microsoft/debugpy
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - DAP
+
+source:
+  id: pkg:pypi/debugpy@1.6.4
+
+bin:
+  debugpy: pyvenv:debugpy
+  debugy-adapter: pyvenv:debugpy.adapter
