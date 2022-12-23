@@ -1,0 +1,16 @@
+---
+name: fsautocomplete
+description: F# language server using Language Server Protocol.
+homepage: https://github.com/fsharp/FsAutoComplete
+licenses:
+  - Apache-2.0
+languages:
+  - F#
+categories:
+  - LSP
+
+source:
+  id: pkg:nuget/fsautocomplete@0.58.2
+
+bin:
+  fsautocomplete: nuget:fsautocomplete

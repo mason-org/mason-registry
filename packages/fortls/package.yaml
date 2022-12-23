@@ -1,0 +1,16 @@
+---
+name: fortls
+description: fortls - Fortran Language Server.
+homepage: https://github.com/gnikit/fortls
+licenses:
+  - MIT
+languages:
+  - Fortran
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/fortls@2.13.0
+
+bin:
+  fortls: pypi:fortls
