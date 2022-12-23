@@ -1,0 +1,16 @@
+---
+name: gofumpt
+description: A stricter gofmt.
+homepage: https://pkg.go.dev/mvdan.cc/gofumpt
+licenses:
+  - BSD-3-Clause
+languages:
+  - Go
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/mvdan.cc/gofumpt@v0.4.0
+
+bin:
+  gofumpt: golang:gofumpt
