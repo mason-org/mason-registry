@@ -1,0 +1,17 @@
+---
+name: eslint_d
+description: Makes eslint the fastest linter on the planet.
+homepage: https://github.com/mantoni/eslint_d.js/
+licenses:
+  - MIT
+languages:
+  - TypeScript
+  - JavaScript
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/eslint_d@12.2.1
+
+bin:
+  eslint_d: npm:eslint_d

@@ -1,0 +1,17 @@
+---
+name: elm-format
+description: |
+  elm-format formats Elm source code according to a standard set of rules based on the official Elm Style Guide
+homepage: https://github.com/avh4/elm-format
+licenses:
+  - BSD-3-Clause
+languages:
+  - Elm
+categories:
+  - Formatter
+
+source:
+  id: pkg:npm/elm-format@0.8.5
+
+bin:
+  elm-format: npm:elm-format
