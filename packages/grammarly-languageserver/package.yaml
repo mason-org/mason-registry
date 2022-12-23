@@ -1,0 +1,17 @@
+---
+name: grammarly-languageserver
+description: A language server implementation on top of Grammarly's SDK.
+homepage: https://github.com/znck/grammarly
+licenses:
+  - MIT
+languages:
+  - Markdown
+  - Text
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/grammarly-languageserver@0.0.4
+
+bin:
+  grammarly-languageserver: npm:grammarly-languageserver

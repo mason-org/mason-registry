@@ -1,0 +1,16 @@
+---
+name: golines
+description: A golang formatter that fixes long lines.
+homepage: https://github.com/segmentio/golines
+licenses:
+  - MIT
+languages:
+  - Go
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/github.com/segmentio/golines@v0.11.0
+
+bin:
+  golines: golang:golines
