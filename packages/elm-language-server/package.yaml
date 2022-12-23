@@ -1,0 +1,16 @@
+---
+name: elm-language-server
+description: Language server implementation for Elm.
+homepage: https://github.com/elm-tooling/elm-language-server
+licenses:
+  - MIT
+languages:
+  - Elm
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40elm-tooling/elm-language-server@2.6.0
+
+bin:
+  elm-language-server: npm:elm-language-server

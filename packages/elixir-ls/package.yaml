@@ -1,0 +1,31 @@
+---
+name: elixir-ls
+description: |
+  A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and
+  provides debugger support via the "Debug Adapter Protocol".
+homepage: https://github.com/elixir-lsp/elixir-ls
+licenses:
+  - Apache-2.0
+languages:
+  - Elixir
+categories:
+  - LSP
+  - DAP
+
+source:
+  id: pkg:github/elixir-lsp/elixir-ls@v0.12.0
+  asset:
+    - target: [linux_arm, linux_x64, linux_x86, linux_arm64, darwin_x64, darwin_arm64]
+      file: elixir-ls.zip
+      bin:
+        lsp: language_server.sh
+        dap: debugger.sh
+    - target: [win_arm, win_x64, win_x86, win_arm64]
+      file: elixir-ls.zip
+      bin:
+        lsp: language_server.bat
+        dap: debugger.bat
+
+bin:
+  elixir-ls: "{{source.asset.bin.lsp}}"
+  elixir-ls-debugger: "{{source.asset.bin.dap}}"

@@ -1,0 +1,16 @@
+---
+name: esbonio
+description: A Language Server for Sphinx projects.
+homepage: https://pypi.org/project/esbonio/
+licenses:
+  - MIT
+languages:
+  - Sphinx
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/esbonio@0.15.0
+
+bin:
+  esbonio: pypi:esbonio

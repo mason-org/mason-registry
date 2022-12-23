@@ -1,0 +1,16 @@
+---
+name: foam-language-server
+description: A language server for OpenFOAM case files.
+homepage: https://github.com/FoamScience/foam-language-server
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - OpenFOAM
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/foam-language-server@0.2.0
+
+bin:
+  foam-ls: npm:foam-ls
