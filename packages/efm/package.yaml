@@ -1,0 +1,15 @@
+---
+name: efm
+description: General purpose Language Server.
+homepage: https://github.com/mattn/efm-langserver
+licenses:
+  - MIT
+languages: []
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github.com/mattn/efm-langserver@v0.0.44
+
+bin:
+  efm-langserver: golang:efm-langserver

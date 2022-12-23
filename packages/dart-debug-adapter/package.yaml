@@ -12,7 +12,7 @@ categories:
 source:
   id: pkg:github/Dart-Code/Dart-Code@v3.56.0
   asset:
-    file: dart-code-{{ version | trim_start "v" }}.vsix
+    file: dart-code-{{ version | strip_prefix "v" }}.vsix
 
 bin:
   dart-debug-adapter: node:extension/out/dist/debug.js

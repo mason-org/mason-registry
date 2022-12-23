@@ -12,7 +12,7 @@ categories:
 source:
   id: pkg:github/golang/vscode-go@v0.37.0
   asset:
-    file: go-{{ version | trim_start "v" }}.vsix
+    file: go-{{ version | strip_prefix "v" }}.vsix
 
 bin:
   go-debug-adapter: node:extension/dist/debugAdapter.js
