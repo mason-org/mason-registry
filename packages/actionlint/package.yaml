@@ -13,31 +13,31 @@ source:
   id: pkg:github/rhysd/actionlint@v1.6.22
   asset:
     - target: darwin_x64
-      file: actionlint_{{ version | trim_start "v" }}_darwin_amd64.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
       bin: actionlint
     - target: darwin_arm64
-      file: actionlint_{{ version | trim_start "v" }}_darwin_arm64.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
       bin: actionlint
     - target: linux_x64
-      file: actionlint_{{ version | trim_start "v" }}_linux_amd64.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_linux_amd64.tar.gz
       bin: actionlint
     - target: linux_arm64
-      file: actionlint_{{ version | trim_start "v" }}_linux_arm64.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz
       bin: actionlint
     - target: linux_arm
-      file: actionlint_{{ version | trim_start "v" }}_linux_armv6.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_linux_armv6.tar.gz
       bin: actionlint
     - target: linux_x86
-      file: actionlint_{{ version | trim_start "v" }}_linux_386.tar.gz
+      file: actionlint_{{ version | strip_prefix "v" }}_linux_386.tar.gz
       bin: actionlint
     - target: win_x64
-      file: actionlint_{{ version | trim_start "v" }}_windows_amd64.zip
+      file: actionlint_{{ version | strip_prefix "v" }}_windows_amd64.zip
       bin: actionlint.exe
     - target: win_arm64
-      file: actionlint_{{ version | trim_start "v" }}_windows_arm64.zip
+      file: actionlint_{{ version | strip_prefix "v" }}_windows_arm64.zip
       bin: actionlint.exe
     - target: win_x86
-      file: actionlint_{{ version | trim_start "v" }}_windows_386.zip
+      file: actionlint_{{ version | strip_prefix "v" }}_windows_386.zip
       bin: actionlint.exe
 
 bin:
