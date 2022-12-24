@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/generic",
+  "type": "object",
+  "$defs": {
+    "File": {
+      "type": "object",
+      "required": [
+        "target",
+        "url"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "target": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+              }
+            },
+            {
+              "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+            }
+          ]
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "file"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pkg:generic/.+@.+"
+    },
+    "file": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/File"
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -8,6 +8,7 @@
         { "$ref": "sources/golang" },
         { "$ref": "sources/npm" },
         { "$ref": "sources/nuget" },
-        { "$ref": "sources/pypi" }
+        { "$ref": "sources/pypi" },
+        { "$ref": "sources/generic" }
     ]
 }
