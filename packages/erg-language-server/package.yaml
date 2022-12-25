@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/erg-lang/erg-language-server@v0.1.11
+  id: pkg:github/erg-lang/erg-language-server@v0.1.12
   asset:
     - target: darwin_x64
       file: els-x86_64-apple-darwin.tar.gz
