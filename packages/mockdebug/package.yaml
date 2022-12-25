@@ -1,0 +1,22 @@
+---
+name: mockdebug
+description: |
+  Mock Debug simulates a debug adapter. It supports step, continue, breakpoints, exceptions, and variable access but it
+  is not connected to any real debugger.
+homepage: https://github.com/microsoft/vscode-mock-debug
+licenses:
+  - MIT
+languages: []
+categories:
+  - DAP
+
+source:
+  id: pkg:github/microsoft/vscode-mock-debug@v0.51.0 # renovate:datasource=github-tags
+  build:
+    run: |
+      npm install
+      npm run compile
+      npm install --production
+
+bin:
+  mock-debug-adapter: node:out/debugAdapter.js

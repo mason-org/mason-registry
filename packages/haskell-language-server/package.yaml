@@ -13,9 +13,10 @@ source:
   # renovate:versioning=loose
   # renovate:datasource=github-releases
   id: pkg:generic/haskell/haskell-language-server@1.8.0.0
-  file:
+  download:
     - target: darwin_arm64
-      url: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-aarch64-darwin.tar.xz
+      files:
+        haskell-language-server.tar.xz: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-aarch64-darwin.tar.xz
       bin:
         8_10_7: haskell-language-server-{{version}}/bin/haskell-language-server-8.10.7
         9_2_3: haskell-language-server-{{version}}/bin/haskell-language-server-9.2.3
@@ -24,7 +25,8 @@ source:
         9_4_2: haskell-language-server-{{version}}/bin/haskell-language-server-9.4.2
         wrapper: haskell-language-server-{{version}}/bin/haskell-language-server-wrapper
     - target: darwin_x64
-      url: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-darwin.tar.xz
+      files:
+        haskell-language-server.tar.xz: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-darwin.tar.xz
       bin:
         8_10_7: haskell-language-server-{{version}}/bin/haskell-language-server-8.10.7
         9_2_3: haskell-language-server-{{version}}/bin/haskell-language-server-9.2.3
@@ -33,7 +35,8 @@ source:
         9_4_2: haskell-language-server-{{version}}/bin/haskell-language-server-9.4.2
         wrapper: haskell-language-server-{{version}}/bin/haskell-language-server-wrapper
     - target: linux_arm64_gnu
-      url: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-aarch64-linux-deb10.tar.xz
+      files:
+        haskell-language-server.tar.xz: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-aarch64-linux-deb10.tar.xz
       bin:
         8_10_7: haskell-language-server-{{version}}/bin/haskell-language-server-8.10.7
         9_2_3: haskell-language-server-{{version}}/bin/haskell-language-server-9.2.3
@@ -42,7 +45,8 @@ source:
         9_4_2: haskell-language-server-{{version}}/bin/haskell-language-server-9.4.2
         wrapper: haskell-language-server-{{version}}/bin/haskell-language-server-wrapper
     - target: linux_x64_gnu
-      url: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-linux-deb10.tar.xz
+      files:
+        haskell-language-server.tar.xz: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-linux-deb10.tar.xz
       bin:
         8_10_7: haskell-language-server-{{version}}/bin/haskell-language-server-8.10.7
         9_2_3: haskell-language-server-{{version}}/bin/haskell-language-server-9.2.3
@@ -51,7 +55,8 @@ source:
         9_4_2: haskell-language-server-{{version}}/bin/haskell-language-server-9.4.2
         wrapper: haskell-language-server-{{version}}/bin/haskell-language-server-wrapper
     - target: win_x64
-      url: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-windows.zip
+      files:
+        haskell-language-server.zip: https://downloads.haskell.org/~hls/haskell-language-server-{{version}}/haskell-language-server-{{version}}-x86_64-windows.zip
       bin:
         8_10_7: haskell-language-server-8.10.7.exe
         9_2_3: haskell-language-server-9.2.3.exe
@@ -61,9 +66,9 @@ source:
         wrapper: haskell-language-server-wrapper.exe
 
 bin:
-  haskell-language-server-8.10.7: "{{source.file.bin['8_10_7']}}"
-  haskell-language-server-9.2.3: "{{source.file.bin['9_2_3']}}"
-  haskell-language-server-9.2.4: "{{source.file.bin['9_2_4']}}"
-  haskell-language-server-9.4.1: "{{source.file.bin['9_4_1']}}"
-  haskell-language-server-9.4.2: "{{source.file.bin['9_4_2']}}"
-  haskell-language-server-wrapper: "{{source.file.bin.wrapper}}"
+  haskell-language-server-8.10.7: "{{source.download.bin['8_10_7']}}"
+  haskell-language-server-9.2.3: "{{source.download.bin['9_2_3']}}"
+  haskell-language-server-9.2.4: "{{source.download.bin['9_2_4']}}"
+  haskell-language-server-9.4.1: "{{source.download.bin['9_4_1']}}"
+  haskell-language-server-9.4.2: "{{source.download.bin['9_4_2']}}"
+  haskell-language-server-wrapper: "{{source.download.bin.wrapper}}"

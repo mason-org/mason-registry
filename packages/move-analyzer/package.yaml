@@ -1,0 +1,16 @@
+---
+name: move-analyzer
+description: move-analyzer is a language server implementation for the Move programming language.
+homepage: https://github.com/move-language/move
+licenses:
+  - Apache-2.0
+languages:
+  - Move
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/move-analyzer@4cd4710?repository_url=https://github.com/move-language/move&rev=true
+
+bin:
+  move-analyzer: cargo:move-analyzer

@@ -1,0 +1,23 @@
+---
+name: marksman
+description: Markdown LSP server providing completion, cross-references, diagnostics, and more.
+homepage: https://github.com/artempyanykh/marksman
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - LSP
+
+source:
+  id: pkg:github/artempyanykh/marksman@2022-12-23 # renovate:versioning=loose
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: marksman-macos
+    - target: linux_x64
+      file: marksman-linux
+    - target: win_x64
+      file: marksman.exe
+
+bin:
+  marksman: "{{source.asset.file}}"

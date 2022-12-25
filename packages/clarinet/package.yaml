@@ -14,10 +14,10 @@ categories:
 source:
   id: pkg:github/hirosystems/clarinet@v1.3.0
   asset:
-    - target: darwin_x64
+    - target: darwin_arm64
       file: clarinet-darwin-arm64.tar.gz
       bin: clarinet
-    - target: darwin_arm64
+    - target: darwin_x64
       file: clarinet-darwin-x64.tar.gz
       bin: clarinet
     - target: linux_x64

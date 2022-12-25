@@ -24,8 +24,8 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
-                "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)",
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s\\?]+)"
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s\\?]+)",
+                "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<depName>[^\\s&]+)",
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
             // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
@@ -52,6 +52,17 @@
                 "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>.+)"
             ],
             datasourceTemplate: "{{datasource}}",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
+            matchStrings: [
+                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
+                "# renovate:.*datasource=(?<datasource>[^,\n]+)",
+                "pkg:generic\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
+            ],
+            datasourceTemplate: "{{{datasource}}}",
+            versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
         },
     ],
 }

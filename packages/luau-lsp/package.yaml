@@ -1,0 +1,26 @@
+---
+name: luau-lsp
+description: An implementation of a language server for the Luau programming language.
+homepage: https://github.com/JohnnyMorganz/luau-lsp
+licenses:
+  - MIT
+languages:
+  - Luau
+categories:
+  - LSP
+
+source:
+  id: pkg:github/JohnnyMorganz/luau-lsp@1.14.3
+  asset:
+    - target: [darwin_arm64, darwin_x64]
+      file: luau-lsp-macos.zip
+      bin: luau-lsp
+    - target: linux_x64
+      file: luau-lsp-linux.zip
+      bin: luau-lsp
+    - target: win_x64
+      file: luau-lsp-win64.zip
+      bin: luau-lsp.exe
+
+bin:
+  luau-lsp: "{{source.asset.bin}}"
