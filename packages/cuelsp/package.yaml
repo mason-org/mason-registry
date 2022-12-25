@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/dagger/cuelsp/cmd/cuelsp@v0.3.4
+  id: pkg:golang/github.com/dagger/cuelsp@v0.3.4#cmd/cuelsp
 
 bin:
   cuelsp: golang:cuelsp

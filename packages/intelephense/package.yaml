@@ -1,0 +1,16 @@
+---
+name: intelephense
+description: Professional PHP tooling for any Language Server Protocol capable editor.
+homepage: https://intelephense.com
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/intelephense@1.8.2
+
+bin:
+  intelephense: npm:intelephense

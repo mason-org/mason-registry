@@ -3,11 +3,10 @@
   "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/generic",
   "type": "object",
   "$defs": {
-    "File": {
+    "Download": {
       "type": "object",
       "required": [
-        "target",
-        "url"
+        "files"
       ],
       "additionalProperties": true,
       "properties": {
@@ -24,8 +23,15 @@
             }
           ]
         },
-        "url": {
-          "type": "string"
+        "files": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-zA-Z0-9_\\-\\.]+$": {
+              "type": "string",
+              "pattern": "^https?://"
+            }
+          },
+          "additionalProperties": false
         }
       }
     }
@@ -33,28 +39,23 @@
   "additionalProperties": false,
   "required": [
     "id",
-    "file"
+    "download"
   ],
   "properties": {
     "id": {
       "type": "string",
       "pattern": "^pkg:generic/.+@.+"
     },
-    "file": {
+    "download": {
       "oneOf": [
         {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/File"
+            "$ref": "#/$defs/Download"
           }
         },
         {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": "string"
-            }
-          }
+          "$ref": "#/$defs/Download"
         }
       ]
     }

@@ -1,0 +1,22 @@
+---
+name: js-debug-adapter
+description: The VS Code JavaScript debugger.
+homepage: https://github.com/microsoft/vscode-js-debug
+licenses:
+  - MIT
+languages:
+  - JavaScript
+  - TypeScript
+categories:
+  - DAP
+
+source:
+  id: pkg:github/microsoft/vscode-js-debug@v1.74.1 # renovate:datasource=github-tags
+  build:
+    run: |
+      npm install --ignore-scripts --legacy-peer-deps
+      npm run compile
+      npm install --production --ignore-scripts --legacy-peer-deps
+
+bin:
+  js-debug-adapter: node:out/src/vsDebugServer.js

@@ -9,7 +9,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:cargo/ChristianChiarulli/colorgen-nvim@0.1.0?repository_url=https://github.com
+  id: pkg:cargo/colorgen-nvim@0.1.0?repository_url=https://github.com/ChristianChiarulli/colorgen-nvim
 
 bin:
   colorgen-nvim: cargo:colorgen-nvim

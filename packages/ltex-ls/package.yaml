@@ -1,0 +1,31 @@
+---
+name: ltex-ls
+description: |
+  LTeX Language Server: LSP language server for LanguageTool 🔍✔️ with support for LaTeX 🎓, Markdown 📝, and others.
+homepage: https://valentjn.github.io/ltex/
+licenses:
+  - MPL-2.0
+languages:
+  - Text
+  - Markdown
+  - LaTeX
+categories:
+  - LSP
+
+source:
+  id: pkg:github/valentjn/ltex-ls@15.2.0
+  asset:
+    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+      file: ltex-ls-{{version}}.tar.gz
+      bin:
+        lsp: ltex-ls-{{version}}/bin/ltex-ls
+        cli: ltex-ls-{{version}}/bin/ltex-cli
+    - target: [win_arm, win_arm64, win_x64, win_x86]
+      file: ltex-ls-{{version}}.tar.gz
+      bin:
+        lsp: ltex-ls-{{version}}/bin/ltex-ls.bat
+        cli: ltex-ls-{{version}}/bin/ltex-cli.bat
+
+bin:
+  ltex-ls: "{{source.asset.bin.lsp}}"
+  ltex-cli: "{{source.asset.bin.cli}}"

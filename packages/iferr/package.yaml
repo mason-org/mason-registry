@@ -1,0 +1,15 @@
+---
+name: iferr
+description: Go tool to generate if err != nil block for the current function.
+homepage: https://github.com/koron/iferr
+licenses:
+  - MIT
+languages:
+  - Go
+categories: []
+
+source:
+  id: pkg:golang/github.com/koron/iferr@v0.0.0-20180615142939-bb332a3b1d91
+
+bin:
+  iferr: golang:iferr

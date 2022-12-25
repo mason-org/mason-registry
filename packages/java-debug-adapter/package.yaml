@@ -1,0 +1,15 @@
+---
+name: java-debug-adapter
+description: The debug server implementation for Java. It conforms to the debugger adapter protocol.
+homepage: https://github.com/microsoft/java-debug
+licenses:
+  - EPL-1.0
+languages:
+  - Java
+categories:
+  - DAP
+
+source:
+  id: pkg:github/microsoft/vscode-java-debug@0.43.0
+  asset:
+    file: vscjava.vscode-java-debug-{{version}}.vsix
