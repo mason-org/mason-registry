@@ -12,7 +12,7 @@ categories:
 source:
   # renovate:versioning=loose
   # renovate:datasource=github-releases
-  id: pkg:generic/haskell/haskell-language-server@1.8.0.0
+  id: pkg:generic/haskell/haskell-language-server@1.9.0.0
   download:
     - target: darwin_arm64
       files:
