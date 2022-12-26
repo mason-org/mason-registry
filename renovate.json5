@@ -15,7 +15,7 @@
             matchStrings: [
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
+                "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
@@ -24,7 +24,7 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
-                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s\\?]+)",
+                "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<depName>[^\\s&]+)",
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
@@ -35,21 +35,21 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
-                "pkg:golang\\/(?<depName>.+)@(?<currentValue>.+)"
+                "pkg:golang\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "go",
         },
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
-                "pkg:gem\\/(?<depName>.+)@(?<currentValue>.+)"
+                "pkg:gem\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "rubygems",
         },
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
-                "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>.+)"
+                "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{datasource}}",
         },
@@ -59,7 +59,7 @@
             matchStrings: [
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:generic\\/(?<depName>.+)@(?<currentValue>[^\\s]+)"
+                "pkg:generic\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{{datasource}}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
