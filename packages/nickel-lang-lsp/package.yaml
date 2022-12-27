@@ -1,0 +1,18 @@
+---
+name: nickel-lang-lsp
+description: |
+  The Nickel Language Server (NLS) is a language server for the Nickel programming language. NLS offers error messages,
+  type hints, and auto-completion right in your favorite LSP-enabled editor.
+homepage: https://nickel-lang.org/
+licenses:
+  - MIT
+languages:
+  - Nickel
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/nickel-lang-lsp@0.2.1
+
+bin:
+  nls: cargo:nls

@@ -1,0 +1,18 @@
+---
+name: php-debug-adapter
+description: PHP Debug Adapter 🐞⛔.
+homepage: https://github.com/xdebug/vscode-php-debug
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - DAP
+
+source:
+  id: pkg:github/xdebug/vscode-php-debug@v1.29.1
+  asset:
+    file: php-debug-{{ version | strip_prefix "v" }}.vsix
+
+bin:
+  php-debug-adapter: node:extension/out/phpDebug.js

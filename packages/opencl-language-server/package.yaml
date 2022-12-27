@@ -1,0 +1,26 @@
+---
+name: opencl-language-server
+description: Provides an OpenCL kernel diagnostics.
+homepage: https://github.com/Galarius/opencl-language-server
+licenses:
+  - MIT
+languages:
+  - OpenCL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/Galarius/opencl-language-server@0.3
+  asset:
+    - target: [darwin_arm64, darwin_x64]
+      file: opencl-language-server-darwin-x86_64.tar.gz
+      bin: opencl-language-server
+    - target: linux_x64
+      file: opencl-language-server-linux-x86_64.tar.gz
+      bin: opencl-language-server
+    - target: win_x64
+      file: opencl-language-server-win32-x86_64.zip
+      bin: opencl-language-server.exe
+
+bin:
+  opencl-language-server: "{{source.asset.bin}}"

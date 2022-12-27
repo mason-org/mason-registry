@@ -1,0 +1,16 @@
+---
+name: perlnavigator
+description: Perl Language Server that includes perl critic and code navigation.
+homepage: https://github.com/bscan/PerlNavigator
+licenses:
+  - MIT
+languages:
+  - Perl
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/perlnavigator-server@0.4.6
+
+bin:
+  perlnavigator: node:node_modules/perlnavigator-server/out/server.js

@@ -1,0 +1,30 @@
+---
+name: node-debug2-adapter
+description: A debug adapter that supports debugging Node via the Chrome Debugging Protocol. No longer maintained.
+homepage: https://github.com/microsoft/vscode-node-debug2
+licenses:
+  - MIT
+languages:
+  - JavaScript
+  - TypeScript
+categories:
+  - DAP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/microsoft/vscode-node-debug2@v1.43.0
+  build:
+    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+      run: |
+        npm install
+        NODE_OPTIONS=--no-experimental-fetch npm run build
+        npm install --production
+    - target: [win_arm, win_arm64, win_x86, win_x64]
+      run: |
+        $env:NODE_OPTIONS = '--no-experimental-fetch'
+        npm install
+        npm run build
+        npm install --production
+
+bin:
+  node-debug2-adapter: node:out/src/nodeDebug.js
