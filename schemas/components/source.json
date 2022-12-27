@@ -4,11 +4,12 @@
     "oneOf": [
         { "$ref": "sources/cargo" },
         { "$ref": "sources/gem" },
+        { "$ref": "sources/generic" },
         { "$ref": "sources/github" },
         { "$ref": "sources/golang" },
         { "$ref": "sources/npm" },
         { "$ref": "sources/nuget" },
-        { "$ref": "sources/pypi" },
-        { "$ref": "sources/generic" }
+        { "$ref": "sources/opam" },
+        { "$ref": "sources/pypi" }
     ]
 }
