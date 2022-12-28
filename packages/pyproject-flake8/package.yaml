@@ -1,0 +1,16 @@
+---
+name: pyproject-flake8
+description: A monkey patching wrapper to connect flake8 with pyproject.toml configuration.
+homepage: https://github.com/csachs/pyproject-flake8
+licenses:
+  - Unlicense
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/pyproject-flake8@6.0.0.post1
+
+bin:
+  pyproject-flake8: pypi:pflake8

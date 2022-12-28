@@ -1,0 +1,16 @@
+---
+name: pylama
+description: Code audit tool for Python.
+homepage: https://klen.github.io/pylama/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/pylama[all]@8.4.1
+
+bin:
+  pylama: pypi:pylama
