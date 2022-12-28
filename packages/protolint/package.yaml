@@ -45,4 +45,4 @@ source:
 
 bin:
   protolint: "{{source.asset.bin.protolint}}"
-  protolint-gen-protolint: "{{source.asset.bin.protoc_gen_protolint}}"
+  protoc-gen-protolint: "{{source.asset.bin.protoc_gen_protolint}}"
