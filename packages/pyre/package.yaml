@@ -1,0 +1,16 @@
+---
+name: pyre
+description: Pyre is a performant type checker for Python compliant with PEP 484.
+homepage: https://pypi.org/project/pyre-check/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/pyre-check@0.9.17
+
+bin:
+  pyre-check: pypi:pyre
