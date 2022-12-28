@@ -1,0 +1,20 @@
+---
+name: psalm
+description: A static analysis tool for finding errors in PHP applications.
+homepage: https://psalm.dev/
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  id: pkg:composer/vimeo/psalm@5.4.0
+
+bin:
+  psalm: composer:psalm
+  psalm-language-server: composer:psalm-language-server
+  psalm-plugin: composer:psalm-plugin
+  psalm-refactor: composer:psalm-refactor
+  psalter: composer:psalter
