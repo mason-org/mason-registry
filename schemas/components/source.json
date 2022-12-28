@@ -3,6 +3,7 @@
     "$id": "https://github.com/mason-org/mason-registry/schemas/components/source",
     "oneOf": [
         { "$ref": "sources/cargo" },
+        { "$ref": "sources/composer" },
         { "$ref": "sources/gem" },
         { "$ref": "sources/generic" },
         { "$ref": "sources/github" },

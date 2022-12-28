@@ -1,0 +1,23 @@
+---
+name: phpactor
+description: |
+  Phpactor is an intelligent Completion and Refactoring tool for PHP which is available over it’s own RPC protocol and
+  as a Language Server.
+homepage: https://phpactor.readthedocs.io/en/master/
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=loose
+  # renovate:datasource=github-tags
+  id: pkg:github/phpactor/phpactor@2022.12.12
+  build:
+    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+      run: composer install --no-interaction --no-dev --optimize-autoloader --classmap-authoritative
+
+bin:
+  phpactor: bin/phpactor
