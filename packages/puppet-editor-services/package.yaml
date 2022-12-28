@@ -1,0 +1,21 @@
+---
+name: puppet-editor-services
+description: Puppet Language Server for editors.
+homepage: https://github.com/puppetlabs/puppet-editor-services
+licenses:
+  - Apache-2.0
+languages:
+  - Puppet
+categories:
+  - LSP
+  - DAP
+
+source:
+  id: pkg:github/puppetlabs/puppet-editor-services@1.3.0
+  asset:
+    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+      file: puppet_editor_services_{{version}}.zip
+
+bin:
+  puppet-languageserver: puppet-languageserver
+  puppet-debugserver: puppet-debugserver
