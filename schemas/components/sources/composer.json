@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/composer",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "id"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:composer/.+@.+"
+        }
+    }
+}

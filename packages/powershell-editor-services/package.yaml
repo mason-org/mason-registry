@@ -1,0 +1,15 @@
+---
+name: powershell-editor-services
+description: A common platform for PowerShell development support in any editor or application.
+homepage: https://github.com/PowerShell/PowerShellEditorServices
+licenses:
+  - MIT
+languages:
+  - PowerShell
+categories:
+  - LSP
+
+source:
+  id: pkg:github/PowerShell/PowerShellEditorServices@v3.7.2
+  asset:
+    file: PowerShellEditorServices.zip
