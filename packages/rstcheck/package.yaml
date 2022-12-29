@@ -1,0 +1,16 @@
+---
+name: rstcheck
+description: Checks syntax of reStructuredText and code blocks nested within it.
+homepage: https://rstcheck.readthedocs.io/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/rstcheck@6.1.1
+
+bin:
+  rstcheck: pypi:rstcheck

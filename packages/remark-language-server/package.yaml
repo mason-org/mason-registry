@@ -1,0 +1,16 @@
+---
+name: remark-language-server
+description: A language server to lint and format markdown files with remark.
+homepage: https://github.com/remarkjs/remark-language-server
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/remark-language-server@2.0.0
+
+bin:
+  remark-language-server: npm:remark-language-server
