@@ -1,0 +1,16 @@
+---
+name: revive
+description: ~6x faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint.
+homepage: https://github.com/mgechev/revive
+licenses:
+  - MIT
+languages:
+  - Go
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/github.com/mgechev/revive@v1.2.4
+
+bin:
+  revive: golang:revive

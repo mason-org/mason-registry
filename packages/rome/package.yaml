@@ -1,0 +1,22 @@
+---
+name: rome
+description: Rome is a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
+homepage: https://rome.tools
+licenses:
+  - MIT
+languages:
+  - CSS
+  - HTML
+  - JSON
+  - JavaScript
+  - Markdown
+  - TypeScript
+categories:
+  - LSP
+  - Linter
+
+source:
+  id: pkg:npm/rome@11.0.0
+
+bin:
+  rome: npm:rome
