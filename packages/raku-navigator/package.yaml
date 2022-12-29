@@ -1,0 +1,21 @@
+---
+name: raku-navigator
+description: Raku Language Server that includes Raku critic and code navigation.
+homepage: https://github.com/bscan/RakuNavigator
+licenses:
+  - MIT
+languages:
+  - Raku
+categories:
+  - LSP
+
+source:
+  id: pkg:github/bscan/RakuNavigator@bc752b85f1e46c209c8e235d45798c01f10b9f0f
+  build:
+    run: |
+      npm install
+      npm run compile
+      npm install --production
+
+bin:
+  raku-navigator: node:server/out/server.js
