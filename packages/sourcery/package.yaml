@@ -1,0 +1,18 @@
+---
+name: sourcery
+description: |
+  Sourcery is a tool available in your IDE, GitHub, or as a CLI that suggests refactoring improvements to help make your
+  code more readable and generally higher quality.
+homepage: https://docs.sourcery.ai/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/sourcery-cli@1.0.2
+
+bin:
+  sourcery: pypi:sourcery

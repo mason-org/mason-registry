@@ -44,6 +44,12 @@
         },
         "bin": {
             "$ref": "components/bin"
+        },
+        "ci_skip": {
+            "type": "array",
+            "items": {
+                "$ref": "enums/platform"
+            }
         }
     },
     "required": [

@@ -1,0 +1,16 @@
+---
+name: staticcheck
+description: The advanced Go linter.
+homepage: https://staticcheck.io/
+licenses:
+  - MIT
+languages:
+  - Go
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/honnef.co/go/tools/cmd/staticcheck@v0.3.3
+
+bin:
+  staticcheck: golang:staticcheck

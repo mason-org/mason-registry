@@ -1,0 +1,16 @@
+---
+name: stylelint-lsp
+description: A stylelint Language Server.
+homepage: https://github.com/bmatcuk/stylelint-lsp
+licenses:
+  - MIT
+languages:
+  - Stylelint
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/stylelint-lsp@1.2.4
+
+bin:
+  stylelint-lsp: npm:stylelint-lsp
