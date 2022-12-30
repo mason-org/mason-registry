@@ -1,0 +1,16 @@
+---
+name: ruff-lsp
+description: A Language Server Protocol implementation for Ruff - An extremely fast Python linter, written in Rust.
+homepage: https://github.com/charliermarsh/ruff-lsp/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/ruff-lsp@0.0.11
+
+bin:
+  ruff-lsp: pypi:ruff-lsp
