@@ -1,0 +1,24 @@
+---
+name: slint-lsp
+description: A LSP Server that adds features like auto-complete and live preview of the .slint files to many editors.
+homepage: https://slint-ui.com/
+licenses:
+  - proprietary
+  - GPL-3.0-or-later
+languages:
+  - Slint
+categories:
+  - LSP
+
+source:
+  id: pkg:github/slint-ui/slint@v0.3.3
+  asset:
+    - target: linux_x64
+      file: slint-lsp-linux.tar.gz
+      bin: slint-lsp/slint-lsp
+    - target: win_x64
+      file: slint-lsp-windows.zip
+      bin: slint-lsp/slint-lsp.exe
+
+bin:
+  slint-lsp: "{{source.asset.bin}}"
