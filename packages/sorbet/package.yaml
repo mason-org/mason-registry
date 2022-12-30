@@ -1,0 +1,23 @@
+---
+name: sorbet
+description: Sorbet is a fast, powerful type checker designed for Ruby.
+homepage: https://sorbet.org/
+licenses:
+  - Apache-2.0
+languages:
+  - Ruby
+categories:
+  - LSP
+
+source:
+  id: pkg:gem/sorbet@0.5.10598
+  supported_platforms:
+    - darwin_x64
+    - darwin_arm64
+    - linux_x64
+    - linux_x86
+    - linux_arm64
+    - linux_arm
+
+bin:
+  srb: gem:srb

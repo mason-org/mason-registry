@@ -1,0 +1,18 @@
+---
+name: smithy-language-server
+description: A Language Server Protocol implementation for the Smithy IDL.
+homepage: https://github.com/awslabs/smithy-language-server
+licenses:
+  - Apache-2.0
+languages:
+  - Smithy
+categories:
+  - LSP
+
+source:
+  id: pkg:github/awslabs/smithy-language-server@2a9ef9cc7cf2ad054c0320a395a19ec6e1a9f7bc
+  build:
+    run: ./gradlew build
+
+bin:
+  smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.2.jar

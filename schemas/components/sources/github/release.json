@@ -5,10 +5,7 @@
     "$defs": {
         "Asset": {
             "type": "object",
-            "required": [
-                "target",
-                "file"
-            ],
+            "required": ["target", "file"],
             "additionalProperties": true,
             "properties": {
                 "target": {
@@ -25,16 +22,23 @@
                     ]
                 },
                 "file": {
-                    "type": "string"
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
                 }
             }
         }
     },
     "additionalProperties": false,
-    "required": [
-        "id",
-        "asset"
-    ],
+    "required": ["id", "asset"],
     "properties": {
         "id": {
             "type": "string",
