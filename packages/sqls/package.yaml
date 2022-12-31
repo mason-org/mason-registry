@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/lighttiger2505/sqls@v0.2.20
+  id: pkg:golang/github.com/lighttiger2505/sqls@v0.2.22
 
 bin:
   sqls: golang:sqls
