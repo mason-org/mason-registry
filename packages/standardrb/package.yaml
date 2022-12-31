@@ -1,0 +1,17 @@
+---
+name: standardrb
+description: Ruby Style Guide, with linter and automatic code fixer.
+homepage: https://github.com/testdouble/standard/
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:gem/standard@1.9.0
+
+bin:
+  standardrb: gem:standardrb

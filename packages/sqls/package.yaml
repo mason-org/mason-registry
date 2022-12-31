@@ -1,0 +1,23 @@
+---
+name: sqls
+description: SQL language server written in Go.
+homepage: https://github.com/lighttiger2505/sqls
+licenses:
+  - MIT
+languages:
+  - SQL
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github.com/lighttiger2505/sqls@v0.2.20
+
+bin:
+  sqls: golang:sqls
+
+# Fails to build on win_x64: https://github.com/mason-org/mason-registry/actions/runs/3809365442/jobs/6480780820
+ci_skip:
+  - win_arm
+  - win_arm64
+  - win_x64
+  - win_x86

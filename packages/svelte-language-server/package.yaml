@@ -1,0 +1,16 @@
+---
+name: svelte-language-server
+description: A language server (implementing the language server protocol) for Svelte.
+homepage: https://github.com/sveltejs/language-tools
+licenses:
+  - MIT
+languages:
+  - Svelte
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/svelte-language-server@0.15.0
+
+bin:
+  svelteserver: npm:svelteserver

@@ -1,0 +1,23 @@
+---
+name: spectral-language-server
+description: |
+  Awesome Spectral JSON/YAML linter with OpenAPI/AsyncAPI support. Spectral is a flexible object linter with out of the
+  box support for OpenAPI v2 and v3, JSON Schema, and AsyncAPI.
+homepage: https://github.com/stoplightio/vscode-spectral
+licenses:
+  - MIT
+languages:
+  - JSON
+  - YAML
+categories:
+  - LSP
+
+source:
+  id: pkg:github/stoplightio/vscode-spectral@v1.1.0
+  build:
+    run: |
+      npm install
+      node make package
+
+bin:
+  spectral-language-server: node:dist/server/index.js
