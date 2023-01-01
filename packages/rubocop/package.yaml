@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:gem/rubocop@1.41.1
+  id: pkg:gem/rubocop@1.42.0
 
 bin:
   rubocop: gem:rubocop
