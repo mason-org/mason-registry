@@ -1,0 +1,16 @@
+---
+name: tailwindcss-language-server
+description: Language Server Protocol implementation for Tailwind CSS.
+homepage: https://github.com/tailwindlabs/tailwindcss-intellisense
+licenses:
+  - MIT
+languages:
+  - CSS
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40tailwindcss/language-server@0.0.10
+
+bin:
+  tailwindcss-language-server: npm:tailwindcss-language-server

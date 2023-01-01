@@ -1,0 +1,17 @@
+---
+name: textlint
+description: The pluggable natural language linter for text and markdown.
+homepage: https://textlint.github.io
+licenses:
+  - MIT
+languages:
+  - Text
+  - Markdown
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/textlint@12.3.1
+
+bin:
+  textlint: npm:textlint
