@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/intelephense@1.8.2
+  id: pkg:npm/intelephense@1.9.0
 
 bin:
   intelephense: npm:intelephense
