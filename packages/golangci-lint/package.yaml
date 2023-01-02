@@ -1,0 +1,18 @@
+---
+name: golangci-lint
+description: |
+  golangci-lint is a fast Go linters runner. It runs linters in parallel, uses caching, supports yaml config, has
+  integrations with all major IDE and has dozens of linters included.
+homepage: https://golangci-lint.run/
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - Go
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/github.com/golangci/golangci-lint@v1.50.1#cmd/golangci-lint
+
+bin:
+  golangci-lint: golang:golangci-lint
