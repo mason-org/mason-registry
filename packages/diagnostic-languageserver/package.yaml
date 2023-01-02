@@ -10,3 +10,6 @@ categories:
 
 source:
   id: pkg:npm/diagnostic-languageserver@1.14.2
+
+bin:
+  diagnostic-languageserver: npm:diagnostic-languageserver
