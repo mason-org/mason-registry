@@ -1,0 +1,24 @@
+---
+name: wgsl-analyzer
+description: A language server implementation for the WGSL shading language.
+homepage: https://github.com/wgsl-analyzer/wgsl-analyzer
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - WGSL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/wgsl-analyzer/wgsl-analyzer@v0.6.0
+  asset:
+    - target: [darwin_arm64, darwin_x64]
+      file: wgsl_analyzer-darwin-x64
+    - target: linux_x64
+      file: wgsl_analyzer-linux-x64
+    - target: win_x64
+      file: wgsl_analyzer-win32-x64.exe
+
+bin:
+  wgsl_analyzer: "{{source.asset.file}}"

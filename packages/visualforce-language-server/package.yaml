@@ -1,0 +1,18 @@
+---
+name: visualforce-language-server
+description: Visualforce language server.
+homepage: https://github.com/forcedotcom/salesforcedx-vscode
+licenses:
+  - BSD-3-Clause
+languages:
+  - Visualforce
+categories:
+  - LSP
+
+source:
+  id: pkg:github/forcedotcom/salesforcedx-vscode@v56.5.1
+  asset:
+    file: salesforcedx-vscode-visualforce-{{ version | strip_prefix "v" }}.vsix
+
+bin:
+  visualforce-language-server: node:extension/dist/visualforceServer.js
