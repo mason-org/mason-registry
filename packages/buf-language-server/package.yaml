@@ -1,0 +1,17 @@
+---
+name: buf-language-server
+description: |
+  buf-language-server is a prototype for the beginnings of a Protobuf language server compatible with Buf modules and workspaces.
+homepage: https://github.com/bufbuild/buf-language-server
+licenses:
+  - Apache-2.0
+languages:
+  - Protobuf
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github.com/bufbuild/buf-language-server@v0.0.0-20221121155404-1e927a5df512#cmd/bufls
+
+bin:
+  bufls: golang:bufls
