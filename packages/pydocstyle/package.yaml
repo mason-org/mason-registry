@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pydocstyle@6.2.0
+  id: pkg:pypi/pydocstyle@6.2.1
 
 bin:
   pydocstyle: pypi:pydocstyle
