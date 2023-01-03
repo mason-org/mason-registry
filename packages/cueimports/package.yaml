@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/asdine/cueimports@v0.3.1#cmd/cueimports
+  id: pkg:golang/github.com/asdine/cueimports@v0.3.2#cmd/cueimports
 
 bin:
   cueimports: golang:cueimports
