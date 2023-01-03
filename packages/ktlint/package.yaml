@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/pinterest/ktlint@0.48.0
+  id: pkg:github/pinterest/ktlint@0.48.1
   asset:
     - target: [darwin_arm64, darwin_x64, linux_arm, linux_arm64, linux_x86, linux_x64]
       file: ktlint
