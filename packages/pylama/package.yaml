@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pylama%5Ball%5D@8.4.1
+  id: pkg:pypi/pylama@8.4.1?extra=all
 
 bin:
   pylama: pypi:pylama
