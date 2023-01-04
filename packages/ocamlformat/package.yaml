@@ -1,0 +1,18 @@
+---
+name: ocamlformat
+description: |
+  ocamlformat is a tool for formatting OCaml code. It automatically adjusts the layout of your code to follow the
+  recommended style guidelines, making it easier to read and understand.
+homepage: https://github.com/ocaml-ppx/ocamlformat
+licenses:
+  - MIT
+languages:
+  - OCaml
+categories:
+  - Formatter
+
+source:
+  id: pkg:opam/ocamlformat@0.24.1
+
+bin:
+  ocamllsp: opam:ocamlformat
