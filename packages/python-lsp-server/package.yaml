@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/python-lsp-server@1.6.0?extra=all
+  id: pkg:pypi/python-lsp-server@1.7.0?extra=all
 
 bin:
   pylsp: pypi:pylsp
