@@ -27,14 +27,17 @@ jobs:
         shell: bash
         run: |
           if [[ $GITHUB_REF =~ ^refs/tags ]]; then
+            echo "Releasing tag $GITHUB_REF_NAME"
             printf "tag=%s\nshould-release=true" "$GITHUB_REF_NAME" >> "$GITHUB_OUTPUT"
           elif [[ $(git diff-tree --name-only --no-commit-id HEAD -- packages | wc -l) -gt 0 ]]; then
             declare TAG
             TAG=$(date +%Y-%m-%d)-$ADJNOUN
             printf "tag=%s\nshould-release=true" "$TAG" >> "$GITHUB_OUTPUT"
+            echo "Tagging and pushing $TAG"
             git tag "$TAG" HEAD
             git push origin "$TAG"
           else
+            echo "No tag was pushed, and no package definition was changed."
             echo "should-release=false" >> "$GITHUB_OUTPUT"
           fi
         env:
