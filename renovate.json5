@@ -2,7 +2,7 @@
     automerge: true,
     platformAutomerge: true,
     automergeType: "pr",
-    commitMessage: "bump({{decodeURIComponent depName}}): update to {{prettyNewVersion}}",
+    commitMessage: "bump({{#if pkgName}}{{pkgName}}{{else}}{{decodeURIComponent depName}}{{/if}}): update to {{prettyNewVersion}}",
     separateMajorMinor: false,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
@@ -13,6 +13,7 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
                 "pkg:github\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
@@ -24,6 +25,7 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "pkg:cargo\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<depName>[^\\s&]+)",
             ],
@@ -35,6 +37,7 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "pkg:golang\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "go",
@@ -42,6 +45,7 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "pkg:gem\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "rubygems",
@@ -49,6 +53,7 @@
         {
             fileMatch: "package\\.yaml$",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "pkg:(?<datasource>npm|pypi)\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{datasource}}",
@@ -57,6 +62,7 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
+                "\nname: (?<pkgName>.+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
                 "pkg:generic\\/(?<depName>.+)@(?<currentValue>[^\\s\\?#]+)"
