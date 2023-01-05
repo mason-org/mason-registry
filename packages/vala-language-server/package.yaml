@@ -1,0 +1,40 @@
+---
+name: vala-language-server
+description: Code Intelligence for Vala & Genie.
+homepage: https://github.com/vala-lang/vala-language-server
+licenses:
+  - LGPL-2.1-or-later
+languages:
+  - Vala
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/vala-lang/vala-language-server@7577ffb269cd31da8815b7eadd72867965a2c742
+  build:
+    - target: [darwin_x64, darwin_arm64, linux_x64, linux_x86, linux_arm64, linux_arm]
+      run: |
+        meson -Dprefix="$PWD" build
+        ninja -C build install
+      bin: bin/vala-language-server
+    - target: [win_arm, win_arm64, win_x86, win_x64]
+      run: |
+        meson -Dprefix="($pwd).path" build
+        ninja -C build install
+      bin: bin/vala-language-server.exe
+
+bin:
+  vala-language-server: "{{source.build.bin}}"
+
+ci_skip:
+  - darwin_x64
+  - darwin_arm64
+  - linux_x64
+  - linux_x86
+  - linux_arm64
+  - linux_arm
+  - win_arm
+  - win_arm64
+  - win_x86
+  - win_x64
