@@ -1,0 +1,36 @@
+---
+name: reviewdog
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        description: The tag to create.
+        required: true
+      ref:
+        default: HEAD
+        type: string
+        description: The commit ref to tag.
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: tag
+        if: ${{ !github.event.inputs.tag }}
+        name: Get tag name
+        shell: bash
+        run: |
+          printf "tag=%s" "$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: push
+        shell: bash
+        run: |
+          git tag "$TAG" "$REF"
+          git push origin "$TAG"
+        env:
+          TAG: ${{ steps.tag.outputs.tag || github.event.inputs.tag }}
+          REF: ${{ github.event.inputs.ref }}
