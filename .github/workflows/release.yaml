@@ -14,7 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up yq
-        uses: chrisdickinson/setup-yq@v1.0.0
+        shell: bash
+        run: |
+          sudo curl -fL "https://github.com/mikefarah/yq/releases/download/v4.30.6/yq_linux_amd64" -o /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
       - name: Compile
         shell: bash
         run: |
