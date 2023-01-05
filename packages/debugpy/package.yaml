@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:pypi/debugpy@1.6.4
+  id: pkg:pypi/debugpy@1.6.5
 
 bin:
   debugpy: pyvenv:debugpy
