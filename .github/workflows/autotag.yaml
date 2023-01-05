@@ -1,6 +1,9 @@
 ---
 name: Autotag
 
+env:
+  GITHUB_TOKEN: ${{ secrets.PAT }}
+
 on:
   schedule:
     - cron: '0 0 * * *'
