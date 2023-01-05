@@ -1,5 +1,5 @@
 ---
-name: volar
+name: vue-language-server
 description: ⚡ Explore high-performance tooling for Vue.
 homepage: https://github.com/johnsoncodehk/volar
 licenses:
