@@ -1,5 +1,5 @@
 ---
-name: reviewdog
+name: Autotag
 
 on:
   schedule:
@@ -16,8 +16,10 @@ on:
         description: The commit ref to tag.
 
 jobs:
-  actionlint:
+  push-tag:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - id: tag
