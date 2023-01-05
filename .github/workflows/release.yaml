@@ -1,16 +1,43 @@
 ---
 name: Release
 
-env:
-  GITHUB_TOKEN: ${{ secrets.PAT }}
-
 on:
+  schedule:
+    - cron: '0 0 * * *'
   push:
     tags:
       - "**"
 
 jobs:
+  tag:
+    name: Tag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - id: tag
+        name: Get tag name
+        shell: bash
+        run: |
+          if [[ $GITHUB_REF =~ ^refs/tags ]]; then
+            printf "tag=%s" "$GITHUB_REF_NAME" >> "$GITHUB_OUTPUT"
+          else
+            declare TAG
+            TAG=$(date +%Y-%m-%d)
+            printf "tag=%s" "$TAG" >> "$GITHUB_OUTPUT"
+            git tag "$TAG" HEAD
+            git push origin "$TAG"
+          fi
+        env:
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+
   release:
+    needs: [tag]
     name: Release
     runs-on: ubuntu-latest
     permissions:
@@ -32,6 +59,8 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: ${{ needs.tag.outputs.tag }}
+          fail_on_unmatched_files: true
           generate_release_notes: true
           files: |
             registry.json
