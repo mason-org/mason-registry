@@ -1,11 +1,11 @@
 ---
-name: reviewdog
+name: Actionlint
 
 on:
   - pull_request
 
 jobs:
-  actionlint:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
