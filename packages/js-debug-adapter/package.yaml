@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-js-debug@v1.74.1 # renovate:datasource=github-tags
+  id: pkg:github/microsoft/vscode-js-debug@v2020.6.208 # renovate:datasource=github-tags
   build:
     run: |
       npm install --ignore-scripts --legacy-peer-deps
