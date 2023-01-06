@@ -10,6 +10,7 @@ categories:
   - LSP
 
 source:
+  # renovate:versioning=loose
   id: pkg:github/Galarius/opencl-language-server@0.3
   asset:
     - target: [darwin_arm64, darwin_x64]
