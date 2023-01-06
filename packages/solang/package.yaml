@@ -11,32 +11,32 @@ categories:
   - Compiler
 
 source:
-  id: pkg:github/hyperledger-labs/solang@v0.2.0
+  id: pkg:github/hyperledger-labs/solang@v0.2.1
   asset:
     - target: darwin_x64
       file:
         - solang-mac-intel
-        - llvm13.0-mac-intel.tar.xz
+        - llvm14.0-mac-intel.tar.xz
       bin: solang-mac-intel
     - target: darwin_arm64
       file:
         - solang-mac-arm
-        - llvm13.0-mac-arm.tar.xz
+        - llvm14.0-mac-arm.tar.xz
       bin: solang-mac-arm
     - target: linux_arm64
       file:
         - solang-linux-arm64
-        - llvm13.0-linux-arm64.tar.xz
+        - llvm14.0-linux-arm64.tar.xz
       bin: solang-linux-arm64
     - target: linux_x64
       file:
         - solang-linux-x86-64
-        - llvm13.0-linux-x86-64.tar.xz
+        - llvm14.0-linux-x86-64.tar.xz
       bin: solang-linux-x86-64
     - target: win_x64
       file:
         - solang.exe
-        - llvm13.0-win.zip
+        - llvm14.0-win.zip
       bin: solang.exe
 
 bin:
