@@ -4,52 +4,41 @@
     "type": "object",
     "$defs": {
         "Asset": {
-            "type": "object",
-            "required": ["target", "file"],
-            "additionalProperties": true,
-            "properties": {
-                "target": {
-                    "oneOf": [
-                        {
-                            "type": "array",
-                            "items": {
-                                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
-                            }
-                        },
-                        {
-                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
-                        }
-                    ]
-                },
-                "file": {
-                    "oneOf": [
-                        {
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            }
-                        },
-                        {
-                            "type": "string"
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    "additionalProperties": false,
-    "required": ["id", "asset"],
-    "properties": {
-        "id": {
-            "type": "string",
-            "pattern": "^pkg:github/.+@.+"
-        },
-        "asset": {
             "oneOf": [
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "#/$defs/Asset"
+                        "type": "object",
+                        "required": ["target", "file"],
+                        "additionalProperties": true,
+                        "properties": {
+                            "target": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                        }
+                                    },
+                                    {
+                                        "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                    }
+                                ]
+                            },
+                            "file": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
                     }
                 },
                 {
@@ -61,6 +50,32 @@
                     }
                 }
             ]
+        }
+    },
+    "additionalProperties": false,
+    "required": ["id", "asset"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:github/.+@.+"
+        },
+        "asset": {
+            "$ref": "#/$defs/Asset"
+        },
+        "version_overrides": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "constraint": {
+                        "type": "string",
+                        "pattern": "^semver:(<=)?v?\\d+\\.\\d+\\.\\d+"
+                    },
+                    "asset": {
+                        "$ref": "#/$defs/Asset"
+                    }
+                }
+            }
         }
     }
 }
