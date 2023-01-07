@@ -20,6 +20,9 @@ source:
     - target: linux_x64_gnu
       file: dprint-x86_64-unknown-linux-gnu.zip
       bin: dprint
+    - target: linux_x64
+      file: dprint-x86_64-unknown-linux-musl.zip
+      bin: dprint
     - target: linux_arm64_gnu
       file: dprint-aarch64-unknown-linux-gnu.zip
       bin: dprint
