@@ -1,0 +1,16 @@
+---
+name: openscad
+description: Language Server Protocol implementation for OpenSCAD, written in Rust.
+homepage: https://github.com/Leathong/openscad-LSP
+licenses:
+  - Apache-2.0
+languages:
+  - OpenSCAD
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/openscad-lsp@1.2.3
+
+bin:
+  openscad-lsp: cargo:openscad-lsp
