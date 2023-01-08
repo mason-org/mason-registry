@@ -20,12 +20,8 @@ source:
       file: zk-{{version}}-linux-i386.tar.gz
     - target: darwin_arm64
       file: zk-{{version}}-macos-arm64.zip
-
-  version_overrides:
-    - constraint: semver:<=0.11.1
-      asset:
-        - target: darwin_x64
-          file: zk-{{version}}-macos-x86_64.zip
+    - target: darwin_x64
+      file: zk-{{version}}-macos-x86_64.zip
 
 bin:
   zk: zk
