@@ -67,7 +67,7 @@ jobs:
         run: |
           yq ea '[.]' -o json packages/*/package.yaml > registry.json
           zip -r registry.json.zip registry.json
-          sha256sum registry.json.zip > checksums.txt
+          sha256sum registry.json registry.json.zip > checksums.txt
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
