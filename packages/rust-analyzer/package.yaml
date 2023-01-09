@@ -32,11 +32,11 @@ source:
       file: rust-analyzer-aarch64-apple-darwin.gz
       bin: rust-analyzer-aarch64-apple-darwin
     - target: win_x64
-      file: rust-analyzer-x86_64-pc-windows-msvc.gz:rust-analyzer-x86_64-pc-windows-msvc.exe.gz
-      bin: rust-analyzer-x86_64-pc-windows-msvc.exe
+      file: rust-analyzer-x86_64-pc-windows-msvc.zip
+      bin: rust-analyzer.exe
     - target: win_arm64
-      file: rust-analyzer-aarch64-pc-windows-msvc.gz:rust-analyzer-aarch64-pc-windows-msvc.exe.gz
-      bin: rust-analyzer-aarch64-pc-windows-msvc.exe
+      file: rust-analyzer-aarch64-pc-windows-msvc.zip
+      bin: rust-analyzer.exe
 
 bin:
   rust-analyzer: "{{source.asset.bin}}"
