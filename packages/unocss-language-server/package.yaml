@@ -1,0 +1,16 @@
+---
+name: unocss-language-server
+description: Language Server Protocol implementation for UnoCSS.
+homepage: https://github.com/xna00/unocss-language-server
+licenses:
+  - MIT
+languages:
+  - CSS
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/unocss-language-server@0.0.7
+
+bin:
+  unocss-language-server: npm:unocss-language-server
