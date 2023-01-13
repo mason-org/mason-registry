@@ -15,9 +15,9 @@ source:
     - target: darwin_x64
       file: crystalline_x86_64-apple-darwin.gz
       bin: crystalline_x86_64-apple-darwin
-    - target: linux_x64_gnu
-      file: crystalline_x86_64-unknown-linux-gnu.gz
-      bin: crystalline_x86_64-unknown-linux-gnu
+    - target: linux_x64
+      file: crystalline_x86_64-unknown-linux-musl.gz
+      bin: crystalline_x86_64-unknown-linux-musl
 
 bin:
   crystalline: "{{source.asset.bin}}"
