@@ -16,4 +16,4 @@ source:
     file: bsl-language-server-{{ version | strip_prefix "v" }}-exec.jar
 
 bin:
-  bsl-language-server: java-jar:bsl-language-server-{{ version | strip_prefix "v" }}-exec.jar
+  bsl-language-server: java-jar:{{source.asset.file}}
