@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/editorconfig-checker/editorconfig-checker@2.6.0
+  id: pkg:github/editorconfig-checker/editorconfig-checker@2.7.0
   asset:
     - target: darwin_arm64
       file: ec-darwin-arm64.tar.gz
@@ -24,9 +24,13 @@ source:
     - target: linux_x64
       file: ec-linux-amd64.tar.gz
     - target: win_x86
-      file: ec-windows-386.tar.gz
+      file: ec-windows-386.exe.tar.gz
     - target: win_x64
-      file: ec-windows-amd64.tar.gz
+      file: ec-windows-amd64.exe.tar.gz
+    - target: win_arm64
+      file: ec-windows-arm64.exe.tar.gz
+    - target: win_arm
+      file: ec-windows-arm.exe.tar.gz
 
 bin:
   editorconfig-checker: "bin/{{ source.asset.file | strip_suffix '.tar.gz' }}"
