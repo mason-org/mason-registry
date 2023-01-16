@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/sumneko/lua-language-server@3.6.4
+  id: pkg:github/sumneko/lua-language-server@3.6.5
   asset:
     - target: darwin_arm64
       file: lua-language-server-{{version}}-darwin-arm64.tar.gz:libexec/
