@@ -14,7 +14,7 @@ source:
   id: pkg:generic/eclipse/eclipse.jdt.ls@v1.19.0
   download:
     files:
-      jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202212011657.tar.gz
+      jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202301171536.tar.gz
       lombok.jar: https://projectlombok.org/downloads/lombok.jar
 
 bin:
