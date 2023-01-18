@@ -1,0 +1,30 @@
+---
+name: gitui
+description: Blazing fast terminal-ui for git written in Rust.
+homepage: https://github.com/extrawurst/gitui
+licenses:
+  - MIT
+languages: []
+categories: []
+
+source:
+  id: pkg:github/extrawurst/gitui@v0.22.1
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: gitui-mac.tar.gz
+      bin: gitui
+    - target: linux_x64
+      file: gitui-linux-musl.tar.gz
+      bin: gitui
+    - target: linux_arm64
+      file: gitui-linux-aarch64.tar.gz
+      bin: gitui
+    - target: linux_arm
+      file: gitui-linux-arm.tar.gz
+      bin: gitui
+    - target: win_x64
+      file: gitui-win.tar.gz
+      bin: gitui.exe
+
+bin:
+  gitui: "{{source.asset.bin}}"
