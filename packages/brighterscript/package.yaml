@@ -1,0 +1,17 @@
+---
+name: brighterscript
+description: A superset of Roku's BrightScript language.
+homepage: https://github.com/RokuCommunity/brighterscript
+licenses:
+  - MIT
+languages:
+  - BrighterScript
+categories:
+  - Compiler
+  - LSP
+
+source:
+  id: pkg:npm/brighterscript@0.61.3
+
+bin:
+  bsc: npm:bsc
