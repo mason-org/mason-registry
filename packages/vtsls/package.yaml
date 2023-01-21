@@ -1,0 +1,17 @@
+---
+name: vtsls
+description: LSP wrapper around the TypeScript extension bundled with VSCode.
+homepage: https://github.com/yioneko/vtsls
+licenses:
+  - MIT
+languages:
+  - JavaScript
+  - TypeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:%40vtsls/language-server@0.1.7
+
+bin:
+  vtsls: npm:vtsls
