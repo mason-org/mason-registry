@@ -7,6 +7,7 @@ licenses:
 languages:
   - Python
 categories:
+  - LSP
   - Linter
 
 source:
