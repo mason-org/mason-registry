@@ -45,6 +45,9 @@
         "bin": {
             "$ref": "components/bin"
         },
+        "share": {
+            "$ref": "components/share"
+        },
         "ci_skip": {
             "type": "array",
             "items": {

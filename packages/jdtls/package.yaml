@@ -19,3 +19,6 @@ source:
 
 bin:
   jdtls: python:bin/jdtls
+
+share:
+  jdtls/lombok.jar: lombok.jar
