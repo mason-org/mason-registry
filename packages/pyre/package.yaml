@@ -14,4 +14,4 @@ source:
   id: pkg:pypi/pyre-check@0.9.17
 
 bin:
-  pyre-check: pypi:pyre
+  pyre: pypi:pyre
