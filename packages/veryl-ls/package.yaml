@@ -1,0 +1,17 @@
+---
+name: veryl-ls
+description: Veryl language server.
+homepage: https://github.com/dalance/veryl
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Veryl
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/veryl-ls@0.2.2
+
+bin:
+  veryl-ls: cargo:veryl-ls
