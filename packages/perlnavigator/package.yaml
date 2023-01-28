@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/perlnavigator-server@0.4.6
+  id: pkg:npm/perlnavigator-server@0.5.4
 
 bin:
   perlnavigator: node:node_modules/perlnavigator-server/out/server.js
