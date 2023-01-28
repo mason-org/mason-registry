@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pylint@2.15.9
+  id: pkg:pypi/pylint@2.15.10
 
 bin:
   pylint: pypi:pylint
