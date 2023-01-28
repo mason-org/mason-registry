@@ -20,22 +20,27 @@ source:
       files:
         macos.tar.gz: https://c.quick-lint-js.com/releases/{{version}}/manual/macos.tar.gz
       bin: quick-lint-js/bin/quick-lint-js
+      man: quick-lint-js/share/man/
     - target: darwin_arm64
       files:
         macos-aarch64.tar.gz: https://c.quick-lint-js.com/releases/{{version}}/manual/macos-aarch64.tar.gz
       bin: quick-lint-js/bin/quick-lint-js
+      man: quick-lint-js/share/man/
     - target: linux_x64
       files:
         linux.tar.gz: https://c.quick-lint-js.com/releases/{{version}}/manual/linux.tar.gz
       bin: quick-lint-js/bin/quick-lint-js
+      man: quick-lint-js/share/man/
     - target: linux_arm64
       files:
         linux-aarch64.tar.gz: https://c.quick-lint-js.com/releases/{{version}}/manual/linux-aarch64.tar.gz
       bin: quick-lint-js/bin/quick-lint-js
+      man: quick-lint-js/share/man/
     - target: linux_arm
       files:
         linux-armhf.tar.gz: https://c.quick-lint-js.com/releases/{{version}}/manual/linux-armhf.tar.gz
       bin: quick-lint-js/bin/quick-lint-js
+      man: quick-lint-js/share/man/
     - target: win_x64
       files:
         windows.zip: https://c.quick-lint-js.com/releases/{{version}}/manual/windows.zip
@@ -51,3 +56,6 @@ source:
 
 bin:
   quick-lint-js: "{{source.download.bin}}"
+
+share:
+  man/: "{{source.download.man}}"
