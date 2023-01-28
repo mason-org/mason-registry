@@ -13,12 +13,27 @@ source:
   # renovate:datasource=github-tags
   id: pkg:generic/eclipse/eclipse.jdt.ls@v1.19.0
   download:
-    files:
-      jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202301171536.tar.gz
-      lombok.jar: https://projectlombok.org/downloads/lombok.jar
+    - target: [darwin_x64, darwin_arm64]
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202301171536.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_mac/
+    - target: [linux_x64, linux_x86, linux_arm64, linux_arm]
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202301171536.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_linux/
+    - target: [win_x64, win_x86, win_arm64, win_arm]
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202301171536.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_win/
 
 bin:
   jdtls: python:bin/jdtls
 
 share:
   jdtls/lombok.jar: lombok.jar
+  jdtls/plugins/: plugins/
+  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar
+  jdtls/config/: "{{source.download.config}}"
