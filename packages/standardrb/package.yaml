@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:gem/standard@1.21.1
+  id: pkg:gem/standard@1.22.1
 
 bin:
   standardrb: gem:standardrb
