@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:gem/theme-check@1.13.0
+  id: pkg:gem/theme-check@1.14.0
 
 bin:
   theme-check-language-server: gem:theme-check-language-server
