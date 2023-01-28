@@ -26,6 +26,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
+                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "pkg:cargo\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<packageName>[^\\s&]+)",
             ],
@@ -36,6 +37,7 @@
         },
         {
             fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
                 "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
@@ -44,6 +46,7 @@
         },
         {
             fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
                 "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
@@ -52,6 +55,7 @@
         },
         {
             fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
                 "pkg:(?<datasource>npm|pypi)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
