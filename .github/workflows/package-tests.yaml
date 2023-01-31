@@ -103,6 +103,6 @@ jobs:
     name: Status check
     runs-on: ubuntu-latest
     needs: tests
-    if: failure()
+    if: 'failure() || cancelled()'
     steps:
       - run: exit 1
