@@ -1,0 +1,16 @@
+---
+name: gospel
+description: misspelled word linter for Go comments, string literals and embedded files.
+homepage: https://github.com/kortschak/gospel
+licenses:
+  - BSD-3-Clause
+languages:
+  - Go
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/github.com/kortschak/gospel@v1.14.0
+
+bin:
+  gospel: golang:gospel
