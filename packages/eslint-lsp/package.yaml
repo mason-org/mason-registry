@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/vscode-langservers-extracted@4.5.0
+  id: pkg:npm/vscode-langservers-extracted@4.6.0
 
 bin:
   vscode-eslint-language-server: npm:vscode-eslint-language-server
