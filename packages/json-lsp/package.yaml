@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/vscode-langservers-extracted@4.5.0
+  id: pkg:npm/vscode-langservers-extracted@4.6.0
 
 bin:
   vscode-json-language-server: npm:vscode-json-language-server
