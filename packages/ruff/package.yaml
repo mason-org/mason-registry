@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/ruff@0.0.239
+  id: pkg:pypi/ruff@0.0.240
 
 bin:
   ruff: pypi:ruff
