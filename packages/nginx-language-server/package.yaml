@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/nginx-language-server@0.7.1
+  id: pkg:pypi/nginx-language-server@0.8.0
 
 bin:
   nginx-language-server: pypi:nginx-language-server
