@@ -49,10 +49,17 @@
             "$ref": "components/share"
         },
         "ci_skip": {
-            "type": "array",
-            "items": {
-                "$ref": "enums/platform"
-            }
+            "oneOf": [
+                {
+                    "type": "boolean"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "enums/platform"
+                    }
+                }
+            ]
         }
     },
     "required": [
