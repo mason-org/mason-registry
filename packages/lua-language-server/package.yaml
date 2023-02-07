@@ -1,7 +1,7 @@
 ---
 name: lua-language-server
 description: A language server that offers Lua language support - programmed in Lua.
-homepage: https://github.com/sumneko/lua-language-server
+homepage: https://github.com/LuaLS/lua-language-server
 licenses:
   - MIT
 languages:
@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/sumneko/lua-language-server@3.6.10
+  id: pkg:github/LuaLS/lua-language-server@3.6.10
   asset:
     - target: darwin_arm64
       file: lua-language-server-{{version}}-darwin-arm64.tar.gz:libexec/
