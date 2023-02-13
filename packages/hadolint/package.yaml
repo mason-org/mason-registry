@@ -5,7 +5,7 @@ homepage: https://github.com/hadolint/hadolint
 licenses:
   - GPL-3.0-or-later
 languages:
-  - Dockerfile
+  - Docker
 categories:
   - Linter
 

@@ -1,0 +1,16 @@
+---
+name: docker-compose-language-service
+description: A language server for Docker Compose.
+homepage: https://github.com/microsoft/compose-language-service
+licenses:
+  - MIT
+languages:
+  - Docker
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40microsoft/compose-language-service@0.1.2
+
+bin:
+  docker-compose-language-service: node:node_modules/@microsoft/compose-language-service/lib/server.js
