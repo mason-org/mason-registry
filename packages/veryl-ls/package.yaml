@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/veryl-ls@0.3.4
+  id: pkg:cargo/veryl-ls@0.4.0
 
 bin:
   veryl-ls: cargo:veryl-ls
