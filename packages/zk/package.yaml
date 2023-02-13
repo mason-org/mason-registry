@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mickael-menu/zk@v0.12.0
+  id: pkg:github/mickael-menu/zk@v0.13.0
   asset:
     - target: linux_arm64
       file: zk-{{version}}-linux-arm64.tar.gz
