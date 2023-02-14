@@ -5,7 +5,7 @@ homepage: https://github.com/rcjsuen/dockerfile-language-server-nodejs
 licenses:
   - MIT
 languages:
-  - Dockerfile
+  - Docker
 categories:
   - LSP
 
