@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/esbonio@0.16.0
+  id: pkg:pypi/esbonio@0.16.1
 
 bin:
   esbonio: pypi:esbonio
