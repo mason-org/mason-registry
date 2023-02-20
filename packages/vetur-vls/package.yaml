@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/vls@0.8.2
+  id: pkg:npm/vls@0.8.3
 
 bin:
   vls: npm:vls
