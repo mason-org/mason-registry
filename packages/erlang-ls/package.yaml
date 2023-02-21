@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/erlang-ls/erlang_ls@0.46.1 # renovate:datasource=github-tags
+  id: pkg:github/erlang-ls/erlang_ls@0.46.2 # renovate:datasource=github-tags
   build:
     - target: [win_x64, win_x86, win_arm64, win_arm]
       run: |
