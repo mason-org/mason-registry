@@ -48,6 +48,9 @@
         "share": {
             "$ref": "components/share"
         },
+        "opt": {
+            "$ref": "components/opt"
+        },
         "ci_skip": {
             "oneOf": [
                 {
