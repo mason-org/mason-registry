@@ -33,14 +33,11 @@
 
 # The anatomy of a package
 
-Packages are defined following a [well-defined
-specification](#package-specification). Package definitions are hosted as
-separate YAML files that MUST be located at
-`packages/<package-name>/package.yaml`.
+Packages are defined following a [well-defined specification](#package-specification). Package definitions are hosted as
+separate YAML files that MUST be located at `packages/<package-name>/package.yaml`.
 
-Package sources are identified via a [purl][purl]-compatible identifier. Each
-package identifier MUST contain a version component specifying the latest
-available version. Package versions are automatically kept up-to-date via
+Package sources are identified via a [purl][purl]-compatible identifier. Each package identifier MUST contain a version
+component specifying the latest available version. Package versions are automatically kept up-to-date via
 [Renovate][renovate].
 
 # Package specification
@@ -73,40 +70,33 @@ The following is a rough outline of the package definition schema:
 
 ## `name`
 
-The package name MUST be unique. The name of a package MUST follow the
-following naming scheme:
+The package name MUST be unique. The name of a package MUST follow the following naming scheme:
 
-1. If the upstream package name is sufficiently unambiguous, or otherwise
-   widely recognized, that name MUST be used.
-1. If the upstream package provides a single executable with a name that is
-   sufficiently unambiguous, or otherwise widely recognized, the name of the
-   executable MUST be used.
-1. If either the package or executable name is ambiguous, a name where a
-   clarifying prefix or suffix is added SHOULD be used.
-1. As a last resort, the name of the package should be constructed to best
-   convey its target language and scope, e.g. `json-language-server` for a JSON
-   language server.
+1. If the upstream package name is sufficiently unambiguous, or otherwise widely recognized, that name MUST be used.
+1. If the upstream package provides a single executable with a name that is sufficiently unambiguous, or otherwise
+   widely recognized, the name of the executable MUST be used.
+1. If either the package or executable name is ambiguous, a name where a clarifying prefix or suffix is added SHOULD be
+   used.
+1. As a last resort, the name of the package should be constructed to best convey its target language and scope, e.g.
+   `json-language-server` for a JSON language server.
 
 ## `description`
 
-Short description of the package. The description SHOULD be sourced from the
-upstream package directly.
+Short description of the package. The description SHOULD be sourced from the upstream package directly.
 
 ## `homepage`
 
-The homepage of the package. The homepage SHOULD be a public website if
-available, otherwise it MUST be a URL to the source code.
+The homepage of the package. The homepage SHOULD be a public website if available, otherwise it MUST be a URL to the
+source code.
 
-The URL MUST be a [well-formed URL][rfc1738]. The URL scheme MUST be either
-`http` or `https`.
+The URL MUST be a [well-formed URL][rfc1738]. The URL scheme MUST be either `http` or `https`.
 
 ## `licenses`
 
 List of licenses associated with this package. MUST contain at least one entry.
 
-The license MUST be a [SPDX-compatible](https://spdx.org/licenses/) license
-identifier. Should the package use a license not available as a SPDX identifier, the license "proprietary" (all lower
-case) MUST be used.
+The license MUST be a [SPDX-compatible](https://spdx.org/licenses/) license identifier. Should the package use a license
+not available as a SPDX identifier, the license "proprietary" (all lower case) MUST be used.
 
 Examples:
 
@@ -116,15 +106,13 @@ Examples:
 
 ## `languages`
 
-The languages the package targets. MAY be empty. A language is an arbitrary
-string (e.g., `"Rust"`). The casing of the string MUST be the same as other
-references to the same language in other package definitions, i.e. it's an
-error if package A specifies `Javascript` and package B specifies `JavaScript`.
+The languages the package targets. MAY be empty. A language is an arbitrary string (e.g., `"Rust"`). The casing of the
+string MUST be the same as other references to the same language in other package definitions, i.e. it's an error if
+package A specifies `Javascript` and package B specifies `JavaScript`.
 
 ## `categories`
 
-The categories the package belongs to. MAY be empty. If not empty, each entry
-MUST be one of:
+The categories the package belongs to. MAY be empty. If not empty, each entry MUST be one of:
 
 - `Compiler`
 - `DAP`
@@ -135,10 +123,9 @@ MUST be one of:
 
 ## `source`
 
-The source of the package. The `source` entry contains all necessary
-information to properly install the package. At the very minimum it MUST
-contain an `id` property. The `id` property MUST be a [purl][purl]-compatible
-package identifier. The purl identifier MUST contain a version component.
+The source of the package. The `source` entry contains all necessary information to properly install the package. At the
+very minimum it MUST contain an `id` property. The `id` property MUST be a [purl][purl]-compatible package identifier.
+The purl identifier MUST contain a version component.
 
 The source object MAY contain additional properties to support installation.
 
@@ -156,10 +143,9 @@ source:
 
 ## `bin`
 
-The executables the package provides. The key is the canonical name of the
-executable, and the value is either (i) a relative path to the executable from
-the package directory, or (ii) an expression that delegates path resolution
-(e.g., `npm:typescript-language-server` or `cargo:rust-analyzer`).
+The executables the package provides. The key is the canonical name of the executable, and the value is either (i) a
+relative path to the executable from the package directory, or (ii) an expression that delegates path resolution (e.g.,
+`npm:typescript-language-server` or `cargo:rust-analyzer`), or (iii) an [expression](#expressions).
 
 On Unix systems, a symlink is created. On Windows, a wrapper batch `.cmd` executable is always created.
 
@@ -176,7 +162,7 @@ bin:
 The architecture independent files the package provides.
 
 The mapping MUST either (i) link a single target file to a single source file, or (ii) link a target directory to a
-source directory.
+source directory, or (iii) an [expression](#expressions).
 
 This creates symlinks (`uv_fs_symlink`) on all platforms.
 
@@ -184,8 +170,10 @@ Example:
 
 ```yaml
 share:
-  jdtls/lombok.jar: lombok.jar # Links $MASON/share/jdtls/lombok.jar -> <package>/lombok.jar
-  jdtls/plugins/: plugins/ # Links $MASON/SHARE/jdtls/plugins/ -> <package>/plugins/**/* (i.e. all files within the target directory)
+   # Links $MASON/share/jdtls/lombok.jar -> <package>/lombok.jar
+  jdtls/lombok.jar: lombok.jar
+   # Links $MASON/share/jdtls/plugins/ -> <package>/plugins/**/* (i.e. all files within the target directory)
+  jdtls/plugins/: plugins/
 ```
 
 ## `opt`
@@ -194,7 +182,7 @@ The optional, add-on, contents of a package. This is for example useful in situa
 binaries that should not be linked to the "global" Mason `bin/` directory.
 
 The mapping MUST either (i) link a single target file to a single source file, or (ii) link a target directory to a
-source directory.
+source directory, or (iii) an [expression](#expressions).
 
 This creates symlinks (`uv_fs_symlink`) on all platforms.
 
@@ -202,9 +190,40 @@ Example:
 
 ```yaml
 opt:
-  solang/llvm15.0/LICENSE: doc/LICENSE # Links $MASON/opt/solang/llvm15.0/LICENSE -> <package>/doc/LICENSE
-  solang/llvm15.0/: llvm15.0/ # Links $MASON/opt/solang/llvm15.0/ -> <package>/llvm15.0/**/* (i.e. all files within the target directory)
+  # Links $MASON/opt/solang/llvm15.0/LICENSE -> <package>/doc/LICENSE
+  solang/llvm15.0/LICENSE: doc/LICENSE
+  # Links $MASON/opt/solang/llvm15.0/ -> <package>/llvm15.0/**/* (i.e. all files within the target directory)
+  solang/llvm15.0/: llvm15.0/
 ```
+
+# Expressions
+
+When specified, a component of a package definition may include expressions. These expressions can only be used in
+string values, and are denoted by `{{expr}}`. This allows for dynamically evaluating values, when needed. Example:
+
+```yaml
+# ...
+source:
+    id: pkg:github/rust-lang/rust-analyzer@v1.0.0
+    asset:
+        - target: darwin_x64
+          file: rust-analyzer-darwin_x64_{{ version | strip_prefix "v" }}.tar.gz
+          bin: rust-analyzer-darwin_x64
+          some_other_bin: rust-fmt-darwin_x64
+        - target: linux_x64
+          file: rust-analyzer-linux_x64_{{ version | strip_prefix "v" }}.tar.gz
+          bin: rust-analyzer-linux_x64
+          some_other_bin: rust-fmt-linux_x64
+
+bin:
+    # This will be evaluated to either "rust-analyzer-darwin_x64" or "rust-analyzer-linux_x64", depending on which
+    # platform the package is being installed on.
+    rust-analyzer: "{{source.asset.bin}}"
+    rustfmt: "{{source.asset.some_other_bin}}"
+```
+
+Expressions use basic Lua syntax with the additional ability to pipe values to a limited set of transformation
+functions. All expressions are evaluated in a context, where values are accessed through normal variable access.
 
 [bcp14]: https://tools.ietf.org/html/bcp14
 [mason]: https://github.com/williamboman/mason.nvim
