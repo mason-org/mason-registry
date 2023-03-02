@@ -23,6 +23,8 @@
   - [`categories`](#categories)
   - [`source`](#source)
   - [`bin`](#bin)
+  - [`share`](#share)
+  - [`opt`](#opt)
 <!--toc:end-->
 
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
@@ -59,6 +61,12 @@ The following is a rough outline of the package definition schema:
   },
   bin?: {
     [executable: string]: string
+  },
+  share?: {
+    [share_location: string]: string
+  },
+  opt?: {
+    [opt_location: string]: string
   }
 }
 ```
@@ -153,12 +161,49 @@ executable, and the value is either (i) a relative path to the executable from
 the package directory, or (ii) an expression that delegates path resolution
 (e.g., `npm:typescript-language-server` or `cargo:rust-analyzer`).
 
+On Unix systems, a symlink is created. On Windows, a wrapper batch `.cmd` executable is always created.
+
 Example:
 
 ```yaml
 bin:
   typescript-language-server: npm:typescript-language-server
   rust-analyzer: bin/rust-analyzer
+```
+
+## `share`
+
+The architecture independent files the package provides.
+
+The mapping MUST either (i) link a single target file to a single source file, or (ii) link a target directory to a
+source directory.
+
+This creates symlinks (`uv_fs_symlink`) on all platforms.
+
+Example:
+
+```yaml
+share:
+  jdtls/lombok.jar: lombok.jar # Links $MASON/share/jdtls/lombok.jar -> <package>/lombok.jar
+  jdtls/plugins/: plugins/ # Links $MASON/SHARE/jdtls/plugins/ -> <package>/plugins/**/* (i.e. all files within the target directory)
+```
+
+## `opt`
+
+The optional, add-on, contents of a package. This is for example useful in situations when a package provides auxiliary
+binaries that should not be linked to the "global" Mason `bin/` directory.
+
+The mapping MUST either (i) link a single target file to a single source file, or (ii) link a target directory to a
+source directory.
+
+This creates symlinks (`uv_fs_symlink`) on all platforms.
+
+Example:
+
+```yaml
+opt:
+  solang/llvm15.0/LICENSE: doc/LICENSE # Links $MASON/opt/solang/llvm15.0/LICENSE -> <package>/doc/LICENSE
+  solang/llvm15.0/: llvm15.0/ # Links $MASON/opt/solang/llvm15.0/ -> <package>/llvm15.0/**/* (i.e. all files within the target directory)
 ```
 
 [bcp14]: https://tools.ietf.org/html/bcp14
