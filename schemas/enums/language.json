@@ -138,6 +138,7 @@
         "WGSL",
         "XML",
         "YAML",
+        "YARA",
         "Zig",
         "Zsh"
     ]

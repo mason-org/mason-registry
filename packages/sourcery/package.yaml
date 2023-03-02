@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/sourcery-cli@1.0.5
+  id: pkg:pypi/sourcery-cli@1.0.6
 
 bin:
   sourcery: pypi:sourcery
