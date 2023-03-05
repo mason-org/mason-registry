@@ -11,7 +11,20 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/veryl-ls@0.5.5
+  id: pkg:github/dalance/veryl@veryl-v0.5.5
+  asset:
+    - target: darwin_arm64
+      file: veryl-aarch64-mac.zip
+      bin: veryl-ls
+    - target: darwin_x64
+      file: veryl-x86_64-mac.zip
+      bin: veryl-ls
+    - target: linux_x64
+      file: veryl-x86_64-linux.zip
+      bin: veryl-ls
+    - target: win_x64
+      file: veryl-x86_64-windows.zip
+      bin: veryl-ls.exe
 
 bin:
-  veryl-ls: cargo:veryl-ls
+  veryl-ls: "{{source.asset.bin}}"
