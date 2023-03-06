@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/svls@0.2.6
+  id: pkg:cargo/svls@0.2.7
 
 bin:
   svls: cargo:svls
