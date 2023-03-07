@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/phpstan/phpstan@1.10.4
+  id: pkg:github/phpstan/phpstan@1.10.5
   asset:
     file: phpstan.phar
 
