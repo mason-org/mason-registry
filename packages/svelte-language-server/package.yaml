@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/svelte-language-server@0.15.5
+  id: pkg:npm/svelte-language-server@0.15.6
 
 bin:
   svelteserver: npm:svelteserver
