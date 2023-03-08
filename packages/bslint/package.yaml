@@ -1,0 +1,16 @@
+---
+name: bslint
+description: A BrighterScript CLI tool to lint your code without compiling your project.
+homepage: https://github.com/rokucommunity/bslint
+licenses:
+  - MIT
+languages:
+  - BrighterScript
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/%40rokucommunity/bslint@0.8.1
+
+bin:
+  bslint: npm:bslint
