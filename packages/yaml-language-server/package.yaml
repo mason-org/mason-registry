@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/yaml-language-server@1.11.0
+  id: pkg:npm/yaml-language-server@1.12.0
 
 bin:
   yaml-language-server: npm:yaml-language-server
