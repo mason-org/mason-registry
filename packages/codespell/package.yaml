@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/codespell@2.2.2
+  id: pkg:pypi/codespell@2.2.4
 
 bin:
   codespell: pypi:codespell
