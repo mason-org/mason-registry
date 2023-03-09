@@ -4,7 +4,7 @@ description: |
   The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes your code to follow standards; whether you want to follow PHP
   coding standards as defined in the PSR-1, PSR-2, etc., or other community driven ones like the Symfony one. You can
   also define your (team's) style through configuration.
-homepage: https://github.com/FriendsOfPHP/PHP-CS-Fixer
+homepage: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
 licenses:
   - MIT
 languages:
@@ -13,7 +13,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/FriendsOfPHP/PHP-CS-Fixer@v3.14.4
+  id: pkg:github/PHP-CS-Fixer/PHP-CS-Fixer@v3.14.4
   asset:
     file: php-cs-fixer.phar
 
