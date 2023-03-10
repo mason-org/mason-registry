@@ -23,6 +23,9 @@ source:
     - target: linux_x64
       file: golangci-lint-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
       bin: golangci-lint-{{ version | strip_prefix "v" }}-linux-amd64/golangci-lint
+    - target: linux_arm64
+      file: golangci-lint-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
+      bin: golangci-lint-{{ version | strip_prefix "v" }}-linux-arm64/golangci-lint
     - target: linux_x86
       file: golangci-lint-{{ version | strip_prefix "v" }}-linux-386.tar.gz
       bin: golangci-lint-{{ version | strip_prefix "v" }}-linux-386/golangci-lint
