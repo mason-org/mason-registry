@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-js-debug@v1.74.1
+  id: pkg:github/microsoft/vscode-js-debug@v1.76.0
   build:
     run: |
       npm install --ignore-scripts --legacy-peer-deps
