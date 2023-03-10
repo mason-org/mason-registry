@@ -11,11 +11,12 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-js-debug@v1.74.1 # renovate:datasource=github-tags
+  id: pkg:github/microsoft/vscode-js-debug@v1.74.1
   build:
     run: |
       npm install --ignore-scripts --legacy-peer-deps
       npm run compile
+      npm exec gulp vsDebugServerBundle
       npm install --production --ignore-scripts --legacy-peer-deps
 
 bin:
