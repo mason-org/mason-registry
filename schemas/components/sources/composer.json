@@ -9,7 +9,7 @@
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:composer/.+@.+"
+            "pattern": "^pkg:composer/.+/.+@.+"
         }
     }
 }
