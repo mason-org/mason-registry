@@ -7,7 +7,7 @@
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:golang/.+@.+"
+            "pattern": "^pkg:golang/.+/.+@.+"
         },
         "extra_packages": {
             "type": "array",
