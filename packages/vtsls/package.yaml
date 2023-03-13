@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vtsls/language-server@0.1.14
+  id: pkg:npm/%40vtsls/language-server@0.1.15
 
 bin:
   vtsls: npm:vtsls
