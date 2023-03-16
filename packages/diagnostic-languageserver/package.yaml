@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/diagnostic-languageserver@1.14.2
+  id: pkg:npm/diagnostic-languageserver@1.15.0
 
 bin:
   diagnostic-languageserver: npm:diagnostic-languageserver
