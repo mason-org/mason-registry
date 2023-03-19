@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:cargo/clippy@v0.0.302
+  id: pkg:cargo/clippy@0.0.302
 
 bin:
   clippy: cargo:clippy
