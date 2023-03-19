@@ -1,0 +1,17 @@
+---
+name: clippy
+description: A bunch of lints to catch common mistakes and improve your Rust code.
+homepage: https://github.com/rust-lang/rust-clippy
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Rust
+categories:
+  - Linter
+
+source:
+  id: pkg:cargo/clippy@v0.0.302
+
+bin:
+  clippy: cargo:clippy
