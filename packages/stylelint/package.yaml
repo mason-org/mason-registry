@@ -1,0 +1,17 @@
+---
+name: stylelint
+description: A mighty CSS linter that helps you avoid errors and enforce conventions.
+homepage: https://stylelint.io
+licenses:
+  - MIT
+languages:
+  - CSS
+  - Sass
+  - SCSS
+  - LESS
+categories:
+  - Linter
+source:
+  id: pkg:github.com/stylelint/stylelint/releases/tag/15.3.0
+bin:
+  stylelint: bin/stylelint.js
