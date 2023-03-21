@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/sql-formatter@12.1.3
+  id: pkg:npm/sql-formatter@12.1.4
 
 bin:
   sql-formatter: npm:sql-formatter
