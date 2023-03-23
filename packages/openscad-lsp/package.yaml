@@ -1,5 +1,5 @@
 ---
-name: openscad
+name: openscad-lsp
 description: Language Server Protocol implementation for OpenSCAD, written in Rust.
 homepage: https://github.com/Leathong/openscad-LSP
 licenses:
