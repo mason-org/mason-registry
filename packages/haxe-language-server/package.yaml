@@ -1,0 +1,22 @@
+---
+name: haxe-language-server
+description: Language Server Protocol implementation for the Haxe language.
+homepage: https://github.com/vshaxe/haxe-language-server
+licenses:
+  - MIT
+languages:
+  - Haxe
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/vshaxe/haxe-language-server@29f20baaf8bfd714a4a5ca3c6eee06cd2b71f182
+  build:
+    run: |
+      npm install
+      npm exec lix run vshaxe-build -t language-server
+      npm install --production
+
+bin:
+  haxe-language-server: node:bin/server.js
