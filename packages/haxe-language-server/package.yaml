@@ -15,7 +15,7 @@ source:
   build:
     run: |
       npm install
-      npm exec lix run vshaxe-build -t language-server
+      npm exec -- lix run vshaxe-build -t language-server
       npm install --production
 
 bin:
