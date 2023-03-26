@@ -12,7 +12,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/Samsung/netcoredbg@2.2.0-961
+  id: pkg:github/Samsung/netcoredbg@2.2.0-974
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: netcoredbg-osx-amd64.tar.gz:libexec/
