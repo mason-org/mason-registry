@@ -11,13 +11,13 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-js-debug@v1.76.1
+  id: pkg:github/microsoft/vscode-js-debug@v1.77.0
   build:
     run: |
-      npm install --ignore-scripts --legacy-peer-deps
+      npm install --ignore-scripts
       npm run compile
-      npm exec gulp vsDebugServerBundle
-      npm install --production --ignore-scripts --legacy-peer-deps
+      npm exec -- gulp vsDebugServerBundle
+      npm install --production --ignore-scripts
 
 bin:
-  js-debug-adapter: node:out/src/vsDebugServer.js
+  js-debug-adapter: node:dist/src/vsDebugServer.js
