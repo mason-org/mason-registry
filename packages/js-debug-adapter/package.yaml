@@ -21,3 +21,4 @@ source:
 
 bin:
   js-debug-adapter: node:dist/src/vsDebugServer.js
+  js-debug-adapter-dap: node:dist/src/dapDebugServer.js
