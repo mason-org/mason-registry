@@ -16,7 +16,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/rome@11.0.0
+  id: pkg:npm/rome@12.0.0
 
 bin:
   rome: npm:rome
