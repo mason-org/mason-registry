@@ -12,12 +12,8 @@ categories:
 
 source:
   id: pkg:github/microsoft/vscode-js-debug@v1.77.0
-  build:
-    run: |
-      npm install --ignore-scripts
-      npm run compile
-      npm exec -- gulp vsDebugServerBundle
-      npm install --production --ignore-scripts
+  asset:
+    file: js-debug-dap-{{version}}.tar.gz
 
 bin:
-  js-debug-adapter: node:dist/src/vsDebugServer.js
+  js-debug-adapter: node:js-debug/src/dapDebugServer.js
