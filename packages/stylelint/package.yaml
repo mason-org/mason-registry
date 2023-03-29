@@ -11,7 +11,9 @@ languages:
   - LESS
 categories:
   - Linter
+
 source:
-  id: pkg:github.com/stylelint/stylelint/releases/tag/15.3.0
+  id: pkg:npm/stylelint@15.3.0
+
 bin:
-  stylelint: bin/stylelint.js
+  stylelint: npm:stylelint
