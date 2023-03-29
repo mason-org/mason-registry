@@ -1,0 +1,41 @@
+---
+name: java-language-server
+description: Java language server using the Java compiler API.
+homepage: https://github.com/georgewfraser/java-language-server
+licenses:
+  - MIT
+languages:
+  - Java
+categories:
+  - LSP
+  - DAP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/georgewfraser/java-language-server@v0.2.39
+  build:
+    - target: [darwin_x64, darwin_arm64]
+      run: |
+        ./scripts/link_mac.sh
+        mvn package -DskipTests
+      bin:
+        lsp: dist/lang_server_mac.sh
+        dap: dist/debug_adapter_mac.sh
+    - target: [linux_arm, linux_arm64, linux_x64, linux_x86]
+      run: |
+        ./scripts/link_linux.sh
+        mvn package -DskipTests
+      bin:
+        lsp: dist/lang_server_linux.sh
+        dap: dist/debug_adapter_linux.sh
+    - target: [win_arm, win_arm64, win_x64, win_x86]
+      run: |
+        bash .\scripts\link_windows.sh
+        mvn package -DskipTests
+      bin:
+        lsp: dist/lang_server_windows.cmd
+        dap: dist/debug_adapter_windows.cmd
+
+bin:
+  java-language-server: "{{source.build.bin.lsp}}"
+  java-language-server-debugger: "{{source.build.bin.dap}}"
