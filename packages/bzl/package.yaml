@@ -13,7 +13,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:generic/bzl@v1.4.5
+  id: pkg:generic/bzl@v1.4.22
   download:
     - target: darwin_x64
       files:
@@ -23,29 +23,13 @@ source:
       files:
         bzl: https://get.bzl.io/darwin_arm64/{{version}}/bzl
       bin: bzl
-    - target: linux_x64_openbsd
-      files:
-        bzl: https://get.bzl.io/openbsd_amd64/{{version}}/bzl
-      bin: bzl
-    - target: linux_arm64_openbsd
-      files:
-        bzl: https://get.bzl.io/openbsd_arm64/{{version}}/bzl
-      bin: bzl
     - target: linux_x64
       files:
         bzl: https://get.bzl.io/linux_amd64/{{version}}/bzl
       bin: bzl
-    - target: linux_arm64
-      files:
-        bzl: https://get.bzl.io/linux_arm64/{{version}}/bzl
-      bin: bzl
     - target: win_x64
       files:
         bzl.exe: https://get.bzl.io/windows_amd64/{{version}}/bzl.exe
-      bin: bzl.exe
-    - target: win_arm64
-      files:
-        bzl.exe: https://get.bzl.io/windows_arm64/{{version}}/bzl.exe
       bin: bzl.exe
 
 bin:
