@@ -125,6 +125,7 @@
         "Snakemake",
         "Solidity",
         "Sphinx",
+        "Starlark",
         "Stylelint",
         "Svelte",
         "SystemVerilog",
