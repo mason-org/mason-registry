@@ -1,0 +1,16 @@
+---
+name: sqlfmt
+description: sqlfmt formats your dbt SQL files so you don't have to. It is similar in nature to black, gofmt, and rustfmt (but for SQL).
+homepage: https://sqlfmt.com/
+licenses:
+  - Apache-2.0
+languages:
+  - SQL
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/shandy-sqlfmt@0.17.0
+
+bin:
+  autopep8: pypi:sqlfmt
