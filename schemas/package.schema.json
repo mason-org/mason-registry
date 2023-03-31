@@ -12,7 +12,8 @@
         },
         "description": {
             "type": "string",
-            "description": "The description of the package. Usually sourced upstream."
+            "description": "The description of the package. Usually sourced upstream.",
+            "pattern": "^\W[.\n]{10,}\."
         },
         "homepage": {
             "type": "string",
