@@ -1,0 +1,16 @@
+---
+name: sqlfmt
+description: sqlfmt formats your dbt SQL files so you don't have to
+homepage: https://sqlfmt.com/
+licenses:
+  - Apache License 2.0
+languages:
+  - SQL
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/shandy-sqlfmt@0.17.0
+
+bin:
+  autopep8: pypi:sqlfmt
