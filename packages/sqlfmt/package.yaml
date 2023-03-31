@@ -3,7 +3,7 @@ name: sqlfmt
 description: sqlfmt formats your dbt SQL files so you don't have to. It is similar in nature to black, gofmt, and rustfmt (but for SQL).
 homepage: https://sqlfmt.com/
 licenses:
-  - Apache License 2.0
+  - Apache-2.0
 languages:
   - SQL
 categories:
