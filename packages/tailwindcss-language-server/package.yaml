@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40tailwindcss/language-server@0.0.12
+  id: pkg:npm/%40tailwindcss/language-server@0.0.13
 
 bin:
   tailwindcss-language-server: npm:tailwindcss-language-server
