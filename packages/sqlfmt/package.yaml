@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/shandy-sqlfmt@0.17.0
 
 bin:
-  autopep8: pypi:sqlfmt
+  sqlfmt: pypi:sqlfmt
