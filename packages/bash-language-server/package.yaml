@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/bash-language-server@4.8.4
+  id: pkg:npm/bash-language-server@4.9.0
 
 bin:
   bash-language-server: npm:bash-language-server
