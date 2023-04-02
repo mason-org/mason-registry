@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/awk-language-server@0.9.4
+  id: pkg:npm/awk-language-server@0.9.5
 
 bin:
   awk-language-server: npm:awk-language-server
