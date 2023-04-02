@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/artempyanykh/marksman@2023-03-04 # renovate:versioning=loose
+  id: pkg:github/artempyanykh/marksman@2023-04-02 # renovate:versioning=loose
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: marksman-macos
