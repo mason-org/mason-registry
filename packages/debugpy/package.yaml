@@ -14,4 +14,4 @@ source:
 
 bin:
   debugpy: pyvenv:debugpy
-  debugy-adapter: pyvenv:debugpy.adapter
+  debugpy-adapter: pyvenv:debugpy.adapter
