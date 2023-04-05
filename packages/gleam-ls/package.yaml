@@ -1,7 +1,7 @@
 ---
 name: Gleam lsp
 description: |
-  The Gleam lsp provided as part of the Gleam programming language
+  A friendly language for building type-safe, scalable systems!
 homepage: https://gleam.run/
 licenses:
   - Apache-2.0
