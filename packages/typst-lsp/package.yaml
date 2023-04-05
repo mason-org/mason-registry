@@ -1,0 +1,33 @@
+---
+name: typst-lsp
+description: |
+  A brand-new language server for Typst.
+homepage: https://github.com/nvarner/typst-lsp
+licenses:
+  - MIT
+languages:
+  - Typst
+categories:
+  - LSP
+source:
+  id: pkg:github/nvarner/typst-lsp@v0.3.1
+  asset:
+    - target: darwin-arm64
+      file: typst-lsp-darwin-arm64
+    - target: darwin-x64
+      file: typst-lsp-darwin-x64
+    - target: linux-arm64
+      file: typst-lsp-linux-arm64
+    - target: linux-x64
+      file: typst-lsp-linux-x64
+    - target: linux-armhf
+      file: typst-lsp-linux-armhf
+    - target: win32-arm64
+      file: typst-lsp-win32-arm64.exe
+    - target: win32-ia32
+      file: typst-lsp-win32-ia32.exe
+    - target: win32-x64
+      file: typst-lsp-win32-x64.exe
+
+bin:
+  typst-lsp: "{{source.asset.file}}"
