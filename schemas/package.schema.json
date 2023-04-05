@@ -1,6 +1,6 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/package",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://json.schemastore.org/mason-registry.json",
     "title": "Mason Registry package schema",
     "description": "Schema for package definitions.",
     "type": "object",
@@ -24,32 +24,32 @@
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "enums/spdx-license"
+                "$ref": "mason-registry.json/enums/spdx-license"
             }
         },
         "languages": {
             "type": "array",
             "items": {
-                "$ref": "enums/language"
+                "$ref": "mason-registry.json/enums/language"
             }
         },
         "categories": {
             "type": "array",
             "items": {
-                "$ref": "enums/category"
+                "$ref": "mason-registry.json/enums/category"
             }
         },
         "source": {
-            "$ref": "components/source"
+            "$ref": "mason-registry.json/components/source"
         },
         "bin": {
-            "$ref": "components/bin"
+            "$ref": "mason-registry.json/components/bin"
         },
         "share": {
-            "$ref": "components/share"
+            "$ref": "mason-registry.json/components/share"
         },
         "opt": {
-            "$ref": "components/opt"
+            "$ref": "mason-registry.json/components/opt"
         },
         "ci_skip": {
             "oneOf": [
@@ -59,7 +59,7 @@
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "enums/platform"
+                        "$ref": "mason-registry.json/enums/platform"
                     }
                 }
             ]
