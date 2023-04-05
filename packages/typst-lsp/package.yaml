@@ -28,6 +28,5 @@ source:
       file: typst-lsp-win32-ia32.exe
     - target: win32-x64
       file: typst-lsp-win32-x64.exe
-
 bin:
   typst-lsp: "{{source.asset.file}}"
