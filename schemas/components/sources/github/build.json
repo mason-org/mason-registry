@@ -1,6 +1,6 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/github/build",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/build",
     "type": "object",
     "$defs": {
         "Build": {
@@ -16,11 +16,11 @@
                         {
                             "type": "array",
                             "items": {
-                                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                "$ref": "/mason-registry.json/enums/platform"
                             }
                         },
                         {
-                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                            "$ref": "/mason-registry.json/enums/platform"
                         }
                     ]
                 },

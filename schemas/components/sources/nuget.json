@@ -1,6 +1,6 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/nuget",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/nuget",
     "type": "object",
     "additionalProperties": false,
     "required": ["id"],
