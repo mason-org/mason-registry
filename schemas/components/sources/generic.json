@@ -1,63 +1,58 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://json.schemastore.org/mason-registry.json/components/sources/generic",
-  "type": "object",
-  "$defs": {
-    "Download": {
-      "type": "object",
-      "required": [
-        "files"
-      ],
-      "additionalProperties": true,
-      "properties": {
-        "target": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "$ref": "/mason-registry.json/enums/platform"
-              }
-            },
-            {
-              "$ref": "/mason-registry.json/enums/platform"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/generic",
+    "type": "object",
+    "$defs": {
+        "Download": {
+            "type": "object",
+            "required": ["files"],
+            "additionalProperties": true,
+            "properties": {
+                "target": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "/mason-registry.json/enums/platform"
+                            }
+                        },
+                        {
+                            "$ref": "/mason-registry.json/enums/platform"
+                        }
+                    ]
+                },
+                "files": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^[a-zA-Z0-9_\\-\\.]+$": {
+                            "type": "string",
+                            "pattern": "^https?://"
+                        }
+                    },
+                    "additionalProperties": false
+                }
             }
-          ]
-        },
-        "files": {
-          "type": "object",
-          "patternProperties": {
-            "^[a-zA-Z0-9_\\-\\.]+$": {
-              "type": "string",
-              "pattern": "^https?://"
-            }
-          },
-          "additionalProperties": false
         }
-      }
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "id",
-    "download"
-  ],
-  "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^pkg:generic/.+@.+"
     },
-    "download": {
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/Download"
-          }
+    "additionalProperties": false,
+    "required": ["id", "download"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:generic/.+@.+"
         },
-        {
-          "$ref": "#/$defs/Download"
+        "download": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Download"
+                    }
+                },
+                {
+                    "$ref": "#/$defs/Download"
+                }
+            ]
         }
-      ]
     }
-  }
 }
