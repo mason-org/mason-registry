@@ -71,6 +71,7 @@
         "homepage",
         "licenses",
         "languages",
+        "categories",
         "source"
     ]
 }

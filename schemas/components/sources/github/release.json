@@ -57,7 +57,7 @@
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:github/.+@.+"
+            "pattern": "^pkg:github/.+/.+@.+"
         },
         "asset": {
             "$ref": "#/$defs/Asset"
@@ -71,7 +71,7 @@
                 "properties": {
                     "id": {
                         "type": "string",
-                        "pattern": "^pkg:github/[^@]+$"
+                        "pattern": "^pkg:github/.+/[^@]+$"
                     },
                     "constraint": {
                         "type": "string",
