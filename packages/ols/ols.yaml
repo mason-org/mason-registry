@@ -12,7 +12,7 @@ categories:
 source:
   id: pkg:github/DanielGavin/ols@nightly
   asset:
-    - target: darwin_x64
+    - target: [darwin_x64, darwin_arm64]
       file: ols-x86_64-darwin
       bin: ols-x86_64-darwin
     - target: linux_x64
