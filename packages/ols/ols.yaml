@@ -1,6 +1,6 @@
 ---
 name: ols
-description: Odin Language Server.
+description: Language server for Odin. This project is still in early development.
 homepage: https://github.com/DanielGavin/ols
 licenses:
   - MIT
