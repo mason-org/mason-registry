@@ -15,10 +15,7 @@ source:
     - target: [darwin_x64, darwin_arm64]
       file: ols-x86_64-darwin
       bin: ols-x86_64-darwin
-    - target: linux_x64
-      file: ols-x86_64-unknown-linux-gnu 
-      bin: ols-x86_64-unknown-linux-gnu
-    - target: linux_x86
+    - target: linux_x64_gnu
       file: ols-x86_64-unknown-linux-gnu 
       bin: ols-x86_64-unknown-linux-gnu
     - target: win_x86
