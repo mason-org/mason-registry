@@ -19,6 +19,19 @@
   - [`share`](#share)
   - [`opt`](#opt)
 - [Expressions](#expressions)
+- [Examples](#examples)
+  - [Common fields](#common-fields)
+  - [cargo](#cargo)
+  - [composer](#composer)
+  - [gem](#gem)
+  - [GitHub release assets](#github-release-assets)
+  - [GitHub build from source](#github-build-from-source)
+  - [golang](#golang)
+  - [luarocks](#luarocks)
+  - [npm](#npm)
+  - [nuget](#nuget)
+  - [opam](#opam)
+  - [pypi](#pypi)
 <!--toc:end-->
 
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
@@ -107,9 +120,9 @@ not available as a SPDX identifier, the license "proprietary" (all lower case) M
 
 Examples:
 
--   `MIT`
--   `Apache-2.0`
--   `GPL-3.0-only`
+- `MIT`
+- `Apache-2.0`
+- `GPL-3.0-only`
 
 ## `languages`
 
@@ -121,12 +134,12 @@ package A specifies `Javascript` and package B specifies `JavaScript`.
 
 The categories the package belongs to. MAY be empty. If not empty, each entry MUST be one of:
 
--   `Compiler`
--   `DAP`
--   `Formatter`
--   `LSP`
--   `Linter`
--   `Runtime`
+- `Compiler`
+- `DAP`
+- `Formatter`
+- `LSP`
+- `Linter`
+- `Runtime`
 
 ## `source`
 
@@ -207,7 +220,9 @@ opt:
 # Expressions
 
 When specified, a component of a package definition may include expressions. These expressions can only be used in
-string values, and are denoted by `{{expr}}`. This allows for dynamically evaluating values, when needed. Example:
+string values, and are denoted by `{{expr}}`. This allows for dynamically evaluating values, when needed.
+
+Example:
 
 ```yaml
 # ...
@@ -239,3 +254,467 @@ functions. All expressions are evaluated in a context, where values are accessed
 [rfc1738]: https://www.rfc-editor.org/rfc/rfc1738
 [rfc2119]: https://tools.ietf.org/html/rfc2119
 [rfc8174]: https://tools.ietf.org/html/rfc8174
+
+# Examples
+
+## Common fields
+
+The following fields are common for all packages and are subject to the same requirements.
+
+Refer to the following sections for a detailed description:
+
+- [`name`](#name)
+- [`description`](#description)
+- [`homepage`](#homepage)
+- [`licenses`](#licenses)
+- [`categories`](#categories)
+
+Example:
+
+```yaml
+name: lua-language-server
+description: A language server that offers Lua language support - programmed in Lua.
+homepage: https://github.com/LuaLS/lua-language-server
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - LSP
+```
+
+<details><summary>Example: Longer descriptions</summary>
+
+Longer descriptions MUST be split on multiple lines, as to not exceed the max line length.
+
+Example:
+
+```yaml
+description: |
+  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur
+  mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+```
+
+</details>
+
+---
+
+## cargo
+
+Example:
+
+```yaml
+source:
+  id: pkg:cargo/rnix-lsp@0.2.5
+
+bin:
+  rnix-lsp: cargo:rnix-lsp
+```
+
+<details><summary>Example: Specify features</summary>
+
+To specify the features to install, use the `features` qualifier.
+
+Example:
+
+```yaml
+source:
+  id: pkg:cargo/flux-lsp@0.8.40?features=lsp,cli
+```
+
+</details>
+
+<details><summary>Example: Git source</summary>
+
+To install a cargo package from a git source you may specify the `repository_url` qualifier. This will by default target
+tags in the provided git repository (i.e. `cargo install --tag <TAG>`). To target commits instead (i.e. `cargo install --rev
+<REV>`), provide an additional `&rev=true` qualifier.
+
+Example:
+
+```yaml
+source:
+  id: pkg:cargo/flux-lsp@0.8.40?repository_url=https://github.com/influxdata/flux-lsp
+```
+
+</details>
+
+<details><summary>Example: Specify supported platforms</summary>
+
+You MUST provide the `supported_platforms` field if the package is only supported on certain platforms.
+
+Example:
+
+```yaml
+source:
+  id: pkg:cargo/flux-lsp@0.8.40
+  supported_platforms:
+    - linux_x64_gnu
+    - linux_arm64_gnu
+```
+
+</details>
+
+---
+
+## composer
+
+Example:
+
+```yaml
+source:
+  id: pkg:composer/vimeo/psalm@5.4.0
+
+bin:
+  psalm: composer:psalm
+  psalm-language-server: composer:psalm-language-server
+```
+
+---
+
+## gem
+
+Example:
+
+```yaml
+source:
+  id: pkg:gem/standard@1.26.0
+
+bin:
+  standardrb: gem:standardrb
+```
+
+<details><summary>Example: Specify supported platforms</summary>
+
+You MUST provide the `supported_platforms` field if the package is only supported on certain platforms.
+
+Example:
+
+```yaml
+source:
+  id: pkg:gem/standard@1.26.0
+  supported_platforms:
+    - linux_x64_gnu
+    - linux_arm64_gnu
+```
+
+</details>
+
+---
+
+## GitHub release assets
+
+Note: Downloaded release assets are automatically unpacked (e.g. if it's a `.tar` file it's unpacked in its download
+location).
+
+<details><summary>Example: Platform dependent release assets</summary>
+
+When multiple, platform dependent, release assets are provided you MUST register an entry for each applicable platform.
+This is done by providing a list of assets. The ordering of this list is important as clients may be target to more than
+one platform and entries appearing first in the list have precedence.
+
+When this source is parsed by the client, the list is "unwrapped" to the very first entry whose `target` applies to the
+current system.
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/LuaLS/lua-language-server@3.6.18
+  asset:
+    - target: darwin_arm64
+      file: lua-language-server-{{version}}-darwin-arm64.tar.gz
+    - target: darwin_x64
+      file: lua-language-server-{{version}}-darwin-x64.tar.gz
+    - target: linux_arm64_gnu
+      file: lua-language-server-{{version}}-linux-arm64.tar.gz
+    - target: linux_x64_gnu
+      file: lua-language-server-{{version}}-linux-x64.tar.gz
+    - target: win_x86
+      file: lua-language-server-{{version}}-win32-ia32.zip
+    - target: win_x64
+      file: lua-language-server-{{version}}-win32-x64.zip
+```
+
+It's common that platform-dependent assets contain different files and different folder structures. In order to
+facilitate linking executables at a later stage you may provide additional, arbitrary, fields. The following example
+adds a `bin` field to each entry, which is later used in a [expression](#expression) to link the executable.
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/LuaLS/lua-language-server@3.6.18
+  asset:
+    - target: darwin_arm64
+      file: lua-language-server-{{version}}-darwin-arm64.tar.gz
+      bin: lua-language-server
+    - target: win_x64
+      file: lua-language-server-{{version}}-win32-x64.zip
+      bin: lua-language-server.exe
+
+bin:
+  lua-language-server: "{{source.asset.bin}}"
+```
+</details>
+
+<details><summary>Example: Single, platform independent, release asset</summary>
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/Dart-Code/Dart-Code@v3.62.0
+  asset:
+    file: dart-code-{{ version | strip_prefix "v" }}.vsix
+```
+</details>
+
+<details><summary>Example: Downloading multiple assets</summary>
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/LuaLS/lua-language-server@3.6.18
+  asset:
+    file:
+      - lua-language-server-{{version}}
+      - lua-language-server-{{version}}.sha256
+      - LICENSE
+```
+</details>
+
+<details><summary>Example: Change asset download location</summary>
+
+By default, assets are downloaded in the root directory of the package directory. You MAY change the download location
+by appending it to the file name itself with a `:` prefix.
+
+If the download location ends with a `/` the file will be downloaded in that directory, otherwise it's a filename.
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/LuaLS/lua-language-server@3.6.18
+  asset:
+    - target: darwin_arm64
+      file: asset_file.sh:output/  # will save asset_file.sh inside output/asset_file.sh
+    - target: darwin_x64
+      file: asset_file.sh:asset.sh # will save asset_file.sh at asset.sh
+```
+</details>
+
+---
+
+## GitHub build from source
+
+Note: Build scripts run on the platform's default shell. On Unix this is `bash`, on Windows it's `pwsh`.
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/stoplightio/vscode-spectral@v1.1.2
+  build:
+    run: |
+      npm exec yarn@1 install
+      npm exec --package=yarn@1 'node make package'
+      node make package
+
+bin:
+  spectral-language-server: node:dist/server/index.js
+```
+
+<details><summary>Example: Platform-dependent build scripts</summary>
+
+Sometimes the build script cannot be expressed in a shell-agnostic way. You MUST then provide a list of entries with the
+appropriate targets. The ordering of this list is important as clients may be target to more than one platform and
+entries appearing first in the list have precedence.
+
+When this source is parsed by the client, the list is "unwrapped" to the very first entry whose `target` applies to the
+current system.
+
+Example:
+
+```yaml
+source:
+  id: pkg:github/vala-lang/vala-language-server@1.0.0
+  build:
+    - target: [darwin_x64, darwin_arm64, linux_x64, linux_x86, linux_arm64, linux_arm]
+      run: |
+        meson -Dprefix="$PWD" build
+        ninja -C build install
+    - target: [win_arm, win_arm64, win_x86, win_x64]
+      run: |
+        meson -Dprefix="($pwd).path" build
+        ninja -C build install
+```
+</details>
+
+---
+
+## golang
+
+Example:
+
+```yaml
+source:
+  id: pkg:golang/golang.org/x/tools/gopls@v0.11.0
+
+bin:
+  gopls: golang:gopls
+```
+
+<details><summary>Example: Specifying additional package path</summary>
+
+Use the subpath component to specify a sub-path of a golang package.
+
+Example:
+
+```yaml
+source:
+  id: pkg:golang/golang.org/x/tools@v0.7.0#cmd/goimports
+```
+</details>
+
+---
+
+## luarocks
+
+Example:
+
+```yaml
+source:
+  id: pkg:luarocks/luacheck@1.1.0
+
+bin:
+  luacheck: luarocks:luacheck
+```
+
+<details><summary>Example: Specifying a server</summary>
+
+Use the `repository_url` qualifier to specify a different server (i.e. `luarocks install --server`).
+
+Example:
+
+```yaml
+source:
+  id: pkg:luarocks/luaformatter@scm-1?repository_url=https://luarocks.org/dev
+```
+</details>
+
+<details><summary>Example: dev target</summary>
+
+Use the `dev` qualifier to specify a different server (i.e. `luarocks install --dev`).
+
+Example:
+
+```yaml
+source:
+  id: pkg:luarocks/teal-language-server@dev-1?dev=true
+```
+</details>
+
+---
+
+## npm
+
+Example:
+
+```yaml
+source:
+  id: pkg:npm/typescript-language-server@3.3.1
+
+bin:
+  typescript-language-server: npm:typescript-language-server
+```
+
+<details><summary>Example: Additional npm dependencies</summary>
+
+Some packages may require additional npm dependencies to be installed in the same location. This can be achieved by
+providing the `extra_packages` field.
+
+Example:
+
+```yaml
+source:
+  id: pkg:npm/typescript-language-server@3.3.1
+  extra_packages:
+    - typescript
+```
+
+Packages provided in `extra_packages` are passed as-is to npm, so they may require version constraints such as
+`typescript@4`.
+</details>
+
+---
+
+## nuget
+
+Example:
+
+```yaml
+source:
+  id: pkg:nuget/fsautocomplete@0.58.2
+
+bin:
+  fsautocomplete: nuget:fsautocomplete
+```
+
+---
+
+## opam
+
+Example:
+
+```yaml
+source:
+  id: pkg:opam/ocaml-lsp-server@1.10.2
+
+bin:
+  ocamllsp: opam:ocamllsp
+```
+
+---
+
+## pypi
+
+Example:
+
+```yaml
+source:
+  id: pkg:pypi/yamllint@1.30.0
+
+bin:
+  yamllint: pypi:yamllint
+```
+
+<details><summary>Example: Adding extra specifiers</summary>
+
+To add "extra" specifiers to a pypi package (i.e. `pip install python-lsp-server[all]`), use the `extra` qualifier.
+
+Example:
+
+```yaml
+source:
+  id: pkg:pypi/python-lsp-server@1.7.2?extra=all
+```
+</details>
+
+<details><summary>Example: Additional pypi dependencies</summary>
+
+Some packages may require additional pypi dependencies to be installed in the same location. This can be achieved by
+providing the `extra_packages` field.
+
+Example:
+
+```yaml
+source:
+  id: pkg:pypi/yapf@0.32.0
+  extra_packages:
+    - toml
+```
+
+Packages provided in `extra_packages` are passed as-is, so they may require version constraints such as `toml==4`.
+</details>
