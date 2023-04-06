@@ -8,7 +8,18 @@ categories:
     - Compiler
 
 source:
-    id: pkg:cargo/tree-sitter-cli@0.20.8
+    id: pkg:github/tree-sitter/tree-sitter@0.20.8
+    asset:
+    - target: darwin_x64
+      file: tree-sitter-macos-x64.gz
+    - target: darwin_arm64
+      file: tree-sitter-macos-x64.gz
+    - target: linux_x64
+      file: tree-sitter-linux-x64.gz
+    - target: linux_arm64
+      file: tree-sitter-linux-aarch64.gz
+    - target: win_x64
+      file: tree-sitter-windows-x64.gz
 
 bin:
     tree-sitter: cargo:tree-sitter-cli
