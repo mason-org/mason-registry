@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/enums/spdx-license",
+    "$id": "https://json.schemastore.org/mason-registry.json/enums/spdx-license",
     "$comment": "SPDX license list; releaseDate=2022-12-15; source=https://raw.githubusercontent.com/spdx/license-list-data/master/json/licenses.json",
     "enum": [
         "proprietary",

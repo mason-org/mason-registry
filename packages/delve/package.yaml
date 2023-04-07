@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:golang/github.com/go-delve/delve@v1.20.1#cmd/dlv
+  id: pkg:golang/github.com/go-delve/delve@v1.20.2#cmd/dlv
 
 bin:
   dlv: golang:dlv

@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/github/release",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/release",
     "type": "object",
     "$defs": {
         "Asset": {
@@ -17,11 +17,11 @@
                                     {
                                         "type": "array",
                                         "items": {
-                                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                            "$ref": "/mason-registry.json/enums/platform"
                                         }
                                     },
                                     {
-                                        "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                        "$ref": "/mason-registry.json/enums/platform"
                                     }
                                 ]
                             },
@@ -57,7 +57,7 @@
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:github/.+@.+"
+            "pattern": "^pkg:github/.+/.+@.+"
         },
         "asset": {
             "$ref": "#/$defs/Asset"
@@ -71,7 +71,7 @@
                 "properties": {
                     "id": {
                         "type": "string",
-                        "pattern": "^pkg:github/[^@]+$"
+                        "pattern": "^pkg:github/.+/[^@]+$"
                     },
                     "constraint": {
                         "type": "string",

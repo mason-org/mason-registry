@@ -1,14 +1,11 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/github/build",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/build",
     "type": "object",
     "$defs": {
         "Build": {
             "type": "object",
-            "required": [
-                "target",
-                "run"
-            ],
+            "required": ["target", "run"],
             "additionalProperties": true,
             "properties": {
                 "target": {
@@ -16,11 +13,11 @@
                         {
                             "type": "array",
                             "items": {
-                                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                                "$ref": "/mason-registry.json/enums/platform"
                             }
                         },
                         {
-                            "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                            "$ref": "/mason-registry.json/enums/platform"
                         }
                     ]
                 },
@@ -32,14 +29,11 @@
         }
     },
     "additionalProperties": false,
-    "required": [
-        "id",
-        "build"
-    ],
+    "required": ["id", "build"],
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:github/.+@.+"
+            "pattern": "^pkg:github/.+/.+@.+"
         },
         "build": {
             "oneOf": [

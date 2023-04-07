@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/pypi",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/pypi",
     "type": "object",
     "additionalProperties": false,
     "required": ["id"],
@@ -20,7 +20,7 @@
             "type": "array",
             "description": "List of platforms supported by the pypi package.",
             "items": {
-                "$ref": "/mason-org/mason-registry/schemas/enums/platform"
+                "$ref": "/mason-registry.json/enums/platform"
             }
         }
     }
