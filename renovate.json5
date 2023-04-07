@@ -20,7 +20,7 @@
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
-            packageNameTemplate: "{{#if (containsString datasource 'git-refs')}https://github.com/{{{packageName}}}{{else}}{{{packageName}}}{{/if}}",
+            packageNameTemplate: "{{#if (containsString datasource 'git-refs')}}https://github.com/{{{packageName}}}{{else}}{{{packageName}}}{{/if}}",
         },
         {
             fileMatch: "package\\.yaml$",
