@@ -11,7 +11,8 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/firefox-devtools/vscode-firefox-debug@2.9.8 # renovate:datasource=github-tags
+  # renovate:datasource=github-tags
+  id: pkg:github/firefox-devtools/vscode-firefox-debug@2.9.8
   build:
     run: |
       npm install
