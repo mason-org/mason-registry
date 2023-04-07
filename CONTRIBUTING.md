@@ -56,36 +56,33 @@ Package definitions are validated against a well-defined [JSON schema](./schemas
 Packages are defined following a [well-defined specification](#package-specification). Package definitions are hosted as
 separate YAML files that MUST be located at `packages/<package-name>/package.yaml`.
 
-Package sources are identified via a [purl][purl]-compatible identifier. Each package identifier MUST contain a version
-component specifying the latest available version. Package versions are automatically kept up-to-date via
-[Renovate][renovate].
+Package sources are identified via a [purl][purl] identifier. Each package source (purl) MUST contain a version
+component specifying the latest available version, e.g `pkg:github/rust-lang/rust-analyzer@2023-04-04`.
+
+Package versions are automatically kept up-to-date via [Renovate][renovate].
 
 # Package specification
 
 The following is a rough outline of the package definition schema:
 
-```json5
-{
-  name: string,
-  description: string,
-  homepage: string,
-  licenses: string[],
-  languages: string[],
-  categories: string[],
-  source: {
-    id: string,
-    [key: string]: any,
-  },
-  bin?: {
+```yaml
+name: string
+description: string
+homepage: URL
+licenses: SPDXLicense[]
+languages: string[]
+categories: Category[]
+
+source:
+    id: string
+    [key: string]: any
+
+bin?:
     [executable: string]: string
-  },
-  share?: {
+share?:
     [share_location: string]: string
-  },
-  opt?: {
+opt?:
     [opt_location: string]: string
-  }
-}
 ```
 
 ## `name`
@@ -511,10 +508,15 @@ source:
 
 Note: Build scripts run on the platform's default shell. On Unix this is `bash`, on Windows it's `pwsh`.
 
+Note: By default, Renovate is configured to look for new releases for `pkg:github` sources. However, when building from
+source, the repository most likely doesn't provide GitHub releases, but instead uses normal git tags. To ensure that
+Renovate picks up new versions, you MUST provide a datasource override via a comment (see example below).
+
 Example:
 
 ```yaml
 source:
+  # renovate:datasource=github-tags
   id: pkg:github/stoplightio/vscode-spectral@v1.1.2
   build:
     run: |
