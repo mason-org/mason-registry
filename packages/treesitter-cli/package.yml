@@ -1,25 +1,35 @@
 ---
 name: treesitter-cli
-description: The Tree-sitter CLI allows you to develop, test, and use Tree-sitter grammars from the command line. It works on MacOS, Linux, and Windows.
-homepage: https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md
+description: |
+  The Tree-sitter CLI allows you to develop, test, and use Tree-sitter grammars from the command line. It works on
+  MacOS, Linux, and Windows.
+homepage: https://tree-sitter.github.io/tree-sitter/
 licenses:
-    - MIT
+  - MIT
 categories:
-    - Compiler
+  - Compiler
 
 source:
-    id: pkg:github/tree-sitter/tree-sitter@0.20.8
-    asset:
-    - target: darwin_x64
+  id: pkg:github/tree-sitter/tree-sitter@0.20.8
+  asset:
+    - target: [darwin_x64, darwin_arm64]
       file: tree-sitter-macos-x64.gz
-    - target: darwin_arm64
-      file: tree-sitter-macos-x64.gz
+      bin: tree-sitter-macos-x64
     - target: linux_x64
       file: tree-sitter-linux-x64.gz
+      bin: tree-sitter-linux-x64
+    - target: linux_x86
+      file: tree-sitter-linux-x86.gz
+      bin: tree-sitter-linux-x86
     - target: linux_arm64
       file: tree-sitter-linux-aarch64.gz
+      bin: tree-sitter-linux-aarch64
     - target: win_x64
-      file: tree-sitter-windows-x64.gz
+      file: tree-sitter-windows-x64.gz:tree-sitter-windows-x64.exe.gz
+      bin: tree-sitter-windows-x64.exe
+    - target: win_x86
+      file: tree-sitter-windows-x86.gz:tree-sitter-windows-x86.exe.gz
+      bin: tree-sitter-windows-x86.exe
 
 bin:
-    tree-sitter: cargo:tree-sitter-cli
+  tree-sitter: "{{source.asset.bin}}"
