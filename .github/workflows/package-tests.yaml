@@ -19,10 +19,10 @@ jobs:
       any_changed: ${{ steps.changed-packages.outputs.any_changed }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
       - name: Get changed package definitions
         id: changed-packages
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@b109d83a62e94cf7c522bf6c15cb25c175850b16 # v35
         with:
           files: |
             packages/**/package.yaml
@@ -33,8 +33,8 @@ jobs:
     needs: package-diff
     if: ${{ github.event.inputs.packages || needs.package-diff.outputs.any_changed == 'true' }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: mason-org/actions/validate-schema@v1
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
+      - uses: mason-org/actions/validate-schema@3d7b2a3f34927ebe3ac6fadd7bfb06e4eff623bd # v1
         with:
           packages: ${{ github.event.inputs.packages || needs.package-diff.outputs.all_changed_files }}
 
@@ -91,8 +91,8 @@ jobs:
 
     runs-on: ${{ matrix.runs-on }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: mason-org/actions/tests@v1
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
+      - uses: mason-org/actions/tests@3d7b2a3f34927ebe3ac6fadd7bfb06e4eff623bd # v1
         with:
           packages: ${{ github.event.inputs.packages || needs.package-diff.outputs.all_changed_files }}
           target: ${{ matrix.target }}
