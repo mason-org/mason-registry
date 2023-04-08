@@ -19,11 +19,11 @@ jobs:
       should-release: ${{ steps.tag.outputs.should-release }}
 
     steps:
-      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 2
       - id: adjnoun
-        uses: mason-org/actions/adj-noun-generator@3d7b2a3f34927ebe3ac6fadd7bfb06e4eff623bd # v1
+        uses: mason-org/actions/adj-noun-generator@v1
       - id: tag
         name: Get/create tag
         shell: bash
@@ -56,7 +56,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
+      - uses: actions/checkout@v3
       - name: Set up yq
         shell: bash
         run: |
@@ -69,7 +69,7 @@ jobs:
           zip -r registry.json.zip registry.json
           sha256sum registry.json registry.json.zip > checksums.txt
       - name: Release
-        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # v1
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ needs.tag.outputs.tag }}
           fail_on_unmatched_files: true
