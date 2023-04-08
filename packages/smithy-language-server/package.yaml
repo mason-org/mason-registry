@@ -10,9 +10,10 @@ categories:
   - LSP
 
 source:
+  # renovate:datasource=git-refs
   id: pkg:github/awslabs/smithy-language-server@2a9ef9cc7cf2ad054c0320a395a19ec6e1a9f7bc
   build:
-    run: ./gradlew build
+    run: ./gradlew build; exit;
 
 bin:
   smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.2.jar
