@@ -10,6 +10,7 @@ categories:
   - LSP
 
 source:
+  # renovate:datasource=git-refs
   id: pkg:github/bscan/RakuNavigator@bc752b85f1e46c209c8e235d45798c01f10b9f0f
   build:
     run: |

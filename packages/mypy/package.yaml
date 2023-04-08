@@ -10,7 +10,8 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/mypy@1.2.0 # renovate:versioning=loose
+  # renovate:versioning=loose
+  id: pkg:pypi/mypy@1.2.0
 
 bin:
   mypy: pypi:mypy

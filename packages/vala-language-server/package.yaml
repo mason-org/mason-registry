@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=github-tags
+  # renovate:datasource=git-refs
   id: pkg:github/vala-lang/vala-language-server@7577ffb269cd31da8815b7eadd72867965a2c742
   build:
     - target: [darwin_x64, darwin_arm64, linux_x64, linux_x86, linux_arm64, linux_arm]
