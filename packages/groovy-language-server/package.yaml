@@ -13,7 +13,7 @@ source:
   # renovate:datasource=git-refs
   id: pkg:github/GroovyLanguageServer/groovy-language-server@6439fc5b98b3b7187650c60ed561f7f18da3f62c
   build:
-    run: ./gradlew build
+    run: ./gradlew --no-daemon build
 
 bin:
   groovy-language-server: java-jar:build/libs/groovy-language-server-all.jar
