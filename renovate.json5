@@ -13,10 +13,13 @@
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
+                "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "pkg:github\\/(?<packageName>.+)@(?<currentDigest>[^\\s\\?#]+).*renovate:digest",
                 "\nname: (?<depName>.+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "# renovate:.*currentValue=(?<currentValue>[^,\n]+)",
+                "# renovate:.*currentDigest=(?<currentDigest>[^,\n]+)",
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
@@ -27,9 +30,9 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "pkg:cargo\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<packageName>[^\\s&]+)",
+                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
             // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
@@ -41,7 +44,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "go",
         },
@@ -50,7 +53,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "rubygems",
         },
@@ -59,7 +62,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:(?<datasource>npm|pypi)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:(?<datasource>npm|pypi)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "{{datasource}}",
         },
@@ -68,9 +71,9 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
+                "pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{{datasource}}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
