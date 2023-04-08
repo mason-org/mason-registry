@@ -493,12 +493,17 @@ Example:
 
 ```yaml
 source:
-  id: pkg:github/LuaLS/lua-language-server@3.6.18
+  id: pkg:github/lua/lua@5.1.0
   asset:
-    - target: darwin_arm64
-      file: asset_file.sh:output/  # will save asset_file.sh inside output/asset_file.sh
-    - target: darwin_x64
-      file: asset_file.sh:asset.sh # will save asset_file.sh at asset.sh
+    file:
+      # download "lua-language-server-{{version}}" to "bin/lua-language-server-{{version}}"
+      - lua-language-server-{{version}}:bin/
+
+      # download "lua-formatter-{{version}}" to "bin/lua-format"
+      - lua-formatter-{{version}}:bin/lua-format
+
+      # download "license" to "LICENSE.txt"
+      - license:LICENSE.txt
 ```
 </details>
 
@@ -608,7 +613,7 @@ source:
 
 <details><summary>Example: dev target</summary>
 
-Use the `dev` qualifier to specify a different server (i.e. `luarocks install --dev`).
+Use the `dev` qualifier to specify a dev target (i.e. `luarocks install --dev`).
 
 Example:
 
