@@ -527,7 +527,6 @@ source:
     run: |
       npm exec yarn@1 install
       npm exec --package=yarn@1 'node make package'
-      node make package
 
 bin:
   spectral-language-server: node:dist/server/index.js
