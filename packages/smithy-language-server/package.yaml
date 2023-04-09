@@ -11,9 +11,9 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/awslabs/smithy-language-server@2a9ef9cc7cf2ad054c0320a395a19ec6e1a9f7bc
+  id: pkg:github/awslabs/smithy-language-server@ce330ecdfb0ac526997410a9308ff140294f9946
   build:
     run: ./gradlew --no-daemon build
 
 bin:
-  smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.2.jar
+  smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.3.jar
