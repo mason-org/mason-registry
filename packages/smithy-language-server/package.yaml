@@ -16,4 +16,4 @@ source:
     run: ./gradlew --no-daemon build
 
 bin:
-  smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.2.jar
+  smithy-language-server: java-jar:build/libs/smithy-language-server-0.2.3.jar
