@@ -15,7 +15,7 @@
             matchStrings: [
                 "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\nname: (?<depName>.+)",
-                "# renovate:datasource=git-refs.*pkg:github\\/(?<packageName>.+)@(?<currentDigest>[^\\s\\?#]+)",
+                "# renovate:datasource=git-refs[\\s\\S]*pkg:github\\/(?<packageName>.+)@(?<currentDigest>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
             ],
