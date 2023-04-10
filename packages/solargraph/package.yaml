@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/solargraph@0.48.0
+  id: pkg:gem/solargraph@0.49.0
 
 bin:
   solargraph: gem:solargraph
