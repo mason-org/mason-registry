@@ -1,0 +1,16 @@
+---
+name: pylyzer
+description: A fast static code analyzer & language server for Python.
+homepage: https://github.com/mtshiba/pylyzer
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/pylyzer@0.0.18
+
+bin:
+  pylyzer: cargo:pylyzer
