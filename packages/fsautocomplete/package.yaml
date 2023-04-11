@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:nuget/fsautocomplete@0.58.2
+  id: pkg:nuget/fsautocomplete@0.59.4
 
 bin:
   fsautocomplete: nuget:fsautocomplete
