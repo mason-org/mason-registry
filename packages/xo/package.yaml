@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/xo@0.54.0
+  id: pkg:npm/xo@0.54.1
 
 bin:
   xo: npm:xo
