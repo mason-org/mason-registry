@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:nuget/csharp-ls@0.5.7
+  id: pkg:nuget/csharp-ls@0.7.1
 
 bin:
   csharp-ls: nuget:csharp-ls
