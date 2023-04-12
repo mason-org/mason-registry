@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/pyright@1.1.302
+  id: pkg:npm/pyright@1.1.303
 
 bin:
   pyright: npm:pyright
