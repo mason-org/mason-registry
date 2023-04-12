@@ -28,4 +28,4 @@ source:
       file: helm_ls_linux_arm
       bin: helm_ls_linux_arm
 bin:
-  helm_ls: "{{source.asset.file}}"
+  helm_ls: "{{source.asset.bin}}"
