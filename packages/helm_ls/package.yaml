@@ -1,0 +1,31 @@
+---
+name: helm_ls
+description: A language server that offers Helm support in early development- programmed in Go.
+homepage: https://github.com/mrjosh/helm-ls
+licenses:
+  - MIT
+languages:
+  - Helm
+categories:
+  - LSP
+
+source:
+  id: pkg:github/mrjosh/helm-ls@latest
+  asset:
+    - target: darwin_x64
+      file: helm_ls_darwin_amd64
+      bin: helm_ls_darwin_amd64
+    - target: darwin_arm64
+      file: helm_ls_darwin_arm64
+      bin: helm_ls_darwin_amd64
+    - target: win_x64
+      file: helm_ls_windows_amd64
+      bin: helm_ls_windows_amd64
+    - target: linux_x64
+      file: helm_ls_linux_amd64
+      bin: helm_ls_linux_amd64
+    - target: linux_arm
+      file: helm_ls_linux_arm
+      bin: helm_ls_linux_arm
+bin:
+  helm_ls: "{{source.asset.file}}"
