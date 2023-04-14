@@ -19,16 +19,16 @@ source:
     - target: win_arm64
       file: millet-ls-aarch64-pc-windows-msvc.gz
       bin: millet-ls-aarch64-pc-windows-msvc
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file: millet-ls-aarch64-unknown-linux-gnu.gz
       bin: millet-ls-aarch64-unknown-linux-gnu
     - target: darwin_x64
       file: millet-ls-x86_64-apple-darwin.gz
       bin: millet-ls-x86_64-apple-darwin
     - target: win_x64
-      file: millet-ls-x86_64-pc-windows-msvc.gz
-      bin: millet-ls-x86_64-pc-windows-msvc
-    - target: linux_x64
+      file: millet-ls-x86_64-pc-windows-msvc.gz:millet-ls-x86_64-pc-windows-msvc.exe.gz
+      bin: millet-ls-x86_64-pc-windows-msvc.exe
+    - target: linux_x64_gnu
       file: millet-ls-x86_64-unknown-linux-gnu.gz
       bin: millet-ls-x86_64-unknown-linux-gnu
 
