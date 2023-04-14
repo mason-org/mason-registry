@@ -6,7 +6,7 @@ licenses:
   - Apache-2.0
   - MIT
 languages:
-  - SML
+  - Standard ML
 categories:
   - LSP
 
