@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/brighterscript-formatter@1.6.24
+  id: pkg:npm/brighterscript-formatter@1.6.25
 
 bin:
   bsfmt: npm:bsfmt
