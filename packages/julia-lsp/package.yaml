@@ -1,7 +1,7 @@
 ---
 name: julia-lsp
-description: Language server for Julia.
-homepage: https://github.com/julia-vscode/julia-vscode
+description: An implementation of the Microsoft Language Server Protocol for the Julia language.
+homepage: https://github.com/julia-vscode/LanguageServer.jl
 languages:
   - Julia
 licenses:
