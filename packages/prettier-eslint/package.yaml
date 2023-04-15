@@ -1,0 +1,29 @@
+---
+name: prettier-eslint
+description: Prettier followed by eslint --fix
+homepage: http://github.com/prettier/prettier-eslint
+licenses:
+  - MIT
+languages:
+  - Angular
+  - CSS
+  - Flow
+  - GraphQL
+  - HTML
+  - JSON
+  - JSX
+  - JavaScript
+  - LESS
+  - Markdown
+  - SCSS
+  - TypeScript
+  - Vue
+  - YAML
+categories:
+  - Formatter
+
+source:
+  id: pkg:npm/prettier-eslint@15.0.1
+
+bin:
+  prettier-eslint: npm:prettier-eslint
