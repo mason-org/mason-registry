@@ -45,7 +45,17 @@
                     "type": "object",
                     "properties": {
                         "file": {
-                            "type": "string"
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
                         }
                     }
                 }
