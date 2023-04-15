@@ -13,10 +13,10 @@ categories:
 source:
   id: pkg:github/pinterest/ktlint@0.48.2
   asset:
-    - target: [darwin_arm64, darwin_x64, linux_arm, linux_arm64, linux_x86, linux_x64]
+    - target: unix
       file: ktlint
       bin: ktlint
-    - target: [win_arm, win_arm64, win_x86, win_x64]
+    - target: win
       file: ktlint:ktlint.jar
       bin: java-jar:ktlint.jar
 

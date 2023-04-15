@@ -6,7 +6,7 @@ description: |
 homepage: https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md
 licenses:
   - MIT
-languages: []  
+languages: []
 categories:
   - Compiler
 

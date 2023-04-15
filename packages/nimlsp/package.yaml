@@ -13,10 +13,10 @@ source:
   # renovate:datasource=github-tags
   id: pkg:github/PMunch/nimlsp@v0.4.4
   build:
-    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+    - target: unix
       run: nimble build -y --localdeps
       bin: nimlsp
-    - target: [win_arm, win_arm64, win_x86, win_x64]
+    - target: win
       run: nimble build -y --localdeps
       bin: nimlsp.exe
 

@@ -16,13 +16,13 @@ source:
   # renovate:datasource=github-tags
   id: pkg:github/erlang-ls/erlang_ls@0.46.2
   build:
-    - target: [win_x64, win_x86, win_arm64, win_arm]
+    - target: win
       run: |
         rebar3 escriptize
         rebar3 as dap escriptize
       erlang_ls: _build/default/bin/erlang_ls.cmd
       els_dap: _build/dap/bin/els_dap.cmd
-    - target: [darwin_x64, darwin_arm64, linux_x64, linux_x86, linux_arm64, linux_arm]
+    - target: unix
       run: |
         </dev/null rebar3 escriptize
         </dev/null rebar3 as dap escriptize

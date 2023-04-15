@@ -15,12 +15,12 @@ categories:
 source:
   id: pkg:github/valentjn/ltex-ls@16.0.0
   asset:
-    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+    - target: unix
       file: ltex-ls-{{version}}.tar.gz
       bin:
         lsp: ltex-ls-{{version}}/bin/ltex-ls
         cli: ltex-ls-{{version}}/bin/ltex-cli
-    - target: [win_arm, win_arm64, win_x64, win_x86]
+    - target: win
       file: ltex-ls-{{version}}.tar.gz
       bin:
         lsp: ltex-ls-{{version}}/bin/ltex-ls.bat
