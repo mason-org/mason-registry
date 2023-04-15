@@ -2,7 +2,7 @@
     automerge: true,
     platformAutomerge: true,
     automergeType: "pr",
-    commitMessage: "bump({{decodeURIComponent depName}}): update to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+    commitMessage: "bump({{decodeURIComponent depName}}): update to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{{prettyNewVersion}}}{{/if}}",
     separateMajorMinor: false,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
