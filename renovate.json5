@@ -61,7 +61,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:(?<datasource>npm|pypi)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "pkg:(?<datasource>npm|pypi|nuget)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "{{datasource}}",
         },
