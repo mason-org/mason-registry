@@ -13,7 +13,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/elixir-lsp/elixir-ls@v0.14.1
+  id: pkg:github/elixir-lsp/elixir-ls@v0.14.2
   asset:
     - target: [linux_arm, linux_x64, linux_x86, linux_arm64, darwin_x64, darwin_arm64]
       file: elixir-ls.zip
