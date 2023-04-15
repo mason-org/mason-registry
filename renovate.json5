@@ -61,6 +61,15 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
+                "pkg:composer\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+            ],
+            datasourceTemplate: "packagist",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
+            matchStrings: [
+                "\nname: (?<depName>.+)",
                 "pkg:(?<datasource>npm|pypi|nuget)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "{{datasource}}",
