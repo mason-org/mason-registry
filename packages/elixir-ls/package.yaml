@@ -15,12 +15,12 @@ categories:
 source:
   id: pkg:github/elixir-lsp/elixir-ls@v0.14.2
   asset:
-    - target: [linux_arm, linux_x64, linux_x86, linux_arm64, darwin_x64, darwin_arm64]
+    - target: unix
       file: elixir-ls.zip
       bin:
         lsp: language_server.sh
         dap: debugger.sh
-    - target: [win_arm, win_x64, win_x86, win_arm64]
+    - target: win
       file: elixir-ls.zip
       bin:
         lsp: language_server.bat

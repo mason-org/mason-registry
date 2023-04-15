@@ -16,7 +16,7 @@ source:
   # renovate:datasource=github-tags
   id: pkg:github/phpactor/phpactor@2023.04.10
   build:
-    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+    - target: unix
       run: composer install --no-interaction --no-dev --optimize-autoloader --classmap-authoritative
 
 bin:

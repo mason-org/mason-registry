@@ -21,14 +21,14 @@ source:
       bin:
         lsp: dist/lang_server_mac.sh
         dap: dist/debug_adapter_mac.sh
-    - target: [linux_arm, linux_arm64, linux_x64, linux_x86]
+    - target: linux
       run: |
         ./scripts/link_linux.sh
         mvn package -DskipTests
       bin:
         lsp: dist/lang_server_linux.sh
         dap: dist/debug_adapter_linux.sh
-    - target: [win_arm, win_arm64, win_x64, win_x86]
+    - target: win
       run: |
         bash .\scripts\link_windows.sh
         mvn package -DskipTests

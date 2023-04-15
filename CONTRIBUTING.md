@@ -547,11 +547,11 @@ Example:
 source:
   id: pkg:github/vala-lang/vala-language-server@1.0.0
   build:
-    - target: [darwin_x64, darwin_arm64, linux_x64, linux_x86, linux_arm64, linux_arm]
+    - target: unix
       run: |
         meson -Dprefix="$PWD" build
         ninja -C build install
-    - target: [win_arm, win_arm64, win_x86, win_x64]
+    - target: win
       run: |
         meson -Dprefix="($pwd).path" build
         ninja -C build install

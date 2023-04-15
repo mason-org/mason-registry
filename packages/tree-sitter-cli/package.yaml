@@ -6,7 +6,7 @@ description: |
 homepage: https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md
 licenses:
   - MIT
-languages: []  
+languages: []
 categories:
   - Compiler
 
@@ -23,8 +23,8 @@ source:
       file: tree-sitter-linux-x86.gz
       bin: tree-sitter-linux-x86
     - target: linux_arm64
-      file: tree-sitter-linux-aarch64.gz
-      bin: tree-sitter-linux-aarch64
+      file: tree-sitter-linux-arm64.gz
+      bin: tree-sitter-linux-arm64
     - target: win_x64
       file: tree-sitter-windows-x64.gz:tree-sitter-windows-x64.exe.gz
       bin: tree-sitter-windows-x64.exe

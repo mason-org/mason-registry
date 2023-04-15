@@ -18,12 +18,12 @@ source:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202304131553.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_mac/
-    - target: [linux_x64, linux_x86, linux_arm64, linux_arm]
+    - target: linux
       files:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202304131553.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_linux/
-    - target: [win_x64, win_x86, win_arm64, win_arm]
+    - target: win
       files:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202304131553.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
