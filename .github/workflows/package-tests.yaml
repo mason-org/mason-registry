@@ -96,6 +96,7 @@ jobs:
         with:
           packages: ${{ github.event.inputs.packages || needs.package-diff.outputs.all_changed_files }}
           target: ${{ matrix.target }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # This job is used for branch protection rule
   # Add this job to `Status checks that are required`
