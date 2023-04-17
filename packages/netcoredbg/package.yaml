@@ -20,6 +20,9 @@ source:
     - target: linux_arm64
       file: netcoredbg-linux-arm64.tar.gz:libexec/
       bin: exec:libexec/netcoredbg/netcoredbg
+    - target: linux_x64
+      file: netcoredbg-linux-amd64.tar.gz:libexec/
+      bin: exec:libexec/netcoredbg/netcoredbg
     - target: win_x64
       file: netcoredbg-win64.zip
       bin: netcoredbg/netcoredbg.exe
