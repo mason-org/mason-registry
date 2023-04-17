@@ -17,8 +17,11 @@ source:
     - target: [darwin_arm64, darwin_x64]
       file: netcoredbg-osx-amd64.tar.gz:libexec/
       bin: exec:libexec/netcoredbg/netcoredbg
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file: netcoredbg-linux-arm64.tar.gz:libexec/
+      bin: exec:libexec/netcoredbg/netcoredbg
+    - target: linux_x64_gnu
+      file: netcoredbg-linux-amd64.tar.gz:libexec/
       bin: exec:libexec/netcoredbg/netcoredbg
     - target: win_x64
       file: netcoredbg-win64.zip
