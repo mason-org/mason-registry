@@ -1,0 +1,49 @@
+---
+name: haskell-language-server
+description: Official Haskell Language Server implementation.
+homepage: https://haskell-language-server.readthedocs.io/en/latest/
+licenses:
+  - Apache-2.0
+languages:
+  - Haskell
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/haskell/haskell-language-server@1.10.0.0
+  build:
+    - target: unix
+      run: ghcup install hls "$VERSION" -i "$PWD"
+      staged: false
+      env:
+        VERSION: "{{version}}"
+      bin:
+        wrapper: bin/haskell-language-server-wrapper
+        8.10.7: bin/haskell-language-server-8.10.7
+        9.0.2: bin/haskell-language-server-9.0.2
+        9.2.7: bin/haskell-language-server-9.2.7
+        9.4.4: bin/haskell-language-server-9.4.4
+        9.6.1: bin/haskell-language-server-9.6.1
+
+    - target: win
+      run: ghcup install hls $env:VERSION -i ($pwd).path
+      staged: false
+      env:
+        VERSION: "{{version}}"
+      bin:
+        wrapper: haskell-language-server-wrapper.exe
+        8.10.7: haskell-language-server-8.10.7.exe
+        9.0.2: haskell-language-server-9.0.2.exe
+        9.2.7: haskell-language-server-9.2.7.exe
+        9.4.4: haskell-language-server-9.4.4.exe
+        9.6.1: haskell-language-server-9.6.1.exe
+
+bin:
+  haskell-language-server-wrapper: "{{source.build.bin.wrapper}}"
+  haskell-language-server-8.10.7: "{{source.build.bin['8.10.7']}}"
+  # https://github.com/haskell/haskell-language-server/issues/3162
+  haskell-language-server-9.0.2: "{{ source.build.bin['9.0.2'] | take_if_not(is_platform('darwin_arm64')) }}"
+  haskell-language-server-9.2.7: "{{source.build.bin['9.2.7']}}"
+  haskell-language-server-9.4.4: "{{source.build.bin['9.4.4']}}"
+  haskell-language-server-9.6.1: "{{source.build.bin['9.6.1']}}"
