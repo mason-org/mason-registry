@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:composer/vimeo/psalm@5.4.0
+  id: pkg:composer/vimeo/psalm@5.9.0
 
 bin:
   psalm: composer:psalm
@@ -18,3 +18,7 @@ bin:
   psalm-plugin: composer:psalm-plugin
   psalm-refactor: composer:psalm-refactor
   psalter: composer:psalter
+
+ci_skip:
+  # freezes on Windows CI for some reason
+  - win_x64
