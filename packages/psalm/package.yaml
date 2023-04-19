@@ -18,3 +18,7 @@ bin:
   psalm-plugin: composer:psalm-plugin
   psalm-refactor: composer:psalm-refactor
   psalter: composer:psalter
+
+ci_skip:
+  # freezes on Windows CI for some reason
+  - win_x64
