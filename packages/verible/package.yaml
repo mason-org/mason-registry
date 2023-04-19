@@ -12,7 +12,6 @@ categories:
   - Formatter
 
 source:
-  # renovate:versioning=loose
   id: pkg:github/chipsalliance/verible@v0.0-3187-gb5a2cf2d
   asset:
     - target: linux_x64
