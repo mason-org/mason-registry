@@ -1,0 +1,32 @@
+---
+name: sonarlint-language-server
+description: SonarLint language server.
+homepage: https://github.com/SonarSource/sonarlint-vscode
+licenses:
+  - LGPL-3.0
+languages:
+  - C
+  - C++
+  - CSS
+  - Go
+  - HTML
+  - Java
+  - JavaScript
+  - TypeScript
+  - Python
+  - PHP
+  - Terraform
+  - Text
+categories:
+  - Linter
+
+source:
+  id: pkg:github/SonarSource/sonarlint-vscode@3.17.0%2b67752
+  asset:
+    file: sonarlint-vscode-3.17.0.vsix
+
+bin:
+  sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar
+
+share:
+  sonarlint-analyzers/: extension/analyzers/
