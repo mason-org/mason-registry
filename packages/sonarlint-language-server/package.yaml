@@ -29,4 +29,4 @@ bin:
   sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar
 
 share:
-  sonarlint-analyzers: extension/analyzers
+  sonarlint-analyzers: extension/analyzers/
