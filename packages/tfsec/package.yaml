@@ -10,7 +10,20 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/aquasecurity/tfsec@v1.28.1#cmd/tfsec
+  id: pkg:github/aquasecurity/tfsec@v1.28.1
+  asset:
+    - target: darwin_x64
+      file: tfsec-darwin-amd64
+    - target: darwin_arm64
+      file: tfsec-darwin-arm64
+    - target: linux_x64
+      file: tfsec-linux-amd64
+    - target: linux_arm64
+      file: tfsec-linux-arm64
+    - target: win_arm64
+      file: tfsec-windows-arm64.exe
+    - target: win_x64
+      file: tfsec-windows-amd64.exe
 
 bin:
-  tfsec: golang:tfsec
+  tfsec: "{{source.asset.file}}"
