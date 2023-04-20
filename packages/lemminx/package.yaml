@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/redhat-developer/vscode-xml@0.24.0
+  id: pkg:github/redhat-developer/vscode-xml@0.25.0
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: lemminx-osx-x86_64.zip
