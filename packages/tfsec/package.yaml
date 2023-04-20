@@ -1,0 +1,16 @@
+---
+name: tfsec
+description: Security scanner for your Terraform code
+homepage: https://github.com/aquasecurity/tfsec
+licenses:
+  - MIT
+languages:
+  - Terraform
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/github.com/aquasecurity/tfsec@v1.28.1#cmd/tfsec
+
+bin:
+  tfsec: golang:tfsec
