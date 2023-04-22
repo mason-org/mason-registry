@@ -11,3 +11,6 @@ categories:
 
 source:
   id: pkg:npm/dot-language-server@1.1.27
+
+bin:
+  dot-language-server: npm:dot-language-server
