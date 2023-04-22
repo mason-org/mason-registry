@@ -39,5 +39,8 @@ source:
       file: rust-analyzer-aarch64-pc-windows-msvc.zip
       bin: rust-analyzer.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/rust-analyzer/rust-analyzer/{{version}}/editors/code/package.json
+
 bin:
   rust-analyzer: "{{source.asset.bin}}"

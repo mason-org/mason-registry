@@ -31,5 +31,8 @@ source:
       file: lua-language-server-{{version}}-win32-x64.zip
       bin: bin/lua-language-server.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/LuaLS/vscode-lua/master/package.json
+
 bin:
   lua-language-server: "{{source.asset.bin}}"

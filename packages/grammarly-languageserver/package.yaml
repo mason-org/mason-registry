@@ -13,5 +13,8 @@ categories:
 source:
   id: pkg:npm/grammarly-languageserver@0.0.4
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/znck/grammarly/main/extension/package.json
+
 bin:
   grammarly-languageserver: npm:grammarly-languageserver

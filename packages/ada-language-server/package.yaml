@@ -22,5 +22,8 @@ source:
       file: als-{{version}}-Windows_amd64.zip
       bin: win32/ada_language_server.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/AdaCore/ada_language_server/{{version}}/integration/vscode/ada/package.json
+
 bin:
   ada_language_server: "{{source.asset.bin}}"

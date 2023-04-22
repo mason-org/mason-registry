@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:npm/vls@0.8.5
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/vuejs/vetur/master/package.json
+
 bin:
   vls: npm:vls

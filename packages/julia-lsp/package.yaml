@@ -19,5 +19,8 @@ source:
       file: julia-lsp-{{version}}.zip
       bin: bin/julia-lsp.cmd
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/julia-vscode/julia-vscode/master/package.json
+
 bin:
   julia-lsp: "{{source.asset.bin}}"

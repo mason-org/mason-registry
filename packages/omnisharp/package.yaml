@@ -27,5 +27,8 @@ source:
     - target: win_arm64
       file: omnisharp-win-arm64-net6.0.zip
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/OmniSharp/omnisharp-vscode/master/package.json
+
 bin:
   omnisharp: dotnet:OmniSharp.dll

@@ -36,6 +36,9 @@ source:
         lsp: dist/lang_server_windows.cmd
         dap: dist/debug_adapter_windows.cmd
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/georgewfraser/java-language-server/{{version}}/package.json
+
 bin:
   java-language-server: "{{source.build.bin.lsp}}"
   java-language-server-debugger: "{{source.build.bin.dap}}"

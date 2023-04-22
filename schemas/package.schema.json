@@ -42,6 +42,9 @@
         "source": {
             "$ref": "mason-registry.json/components/source"
         },
+        "schemas": {
+            "$ref": "mason-registry.json/components/schemas"
+        },
         "bin": {
             "$ref": "mason-registry.json/components/bin"
         },

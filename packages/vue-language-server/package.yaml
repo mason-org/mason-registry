@@ -14,5 +14,8 @@ source:
   extra_packages:
     - typescript
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/vuejs/language-tools/v{{version}}/packages/vscode-vue/package.json
+
 bin:
   vue-language-server: npm:vue-language-server

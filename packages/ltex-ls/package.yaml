@@ -26,6 +26,9 @@ source:
         lsp: ltex-ls-{{version}}/bin/ltex-ls.bat
         cli: ltex-ls-{{version}}/bin/ltex-cli.bat
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/valentjn/vscode-ltex/develop/package.json
+
 bin:
   ltex-ls: "{{source.asset.bin.lsp}}"
   ltex-cli: "{{source.asset.bin.cli}}"

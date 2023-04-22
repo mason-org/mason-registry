@@ -14,5 +14,8 @@ categories:
 source:
   id: pkg:npm/vscode-langservers-extracted@4.6.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/vscode/main/extensions/css-language-features/package.json
+
 bin:
   vscode-css-language-server: npm:vscode-css-language-server

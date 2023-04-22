@@ -26,6 +26,9 @@ source:
         lsp: language_server.bat
         dap: debugger.bat
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/elixir-lsp/vscode-elixir-ls/master/package.json
+
 bin:
   elixir-ls: "{{source.asset.bin.lsp}}"
   elixir-ls-debugger: "{{source.asset.bin.dap}}"
