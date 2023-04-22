@@ -25,5 +25,8 @@ source:
       file: clangd-windows-{{version}}.zip
       bin: clangd_{{version}}/bin/clangd.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/clangd/vscode-clangd/master/package.json
+
 bin:
   clangd: "{{source.asset.bin}}"

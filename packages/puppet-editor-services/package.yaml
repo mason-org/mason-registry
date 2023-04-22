@@ -16,6 +16,9 @@ source:
     - target: unix
       file: puppet_editor_services_{{version}}.zip
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/puppetlabs/puppet-vscode/main/package.json
+
 bin:
   puppet-languageserver: puppet-languageserver
   puppet-debugserver: puppet-debugserver

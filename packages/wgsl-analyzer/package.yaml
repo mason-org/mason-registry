@@ -20,5 +20,8 @@ source:
     - target: win_x64
       file: wgsl_analyzer-win32-x64.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/wgsl-analyzer/wgsl-analyzer/{{version}}/editors/code/package.json
+
 bin:
   wgsl_analyzer: "{{source.asset.file}}"

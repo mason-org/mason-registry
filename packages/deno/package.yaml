@@ -29,5 +29,8 @@ source:
       file: deno-x86_64-pc-windows-msvc.zip
       bin: deno.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/denoland/vscode_deno/main/package.json
+
 bin:
   deno: "{{source.asset.bin}}"

@@ -14,5 +14,8 @@ categories:
 source:
   id: pkg:pypi/sourcery-cli@1.2.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/swift-server/vscode-swift/main/package.json
+
 bin:
   sourcery: pypi:sourcery

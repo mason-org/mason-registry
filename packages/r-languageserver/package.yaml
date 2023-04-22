@@ -23,5 +23,8 @@ source:
         VERSION: "{{version}}"
       bin: ./bin/r-languageserver.cmd
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/REditorSupport/vscode-r-lsp/master/package.json
+
 bin:
   r-languageserver: "{{source.build.bin}}"

@@ -19,5 +19,8 @@ source:
       npm exec yarn@1 install
       npm exec --package=yarn@1 'node make package'
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/stoplightio/vscode-spectral/{{version}}/package.json
+
 bin:
   spectral-language-server: node:dist/server/index.js

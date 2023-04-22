@@ -14,5 +14,8 @@ source:
   extra_packages:
     - typescript
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/withastro/language-tools/@astrojs/language-server@{{version}}/packages/vscode/package.json
+
 bin:
   astro-ls: npm:astro-ls

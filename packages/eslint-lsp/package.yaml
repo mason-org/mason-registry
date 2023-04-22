@@ -15,5 +15,8 @@ categories:
 source:
   id: pkg:npm/vscode-langservers-extracted@4.6.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/vscode-eslint/main/package.json
+
 bin:
   vscode-eslint-language-server: npm:vscode-eslint-language-server

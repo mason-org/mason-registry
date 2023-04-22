@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:npm/stylelint-lsp@1.2.4
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/bmatcuk/coc-stylelintplus/master/package.json
+
 bin:
   stylelint-lsp: npm:stylelint-lsp

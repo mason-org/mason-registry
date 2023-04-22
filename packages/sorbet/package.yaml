@@ -19,5 +19,8 @@ source:
     - linux_arm64
     - linux_arm
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/sorbet/sorbet/master/vscode_extension/package.json
+
 bin:
   srb: gem:srb

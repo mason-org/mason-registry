@@ -29,6 +29,9 @@ source:
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_win/
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/redhat-developer/vscode-java/master/package.json
+
 bin:
   jdtls: python:bin/jdtls
 

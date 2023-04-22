@@ -14,5 +14,8 @@ source:
   asset:
     file: rescript-vscode-{{version}}.vsix
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/rescript-lang/rescript-vscode/{{version}}/package.json
+
 bin:
   rescript-lsp: node:extension/server/out/server.js

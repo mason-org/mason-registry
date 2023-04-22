@@ -13,5 +13,8 @@ categories:
 source:
   id: pkg:npm/%40vtsls/language-server@0.1.17
 
+schemas:
+  lsp: https://raw.githubusercontent.com/yioneko/vtsls/main/packages/service/configuration.schema.json
+
 bin:
   vtsls: npm:vtsls

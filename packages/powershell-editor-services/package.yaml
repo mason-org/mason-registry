@@ -13,3 +13,6 @@ source:
   id: pkg:github/PowerShell/PowerShellEditorServices@v3.8.3
   asset:
     file: PowerShellEditorServices.zip
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/PowerShell/vscode-powershell/main/package.json

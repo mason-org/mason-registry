@@ -14,5 +14,8 @@ categories:
 source:
   id: pkg:npm/purescript-language-server@0.17.1
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/nwolverson/vscode-ide-purescript/master/package.json
+
 bin:
   purescript-language-server: npm:purescript-language-server

@@ -50,5 +50,8 @@ source:
         terraform-ls.zip: https://releases.hashicorp.com/terraform-ls/{{ version | strip_prefix "v" }}/terraform-ls_{{ version | strip_prefix "v" }}_windows_arm64.zip
       bin: terraform-ls.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/hashicorp/vscode-terraform/master/package.json
+
 bin:
   terraform-ls: "{{source.download.bin}}"

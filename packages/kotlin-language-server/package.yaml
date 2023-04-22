@@ -19,5 +19,8 @@ source:
       file: server.zip
       bin: server/bin/kotlin-language-server.bat
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/fwcd/vscode-kotlin/master/package.json
+
 bin:
   kotlin-language-server: "{{source.asset.bin}}"

@@ -22,5 +22,8 @@ source:
       file: luau-lsp-win64.zip
       bin: luau-lsp.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/{{version}}/editors/code/package.json
+
 bin:
   luau-lsp: "{{source.asset.bin}}"
