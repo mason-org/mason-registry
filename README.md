@@ -5,9 +5,7 @@
 ![Renovate](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.mason-registry.dev%2Fapi%2Fmason%2Frenovate%2Fbadge&style=flat-square)
 [![Sponsors](https://img.shields.io/github/sponsors/williamboman?style=flat-square)](https://github.com/sponsors/williamboman)
 
-# mason-registry
-
-<img src="https://user-images.githubusercontent.com/6705160/230374582-25c9c26a-7885-4e1e-960d-3ec6880fbcb4.png" alt="mason-registry logo" />
+![mason-registry](https://user-images.githubusercontent.com/6705160/230374582-25c9c26a-7885-4e1e-960d-3ec6880fbcb4.png)
 
 <p align="center">
     Core package registry for <a href="https://github.com/williamboman/mason.nvim"><code>mason.nvim</code></a>.
