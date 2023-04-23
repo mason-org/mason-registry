@@ -1,5 +1,5 @@
 ---
-name: solidity-language-server
+name: nomicfoundation-solidity-language-server
 description: Solidity language server by NomicFoundation
 homepage: https://github.com/NomicFoundation/hardhat-vscode
 licenses:
@@ -10,9 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/@ignored/solidity-language-server@0.6.14
+  id: pkg:npm/%40ignored/solidity-language-server@0.6.14
 
 bin:
-  solidity-language-server: npm:nomicfoundation-solidity-language-server
-
-
+  nomicfoundation-solidity-language-server: npm:nomicfoundation-solidity-language-server
