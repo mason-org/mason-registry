@@ -1,0 +1,28 @@
+name: custom-elements-language-server
+description: >
+  The aim of the Custom Elements Language Server / Language services is to create a centralized server for supporting LSP operations on Custom Elements.
+
+  These operations include but are not limited to
+
+    - Go To Definition
+    - Attribute autocompletion
+    - Slot name autocompletions
+    - Event binding completions
+
+homepage: https://github.com/Matsuuu/custom-elements-language-server
+licenses:
+  - BSD 3-Clause
+languages:
+  - html
+  - javascript
+  - typescript
+  - javascriptreact
+  - typescriptreact
+categories:
+  - LSP
+
+source:
+    id: npm:custom-elements-languageserver
+
+bin?:
+    custom-elements-languageserver: ./bin/custom-elements-languageserver.js
