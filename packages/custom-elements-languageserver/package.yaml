@@ -1,0 +1,24 @@
+---
+name: custom-elements-languageserver
+description: |
+  The best way to utilize the Custom Elements Language Server is to enable the Custom Elements Manifest (CEM) in your
+  project by installing a CEM generator like one provided by The Open WC Team.
+
+  Generating a CEM in watch mode will provide you with the best user experience. If your dependencies ship with a Custom
+  Elements Manifest, those will be utilized also.
+homepage: https://github.com/Matsuuu/custom-elements-language-server
+licenses:
+  - BSD-3-Clause
+languages:
+  - HTML
+  - JavaScript
+  - TypeScript
+  - JSX
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/custom-elements-languageserver@0.0.3
+
+bin:
+  custom-elements-languageserver: npm:custom-elements-languageserver
