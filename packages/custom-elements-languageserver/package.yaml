@@ -1,5 +1,5 @@
 ---
-name: custom-elements-language-server
+name: custom-elements-languageserver
 description: |
   The best way to utilize the Custom Elements Language Server is to enable the Custom Elements Manifest (CEM) in your
   project by installing a CEM generator like one provided by The Open WC Team.
