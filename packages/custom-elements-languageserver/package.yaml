@@ -18,7 +18,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/custom-elements-languageserver@0.0.2
+  id: pkg:npm/custom-elements-languageserver@0.0.3
 
 bin:
   custom-elements-languageserver: npm:custom-elements-languageserver
