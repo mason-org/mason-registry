@@ -278,6 +278,7 @@ Refer to the following sections for a detailed description:
 Example:
 
 ```yaml
+---
 name: lua-language-server
 description: A language server that offers Lua language support - programmed in Lua.
 homepage: https://github.com/LuaLS/lua-language-server
