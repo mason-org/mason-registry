@@ -5,6 +5,7 @@
 <!--toc:start-->
 - [Contributing guide](#contributing-guide)
   - [Table of Contents](#table-of-contents)
+- [Brief](#brief)
 - [Schema](#schema)
 - [The anatomy of a package](#the-anatomy-of-a-package)
 - [Package specification](#package-specification)
@@ -37,6 +38,15 @@
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
 > RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14][bcp14],
 > [RFC2119][rfc2119], and [RFC8174][rfc8174] when, and only when, they appear in all capitals, as shown here.
+
+# Brief
+
+* Use the YAML language server combined with the [schemastore schema](https://json.schemastore.org/mason-registry.json)
+  to get diagnostics and autocompletion (see [Schema](#schema)).
+* Make sure to follow the [naming guidelines](#name).
+* Refer to the [common fields example](#common-fields) for a good starting point for a new package.
+* Refer to the different [examples](#examples) and/or existing package definitions for further guidance.
+* Testing a package locally is still a bit complicated, open a PR early to make use of the cross-platform CI suite!
 
 # Schema
 
@@ -188,9 +198,8 @@ Example:
 ```yaml
 share:
     # Links $MASON/share/jdtls/lombok.jar -> <package>/lombok.jar
-    jdtls/lombok.jar:
-        lombok.jar
-        # Links $MASON/share/jdtls/plugins/ -> <package>/plugins/**/* (i.e. all files within the target directory)
+    jdtls/lombok.jar: lombok.jar
+    # Links $MASON/share/jdtls/plugins/ -> <package>/plugins/**/* (i.e. all files within the target directory)
     jdtls/plugins/: plugins/
 ```
 
@@ -269,6 +278,7 @@ Refer to the following sections for a detailed description:
 Example:
 
 ```yaml
+---
 name: lua-language-server
 description: A language server that offers Lua language support - programmed in Lua.
 homepage: https://github.com/LuaLS/lua-language-server
