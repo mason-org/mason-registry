@@ -13,7 +13,7 @@ source:
   id: pkg:github/cli/cli@v2.28.0
   asset:
     - target: darwin_x64
-      file: gh_{{ version | strip_prefix "v" }}_macOS_amd64.zip 
+      file: gh_{{ version | strip_prefix "v" }}_macOS_amd64.zip
       bin: gh_{{ version | strip_prefix "v" }}_macOS_amd64/bin/gh
       man: gh_{{ version | strip_prefix "v" }}_macOS_amd64/share/man/
     - target: darwin_arm64
