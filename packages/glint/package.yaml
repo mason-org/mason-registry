@@ -17,7 +17,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40glint/core@0.9.7
+  id: pkg:npm/%40glint/core@1.0.1
   extra_packages:
     - typescript
 
