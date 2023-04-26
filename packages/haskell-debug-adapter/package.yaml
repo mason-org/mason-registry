@@ -21,6 +21,7 @@ source:
       env:
         VERSION: "{{version}}"
       bin:
+        stack: stack
         ghci-dap: bin/ghci-dap
         haskell-debug-adapter: bin/haskell-debug-adapter
 
@@ -32,9 +33,11 @@ source:
       env:
         VERSION: "{{version}}"
       bin:
+        stack: stack.exe
         ghci-dap: ghci-dap.exe
         haskell-debug-adapter: haskell-debug-adapter.exe
 
 bin:
+  stack: "{{source.build.bin.stack}}"
   ghci-dap: "{{source.build.bin.ghci-dap}}"
   haskell-debug-adapter: "{{source.build.bin.haskell-debug-adapter}}"
