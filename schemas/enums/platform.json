@@ -24,6 +24,8 @@
         "linux_x64_openbsd",
         "linux_x86",
         "linux_x86_gnu",
+        "linux_x86_musl",
+        "linux_x86_openbsd",
         "win",
         "win_arm",
         "win_arm64",
