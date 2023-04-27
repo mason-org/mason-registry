@@ -34,5 +34,5 @@ source:
         haskell-debug-adapter: haskell-debug-adapter.exe
 
 bin:
-  ghci-dap: "{{source.build.bin.ghci-dap}}"
-  haskell-debug-adapter: "{{source.build.bin.haskell-debug-adapter}}"
+  ghci-dap: "{{source.build.bin['ghci-dap']}}"
+  haskell-debug-adapter: "{{source.build.bin['haskell-debug-adapter']}}"
