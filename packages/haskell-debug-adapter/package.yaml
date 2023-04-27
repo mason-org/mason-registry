@@ -25,7 +25,7 @@ source:
 
     - target: win
       run: |
-        stack install haskell-dap ghci-dap haskell-debug-adapter-"$env:VERSION" --local-bin-path=($pwd).path
+        stack install haskell-dap ghci-dap haskell-debug-adapter-($env:VERSION) --local-bin-path=($pwd).path
       staged: false
       env:
         VERSION: "{{version}}"
