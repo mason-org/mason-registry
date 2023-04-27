@@ -15,29 +15,24 @@ source:
   build:
     - target: unix
       run: |
-        ghcup install stack latest -i "$PWD"
-        ./stack install haskell-dap ghci-dap haskell-debug-adapter-"$VERSION" --local-bin-path="$PWD"
+        stack install haskell-dap ghci-dap haskell-debug-adapter-"$VERSION" --local-bin-path="$PWD"
       staged: false
       env:
         VERSION: "{{version}}"
       bin:
-        stack: stack
         ghci-dap: ghci-dap
         haskell-debug-adapter: haskell-debug-adapter
 
     - target: win
       run: |
-        ghcup install stack latest -i ($pwd).path
-        stack.exe install haskell-dap ghci-dap haskell-debug-adapter-"$env:VERSION" --local-bin-path=($pwd).path
+        stack install haskell-dap ghci-dap haskell-debug-adapter-"$env:VERSION" --local-bin-path=($pwd).path
       staged: false
       env:
         VERSION: "{{version}}"
       bin:
-        stack: stack.exe
         ghci-dap: ghci-dap.exe
         haskell-debug-adapter: haskell-debug-adapter.exe
 
 bin:
-  stack: "{{source.build.bin.stack}}"
   ghci-dap: "{{source.build.bin.ghci-dap}}"
   haskell-debug-adapter: "{{source.build.bin.haskell-debug-adapter}}"
