@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/antlers-language-server@1.2.4
+  id: pkg:npm/antlers-language-server@1.2.5
 
 bin:
   antlersls: npm:antlersls
