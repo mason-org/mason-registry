@@ -1,13 +1,13 @@
 ---
 name: standardjs
-description: |
-  JavaScript Style Guide, with linter & automatic code fixer
+description: JavaScript Style Guide, with linter & automatic code fixer.
 homepage: https://standardjs.com
 licenses:
   - MIT
 languages:
-  - javascript
+  - JavaScript
 categories:
+  - Linter
   - Formatter
 
 source:
