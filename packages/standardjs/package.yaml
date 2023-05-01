@@ -14,4 +14,4 @@ source:
   id: pkg:npm/standard@17.0.0
 
 bin:
-  elm-format: npm:standard
+  standard: npm:standard
