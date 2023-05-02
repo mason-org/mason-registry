@@ -30,5 +30,5 @@ source:
       file: omnisharp-win-x86.zip
       bin: OmniSharp.exe
 
-# bin:
-#   omnisharp: "{{source.asset.bin}}"
+bin:
+  omnisharp-mono: "{{source.asset.bin}}"
