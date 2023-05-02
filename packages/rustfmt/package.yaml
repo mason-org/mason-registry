@@ -9,19 +9,17 @@ languages:
   - Rust
 categories:
   - Formatter
-
 source:
-  id: pkg:github/rust-lang/rustfmt@v1.5.1
-  asset:
-    - target: [darwin_x64, darwin_arm64]
-      file: rustfmt_macos-x86_64_{{version}}.tar.gz
-      bin: rustfmt_macos-x86_64_{{version}}/rustfmt
-    - target: linux_x64
-      file: rustfmt_linux-x86_64_{{version}}.tar.gz
-      bin: rustfmt_linux-x86_64_{{version}}/rustfmt
-    - target: win_x64
-      file: rustfmt_windows-x86_64-msvc_{{version}}.zip
-      bin: rustfmt_windows-x86_64-msvc_{{version}}/rustfmt.exe
-
+  # renovate:datasource=github-tags
+  id: pkg:github/rust-lang/rustfmt@@v1.5.2
+  build:
+    - target: win
+      run: |
+        cargo build --release
+      rustfmt: target/release/rustfmt.exe
+    - target: win
+      run: |
+        cargo build --release
+      rustfmt: target/release/rustfmt
 bin:
-  rustfmt: "{{source.asset.bin}}"
+  rustfmt: "{{source.build.rustfmt}}"
