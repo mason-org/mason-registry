@@ -8,7 +8,6 @@ languages:
   - LaTeX
 categories:
   - LSP
-
 source:
   id: pkg:github/latex-lsp/texlab@v5.5.0
   asset:
@@ -21,9 +20,11 @@ source:
     - target: linux_x64
       file: texlab-x86_64-linux.tar.gz
       bin: texlab
+    - target: linux_arm64
+      file: texlab-aarch64-linux.tar.gz
+      bin: texlab
     - target: win_x64
       file: texlab-x86_64-windows.zip
       bin: texlab.exe
-
 bin:
   texlab: "{{source.asset.bin}}"
