@@ -20,11 +20,11 @@ source:
         VERSION: "{{version}}"
       bin:
         wrapper: bin/haskell-language-server-wrapper
-        8.10.7: bin/haskell-language-server-8.10.7
-        9.0.2: bin/haskell-language-server-9.0.2
-        9.2.7: bin/haskell-language-server-9.2.7
-        9.4.4: bin/haskell-language-server-9.4.4
-        9.6.1: bin/haskell-language-server-9.6.1
+        server_8_10_7: bin/haskell-language-server-8.10.7
+        server_9_0_2: bin/haskell-language-server-9.0.2
+        server_9_2_7: bin/haskell-language-server-9.2.7
+        server_9_4_4: bin/haskell-language-server-9.4.4
+        server_9_6_1: bin/haskell-language-server-9.6.1
 
     - target: win
       run: ghcup install hls $env:VERSION -i ($pwd).path
@@ -33,17 +33,17 @@ source:
         VERSION: "{{version}}"
       bin:
         wrapper: haskell-language-server-wrapper.exe
-        8.10.7: haskell-language-server-8.10.7.exe
-        9.0.2: haskell-language-server-9.0.2.exe
-        9.2.7: haskell-language-server-9.2.7.exe
-        9.4.4: haskell-language-server-9.4.4.exe
-        9.6.1: haskell-language-server-9.6.1.exe
+        server_8_10_7: haskell-language-server-8.10.7.exe
+        server_9_0_2: haskell-language-server-9.0.2.exe
+        server_9_2_7: haskell-language-server-9.2.7.exe
+        server_9_4_4: haskell-language-server-9.4.4.exe
+        server_9_6_1: haskell-language-server-9.6.1.exe
 
 bin:
   haskell-language-server-wrapper: "{{source.build.bin.wrapper}}"
-  haskell-language-server-8.10.7: "{{source.build.bin['8.10.7']}}"
+  haskell-language-server-8.10.7: "{{source.build.bin.server_8_10_7}}"
   # https://github.com/haskell/haskell-language-server/issues/3162
-  haskell-language-server-9.0.2: "{{ source.build.bin['9.0.2'] | take_if_not(is_platform('darwin_arm64')) }}"
-  haskell-language-server-9.2.7: "{{source.build.bin['9.2.7']}}"
-  haskell-language-server-9.4.4: "{{source.build.bin['9.4.4']}}"
-  haskell-language-server-9.6.1: "{{source.build.bin['9.6.1']}}"
+  haskell-language-server-9.0.2: "{{ source.build.bin.server_9_0_2 | take_if_not(is_platform('darwin_arm64')) }}"
+  haskell-language-server-9.2.7: "{{source.build.bin.server_9_2_7}}"
+  haskell-language-server-9.4.4: "{{source.build.bin.server_9_4_4}}"
+  haskell-language-server-9.6.1: "{{source.build.bin.server_9_6_1}}"

@@ -20,8 +20,8 @@ source:
       env:
         VERSION: "{{version}}"
       bin:
-        ghci-dap: ghci-dap
-        haskell-debug-adapter: haskell-debug-adapter
+        ghci_dap: ghci-dap
+        dap: haskell-debug-adapter
 
     - target: win
       run: |
@@ -30,9 +30,9 @@ source:
       env:
         VERSION: "{{version}}"
       bin:
-        ghci-dap: ghci-dap.exe
-        haskell-debug-adapter: haskell-debug-adapter.exe
+        ghci_dap: ghci-dap.exe
+        dap: haskell-debug-adapter.exe
 
 bin:
-  ghci-dap: "{{source.build.bin['ghci-dap']}}"
-  haskell-debug-adapter: "{{source.build.bin['haskell-debug-adapter']}}"
+  ghci-dap: "{{source.build.bin.ghci_dap}}"
+  haskell-debug-adapter: "{{source.build.bin.dap}}"
