@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40prisma/language-server@31.0.2134
+  id: pkg:npm/%40prisma/language-server@31.0.2135
 
 bin:
   prisma-language-server: npm:prisma-language-server
