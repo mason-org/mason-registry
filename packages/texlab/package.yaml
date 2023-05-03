@@ -18,10 +18,10 @@ source:
     - target: darwin_x64
       file: texlab-x86_64-macos.tar.gz
       bin: texlab
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: texlab-x86_64-linux.tar.gz
       bin: texlab
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file: texlab-aarch64-linux.tar.gz
       bin: texlab
     - target: win_x64
