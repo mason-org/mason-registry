@@ -25,7 +25,7 @@ source:
       bin: exec:libexec/netcoredbg/netcoredbg
     - target: win_x64
       file: netcoredbg-win64.zip
-      bin: netcoredbg/netcoredbg.exe
+      bin: netcoredbg\netcoredbg.exe
 
 bin:
   netcoredbg: "{{source.asset.bin}}"
