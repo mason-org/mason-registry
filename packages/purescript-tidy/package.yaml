@@ -1,4 +1,4 @@
---
+---
 name: purescript-tidy
 description: A syntax tidy-upper (formatter) for PureScript.
 homepage: https://github.com/natefaubion/purescript-tidy
