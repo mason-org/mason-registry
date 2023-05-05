@@ -8,7 +8,9 @@ languages:
   - PureScript
 categories:
   - Formatter
+  
 source:
   id: pkg:npm/purs-tidy@0.9.3
+  
 bin:
   purs-tidy: npm:purs-tidy
