@@ -15,5 +15,3 @@ source:
     -target: linux_x64
     file:  slang-0.27.18-linux-x86_64.tar.gz
     bin: bin/linux-x64/release/slangd
-
-
