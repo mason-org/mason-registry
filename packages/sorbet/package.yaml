@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/sorbet@0.5.10805
+  id: pkg:gem/sorbet@0.5.10810
   supported_platforms:
     - darwin_x64
     - darwin_arm64
