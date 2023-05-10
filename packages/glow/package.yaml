@@ -12,28 +12,28 @@ source:
   id: pkg:github/charmbracelet/glow@v1.5.1
   asset:
     - target: darwin_arm64
-      file: glow_{{ version | strip_prefix "v" }}_Darwin_arm64.tar.gz
+      file: glow_Darwin_arm64.tar.gz
       bin: glow
     - target: darwin_x64
-      file: glow_{{ version | strip_prefix "v" }}_Darwin_x86_64.tar.gz
+      file: glow_Darwin_x86_64.tar.gz
       bin: glow
     - target: linux_x64_openbsd
-      file: glow_{{ version | strip_prefix "v" }}_openbsd_x86_64.tar.gz
+      file: glow_Openbsd_x86_64.tar.gz
       bin: glow
     - target: linux_arm64_openbsd
-      file: glow_{{ version | strip_prefix "v" }}_openbsd_arm64.tar.gz
+      file: glow_Openbsd_arm64.tar.gz
       bin: glow
     - target: linux_arm64
-      file: glow_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz
+      file: glow_Linux_arm64.tar.gz
       bin: glow
     - target: linux_x64
-      file: glow_{{ version | strip_prefix "v" }}_linux_x86_64.tar.gz
+      file: glow_Linux_x86_64.tar.gz
       bin: glow
     - target: win_x86
-      file: glow_{{ version | strip_prefix "v" }}_Windows_i386.zip
+      file: glow_Windows_i386.zip
       bin: glow.exe
     - target: win_x64
-      file: glow_{{ version | strip_prefix "v" }}_Windows_x86_64.zip
+      file: glow_Windows_x86_64.zip
       bin: glow.exe
 
 bin:
