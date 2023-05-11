@@ -1,0 +1,16 @@
+---
+name: pyink
+description: Pyink is a Python formatter, forked from Black with a few different formatting behaviors.
+homepage: https://pypi.org/project/pyink/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/pyink@23.3.1
+
+bin:
+  pyink: pypi:pyink
