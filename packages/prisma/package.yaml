@@ -1,5 +1,5 @@
 ---
-name: prisma-fmt
+name: prisma
 description: |
   The prisma formatter that is powered by prisma engines.
 homepage: https://github.com/prisma
@@ -14,4 +14,4 @@ source:
   id: pkg:npm/prisma@4.14.0
 
 bin:
-  prisma-fmt: npm:prisma
+  prisma: npm:prisma
