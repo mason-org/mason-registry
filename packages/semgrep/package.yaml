@@ -21,7 +21,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/semgrep@1.21.0
+  id: pkg:pypi/semgrep@1.22.0
 
 bin:
   semgrep: pypi:semgrep
