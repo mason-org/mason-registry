@@ -16,7 +16,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/rome@12.1.0
+  id: pkg:npm/rome@12.1.1
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/rome/tools/cli/v{{version}}/editors/vscode/package.json
