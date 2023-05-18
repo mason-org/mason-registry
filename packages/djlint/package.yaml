@@ -17,7 +17,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/djlint@1.27.2
+  id: pkg:pypi/djlint@1.28.0
 
 bin:
   djlint: pypi:djlint
