@@ -1,5 +1,5 @@
 ---
-name: nim-langserver
+name: nimlangserver
 description: The Nim language server implementation (based on nimsuggest)
 homepage: https://github.com/nim-lang/langserver
 licenses:
