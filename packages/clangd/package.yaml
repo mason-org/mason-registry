@@ -18,7 +18,7 @@ source:
     - target: [darwin_x64, darwin_arm64]
       file: clangd-mac-{{version}}.zip
       bin: clangd_{{version}}/bin/clangd
-    - target: linux_x64_gnu
+    - target: [linux_x64_gnu, linux_arm64_gnu]
       file: clangd-linux-{{version}}.zip
       bin: clangd_{{version}}/bin/clangd
     - target: win_x64
