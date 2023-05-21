@@ -1,12 +1,13 @@
+---
 name: pest-language-server
-description: "A language server for Pest grammar."
+description: A language server for Pest grammar.
 homepage: https://github.com/pest-parser/pest-ide-tools/tree/main
 licenses:
-  - "Apache-2.0"
+  - Apache-2.0
 languages:
-  - "Pest"
+  - Pest
 categories:
-  - "LSP"
+  - LSP
 
 source:
   id: pkg:cargo/pest-language-server@0.3.3
