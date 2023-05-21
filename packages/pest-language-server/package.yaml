@@ -1,7 +1,7 @@
 ---
 name: pest-language-server
 description: A language server for Pest grammar.
-homepage: https://github.com/pest-parser/pest-ide-tools/tree/main
+homepage: https://github.com/pest-parser/pest-ide-tools
 licenses:
   - Apache-2.0
 languages:
