@@ -5,7 +5,7 @@ homepage: https://www.npmjs.com/package/lean-language-server
 licenses:
   - Apache-2.0
 languages:
-  - Lean3
+  - Lean
 categories:
   - LSP
 
