@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/yamllint@1.31.0
+  id: pkg:pypi/yamllint@1.32.0
 
 bin:
   yamllint: pypi:yamllint
