@@ -10,8 +10,8 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=github-tags
-  id: pkg:github/nim-lang/langserver@latest
+  # renovate:datasource=git-refs
+  id: pkg:github/nim-lang/langserver@f7b32fa651622d77f2da7b357cb152c58fe7b359
   build:
     - target: unix
       run: nimble build -y --localdeps
