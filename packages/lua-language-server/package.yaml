@@ -24,6 +24,9 @@ source:
     - target: linux_x64_gnu
       file: lua-language-server-{{version}}-linux-x64.tar.gz:libexec/
       bin: exec:libexec/bin/lua-language-server
+    - target: linux_x64_musl
+      file: lua-language-server-{{version}}-linux-x64-musl.tar.gz:libexec/
+      bin: exec:libexec/bin/lua-language-server
     - target: win_x86
       file: lua-language-server-{{version}}-win32-ia32.zip
       bin: bin/lua-language-server.exe
