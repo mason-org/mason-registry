@@ -21,7 +21,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/SonarSource/sonarlint-vscode@3.17.0%2b67752
+  id: pkg:github/SonarSource/sonarlint-vscode@3.18.0%2b70423
   asset:
     file: sonarlint-vscode-3.17.0.vsix
 
