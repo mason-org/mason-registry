@@ -1,7 +1,7 @@
 ---
 name: luacheck
 description: A tool for linting and static analysis of Lua code.
-homepage: https://github.com/mpeterv/luacheck
+homepage: https://github.com/lunarmodules/luacheck
 licenses:
   - MIT
 languages:
