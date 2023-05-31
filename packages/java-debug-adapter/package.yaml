@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-java-debug@0.50.0
+  id: pkg:github/microsoft/vscode-java-debug@0.51.0
   asset:
     file: vscjava.vscode-java-debug-{{version}}.vsix
 
