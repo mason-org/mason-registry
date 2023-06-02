@@ -16,7 +16,9 @@ source:
     - target: [darwin_x64, darwin_arm64]
       file: marksman-macos
     - target: linux_x64
-      file: marksman-linux
+      file: marksman-linux-x64
+    - target: linux_arm64
+      file: marksman-linux-arm64
     - target: win_x64
       file: marksman.exe
 
