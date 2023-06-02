@@ -8,6 +8,7 @@
     prConcurrentLimit: 0,
     branchConcurrentLimit: 0,
     rebaseWhen: "conflicted",
+    enabledManagers: ["regex"],
     regexManagers: [
         {
             fileMatch: "package\\.yaml$",
