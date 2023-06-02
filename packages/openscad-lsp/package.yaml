@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/openscad-lsp@1.2.3
+  id: pkg:cargo/openscad-lsp@1.2.4
 
 bin:
   openscad-lsp: cargo:openscad-lsp
