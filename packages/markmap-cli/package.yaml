@@ -12,4 +12,4 @@ source:
   id: pkg:npm/markmap-cli@0.14.4
 
 bin:
-  markmap-cli: npm:markmap-cli
+  markmap: npm:markmap
