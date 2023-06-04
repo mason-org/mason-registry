@@ -6,8 +6,7 @@ licenses:
   - MIT
 languages:
   - Markdown
-categories:
-  - Runtime
+categories: []
 
 source:
   id: pkg:npm/markmap-cli@0.14.4
