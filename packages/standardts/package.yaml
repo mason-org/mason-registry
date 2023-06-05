@@ -5,7 +5,7 @@ homepage: https://github.com/standard/ts-standard
 licenses:
   - MIT
 languages:
-  - Typescript
+  - TypeScript
 categories:
   - Linter
   - Formatter
