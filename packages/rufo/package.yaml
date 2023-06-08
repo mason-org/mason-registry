@@ -1,0 +1,13 @@
+name: rufo
+description: The Ruby Formatter
+homepage: https://github.com/ruby-formatter/rufo
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - Formatter
+source:
+  id: pkg:gem/rufo@0.16.1
+bin:
+  rufo: gem:rufo
