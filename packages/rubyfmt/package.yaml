@@ -1,3 +1,4 @@
+---
 name: rubyfmt
 description: Ruby Autoformatter!
 homepage: https://github.com/fables-tales/rubyfmt
@@ -7,10 +8,16 @@ languages:
   - Ruby
 categories:
   - Formatter
+
 source:
   id: pkg:github/fables-tales/rubyfmt@v0.8.1
-  build:
-    run: |
-      make all
+  asset:
+    - target: darwin
+      file: rubyfmt-{{version}}-Darwin-arm64.tar.gz
+      bin: tmp/releases/{{version}}-Darwin/rubyfmt
+    - target: linux_x64
+      file: rubyfmt-{{version}}-Linux.tar.gz
+      bin: tmp/releases/{{version}}-Linux/rubyfmt
+
 bin:
-  rubyfmt: target/release/rubyfmt-main
+  rubyfmt: "{{source.asset.bin}}"
