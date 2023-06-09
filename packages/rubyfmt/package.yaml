@@ -15,7 +15,7 @@ source:
     - target: darwin
       file: rubyfmt-{{version}}-Darwin-arm64.tar.gz
       bin: tmp/releases/{{version}}-Darwin/rubyfmt
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: rubyfmt-{{version}}-Linux.tar.gz
       bin: tmp/releases/{{version}}-Linux/rubyfmt
 
