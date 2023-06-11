@@ -10,14 +10,9 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/sorbet@0.5.10871
+  id: pkg:gem/sorbet@0.5.10875
   supported_platforms:
-    - darwin_x64
-    - darwin_arm64
-    - linux_x64
-    - linux_x86
-    - linux_arm64
-    - linux_arm
+    - unix
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/sorbet/sorbet/master/vscode_extension/package.json
