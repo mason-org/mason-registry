@@ -1,5 +1,6 @@
 {
     automerge: true,
+    dependencyDashboard: true,
     platformAutomerge: true,
     automergeType: "pr",
     commitMessage: "bump({{decodeURIComponent depName}}): update to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{{prettyNewVersion}}}{{/if}}",
