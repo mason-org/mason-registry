@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/awslabs/smithy-language-server@708bfc4ff8ca1b266a66c9919d269cd74dffe2e1
+  id: pkg:github/awslabs/smithy-language-server@cd0bce632b062189db54a886840ae1ef433b32dd
   build:
     run: ./gradlew --no-daemon build
 
