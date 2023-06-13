@@ -10,7 +10,11 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/yls-yara@0.1.0
+  id: pkg:pypi/yls-yara@1.3.3
+  supported_platforms:
+    # exclude darwin: https://github.com/avast/yls/issues/80
+    - linux
+    - win
 
 bin:
   yls: pypi:yls
