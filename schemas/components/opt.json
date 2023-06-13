@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/opt",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/opt",
     "type": "object",
     "patternProperties": {
         "^[a-zA-Z0-9_\\-\\./]+$": {

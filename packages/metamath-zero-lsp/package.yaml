@@ -10,14 +10,15 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/digama0/mm0@571c86faca5f8ba8ae859acfa90bc4cdbc66d812
+  # renovate:datasource=git-refs
+  id: pkg:github/digama0/mm0@98496badaf6464e56ed7b4204e7d54b85667cb01
   build:
-    - target: [linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
+    - target: unix
       run: |
         cd mm0-rs
         cargo build --release
       bin: mm0-rs/target/release/mm0-rs
-    - target: [win_arm64, win_x64, win_x86]
+    - target: win
       run: |
         Set-Location -Path .\mm0-rs
         cargo build --release

@@ -14,7 +14,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/denoland/deno@v1.32.1
+  id: pkg:github/denoland/deno@v1.34.2
   asset:
     - target: darwin_arm64
       file: deno-aarch64-apple-darwin.zip
@@ -28,6 +28,9 @@ source:
     - target: win_x64
       file: deno-x86_64-pc-windows-msvc.zip
       bin: deno.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/denoland/vscode_deno/main/package.json
 
 bin:
   deno: "{{source.asset.bin}}"

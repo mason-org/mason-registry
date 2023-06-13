@@ -10,9 +10,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40astrojs/language-server@0.29.6
+  id: pkg:npm/%40astrojs/language-server@2.0.17
   extra_packages:
     - typescript
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/withastro/language-tools/@astrojs/language-server@{{version}}/packages/vscode/package.json
 
 bin:
   astro-ls: npm:astro-ls

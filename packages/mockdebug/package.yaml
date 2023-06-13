@@ -11,7 +11,8 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-mock-debug@v0.52.0 # renovate:datasource=github-tags
+  # renovate:datasource=github-tags
+  id: pkg:github/microsoft/vscode-mock-debug@v0.52.0
   build:
     run: |
       npm install

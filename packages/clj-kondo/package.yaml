@@ -14,7 +14,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/clj-kondo/clj-kondo@v2023.03.17
+  id: pkg:github/clj-kondo/clj-kondo@v2023.05.26
   asset:
     - target: darwin_arm64
       file: clj-kondo-{{ version | strip_prefix "v" }}-macos-aarch64.zip

@@ -13,18 +13,21 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/elixir-lsp/elixir-ls@v0.13.0
+  id: pkg:github/elixir-lsp/elixir-ls@v0.14.6
   asset:
-    - target: [linux_arm, linux_x64, linux_x86, linux_arm64, darwin_x64, darwin_arm64]
+    - target: unix
       file: elixir-ls.zip
       bin:
         lsp: language_server.sh
         dap: debugger.sh
-    - target: [win_arm, win_x64, win_x86, win_arm64]
+    - target: win
       file: elixir-ls.zip
       bin:
         lsp: language_server.bat
         dap: debugger.bat
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/elixir-lsp/vscode-elixir-ls/master/package.json
 
 bin:
   elixir-ls: "{{source.asset.bin.lsp}}"

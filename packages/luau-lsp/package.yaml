@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/JohnnyMorganz/luau-lsp@1.18.1
+  id: pkg:github/JohnnyMorganz/luau-lsp@1.20.2
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: luau-lsp-macos.zip
@@ -21,6 +21,9 @@ source:
     - target: win_x64
       file: luau-lsp-win64.zip
       bin: luau-lsp.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/{{version}}/editors/code/package.json
 
 bin:
   luau-lsp: "{{source.asset.bin}}"

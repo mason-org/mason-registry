@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/fennel-language-server@e97098400910263cccc7aa826651e1b6745492ee?repository_url=https://github.com/rydesun/fennel-language-server&rev=true
+  id: pkg:cargo/fennel-language-server@d0c65db2ef43fd56390db14c422983040b41dd9c?repository_url=https://github.com/rydesun/fennel-language-server&rev=true
 
 bin:
   fennel-language-server: cargo:fennel-language-server

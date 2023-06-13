@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/hashicorp/terraform-ls@v0.30.3
+  id: pkg:generic/hashicorp/terraform-ls@v0.31.2
   download:
     - target: darwin_arm64
       files:
@@ -49,6 +49,9 @@ source:
       files:
         terraform-ls.zip: https://releases.hashicorp.com/terraform-ls/{{ version | strip_prefix "v" }}/terraform-ls_{{ version | strip_prefix "v" }}_windows_arm64.zip
       bin: terraform-ls.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/hashicorp/vscode-terraform/master/package.json
 
 bin:
   terraform-ls: "{{source.download.bin}}"

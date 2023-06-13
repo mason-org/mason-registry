@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/python-lsp-server@1.7.1?extra=all
+  id: pkg:pypi/python-lsp-server@1.7.3?extra=all
+
+schemas:
+  lsp: https://raw.githubusercontent.com/python-lsp/python-lsp-server/v{{version}}/pylsp/config/schema.json
 
 bin:
   pylsp: pypi:pylsp

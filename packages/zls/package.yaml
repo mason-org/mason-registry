@@ -31,6 +31,9 @@ source:
       file: x86_64-windows.tar.zst
       bin: bin/zls.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/zigtools/zls-vscode/master/package.json
+
 bin:
   zls: "{{source.asset.bin}}"
 

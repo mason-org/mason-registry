@@ -11,7 +11,8 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/Microsoft/vscode-chrome-debug@v4.13.0 # renovate:datasource=github-tags
+  # renovate:datasource=github-tags
+  id: pkg:github/Microsoft/vscode-chrome-debug@v4.13.0
   build:
     run: |
       npm install

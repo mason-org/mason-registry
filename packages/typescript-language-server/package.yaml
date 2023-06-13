@@ -11,9 +11,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/typescript-language-server@3.3.1
+  id: pkg:npm/typescript-language-server@3.3.2
   extra_packages:
     - typescript
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/vscode/main/extensions/typescript-language-features/package.json
 
 bin:
   typescript-language-server: npm:typescript-language-server

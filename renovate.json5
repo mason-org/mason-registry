@@ -1,34 +1,39 @@
 {
     automerge: true,
+    dependencyDashboard: true,
     platformAutomerge: true,
     automergeType: "pr",
-    commitMessage: "bump({{decodeURIComponent depName}}): update to {{prettyNewVersion}}",
+    commitMessage: "bump({{decodeURIComponent depName}}): update {{commitMessageExtra}}",
     separateMajorMinor: false,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
     branchConcurrentLimit: 0,
     rebaseWhen: "conflicted",
+    enabledManagers: ["regex"],
     regexManagers: [
         {
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
+                "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\nname: (?<depName>.+)",
+                "# renovate:datasource=git-refs[\\s\\S]*pkg:github\\/(?<packageName>.+)@(?<currentDigest>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+            packageNameTemplate: "{{#if (containsString datasource 'git-refs')}}https://github.com/{{{packageName}}}{{else}}{{{packageName}}}{{/if}}",
+            currentValueTemplate: "{{#if (containsString datasource 'git-refs')}}{{else}}{{currentValue}}{{/if}}",
         },
         {
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "pkg:cargo\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<packageName>[^\\s&]+)",
+                "# renovate:.*versioning=(?<versioning>[^,\n]+)",
             ],
             datasourceTemplate: "{{#if githubRepo}}github-tags{{else}}crate{{/if}}",
             // In cargo versioning, "1.2.3" doesn't mean "exactly 1.2.3" but rather ">=1.2.3 <2.0.0".
@@ -40,7 +45,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "go",
         },
@@ -49,7 +54,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "rubygems",
         },
@@ -58,7 +63,16 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:(?<datasource>npm|pypi)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
+                "pkg:composer\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+            ],
+            datasourceTemplate: "packagist",
+        },
+        {
+            fileMatch: "package\\.yaml$",
+            matchStringsStrategy: "combination",
+            matchStrings: [
+                "\nname: (?<depName>.+)",
+                "pkg:(?<datasource>npm|pypi|nuget)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "{{datasource}}",
         },
@@ -67,9 +81,9 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
+                "pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
-                "pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)"
             ],
             datasourceTemplate: "{{{datasource}}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",

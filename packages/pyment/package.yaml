@@ -1,0 +1,16 @@
+---
+name: pyment
+description: Create, update or convert docstrings in existing Python files, managing several styles.
+homepage: https://pypi.org/project/pyment/
+licenses:
+  - GPL-3.0-only
+languages:
+  - Python
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/pyment@0.3.3
+
+bin:
+  pyment: pypi:pyment

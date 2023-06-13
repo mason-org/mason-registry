@@ -12,7 +12,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/vadimcn/vscode-lldb@v1.9.0
+  id: pkg:github/vadimcn/vscode-lldb@v1.9.2
   asset:
     - target: darwin_x64
       file: codelldb-x86_64-darwin.vsix

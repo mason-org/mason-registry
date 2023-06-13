@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/mason-org/mason-registry/schemas/components/sources/luarocks",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/luarocks",
     "type": "object",
     "additionalProperties": false,
     "required": ["id"],

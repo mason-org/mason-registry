@@ -14,5 +14,8 @@ categories:
 source:
   id: pkg:npm/%40imc-trading/svlangserver@0.4.1
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/eirikpre/VSCode-SystemVerilog/master/package.json
+
 bin:
   svlangserver: npm:svlangserver

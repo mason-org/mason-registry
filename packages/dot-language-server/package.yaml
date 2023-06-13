@@ -10,4 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/dot-language-server@1.1.24
+  id: pkg:npm/dot-language-server@1.2.0
+
+bin:
+  dot-language-server: npm:dot-language-server

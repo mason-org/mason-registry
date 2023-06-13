@@ -13,9 +13,11 @@ categories:
 source:
   id: pkg:github/puppetlabs/puppet-editor-services@v1.3.1
   asset:
-    - target: [linux_arm, linux_arm64, linux_x64, linux_x86, darwin_arm64, darwin_x64]
-      file: puppet_editor_services_{{version}}.zip
+    file: puppet_editor_services_{{version}}.zip:libexec/
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/puppetlabs/puppet-vscode/main/package.json
 
 bin:
-  puppet-languageserver: puppet-languageserver
-  puppet-debugserver: puppet-debugserver
+  puppet-languageserver: ruby:libexec/puppet-languageserver
+  puppet-debugserver: ruby:libexec/puppet-debugserver

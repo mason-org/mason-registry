@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/pyright@1.1.301
+  id: pkg:npm/pyright@1.1.313
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/pyright/{{version}}/packages/vscode-pyright/package.json
 
 bin:
   pyright: npm:pyright

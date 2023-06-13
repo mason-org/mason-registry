@@ -14,7 +14,8 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rust-lang/rust-analyzer@2023-03-27 # renovate:versioning=loose
+  # renovate:versioning=loose
+  id: pkg:github/rust-lang/rust-analyzer@2023-06-12
   asset:
     - target: linux_x64_gnu
       file: rust-analyzer-x86_64-unknown-linux-gnu.gz
@@ -22,7 +23,7 @@ source:
     - target: linux_arm64_gnu
       file: rust-analyzer-aarch64-unknown-linux-gnu.gz
       bin: rust-analyzer-aarch64-unknown-linux-gnu
-    - target: linux_x64
+    - target: linux_x64_musl
       file: rust-analyzer-x86_64-unknown-linux-musl.gz
       bin: rust-analyzer-x86_64-unknown-linux-musl
     - target: darwin_x64
@@ -37,6 +38,9 @@ source:
     - target: win_arm64
       file: rust-analyzer-aarch64-pc-windows-msvc.zip
       bin: rust-analyzer.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/rust-analyzer/rust-analyzer/{{version}}/editors/code/package.json
 
 bin:
   rust-analyzer: "{{source.asset.bin}}"

@@ -27,6 +27,12 @@ source:
     - target: linux_arm64
       file: taplo-full-linux-aarch64.gz
       bin: taplo-full-linux-aarch64
+    - target: win_x64
+      file: taplo-full-windows-x86_64.zip
+      bin: taplo.exe
+    - target: win_x86
+      file: taplo-full-windows-x86.zip
+      bin: taplo.exe
 
 bin:
   taplo: "{{source.asset.bin}}"

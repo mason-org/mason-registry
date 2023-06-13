@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/wgsl-analyzer/wgsl-analyzer@v0.6.2
+  id: pkg:github/wgsl-analyzer/wgsl-analyzer@v0.7.0
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: wgsl_analyzer-darwin-x64
@@ -19,6 +19,9 @@ source:
       file: wgsl_analyzer-linux-x64
     - target: win_x64
       file: wgsl_analyzer-win32-x64.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/wgsl-analyzer/wgsl-analyzer/{{version}}/editors/code/package.json
 
 bin:
   wgsl_analyzer: "{{source.asset.file}}"
