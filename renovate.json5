@@ -92,7 +92,7 @@
     packageRules: [
         {
             matchDatasources: ["npm"],
-            matchPackageNames: ["@vue/language-server"],
+            matchPackageNames: ["%40vue/language-server"],
             ignoreUnstable: false
         }
     ],
