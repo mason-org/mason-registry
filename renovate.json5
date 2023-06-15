@@ -93,7 +93,7 @@
         {
             // https://github.com/mason-org/mason-registry/pull/1880#issuecomment-1593690709
             matchDepNames: ["vue-language-server"],
-            ignoreUnstable: false
+            followTag: "next"
         }
     ],
 }
