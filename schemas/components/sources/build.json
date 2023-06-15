@@ -3,7 +3,6 @@
     "$id": "https://json.schemastore.org/mason-registry.json/components/sources/build",
     "type": "object",
     "required": ["run"],
-    "additionalProperties": true,
     "properties": {
         "target": {
             "oneOf": [

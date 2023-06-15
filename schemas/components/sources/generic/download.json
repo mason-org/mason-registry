@@ -34,7 +34,6 @@
             }
         }
     },
-    "additionalProperties": false,
     "required": ["id", "download"],
     "properties": {
         "id": {
