@@ -89,4 +89,11 @@
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
         },
     ],
+    packageRules: [
+        {
+            matchDatasources: ["npm"],
+            matchPackageNames: ["@vue/language-server"],
+            ignoreUnstable: false
+        }
+    ],
 }
