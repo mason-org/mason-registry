@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/ruff-lsp@0.0.27
+  id: pkg:pypi/ruff-lsp@0.0.30
 
 bin:
   ruff-lsp: pypi:ruff-lsp

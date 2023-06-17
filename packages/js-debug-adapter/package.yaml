@@ -14,6 +14,18 @@ source:
   id: pkg:github/microsoft/vscode-js-debug@v1.78.0
   asset:
     file: js-debug-dap-{{version}}.tar.gz
+  bin: node:js-debug/src/dapDebugServer.js
+
+  version_overrides:
+    - constraint: semver:<=v1.76.1
+      id: pkg:github/microsoft/vscode-js-debug@v1.76.1
+      build:
+        run: |
+          npm install --ignore-scripts --legacy-peer-deps
+          npm run compile
+          npm exec -- gulp vsDebugServerBundle
+          npm install --production --ignore-scripts --legacy-peer-deps
+      bin: node:out/src/vsDebugServer.js
 
 bin:
-  js-debug-adapter: node:js-debug/src/dapDebugServer.js
+  js-debug-adapter: "{{source.bin}}"

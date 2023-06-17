@@ -43,6 +43,7 @@
                 },
                 {
                     "type": "object",
+                    "required": ["file"],
                     "properties": {
                         "file": {
                             "oneOf": [
@@ -62,7 +63,6 @@
             ]
         }
     },
-    "additionalProperties": false,
     "required": ["id", "asset"],
     "properties": {
         "id": {
@@ -71,27 +71,6 @@
         },
         "asset": {
             "$ref": "#/$defs/Asset"
-        },
-        "version_overrides": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": ["constraint", "asset"],
-                "properties": {
-                    "id": {
-                        "type": "string",
-                        "pattern": "^pkg:github/.+/[^@]+$"
-                    },
-                    "constraint": {
-                        "type": "string",
-                        "pattern": "^semver:(<=)?v?\\d+\\.\\d+\\.\\d+"
-                    },
-                    "asset": {
-                        "$ref": "#/$defs/Asset"
-                    }
-                }
-            }
         }
     }
 }
