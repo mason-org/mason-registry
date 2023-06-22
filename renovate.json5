@@ -88,12 +88,5 @@
             datasourceTemplate: "{{{datasource}}}",
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
         },
-    ],
-    packageRules: [
-        {
-            // https://github.com/mason-org/mason-registry/pull/1880#issuecomment-1593690709
-            matchDepNames: ["vue-language-server"],
-            followTag: "next"
-        }
-    ],
+    ]
 }
