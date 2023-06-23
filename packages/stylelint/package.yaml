@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/stylelint@15.8.0
+  id: pkg:npm/stylelint@15.9.0
 
 bin:
   stylelint: npm:stylelint
