@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/vim-language-server@2.3.0
+  id: pkg:npm/vim-language-server@2.3.1
 
 bin:
   vim-language-server: npm:vim-language-server
