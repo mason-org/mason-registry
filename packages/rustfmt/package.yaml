@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/rust-lang/rustfmt@v1.5.1
+  id: pkg:github/rust-lang/rustfmt@v1.5.2
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: rustfmt_macos-x86_64_{{version}}.tar.gz
