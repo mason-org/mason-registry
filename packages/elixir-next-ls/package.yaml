@@ -1,0 +1,21 @@
+---
+name: elixir-next-ls
+description: |
+  NextLS is the language server for Elixir that just works.
+homepage: https://www.elixir-tools.dev/next-ls/
+licenses:
+  - MIT
+languages:
+  - Elixir
+categories:
+  - LSP
+
+source:
+  id: pkg:github/elixir-tools/next-ls@0.4.0
+  asset:
+    - target: unix
+      file: nextls
+      bin: nextls
+
+bin:
+  nextls: "{{source.asset.bin}}"
