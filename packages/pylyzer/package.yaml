@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/pylyzer@0.0.32
+  id: pkg:cargo/pylyzer@0.0.33
 
 bin:
   pylyzer: cargo:pylyzer
