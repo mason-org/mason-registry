@@ -11,7 +11,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:github/hyperledger-labs/solang@v0.3.0
+  id: pkg:github/hyperledger-labs/solang@v0.3.1
   asset:
     - target: darwin_x64
       file: solang-mac-intel
