@@ -1,0 +1,19 @@
+---
+name: metals
+description: Scala language server
+homepage: https://github.com/scalameta/metals
+licenses:
+  - Apache-2.0
+languages:
+  - Scala
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github.com/scalameta/metals@0.11.12
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/scalameta/metals-vscode/{{version}}/packages/metals-vscode/package.json
+bin:
+  metals: "{{source.build.bin.lsp}}"
