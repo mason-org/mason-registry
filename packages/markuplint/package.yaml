@@ -13,4 +13,4 @@ source:
   id: pkg:npm/markuplint@3.11.0
 
 bin:
-  standard: npm:markuplint
+  markuplint: npm:markuplint
