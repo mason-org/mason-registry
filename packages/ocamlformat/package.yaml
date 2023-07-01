@@ -15,4 +15,4 @@ source:
   id: pkg:opam/ocamlformat@0.25.1
 
 bin:
-  ocamllsp: opam:ocamlformat
+  ocamlformat: opam:ocamlformat
