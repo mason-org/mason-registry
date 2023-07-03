@@ -1,0 +1,16 @@
+---
+name: markuplint
+description: An HTML linter for all markup developers.
+homepage: https://markuplint.dev
+licenses:
+  - MIT
+languages:
+  - HTML
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/markuplint@3.11.0
+
+bin:
+  markuplint: npm:markuplint
