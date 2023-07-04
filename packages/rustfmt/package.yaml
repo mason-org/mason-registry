@@ -11,17 +11,12 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/rust-lang/rustfmt@v1.6.0
-  asset:
-    - target: [darwin_x64, darwin_arm64]
-      file: rustfmt_macos-x86_64_{{version}}.tar.gz
-      bin: rustfmt_macos-x86_64_{{version}}/rustfmt
-    - target: linux_x64
-      file: rustfmt_linux-x86_64_{{version}}.tar.gz
-      bin: rustfmt_linux-x86_64_{{version}}/rustfmt
-    - target: win_x64
-      file: rustfmt_windows-x86_64-msvc_{{version}}.zip
-      bin: rustfmt_windows-x86_64-msvc_{{version}}/rustfmt.exe
+  id: pkg:generic/rustfmt@x
+  build:
+    run: |
+      rustup component add rustfmt
+      cp $(which rustfmt) .
+    bin: rustfmt
 
 bin:
-  rustfmt: "{{source.asset.bin}}"
+  rustfmt: "{{source.build.bin}}"
