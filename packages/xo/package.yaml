@@ -12,7 +12,7 @@ categories:
 
 deprecation:
   since: v0.41.0
-  message: xo should now be installed locally in the projects they're used.
+  message: xo should now be installed locally in the project where it's used.
 
 source:
   id: pkg:npm/xo@0.54.2

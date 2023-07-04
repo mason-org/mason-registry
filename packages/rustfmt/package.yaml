@@ -12,7 +12,7 @@ categories:
 
 deprecation:
   since: v1.5.1
-  message: rustfmt must now be managed externally via rustup.
+  message: rustfmt should now be installed via rustup.
 
 source:
   id: pkg:github/rust-lang/rustfmt@v1.5.1
