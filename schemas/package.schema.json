@@ -39,6 +39,9 @@
                 "$ref": "mason-registry.json/enums/category"
             }
         },
+        "deprecation": {
+            "$ref": "mason-registry.json/components/deprecation"
+        },
         "source": {
             "$ref": "mason-registry.json/components/source"
         },
