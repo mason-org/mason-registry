@@ -93,6 +93,10 @@
         {
             matchDepNames: ["cucumber-language-server"],
             allowedVersions: "!/^1\\.[34]\\.0/"
+        },
+        {
+            matchDepNames: ["rustfmt"],
+            allowedVersions: "<=1.5.1"
         }
     ]
 }

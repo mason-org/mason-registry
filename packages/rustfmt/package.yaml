@@ -10,8 +10,12 @@ languages:
 categories:
   - Formatter
 
+deprecation:
+  since: v1.5.1
+  message: rustfmt must now be managed externally via rustup.
+
 source:
-  id: pkg:github/rust-lang/rustfmt@v1.6.0
+  id: pkg:github/rust-lang/rustfmt@v1.5.1
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: rustfmt_macos-x86_64_{{version}}.tar.gz
