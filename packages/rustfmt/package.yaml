@@ -13,9 +13,7 @@ categories:
 source:
   id: pkg:generic/rustfmt@x
   build:
-    run: |
-      rustup component add rustfmt
-      cp $(which rustfmt) .
+    run: cp $(which rustfmt) . || echo "rustfmt not found"
     bin: rustfmt
 
 bin:
