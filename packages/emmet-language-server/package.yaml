@@ -13,4 +13,4 @@ source:
   id: pkg:npm/@olrtg/emmet-language-server@2.0.0
 
 bin:
-  emmet-language-server: npm:@olrtg/emmet-language-server
+  emmet-language-server: npm:emmet-language-server
