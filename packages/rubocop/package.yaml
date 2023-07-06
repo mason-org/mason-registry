@@ -9,6 +9,7 @@ languages:
 categories:
   - Formatter
   - Linter
+  - LSP
 
 source:
   id: pkg:gem/rubocop@1.54.1
