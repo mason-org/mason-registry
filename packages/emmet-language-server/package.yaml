@@ -1,0 +1,16 @@
+---
+name: emmet-language-server
+description: A language server for emmet.io.
+homepage: https://github.com/olrtg/emmet-language-server
+licenses:
+  - MIT
+languages:
+  - Emmet
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@olrtg/emmet-language-server@2.0.0
+
+bin:
+  emmet-language-server: npm:@olrtg/emmet-language-server
