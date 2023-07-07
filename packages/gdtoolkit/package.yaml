@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/gdtoolkit@4.0.1
+  id: pkg:pypi/gdtoolkit@4.1.0
 
 bin:
   gdlint: pypi:gdlint
