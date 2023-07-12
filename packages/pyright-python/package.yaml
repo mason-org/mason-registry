@@ -1,0 +1,20 @@
+---
+name: pyright-python
+description: Static type checker for Python - in a Python wrapper.
+homepage: https://github.com/RobertCraigie/pyright-python
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/pyright@1.1.317
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/pyright/{{version}}/packages/vscode-pyright/package.json
+
+bin:
+  pyright-python: pypi:pyright-python
+  pyright-python-langserver: pypi:pyright-python-langserver
