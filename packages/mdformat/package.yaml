@@ -1,6 +1,6 @@
 ---
 name: mdformat
-description: CommonMark compliant Markdown formatter
+description: CommonMark compliant Markdown formatter.
 homepage: https://github.com/executablebooks/mdformat
 licenses:
   - MIT
