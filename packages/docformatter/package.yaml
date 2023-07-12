@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/docformatter@1.7.4
+  id: pkg:pypi/docformatter@1.7.5
 
 bin:
   docformatter: pypi:docformatter
