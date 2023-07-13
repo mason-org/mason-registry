@@ -14,7 +14,7 @@ categories:
 source:
   id: pkg:npm/%40angular/language-server@16.0.0
   extra_packages:
-    - typescript
+    - typescript@4.8.2
 
 bin:
   ngserver: npm:ngserver
