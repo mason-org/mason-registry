@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:composer/laravel/pint@v1.10.4
+  id: pkg:composer/laravel/pint@v1.10.5
 
 bin:
   pint: composer:pint
