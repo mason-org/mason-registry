@@ -1,0 +1,17 @@
+name: mdx-analyzer
+description: MDX language support
+homepage: https://github.com/mdx-js/mdx-analyzer/tree/main/packages/language-server
+licenses: MIT
+languages: MDX
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@mdx-js/language-server@0.1.0
+
+bin:
+  mdx-language-server: npm:mdx-language-server
+share?:
+  [share_location: string]: string
+opt?:
+  [opt_location: string]: string
