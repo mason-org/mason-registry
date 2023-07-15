@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/tweag/ormolu@v0.7.1.0
+  id: pkg:github/tweag/ormolu@0.7.1.0
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: ormolu-macOS.zip
