@@ -1,0 +1,22 @@
+---
+name: ormolu
+description: A formatter for Haskell source code.
+homepage: https://hackage.haskell.org/package/ormolu
+licenses:
+  - BSD-3-Clause
+languages:
+  - Haskell
+categories:
+  - Formatter
+
+source:
+  # renovate:versioning=loose
+  id: pkg:github/ormolu/ormolu@v0.7.1.0
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: fourmolu-{{ version | strip_prefix "v" }}-osx-x86_64
+    - target: linux_x64_gnu
+      file: fourmolu-{{ version | strip_prefix "v" }}-linux-x86_64
+
+bin:
+  ormolu: "{{source.asset.file}}"
