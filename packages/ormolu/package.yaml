@@ -16,7 +16,7 @@ source:
     - target: [darwin_x64, darwin_arm64]
       file: ormolu-macOS.zip
       bin: ormolu
-    - target: linux_x64_gnu
+    - target: linux_x64
       file: ormolu-Linux.zip
       bin: ormolu
     - target: win_x64
