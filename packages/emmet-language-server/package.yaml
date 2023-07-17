@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/@olrtg/emmet-language-server@2.0.1
+  id: pkg:npm/@olrtg/emmet-language-server@2.0.2
 
 bin:
   emmet-language-server: npm:emmet-language-server
