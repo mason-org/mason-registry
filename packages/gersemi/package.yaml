@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/gersemi@0.9.1
+  id: pkg:pypi/gersemi@0.9.2
 
 bin:
   gersemi: pypi:gersemi
