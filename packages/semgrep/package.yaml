@@ -27,3 +27,4 @@ source:
 
 bin:
   semgrep: pypi:semgrep
+  pysemgrep: pypi:pysemgrep
