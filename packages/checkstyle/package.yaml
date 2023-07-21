@@ -13,3 +13,6 @@ source:
   id: pkg:github/checkstyle/checkstyle@checkstyle-10.12.1
   asset:
     file: "{{version}}-all.jar"
+
+bin:
+  checkstyle: java-jar:{{version}}-all.jar
