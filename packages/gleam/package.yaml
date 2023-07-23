@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/gleam-lang/gleam@v0.30.2
+  id: pkg:github/gleam-lang/gleam@v0.30.3
   asset:
     - target: linux_x64
       file: gleam-{{version}}-x86_64-unknown-linux-musl.tar.gz
