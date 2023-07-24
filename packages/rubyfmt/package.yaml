@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/fables-tales/rubyfmt@v0.8.1
+  id: pkg:github/fables-tales/rubyfmt@v0.9.5
   asset:
     - target: darwin
       file: rubyfmt-{{version}}-Darwin-arm64.tar.gz
