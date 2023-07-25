@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nvarner/typst-lsp@v0.7.1
+  id: pkg:github/nvarner/typst-lsp@v0.7.2
   asset:
     - target: darwin_arm64
       file: typst-lsp-darwin-arm64
