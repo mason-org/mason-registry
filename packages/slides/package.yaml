@@ -1,0 +1,28 @@
+---
+name: slides
+description: Terminal based presentation tool
+homepage: https://github.com/maaslalani/slides
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories: []
+
+source:
+  id: pkg:github/maaslalani/slides@v0.9.0
+  asset:
+    - target: darwin_arm64
+      file: slides_0.9.0_darwin_arm64.tar.gz
+      bin: slides
+    - target: darwin_x64
+      file: slides_0.9.0_darwin_amd64.tar.gz
+      bin: slides
+    - target: linux_arm64
+      file: slides_0.9.0_linux_arm64.tar.gz
+      bin: slides
+    - target: linux_x64
+      file: slides_0.9.0_linux_amd64.tar.gz
+      bin: slides
+
+bin:
+  glow: "{{source.asset.bin}}"
