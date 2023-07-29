@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/mattn/efm-langserver@v0.0.46
+  id: pkg:golang/github.com/mattn/efm-langserver@v0.0.48
 
 bin:
   efm-langserver: golang:efm-langserver
