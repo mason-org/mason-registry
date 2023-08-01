@@ -1,19 +1,21 @@
 {
     automerge: true,
+    dependencyDashboard: true,
     platformAutomerge: true,
     automergeType: "pr",
-    commitMessage: "bump({{decodeURIComponent depName}}): update to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{{prettyNewVersion}}}{{/if}}",
+    commitMessage: "bump({{decodeURIComponent depName}}): update {{commitMessageExtra}}",
     separateMajorMinor: false,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
     branchConcurrentLimit: 0,
     rebaseWhen: "conflicted",
+    enabledManagers: ["regex"],
     regexManagers: [
         {
             fileMatch: "package\\.yaml$",
             matchStringsStrategy: "combination",
             matchStrings: [
-                "pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:github\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\nname: (?<depName>.+)",
                 "# renovate:datasource=git-refs[\\s\\S]*pkg:github\\/(?<packageName>.+)@(?<currentDigest>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
@@ -29,7 +31,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:cargo\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:cargo\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "\\?.*repository_url=(?<githubRepo>https:\\/\\/github\\.com)\\/(?<packageName>[^\\s&]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
             ],
@@ -43,7 +45,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:golang\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "go",
         },
@@ -52,7 +54,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:gem\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "rubygems",
         },
@@ -61,7 +63,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:composer\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:composer\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "packagist",
         },
@@ -70,7 +72,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:(?<datasource>npm|pypi|nuget)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:(?<datasource>npm|pypi|nuget)\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
             ],
             datasourceTemplate: "{{datasource}}",
         },
@@ -79,7 +81,7 @@
             matchStringsStrategy: "combination",
             matchStrings: [
                 "\nname: (?<depName>.+)",
-                "pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
+                "\n  id:\\s+pkg:generic\\/(?<packageName>.+)@(?<currentValue>[^\\s\\?#]+)",
                 "# renovate:.*versioning=(?<versioning>[^,\n]+)",
                 "# renovate:.*datasource=(?<datasource>[^,\n]+)",
             ],
@@ -87,4 +89,14 @@
             versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
         },
     ],
+    packageRules: [
+        {
+            matchDepNames: ["cucumber-language-server"],
+            allowedVersions: "!/^1\\.[34]\\.0/"
+        },
+        {
+            matchDepNames: ["rustfmt"],
+            allowedVersions: "<=1.5.1"
+        }
+    ]
 }

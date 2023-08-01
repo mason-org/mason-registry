@@ -10,6 +10,10 @@ languages:
 categories:
   - Formatter
 
+deprecation:
+  since: v1.5.1
+  message: rustfmt should now be installed via rustup.
+
 source:
   id: pkg:github/rust-lang/rustfmt@v1.5.1
   asset:

@@ -1,0 +1,15 @@
+---
+name: markmap-cli
+description: Visualize your Markdown as mindmaps.
+homepage: https://github.com/markmap/markmap
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories: []
+
+source:
+  id: pkg:npm/markmap-cli@0.15.4
+
+bin:
+  markmap: npm:markmap

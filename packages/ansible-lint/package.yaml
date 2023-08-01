@@ -12,14 +12,9 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/ansible-lint@6.15.0
+  id: pkg:pypi/ansible-lint@6.17.2
   supported_platforms:
-    - darwin_x64
-    - darwin_arm64
-    - linux_x64
-    - linux_x86
-    - linux_arm64
-    - linux_arm
+    - unix
 
 bin:
   ansible-lint: pypi:ansible-lint

@@ -12,9 +12,50 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40angular/language-server@16.0.0
+  id: pkg:npm/%40angular/language-server@16.1.4
   extra_packages:
-    - typescript
+    - typescript@4.8.2
+
+  version_overrides:
+    - constraint: semver:<=14.1.0
+      id: pkg:npm/%40angular/language-server@14.1.0
+      extra_packages:
+        - typescript@4.7.4
+
+    - constraint: semver:<=14.0.1
+      id: pkg:npm/%40angular/language-server@14.0.1
+      extra_packages:
+        - typescript@4.5.4
+
+    - constraint: semver:<=13.3.4
+      id: pkg:npm/%40angular/language-server@13.3.4
+      extra_packages:
+        - typescript@~4.6.2
+
+    - constraint: semver:<=13.2.6
+      id: pkg:npm/%40angular/language-server@13.2.6
+      extra_packages:
+        - typescript@4.5.4
+
+    - constraint: semver:<=13.1.1
+      id: pkg:npm/%40angular/language-server@13.1.1
+      extra_packages:
+        - typescript@4.4.3
+
+    - constraint: semver:<=12.2.3
+      id: pkg:npm/%40angular/language-server@12.2.3
+      extra_packages:
+        - typescript@4.3.4
+
+    - constraint: semver:<=12.0.5
+      id: pkg:npm/%40angular/language-server@12.0.5
+      extra_packages:
+        - typescript@4.2.4
+
+    - constraint: semver:<=11.2.14
+      id: pkg:npm/%40angular/language-server@11.2.14
+      extra_packages:
+        - typescript@4.1.5
 
 bin:
   ngserver: npm:ngserver

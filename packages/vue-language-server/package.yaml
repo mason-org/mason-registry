@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40volar/vue-language-server@1.6.4
+  id: pkg:npm/%40vue/language-server@1.8.8
   extra_packages:
     - typescript
 

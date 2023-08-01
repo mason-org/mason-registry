@@ -1,0 +1,24 @@
+---
+name: nimlangserver
+description: The Nim language server implementation (based on nimsuggest)
+homepage: https://github.com/nim-lang/langserver
+licenses:
+  - MIT
+languages:
+  - Nim
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/nim-lang/langserver@2e16d9b34b797fec69961558a72ea899232a1bed
+  build:
+    - target: unix
+      run: nimble build -y --localdeps
+      bin: nimlangserver
+    - target: win
+      run: nimble build -y --localdeps
+      bin: nimlangserver.exe
+
+bin:
+  nimlangserver: "{{source.build.bin}}"

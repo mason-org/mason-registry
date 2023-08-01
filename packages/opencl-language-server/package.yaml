@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/Galarius/opencl-language-server@0.4.1
+  id: pkg:github/Galarius/opencl-language-server@0.5.2
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: opencl-language-server-darwin-x86_64.tar.gz

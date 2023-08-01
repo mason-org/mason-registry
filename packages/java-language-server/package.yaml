@@ -19,15 +19,15 @@ source:
         ./scripts/link_mac.sh
         mvn package -DskipTests
       bin:
-        lsp: dist/lang_server_mac.sh
-        dap: dist/debug_adapter_mac.sh
+        lsp: exec:dist/lang_server_mac.sh
+        dap: exec:dist/debug_adapter_mac.sh
     - target: linux
       run: |
         ./scripts/link_linux.sh
         mvn package -DskipTests
       bin:
-        lsp: dist/lang_server_linux.sh
-        dap: dist/debug_adapter_linux.sh
+        lsp: exec:dist/lang_server_linux.sh
+        dap: exec:dist/debug_adapter_linux.sh
     - target: win
       run: |
         bash .\scripts\link_windows.sh

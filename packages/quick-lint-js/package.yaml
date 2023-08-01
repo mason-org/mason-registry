@@ -14,7 +14,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:generic/quick-lint/quick-lint-js@2.13.0
+  id: pkg:generic/quick-lint/quick-lint-js@2.15.0
   download:
     - target: darwin_x64
       files:

@@ -1,6 +1,6 @@
 ---
 name: vale
-description: 📝 A syntax-aware linter for prose built with speed and extensibility in mind.
+description: A syntax-aware linter for prose built with speed and extensibility in mind.
 homepage: https://vale.sh/
 licenses:
   - MIT
@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/errata-ai/vale@v2.25.2
+  id: pkg:github/errata-ai/vale@v2.28.1
   asset:
     - target: darwin_x64
       file: vale_{{ version | strip_prefix "v" }}_macOS_64-bit.tar.gz

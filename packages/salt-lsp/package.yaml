@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/salt-lsp@0.0.1
 
 bin:
-  salt-lsp: pypi:salt_lsp_server
+  salt_lsp_server: pypi:salt_lsp_server

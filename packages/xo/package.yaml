@@ -10,8 +10,12 @@ languages:
 categories:
   - Linter
 
+deprecation:
+  since: v0.41.0
+  message: xo should now be installed locally in the project where it's used.
+
 source:
-  id: pkg:npm/xo@0.54.2
+  id: pkg:npm/xo@0.55.0
 
 bin:
   xo: npm:xo

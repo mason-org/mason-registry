@@ -1,0 +1,16 @@
+---
+name: mdformat
+description: CommonMark compliant Markdown formatter.
+homepage: https://github.com/executablebooks/mdformat
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/mdformat@0.7.16
+
+bin:
+  mdformat: pypi:mdformat
