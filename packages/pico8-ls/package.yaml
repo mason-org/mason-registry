@@ -1,0 +1,20 @@
+---
+name: pico8-ls
+description: PICO-8 Language Server
+homepage: https://github.com/japhib/pico8-ls
+licenses:
+  - MIT
+languages:
+  - PICO-8
+  - PICO-8 Lua
+categories:
+  - LSP
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/japhib/pico8-ls
+  build:
+    run: |
+      npm run compile
+bin:
+  pico8_ls: node:client/out-min/main.js
+
