@@ -10,38 +10,15 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/zigtools/zls@0.10.0
-  asset:
-    - target: darwin_arm64
-      file: aarch64-macos.tar.zst
-      bin: bin/zls
-    - target: darwin_x64
-      file: x86_64-macos.tar.zst
-      bin: bin/zls
-    - target: linux_x64
-      file: x86_64-linux.tar.zst
-      bin: bin/zls
-    - target: linux_x86
-      file: i386-linux.tar.zst
-      bin: bin/zls
-    - target: win_x86
-      file: i386-windows.tar.zst
-      bin: bin/zls.exe
-    - target: win_x64
-      file: x86_64-windows.tar.zst
-      bin: bin/zls.exe
+  # renovate:datasource=git-refs
+  id: pkg:github/zigtools/zls@d1d4e60d543812231e3afe977f32fc6846c83962
+  build:
+    run: |
+      zig build -Doptimize=ReleaseSafe
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/zigtools/zls-vscode/master/package.json
 
 bin:
-  zls: "{{source.asset.bin}}"
+  zls: "zig-out/bin/zls"
 
-# zstd is unavailable on runners.
-ci_skip:
-  - darwin_x64
-  - darwin_arm64
-  - win_arm
-  - win_arm64
-  - win_x64
-  - win_x86
