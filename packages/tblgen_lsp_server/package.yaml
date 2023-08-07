@@ -1,0 +1,16 @@
+---
+name: tblgen-lsp-server
+description: The Language Server for the LLVM TableGen language
+homepage: https://mlir.llvm.org/docs/Tools/MLIRLSP/#tablegen-lsp-language-server--tblgen-lsp-server
+licenses:
+  - Apache-2.0
+languages:
+  - Text
+categories:
+  - LSP
+
+source:
+  id: pkg:github/llvm/llvm-project@2023-8-07
+
+bin:
+  tblgen-lsp-server: usr/bin/tblgen-lsp-server

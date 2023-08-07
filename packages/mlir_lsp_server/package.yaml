@@ -1,0 +1,16 @@
+---
+name: mlir-lsp-server
+description: The Language Server for the LLVM MLIR language
+homepage: https://mlir.llvm.org/docs/Tools/MLIRLSP/#mlir-lsp-language-server--mlir-lsp-server=
+licenses:
+  - Apache-2.0
+languages:
+  - Text
+categories:
+  - LSP
+
+source:
+  id: pkg:github/llvm/llvm-project@2023-8-07
+
+bin:
+  mlir-lsp-server: usr/bin/mlir-lsp-server
