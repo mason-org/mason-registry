@@ -1,0 +1,16 @@
+---
+name: actions-languageserver
+description: GitHub Workflows LSP server providing value-, context-, and expression-aware completion, diagnostics, and more.
+homepage: https://www.npmjs.com/package/@actions/languageserver
+licenses:
+  - MIT
+languages:
+  - YAML
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40actions/languageserver@0.3.7
+
+bin:
+  actions-languageserver: npm:actions-languageserver
