@@ -1,7 +1,7 @@
 ---
 name: ruff
 description: An extremely fast Python linter, written in Rust.
-homepage: https://github.com/charliermarsh/ruff/
+homepage: https://github.com/astral-sh/ruff/
 licenses:
   - MIT
 languages:
