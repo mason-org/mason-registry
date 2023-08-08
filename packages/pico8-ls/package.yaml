@@ -16,4 +16,4 @@ source:
     run: |
       npm run compile
 bin:
-  pico8_ls: node:client/out-min/main.js
+  pico8-ls: node:client/out-min/main.js
