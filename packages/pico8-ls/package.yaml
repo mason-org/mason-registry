@@ -6,7 +6,6 @@ licenses:
   - MIT
 languages:
   - PICO-8
-  - PICO-8 Lua
 categories:
   - LSP
 source:
