@@ -11,6 +11,7 @@ languages:
   - Slang
 categories:
   - LSP
+  - Compiler
 
 source:
   # renovate:versioning=loose
