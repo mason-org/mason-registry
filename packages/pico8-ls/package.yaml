@@ -14,7 +14,9 @@ source:
   id: pkg:github/japhib/pico8-ls@ef01bb52cba6fe358dcc2478ace74033744fdd26
   build:
     run: |
+      npm install
       npm run compile
+      npm install --production
 
 bin:
-  pico8-ls: node:client/out-min/main.js
+  pico8-ls: node:server/out-min/main.js
