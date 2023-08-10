@@ -16,7 +16,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/vulture@2.7
+  id: pkg:pypi/vulture@2.8
 
 bin:
   vulture: pypi:vulture
