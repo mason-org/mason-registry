@@ -32,7 +32,7 @@ source:
       bin: bin/zls.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/zigtools/zls-vscode/master/package.json
+  lsp: vscode:https://raw.githubusercontent.com/ziglang/vscode-zig/master/package.json
 
 bin:
   zls: "{{source.asset.bin}}"
