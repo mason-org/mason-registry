@@ -1,7 +1,6 @@
 ---
 name: elixir-next-ls
-description: |
-  NextLS is the language server for Elixir that just works.
+description: NextLS is the language server for Elixir that just works.
 homepage: https://www.elixir-tools.dev/next-ls/
 licenses:
   - MIT
@@ -11,11 +10,22 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/elixir-tools/next-ls@0.4.0
+  id: pkg:github/elixir-tools/next-ls@v0.9.0
   asset:
-    - target: unix
-      file: nextls
-      bin: nextls
+    - target: darwin_x64
+      file: next_ls_darwin_amd64
+    - target: darwin_arm64
+      file: next_ls_darwin_arm64
+    - target: linux_x64_gnu
+      file: next_ls_linux_amd64
+    - target: linux_x64
+      file: next_ls_linux_amd64_musl
+    - target: linux_arm64_gnu
+      file: next_ls_linux_arm64
+    - target: linux_arm64
+      file: next_ls_linux_arm64_musl
+    - target: win_x64
+      file: next_ls_windows_amd64.exe
 
 bin:
-  nextls: "{{source.asset.bin}}"
+  nextls: "{{source.asset.file}}"
