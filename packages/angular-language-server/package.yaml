@@ -14,7 +14,7 @@ categories:
 source:
   id: pkg:npm/%40angular/language-server@16.1.8
   extra_packages:
-    - typescript@4.8.2
+    - typescript@5.1.3
 
   version_overrides:
     - constraint: semver:<=14.1.0
