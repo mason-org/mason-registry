@@ -1,0 +1,18 @@
+---
+name: asmfmt
+description: |
+  Go Assembler Formatter
+  This will format your assembler code in a similar way that gofmt formats your Go code.
+homepage: https://github.com/klauspost/asmfmt
+licenses:
+  - MIT
+languages:
+  - Assembly
+categories:
+  - Formatter
+
+source:
+  id: pkg:github.com/klauspost/asmfmt/cmd/asmfmt@v1.3.2
+
+bin:
+  asmfmt: golang:asmfmt
