@@ -12,7 +12,26 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/klauspost/asmfmt@v1.3.2#cmd/asmfmt
+  id: pkg:github/klauspost/asmfmt@v1.3.2
+  asset:
+    - target: darwin_arm64
+      file: asmfmt-OSX_arm64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt
+    - target: darwin_x64
+      file: asmfmt-OSX_x86_64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt
+    - target: linux_arm64
+      file: asmfmt-Linux_arm64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt
+    - target: linux_x64
+      file: asmfmt-Linux_x86_64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt
+    - target: win_arm64
+      file: asmfmt-Windows_arm64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt.exe
+    - target: win_x64
+      file: asmfmt-Windows_x86_64_{{ version | strip_prefix "v" }}.tar.gz
+      bin: asmfmt.exe
 
 bin:
-  asmfmt: golang:asmfmt
+  asmfmt: "{{source.asset.bin}}"
