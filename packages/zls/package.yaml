@@ -13,22 +13,25 @@ source:
   id: pkg:github/zigtools/zls@0.11.0
   asset:
     - target: darwin_arm64
-      file: aarch64-macos.tar.zst
+      file: zls-aarch64-macos.tar.gz
       bin: bin/zls
     - target: darwin_x64
-      file: x86_64-macos.tar.zst
+      file: zls-x86_64-macos.tar.gz
+      bin: bin/zls
+    - target: linux_arm64
+      file: zls-aarch64-linux.tar.gz
       bin: bin/zls
     - target: linux_x64
-      file: x86_64-linux.tar.zst
+      file: zls-x86_64-linux.tar.gz
       bin: bin/zls
     - target: linux_x86
-      file: i386-linux.tar.zst
+      file: zls-x86-linux.tar.gz
       bin: bin/zls
     - target: win_x86
-      file: i386-windows.tar.zst
+      file: zls-x86-windows.zip
       bin: bin/zls.exe
     - target: win_x64
-      file: x86_64-windows.tar.zst
+      file: zls-x86_64-windows.zip
       bin: bin/zls.exe
 
 schemas:
@@ -36,12 +39,3 @@ schemas:
 
 bin:
   zls: "{{source.asset.bin}}"
-
-# zstd is unavailable on runners.
-ci_skip:
-  - darwin_x64
-  - darwin_arm64
-  - win_arm
-  - win_arm64
-  - win_x64
-  - win_x86
