@@ -39,12 +39,3 @@ schemas:
 
 bin:
   zls: "{{source.asset.bin}}"
-
-# zstd is unavailable on runners.
-ci_skip:
-  - darwin_x64
-  - darwin_arm64
-  - win_arm
-  - win_arm64
-  - win_x64
-  - win_x86
