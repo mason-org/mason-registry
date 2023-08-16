@@ -6,7 +6,7 @@ homepage: https://kcl-lang.io
 licenses:
   - Apache-2.0
 languages:
-  - Kcl
+  - KCL
 categories:
   - LSP
 
