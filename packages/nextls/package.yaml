@@ -1,5 +1,5 @@
 ---
-name: elixir-next-ls
+name: nextls
 description: NextLS is the language server for Elixir that just works.
 homepage: https://www.elixir-tools.dev/next-ls/
 licenses:
