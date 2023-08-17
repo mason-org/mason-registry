@@ -20,41 +20,41 @@ source:
     - target: darwin_x64
       file: kclvm-{{version}}-darwin-amd64.tar.gz
       bin:
-        kcl: kclvm/bin/kcl
-        kcl_doc: kclvm/bin/kcl-doc
-        kcl_fmt: kclvm/bin/kcl-fmt
-        kcl_lint: kclvm/bin/kcl-lint
-        kcl_plugin: kclvm/bin/kcl-plugin
-        kcl_test: kclvm/bin/kcl-test
-        kcvlm: kclvm/bin/kclvm
-        kcl_vet: kclvm/bin/kcl-vet
-        kcl_language_server: kclvm/bin/kcl-language-server
+        kcl: exec:kclvm/bin/kcl
+        kcl_doc: exec:kclvm/bin/kcl-doc
+        kcl_fmt: exec:kclvm/bin/kcl-fmt
+        kcl_lint: exec:kclvm/bin/kcl-lint
+        kcl_plugin: exec:kclvm/bin/kcl-plugin
+        kcl_test: exec:kclvm/bin/kcl-test
+        kcvlm: exec:kclvm/bin/kclvm
+        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: darwin_arm64
       file: kclvm-{{version}}-darwin-arm64.tar.gz
       bin:
-        kcl: kclvm/bin/kcl
-        kcl_doc: kclvm/bin/kcl-doc
-        kcl_fmt: kclvm/bin/kcl-fmt
-        kcl_lint: kclvm/bin/kcl-lint
-        kcl_plugin: kclvm/bin/kcl-plugin
-        kcl_test: kclvm/bin/kcl-test
-        kcvlm: kclvm/bin/kclvm
-        kcl_vet: kclvm/bin/kcl-vet
-        kcl_language_server: kclvm/bin/kcl-language-server
+        kcl: exec:kclvm/bin/kcl
+        kcl_doc: exec:kclvm/bin/kcl-doc
+        kcl_fmt: exec:kclvm/bin/kcl-fmt
+        kcl_lint: exec:kclvm/bin/kcl-lint
+        kcl_plugin: exec:kclvm/bin/kcl-plugin
+        kcl_test: exec:kclvm/bin/kcl-test
+        kcvlm: exec:kclvm/bin/kclvm
+        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: linux_x64_gnu
       file: kclvm-{{version}}-linux-amd64.tar.gz
       bin:
-        kcl: kclvm/bin/kcl
-        kcl_doc: kclvm/bin/kcl-doc
-        kcl_fmt: kclvm/bin/kcl-fmt
-        kcl_lint: kclvm/bin/kcl-lint
-        kcl_plugin: kclvm/bin/kcl-plugin
-        kcl_test: kclvm/bin/kcl-test
-        kcvlm: kclvm/bin/kclvm
-        kcl_vet: kclvm/bin/kcl-vet
-        kcl_language_server: kclvm/bin/kcl-language-server
+        kcl: exec:kclvm/bin/kcl
+        kcl_doc: exec:kclvm/bin/kcl-doc
+        kcl_fmt: exec:kclvm/bin/kcl-fmt
+        kcl_lint: exec:kclvm/bin/kcl-lint
+        kcl_plugin: exec:kclvm/bin/kcl-plugin
+        kcl_test: exec:kclvm/bin/kcl-test
+        kcvlm: exec:kclvm/bin/kclvm
+        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: win_x64
       file: kclvm-{{version}}-windows.zip
