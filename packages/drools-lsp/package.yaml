@@ -10,6 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/kiegroup/drools-lsp@latest
+  # renovate:datasource=git-refs
+  id: pkg:github/kiegroup/drools-lsp@7a025b1b99b18cfb33576cd4076d0a1b02ae009d
   asset:
     file: drools-lsp-server-jar-with-dependencies.jar
