@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/haskell/haskell-language-server@2.0.0.0
+  id: pkg:generic/haskell/haskell-language-server@2.1.0.0
   build:
     - target: unix
       run: ghcup install hls "$VERSION" -i "$PWD"
@@ -22,9 +22,10 @@ source:
         wrapper: bin/haskell-language-server-wrapper
         server_8_10_7: bin/haskell-language-server-8.10.7
         server_9_0_2: bin/haskell-language-server-9.0.2
-        server_9_2_7: bin/haskell-language-server-9.2.7
+        server_9_2_8: bin/haskell-language-server-9.2.8
         server_9_4_5: bin/haskell-language-server-9.4.5
-        server_9_6_1: bin/haskell-language-server-9.6.1
+        server_9_4_6: bin/haskell-language-server-9.4.6
+        server_9_6_2: bin/haskell-language-server-9.6.2
 
     - target: win
       run: ghcup install hls $env:VERSION -i ($pwd).path
@@ -35,15 +36,17 @@ source:
         wrapper: haskell-language-server-wrapper.exe
         server_8_10_7: haskell-language-server-8.10.7.exe
         server_9_0_2: haskell-language-server-9.0.2.exe
-        server_9_2_7: haskell-language-server-9.2.7.exe
+        server_9_2_8: haskell-language-server-9.2.8.exe
         server_9_4_5: haskell-language-server-9.4.5.exe
-        server_9_6_1: haskell-language-server-9.6.1.exe
+        server_9_4_6: haskell-language-server-9.4.6.exe
+        server_9_6_2: haskell-language-server-9.6.2.exe
 
 bin:
   haskell-language-server-wrapper: "{{source.build.bin.wrapper}}"
   haskell-language-server-8.10.7: "{{source.build.bin.server_8_10_7}}"
   # https://github.com/haskell/haskell-language-server/issues/3162
   haskell-language-server-9.0.2: "{{ source.build.bin.server_9_0_2 | take_if_not(is_platform('darwin_arm64')) }}"
-  haskell-language-server-9.2.7: "{{source.build.bin.server_9_2_7}}"
+  haskell-language-server-9.2.8: "{{source.build.bin.server_9_2_8}}"
   haskell-language-server-9.4.5: "{{source.build.bin.server_9_4_5}}"
-  haskell-language-server-9.6.1: "{{source.build.bin.server_9_6_1}}"
+  haskell-language-server-9.4.6: "{{source.build.bin.server_9_4_6}}"
+  haskell-language-server-9.6.2: "{{source.build.bin.server_9_6_2}}"
