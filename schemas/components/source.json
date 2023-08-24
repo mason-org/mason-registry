@@ -14,7 +14,8 @@
                 { "$ref": "sources/npm" },
                 { "$ref": "sources/nuget" },
                 { "$ref": "sources/opam" },
-                { "$ref": "sources/pypi" }
+                { "$ref": "sources/pypi" },
+                { "$ref": "sources/swift" }
             ]
         }
     },
