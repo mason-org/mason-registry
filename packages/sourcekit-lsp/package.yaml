@@ -1,0 +1,17 @@
+---
+name: sourcekit-lsp
+description: |
+  Language Server Protocol implementation for Swift and C-based languages.
+homepage: https://github.com/apple/sourcekit-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - Swift
+categories:
+  - LSP
+
+source:
+  id: pkg:swift/github.com/apple/sourcekit-lsp@swift-5.8.1-RELEASE
+
+bin:
+  sourcekit-lsp: .build/debug/sourcekit-lsp
