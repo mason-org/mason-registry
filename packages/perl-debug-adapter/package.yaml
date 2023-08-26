@@ -1,0 +1,20 @@
+---
+name: perl-debug-adapter
+description: Perl debugger
+homepage: https://github.com/Nihilus118/vscode-perl-debug
+licenses:
+  - MIT
+languages:
+  - Perl
+categories:
+  - DAP
+
+source:
+  id: pkg:github/Nihilus118/vscode-perl-debug@7ef298610b91b76ed76bebc4962f1a849052a437
+  build:
+    run: |
+      npm install
+      npx tsc
+
+bin:
+  perl-debug-adapter: node:out/debugAdapter.js
