@@ -15,7 +15,8 @@ source:
   build:
     run: |
       npm install
-      npx tsc
+      npm run compile
+      npm install --production
 
 bin:
   perl-debug-adapter: node:out/debugAdapter.js
