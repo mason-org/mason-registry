@@ -16,7 +16,6 @@ source:
     run: |
       npm install
       npm run compile
-      npm install --production
 
 bin:
   perl-debug-adapter: node:out/debugAdapter.js
