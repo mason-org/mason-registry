@@ -11,6 +11,8 @@ categories:
 
 source:
   id: pkg:npm/graphql-language-service-cli@3.3.25
+  extra_packages:
+    - graphql
 
 bin:
   graphql-lsp: npm:graphql-lsp
