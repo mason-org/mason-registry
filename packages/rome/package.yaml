@@ -5,15 +5,13 @@ homepage: https://rome.tools
 licenses:
   - MIT
 languages:
-  - CSS
-  - HTML
   - JSON
   - JavaScript
-  - Markdown
   - TypeScript
 categories:
   - LSP
   - Linter
+  - Formatter
 
 source:
   id: pkg:npm/rome@12.1.3
