@@ -1,0 +1,23 @@
+---
+name: biome
+description: Toolchain of the web. Successor to Rome.
+homepage: https://biomejs.dev
+licenses:
+  - MIT
+languages:
+  - JSON
+  - JavaScript
+  - TypeScript
+categories:
+  - LSP
+  - Linter
+  - Formatter
+
+source:
+  id: pkg:npm/@biomejs/biome@1.0.0
+
+schemas:
+  lsp: vscode:https://biomejs.dev/schemas/{{version}}/schema.json
+
+bin:
+  rome: npm:biome
