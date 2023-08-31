@@ -1,19 +1,20 @@
 ---
 name: rome
+deprecation: 
+  message: Rome is deprecated. Use biome, its successor.
+  since: 12.1.3
 description: Rome is a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
 homepage: https://rome.tools
 licenses:
   - MIT
 languages:
-  - CSS
-  - HTML
   - JSON
   - JavaScript
-  - Markdown
   - TypeScript
 categories:
   - LSP
   - Linter
+  - Formatter
 
 source:
   id: pkg:npm/rome@12.1.3
