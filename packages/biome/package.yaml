@@ -20,4 +20,4 @@ schemas:
   lsp: vscode:https://raw.githubusercontent.com/biomejs/biome/lsp/v{{version}}/editors/vscode/package.json
 
 bin:
-  rome: npm:biome
+  biome: npm:biome
