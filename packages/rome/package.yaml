@@ -1,6 +1,6 @@
 ---
 name: rome
-description: Rome is a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
+description: Rome (deprecated in favour of Biome) was a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
 homepage: https://rome.tools
 licenses:
   - MIT
