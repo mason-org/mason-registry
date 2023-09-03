@@ -1,16 +1,16 @@
 ---
-name: bibtex-tidy
-description: Cleaner and Formatter for BibTeX files
-homepage: https://github.com/FlamingTempura/bibtex-tidy
+name: stylelint-config-standard
+description: The standard shareable config for Stylelint
+homepage: https://github.com/stylelint/stylelint-config-standard
 licenses:
   - MIT
 languages:
-  - LaTeX
+  - CSS
+  - Sass
+  - SCSS
+  - LESS
 categories:
-  - Formatter
+  - Linter
 
 source:
-  id: pkg:npm/bibtex-tidy@1.11.0
-
-bin:
-  bibtex-tidy: npm:bibtex-tidy
+  id: pkg:npm/stylelint-config-standard@34.0.0
