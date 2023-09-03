@@ -1,5 +1,5 @@
 ---
-name: stylelint
+name: stylelint-order
 description: A plugin pack of order related linting rules for Stylelint.
 homepage: https://github.com/hudochenkov/stylelint-order
 licenses:
