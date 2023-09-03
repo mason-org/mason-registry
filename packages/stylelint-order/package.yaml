@@ -1,0 +1,17 @@
+---
+name: stylelint
+description: A plugin pack of order related linting rules for Stylelint.
+homepage: https://github.com/hudochenkov/stylelint-order
+licenses:
+  - MIT
+languages:
+  - CSS
+  - Sass
+  - SCSS
+  - LESS
+categories:
+  - Linter
+  - Formatter
+
+source:
+  id: pkg:npm/stylelint-order@6.0.3

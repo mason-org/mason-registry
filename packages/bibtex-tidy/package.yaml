@@ -1,0 +1,16 @@
+---
+name: stylelint-config-standard
+description: The standard shareable config for Stylelint
+homepage: https://github.com/stylelint/stylelint-config-standard
+licenses:
+  - MIT
+languages:
+  - CSS
+  - Sass
+  - SCSS
+  - LESS
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/stylelint-config-standard@34.0.0
