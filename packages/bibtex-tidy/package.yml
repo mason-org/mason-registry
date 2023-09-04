@@ -1,0 +1,16 @@
+---
+name: bibtex-tidy
+description: Cleaner and Formatter for BibTeX files
+homepage: https://github.com/FlamingTempura/bibtex-tidy
+licenses:
+  - MIT
+languages:
+  - LaTeX
+categories:
+  - Formatter
+
+source:
+  id: pkg:npm/bibtex-tidy@1.11.0
+
+bin:
+  bibtex-tidy: npm:bibtex-tidy
