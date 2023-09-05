@@ -9,7 +9,6 @@ languages:
 categories:
   - Formatter
   
-
 source:
   id: pkg:npm/purs-tidy@0.10.0
   
