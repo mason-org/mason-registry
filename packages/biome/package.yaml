@@ -17,7 +17,7 @@ source:
   id: pkg:npm/@biomejs/biome@1.1.1
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/biomejs/biome/lsp/v{{version}}/editors/vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/biomejs/biome/cli/v{{version}}/editors/vscode/package.json
 
 bin:
   biome: npm:biome
