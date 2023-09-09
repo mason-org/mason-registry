@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/rstcheck@6.1.2
+  id: pkg:pypi/rstcheck@6.2.0
 
 bin:
   rstcheck: pypi:rstcheck
