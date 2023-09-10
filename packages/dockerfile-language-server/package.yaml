@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/dockerfile-language-server-nodejs@0.10.2
+  id: pkg:npm/dockerfile-language-server-nodejs@0.11.0
 
 bin:
   docker-langserver: npm:docker-langserver
