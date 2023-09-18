@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/cfn-lint@0.79.11
+  id: pkg:pypi/cfn-lint@0.80.2
 
 bin:
   cfn-lint: pypi:cfn-lint
