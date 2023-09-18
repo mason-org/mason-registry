@@ -35,4 +35,4 @@ source:
       file: gitleaks_{{ version | strip_prefix "v" }}_windows_x64.zip
 
 bin:
-  gitlint: "{{source.asset.file}}"
+  gitleaks: "{{source.asset.file}}"
