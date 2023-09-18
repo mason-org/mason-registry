@@ -1,0 +1,16 @@
+---
+name: easy-coding-standard
+description: Use Coding Standard with 0-knowledge of PHP-CS-Fixer and PHP_CodeSniffer.
+homepage: https://github.com/easy-coding-standard/easy-coding-standard
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - Formatter
+
+source:
+  id: pkg:composer/symplify/easy-coding-standard@12.0.8
+
+bin:
+  ecs: composer:bin/ecs
