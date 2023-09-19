@@ -8,6 +8,7 @@ languages:
   - PHP
 categories:
   - Formatter
+  - Linter
 
 source:
   id: pkg:composer/symplify/easy-coding-standard@12.0.8
