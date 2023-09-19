@@ -1,6 +1,6 @@
 ---
 name: gitleaks
-description: "Gitleaks helps you protect and discover secrets in git repositories"
+description: Gitleaks helps you protect and discover secrets in git repositories.
 homepage: https://github.com/gitleaks/gitleaks
 licenses:
   - MIT
