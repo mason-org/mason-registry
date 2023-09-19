@@ -13,4 +13,4 @@ source:
   id: pkg:composer/symplify/easy-coding-standard@12.0.8
 
 bin:
-  ecs: composer:bin/ecs
+  ecs: composer:ecs
