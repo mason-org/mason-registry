@@ -5,7 +5,8 @@ homepage: https://github.com/trufflesecurity/trufflehog
 licenses:
   - AGPL-3.0
 languages: []
-categories: [Linter]
+categories:
+  - Linter
 
 source:
   id: pkg:github/trufflesecurity/trufflehog@v3.56.1
