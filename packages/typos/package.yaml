@@ -15,7 +15,7 @@ source:
     - target: darwin_x64
       file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
       bin: typos
-    - target: linux_x64_gnu
+    - target: linux_x64
       file: typos-{{ version }}-x86_64-unknown-linux-musl.tar.gz
       bin: typos
     - target: win_x64
