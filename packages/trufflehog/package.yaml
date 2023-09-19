@@ -1,8 +1,9 @@
 ---
 name: trufflehog
-description: Find and verify credentials
+description: Find and verify credentials.
 homepage: https://github.com/trufflesecurity/trufflehog
-licenses: [AGPL-3.0]
+licenses:
+  - AGPL-3.0
 languages: []
 categories: [Linter]
 
