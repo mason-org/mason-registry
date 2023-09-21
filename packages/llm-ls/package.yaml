@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/huggingface/llm-ls@0.1.1
+  id: pkg:github/huggingface/llm-ls@0.2.0
   asset:
     - target: darwin_x64
       file: llm-ls-x86_64-apple-darwin.gz
