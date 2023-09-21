@@ -21,7 +21,7 @@ source:
         lsp: ltex-ls-{{version}}/bin/ltex-ls
         cli: ltex-ls-{{version}}/bin/ltex-cli
     - target: win
-      file: ltex-ls-{{version}}.tar.gz
+      file: ltex-ls-{{version}}-windows-x64.zip
       bin:
         lsp: ltex-ls-{{version}}/bin/ltex-ls.bat
         cli: ltex-ls-{{version}}/bin/ltex-cli.bat
