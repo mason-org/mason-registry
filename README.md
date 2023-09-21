@@ -13,4 +13,3 @@
 Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
 
 Compiled registry contents are available via [releases](https://github.com/mason-org/mason-registry/releases).
-
