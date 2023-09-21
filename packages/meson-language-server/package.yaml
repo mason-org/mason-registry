@@ -1,0 +1,26 @@
+---
+name: meson-language-server
+description: A language server for meson
+homepage: https://github.com/JCWasmx86/Swift-MesonLSP
+licenses:
+  - GPL-3.0
+languages:
+  - Meson
+categories:
+  - LSP
+
+source:
+  id: pkg:github/JCWasmx86/Swift-MesonLSP@v2.4.2
+  asset:
+    - target: linux_x64
+      file: Swift-MesonLSP.zip
+      bin: Swift-MesonLSP
+    - target: darwin
+      file: Swift-MesonLSP-macos13.zip
+      bin: Swift-MesonLSP
+    - target: win_x64
+      file: Swift-MesonLSP-win64.zip
+      bin: Swift-MesonLSP.exe
+
+bin:
+  Swift-MesonLSP: "{{source.asset.bin}}"
