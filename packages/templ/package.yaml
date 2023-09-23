@@ -19,6 +19,9 @@ source:
       file: templ_Linux_arm64.tar.gz
       bin: templ
     - target: linux_x86
+      file: templ_Linux_i386.tar.gz
+      bin: templ
+    - target: linux_x64
       file: templ_Linux_x86_64.tar.gz
       bin: templ
     - target: darwin_x64
