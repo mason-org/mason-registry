@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pyproject-flake8@6.0.0.post1
+  id: pkg:pypi/pyproject-flake8@6.1.0
 
 bin:
   pyproject-flake8: pypi:pflake8
