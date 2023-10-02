@@ -19,10 +19,10 @@ source:
       bin: efm-langserver_{{version}}_darwin_arm64/efm-langserver
     - target: linux_x64
       file: efm-langserver_{{version}}_linux_amd64.tar.gz
-      bin: efm-langserver
+      bin: efm-langserver_{{version}}_linux_amd64/efm-langserver
     - target: linux_arm64
       file: efm-langserver_{{version}}_linux_arm64.tar.gz
-      bin: efm-langserver
+      bin: efm-langserver_{{version}}_linux_arm64/efm-langserver
     - target: win_x64
       file: efm-langserver_{{version}}_windows_amd64.zip
       bin: efm-langserver_{{version}}_windows_amd64/efm-langserver.exe
