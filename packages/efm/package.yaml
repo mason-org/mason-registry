@@ -9,7 +9,26 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/mattn/efm-langserver@v0.0.48
+  id: pkg:github/mattn/efm-langserver@v0.0.48
+  asset:
+    - target: darwin_x64
+      file: efm-langserver_{{version}}_darwin_amd64.zip
+      bin: efm-langserver_{{version}}_darwin_amd64/efm-langserver
+    - target: darwin_arm64
+      file: efm-langserver_{{version}}_darwin_arm64.zip
+      bin: efm-langserver_{{version}}_darwin_arm64/efm-langserver
+    - target: linux_x64
+      file: efm-langserver_{{version}}_linux_amd64.tar.gz
+      bin: efm-langserver
+    - target: linux_arm64
+      file: efm-langserver_{{version}}_linux_arm64.tar.gz
+      bin: efm-langserver
+    - target: win_x64
+      file: efm-langserver_{{version}}_windows_amd64.zip
+      bin: efm-langserver_{{version}}_windows_amd64/efm-langserver.exe
+    - target: win_arm64
+      file: efm-langserver_{{version}}_windows_arm64.zip
+      bin: efm-langserver_{{version}}_windows_arm64/efm-langserver.exe
 
 bin:
-  efm-langserver: golang:efm-langserver
+  efm-langserver: "{{source.asset.bin}}"
