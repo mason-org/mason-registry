@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/fwcd/kotlin-debug-adapter@0.4.3
+  id: pkg:github/fwcd/kotlin-debug-adapter@0.4.4
   asset:
     - target: [darwin_x64, darwin_arm64, linux_x64, linux_arm64]
       file: adapter.zip
