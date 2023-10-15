@@ -1,0 +1,11 @@
+name: HTMX-LSP
+description: An expiremental LSP for HTMX.
+hompage: https://github.com/ThePrimeagen/htmx-lsp
+languages:
+  - HTMX
+categories:
+  - Lsp
+source:
+  id: pkg:cargo/htmx-lsp@0.1.0
+bin:
+  htmx-lsp: bin/htmx-lsp
