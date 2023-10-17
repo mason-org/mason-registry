@@ -12,19 +12,19 @@ source:
   asset:
     - target: darwin_arm64
       file: woke-{{ version | strip_prefix "v" }}-darwin-arm64.tar.gz
-      bin: exec:woke
+      bin: woke
     - target: darwin_x64
       file: woke-{{ version | strip_prefix "v" }}-darwin-amd64.tar.gz
-      bin: exec:woke
+      bin: woke
     - target: linux_arm64
       file: woke-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
-      bin: exec:woke
+      bin: woke
     - target: linux_x64
       file: woke-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
-      bin: exec:woke
+      bin: woke
     - target: linux_x86
       file: woke-{{ version | strip_prefix "v" }}-linux-386.tar.gz
-      bin: exec:woke
+      bin: woke
     - target: win_arm64
       file: woke-{{ version | strip_prefix "v" }}-windows-arm64.zip
       bin: woke.exe
