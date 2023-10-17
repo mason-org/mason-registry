@@ -7,33 +7,32 @@ licenses:
 languages: []
 categories:
   - Linter
-
 source:
-  id: pkg:github/get-woke/woke@0.19.0
+  id: pkg:github/get-woke/woke@v0.19.0
   asset:
     - target: darwin_arm64
-      file: woke-{{version}}-darwin-arm64.tar.gz
+      file: woke-{{ version | strip_prefix "v" }}-darwin-arm64.tar.gz
       bin: exec:woke
     - target: darwin_x64
-      file: woke-{{version}}-darwin-amd64.tar.gz
+      file: woke-{{ version | strip_prefix "v" }}-darwin-amd64.tar.gz
       bin: exec:woke
     - target: linux_arm64
-      file: woke-{{version}}-linux-arm64.tar.gz
+      file: woke-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
       bin: exec:woke
     - target: linux_x64
-      file: woke-{{version}}-linux-amd64.tar.gz
+      file: woke-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
       bin: exec:woke
     - target: linux_x86
-      file: woke-{{version}}-linux-386.tar.gz
+      file: woke-{{ version | strip_prefix "v" }}-linux-386.tar.gz
       bin: exec:woke
     - target: win_arm64
-      file: woke-{{version}}-windows-arm64.zip
+      file: woke-{{ version | strip_prefix "v" }}-windows-arm64.zip
       bin: woke.exe
     - target: win_x64
-      file: woke-{{version}}-windows-amd64.zip
+      file: woke-{{ version | strip_prefix "v" }}-windows-amd64.zip
       bin: woke.exe
     - target: win_x86
-      file: woke-{{version}}-windows-386.zip
+      file: woke-{{ version | strip_prefix "v" }}-windows-386.zip
       bin: woke.exe
 
 bin:
