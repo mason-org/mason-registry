@@ -27,7 +27,7 @@ source:
       file: woke-{{version}}-linux-386.tar.gz
       bin: exec:woke
     - target: win_arm64
-      file: woke-{{version}}-windows-arm64.tar.gz
+      file: woke-{{version}}-windows-arm64.zip
       bin: woke.exe
     - target: win_x64
       file: woke-{{version}}-windows-amd64.zip
