@@ -14,7 +14,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/snyk/snyk-ls@v20231011.133153
+  id: pkg:github/snyk/snyk-ls@v20231018.100541
   asset:
     - target: darwin_x64
       file: snyk-ls_{{ version | strip_prefix "v" }}_darwin_amd64
