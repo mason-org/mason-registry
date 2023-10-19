@@ -11,6 +11,5 @@ categories:
 
 source:
   id: pkg:opam/ocaml-lsp-server@1.16.2
-
 bin:
   ocamllsp: opam:ocamllsp
