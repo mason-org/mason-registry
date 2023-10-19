@@ -9,6 +9,7 @@ licenses:
 languages:
   - YAML
   - JSON
+  - CloudFormation
 categories:
   - Linter
 
