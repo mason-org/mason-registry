@@ -1,0 +1,30 @@
+---
+name: oxlint
+description: High-performance linter for JavaScript and TypeScript written in Rust.
+homepage: https://github.com/web-infra-dev/oxc
+licenses:
+  - MIT
+languages:
+  - JavaScript
+  - TypeScript
+categories:
+  - Linter
+
+source:
+  id: pkg:github/web-infra-dev/oxc@oxlint-v0.0.14
+  asset:
+    - target: darwin_arm64
+      file: oxlint-darwin-arm64
+    - target: darwin_x64
+      file: oxlint-darwin-x64
+    - target: linux_arm64_gnu
+      file: oxlint-linux-arm64
+    - target: linux_x64_gnu
+      file: oxlint-linux-x64
+    - target: win_arm64
+      file: oxlint-win32-arm64.exe
+    - target: win_x64
+      file: oxlint-win32-x64.exe
+
+bin:
+  oxlint: "{{source.asset.file}}"
