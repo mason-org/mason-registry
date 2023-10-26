@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/pkgbuild-language-server@0.0.6
+  id: pkg:pypi/pkgbuild-language-server@0.0.7
 
 bin:
   pkgbuild-language-server: pypi:pkgbuild-language-server
