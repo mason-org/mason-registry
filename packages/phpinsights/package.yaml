@@ -1,0 +1,21 @@
+---
+name: phpinsights
+description: The perfect starting point to analyze the code quality of your PHP projects
+homepage: https://phpinsights.com
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:composer/nunomaduro/phpinsights@v2.9.0
+
+bin:
+  phpinsights: composer:phpinsights
+
+ci_skip:
+  # freezes on Windows CI for some reason
+  - win_x64
