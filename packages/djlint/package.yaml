@@ -9,7 +9,7 @@ languages:
   - Go
   - Nunjucks
   - Twig
-  - Handlebargs
+  - Handlebars
   - Mustache
   - Angular
   - Jinja
