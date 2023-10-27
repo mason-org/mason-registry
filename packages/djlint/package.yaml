@@ -8,6 +8,7 @@ languages:
   - Django
   - Go
   - Nunjucks
+  - Twig
   - Handlebargs
   - Mustache
   - Angular
