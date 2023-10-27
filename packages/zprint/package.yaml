@@ -1,0 +1,24 @@
+---
+name: zprint
+description: Beautifully format Clojure and Clojurescript source code and s-expressions.
+homepage: https://github.com/kkinnear/zprint
+licenses:
+  - MIT
+languages:
+  - Clojure
+  - ClojureScript
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/kkinnear/zprint@1.2.8
+  asset:
+    - target: darwin_arm64
+      file: zprintma-{{version}}
+    - target: darwin_x64
+      file: zprintm-{{version}}
+    - target: linux_x64
+      file: zprintl-{{version}}
+
+bin:
+  zprint: "{{source.asset.file}}"
