@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/solhint@3.6.2
+  id: pkg:npm/solhint@4.0.0
 
 bin:
   solhint: npm:solhint
