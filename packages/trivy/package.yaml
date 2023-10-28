@@ -1,0 +1,42 @@
+---
+name: trivy
+description: A comprehensive and versatile security scanner
+homepage: https://github.com/aquasecurity/trivy
+licenses:
+  - Apache-2.0
+languages:
+  - C
+  - C#
+  - C++
+  - Dart
+  - Docker
+  - Elixir
+  - Go
+  - Helm
+  - Java
+  - JavaScript
+  - PHP
+  - Python
+  - Ruby
+  - Rust
+  - Terraform
+  - TypeScript
+categories:
+  - Linter
+
+source:
+  id: pkg:github/aquasecurity/trivy@v0.46.1
+  asset:
+    - target: darwin_x64
+      file: trivy_{{ version | strip_prefix "v" }}_macOS-64bit.tar.gz
+    - target: darwin_arm64
+      file: trivy_{{ version | strip_prefix "v" }}_macOS-ARM64.tar.gz
+    - target: linux_x64
+      file: trivy_{{ version | strip_prefix "v" }}_Linux-64bit.tar.gz
+    - target: linux_arm64
+      file: trivy_{{ version | strip_prefix "v" }}_Linux-ARM64.tar.gz
+    - target: win_x64
+      file: trivy_{{ version | strip_prefix "v" }}_Windows-64bit.zip
+
+bin:
+  trivy: "{{source.asset.file}}"
