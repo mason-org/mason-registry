@@ -17,7 +17,7 @@ source:
       file: zprintma-{{version}}
     - target: darwin_x64
       file: zprintm-{{version}}
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: zprintl-{{version}}
 
 bin:
