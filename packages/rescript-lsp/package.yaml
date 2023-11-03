@@ -1,5 +1,8 @@
 ---
 name: rescript-lsp
+deprecation:
+  message: rescript-lsp is deprecated. Use rescript-language-server, its successor.
+  since: 1.22.0
 description: Language Server for ReScript.
 homepage: https://github.com/rescript-lang/rescript-vscode
 licenses:
