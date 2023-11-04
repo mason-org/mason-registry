@@ -1,0 +1,32 @@
+---
+name: ast-grep
+description: A CLI tool for code structural search, lint and rewriting. Written in Rust.
+homepage: https://github.com/ast-grep/ast-grep
+licenses:
+  - MIT
+languages: # https://ast-grep.github.io/guide/introduction.html#supported-languages
+  - C
+  - C++
+  - Rust
+  - Go
+  - Java
+  - Python
+  - C#
+  - JavaScript
+  - JSX
+  - TypeScript
+  - HTML
+  - CSS
+  - Kotlin
+  - Dart
+  - Lua
+
+categories:
+  - Linter
+  - Runtime
+
+source:
+  id: pkg:npm/@ast-grep/cli@13.0.0
+
+bin:
+  ast-grep: npm:ast-grep
