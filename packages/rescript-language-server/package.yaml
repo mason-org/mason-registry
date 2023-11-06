@@ -1,7 +1,7 @@
 ---
 name: rescript-language-server
 description: Language Server for ReScript.
-homepage: https://github.com/rescript-lang/rescript-vscode/server
+homepage: https://github.com/rescript-lang/rescript-vscode/tree/master/server
 licenses:
   - MIT
 languages:
