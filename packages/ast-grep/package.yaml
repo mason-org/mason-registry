@@ -31,3 +31,4 @@ source:
 
 bin:
   ast-grep: npm:ast-grep
+  sg: npm:sg
