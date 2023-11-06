@@ -28,4 +28,4 @@ source:
       npm run build-plugin
 
 share:
-  java-test/: extension/server/
+  java-test/: server/
