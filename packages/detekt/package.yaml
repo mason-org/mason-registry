@@ -4,7 +4,7 @@ description: |
   A static code analyzer for Kotlin.
 homepage: https://detekt.dev/
 licenses:
-  - Apache License 2.0
+  - Apache-2.0
 languages:
   - Kotlin
 categories:
