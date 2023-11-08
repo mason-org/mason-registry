@@ -5,6 +5,7 @@ description: |
 homepage: https://github.com/Matsuuu/custom-elements-language-server
 licenses:
   - BSD-3-Clause
+languages: []
 categories:
   - LSP
 
