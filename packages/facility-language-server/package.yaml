@@ -7,7 +7,7 @@ homepage: https://facilityapi.github.io/
 licenses:
   - MIT
 languages:
-  - FacilityServiceDefinition
+  - Facility Service Definition
 categories:
   - LSP
 
