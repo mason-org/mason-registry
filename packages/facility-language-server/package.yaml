@@ -19,7 +19,7 @@ source:
     - target: darwin_arm64
       file: Facility.LanguageServer.zip:libexec/
     - target: win_x64
-      file: Facility.LanguageServer-win-x64.zip:libexec/
+      file: Facility.LanguageServer.zip:libexec/
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/FacilityApi/FacilityVSCode/master/package.json
