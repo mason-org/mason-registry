@@ -14,18 +14,7 @@ categories:
 source:
   id: pkg:github/FacilityApi/FacilityLanguageServer@v2.1.0
   asset:
-    - target: darwin_x64
-      file: Facility.LanguageServer.zip:libexec/
-    - target: darwin_arm64
-      file: Facility.LanguageServer.zip:libexec/
-    - target: linux_x64
-      file: Facility.LanguageServer.zip:libexec/
-    - target: linux_arm64
-      file: Facility.LanguageServer.zip:libexec/
-    - target: win_x64
-      file: Facility.LanguageServer.zip:libexec/
-    - target: win_arm64
-      file: Facility.LanguageServer.zip:libexec/
+    file: Facility.LanguageServer.zip:libexec/
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/FacilityApi/FacilityVSCode/master/package.json
