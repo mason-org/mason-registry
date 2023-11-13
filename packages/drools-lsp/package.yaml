@@ -13,3 +13,6 @@ source:
   id: pkg:github/kiegroup/drools-lsp@latest
   asset:
     file: drools-lsp-server-jar-with-dependencies.jar
+
+share:
+  drools-lsp/drools-lsp-server-jar-with-dependencies.jar: drools-lsp-server-jar-with-dependencies.jar
