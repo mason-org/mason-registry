@@ -18,7 +18,13 @@ source:
       file: Facility.LanguageServer.zip:libexec/
     - target: darwin_arm64
       file: Facility.LanguageServer.zip:libexec/
+    - target: linux_x64
+      file: Facility.LanguageServer.zip:libexec/
+    - target: linux_arm64
+      file: Facility.LanguageServer.zip:libexec/
     - target: win_x64
+      file: Facility.LanguageServer.zip:libexec/
+    - target: win_arm64
       file: Facility.LanguageServer.zip:libexec/
 
 schemas:
