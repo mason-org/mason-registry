@@ -27,7 +27,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.13.0
+  id: pkg:npm/%40ast-grep/cli@0.13.1
 
 bin:
   ast-grep: npm:ast-grep
