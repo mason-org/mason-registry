@@ -18,7 +18,7 @@ source:
     - target: darwin_x64
       file: v-analyzer-darwin-x86_64.zip
       bin: v-analyzer
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: v-analyzer-linux-x86_64.zip
       bin: v-analyzer
     - target: win_x64
