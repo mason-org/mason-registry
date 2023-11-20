@@ -14,5 +14,5 @@ source:
   id: pkg:npm/%40sap/cds-lsp@7.4.0
 
 bin:
-  cds-lsp: npm:cds-lsp --stdio
+  cds-lsp: npm:cds-lsp
   # format-cds: npm:format-cds
