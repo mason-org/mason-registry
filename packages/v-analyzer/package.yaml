@@ -26,7 +26,7 @@ source:
       bin: v-analyzer.exe
 
 schemas:
-  lsp: vscode:https://raw.github.com/v-analyzer/v-analyzer/v-analyzer/{{version}}/editors/code/package.json
+  lsp: vscode:https://raw.githubusercontent.com/v-analyzer/v-analyzer/{{version}}/editors/code/package.json
 
 bin:
   v-analzyer: "{{source.asset.file}}"
