@@ -1,0 +1,15 @@
+---
+name: autotools-language-server
+description: Autotools language server, support configure.ac, Makefile.am, Makefile.
+homepage: https://github.com/Freed-Wu/autotools-language-server
+licenses:
+  - GPL-3.0
+languages: []
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/autotools-language-server@0.0.12
+
+bin:
+  autotools-language-server: pypi:autotools-language-server
