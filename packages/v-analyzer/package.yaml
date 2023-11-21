@@ -29,4 +29,4 @@ schemas:
   lsp: vscode:https://raw.githubusercontent.com/v-analyzer/v-analyzer/{{version}}/editors/code/package.json
 
 bin:
-  v-analzyer: "{{source.asset.file}}"
+  v-analyzer: "{{source.asset.bin}}"
