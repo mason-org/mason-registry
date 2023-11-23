@@ -15,6 +15,10 @@ source:
     - target: darwin_x64
       file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
       bin: typos
+    # No arm64 build yet, but does work fine on M1 Mac. See https://github.com/crate-ci/typos/issues/828
+    - target: darwin_arm64
+      file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
+      bin: typos
     - target: linux_x64
       file: typos-{{ version }}-x86_64-unknown-linux-musl.tar.gz
       bin: typos
