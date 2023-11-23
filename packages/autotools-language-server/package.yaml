@@ -13,3 +13,7 @@ source:
 
 bin:
   autotools-language-server: pypi:autotools-language-server
+
+ci_skip:
+  # Due to version not found issue
+  - win_x64
