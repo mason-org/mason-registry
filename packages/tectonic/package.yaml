@@ -10,6 +10,7 @@ categories:
   - Compiler
 
 source:
+  # renovate:versioning=loose
   id: pkg:github/tectonic-typesetting/tectonic@tectonic%400.13.0
   asset:
     - target: darwin_x64
