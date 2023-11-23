@@ -4,7 +4,6 @@ description: Source code spell checker
 homepage: https://github.com/tekumara/typos-vscode
 licenses:
   - MIT
-  - Apache-2.0
 languages: []
 categories:
   - LSP
