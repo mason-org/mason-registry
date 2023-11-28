@@ -1,9 +1,9 @@
 ---
 name: hdl-checker
-description: LSP for VHDL/Verilog/SystemVerilog
+description: HDL Checker is a language server that wraps VHDL/Verilg/SystemVerilog tools that aims to reduce the boilerplate code needed to set things up
 homepage: https://pypi.org/project/hdl-checker/
 licenses:
-  - MIT
+  - GPL-3.0
 languages:
   - VHDL
   - Verilog
@@ -15,4 +15,4 @@ source:
   id: pkg:pypi/hdl-checker@0.7.4
 
 bin:
-  autopep8: pypi:autopep8
+  hdl_checker: pypi:hdl_checker
