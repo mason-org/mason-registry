@@ -1,0 +1,18 @@
+---
+name: hdl-checker
+description: LSP for VHDL/Verilog/SystemVerilog
+homepage: https://pypi.org/project/hdl-checker/
+licenses:
+  - MIT
+languages:
+  - VHDL
+  - Verilog
+  - SystemVerilog
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/hdl-checker@0.7.4
+
+bin:
+  autopep8: pypi:autopep8
