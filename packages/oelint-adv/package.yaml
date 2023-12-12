@@ -1,0 +1,15 @@
+---
+name: oelint-adv
+description: Linter for bitbake recipes.
+homepage: https://github.com/priv-kweihmann/oelint-adv
+licenses:
+  - BSD-2-Clause
+languages: []
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/oelint-adv@3.26.3
+
+bin:
+  oelint-adv: pypi:oelint-adv
