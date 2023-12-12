@@ -17,3 +17,6 @@ source:
 
 bin:
   pkgbuild-language-server: pypi:pkgbuild-language-server
+
+# CI never passes because the package has been removed from pypi.
+ci_skip: true
