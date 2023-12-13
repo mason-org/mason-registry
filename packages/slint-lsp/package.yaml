@@ -11,7 +11,18 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/slint@v1.3.2
+  id: pkg:github/slint-ui/slint@v1.3.2
+  asset:
+    - target: linux_x64
+      file: slint-lsp-linux.tar.gz
+      bin: slint-lsp/slint-lsp
+    - target: win_x64
+      file: slint-lsp-windows.zip
+      bin: slint-lsp/slint-lsp.exe
+    - target: [darwin_x86, darwin_arm64]
+      build:
+        run: cargo install slint-lsp
+      bin: slint-lsp
 
 bin:
-  slint-lsp: "cargo:slint-lsp"
+  slint-lsp: "{{source.asset.bin}}"
