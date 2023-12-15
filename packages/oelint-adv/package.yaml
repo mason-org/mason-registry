@@ -4,7 +4,10 @@ description: Linter for bitbake recipes.
 homepage: https://github.com/priv-kweihmann/oelint-adv
 licenses:
   - BSD-2-Clause
-languages: []
+languages:
+  - Bitbake
+  - Yocto
+  - OpenEmbedded
 categories:
   - Linter
 
