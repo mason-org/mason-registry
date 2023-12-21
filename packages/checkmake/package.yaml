@@ -1,0 +1,13 @@
+name: checkmake
+description: checkmake is an experimental tool for linting and checking Makefiles. It may not do what you want it to.
+homepage: https://github.com/mrtazz/checkmake
+licenses:
+  - MIT
+languages:
+  - make
+categories:
+  - Linter
+source:
+  id: pkg:golang/github.com/mrtazz/checkmake@v0.2.2
+bin:
+  checkmake: golang:checkmake
