@@ -1,0 +1,16 @@
+---
+name: mdformat-gfm
+description: Mdformat plugin for GitHub Flavored Markdown compatibility.
+homepage: https://github.com/hukkin/mdformat-gfm/
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/mdformat-gfm@0.3.5
+
+bin:
+  mdformat: pypi:mdformat
