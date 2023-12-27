@@ -6,8 +6,6 @@ licenses:
   - BSD-2-Clause
 languages:
   - Bitbake
-  - Yocto
-  - OpenEmbedded
 categories:
   - Linter
 
