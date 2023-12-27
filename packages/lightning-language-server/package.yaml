@@ -10,8 +10,6 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:npm/@salesforce/lwc-language-server@v4.7.3
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/forcedotcom/lightning-language-server/main/packages/lwc-language-server/package.json
+  id: pkg:npm/%40salesforce/lwc-language-server@v4.7.3
 bin:
   lwc-language-server: npm:lwc-language-server
