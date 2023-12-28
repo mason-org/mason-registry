@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/dhall-lang/dhall-haskell@1.42.0
+  id: pkg:github/dhall-lang/dhall-haskell@1.42.1
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: dhall-lsp-server-1.1.3-x86_64-macOS.tar.bz2
