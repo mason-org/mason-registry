@@ -10,7 +10,21 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/mrtazz/checkmake@v0.2.2
+  id: pkg:github/mrtazz/checkmake@0.2.2
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file:
+        - checkmake-{{ version }}.darwin.amd64
+        - checkmake.1:man1/
+      bin: checkmake-{{ version }}.darwin.amd64
+    - target: linux_x64
+      file:
+        - checkmake-{{ version }}.linux.amd64
+        - checkmake.1:man1/
+      bin: checkmake-{{ version }}.linux.amd64
+
+share:
+  man/man1/: man1/
 
 bin:
-  checkmake: golang:checkmake
+  checkmake: "{{source.asset.bin}}"
