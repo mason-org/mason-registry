@@ -10,7 +10,6 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=github-releases
   id: pkg:generic/idris-community/idris2-lsp@nightly-231224
   build:
     - target: unix
