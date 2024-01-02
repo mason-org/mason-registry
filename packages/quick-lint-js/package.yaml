@@ -8,6 +8,7 @@ licenses:
   - GPL-3.0-or-later
 languages:
   - JavaScript
+  - TypeScript
 categories:
   - LSP
   - Linter
