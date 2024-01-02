@@ -1,0 +1,15 @@
+---
+name: lemonade
+description: Lemonade is a remote utility tool. (copy, paste and open browser) over TCP.
+homepage: https://github.com/lemonade-command/lemonade
+licenses:
+  - MIT
+languages: []
+categories: []
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:golang/github.com/lemonade-command/lemonade@fb41f181e2f0e5261c69800978caa13f55b799a9
+
+bin:
+  lemonade: golang:lemonade
