@@ -1,0 +1,25 @@
+---
+name: idris2-lsp
+description: Language Server for Idris2
+homepage: https://github.com/idris-community/idris2-lsp?tab=readme-ov-file
+licenses:
+  - BSD-3-Clause
+languages:
+  - Idris2
+categories:
+  - LSP
+
+source:
+  id: pkg:generic/idris-community/idris2-lsp@nightly-231224
+  build:
+    - target: unix
+      run: |
+        pack -p $VERSION install-app idris2-lsp
+      staged: false
+      env:
+        VERSION: "{{version}}"
+      bin:
+        idris2-lsp: idris2-lsp
+bin:
+  idris2-lsp: "{{source.build.bin.idris2-lsp}}"
+
