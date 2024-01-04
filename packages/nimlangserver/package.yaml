@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/nim-lang/langserver@02d304725fc0f9412f0d6e9f4a16f65d8c895d0b
+  id: pkg:github/nim-lang/langserver@29b519f412371d6358773fd1bda507dc9f79a1e8
   build:
     - target: unix
       run: nimble build -y --localdeps
