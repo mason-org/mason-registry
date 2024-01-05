@@ -20,9 +20,8 @@ source:
       file: slint-lsp-windows.zip
       bin: slint-lsp/slint-lsp.exe
     - target: [darwin_x86, darwin_arm64]
-      build:
-        run: cargo install slint-lsp
-      bin: slint-lsp
+      file: slint-lsp-macos.tar.gz
+      bin: slint-lsp/slint-lsp
 
 bin:
   slint-lsp: "{{source.asset.bin}}"
