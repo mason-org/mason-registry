@@ -1,14 +1,14 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/release",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/openvsx",
     "type": "object",
-    "required": ["id", "asset"],
+    "required": ["id", "download"],
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^pkg:github/.+/.+@.+"
+            "pattern": "^pkg:openvsx/.+/.+@.+"
         },
-        "asset": {
+        "download": {
             "oneOf": [
                 {
                     "type": "array",
@@ -41,6 +41,23 @@
                                     {
                                         "type": "string"
                                     }
+                                ]
+                            },
+                            "target_platform": {
+                                "type": "string",
+                                "enum": [
+                                    "in32-x64",
+                                    "win32-ia32",
+                                    "win32-arm64",
+                                    "linux-x64",
+                                    "linux-arm64",
+                                    "linux-armhf",
+                                    "alpine-x64",
+                                    "alpine-arm64",
+                                    "darwin-x64",
+                                    "darwin-arm64",
+                                    "web",
+                                    "universal"
                                 ]
                             }
                         }
