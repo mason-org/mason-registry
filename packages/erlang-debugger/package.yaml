@@ -16,11 +16,11 @@ source:
     - target: win
       run: |
         rebar3 escriptize
-      els_dap: _build/dap/bin/els_dap.cmd
+      els_dap: _build/default/bin/els_dap.cmd
     - target: unix
       run: |
         </dev/null rebar3 escriptize
-      els_dap: _build/dap/bin/els_dap
+      els_dap: _build/default/bin/els_dap
 
 bin:
   els_dap: "{{source.build.els_dap}}"
