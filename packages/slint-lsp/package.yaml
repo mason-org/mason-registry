@@ -19,6 +19,9 @@ source:
     - target: win_x64
       file: slint-lsp-windows.zip
       bin: slint-lsp/slint-lsp.exe
+    - target: [darwin_x64, darwin_arm64]
+      file: slint-lsp-macos.tar.gz
+      bin: slint-lsp/slint-lsp
 
 bin:
   slint-lsp: "{{source.asset.bin}}"
