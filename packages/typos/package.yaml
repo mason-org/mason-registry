@@ -10,9 +10,13 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/crate-ci/typos@v1.16.20
+  id: pkg:github/crate-ci/typos@v1.17.0
   asset:
     - target: darwin_x64
+      file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
+      bin: typos
+    # No arm64 build yet, but does work fine on M1 Mac. See https://github.com/crate-ci/typos/issues/828
+    - target: darwin_arm64
       file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
       bin: typos
     - target: linux_x64

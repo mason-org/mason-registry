@@ -1,0 +1,20 @@
+---
+name: nilaway
+description: |
+  NilAway is a static analysis tool that seeks to help developers avoid
+  nil panics in production by catching them at compile time rather than
+  at runtime.
+homepage: https://github.com/uber-go/nilaway
+licenses:
+  - Apache-2.0
+
+languages:
+  - Go
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/go.uber.org/nilaway@v0.0.0-20231117175943-a267567c6fff#cmd/nilaway
+
+bin:
+  nilaway: golang:nilaway

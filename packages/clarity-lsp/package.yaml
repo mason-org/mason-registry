@@ -9,6 +9,10 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  message: The Clarity language server is no longer available via this package.
+  since: v0.8.0
+
 source:
   id: pkg:github/hirosystems/clarity-lsp@v0.8.0
   asset:
@@ -24,3 +28,5 @@ source:
 
 bin:
   clarity-lsp: "{{source.asset.bin}}"
+
+ci_skip: true
