@@ -166,6 +166,7 @@ source:
 ```yaml
 source:
     id: pkg:github/rust-lang/rust-analyzer@2022-12-05
+    recursive: true
 ```
 
 ## `bin`

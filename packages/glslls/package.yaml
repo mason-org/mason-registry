@@ -12,6 +12,7 @@ categories:
 source:
   # renovate:datasource=git-refs
   id: pkg:github/svenstaro/glsl-language-server@92de13c10a4855e935e6cd2625217ec040b4767a
+  recursive: true
   build:
     - target: unix
       run: |
