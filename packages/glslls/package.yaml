@@ -1,0 +1,22 @@
+---
+name: glslls
+description: Language server implementation for GLSL.
+homepage: https://github.com/svenstaro/glsl-language-server
+licenses:
+  - MIT
+languages:
+  - GLSL
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/svenstaro/glsl-language-server@92de13c10a4855e935e6cd2625217ec040b4767a
+  build:
+    run: |
+      cmake -Bbuild -GNinja
+      ninja -Cbuild
+      ninja -Cbuild install
+
+bin:
+  glslls: bin/glslls
