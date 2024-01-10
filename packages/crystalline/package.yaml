@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/elbywan/crystalline@v0.11.0
+  id: pkg:github/elbywan/crystalline@v0.12.0
   asset:
     - target: darwin_x64
       file: crystalline_x86_64-apple-darwin.gz
