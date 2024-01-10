@@ -15,12 +15,14 @@ source:
   build:
     - target: unix
       run: |
+        git submodule update --init
         cmake --install-prefix="$PWD" -Bbuild -GNinja
         ninja -Cbuild
         ninja -Cbuild install
       bin: bin/glslls
     - target: win
       run: |
+        git submodule update --init
         cmake --install-prefix="($pwd).path" -Bbuild -GNinja
         ninja -Cbuild
         ninja -Cbuild install
