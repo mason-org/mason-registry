@@ -1,0 +1,13 @@
+---
+name: pynvim
+description: Python client and plugin host for Nvim
+homepage: https://github.com/neovim/pynvim
+licenses:
+  - Apache-2.0
+languages:
+  - Python
+categories:
+  - Runtime
+
+source:
+  id: pkg:pypi/pynvim@0.5.0
