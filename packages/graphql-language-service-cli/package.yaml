@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/graphql-language-service-cli@3.3.30
+  id: pkg:npm/graphql-language-service-cli@3.3.31
 
 bin:
   graphql-lsp: npm:graphql-lsp
