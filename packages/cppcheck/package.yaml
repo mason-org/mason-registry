@@ -17,12 +17,10 @@ source:
         cmake -S . -B build -D USE_MATCHCCOMPILER=ON
         cmake --build build
       bin: build/bin/cppcheck
+    - target: win
+      run: |
+        cmake -S . -B build -D USE_MATCHCCOMPILER=ON
+        cmake --build build
+      bin: build/bin/cppcheck.exe
 bin:
   cppcheck: "{{source.build.bin}}"
-    # - target: win
-    #   run: |
-    #     mkdir build
-    #     cd build
-    #     cmake -DCMAKE_INSTALL_PREFIX="($pwd).path" ..
-    #     cmake --build . --config Release --target install
-    #   bin: bin/cppcheck.exe
