@@ -1,0 +1,28 @@
+---
+name: cppcheck
+description: Static analysis of C and C++ code
+homepage: https://github.com/danmar/cppcheck
+licenses:
+  - GPLv3
+languages:
+  - C++
+  - C
+categories:
+  - Linter
+source:
+  id: pkg:github/danmar/cppcheck@2.13.0
+  build:
+    - target: unix
+      run: |
+        cmake -S . -B build -D USE_MATCHCCOMPILER=ON
+        cmake --build build
+      bin: build/bin/cppcheck
+bin:
+  cppcheck: "{{source.build.bin}}"
+    # - target: win
+    #   run: |
+    #     mkdir build
+    #     cd build
+    #     cmake -DCMAKE_INSTALL_PREFIX="($pwd).path" ..
+    #     cmake --build . --config Release --target install
+    #   bin: bin/cppcheck.exe
