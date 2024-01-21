@@ -25,6 +25,9 @@ source:
     - target: linux_arm64_gnu
       file: stylua-linux-aarch64.zip
       bin: stylua
+    - target: linux_x64_musl
+      file: stylua-linux-x86_64-musl.zip
+      bin: stylua
     - target: win_x64
       file: stylua-win64.zip
       bin: stylua.exe
