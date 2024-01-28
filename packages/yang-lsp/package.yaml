@@ -1,0 +1,19 @@
+---
+name: yang-vscode
+description: A VS Code Extension for YANG
+homepage: https://github.com/TypeFox/yang-vscode
+licenses:
+  - Apache-2.0
+languages:
+  - YANG
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/yang-vscode@2.0.5
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/TypeFox/yang-vscode/master/package.json
+
+bin:
+  yang-vscode: npm:yang-vscode
