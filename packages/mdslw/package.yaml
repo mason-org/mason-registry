@@ -1,3 +1,4 @@
+---
 name: mdslw
 description: The MarkDown Sentence Line Wrapper, an auto-formatter that prepares your markdown for easy diff'ing.
 homepage: https://github.com/razziel89/mdslw
@@ -7,6 +8,7 @@ languages:
   - Markdown
 categories:
   - Formatter
+
 source:
   id: pkg:github/razziel89/mdformat@0.6.1
   asset:
