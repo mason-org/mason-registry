@@ -1,0 +1,18 @@
+---
+name: flowjs
+description: Static type checker for JavaScript
+homepage: https://github.com/facebook/flow
+licences:
+  - MIT
+languages:
+  - JavaScript
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/flowjs/flow-bin@0.227.0
+  extra_packages:
+    - flow-remove-types
+
+bin:
+  flowjs: npm:flow-bin
