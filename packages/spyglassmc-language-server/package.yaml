@@ -1,0 +1,13 @@
+name: spyglassmc-language-server
+description: This is a language server wrapped around some other Spyglass packages.
+homepage: https://github.com/SpyglassMC/Spyglass/tree/main/packages/language-server
+licenses:
+  - "MIT"
+languages:
+  - "MCFunction"
+categories:
+  - "LSP"
+source:
+  id: pkg:npm/@spyglassmc/language-server@0.1.0-PLACEHOLDER
+bin:
+  spyglassmc-language-server: npm:spyglassmc-language-server
