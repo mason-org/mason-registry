@@ -5,6 +5,8 @@ licenses:
   - MIT
 languages:
   - "M68K"
+categories:
+  - "LSP"
 source:
   id: pkg:npm/m68k-lsp-server@0.9.1
 bin:
