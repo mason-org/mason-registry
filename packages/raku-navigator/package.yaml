@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/bscan/RakuNavigator@5ebd8efb6c67533baef01f58ccc00c12f34ff550
+  id: pkg:github/bscan/RakuNavigator@d50aba70c4d6b5c263bd8c4fdbda8fe8cf6713dd
   build:
     run: |
       npm install
