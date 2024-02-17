@@ -21,4 +21,4 @@ source:
       bin:  vhdl_ls-x86_64-pc-windows-msvc/bin/vhdl_ls.exe
 
 bin:
-  rust-analyzer: "{{source.asset.bin}}"
+  rust_hdl: "{{source.asset.bin}}"
