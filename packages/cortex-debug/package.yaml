@@ -1,6 +1,6 @@
 ---
 name: cortex-debug
-description: Visual Studio Code extension for enhancing debug capabilities for Cortex-M Microcontrollers
+description: Visual Studio Code extension for enhancing debug capabilities for Cortex-M Microcontrollers.
 homepage: https://github.com/Marus/cortex-debug
 licenses:
   - MIT
@@ -12,9 +12,9 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/Marus/cortex-debug@v1.12.1-pre6
-  asset:
-    file: cortex-debug-1.12.1-pre6.vsix
+  id: pkg:openvsx/marus25/cortex-debug@1.12.1
+  download:
+    file: marus25.cortex-debug-{{version}}.vsix
 
-share:
-  cortex-debug/: extension/
+bin:
+  cortex-debug: node:extension/dist/debugadapter.js
