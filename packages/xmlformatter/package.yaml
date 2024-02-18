@@ -13,7 +13,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/xmlformatter@0.2.4
+  id: pkg:pypi/xmlformatter@0.2.6
 
 bin:
   xmlformat: pypi:xmlformat

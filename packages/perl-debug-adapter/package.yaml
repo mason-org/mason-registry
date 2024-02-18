@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/Nihilus118/vscode-perl-debug@b0af2203a05133d47f3bf3d8edf64e1b4d20d5cd
+  id: pkg:github/Nihilus118/vscode-perl-debug@40c621dd0a571cc360dc3901bd1a84b178cfdc4c
   build:
     run: |
       npm install

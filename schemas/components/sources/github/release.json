@@ -2,15 +2,20 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/release",
     "type": "object",
-    "$defs": {
-        "Asset": {
+    "required": ["id", "asset"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:github/.+/.+@.+"
+        },
+        "asset": {
             "oneOf": [
                 {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "required": ["target", "file"],
                         "additionalProperties": true,
+                        "required": ["file", "target"],
                         "properties": {
                             "target": {
                                 "oneOf": [
@@ -43,6 +48,7 @@
                 },
                 {
                     "type": "object",
+                    "additionalProperties": true,
                     "required": ["file"],
                     "properties": {
                         "file": {
@@ -61,16 +67,6 @@
                     }
                 }
             ]
-        }
-    },
-    "required": ["id", "asset"],
-    "properties": {
-        "id": {
-            "type": "string",
-            "pattern": "^pkg:github/.+/.+@.+"
-        },
-        "asset": {
-            "$ref": "#/$defs/Asset"
         }
     }
 }
