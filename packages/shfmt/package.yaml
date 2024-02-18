@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/mvdan/sh@v3.7.0
+  id: pkg:github/mvdan/sh@v3.8.0
   asset:
     - target: darwin_arm64
       file: shfmt_{{version}}_darwin_arm64

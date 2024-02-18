@@ -7,6 +7,7 @@ licenses:
 languages:
   - C
   - C++
+  - C#
   - CloudFormation
   - CSS
   - Docker
@@ -27,9 +28,9 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/SonarSource/sonarlint-vscode@4.2.2%2B75910
+  id: pkg:github/SonarSource/sonarlint-vscode@4.3.0%2B76012
   asset:
-    file: sonarlint-vscode-4.2.2.vsix
+    file: sonarlint-vscode-4.3.0.vsix
 
 bin:
   sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar

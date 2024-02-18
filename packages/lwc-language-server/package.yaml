@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40salesforce/lwc-language-server@4.7.3
+  id: pkg:npm/%40salesforce/lwc-language-server@4.7.4
 
 bin:
   lwc-language-server: npm:lwc-language-server
