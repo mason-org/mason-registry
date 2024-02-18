@@ -1,0 +1,32 @@
+---
+name: typstfmt
+description: A formatter for the Typst language.
+homepage: https://github.com/astrale-sharp/typstfmt
+licenses:
+  - MIT
+languages:
+  - Typst
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/astrale-sharp/typstfmt@0.2.7
+  asset:
+    - target: darwin_arm64
+      file: typstfmt-aarch64-apple-darwin.tar.xz
+      bin: typstfmt
+    - target: darwin_x64
+      file: typstfmt-x86_64-apple-darwin.tar.xz
+      bin: typstfmt
+    - target: linux_arm64
+      file: typstfmt-aarch64-unknown-linux-musl.tar.xz
+      bin: typstfmt
+    - target: linux_x64
+      file: typstfmt-x86_64-unknown-linux-musl.tar.xz
+      bin: typstfmt
+    - target: win_x64
+      file: typstfmt-x86_64-pc-windows-msvc.zip
+      bin: typstfmt
+
+bin:
+  typstfmt: "{{source.asset.bin}}"
