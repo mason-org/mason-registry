@@ -1,5 +1,5 @@
 ---
-name: vscode-solidity
+name: vscode-solidity-server
 description: Solidity language server.
 homepage: https://github.com/juanfranblanco/vscode-solidity
 licenses:
