@@ -11,6 +11,8 @@ categories:
 
 source:
   id: pkg:pypi/sqlfluff@2.3.5
+  extra_packages:
+    - sqlfluff-templater-dbt
 
 bin:
   sqlfluff: pypi:sqlfluff
