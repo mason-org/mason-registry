@@ -32,8 +32,5 @@ source:
       file: aarch64-windows.zip
       bin: bin/glsl_analyzer.exe
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/nolanderc/glsl_analyzer-vscode/main/package.json
-
 bin:
   glsl_analyzer: "{{source.asset.bin}}"
