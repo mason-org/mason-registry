@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/markdownlint-cli@0.37.0
+  id: pkg:npm/markdownlint-cli@0.39.0
 
 bin:
   markdownlint: npm:markdownlint
