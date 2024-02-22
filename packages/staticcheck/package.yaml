@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/honnef.co/go/tools@v0.4.6#cmd/staticcheck
+  id: pkg:golang/honnef.co/go/tools@v0.4.7#cmd/staticcheck
 
 bin:
   staticcheck: golang:staticcheck
