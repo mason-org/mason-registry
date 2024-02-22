@@ -1,0 +1,16 @@
+---
+name: fennel-ls
+description: Language Server for Fennel
+homepage: https://git.sr.ht/~xerool/fennel-ls
+licenses:
+  - MIT
+languages:
+  - Fennel
+categories:
+  - LSP
+
+source:
+  id: pkg:luarocks/fennel-ls@0.1.1-1
+
+bin:
+  fennel-ls: luarocks:fennel-ls
