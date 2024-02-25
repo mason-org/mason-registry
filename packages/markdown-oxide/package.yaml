@@ -1,0 +1,16 @@
+name: markdown-oxide
+description: Markdown language server with advanced linking support made to be completely compatible with Obsidian; An Obsidian Language Server
+homepage: https://github.com/Feel-ix-343/markdown-oxide
+licenses:
+  - CC0-1.0
+languages:
+  - Markdown
+categories:
+  - LSP
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/feel-ix-343/markdown-oxide@v0.0.1
+  build:
+    run: "cargo build --release"
+bin:
+  markdown-oxide: target/release/markdown-oxide
