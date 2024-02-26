@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/azure-pipelines-language-server@0.7.0
+  id: pkg:npm/azure-pipelines-language-server@0.8.0
 
 bin:
   azure-pipelines-language-server: node:node_modules/azure-pipelines-language-server/out/server.js
