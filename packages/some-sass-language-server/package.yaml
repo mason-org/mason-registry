@@ -1,0 +1,19 @@
+---
+name: some-sass-language-server
+description: Full support for @use and @forward, including aliases, prefixes and hiding. Rich documentation through SassDoc. Workspace-wide code navigation and refactoring.
+homepage: https://github.com/wkillerud/vscode-scss
+licenses:
+  - MIT
+languages:
+  - SCSS
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/some-sass-language-server@1.0.1
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/wkillerud/vscode-scss/main/package.json
+
+bin:
+  some-sass-language-server: npm:some-sass-language-server
