@@ -1,0 +1,16 @@
+---
+name: coffeesense
+description: IntelliSense for CoffeeScript. LSP implementation / VSCode extension
+homepage: https://github.com/phil294/coffeesense
+licenses:
+  - MIT
+languages:
+  - CoffeeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/coffeesense-language-server@1.15.0
+
+bin:
+  coffeesense: npm:coffeesense
