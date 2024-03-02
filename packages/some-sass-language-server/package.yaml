@@ -1,7 +1,7 @@
 ---
 name: some-sass-language-server
 description: Full support for @use and @forward, including aliases, prefixes and hiding. Rich documentation through SassDoc. Workspace-wide code navigation and refactoring.
-homepage: https://github.com/wkillerud/vscode-scss
+homepage: https://github.com/wkillerud/vscode-scss/tree/main/server
 licenses:
   - MIT
 languages:
