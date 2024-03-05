@@ -26,7 +26,7 @@ source:
       bin: typstfmt
     - target: win_x64
       file: typstfmt-x86_64-pc-windows-msvc.zip
-      bin: typstfmt
+      bin: typstfmt.exe
 
 bin:
   typstfmt: "{{source.asset.bin}}"
