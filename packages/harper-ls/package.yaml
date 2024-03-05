@@ -1,29 +1,28 @@
 ---
 name: harper-ls
 description: The Grammar Checker for Developers
-homepage: https://github.com/chilipepperhott/harper-ls
+homepage: https://github.com/elijah-potter/harper
 licenses:
   - Apache-2.0
 languages:
-  - Markdown,
-  - Rust,
-  - TypeScript,
-  - JavasCript,
-  - Python,
-  - Go,
-  - C,
-  - C++,
-  - Ruby,
-  - Swift,
-  - C#,
-  - TOML,
-  - Lua,
+  - Markdown
+  - Rust
+  - TypeScript
+  - JavaScript
+  - Python
+  - Go
+  - C
+  - C++
+  - Ruby
+  - C#
+  - TOML
+  - Lua
 categories:
   - LSP
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chilipepperhott/harper-ls@v0.7.3
+  id: pkg:github/elijah-potter/harper@v0.7.5
   asset:
     - target: linux_x64_gnu
       file: harper-ls-x86_64-unknown-linux-gnu.tar.gz
