@@ -15,19 +15,19 @@ source:
   asset:
     - target: darwin_arm64
       file: typstfmt-aarch64-apple-darwin.tar.xz
-      bin: typstfmt
+      bin: typstfmt-aarch64-apple-darwin/typstfmt
     - target: darwin_x64
       file: typstfmt-x86_64-apple-darwin.tar.xz
-      bin: typstfmt
+      bin: typstfmt-x86_64-apple-darwin/typstfmt
     - target: linux_arm64
       file: typstfmt-aarch64-unknown-linux-musl.tar.xz
-      bin: typstfmt
+      bin: typstfmt-aarch64-unknown-linux-musl/typstfmt
     - target: linux_x64
       file: typstfmt-x86_64-unknown-linux-musl.tar.xz
-      bin: typstfmt
+      bin: typstfmt-x86_64-unknown-linux-musl/typstfmt
     - target: win_x64
       file: typstfmt-x86_64-pc-windows-msvc.zip
-      bin: typstfmt.exe
+      bin: typstfmt-x86_64-pc-windows-msvc/typstfmt.exe
 
 bin:
   typstfmt: "{{source.asset.bin}}"
