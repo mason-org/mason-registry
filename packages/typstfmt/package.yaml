@@ -4,6 +4,7 @@ description: A formatter for the Typst language.
 homepage: https://github.com/astrale-sharp/typstfmt
 licenses:
   - MIT
+  - Apache-2.0
 languages:
   - Typst
 categories:
