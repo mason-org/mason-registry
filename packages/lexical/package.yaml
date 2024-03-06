@@ -3,7 +3,7 @@ name: lexical
 description: Lexical is a next-generation elixir language server
 homepage: https://github.com/lexical-lsp/lexical
 licenses:
-  - proprietary
+  - Apache-2.0
 languages:
   - Elixir
 categories:
