@@ -1,6 +1,6 @@
 ---
 name: harper-ls
-description: The Grammar Checker for Developers
+description: The Grammar Checker for Developers.
 homepage: https://github.com/elijah-potter/harper
 licenses:
   - Apache-2.0
@@ -21,7 +21,6 @@ categories:
   - LSP
 
 source:
-  # renovate:versioning=loose
   id: pkg:github/elijah-potter/harper@v0.7.5
   asset:
     - target: linux_x64_gnu
@@ -37,7 +36,7 @@ source:
       file: harper-ls-aarch64-apple-darwin.tar.gz
       bin: harper-ls
     - target: win_x64
-      file: harper-ls-x86_64-pc-windows-msvc.zip
+      file: harper-ls-x86_64-pc-windows-gnu.zip
       bin: harper-ls.exe
 
 bin:
