@@ -4,7 +4,8 @@ description: Systemd Unitfile Linter
 homepage: https://github.com/priv-kweihmann/systemdlint
 licenses:
   - BSD-2-Clause
-languages: []
+languages:
+  - systemd
 categories:
   - Linter
 
