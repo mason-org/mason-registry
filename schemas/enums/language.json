@@ -177,6 +177,7 @@
         "XML",
         "YAML",
         "YARA",
+        "Zeek",
         "Zig",
         "Zsh"
     ]
