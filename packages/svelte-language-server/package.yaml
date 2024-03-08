@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/svelte-language-server@0.16.3
+  id: pkg:npm/svelte-language-server@0.16.5
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/sveltejs/language-tools/language-server-{{version}}/packages/svelte-vscode/package.json
