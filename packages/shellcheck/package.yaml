@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/vscode-shellcheck/shellcheck-binaries@v0.9.0
+  id: pkg:github/vscode-shellcheck/shellcheck-binaries@v0.10.0
   asset:
     - target: darwin_arm64
       file: shellcheck-{{version}}.darwin.aarch64.tar.gz
