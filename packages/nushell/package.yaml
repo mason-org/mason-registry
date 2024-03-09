@@ -1,17 +1,15 @@
-name: string
-description: string
-homepage: URL
-licenses: SPDXLicense[]
-languages: string[]
-categories: Category[]
+name: nushell
+description: A new type of shell
+homepage: https://www.nushell.sh/
+licenses:
+  - MIT
+languages:
+  - Nushell
+categories:
+  - LSP
 
 source:
-    id: string
-    [key: string]: any
+  id: pkg:github/nushell/nushell@0.91.0
 
-bin?:
-    [executable: string]: string
-share?:
-    [share_location: string]: string
-opt?:
-    [opt_location: string]: string
+bin:
+  nu: nu
