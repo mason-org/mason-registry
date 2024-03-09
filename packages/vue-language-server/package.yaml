@@ -13,6 +13,7 @@ source:
   id: pkg:npm/%40vue/language-server@2.0.6
   extra_packages:
     - typescript
+    - /%40vue/typescript-plugin@{{ version }}
 
 bin:
   vue-language-server: npm:vue-language-server
