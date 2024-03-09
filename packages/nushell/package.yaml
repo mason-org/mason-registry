@@ -1,0 +1,17 @@
+name: string
+description: string
+homepage: URL
+licenses: SPDXLicense[]
+languages: string[]
+categories: Category[]
+
+source:
+    id: string
+    [key: string]: any
+
+bin?:
+    [executable: string]: string
+share?:
+    [share_location: string]: string
+opt?:
+    [opt_location: string]: string
