@@ -1,0 +1,16 @@
+---
+name: robotcode-language-server
+description: Robot Code - Language Server Protocol implementation for Robot Framework.
+homepage: https://robotcode.io/
+licenses:
+  - Apache-2.0
+languages:
+  - Robot Framework
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/robotcode-language-server@0.78.0
+
+bin:
+  robotframework_ls: pypi:robotcode-language-server
