@@ -7,6 +7,6 @@ licenses: [MIT]
 languages: [Django, Jinja, Nunjucks]
 categories: [LSP, Linter, Compiler]
 source:
-  id: pkg:cargo/jinja-lsp@0.1.6
+  id: pkg:cargo/jinja-lsp@0.1.61
 bin:
   jinja-lsp: cargo:jinja-lsp
