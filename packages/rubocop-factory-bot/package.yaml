@@ -1,0 +1,14 @@
+---
+name: rubocop-factory-bot
+description: Code style checking for factory_bot files
+homepage: https://docs.rubocop.org/rubocop-factory_bot/
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:gem/rubocop-factory_bot@2.25.1

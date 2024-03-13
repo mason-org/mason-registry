@@ -1,0 +1,14 @@
+---
+name: rubocop-rspec
+description: Code style checking for RSpec files. A plugin for the RuboCop code style enforcing & linting tool.
+homepage: https://docs.rubocop.org/rubocop-rspec/
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:gem/rubocop-rspec@2.27.1

@@ -1,0 +1,14 @@
+---
+name: rubocop-rails
+description: A RuboCop extension focused on enforcing Rails best practices and coding conventions.
+homepage: https://docs.rubocop.org/rubocop-rails/
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:gem/rubocop-rails@2.24.0
