@@ -1,0 +1,21 @@
+---
+name: zeek-language-server
+description: This project implements a language server for Zeek script.
+homepage: https://github.com/bbannier/zeek-language-server
+licenses:
+  - GPL-3.0-only
+languages:
+  - Zeek
+categories:
+  - LSP
+
+source:
+  id: pkg:github/bbannier/zeek-language-server@v0.41.1
+  asset:
+    - target: linux_x64_gnu
+      file: zeek-language-server-x86_64-unknown-linux-gnu
+    - target: darwin_x64
+      file: zeek-language-server-x86_64-apple-darwin
+
+bin:
+  zeek-language-server: "{{source.asset.file}}"

@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/JohnnyMorganz/luau-lsp@1.27.1
+  id: pkg:github/JohnnyMorganz/luau-lsp@1.28.1
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: luau-lsp-macos.zip
