@@ -22,8 +22,8 @@ source:
         wrapper: bin/haskell-language-server-wrapper
         server_9_2_8: bin/haskell-language-server-9.2.8
         server_9_4_8: bin/haskell-language-server-9.4.8
-        server_9_6_3: bin/haskell-language-server-9.6.4
-        server_9_8_1: bin/haskell-language-server-9.8.2
+        server_9_6_4: bin/haskell-language-server-9.6.4
+        server_9_8_2: bin/haskell-language-server-9.8.2
 
     - target: win
       run: ghcup install hls $env:VERSION -i ($pwd).path
@@ -34,13 +34,13 @@ source:
         wrapper: haskell-language-server-wrapper.exe
         server_9_2_8: haskell-language-server-9.2.8.exe
         server_9_4_8: haskell-language-server-9.4.8.exe
-        server_9_6_3: haskell-language-server-9.6.4.exe
-        server_9_8_1: haskell-language-server-9.8.2.exe
+        server_9_6_4: haskell-language-server-9.6.4.exe
+        server_9_8_2: haskell-language-server-9.8.2.exe
 
 bin:
   haskell-language-server-wrapper: "{{source.build.bin.wrapper}}"
   # https://github.com/haskell/haskell-language-server/issues/3162
   haskell-language-server-9.2.8: "{{source.build.bin.server_9_2_8}}"
   haskell-language-server-9.4.8: "{{source.build.bin.server_9_4_8}}"
-  haskell-language-server-9.6.3: "{{source.build.bin.server_9_6_3}}"
-  haskell-language-server-9.8.1: "{{source.build.bin.server_9_8_2}}"
+  haskell-language-server-9.6.4: "{{source.build.bin.server_9_6_4}}"
+  haskell-language-server-9.8.2: "{{source.build.bin.server_9_8_2}}"
