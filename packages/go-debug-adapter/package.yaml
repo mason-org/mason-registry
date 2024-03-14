@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/golang/vscode-go@v0.41.1
+  id: pkg:github/golang/vscode-go@v0.41.2
   asset:
     file: go-{{ version | strip_prefix "v" }}.vsix
 
