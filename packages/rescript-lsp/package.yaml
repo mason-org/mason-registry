@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rescript-lang/rescript-vscode@1.42.0
+  id: pkg:github/rescript-lang/rescript-vscode@1.50.0
   asset:
     file: rescript-vscode-{{version}}.vsix
 
