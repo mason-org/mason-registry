@@ -1,0 +1,17 @@
+---
+name: erb-formatter
+description: Format ERB files with speed and precision.
+homepage: https://github.com/nebulab/erb-formatter
+licenses:
+  - MIT
+languages:
+  - HTML
+  - Ruby
+categories:
+  - Formatter
+
+source:
+  id: pkg:gem/erb-formatter@0.7.2
+
+bin:
+  erb-format: gem:erb-formatter
