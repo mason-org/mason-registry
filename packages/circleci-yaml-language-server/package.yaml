@@ -1,0 +1,43 @@
+---
+name: circleci-yaml-language-server
+description: Language server for CircleCI YAML configurations
+homepage: https://github.com/CircleCI-Public/circleci-yaml-language-server
+licenses:
+  - Apache-2.0
+languages:
+  - YAML
+categories:
+  - LSP
+
+source:
+  id: pkg:github/CircleCI-Public/circleci-yaml-language-server@0.9.3
+  asset:
+    - target: darwin_arm64
+      file:
+        - darwin-arm64-lsp
+        - schema.json
+      bin: darwin-arm64-lsp
+    - target: darwin_x64
+      file:
+        - darwin-amd64-lsp
+        - schema.json
+      bin: darwin-amd64-lsp
+    - target: linux_arm64
+      file:
+        - linux-arm64-lsp
+        - schema.json
+      bin: linux-arm64-lsp
+    - target: linux_x64
+      file:
+        - linux-amd64-lsp
+        - schema.json
+      bin: linux-amd64-lsp
+    - target: win_x64
+      file:
+        - windows-amd64-lsp.exe
+        - schema.json
+      bin: windows-amd64-lsp.exe
+
+bin:
+  circleci-yaml-language-server: "{{source.asset.bin}}"
+
