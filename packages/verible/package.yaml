@@ -13,19 +13,14 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chipsalliance/verible@v0.0-3430-g060bde0f
+  id: pkg:github/chipsalliance/verible@v0.0-3607-g46de0f64
   asset:
     - target: linux_x64
       file: verible-{{version}}-linux-static-x86_64.tar.gz
       bin:
-        git_verilog_format: verible-{{version}}/bin/git-verible-verilog-format.sh
-        patch_tool: verible-{{version}}/bin/verible-patch-tool
-        transform_interactive: verible-{{version}}/bin/verible-transform-interactive.sh
         diff: verible-{{version}}/bin/verible-verilog-diff
         format: verible-{{version}}/bin/verible-verilog-format
-        format_changed_lines: verible-{{version}}/bin/verible-verilog-format-changed-lines-interactive.sh
         kythe_extractor: verible-{{version}}/bin/verible-verilog-kythe-extractor
-        kythe_kzip_writer: verible-{{version}}/bin/verible-verilog-kythe-kzip-writer
         lint: verible-{{version}}/bin/verible-verilog-lint
         ls: verible-{{version}}/bin/verible-verilog-ls
         obfuscate: verible-{{version}}/bin/verible-verilog-obfuscate
@@ -34,16 +29,11 @@ source:
         syntax: verible-{{version}}/bin/verible-verilog-syntax
 
     - target: linux_arm64
-      file: verible-{{version}}-linux-static-aarch64.tar.gz
+      file: verible-{{version}}-linux-static-arm64.tar.gz
       bin:
-        git_verilog_format: verible-{{version}}/bin/git-verible-verilog-format.sh
-        patch_tool: verible-{{version}}/bin/verible-patch-tool
-        transform_interactive: verible-{{version}}/bin/verible-transform-interactive.sh
         diff: verible-{{version}}/bin/verible-verilog-diff
         format: verible-{{version}}/bin/verible-verilog-format
-        format_changed_lines: verible-{{version}}/bin/verible-verilog-format-changed-lines-interactive.sh
         kythe_extractor: verible-{{version}}/bin/verible-verilog-kythe-extractor
-        kythe_kzip_writer: verible-{{version}}/bin/verible-verilog-kythe-kzip-writer
         lint: verible-{{version}}/bin/verible-verilog-lint
         ls: verible-{{version}}/bin/verible-verilog-ls
         obfuscate: verible-{{version}}/bin/verible-verilog-obfuscate
@@ -54,11 +44,9 @@ source:
     - target: win_x64
       file: verible-{{version}}-win64.zip
       bin:
-        patch_tool: verible-{{version}}-win64/verible-patch-tool.exe
         diff: verible-{{version}}-win64/verible-verilog-diff.exe
         format: verible-{{version}}-win64/verible-verilog-format.exe
         kythe_extractor: verible-{{version}}-win64/verible-verilog-kythe-extractor.exe
-        kythe_kzip_writer: verible-{{version}}-win64/verible-verilog-kythe-kzip-writer.exe
         lint: verible-{{version}}-win64/verible-verilog-lint.exe
         ls: verible-{{version}}-win64/verible-verilog-ls.exe
         obfuscate: verible-{{version}}-win64/verible-verilog-obfuscate.exe
@@ -66,15 +54,23 @@ source:
         project: verible-{{version}}-win64/verible-verilog-project.exe
         syntax: verible-{{version}}-win64/verible-verilog-syntax.exe
 
+    - target: [darwin_x64, darwin_arm64]
+      file: verible-{{version}}-macOS.tar.gz
+      bin:
+        diff: verible-{{version}}-macOS/bin/verible-verilog-diff
+        format: verible-{{version}}-macOS/bin/verible-verilog-format
+        kythe_extractor: verible-{{version}}-macOS/bin/verible-verilog-kythe-extractor
+        lint: verible-{{version}}-macOS/bin/verible-verilog-lint
+        ls: verible-{{version}}-macOS/bin/verible-verilog-ls
+        obfuscate: verible-{{version}}-macOS/bin/verible-verilog-obfuscate
+        preprocessor: verible-{{version}}-macOS/bin/verible-verilog-preprocessor
+        project: verible-{{version}}-macOS/bin/verible-verilog-project
+        syntax: verible-{{version}}-macOS/bin/verible-verilog-syntax
+
 bin:
-  git-verible-verilog-format.sh: "{{source.asset.bin.git_verilog_format}}"
-  verible-patch-tool: "{{source.asset.bin.patch_tool}}"
-  verible-transform-interactive.sh: "{{source.asset.bin.transform_interactive}}"
   verible-verilog-diff: "{{source.asset.bin.diff}}"
-  verible-verilog-format-changed-lines-interactive.sh: "{{source.asset.bin.format_changed_lines}}"
   verible-verilog-format: "{{source.asset.bin.format}}"
   verible-verilog-kythe-extractor: "{{source.asset.bin.kythe_extractor}}"
-  verible-verilog-kythe-kzip-writer: "{{source.asset.bin.kythe_kzip_writer}}"
   verible-verilog-lint: "{{source.asset.bin.lint}}"
   verible-verilog-ls: "{{source.asset.bin.ls}}"
   verible-verilog-obfuscate: "{{source.asset.bin.obfuscate}}"

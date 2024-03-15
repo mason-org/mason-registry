@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/typescript-language-server@4.2.0
+  id: pkg:npm/typescript-language-server@4.3.3
   extra_packages:
     - typescript
 

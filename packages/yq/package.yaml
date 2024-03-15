@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:github/mikefarah/yq@v4.40.5
+  id: pkg:github/mikefarah/yq@v4.42.1
   asset:
     - target: darwin_arm64
       file: yq_darwin_arm64.tar.gz

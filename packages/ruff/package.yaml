@@ -8,9 +8,10 @@ languages:
   - Python
 categories:
   - Linter
+  - Formatter
 
 source:
-  id: pkg:pypi/ruff@0.1.8
+  id: pkg:pypi/ruff@0.3.2
 
 bin:
   ruff: pypi:ruff
