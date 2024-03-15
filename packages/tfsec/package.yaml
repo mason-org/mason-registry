@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/aquasecurity/tfsec@v1.28.4
+  id: pkg:github/aquasecurity/tfsec@v1.28.5
   asset:
     - target: darwin_x64
       file: tfsec-darwin-amd64

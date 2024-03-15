@@ -10,7 +10,7 @@ categories:
   - Formatter
   
 source:
-  id: pkg:npm/purs-tidy@0.10.0
+  id: pkg:npm/purs-tidy@0.11.0
   
 bin:
   purs-tidy: npm:purs-tidy

@@ -1,7 +1,7 @@
 ---
 name: perl-debug-adapter
 description: Perl debugger that invokes perl -d.
-homepage: https://github.com/Nihilus118/vscode-perl-debug
+homepage: https://github.com/Nihilus118/perl-debug-adapter
 licenses:
   - MIT
 languages:
@@ -10,8 +10,8 @@ categories:
   - DAP
 
 source:
-  # renovate:datasource=git-refs
-  id: pkg:github/Nihilus118/vscode-perl-debug@b0af2203a05133d47f3bf3d8edf64e1b4d20d5cd
+  # renovate:datasource=github-tags
+  id: pkg:github/Nihilus118/perl-debug-adapter@1.0.7
   build:
     run: |
       npm install

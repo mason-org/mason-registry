@@ -8,13 +8,14 @@ licenses:
   - GPL-3.0-or-later
 languages:
   - JavaScript
+  - TypeScript
 categories:
   - LSP
   - Linter
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:generic/quick-lint/quick-lint-js@2.18.0
+  id: pkg:generic/quick-lint/quick-lint-js@3.2.0
   download:
     - target: darwin_x64
       files:

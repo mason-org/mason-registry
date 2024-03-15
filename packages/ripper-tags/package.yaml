@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:gem/ripper-tags@1.0.1
+  id: pkg:gem/ripper-tags@1.0.2
 
 bin:
   ripper-tags: gem:ripper-tags

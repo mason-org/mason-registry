@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/segmentio/golines@v0.11.0
+  id: pkg:golang/github.com/segmentio/golines@v0.12.2
 
 bin:
   golines: golang:golines

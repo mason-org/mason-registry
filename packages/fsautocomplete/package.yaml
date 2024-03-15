@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:nuget/fsautocomplete@0.68.0
+  id: pkg:nuget/fsautocomplete@0.71.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/ionide/ionide-vscode-fsharp/main/release/package.json

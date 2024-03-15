@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/vscode-abl/vscode-abl@V1.4.7
+  id: pkg:github/vscode-abl/vscode-abl@V1.4.21
   asset:
     file: abl-lsp.jar
 

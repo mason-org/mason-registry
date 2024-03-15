@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/isort@5.12.0
+  id: pkg:pypi/isort@5.13.2
 
 bin:
   isort: pypi:isort

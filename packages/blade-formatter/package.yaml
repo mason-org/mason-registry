@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/blade-formatter@1.38.6
+  id: pkg:npm/blade-formatter@1.41.1
 
 bin:
   blade-formatter: npm:blade-formatter

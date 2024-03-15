@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/pyink@23.10.0
+  id: pkg:pypi/pyink@23.12.1
 
 bin:
   pyink: pypi:pyink

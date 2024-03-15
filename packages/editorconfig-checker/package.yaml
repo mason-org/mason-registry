@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/editorconfig-checker/editorconfig-checker@2.7.2
+  id: pkg:github/editorconfig-checker/editorconfig-checker@v3.0.0
   asset:
     - target: darwin_arm64
       file: ec-darwin-arm64.tar.gz

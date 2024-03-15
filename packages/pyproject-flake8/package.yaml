@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/pyproject-flake8@6.1.0
 
 bin:
-  pyproject-flake8: pypi:pflake8
+  pflake8: pypi:pflake8

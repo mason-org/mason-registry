@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/OmniSharp/omnisharp-roslyn@v1.39.10
+  id: pkg:github/OmniSharp/omnisharp-roslyn@v1.39.11
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: omnisharp-osx.tar.gz

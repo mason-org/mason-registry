@@ -5,7 +5,7 @@ homepage: https://github.com/google/go-jsonnet/tree/master/cmd/jsonnetfmt
 licenses:
   - Apache-2.0
 languages:
-  - Go
+  - Jsonnet
 categories:
   - Formatter
 

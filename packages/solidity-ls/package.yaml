@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/solidity-ls@0.5.3
+  id: pkg:npm/solidity-ls@0.5.4
 
 bin:
   solidity-ls: npm:solidity-ls

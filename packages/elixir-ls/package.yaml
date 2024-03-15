@@ -13,20 +13,34 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/elixir-lsp/elixir-ls@v0.17.10
+  id: pkg:github/elixir-lsp/elixir-ls@v0.20.0
   asset:
     - target: unix
       file: elixir-ls-{{version}}.zip
       bin:
         lsp: language_server.sh
-        dap: debugger.sh
+        dap: debug_adapter.sh
     - target: win
       file: elixir-ls-{{version}}.zip
       bin:
         lsp: language_server.bat
-        dap: debugger.bat
+        dap: debug_adapter.bat
 
   version_overrides:
+    - constraint: semver:<=v0.17.10
+      id: pkg:github/elixir-lsp/elixir-ls@v0.14.6
+      asset:
+        - target: unix
+          file: elixir-ls-{{version}}.zip
+          bin:
+            lsp: language_server.sh
+            dap: debugger.sh
+        - target: win
+          file: elixir-ls-{{version}}.zip
+          bin:
+            lsp: language_server.bat
+            dap: debugger.bat
+
     - constraint: semver:<=0.14.6
       id: pkg:github/elixir-lsp/elixir-ls@v0.14.6
       asset:

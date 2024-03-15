@@ -10,22 +10,25 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/koalaman/shellcheck@v0.9.0
+  id: pkg:github/vscode-shellcheck/shellcheck-binaries@v0.10.0
   asset:
-    - target: [darwin_x64, darwin_arm64]
-      file: shellcheck-{{version}}.darwin.x86_64.tar.xz
-      bin: shellcheck-{{version}}/shellcheck
+    - target: darwin_arm64
+      file: shellcheck-{{version}}.darwin.aarch64.tar.gz
+      bin: shellcheck
+    - target: darwin_x64
+      file: shellcheck-{{version}}.darwin.x86_64.tar.gz
+      bin: shellcheck
     - target: linux_x64
-      file: shellcheck-{{version}}.linux.x86_64.tar.xz
-      bin: shellcheck-{{version}}/shellcheck
+      file: shellcheck-{{version}}.linux.x86_64.tar.gz
+      bin: shellcheck
     - target: linux_arm64
-      file: shellcheck-{{version}}.linux.aarch64.tar.xz
-      bin: shellcheck-{{version}}/shellcheck
+      file: shellcheck-{{version}}.linux.aarch64.tar.gz
+      bin: shellcheck
     - target: linux_arm
-      file: shellcheck-{{version}}.linux.armv6hf.tar.xz
-      bin: shellcheck-{{version}}/shellcheck
+      file: shellcheck-{{version}}.linux.armv6hf.tar.gz
+      bin: shellcheck
     - target: win_x64
-      file: shellcheck-{{version}}.zip
+      file: shellcheck-{{version}}.windows.x86_64.tar.gz
       bin: shellcheck.exe
 
 bin:

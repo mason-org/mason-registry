@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/arduino/arduino-language-server@0.7.5
+  id: pkg:github/arduino/arduino-language-server@0.7.6
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: arduino-language-server_{{version}}_macOS_64bit.tar.gz

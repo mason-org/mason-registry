@@ -1,0 +1,89 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/openvsx",
+    "type": "object",
+    "required": ["id", "download"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:openvsx/.+/.+@.+"
+        },
+        "download": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": ["file", "target"],
+                        "properties": {
+                            "target": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "/mason-registry.json/enums/platform"
+                                        }
+                                    },
+                                    {
+                                        "$ref": "/mason-registry.json/enums/platform"
+                                    }
+                                ]
+                            },
+                            "file": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            },
+                            "target_platform": {
+                                "type": "string",
+                                "enum": [
+                                    "in32-x64",
+                                    "win32-ia32",
+                                    "win32-arm64",
+                                    "linux-x64",
+                                    "linux-arm64",
+                                    "linux-armhf",
+                                    "alpine-x64",
+                                    "alpine-arm64",
+                                    "darwin-x64",
+                                    "darwin-arm64",
+                                    "web",
+                                    "universal"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "required": ["file"],
+                    "properties": {
+                        "file": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

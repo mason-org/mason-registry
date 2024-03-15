@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:opam/ocamlformat@0.26.0
+  id: pkg:opam/ocamlformat@0.26.1
 
 bin:
   ocamlformat: opam:ocamlformat

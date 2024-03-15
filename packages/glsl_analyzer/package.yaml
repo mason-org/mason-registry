@@ -1,0 +1,36 @@
+---
+name: glsl_analyzer
+description: |
+  Language server for GLSL (autocomplete, goto-definition, formatter, and more)
+homepage: https://github.com/nolanderc/glsl_analyzer
+licenses:
+  - GPL-3.0
+languages:
+  - OpenGL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/nolanderc/glsl_analyzer@v1.4.4
+  asset:
+    - target: darwin_x64
+      file: x86_64-macos.zip
+      bin: bin/glsl_analyzer
+    - target: darwin_arm64
+      file: aarch64-macos.zip
+      bin: bin/glsl_analyzer
+    - target: linux_x64
+      file: x86_64-linux-musl.zip
+      bin: bin/glsl_analyzer
+    - target: linux_arm64
+      file: aarch64-linux-musl.zip
+      bin: bin/glsl_analyzer
+    - target: win_x64
+      file: x86_64-windows.zip
+      bin: bin/glsl_analyzer.exe
+    - target: win_arm64
+      file: aarch64-windows.zip
+      bin: bin/glsl_analyzer.exe
+
+bin:
+  glsl_analyzer: "{{source.asset.bin}}"

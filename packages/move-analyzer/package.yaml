@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/move-analyzer@4cd4710?repository_url=https://github.com/move-language/move&rev=true
+  id: pkg:cargo/move-analyzer@ea70797099baea64f05194a918cebd69ed02b285?repository_url=https://github.com/move-language/move&rev=true&locked=false
 
 bin:
   move-analyzer: cargo:move-analyzer
