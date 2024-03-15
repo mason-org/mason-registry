@@ -16,5 +16,5 @@ source:
   download:
     file: marus25.cortex-debug-{{version}}.vsix
 
-bin:
-  cortex-debug: node:extension/dist/debugadapter.js
+share:
+  cortex-debug/: extension/
