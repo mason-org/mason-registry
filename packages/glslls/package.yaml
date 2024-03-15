@@ -30,3 +30,5 @@ source:
 
 bin:
   glslls: "{{source.build.bin}}"
+
+ci_skip: true
