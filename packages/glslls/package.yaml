@@ -10,8 +10,8 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=git-refs
-  id: pkg:github/svenstaro/glsl-language-server@92de13c10a4855e935e6cd2625217ec040b4767a
+  # renovate:datasource=github-tags
+  id: pkg:github/svenstaro/glsl-language-server@0.5.0
   build:
     - target: unix
       run: |
