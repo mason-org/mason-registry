@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/cairo-language-server@2.5.4
+  id: pkg:cargo/cairo-language-server@2.6.2
 
 bin:
   cairo-language-server: cargo:cairo-language-server

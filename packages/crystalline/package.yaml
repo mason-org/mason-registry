@@ -12,6 +12,9 @@ categories:
 source:
   id: pkg:github/elbywan/crystalline@v0.12.2
   asset:
+    - target: darwin_arm64
+      file: crystalline_arm64-apple-darwin.gz 
+      bin: crystalline_arm64-apple-darwin
     - target: darwin_x64
       file: crystalline_x86_64-apple-darwin.gz
       bin: crystalline_x86_64-apple-darwin

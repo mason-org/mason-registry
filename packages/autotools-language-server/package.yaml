@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/autotools-language-server@0.0.14
+  id: pkg:pypi/autotools-language-server@0.0.16
 
 bin:
   autotools-language-server: pypi:autotools-language-server

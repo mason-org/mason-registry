@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/autoflake@2.2.1
+  id: pkg:pypi/autoflake@2.3.0
 
 bin:
   autoflake: pypi:autoflake
