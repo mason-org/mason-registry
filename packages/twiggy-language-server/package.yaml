@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/twiggy-language-server@0.6.6
+  id: pkg:npm/twiggy-language-server@0.6.7
 
 bin:
   twiggy-language-server: node:node_modules/twiggy-language-server/dist/server.js
