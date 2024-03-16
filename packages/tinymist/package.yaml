@@ -33,5 +33,5 @@ source:
       bin: tinymist-win32-arm64.exe
 
 bin:
-  rust-analyzer: "{{source.asset.bin}}"
+  tinymist: "{{source.asset.bin}}"
 # test workflow
