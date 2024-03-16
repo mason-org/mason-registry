@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nvarner/typst-lsp@v0.12.1
+  id: pkg:github/nvarner/typst-lsp@v0.13.0
   asset:
     - target: darwin_arm64
       file: typst-lsp-aarch64-apple-darwin
