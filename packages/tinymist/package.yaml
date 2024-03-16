@@ -12,7 +12,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/Myriad-Dreamin/tinymist@0.10.2
+  id: pkg:github/Myriad-Dreamin/tinymist@v0.10.2
   asset:
     - target: linux_x64_gnu
       file: tinymist-linux-x64
