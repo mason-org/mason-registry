@@ -35,3 +35,4 @@ source:
 
 bin:
   rust-analyzer: "{{source.asset.bin}}"
+# test workflow
