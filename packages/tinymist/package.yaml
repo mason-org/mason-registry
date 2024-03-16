@@ -11,7 +11,6 @@ categories:
   - LSP
 
 source:
-  # renovate:versioning=loose
   id: pkg:github/Myriad-Dreamin/tinymist@v0.10.2
   asset:
     - target: linux_x64_gnu
