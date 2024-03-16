@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/WhatsApp/erlang-language-platform@2023-12-15
+  id: pkg:github/WhatsApp/erlang-language-platform@2024-03-07
   asset:
     - target: linux_x64_gnu
       file: elp-linux-x86_64-unknown-linux-gnu-otp-25.3.tar.gz

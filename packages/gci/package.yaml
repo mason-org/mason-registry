@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/daixiang0/gci@v0.12.1
+  id: pkg:golang/github.com/daixiang0/gci@v0.13.0
 
 bin:
   gci: golang:gci
