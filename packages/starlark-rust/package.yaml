@@ -1,16 +1,16 @@
 ---
 name: starlark-rust
 description: A Rust implementation of the Starlark language
-homepage: https://github.com/facebookexperimental/starlark-rust/
+homepage: https://github.com/facebook/starlark-rust/
 licenses:
-  - "Apache-2.0"
+  - Apache-2.0
 languages:
-  - "Starlark"
+  - Starlark
 categories:
-  - "LSP"
+  - LSP
 
 source:
-  id: pkg:cargo/starlark@0.12.0
+  id: pkg:cargo/starlark_bin@0.12.0
 
 bin:
   starlark: cargo/starlark
