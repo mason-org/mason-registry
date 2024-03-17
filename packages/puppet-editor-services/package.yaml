@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/puppetlabs/puppet-editor-services@v2.0.0
+  id: pkg:github/puppetlabs/puppet-editor-services@v2.0.1
   asset:
     file: puppet_editor_services_{{version}}.zip:libexec/
 

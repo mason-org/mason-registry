@@ -14,6 +14,7 @@
                 { "$ref": "sources/npm" },
                 { "$ref": "sources/nuget" },
                 { "$ref": "sources/opam" },
+                { "$ref": "sources/openvsx" },
                 { "$ref": "sources/pypi" }
             ]
         }

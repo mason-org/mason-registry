@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/flake8@6.1.0
+  id: pkg:pypi/flake8@7.0.0
 
 bin:
   flake8: pypi:flake8
