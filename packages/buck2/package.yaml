@@ -1,0 +1,32 @@
+---
+name: buck2
+description: Build system, successor to buck
+homepage: https://buck2.build/
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Bazel
+categories:
+  - LSP
+
+source:
+  id: pkg:github/facebook/buck2@2024-03-15
+  asset:
+    - target: darwin_arm64
+      file: buck2-aarch64-apple-darwin.zst
+    - target: darwin_x64
+      file: buck2-x86_64-apple-darwin.zst
+    - target: linux_arm64_gnu
+      file: buck2-aarch64-unknown-linux-gnu.zst
+    - target: linux_arm64_musl
+      file: buck2-aarch64-unknown-linux-musl.zst
+    - target: linux_x64_gnu
+      file: buck2-x86_64-unknown-linux-gnu.zst
+    - target: linux_x64_musl
+      file: buck2-x86_64-unknown-linux-musl.zst
+    - target: win_x64
+      file: buck2-x86_64-pc-windows-msvc.exe.zst
+
+bin:
+  buck2: "{{source.asset.bin}}"
