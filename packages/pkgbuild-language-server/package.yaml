@@ -8,9 +8,15 @@ languages:
   - Bash
 categories:
   - LSP
+deprecation:
+  message: pkgbuild-language-server is no longer available.
+  since: 0.0.6
 
 source:
   id: pkg:pypi/pkgbuild-language-server@0.0.6
 
 bin:
   pkgbuild-language-server: pypi:pkgbuild-language-server
+
+# CI never passes because the package has been removed from pypi.
+ci_skip: true

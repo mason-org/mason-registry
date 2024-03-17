@@ -14,10 +14,10 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/@biomejs/biome@1.3.3
+  id: pkg:npm/@biomejs/biome@1.6.1
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/biomejs/biome/cli/v{{version}}/editors/vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/biomejs/biome-vscode/main/package.json
 
 bin:
   biome: npm:biome
