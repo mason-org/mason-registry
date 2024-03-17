@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/candid82/joker@v1.3.1
+  id: pkg:github/candid82/joker@v1.3.5
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: joker-mac-amd64.zip

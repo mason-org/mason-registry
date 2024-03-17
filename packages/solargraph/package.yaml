@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/solargraph@0.49.0
+  id: pkg:gem/solargraph@0.50.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/castwide/vscode-solargraph/master/package.json

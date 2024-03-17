@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:golang/github.com/josharian/impl@v1.2.0
+  id: pkg:golang/github.com/josharian/impl@v1.3.0
 
 bin:
   impl: golang:impl
