@@ -11,6 +11,7 @@ categories:
   - LSP
 
 source:
+  # renovate:versioning=loose
   id: pkg:github/veryl-lang/veryl@veryl-v0.6.0
   asset:
     - target: darwin_arm64
