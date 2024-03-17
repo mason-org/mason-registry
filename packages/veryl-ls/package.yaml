@@ -1,7 +1,7 @@
 ---
 name: veryl-ls
 description: Veryl language server.
-homepage: https://github.com/dalance/veryl
+homepage: https://github.com/veryl-lang/veryl
 licenses:
   - Apache-2.0
   - MIT
@@ -11,7 +11,8 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/dalance/veryl@veryl-v0.5.6
+  # renovate:versioning=loose
+  id: pkg:github/veryl-lang/veryl@veryl-v0.6.0
   asset:
     - target: darwin_arm64
       file: veryl-aarch64-mac.zip

@@ -1,0 +1,22 @@
+---
+name: fennel-ls
+description: Language Server for Fennel
+homepage: https://git.sr.ht/~xerool/fennel-ls
+licenses:
+  - MIT
+languages:
+  - Fennel
+categories:
+  - LSP
+
+source:
+  id: pkg:luarocks/fennel-ls@0.1.2-2
+
+bin:
+  fennel-ls: luarocks:fennel-ls
+
+ci_skip:
+  # https://github.com/mason-org/mason-registry/pull/4648
+  - darwin_x64
+  - linux_x64
+  - linux_x64_gnu
