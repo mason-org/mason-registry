@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/forcedotcom/salesforcedx-vscode@v60.1.2
+  id: pkg:github/forcedotcom/salesforcedx-vscode@v60.3.2
   asset:
     file: salesforcedx-vscode-apex-{{ version | strip_prefix "v" }}.vsix
 

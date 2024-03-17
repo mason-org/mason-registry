@@ -156,6 +156,7 @@
         "Starlark",
         "Stylelint",
         "Svelte",
+        "systemd",
         "SystemVerilog",
         "TOML",
         "Teal",
@@ -177,6 +178,7 @@
         "XML",
         "YAML",
         "YARA",
+        "Zeek",
         "Zig",
         "Zsh"
     ]
