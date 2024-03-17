@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/artempyanykh/marksman@2023-11-26
+  id: pkg:github/artempyanykh/marksman@2023-12-09
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: marksman-macos
