@@ -2,11 +2,11 @@ name: aiken
 description: A modern smart contract platform for Cardano
 homepage: https://github.com/aiken-lang/aiken
 licenses:
-  - "Apache-2.0"
+  - Apache-2.0
 languages:
-  - "Aiken"
+  - Aiken
 categories:
-  - "LSP"
+  - LSP
 source:
   id: pkg:cargo/aiken@1.0.24-alpha
 bin:
