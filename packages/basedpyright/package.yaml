@@ -1,0 +1,16 @@
+---
+name: basedpyright
+description: pyright fork with various type checking improvements, improved vscode support and pylance features built into the language server
+homepage: https://detachhead.github.io/basedpyright/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/basedpyright@1.5.0
+
+bin:
+  basedpyright: pypi:basedpyright
