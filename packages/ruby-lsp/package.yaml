@@ -13,5 +13,8 @@ categories:
 source:
   id: pkg:gem/ruby-lsp@0.14.6
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/Shopify/ruby-lsp/main/vscode/package.json
+
 bin:
   ruby-lsp: gem:ruby-lsp
