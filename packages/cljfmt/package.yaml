@@ -23,7 +23,7 @@ source:
       file: cljfmt-{{ version }}-linux-aarch64.tar.gz
       bin: cljfmt
     - target: linux_x64
-      file: cljfmt-{{ version }}-linux-static-amd64.zip
+      file: cljfmt-{{ version }}-linux-amd64-static.tar.gz
       bin: cljfmt
     - target: win_x64
       file: cljfmt-{{ version }}-win-amd64.zip
