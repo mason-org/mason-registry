@@ -1,0 +1,22 @@
+---
+name: mdslw
+description: The MarkDown Sentence Line Wrapper, an auto-formatter that prepares your markdown for easy diff'ing.
+homepage: https://github.com/razziel89/mdslw
+licenses:
+  - GPL-3.0-only
+languages:
+  - Markdown
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/razziel89/mdslw@0.7.1
+  asset:
+    - target: [darwin_arm64, darwin_x64]
+      file: mdslw_x86_64-apple-darwin
+    - target: linux_x64
+      file: mdslw_x86_64-unknown-linux-musl
+    - target: win_x64
+      file: mdslw_x86_64-pc-windows-gnu.exe
+bin:
+  mdslw: "{{source.asset.file}}"

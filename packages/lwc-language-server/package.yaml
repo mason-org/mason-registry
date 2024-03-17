@@ -1,0 +1,17 @@
+---
+name: lwc-language-server
+description: Language Server for Lightning Web Components.
+homepage: https://github.com/forcedotcom/lightning-language-server/
+licenses:
+  - BSD-3-Clause
+languages:
+  - HTML
+  - JavaScript
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40salesforce/lwc-language-server@4.8.0
+
+bin:
+  lwc-language-server: npm:lwc-language-server

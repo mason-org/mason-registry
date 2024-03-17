@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/v-analyzer/v-analyzer@v0.0.1-beta.1
+  id: pkg:github/v-analyzer/v-analyzer@0.0.3-beta.1
   asset:
     - target: darwin_arm64
       file: v-analyzer-darwin-arm64.zip

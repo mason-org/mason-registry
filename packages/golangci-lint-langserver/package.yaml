@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/nametake/golangci-lint-langserver@v0.0.8
+  id: pkg:golang/github.com/nametake/golangci-lint-langserver@v0.0.9
 
 bin:
   golangci-lint-langserver: golang:golangci-lint-langserver

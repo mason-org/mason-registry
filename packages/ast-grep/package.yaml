@@ -25,9 +25,10 @@ categories:
   - Linter
   - Formatter
   - Runtime
+  - LSP
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.13.2
+  id: pkg:npm/%40ast-grep/cli@0.19.4
 
 bin:
   ast-grep: npm:ast-grep
