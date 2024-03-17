@@ -19,6 +19,9 @@ source:
     - target: darwin_arm64
       file: deno-aarch64-apple-darwin.zip
       bin: deno
+    - target: linux_arm64_gnu
+      file: deno-aarch64-unknown-linux-gnu.zip
+      bin: deno
     - target: darwin_x64
       file: deno-x86_64-apple-darwin.zip
       bin: deno
