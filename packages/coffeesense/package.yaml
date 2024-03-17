@@ -13,4 +13,4 @@ source:
   id: pkg:npm/coffeesense-language-server@1.15.0
 
 bin:
-  coffeesense: npm:coffeesense
+  coffeesense: npm:coffeesense-language-server
