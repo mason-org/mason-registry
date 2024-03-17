@@ -13,4 +13,4 @@ source:
   id: pkg:npm/@onflow/cadence-language-server@0.33.4
 
 bin:
-  cadence-language-server: npm:cadence-language-server
+  cadence-language-server: npm:@onflow/cadence-language-server
