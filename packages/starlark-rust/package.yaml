@@ -13,4 +13,4 @@ source:
   id: pkg:cargo/starlark_bin@0.12.0
 
 bin:
-  starlark: cargo/starlark
+  starlark: cargo:starlark
