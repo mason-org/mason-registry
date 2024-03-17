@@ -17,4 +17,6 @@ bin:
 
 ci_skip:
   # https://github.com/mason-org/mason-registry/pull/4648
-  - unix
+  - darwin_x64
+  - linux_x64
+  - linux_x64_gnu
