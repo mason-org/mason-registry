@@ -14,3 +14,7 @@ source:
 
 bin:
   fennel-ls: luarocks:fennel-ls
+
+ci_skip:
+  # https://github.com/mason-org/mason-registry/pull/4648
+  - unix
