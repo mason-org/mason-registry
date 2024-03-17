@@ -9,6 +9,14 @@ languages:
 categories:
   - Linter
 source:
-  id: pkg:hackage/hlint@3.6.1
+  id: pkg:github/ndmitchell/hlint@v3.8
+  asset:
+    - target: darwin_x64
+      file: hlint-{{ version | strip_prefix "v" }}-x86_64-osx.tar.gz
+    - target: linux_x64
+      file: hlint-{{ version | strip_prefix "v" }}-x86_64-linux.tar.gz
+    - target: win_x64
+      file: hlint-{{ version | strip_prefix "v" }}-x86_64-windows.zip
+
 bin:
-  hlint: hackage:hlint
+  hlint: "{{source.asset.bin}}"
