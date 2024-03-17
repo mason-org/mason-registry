@@ -1,0 +1,16 @@
+---
+name: cadence
+description: Cadence Language Server using the flow-cli
+homepage: https://github.com/onflow/cadence-tools/tree/master/languageserver
+licenses:
+  - Apache-2.0
+languages:
+  - Cadence
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@onflow/cadence-language-server@0.33.4
+
+bin:
+  cadence-language-server: npm:cadence-language-server
