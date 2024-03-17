@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/dalance/veryl@veryl-v0.5.5
+  id: pkg:github/dalance/veryl@veryl-v0.5.6
   asset:
     - target: darwin_arm64
       file: veryl-aarch64-mac.zip

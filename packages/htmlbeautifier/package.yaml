@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:gem/htmlbeautifier@1.4.2
+  id: pkg:gem/htmlbeautifier@1.4.3
 
 bin:
   htmlbeautifier: gem:htmlbeautifier

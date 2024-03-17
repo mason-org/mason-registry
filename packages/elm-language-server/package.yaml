@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40elm-tooling/elm-language-server@2.7.3
+  id: pkg:npm/%40elm-tooling/elm-language-server@2.8.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/elm-tooling/elm-language-client-vscode/master/package.json
