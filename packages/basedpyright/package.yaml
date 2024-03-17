@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/basedpyright@1.5.0
 
 bin:
-  basedpyright: pypi:basedpyright
+  basedpyright-langserver: pypi:basedpyright-langserver
