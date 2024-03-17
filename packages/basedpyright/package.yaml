@@ -1,6 +1,6 @@
 ---
 name: basedpyright
-description: Fork of the Pyright static type checker for Python, which adds extra Pylance features.
+description: Fork of the Pyright static type checker for Python, with extra Pylance features.
 homepage: https://detachhead.github.io/basedpyright
 licenses:
   - MIT
