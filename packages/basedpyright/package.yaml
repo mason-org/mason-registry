@@ -1,0 +1,20 @@
+---
+name: basedpyright
+description: Fork of the Pyright static type checker for Python, which adds extra Pylance features.
+homepage: https://detachhead.github.io/basedpyright
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/basedpyright@1.5.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/{{version}}/packages/vscode-pyright/package.json
+
+bin:
+  basedpyright: pypi:basedpyright
+  basedpyright-langserver: pypi:basedpyright-langserver
