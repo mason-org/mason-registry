@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/ruby-lsp@0.14.3
+  id: pkg:gem/ruby-lsp@0.14.6
 
 bin:
   ruby-lsp: gem:ruby-lsp
