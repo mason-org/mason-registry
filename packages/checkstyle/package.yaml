@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/checkstyle/checkstyle@checkstyle-10.12.1
+  id: pkg:github/checkstyle/checkstyle@checkstyle-10.12.6
   asset:
     file: "{{version}}-all.jar"
 
