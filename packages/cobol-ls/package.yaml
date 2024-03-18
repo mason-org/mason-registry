@@ -1,0 +1,29 @@
+---
+name: cobol-ls
+description: COBOL Language Support provides autocomplete, highlighting and diagnostics for COBOL code and copybooks
+homepage: https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol
+licenses:
+  - EPL-2.0
+languages:
+  - COBOL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.1.1
+  asset:
+    - target: darwin_arm64
+      file: cobol-language-support-darwin-arm64-{{version}}.vsix
+    - target: darwin_x64
+      file: cobol-language-support-darwin-x64-{{version}}.vsix
+    - target: linux_arm64
+      file: cobol-language-support-linux-arm64-{{version}}.vsix
+    - target: linux_x64
+      file: cobol-language-support-linux-x64-{{version}}.vsix
+    - target: win_arm64
+      file: cobol-language-support-win32-arm64-{{version}}-signed.vsix
+    - target: win_x64
+      file: cobol-language-support-win32-x64-{{version}}-signed.vsix
+
+bin:
+  cobol-language-support: "{{source.asset.bin}}"
