@@ -1,0 +1,25 @@
+---
+name: mesonlsp
+description: An unofficial, unendorsed language server for meson written in C++
+homepage: https://github.com/JCWasmx86/mesonlsp
+licenses:
+  - GPL-3.0
+languages:
+  - Meson
+categories:
+  - LSP
+
+source:
+  id: pkg:github/JCWasmx86/mesonlsp@v4.1.0
+  asset:
+    - target: linux_x64
+      file: mesonlsp-alpine-static.zip
+    - target: darwin_x64
+      file: mesonlsp-macos13.zip
+    - target: darwin_arm64
+      file: mesonlsp-macos14.zip
+    - target: win_x64
+      file: mesonlsp-windows.zip
+
+bin:
+  Swift-MesonLSP: "{{source.asset.bin}}"
