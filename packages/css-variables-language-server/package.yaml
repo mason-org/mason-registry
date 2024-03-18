@@ -14,7 +14,5 @@ categories:
 source:
   id: pkg:npm/css-variables-language-server@2.7.0
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/vunguyentuan/vscode-css-variables/master/packages/css-variables-language-server/package.json
 bin:
   css-variables-language-server: npm:css-variables-language-server
