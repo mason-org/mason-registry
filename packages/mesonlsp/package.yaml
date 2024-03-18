@@ -15,9 +15,9 @@ source:
     - target: linux_x64
       file: mesonlsp-alpine-static.zip
     - target: darwin_x64
-      file: mesonlsp-macos13.zip
+      file: mesonlsp-macos-13.zip
     - target: darwin_arm64
-      file: mesonlsp-macos14.zip
+      file: mesonlsp-macos-14.zip
     - target: win_x64
       file: mesonlsp-windows.zip
 
