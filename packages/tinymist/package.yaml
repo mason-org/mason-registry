@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/Myriad-Dreamin/tinymist@v0.10.2
+  id: pkg:github/Myriad-Dreamin/tinymist@v0.11.0
   asset:
     - target: linux_x64_gnu
       file: tinymist-linux-x64
@@ -34,4 +34,3 @@ source:
 
 bin:
   tinymist: "{{source.asset.bin}}"
-# test workflow
