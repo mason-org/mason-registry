@@ -13,7 +13,7 @@ source:
   id: pkg:pypi/basedpyright@1.5.0
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/{{version}}/packages/vscode-pyright/package.json
+  lsp: vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/v{{version}}/packages/vscode-pyright/package.json
 
 bin:
   basedpyright: pypi:basedpyright
