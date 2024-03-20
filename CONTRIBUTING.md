@@ -5,8 +5,9 @@
 <!--toc:start-->
 - [Contributing guide](#contributing-guide)
   - [Table of Contents](#table-of-contents)
-- [Brief](#brief)
+- [Introduction](#introduction)
 - [Schema](#schema)
+- [Testing](#testing)
 - [The anatomy of a package](#the-anatomy-of-a-package)
 - [Package specification](#package-specification)
   - [`name`](#name)
@@ -40,14 +41,16 @@
 > RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14][bcp14],
 > [RFC2119][rfc2119], and [RFC8174][rfc8174] when, and only when, they appear in all capitals, as shown here.
 
-# Brief
+# Introduction
 
-* Use the YAML language server combined with the [schemastore schema](https://json.schemastore.org/mason-registry.json)
-  to get diagnostics and autocompletion (see [Schema](#schema)).
 * Make sure to follow the [naming guidelines](#name).
 * Refer to the [common fields example](#common-fields) for a good starting point for a new package.
 * Refer to the different [examples](#examples) and/or existing package definitions for further guidance.
-* Testing a package locally is still a bit complicated, open a PR early to make use of the cross-platform CI suite!
+* Testing a package MUST be done locally prior to creating a PR. See [testing](#testing) for more information.
+
+> [!TIP]
+> Use the YAML language server combined with the [schemastore schema](https://json.schemastore.org/mason-registry.json)
+> to get diagnostics and autocompletion (see [Schema](#schema)).
 
 # Schema
 
@@ -61,6 +64,36 @@ Package definitions are validated against a well-defined [JSON schema](./schemas
 </sup>
 
 <img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
+
+# Testing
+
+Testing a package locally can be achieved by configuring the `mason.nvim` client to source package definitions locally
+from your filesystem.
+
+> [!IMPORTANT]
+> In order for `mason.nvim` to be able to parse the YAML files you must have `yq` installed on your system. Tip: install
+> `yq` (`:MasonInstall yq`) from the core registry before testing.
+
+Take note of the path where you have `mason-org/mason-registry` cloned on your file system. To configure `mason.nvim` to
+source packages from there you'll use the `file:` protocol, like so:
+
+```lua
+require("mason").setup {
+  registries = {
+    "file:~/dev/mason-registry"
+  }
+}
+```
+
+Before continuing, make sure Mason has been properly configured to source packages locally by opening the `:Mason`
+window and pressing `g?` to open the help view:
+
+<img src="https://github.com/mason-org/mason-registry/assets/6705160/952e1b0f-6396-492e-9270-e72c26800a98" height="100" />
+
+> [!TIP]
+> You can emulate different platform ("targets") by providing the `--target=` option to `:MasonInstall`. For example:
+> <pre><code>:MasonInstall --target=linux_arm64 my-package</code></pre>  
+> Note that this is only a soft emulation and only impacts how the package definition is parsed.
 
 # The anatomy of a package
 
@@ -111,6 +144,20 @@ The package name MUST be unique. The name of a package MUST follow the following
 ## `description`
 
 Short description of the package. The description SHOULD be sourced from the upstream package directly.
+
+Longer descriptions MUST be split on multiple lines, as to not exceed the max line length (120).
+
+Example:
+
+```yaml
+description: |
+  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur
+  mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+```
+
+> [!TIP]
+> To automatically format the description across multiple lines, run `:setlocal textwidth=120`, visually select the
+> description and press `gw` (`:help gw`).
 
 ## `homepage`
 
@@ -204,6 +251,9 @@ share:
     jdtls/plugins/: plugins/
 ```
 
+> [!IMPORTANT]
+> The contents of linked files MUST be compatible with all machines, regardless of hardware architecture.
+
 ## `opt`
 
 The optional, add-on, contents of a package. This is for example useful in situations when a package provides auxiliary
@@ -291,19 +341,8 @@ categories:
   - LSP
 ```
 
-<details><summary>Example: Longer descriptions</summary>
-
-Longer descriptions MUST be split on multiple lines, as to not exceed the max line length.
-
-Example:
-
-```yaml
-description: |
-  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur
-  mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-```
-
-</details>
+> [!IMPORTANT]
+> The document MUST start with a YAML header notation (`---`).
 
 ---
 
@@ -464,6 +503,7 @@ source:
 bin:
   lua-language-server: "{{source.asset.bin}}"
 ```
+
 </details>
 
 <details><summary>Example: Single, platform independent, release asset</summary>
@@ -517,6 +557,10 @@ source:
       - license:LICENSE.txt
 ```
 </details>
+
+> [!IMPORTANT]
+> Linux binaries are commonly compiled for GNU systems. These binaries MUST be associated with a `_gnu` target, e.g.
+> `linux_x64_gnu`.
 
 ---
 
