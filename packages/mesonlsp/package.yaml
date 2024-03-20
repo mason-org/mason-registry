@@ -14,12 +14,16 @@ source:
   asset:
     - target: linux_x64_musl
       file: mesonlsp-x86_64-unknown-linux-musl.zip
+      bin: mesonlsp
     - target: darwin_x64
       file: mesonlsp-x86_64-apple-darwin.zip
+      bin: mesonlsp
     - target: darwin_arm64
       file: mesonlsp-aarch64-apple-darwin.zip
+      bin: mesonlsp
     - target: win_x64
       file: mesonlsp-x86_64-pc-windows-gnu.zip
+      bin: mesonlsp.exe
 
 bin:
-  Swift-MesonLSP: "{{source.asset.bin}}"
+  mesonlsp: "{{source.asset.bin}}"
