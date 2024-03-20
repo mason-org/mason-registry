@@ -26,10 +26,10 @@ source:
       bin: ./extension/server/native/server-linux
     - target: win_arm64
       file: cobol-language-support-win32-arm64-{{version}}-signed.vsix
-      bin: .\extenstion\server\native\engine.exe
+      bin: extenstion\server\native\engine.exe
     - target: win_x64
       file: cobol-language-support-win32-x64-{{version}}-signed.vsix
-      bin: .\extenstion\server\native\engine.exe
+      bin: extenstion\server\native\engine.exe
 
 bin:
   cobol-language-support: "{{source.asset.bin}}"
