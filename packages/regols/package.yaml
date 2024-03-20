@@ -5,7 +5,7 @@ homepage: https://github.com/kitagry/regols
 licenses:
   - MIT
 languages:
-  - Go
+  - Rego
 categories:
   - LSP
 
