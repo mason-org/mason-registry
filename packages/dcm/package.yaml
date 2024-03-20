@@ -8,6 +8,8 @@ languages:
   - Dart
 categories:
   - LSP
+  - Formatter
+  - Linter
 
 source:
   id: pkg:github/CQLabs/homebrew-dcm@1.15.1
