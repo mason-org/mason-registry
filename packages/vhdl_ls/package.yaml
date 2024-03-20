@@ -17,6 +17,10 @@ source:
       bin: vhdl_ls
     - target: linux_x64_gnu
       file: vhdl_ls-x86_64-unknown-linux-gnu.zip
+      bin: vhdl_ls
+    - target: linux_x64_musl
+      file: vhdl_ls-x86_64-unknown-linux-musl.zip
+      bin: vhdl_ls
     - target: win_x64
       file: vhdl_ls-x86_64-pc-windows-msvc.zip
       bin: vhdl_ls.exe
