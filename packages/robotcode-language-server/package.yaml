@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/robotcode-language-server@0.78.0
 
 bin:
-  robotframework_ls: pypi:robotcode-language-server
+  robotcode-language-server: pypi:robotcode-language-server
