@@ -14,22 +14,22 @@ source:
   asset:
     - target: darwin_arm64
       file: cobol-language-support-darwin-arm64-{{version}}.vsix
-      bin: extension/server/native/server-mac
+      bin: ./extension/server/native/server-mac
     - target: darwin_x64
       file: cobol-language-support-darwin-x64-{{version}}.vsix
-      bin: extension/server/native/server-mac
+      bin: ./extension/server/native/server-mac
     - target: linux_arm64
       file: cobol-language-support-linux-arm64-{{version}}.vsix
-      bin: extension/server/native/server-linux
+      bin: ./extension/server/native/server-linux
     - target: linux_x64
       file: cobol-language-support-linux-x64-{{version}}.vsix
-      bin: extension/server/native/server-linux
+      bin: ./extension/server/native/server-linux
     - target: win_arm64
       file: cobol-language-support-win32-arm64-{{version}}-signed.vsix
-      bin: extenstion/server/native/engine.exe
+      bin: .\extenstion\server\native\engine.exe
     - target: win_x64
       file: cobol-language-support-win32-x64-{{version}}-signed.vsix
-      bin: extenstion/server/native/engine.exe
+      bin: .\extenstion\server\native\engine.exe
 
 bin:
   cobol-language-support: "{{source.asset.bin}}"
