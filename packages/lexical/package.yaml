@@ -13,8 +13,8 @@ source:
   id: pkg:github/lexical-lsp/lexical@v0.5.2
   asset:
     - target: unix
-      file: lexical-{{version}}.zip
-      bin: bin/start_lexical.sh
+      file: lexical-{{version}}.zip:libexec/
+      bin: exec:libexec/lexical/bin/start_lexical.sh
 
 bin:
   lexical: "{{source.asset.bin}}"
