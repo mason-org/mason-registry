@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/awk-language-server@0.10.3
+  id: pkg:npm/awk-language-server@0.10.5
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/Beaglefoot/awk-language-server/server-{{version}}/client/package.json

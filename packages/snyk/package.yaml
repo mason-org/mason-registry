@@ -19,7 +19,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/snyk/cli@v1.1282.1
+  id: pkg:github/snyk/cli@v1.1285.0
   asset:
     - target: darwin_x64
       file: snyk-macos

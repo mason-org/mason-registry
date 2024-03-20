@@ -1,0 +1,17 @@
+---
+name: npm-groovy-lint
+description: Lint, format and auto-fix your Groovy / Jenkinsfile / Gradle files using command line.
+homepage: https://github.com/nvuillam/npm-groovy-lint
+licenses:
+  - GPL-3.0-only
+languages:
+  - Groovy
+categories:
+  - Linter
+  - Formatter
+
+source:
+  id: pkg:npm/npm-groovy-lint@14.2.4
+
+bin:
+  npm-groovy-lint: npm:npm-groovy-lint

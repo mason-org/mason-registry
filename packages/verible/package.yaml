@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chipsalliance/verible@v0.0-3601-gf95f52a5
+  id: pkg:github/chipsalliance/verible@v0.0-3622-g07b310a3
   asset:
     - target: linux_x64
       file: verible-{{version}}-linux-static-x86_64.tar.gz
@@ -53,6 +53,19 @@ source:
         preprocessor: verible-{{version}}-win64/verible-verilog-preprocessor.exe
         project: verible-{{version}}-win64/verible-verilog-project.exe
         syntax: verible-{{version}}-win64/verible-verilog-syntax.exe
+
+    - target: [darwin_x64, darwin_arm64]
+      file: verible-{{version}}-macOS.tar.gz
+      bin:
+        diff: verible-{{version}}-macOS/bin/verible-verilog-diff
+        format: verible-{{version}}-macOS/bin/verible-verilog-format
+        kythe_extractor: verible-{{version}}-macOS/bin/verible-verilog-kythe-extractor
+        lint: verible-{{version}}-macOS/bin/verible-verilog-lint
+        ls: verible-{{version}}-macOS/bin/verible-verilog-ls
+        obfuscate: verible-{{version}}-macOS/bin/verible-verilog-obfuscate
+        preprocessor: verible-{{version}}-macOS/bin/verible-verilog-preprocessor
+        project: verible-{{version}}-macOS/bin/verible-verilog-project
+        syntax: verible-{{version}}-macOS/bin/verible-verilog-syntax
 
 bin:
   verible-verilog-diff: "{{source.asset.bin.diff}}"
