@@ -1,7 +1,8 @@
 ---
 name: tinymist
 description: |
-  Tinymist [ˈtaɪni mɪst] is an integrated language service for Typst [taɪpst]. You can also call it "微霭" [wēi ǎi] in Chinese
+  Tinymist [ˈtaɪni mɪst] is an integrated language service for Typst [taɪpst]. You can also call it "微霭" [wēi ǎi] in
+  Chinese.
 homepage: https://github.com/Myriad-Dreamin/tinymist
 licenses:
   - Apache-2.0
@@ -15,22 +16,16 @@ source:
   asset:
     - target: linux_x64_gnu
       file: tinymist-linux-x64
-      bin: tinymist-linux-x64
     - target: linux_arm64_gnu
       file: tinymist-linux-arm64
-      bin: tinymist-linux-arm64
     - target: darwin_x64
       file: tinymist-darwin-x64
-      bin: tinymist-darwin-x64
     - target: darwin_arm64
       file: tinymist-darwin-arm64
-      bin: tinymist-darwin-arm64
     - target: win_x64
-      file: tinymist-win32-x64
-      bin: tinymist-win32-x64.exe
+      file: tinymist-win32-x64.exe
     - target: win_arm64
-      file: tinymist-win32-arm64
-      bin: tinymist-win32-arm64.exe
+      file: tinymist-win32-arm64.exe
 
 bin:
-  tinymist: "{{source.asset.bin}}"
+  tinymist: "{{source.asset.file}}"
