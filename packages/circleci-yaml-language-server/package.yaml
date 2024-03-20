@@ -22,12 +22,12 @@ source:
         - darwin-amd64-lsp
         - schema.json
       bin: darwin-amd64-lsp
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file:
         - linux-arm64-lsp
         - schema.json
       bin: linux-arm64-lsp
-    - target: linux_x64
+    - target: linux_x64_gnu
       file:
         - linux-amd64-lsp
         - schema.json
