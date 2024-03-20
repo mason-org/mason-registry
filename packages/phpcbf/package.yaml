@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.7.2
+  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.9.0
   asset:
     file: phpcbf.phar
 
