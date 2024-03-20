@@ -41,3 +41,5 @@ source:
 bin:
   circleci-yaml-language-server: "{{source.asset.bin}}"
 
+share:
+  circleci-yaml-language-server/schema.json: schema.json
