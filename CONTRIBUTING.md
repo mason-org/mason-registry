@@ -22,17 +22,18 @@
 - [Expressions](#expressions)
 - [Examples](#examples)
   - [Common fields](#common-fields)
-  - [cargo](#cargo)
-  - [composer](#composer)
-  - [gem](#gem)
+  - [Cargo](#cargo)
+  - [Composer](#composer)
+  - [Gem](#gem)
   - [GitHub release assets](#github-release-assets)
   - [GitHub build from source](#github-build-from-source)
-  - [golang](#golang)
-  - [luarocks](#luarocks)
+  - [Golang](#golang)
+  - [LuaRocks](#luarocks)
   - [npm](#npm)
-  - [nuget](#nuget)
+  - [Nuget](#nuget)
   - [opam](#opam)
-  - [pypi](#pypi)
+  - [PyPI](#pypi)
+  - [Open VSX](#open-vsx)
 <!--toc:end-->
 
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT
@@ -306,7 +307,7 @@ description: |
 
 ---
 
-## cargo
+## Cargo
 
 Example:
 
@@ -364,7 +365,7 @@ source:
 
 ---
 
-## composer
+## Composer
 
 Example:
 
@@ -379,7 +380,7 @@ bin:
 
 ---
 
-## gem
+## Gem
 
 Example:
 
@@ -570,7 +571,7 @@ source:
 
 ---
 
-## golang
+## Golang
 
 Example:
 
@@ -596,7 +597,7 @@ source:
 
 ---
 
-## luarocks
+## LuaRocks
 
 Example:
 
@@ -666,7 +667,7 @@ Packages provided in `extra_packages` are passed as-is to npm, so they may requi
 
 ---
 
-## nuget
+## Nuget
 
 Example:
 
@@ -694,7 +695,7 @@ bin:
 
 ---
 
-## pypi
+## PyPI
 
 Example:
 
@@ -733,4 +734,39 @@ source:
 ```
 
 Packages provided in `extra_packages` are passed as-is, so they may require version constraints such as `toml==4`.
+</details>
+
+---
+
+## Open VSX
+
+[Open VSX](https://open-vsx.org/) is an open-source registry for VS Code extensions.
+
+Example:
+
+```yaml
+source:
+  id: pkg:openvsx/vscjava/vscode-java-debug@0.55.0
+  download:
+    file: vscjava.vscode-java-debug-{{version}}.vsix
+```
+
+<details><summary>Example: Platform-dependent file</summary>
+
+If the Open VSX package provides platform-dependent files they need to be registered explicitly. In addition to `target`
+and `file`, the `target_platform` field must be defined and correspond to an OpenVSX platform identifier (e.g.
+`linux-x64`).
+
+```yaml
+source:
+  id: pkg:openvsx/BroadcomMFD/cobol-language-support@2.1.1
+  download:
+    - target: linux_x64
+      file: BroadcomMFD.cobol-language-support-{{ version }}@linux-x64.vsix
+      target_platform: linux-x64
+    - target: darwin_arm64
+      file: BroadcomMFD.cobol-language-support-{{ version }}@darwin-arm64.vsix
+      target_platform: darwin-arm64
+```
+
 </details>
