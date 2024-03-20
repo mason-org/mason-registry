@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/robotcode-language-server@0.78.0
+  id: pkg:pypi/robotcode-language-server@0.78.4
 
 bin:
   robotcode-language-server: pypi:robotcode-language-server
