@@ -1,12 +1,22 @@
 ---
 name: jinja-lsp
-description: Experimental jinja lsp server, with autocomplete, syntax highlighting,
-  hover, goto definition, code actions and linting.
+description: |
+  Experimental jinja lsp server, with autocomplete, syntax highlighting, hover, goto definition, code actions and
+  linting.
 homepage: https://github.com/uros-5/jinja-lsp
-licenses: [MIT]
-languages: [Django, Jinja, Nunjucks]
-categories: [LSP, Linter, Compiler]
+licenses:
+  - MIT
+languages:
+  - Django
+  - Jinja
+  - Nunjucks
+categories:
+  - LSP
+  - Linter
+  - Compiler
+
 source:
   id: pkg:cargo/jinja-lsp@0.1.61
+
 bin:
   jinja-lsp: cargo:jinja-lsp
