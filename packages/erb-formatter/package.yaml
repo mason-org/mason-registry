@@ -14,4 +14,4 @@ source:
   id: pkg:gem/erb-formatter@0.7.2
 
 bin:
-  erb-format: gem:erb-formatter
+  erb-formatter: gem:erb-formatter
