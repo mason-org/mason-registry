@@ -17,7 +17,7 @@ source:
     - target: darwin_arm64
       file: ginko_ls-aarch64-apple-darwin.zip
       bin: ginko_ls-aarch64-apple-darwin/bin/ginko_ls
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: ginko_ls-x86_64-unknown-linux-gnu.zip
       bin: ginko_ls-x86_64-unknown-linux-gnu/bin/ginko_ls
     - target: win_x64
