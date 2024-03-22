@@ -1,0 +1,32 @@
+---
+name: prolog-language-server
+description: A Prolog LSP Server
+homepage: https://www.swi-prolog.org/pack/list?p=lsp_server
+licenses:
+  - BSD-2-Clause
+languages:
+  - Prolog
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:generic/jamesnvc/lsp_server@v2.2.11
+  build:
+    - target: unix
+      run: |
+        "swipl -t \"pack_install(https://github.com/jamesnvc/lsp_server/archive/refs/tags/{{VERSION}}.zip, [interactive(false)]).\""
+      staged: false
+      env:
+        VERSION: "{{version}}"
+
+    - target: win
+      run: |
+        "swipl -t \"pack_install(https://github.com/jamesnvc/lsp_server/archive/refs/tags/{{VERSION}}.zip, [interactive(false)]).\""
+      staged: false
+      env:
+        VERSION: "{{version}}"
+
+share:
+  prolog-language-server/pack.pl: pack.pl
+
