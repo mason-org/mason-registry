@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/a-h/templ@v0.2.646
+  id: pkg:github/a-h/templ@v0.2.648
   asset:
     - target: linux_arm64
       file: templ_Linux_arm64.tar.gz
