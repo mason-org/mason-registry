@@ -3,7 +3,7 @@ name: ginko_ls
 description: |
   ginko_ls is meant to be a feature-complete language server for device-trees. Language servers can be used in many
   editors, such as Visual Studio Code, Emacs or Vim
-homepage: https://github.com/Schottkyc137
+homepage: https://github.com/Schottkyc137/ginko
 licenses:
   - MIT
 languages:
