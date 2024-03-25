@@ -14,7 +14,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/@biomejs/biome@1.6.2
+  id: pkg:npm/@biomejs/biome@1.6.3
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/biomejs/biome-vscode/main/package.json
