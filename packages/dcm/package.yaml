@@ -1,0 +1,31 @@
+---
+name: dcm
+description: Language server for DCM analyzer
+homepage: https://dcm.dev/
+licenses:
+  - proprietary
+languages:
+  - Dart
+categories:
+  - LSP
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/CQLabs/homebrew-dcm@1.15.1
+  asset:
+    - target: darwin_arm64
+      file: dcm-macos-arm-release.zip
+      bin: dcm
+    - target: darwin_x64
+      file: dcm-macos-x64-release.zip
+      bin: dcm
+    - target: linux_x64
+      file: dcm-linux-x64-release.zip
+      bin: dcm
+    - target: win_x64
+      file: dcm-windows-release.zip
+      bin: dcm.exe
+
+bin:
+  dcm: "{{source.asset.bin}}"
