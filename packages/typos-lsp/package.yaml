@@ -32,9 +32,6 @@ source:
     - target: win_arm64
       file: typos-lsp-{{ version }}-aarch64-pc-windows-msvc.zip
       bin: target/aarch64-pc-windows-msvc/release/typos-lsp.exe
-    - target: win_x86
-      file: typos-lsp-{{ version }}-i686-pc-windows-msvc.zip
-      bin: target/i686-pc-windows-msvc/release/typos-lsp.exe
 
 bin:
   typos-lsp: "{{source.asset.bin}}"
