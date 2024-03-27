@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/pest-language-server@0.3.7
+  id: pkg:cargo/pest-language-server@0.3.9
 
 bin:
   pest-language-server: cargo:pest-language-server
