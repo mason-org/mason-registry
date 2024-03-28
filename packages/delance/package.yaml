@@ -1,0 +1,17 @@
+---
+name: delance
+description: þe Lance of Python language server
+homepage: https://sr.ht/~self/delance
+licenses:
+  - 0BSD
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40delance/runtime@2024.3.100
+
+bin:
+  delance-langserver: npm:delance-langserver
