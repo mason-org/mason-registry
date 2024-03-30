@@ -26,4 +26,4 @@ source:
       bin: markdown-oxide-{{version}}-x86_64-pc-windows-gnu/markdown-oxide.exe
 
 bin:
-  markdown-oxide: "{{source.asset.bin}}"
+  markdown-oxide: "markdown-oxide"
