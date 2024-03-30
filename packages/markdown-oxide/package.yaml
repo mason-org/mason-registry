@@ -12,7 +12,18 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/markdown-oxide@v0.0.10?repository_url=https://github.com/feel-ix-343/markdown-oxide
+  # renovate:versioning=loose
+  id: pkg:github/feel-ix-343/markdown-oxide@v0.0.10
+  asset:
+    - target: darwin_x64
+      file:  markdown-oxide-{{version}}-x86_64-apple-darwin.tar.gz
+      bin: markdown-oxide
+    - target: linux_x64_gnu
+      file: markdown-oxide-{{version}}-x86_64-unknown-linux-musl.tar.gz
+      bin: markdown-oxide
+    - target: win_x86
+      file: markdown-oxide-{{version}}-x86_64-pc-windows-gnu.zip
+      bin: markdown-oxide.exe
 
 bin:
-  markdown-oxide: cargo:markdown-oxide
+  markdown-oxide: "{{source.asset.bin}}"
