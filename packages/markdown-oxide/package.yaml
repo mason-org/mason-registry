@@ -12,7 +12,6 @@ categories:
   - LSP
 
 source:
-  # renovate:versioning=loose
   id: pkg:github/feel-ix-343/markdown-oxide@v0.0.10
   asset:
     - target: darwin_x64
