@@ -1,0 +1,39 @@
+---
+name: roslyn
+description: |
+  Roslyn is the C# language server used in the new vscode C# extension.
+homepage: https://github.com/dotnet/roslyn
+licenses:
+  - MIT
+languages:
+  - C#
+categories:
+  - LSP
+
+source:
+  id: pkg:github/jmederosalvarado/roslyn.nvim@4.9.0-3.23604.10
+  asset:
+    - target: linux_x64_gnu
+      file: roslyn-{{version}}-linux-x64.tar.gz:libexec/
+    - target: linux_arm64_gnu
+      file: roslyn-{{version}}-linux-arm64.tar.gz:libexec/
+    - target: linux_x64_musl
+      file: roslyn-{{version}}-alpine-arm64.tar.gz:libexec/
+    - target: linux_arm64_musl
+      file: roslyn-{{version}}-alpine-arm64.tar.gz:libexec/
+    - target: darwin_x64
+      file: roslyn-{{version}}-osx-x64.tar.gz:libexec/
+    - target: darwin_arm64
+      file: roslyn-{{version}}-osx-arm64.tar.gz:libexec/
+    - target: win_x64
+      file: roslyn-{{version}}-win-x64.tar.gz:libexec/
+    - target: win_x86
+      file: roslyn-{{version}}-win-x86.tar.gz:libexec/
+    - target: win_arm64
+      file: roslyn-{{version}}-win-arm64.tar.gz:libexec/
+
+schemas:
+  lsp: https://raw.githubusercontent.com/dotnet/vscode-csharp/main/package.json
+
+bin:
+  roslyn-ls: "dotnet:libexec/Microsoft.CodeAnalysis.LanguageServer.dll"
