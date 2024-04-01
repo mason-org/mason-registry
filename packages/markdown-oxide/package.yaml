@@ -17,9 +17,15 @@ source:
     - target: darwin_x64
       file:  markdown-oxide-{{version}}-x86_64-apple-darwin.tar.gz
       bin: markdown-oxide-{{version}}-x86_64-apple-darwin/markdown-oxide
+    - target: darwin_arm64
+      file:  markdown-oxide-{{version}}-aarch64-apple-darwin.tar.gz
+      bin: markdown-oxide-{{version}}-aarch64-apple-darwin/markdown-oxide
     - target: linux_x64_gnu
       file: markdown-oxide-{{version}}-x86_64-unknown-linux-gnu.tar.gz
       bin: markdown-oxide-{{version}}-x86_64-unknown-linux-gnu/markdown-oxide
+    - target: linux_arm64_gnu
+      file: markdown-oxide-{{version}}-aarch64-unknown-linux-gnu.tar.gz
+      bin: markdown-oxide-{{version}}-aarch64-unknown-linux-gnu/markdown-oxide
     - target: win_x86
       file: markdown-oxide-{{version}}-x86_64-pc-windows-gnu.zip
       bin: markdown-oxide-{{version}}-x86_64-pc-windows-gnu/markdown-oxide.exe
