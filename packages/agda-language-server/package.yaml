@@ -23,7 +23,7 @@ source:
         als: als
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/agda/agda-language-server/{{version}}/package.yaml
+  lsp: "vscode:https://hackage.haskell.org/package/agda-language-server-{{version}}/src/package.yaml"
 
 bin:
   als: "{{source.build.bin.als}}"
