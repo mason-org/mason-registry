@@ -22,14 +22,5 @@ source:
       bin:
         als: als
 
-    - target: win
-      run: |
-        stack install agda-language-server-$env:VERSION --local-bin-path="$pwd"
-      staged: false
-      env:
-        VERSION: "{{version}}"
-      bin:
-        als: als.exe
-
 bin:
   als: "{{source.build.bin.als}}"
