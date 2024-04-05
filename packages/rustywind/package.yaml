@@ -15,7 +15,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/rustywind@0.21.0
+  id: pkg:npm/rustywind@0.21.1
 
 bin:
   rustywind: npm:rustywind

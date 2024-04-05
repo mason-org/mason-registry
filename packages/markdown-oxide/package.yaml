@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/markdown-oxide@v0.0.4?repository_url=https://github.com/feel-ix-343/markdown-oxide
+  id: pkg:cargo/markdown-oxide@v0.0.16?repository_url=https://github.com/feel-ix-343/markdown-oxide
 
 bin:
   markdown-oxide: cargo:markdown-oxide

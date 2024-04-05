@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/tekumara/typos-vscode@v0.1.15
+  id: pkg:github/tekumara/typos-vscode@v0.1.16
   asset:
     - target: darwin_x64
       file: typos-lsp-{{ version }}-x86_64-apple-darwin.tar.gz
@@ -32,9 +32,6 @@ source:
     - target: win_arm64
       file: typos-lsp-{{ version }}-aarch64-pc-windows-msvc.zip
       bin: target/aarch64-pc-windows-msvc/release/typos-lsp.exe
-    - target: win_x86
-      file: typos-lsp-{{ version }}-i686-pc-windows-msvc.zip
-      bin: target/i686-pc-windows-msvc/release/typos-lsp.exe
 
 bin:
   typos-lsp: "{{source.asset.bin}}"
