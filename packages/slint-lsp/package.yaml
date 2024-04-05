@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/slint-ui/slint@v1.3.2
+  id: pkg:github/slint-ui/slint@v1.5.1
   asset:
     - target: linux_x64
       file: slint-lsp-linux.tar.gz
@@ -19,6 +19,9 @@ source:
     - target: win_x64
       file: slint-lsp-windows.zip
       bin: slint-lsp/slint-lsp.exe
+    - target: [darwin_x64, darwin_arm64]
+      file: slint-lsp-macos.tar.gz
+      bin: slint-lsp/slint-lsp
 
 bin:
   slint-lsp: "{{source.asset.bin}}"

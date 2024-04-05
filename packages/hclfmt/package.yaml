@@ -1,0 +1,16 @@
+---
+name: hclfmt
+description: A command to format HCL files
+homepage: https://github.com/hashicorp/hcl
+licenses:
+  - MPL-2.0
+languages:
+  - HCL
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/github.com/hashicorp/hcl/v2@v2.20.1#cmd/hclfmt
+
+bin:
+  hclfmt: golang:hclfmt

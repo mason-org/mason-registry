@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mattn/efm-langserver@v0.0.49
+  id: pkg:github/mattn/efm-langserver@v0.0.53
   asset:
     - target: darwin_x64
       file: efm-langserver_{{version}}_darwin_amd64.zip

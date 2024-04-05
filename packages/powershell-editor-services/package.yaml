@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/PowerShell/PowerShellEditorServices@v3.15.0
+  id: pkg:github/PowerShell/PowerShellEditorServices@v3.19.0
   asset:
     file: PowerShellEditorServices.zip
 

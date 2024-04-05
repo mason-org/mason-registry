@@ -11,24 +11,21 @@ categories:
   - Formatter
   - LSP
 
+deprecation:
+  message: Gleam should not be installed through Mason.
+  since: v1.0.0
+
 source:
-  id: pkg:github/gleam-lang/gleam@v0.33.0
+  id: pkg:github/gleam-lang/gleam@v1.0.0
   asset:
     - target: linux_x64
       file: gleam-{{version}}-x86_64-unknown-linux-musl.tar.gz
-      bin: gleam
     - target: linux_arm64
       file: gleam-{{version}}-aarch64-unknown-linux-musl.tar.gz
-      bin: gleam
     - target: darwin_x64
       file: gleam-{{version}}-x86_64-apple-darwin.tar.gz
-      bin: gleam
     - target: darwin_arm64
       file: gleam-{{version}}-aarch64-apple-darwin.tar.gz
-      bin: gleam
     - target: win_x64
       file: gleam-{{version}}-x86_64-pc-windows-msvc.zip
-      bin: gleam.exe
 
-bin:
-  gleam: "{{source.asset.bin}}"

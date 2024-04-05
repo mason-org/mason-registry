@@ -21,9 +21,10 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-java-test@0.39.0
-  asset:
+  id: pkg:openvsx/vscjava/vscode-java-test@0.40.1
+  download:
     file: vscjava.vscode-java-test-{{version}}.vsix
 
 share:
   java-test/: extension/server/
+  java-test/com.microsoft.java.test.plugin.jar: extension/server/com.microsoft.java.test.plugin-{{version}}.jar
