@@ -1,9 +1,10 @@
 name: hlint
 description: |
-  HLint is a tool for suggesting possible improvements to Haskell code. These suggestions include ideads such as using alternative functions, simplifying code and spotting redundancies.
+  HLint is a tool for suggesting possible improvements to Haskell code. These suggestions include ideads such as using
+  alternative functions, simplifying code and spotting redundancies.
 homepage: https://github.com/ndmitchell/hlint
 licenses:
-  - proprietary
+  - BSD-3-Clause
 languages:
   - Haskell
 categories:
