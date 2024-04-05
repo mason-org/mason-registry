@@ -14,19 +14,12 @@ source:
   id: pkg:generic/jamesnvc/lsp_server@v2.2.11
   build:
     - target: unix
-      run: |
-        "swipl -t \"pack_install(https://github.com/jamesnvc/lsp_server/archive/refs/tags/{{VERSION}}.zip, [interactive(false)]).\""
-      staged: false
-      env:
-        VERSION: "{{version}}"
-
-    - target: win
-      run: |
-        "swipl -t \"pack_install(https://github.com/jamesnvc/lsp_server/archive/refs/tags/{{VERSION}}.zip, [interactive(false)]).\""
+      share: |
+        swipl pack install https://github.com/jamesnvc/lsp_server/archive/refs/tags/{{VERSION}}.zip --dir=. -y
+        echo 'cd $(dirname "$0"); swipl -g "use_module(library(lsp_server))" -g "lsp_server:main" -t halt -- stdio' > lsp_server/start.sh
       staged: false
       env:
         VERSION: "{{version}}"
 
 share:
-  prolog-language-server/pack.pl: pack.pl
-
+  prolog-language-server: lsp_server/start.sh
