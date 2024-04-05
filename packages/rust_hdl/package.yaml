@@ -1,0 +1,28 @@
+---
+name: rust_hdl
+description: |
+  rust_hdl is a VHDL language server and analysis library written in Rust. A complete VHDL language server protocol
+  implementation with diagnostics, navigate to symbol, find all references etc.
+homepage: https://github.com/VHDL-LS/rust_hdl
+licenses:
+  - MPL-2.0
+languages:
+  - VHDL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/vhdl-ls/rust_hdl@v0.78.2
+  asset:
+    - target: darwin_arm64
+      file: vhdl_ls-aarch64-apple-darwin.zip
+      bin: vhdl_ls-aarch64-apple-darwin/bin/vhdl_ls
+    - target: linux_x64
+      file: vhdl_ls-x86_64-unknown-linux-musl.zip
+      bin: vhdl_ls-x86_64-unknown-linux-musl/bin/vhdl_ls
+    - target: win_x64
+      file: vhdl_ls-x86_64-pc-windows-msvc.zip
+      bin: vhdl_ls-x86_64-pc-windows-msvc/bin/vhdl_ls.exe
+
+bin:
+  vhdl_ls: "{{source.asset.bin}}"

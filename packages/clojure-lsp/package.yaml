@@ -12,7 +12,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/clojure-lsp/clojure-lsp@2023.12.29-12.09.27
+  id: pkg:github/clojure-lsp/clojure-lsp@2024.03.31-19.10.13
   asset:
     - target: darwin_arm64
       file: clojure-lsp-native-macos-aarch64.zip

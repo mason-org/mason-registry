@@ -14,7 +14,7 @@ categories:
 source:
   # renovate:versioning=loose
   # renovate:datasource=github-tags
-  id: pkg:github/phpactor/phpactor@2023.12.03.0
+  id: pkg:github/phpactor/phpactor@2024.03.09.0
   build:
     - target: unix
       run: composer install --no-interaction --no-dev --optimize-autoloader --classmap-authoritative
