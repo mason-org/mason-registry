@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/perlnavigator-server@0.7.13
+  id: pkg:npm/perlnavigator-server@0.8.14
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/bscan/PerlNavigator/v{{version}}/package.json
