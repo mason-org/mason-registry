@@ -14,7 +14,7 @@ source:
   build:
     - target: unix
       run: |
-        pack -p $VERSION install-app idris2-lsp
+        PACK_DIR=$PWD pack -p $VERSION install-app idris2-lsp
       staged: false
       env:
         VERSION: "{{version}}"
