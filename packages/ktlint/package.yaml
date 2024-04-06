@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/pinterest/ktlint@1.1.0
+  id: pkg:github/pinterest/ktlint@1.2.1
   asset:
     - target: unix
       file: ktlint

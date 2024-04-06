@@ -15,67 +15,32 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/kcl-lang/kcl@v0.7.0
+  id: pkg:github/kcl-lang/kcl@v0.8.3
   asset:
     - target: darwin_x64
       file: kclvm-{{version}}-darwin-amd64.tar.gz
       bin:
-        kcl: exec:kclvm/bin/kcl
-        kcl_doc: exec:kclvm/bin/kcl-doc
-        kcl_fmt: exec:kclvm/bin/kcl-fmt
-        kcl_lint: exec:kclvm/bin/kcl-lint
-        kcl_plugin: exec:kclvm/bin/kcl-plugin
-        kcl_test: exec:kclvm/bin/kcl-test
-        kcvlm: exec:kclvm/bin/kclvm
-        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl: exec:kclvm/bin/kclvm_cli
         kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: darwin_arm64
       file: kclvm-{{version}}-darwin-arm64.tar.gz
       bin:
-        kcl: exec:kclvm/bin/kcl
-        kcl_doc: exec:kclvm/bin/kcl-doc
-        kcl_fmt: exec:kclvm/bin/kcl-fmt
-        kcl_lint: exec:kclvm/bin/kcl-lint
-        kcl_plugin: exec:kclvm/bin/kcl-plugin
-        kcl_test: exec:kclvm/bin/kcl-test
-        kcvlm: exec:kclvm/bin/kclvm
-        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl: exec:kclvm/bin/kclvm_cli
         kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: linux_x64_gnu
       file: kclvm-{{version}}-linux-amd64.tar.gz
       bin:
-        kcl: exec:kclvm/bin/kcl
-        kcl_doc: exec:kclvm/bin/kcl-doc
-        kcl_fmt: exec:kclvm/bin/kcl-fmt
-        kcl_lint: exec:kclvm/bin/kcl-lint
-        kcl_plugin: exec:kclvm/bin/kcl-plugin
-        kcl_test: exec:kclvm/bin/kcl-test
-        kcvlm: exec:kclvm/bin/kclvm
-        kcl_vet: exec:kclvm/bin/kcl-vet
+        kcl: exec:kclvm/bin/kclvm_cli
         kcl_language_server: exec:kclvm/bin/kcl-language-server
 
     - target: win_x64
       file: kclvm-{{version}}-windows.zip
       bin:
-        kcl: bin/kcl.exe
-        kcl_doc: bin/kcl-doc.exe
-        kcl_fmt: bin/kcl-fmt.exe
-        kcl_lint: bin/kcl-lint.exe
-        kcl_plugin: bin/kcl-plugin.exe
-        kcl_test: bin/kcl-test.exe
-        kcvlm: bin/kclvm.exe
-        kcl_vet: bin/kcl-vet.exe
+        kcl: bin/kclvm_cli.exe
         kcl_language_server: bin/kcl-language-server.exe
 
 bin:
   kcl: "{{source.asset.bin.kcl}}"
-  kcl-doc: "{{source.asset.bin.kcl_doc}}"
-  kcl-fmt: "{{source.asset.bin.kcl_fmt}}"
-  kcl-lint: "{{source.asset.bin.kcl_lint}}"
-  kcl-plugin: "{{source.asset.bin.kcl_plugin}}"
-  kcl-test: "{{source.asset.bin.kcl_test}}"
-  kcvlm: "{{source.asset.bin.kcvlm}}"
-  kcl-vet: "{{source.asset.bin.kcl_vet}}"
   kcl-language-server: "{{source.asset.bin.kcl_language_server}}"

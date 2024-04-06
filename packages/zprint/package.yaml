@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/kkinnear/zprint@1.2.8
+  id: pkg:github/kkinnear/zprint@1.2.9
   asset:
     - target: darwin_arm64
       file: zprintma-{{version}}

@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/AdaCore/ada_language_server@24.0.3
+  id: pkg:github/AdaCore/ada_language_server@24.0.4
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: als-{{version}}-macOS_amd64.zip
