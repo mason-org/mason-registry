@@ -1,0 +1,23 @@
+---
+name: motoko-lsp
+description: |
+  Language server for the Motoko programming language.
+homepage: https://github.com/dfinity/vscode-motoko
+licenses:
+  - Apache-2.0
+languages:
+  - Motoko
+categories:
+  - LSP
+
+source:
+  id: pkg:github/dfinity/vscode-motoko@v0.16.3
+  build:
+    run: |
+      npm install
+      npm run prepare
+      npm run compile
+
+bin:
+  motoko-lsp: node:out/server.js
+
