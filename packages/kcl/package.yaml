@@ -15,7 +15,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/kcl-lang/kcl@v0.8.3
+  id: pkg:github/kcl-lang/kcl@v0.8.4
   asset:
     - target: darwin_x64
       file: kclvm-{{version}}-darwin-amd64.tar.gz
