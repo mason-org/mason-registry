@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40commitlint/cli@19.2.1
+  id: pkg:npm/%40commitlint/cli@19.2.2
   extra_packages:
     - "@commitlint/config-conventional"
     - "commitlint-format-json"
