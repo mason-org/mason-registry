@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/darker@2.1.0?extra=isort,flynt
+  id: pkg:pypi/darker@2.1.1?extra=isort,flynt
 
 bin:
   darker: pypi:darker
