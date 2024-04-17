@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40nomicfoundation/solidity-language-server@0.7.3
+  id: pkg:npm/%40nomicfoundation/solidity-language-server@0.8.0
 
 bin:
   nomicfoundation-solidity-language-server: npm:nomicfoundation-solidity-language-server
