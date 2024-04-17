@@ -10,7 +10,20 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/pylyzer@0.0.51
+  id: pkg:github/mtshiba/pylyzer@v0.0.51
+  asset:
+    - target: darwin_arm64
+      file: pylyzer-aarch64-apple-darwin.tar.gz
+    - target: darwin_x64
+      file: pylyzer-x86_64-apple-darwin.tar.gz
+    - target: linux_armv7l
+      file: pylyzer-armv7-unknown-linux-gnueabihf.tar.gz
+    - target: linux_x64
+      file: pylyzer-x86_64-unknown-linux-gnu.tar.gz
+    - target: linux_arm64
+      file: pylyzer-aarch64-unknown-linux-gnu.tar.gz
+    - target: win_x64
+      file: pylyzer-x86_64-pc-windows-msvc.zip
 
 bin:
-  pylyzer: cargo:pylyzer
+  pylyzer: pylyzer
