@@ -14,16 +14,22 @@ source:
   asset:
     - target: darwin_arm64
       file: pylyzer-aarch64-apple-darwin.tar.gz
+      bin: pylyzer
     - target: darwin_x64
       file: pylyzer-x86_64-apple-darwin.tar.gz
+      bin: pylyzer
     - target: linux_armv7l
       file: pylyzer-armv7-unknown-linux-gnueabihf.tar.gz
+      bin: pylyzer
     - target: linux_x64
       file: pylyzer-x86_64-unknown-linux-gnu.tar.gz
+      bin: pylyzer
     - target: linux_arm64
       file: pylyzer-aarch64-unknown-linux-gnu.tar.gz
+      bin: pylyzer
     - target: win_x64
       file: pylyzer-x86_64-pc-windows-msvc.zip
+      bin: pylyzer.exe
 
 bin:
-  pylyzer: pylyzer
+  pylyzer: "{{source.asset.bin}}"
