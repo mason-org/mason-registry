@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/vshaxe/haxe-language-server@db07881bc1adf9109c67937a6908cb3e01f42f13
+  id: pkg:github/vshaxe/haxe-language-server@62040daf543c234ffbff4077f7ab4024b32510de
   build:
     run: |
       npm install
