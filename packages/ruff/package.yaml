@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/ruff@0.3.7
+  id: pkg:pypi/ruff@0.4.0
 
 bin:
   ruff: pypi:ruff
