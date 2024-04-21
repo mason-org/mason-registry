@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ansible/ansible-language-server@1.2.1
+  id: pkg:npm/%40ansible/ansible-language-server@1.2.2
 
 bin:
   ansible-language-server: npm:ansible-language-server

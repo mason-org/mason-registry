@@ -11,7 +11,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:github/tree-sitter/tree-sitter@v0.22.2
+  id: pkg:github/tree-sitter/tree-sitter@v0.22.5
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: tree-sitter-macos-x64.gz
