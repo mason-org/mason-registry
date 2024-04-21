@@ -103,5 +103,8 @@
             matchDepNames: ["tectonic"],
             allowedVersions: "^tectonic@"
         }
+    ],
+    "ignoreDeps": [
+        "rescript-lsp"
     ]
 }
