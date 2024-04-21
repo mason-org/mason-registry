@@ -18,5 +18,6 @@ source:
       file: mdslw_x86_64-unknown-linux-musl
     - target: win_x64
       file: mdslw_x86_64-pc-windows-gnu.exe
+
 bin:
   mdslw: "{{source.asset.file}}"
