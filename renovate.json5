@@ -101,7 +101,7 @@
         },
         {
             matchDepNames: ["tectonic"],
-            allowedVersions: "^tectonic@"
+            allowedVersions: "^tectonic%40"
         }
     ],
     "ignoreDeps": [
