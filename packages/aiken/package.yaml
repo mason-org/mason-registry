@@ -10,7 +10,20 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/aiken@1.0.24-alpha
+  id: pkg:github/aiken-lang/aiken@v1.0.26-alpha
+  asset:
+    - target: darwin_x64
+      file: aiken_{{ version }}_darwin_amd64.tar.gz
+      bin: aiken
+    - target: darwin_arm64
+      file: aiken_{{ version }}_darwin_arm64.tar.gz
+      bin: aiken
+    - target: linux_x64
+      file: aiken_{{ version }}_linux_amd64.tar.gz
+      bin: aiken
+    - target: win_x64
+      file: aiken_{{ version }}_win32_amd64.zip
+      bin: aiken.exe
 
 bin:
-  aiken: cargo:aiken
+  aiken: "{{source.asset.bin}}"
