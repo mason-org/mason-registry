@@ -1,7 +1,7 @@
 ---
 name: ansible-language-server
 description: Ansible Language Server.
-homepage: https://github.com/ansible/ansible-language-server
+homepage: https://github.com/ansible/vscode-ansible
 licenses:
   - MIT
 languages:
