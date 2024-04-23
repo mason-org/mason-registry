@@ -26,7 +26,7 @@ source:
       file: earthlyls-{{ version }}-macos-arm64.tar.gz
       bin: earthlyls-{{ version }}-macos-arm64/earthlyls
     - target: win_x64
-      file: earthlyls-{{ version }}-windows-amd64.tar.gz
+      file: earthlyls-{{ version }}-windows-amd64.zip
       bin: earthlyls-{{ version }}-windows-amd64/earthlyls.exe
 
 bin:
