@@ -6,7 +6,7 @@ homepage: https://github.com/glehmann/earthly
 licenses:
   - MIT
 languages:
-  - earthfile
+  - Earthly
 categories:
   - LSP
 
