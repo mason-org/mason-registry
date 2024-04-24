@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/lexical-lsp/lexical@v0.5.2
+  id: pkg:github/lexical-lsp/lexical@v0.6.0
   asset:
     - target: unix
       file: lexical-{{version}}.zip:libexec/
