@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/black@24.4.0
+  id: pkg:pypi/black@24.4.1
 
 bin:
   black: pypi:black
