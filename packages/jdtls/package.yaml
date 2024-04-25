@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.34.0
+  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.35.0
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
