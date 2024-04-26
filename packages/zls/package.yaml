@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/zigtools/zls@0.11.0
+  id: pkg:github/zigtools/zls@0.12.0
   asset:
     - target: darwin_arm64
       file: zls-aarch64-macos.tar.gz
