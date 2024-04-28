@@ -8,13 +8,13 @@ languages: []
 categories: []
 
 source:
-  id: pkg:github/extrawurst/gitui@v0.25.2
+  id: pkg:github/extrawurst/gitui@v0.26.1
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: gitui-mac.tar.gz
       bin: gitui
     - target: linux_x64
-      file: gitui-linux-musl.tar.gz
+      file: gitui-linux-x86_64.tar.gz
       bin: gitui
     - target: linux_arm64
       file: gitui-linux-aarch64.tar.gz
@@ -25,6 +25,26 @@ source:
     - target: win_x64
       file: gitui-win.tar.gz
       bin: gitui.exe
+
+  version_overrides:
+    - constraint: semver:<=v0.25.2
+      id: pkg:github/extrawurst/gitui@v0.25.2
+      asset:
+        - target: [darwin_x64, darwin_arm64]
+          file: gitui-mac.tar.gz
+          bin: gitui
+        - target: linux_x64
+          file: gitui-linux-musl.tar.gz
+          bin: gitui
+        - target: linux_arm64
+          file: gitui-linux-aarch64.tar.gz
+          bin: gitui
+        - target: linux_arm
+          file: gitui-linux-arm.tar.gz
+          bin: gitui
+        - target: win_x64
+          file: gitui-win.tar.gz
+          bin: gitui.exe
 
 bin:
   gitui: "{{source.asset.bin}}"

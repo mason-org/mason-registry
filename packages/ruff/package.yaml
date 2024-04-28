@@ -9,9 +9,10 @@ languages:
 categories:
   - Linter
   - Formatter
+  - LSP
 
 source:
-  id: pkg:pypi/ruff@0.3.5
+  id: pkg:pypi/ruff@0.4.2
 
 bin:
   ruff: pypi:ruff

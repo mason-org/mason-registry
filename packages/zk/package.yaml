@@ -1,7 +1,7 @@
 ---
 name: zk
 description: A plain text note-taking assistant.
-homepage: https://github.com/mickael-menu/zk
+homepage: https://github.com/zk-org/zk
 licenses:
   - GPL-3.0-only
 languages:
@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mickael-menu/zk@v0.14.0
+  id: pkg:github/zk-org/zk@v0.14.0
   asset:
     - target: linux_arm64
       file: zk-{{version}}-linux-arm64.tar.gz
