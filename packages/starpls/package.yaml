@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/withered-magic/starpls@v0.1.12
+  id: pkg:github/withered-magic/starpls@v0.1.13
   asset:
     - target: darwin_arm64
       file: starpls-darwin-arm64
