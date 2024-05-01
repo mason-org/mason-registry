@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/some-sass-language-server@1.2.1
+  id: pkg:npm/some-sass-language-server@1.2.2
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/wkillerud/some-sass/main/vscode-extension/package.json
