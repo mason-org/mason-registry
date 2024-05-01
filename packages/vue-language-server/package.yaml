@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vue/language-server@2.0.15
+  id: pkg:npm/%40vue/language-server@2.0.16
   extra_packages:
     - typescript
 
