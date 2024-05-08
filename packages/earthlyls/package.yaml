@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/glehmann/earthlyls@0.2.4
+  id: pkg:github/glehmann/earthlyls@0.3.0
   asset:
     - target: linux_x64
       file: earthlyls-{{ version }}-linux-amd64.tar.gz
