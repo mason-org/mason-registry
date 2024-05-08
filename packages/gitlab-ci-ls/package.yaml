@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/gitlab-ci-ls@0.16.0
+  id: pkg:cargo/gitlab-ci-ls@0.17.0
 
 bin:
   gitlab-ci-ls: cargo:gitlab-ci-ls
