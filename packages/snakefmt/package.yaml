@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/snakefmt@0.10.0
+  id: pkg:pypi/snakefmt@0.10.2
 
 bin:
   snakefmt: pypi:snakefmt

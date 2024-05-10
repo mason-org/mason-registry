@@ -1,7 +1,7 @@
 ---
 name: phpcs
 description: phpcs tokenizes PHP, JavaScript and CSS files to detect violations of a defined standard.
-homepage: https://github.com/squizlabs/PHP_CodeSniffer
+homepage: https://github.com/PHPCSStandards/PHP_CodeSniffer
 licenses:
   - BSD-3-Clause
 languages:
@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/squizlabs/PHP_CodeSniffer@3.7.2
+  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.9.2
   asset:
     file: phpcs.phar
 

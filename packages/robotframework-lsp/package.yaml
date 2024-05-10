@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/robotframework-lsp@1.11.0
+  id: pkg:pypi/robotframework-lsp@1.12.0
 
 bin:
   robotframework_ls: pypi:robotframework_ls

@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/dev-cycles/contextive@v1.10.5
+  id: pkg:github/dev-cycles/contextive@v1.11.0
   asset:
     - target: linux_x64_gnu
       file: Contextive.LanguageServer-linux-x64-{{ version | strip_prefix "v" }}.zip
