@@ -1,5 +1,5 @@
 ---
-name: cobol-ls
+name: cobol-language-support
 description: COBOL Language Support provides autocomplete, highlighting and diagnostics for COBOL code and copybooks
 homepage: https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol
 licenses:
