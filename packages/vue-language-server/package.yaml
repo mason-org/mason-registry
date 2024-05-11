@@ -1,7 +1,7 @@
 ---
 name: vue-language-server
 description: ⚡ Explore high-performance tooling for Vue.
-homepage: https://github.com/johnsoncodehk/volar
+homepage: https://github.com/vuejs/language-tools
 licenses:
   - MIT
 languages:
