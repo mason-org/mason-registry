@@ -1,0 +1,28 @@
+---
+name: sourcekit-lsp
+description: |
+  This extension adds language support for Swift to neovim IDE. It supports:
+    Code completion
+    Jump to definition, peek definition, find all references, symbol search
+    Error annotations and apply suggestions from errors
+    Automatic generation of launch configurations for debugging with CodeLLDB
+    Automatic task creation
+    Package dependency view
+    Test Explorer view
+   Swift support uses SourceKit LSP for the language server to power code completion and LLDB to enable debugging. The extension is developed by members of the Swift Community and maintained by the SSWG. The aim is to provide a first-class, feature complete extension to make developing Swift applications on all platforms a seamless experience. https://github.com/swift-server/vscode-swift
+homepage: https://www.swift.org/
+licenses:
+  - Apache-2.0
+languages:
+  - Swift
+categories:
+  - LSP
+
+source:
+  id: pkg:openvsx/sswg/swift-lang@1.9.0
+  download:
+    file: sswg.swift-lang-{{ version }}.vsix
+
+bin:
+  sourcekit: node:extension/dist/extension.js
+
