@@ -14,3 +14,6 @@ source:
 
 bin:
   digestif: luarocks:digestif
+
+ci_skip:
+  - win_x64
