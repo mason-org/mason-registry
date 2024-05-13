@@ -16,7 +16,7 @@ deprecation:
   since: v1.0.0
 
 source:
-  id: pkg:github/gleam-lang/gleam@v1.0.0
+  id: pkg:github/gleam-lang/gleam@v1.1.0
   asset:
     - target: linux_x64
       file: gleam-{{version}}-x86_64-unknown-linux-musl.tar.gz

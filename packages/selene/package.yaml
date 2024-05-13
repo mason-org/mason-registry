@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/Kampfkarren/selene@0.26.1
+  id: pkg:github/Kampfkarren/selene@0.27.1
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: selene-{{version}}-macos.zip
