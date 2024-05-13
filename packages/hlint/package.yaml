@@ -1,3 +1,4 @@
+---
 name: hlint
 description: |
   HLint is a tool for suggesting possible improvements to Haskell code. These suggestions include ideads such as using
@@ -12,12 +13,15 @@ categories:
 source:
   id: pkg:github/ndmitchell/hlint@v3.8
   asset:
-    - target: darwin_x64
+    - target: [darwin_arm64, darwin_x64]
       file: hlint-{{ version | strip_prefix "v" }}-x86_64-osx.tar.gz
+      bin: hlint-{{ version | strip_prefix "v" }}/hlint
     - target: linux_x64
       file: hlint-{{ version | strip_prefix "v" }}-x86_64-linux.tar.gz
+      bin: hlint-{{ version | strip_prefix "v" }}/hlint
     - target: win_x64
       file: hlint-{{ version | strip_prefix "v" }}-x86_64-windows.zip
+      bin: hlint-{{ version | strip_prefix "v" }}/hlint.exe
 
 bin:
   hlint: "{{source.asset.bin}}"
