@@ -1,0 +1,16 @@
+---
+name: cuepls
+description: The Official Language Server implementation for CUE.
+homepage: https://github.com/cue-lang/cue
+licenses:
+  - Apache-2.0
+languages:
+  - Cue
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/cuelang.org/go@v0.8.2#cmd/cuepls
+
+bin:
+  cuepls: golang:cuepls
