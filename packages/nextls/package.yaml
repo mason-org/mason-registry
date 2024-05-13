@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/elixir-tools/next-ls@v0.21.4
+  id: pkg:github/elixir-tools/next-ls@v0.22.0
   asset:
     - target: darwin_x64
       file: next_ls_darwin_amd64
