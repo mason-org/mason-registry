@@ -10,7 +10,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:github/tectonic-typesetting/tectonic@tectonic%400.14.1
+  id: pkg:github/tectonic-typesetting/tectonic@tectonic%400.15.0
   asset:
     - target: darwin_x64
       file: tectonic-{{ version || strip_prefix "tectonic@" }}-x86_64-apple-darwin.tar.gz

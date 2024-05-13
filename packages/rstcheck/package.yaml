@@ -5,12 +5,12 @@ homepage: https://rstcheck.readthedocs.io/
 licenses:
   - MIT
 languages:
-  - Python
+  - reStructuredText
 categories:
   - Linter
 
 source:
-  id: pkg:pypi/rstcheck@6.2.0
+  id: pkg:pypi/rstcheck@6.2.1
 
 bin:
   rstcheck: pypi:rstcheck
