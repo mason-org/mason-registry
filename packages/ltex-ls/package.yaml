@@ -9,6 +9,7 @@ languages:
   - Text
   - Markdown
   - LaTeX
+  - reStructuredText
 categories:
   - LSP
 
