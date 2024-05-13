@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:composer/vincentlanglet/twig-cs-fixer@2.7.0
+  id: pkg:composer/vincentlanglet/twig-cs-fixer@2.9.0
 
 bin:
   twig-cs-fixer: composer:twig-cs-fixer

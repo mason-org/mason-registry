@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/google/yamlfmt@v0.11.0
+  id: pkg:github/google/yamlfmt@v0.12.1
   asset:
     - target: darwin_arm64
       file: yamlfmt_{{ version | strip_prefix "v" }}_Darwin_arm64.tar.gz

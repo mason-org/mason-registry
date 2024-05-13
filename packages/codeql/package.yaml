@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/github/codeql-cli-binaries@v2.17.1
+  id: pkg:github/github/codeql-cli-binaries@v2.17.2
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: codeql-osx64.zip
