@@ -10,15 +10,26 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=git-refs
-  id: pkg:github/nim-lang/langserver@fd4519158566d1247e58b1cc6febce6ddb6bf0b5
-  build:
-    - target: unix
-      run: nimble build -y --localdeps
+  id: pkg:github/nim-lang/langserver@v1.2.0
+  asset:
+    - target: linux_x64
+      file: nimlangserver-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
       bin: nimlangserver
-    - target: win
-      run: nimble build -y --localdeps
+    - target: linux_arm64
+      file: nimlangserver-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
+      bin: nimlangserver
+    - target: linux_x86
+      file: nimlangserver-{{ version | strip_prefix "v" }}-linux-i686.tar.gz
+      bin: nimlangserver
+    - target: darwin_x64
+      file: nimlangserver-{{ version | strip_prefix "v" }}-macos-amd64.zip
+      bin: nimlangserver
+    - target: darwin_arm64
+      file: nimlangserver-{{ version | strip_prefix "v" }}-macos-arm64.zip
+      bin: nimlangserver
+    - target: win_x64
+      file: nimlangserver-{{ version | strip_prefix "v" }}-windows-amd64.zip
       bin: nimlangserver.exe
 
 bin:
-  nimlangserver: "{{source.build.bin}}"
+  nimlangserver: "{{source.asset.bin}}"

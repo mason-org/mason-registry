@@ -10,13 +10,9 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=git-refs
-  id: pkg:github/vshaxe/haxe-language-server@db07881bc1adf9109c67937a6908cb3e01f42f13
-  build:
-    run: |
-      npm install
-      npm exec -- lix run vshaxe-build -t language-server
-      npm install --production
+  id: pkg:openvsx/nadako/vshaxe@2.31.0
+  download:
+    file: nadako.vshaxe-{{version}}.vsix
 
 bin:
-  haxe-language-server: node:bin/server.js
+  haxe-language-server: node:extension/bin/server.js

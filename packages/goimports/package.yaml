@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/golang.org/x/tools@v0.19.0#cmd/goimports
+  id: pkg:golang/golang.org/x/tools@v0.21.0#cmd/goimports
 
 bin:
   goimports: golang:goimports

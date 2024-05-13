@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/remark-cli@12.0.0
+  id: pkg:npm/remark-cli@12.0.1
 
 bin:
   remark: npm:remark

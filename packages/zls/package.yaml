@@ -10,31 +10,56 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/zigtools/zls@0.11.0
+  id: pkg:github/zigtools/zls@0.12.0
   asset:
     - target: darwin_arm64
-      file: zls-aarch64-macos.tar.gz
-      bin: bin/zls
+      file: zls-aarch64-macos.tar.xz
+      bin: zls
     - target: darwin_x64
-      file: zls-x86_64-macos.tar.gz
-      bin: bin/zls
+      file: zls-x86_64-macos.tar.xz
+      bin: zls
     - target: linux_arm64
-      file: zls-aarch64-linux.tar.gz
-      bin: bin/zls
+      file: zls-aarch64-linux.tar.xz
+      bin: zls
     - target: linux_x64
-      file: zls-x86_64-linux.tar.gz
-      bin: bin/zls
+      file: zls-x86_64-linux.tar.xz
+      bin: zls
     - target: linux_x86
-      file: zls-x86-linux.tar.gz
-      bin: bin/zls
+      file: zls-x86-linux.tar.xz
+      bin: zls
     - target: win_x86
       file: zls-x86-windows.zip
-      bin: bin/zls.exe
+      bin: zls.exe
     - target: win_x64
       file: zls-x86_64-windows.zip
-      bin: bin/zls.exe
+      bin: zls.exe
 
   version_overrides:
+    - constraint: semver:<=0.11.0
+      id: pkg:github/zigtools/zls@0.11.0
+      asset:
+        - target: darwin_arm64
+          file: zls-aarch64-macos.tar.gz
+          bin: bin/zls
+        - target: darwin_x64
+          file: zls-x86_64-macos.tar.gz
+          bin: bin/zls
+        - target: linux_arm64
+          file: zls-aarch64-linux.tar.gz
+          bin: bin/zls
+        - target: linux_x64
+          file: zls-x86_64-linux.tar.gz
+          bin: bin/zls
+        - target: linux_x86
+          file: zls-x86-linux.tar.gz
+          bin: bin/zls
+        - target: win_x86
+          file: zls-x86-windows.zip
+          bin: bin/zls.exe
+        - target: win_x64
+          file: zls-x86_64-windows.zip
+          bin: bin/zls.exe
+
     - constraint: semver:<=0.10.0
       id: pkg:github/zigtools/zls@0.10.0
       asset:
