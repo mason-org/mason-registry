@@ -16,7 +16,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:cargo/jinja-lsp@0.1.61
+  id: pkg:cargo/jinja-lsp@0.1.80
 
 bin:
   jinja-lsp: cargo:jinja-lsp

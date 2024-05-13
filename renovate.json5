@@ -101,7 +101,14 @@
         },
         {
             matchDepNames: ["tectonic"],
-            allowedVersions: "^tectonic@"
+            allowedVersions: "^tectonic%40"
+        },
+        {
+            matchDepNames: ["ansible-language-server"],
+            allowedVersions: "!/1\\.2\\.2/"
         }
+    ],
+    "ignoreDeps": [
+        "rescript-lsp"
     ]
 }
