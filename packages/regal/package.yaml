@@ -1,0 +1,14 @@
+---
+name: regal
+description: A linter for Rego.
+homepage: https://github.com/styrainc/regal
+licenses:
+- MIT
+languages:
+- Rego
+categories:
+- Linter
+source:
+  id: pkg:golang/github.com/styrainc/regal@v0.21.3
+bin:
+  regal: golang:regal
