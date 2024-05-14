@@ -1,0 +1,14 @@
+---
+name: k9s
+description: Kubernetes CLI To Manage Your Clusters In Style!
+homepage: https://github.com/derailed/k9s
+licenses:
+  - Apache-2.0
+languages: []
+categories: []
+
+source:
+  id: pkg:golang/github.com/derailed/k9s@v0.32.4
+
+bin:
+  k9s: golang:k9s
