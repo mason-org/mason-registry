@@ -1,0 +1,14 @@
+---
+name: lazydocker
+description: The lazier way to manage everything docker.
+homepage: https://github.com/jesseduffield/lazydocker
+licenses:
+  - MIT
+languages: []
+categories: []
+
+source:
+  id: pkg:golang/github.com/jesseduffield/lazydocker@v0.23.1
+
+bin:
+  lazydocker: golang:lazydocker
