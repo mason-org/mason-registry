@@ -1,0 +1,14 @@
+---
+name: lazygit
+description: A simple terminal UI for git commands.
+homepage: https://github.com/jesseduffield/lazygit
+licenses:
+  - MIT
+languages: []
+categories: []
+
+source:
+  id: pkg:golang/github.com/jesseduffield/lazygit@v0.41.0
+
+bin:
+  lazygit: golang:lazygit
