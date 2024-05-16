@@ -1,0 +1,21 @@
+---
+name: springboot-language-server
+description: SpringBoot Language Server.
+homepage: https://github.com/spring-projects/sts4
+licenses:
+  - EPL-1.0
+languages:
+  - XML
+  - YAML
+  - Java
+categories:
+  - Linter
+
+source:
+  id: pkg:github/spring-projects/sts4/vscode-spring-boot@4.22.0
+  asset:
+    file: vscode-spring-boot-1.53.0-RC.3.vsix
+
+share:
+  springboot-extensions/: extension/jars/
+  springboot-server/: extension/language-server/
