@@ -1,0 +1,16 @@
+---
+name: bacon-ls
+description: Rust diagnostic provider based on Bacon
+homepage: https://github.com/crisidev/bacon-ls
+licenses:
+  - MIT
+languages:
+  - Rust
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/bacon-ls@0.2.0
+
+bin:
+  bacon-ls: cargo:bacon-ls
