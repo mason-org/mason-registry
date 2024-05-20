@@ -26,7 +26,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/aquasecurity/trivy@v0.51.1
+  id: pkg:github/aquasecurity/trivy@v0.51.2
   asset:
     - target: darwin_x64
       file: trivy_{{ version | strip_prefix "v" }}_macOS-64bit.tar.gz
