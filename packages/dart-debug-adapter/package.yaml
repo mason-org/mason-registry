@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/Dart-Code/Dart-Code@v3.88.0
+  id: pkg:github/Dart-Code/Dart-Code@v3.88.1
   asset:
     file: dart-code-{{ version | strip_prefix "v" }}.vsix
 
