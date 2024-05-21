@@ -10,7 +10,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:cargo/bacon@2.17.0
+  id: pkg:cargo/bacon@2.18.0
 
 bin:
   bacon: cargo:bacon
