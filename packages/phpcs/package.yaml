@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.10.0
+  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.10.1
   asset:
     file: phpcs.phar
 
