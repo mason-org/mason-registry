@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/stimulus-language-server@1.0.2
+  id: pkg:npm/stimulus-language-server@1.0.3
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/marcoroth/stimulus-lsp/v{{version}}/package.json
