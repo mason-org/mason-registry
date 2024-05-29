@@ -12,7 +12,7 @@ categories:
   - LSP
 
 deprecation:
-  message: Gleam should not be installed through Mason.
+  message: Gleam's LSP is included in its toolchain, so avoid installing it through Mason to prevent version mismatches. For more details, visit https://gleam.run/language-server/#neovim
   since: v1.0.0
 
 source:
