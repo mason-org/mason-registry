@@ -1,0 +1,28 @@
+---
+name: blueprint_ls
+description: Language server for Blueprint, a markup language and compiler for GTK 4 user interfaces.
+homepage: https://gitlab.gnome.org/jwestman/blueprint-compiler
+licenses:
+  - LGPL-3.0-or-later
+languages:
+  - Blueprint
+categories:
+  - LSP
+
+source:
+  id: pkg:generic/blueprint?vcs_url=git%2Bhttps://gitlab.gnome.org/jwestman/blueprint-compiler%402a39a16391122af2f3d812e478c1c1398c98b972
+  build:
+    - target: unix
+      run: |
+        meson -Dprefix="$PWD" build
+        ninja -C build install
+      bin: bin/blueprint-compiler
+    - target: win
+      run: |
+        meson -Dprefix="($pwd).path" build
+        ninja -C build install
+      bin: bin/blueprint-compiler.exe
+
+
+bin:
+    blueprint-compiler: "{{source.build.bin}}"
