@@ -23,7 +23,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/prettier@3.2.5
+  id: pkg:npm/prettier@3.3.0
 
 bin:
   prettier: npm:prettier
