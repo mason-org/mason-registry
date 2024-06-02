@@ -1,0 +1,28 @@
+---
+name: xcbeautify
+description: A little beautifier tool for xcodebuild
+homepage: https://github.com/cpisciotta/xcbeautify
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Runtime
+source:
+  id: pkg:github/cpisciotta/xcbeautify@2.3.1
+  asset:
+    - target: darwin_arm64
+      file: xcbeautify-{{version}}-arm64-apple-macosx.zip
+      bin: xcbeautify
+    - target: darwin_x64
+      file: xcbeautify-{{version}}-x86_64-apple-macosx.zip
+      bin: xcbeautify
+    - target: linux_x64
+      file: xcbeautify-{{version}}-x86_64-unknown-linux-gnu.tar.xz
+      bin: xcbeautify
+    - target: linux_x64_gnu
+      file: xcbeautify-{{version}}-x86_64-unknown-linux-gnu.tar.xz
+      bin: xcbeautify
+
+bin:
+  xcbeautify: "{{ source.asset.bin }}"
