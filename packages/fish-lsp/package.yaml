@@ -1,0 +1,21 @@
+---
+name: fish-lsp
+description: |
+  A Language Server Protocol (LSP) tailored for the fish shell.
+  This project aims to enhance the coding experience for fish,
+  by introducing a suite of intelligent features like auto-completion,
+  scope aware symbol analysis, per-token hover generation, and many others.
+homepage: https://www.fish-lsp.dev/
+licenses:
+  - MIT
+languages:
+  - Fish
+categories:
+  - LSP
+
+source:
+  id: pkg:github/ndonfris/fish-lsp@af5d298855406a134aa7cc26740a8d387ab3c2e1 # Upstream 1.0.4
+  build:
+    run: yarn install
+bin:
+  fish-lsp: bin/fish-lsp
