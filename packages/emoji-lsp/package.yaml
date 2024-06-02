@@ -1,0 +1,40 @@
+---
+name: emoji-lsp
+description: Emoji auto-completion
+homepage: https://github.com/opa-oz/emoji-lsp
+licenses:
+  - MIT
+categories:
+  - LSP
+languages: []
+
+source:
+  id: pkg:github/opa-oz/emoji-lsp@v0.0.4
+  asset:
+    - target: linux_x64
+      file: emoji-lsp-{{ version }}-linux-amd64.tar.gz
+      bin: emoji-lsp
+    - target: linux_arm64
+      file: emoji-lsp-{{ version }}-linux-arm64.tar.gz
+      bin: emoji-lsp
+    - target: linux_x86
+      file: emoji-lsp-{{ version }}-linux-386.tar.gz
+      bin: emoji-lsp
+    - target: darwin_x64
+      file: emoji-lsp-{{ version }}-darwin-amd64.tar.gz
+      bin: emoji-lsp
+    - target: darwin_arm64
+      file: emoji-lsp-{{ version }}-darwin-arm64.tar.gz
+      bin: emoji-lsp
+    - target: win_arm64
+      file: emoji-lsp-{{ version }}-windows-arm64.zip
+      bin: emoji-lsp.exe
+    - target: win_x64
+      file: emoji-lsp-{{ version }}-windows-amd64.zip
+      bin: emoji-lsp.exe
+    - target: win_x86
+      file: emoji-lsp-{{ version }}-windows-386.zip
+      bin: emoji-lsp.exe
+
+bin:
+  emoji-lsp: "{{source.asset.bin}}"
