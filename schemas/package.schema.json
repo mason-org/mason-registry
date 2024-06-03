@@ -30,7 +30,7 @@
         "languages": {
             "type": "array",
             "items": {
-                "$ref": "mason-registry.json/enums/language"
+                "type": "string"
             }
         },
         "categories": {
