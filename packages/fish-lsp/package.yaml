@@ -1,0 +1,20 @@
+---
+name: fish-lsp
+description: LSP implementation for the fish shell langauge
+homepage: https://www.fish-lsp.dev/
+licenses:
+  - MIT
+languages:
+  - Fish
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/ndonfris/fish-lsp@af5d298855406a134aa7cc26740a8d387ab3c2e1
+  build:
+    run: |
+      yarn install
+
+bin:
+  fish-lsp: bin/fish-lsp
