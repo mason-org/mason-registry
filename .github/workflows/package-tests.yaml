@@ -12,6 +12,7 @@ on:
 
 jobs:
   lint:
+    name: Registry lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +23,7 @@ jobs:
           packages: ${{ github.event.inputs.packages }}
 
   test:
+    name: Package tests
     needs: lint
     uses: mason-org/actions/.github/workflows/package-tests.yaml@v1
     with:
