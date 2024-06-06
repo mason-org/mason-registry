@@ -1,0 +1,16 @@
+---
+name: tsp-server
+description: ⚡ LSP for ther typespec language.
+homepage: https://github.com/microsoft/typespec
+licenses:
+  - MIT
+languages:
+  - Typespec
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40typespec/compiler@0.56.0
+
+bin:
+  tsp-server: npm:tsp-server
