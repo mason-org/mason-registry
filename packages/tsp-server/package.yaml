@@ -1,6 +1,6 @@
 ---
 name: tsp-server
-description: ⚡ LSP for ther typespec language.
+description: ⚡ LSP for the typespec language.
 homepage: https://github.com/microsoft/typespec
 licenses:
   - MIT
