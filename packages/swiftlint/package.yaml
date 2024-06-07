@@ -1,0 +1,23 @@
+---
+name: swiftlint
+description: A tool to enforce Swift style and conventions.
+homepage: https://github.com/realm/SwiftLint
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Linter
+
+source:
+  id: pkg:github/realm/SwiftLint@0.54.0
+  asset:
+    - target: linux_x64_gnu
+      file: swiftlint_linux.zip
+      bin: swiftlint
+    - target: darwin
+      file: SwiftLintBinary-macos.artifactbundle.zip
+      bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
+
+bin:
+  swiftlint: "{{source.asset.bin}}"
