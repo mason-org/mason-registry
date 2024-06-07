@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/ewen-lbh/hyprls/cmd/hyprls@v0.2.0
+  id: pkg:golang/github.com/ewen-lbh/hyprls@v0.2.0#cmd/hyprls
 
 bin:
   hyprls: golang:hyprls
