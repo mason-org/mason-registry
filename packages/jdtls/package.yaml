@@ -11,21 +11,21 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.34.0
+  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.35.0
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404031240.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404251256.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_mac/
     - target: linux
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404031240.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404251256.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_linux/
     - target: win
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404031240.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202404251256.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_win/
 
@@ -38,5 +38,5 @@ bin:
 share:
   jdtls/lombok.jar: lombok.jar
   jdtls/plugins/: plugins/
-  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.800.v20240304-1850.jar
+  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.800.v20240330-1250.jar
   jdtls/config/: "{{source.download.config}}"
