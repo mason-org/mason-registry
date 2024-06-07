@@ -17,7 +17,7 @@ source:
       bin: swiftlint_linux/swiftlint
     - target: darwin
       file: SwiftLintBinary-macos.artifactbundle.zip
-      bin: SwiftLintBinary.artifactbundle/swiftlint-0.54.0-macos/bin/swiftlint
+      bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
 
 bin:
   swiftlint: "{{source.asset.bin}}"
