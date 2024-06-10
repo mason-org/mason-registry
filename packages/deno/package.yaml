@@ -14,7 +14,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/denoland/deno@v1.43.3
+  id: pkg:github/denoland/deno@v1.44.1
   asset:
     - target: darwin_arm64
       file: deno-aarch64-apple-darwin.zip
