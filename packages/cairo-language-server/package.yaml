@@ -1,6 +1,6 @@
 ---
 name: cairo-language-server
-description: Starknet Cairo language server.
+description: Starknet Cairo language server and formatter.
 homepage: https://github.com/starkware-libs/cairo
 licenses:
   - Apache-2.0
@@ -8,9 +8,22 @@ languages:
   - Cairo
 categories:
   - LSP
+  - Formatter
 
 source:
-  id: pkg:cargo/cairo-language-server@2.6.3
+  id: pkg:github/starkware-libs/cairo@v2.6.3
+  asset:
+    - target: linux_x64
+      file: release-x86_64-unknown-linux-musl.tar.gz
+      bin:
+        lsp: cairo/bin/cairo-language-server
+        format: cairo/bin/cairo-format
+    - target: darwin_x64
+      file: release-aarch64-apple-darwin.tar
+      bin:
+        lsp: cairo/bin/cairo-language-server
+        format: cairo/bin/cairo-format
 
 bin:
-  cairo-language-server: cargo:cairo-language-server
+  cairo-language-server: "{{source.asset.bin.lsp}}"
+  cairo-format: "{{source.asset.bin.format}}"
