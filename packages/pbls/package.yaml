@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/pbls@1.0.2?repository_url=https://git.sr.ht/~rrc/pbls
+  id: pkg:cargo/pbls@1.0.1?repository_url=https://git.sr.ht/~rrc/pbls
 
 bin:
   pbls: cargo:pbls
