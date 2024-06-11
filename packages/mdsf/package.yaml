@@ -3,14 +3,14 @@ name: mdsf
 description: Format markdown code blocks using your favorite code formatters.
 homepage: https://github.com/hougesen/mdsf
 licenses:
-    - MIT
+  - MIT
 languages:
-    - Markdown
+  - Markdown
 categories:
-    - Formatter
+  - Formatter
 
 source:
-    id: pkg:cargo/mdsf@0.0.8
+  id: pkg:cargo/mdsf@0.0.8
 
 bin:
-    mdsf: cargo:mdsf
+  mdsf: cargo:mdsf
