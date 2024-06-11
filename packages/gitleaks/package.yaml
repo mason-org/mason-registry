@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/gitleaks/gitleaks@v8.18.2
+  id: pkg:github/gitleaks/gitleaks@v8.18.3
   asset:
     - target: darwin_arm64
       file: gitleaks_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz

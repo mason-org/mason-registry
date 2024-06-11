@@ -1,7 +1,7 @@
 ---
 name: ember-language-server
 description: Language Server Protocol implementation for Ember.js and Glimmer projects.
-homepage: https://github.com/lifeart/ember-language-server
+homepage: https://github.com/ember-tooling/ember-language-server
 licenses:
   - MIT
 languages:
@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40lifeart/ember-language-server@2.30.1
+  id: pkg:npm/%40ember-tooling/ember-language-server@2.30.3
 
 bin:
   ember-language-server: npm:ember-language-server
