@@ -10,13 +10,16 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/LuaLS/lua-language-server@3.9.1
+  id: pkg:github/LuaLS/lua-language-server@3.9.2
   asset:
     - target: darwin_arm64
       file: lua-language-server-{{version}}-darwin-arm64.tar.gz:libexec/
       bin: exec:libexec/bin/lua-language-server
     - target: darwin_x64
       file: lua-language-server-{{version}}-darwin-x64.tar.gz:libexec/
+      bin: exec:libexec/bin/lua-language-server
+    - target: linux_arm64_gnu
+      file: lua-language-server-{{version}}-linux-arm64.tar.gz:libexec/
       bin: exec:libexec/bin/lua-language-server
     - target: linux_x64_gnu
       file: lua-language-server-{{version}}-linux-x64.tar.gz:libexec/
@@ -29,6 +32,24 @@ source:
       bin: bin/lua-language-server.exe
 
   version_overrides:
+    - constraint: semver:<=3.8.3
+      id: pkg:github/LuaLS/lua-language-server@3.8.3
+      asset:
+        - target: darwin_arm64
+          file: lua-language-server-{{version}}-darwin-arm64.tar.gz:libexec/
+          bin: exec:libexec/bin/lua-language-server
+        - target: darwin_x64
+          file: lua-language-server-{{version}}-darwin-x64.tar.gz:libexec/
+          bin: exec:libexec/bin/lua-language-server
+        - target: linux_x64_gnu
+          file: lua-language-server-{{version}}-linux-x64.tar.gz:libexec/
+          bin: exec:libexec/bin/lua-language-server
+        - target: linux_x64_musl
+          file: lua-language-server-{{version}}-linux-x64-musl.tar.gz:libexec/
+          bin: exec:libexec/bin/lua-language-server
+        - target: win_x64
+          file: lua-language-server-{{version}}-win32-x64.zip
+          bin: bin/lua-language-server.exe
     - constraint: semver:<=3.7.4
       id: pkg:github/LuaLS/lua-language-server@3.7.4
       asset:

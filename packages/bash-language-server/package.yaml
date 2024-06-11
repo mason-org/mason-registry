@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/bash-language-server@5.3.2
+  id: pkg:npm/bash-language-server@5.3.4
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/bash-lsp/bash-language-server/server-{{version}}/vscode-client/package.json
