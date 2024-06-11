@@ -1,0 +1,17 @@
+---
+name: regal
+description: A linter for Rego, with support for running as an LSP server.
+homepage: https://github.com/styrainc/regal
+licenses:
+  - Apache-2.0
+languages:
+  - Rego
+categories:
+  - Linter
+  - LSP
+
+source:
+  id: pkg:golang/github.com/styrainc/regal@v0.23.1
+
+bin:
+  regal: golang:regal

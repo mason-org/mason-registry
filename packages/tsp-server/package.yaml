@@ -1,0 +1,16 @@
+---
+name: tsp-server
+description: The language server for TypeSpec, a language for defining cloud service APIs and shapes.
+homepage: https://github.com/microsoft/typespec
+licenses:
+  - MIT
+languages:
+  - Typespec
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40typespec/compiler@0.56.0
+
+bin:
+  tsp-server: npm:tsp-server

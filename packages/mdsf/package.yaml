@@ -1,0 +1,16 @@
+---
+name: mdsf
+description: Format markdown code blocks using your favorite code formatters.
+homepage: https://github.com/hougesen/mdsf
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/mdsf@0.0.8
+
+bin:
+  mdsf: cargo:mdsf
