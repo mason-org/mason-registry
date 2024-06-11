@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/1c-syntax/bsl-language-server@v0.22.0
+  id: pkg:github/1c-syntax/bsl-language-server@v0.23.0
   asset:
     file: bsl-language-server-{{ version | strip_prefix "v" }}-exec.jar
 
