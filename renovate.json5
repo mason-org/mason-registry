@@ -106,6 +106,10 @@
         {
             matchDepNames: ["ansible-language-server"],
             allowedVersions: "!/1\\.2\\.2/"
+        },
+        {
+            matchDepNames: ["autotools-language-server"],
+            allowedVersions: "!/0\\.0\\.19/"
         }
     ],
     "ignoreDeps": [
