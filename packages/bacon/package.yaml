@@ -7,7 +7,7 @@ licenses:
 languages:
   - Rust
 categories:
-  - Runtime
+  - Linter
 
 source:
   id: pkg:cargo/bacon@2.18.0
