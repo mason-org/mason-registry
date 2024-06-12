@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:cargo/mdsf@0.0.8
+  id: pkg:cargo/mdsf@0.1.0
 
 bin:
   mdsf: cargo:mdsf
