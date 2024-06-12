@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/crate-ci/typos@v1.22.4
+  id: pkg:github/crate-ci/typos@v1.22.7
   asset:
     - target: darwin_x64
       file: typos-{{ version }}-x86_64-apple-darwin.tar.gz
