@@ -1,0 +1,16 @@
+---
+name: bacon
+description: Bacon is a background rust code checker
+homepage: https://github.com/Canop/bacon
+licenses:
+  - AGPL-3.0-or-later
+languages:
+  - Rust
+categories:
+  - Linter
+
+source:
+  id: pkg:cargo/bacon@2.18.0
+
+bin:
+  bacon: cargo:bacon
