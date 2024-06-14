@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/brighterscript@0.67.2
+  id: pkg:npm/brighterscript@0.67.3
 
 bin:
   bsc: npm:bsc
