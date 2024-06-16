@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/autopep8@2.2.0
+  id: pkg:pypi/autopep8@2.3.0
 
 bin:
   autopep8: pypi:autopep8
