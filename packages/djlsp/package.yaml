@@ -1,0 +1,18 @@
+name: djlsp
+description: A language server for django templates
+homepage: https://github.com/fourdigits/django-template-lsp/tree/main
+licenses:
+  - GPL3
+languages:
+  - Python
+  - Django
+  - Django Template
+  - HTML
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/django-template-lsp@0.2.2
+
+bin:
+  djlsp: pypi:django-template-lsp
