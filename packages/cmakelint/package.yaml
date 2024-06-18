@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/cmakelint@1.4.2
+  id: pkg:pypi/cmakelint@1.4.3
 
 bin:
   cmakelint: pypi:cmakelint

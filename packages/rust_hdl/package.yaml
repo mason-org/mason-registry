@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/vhdl-ls/rust_hdl@v0.78.2
+  id: pkg:github/vhdl-ls/rust_hdl@v0.81.0
   asset:
     - target: darwin_arm64
       file: vhdl_ls-aarch64-apple-darwin.zip

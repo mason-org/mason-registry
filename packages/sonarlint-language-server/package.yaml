@@ -28,9 +28,9 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/SonarSource/sonarlint-vscode@4.3.0%2B76012
+  id: pkg:github/SonarSource/sonarlint-vscode@4.6.0%2B76435
   asset:
-    file: sonarlint-vscode-4.3.0.vsix
+    file: sonarlint-vscode-4.6.0.vsix
 
 bin:
   sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar
