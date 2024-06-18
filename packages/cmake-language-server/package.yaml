@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/cmake-language-server@0.1.9
+  id: pkg:pypi/cmake-language-server@0.1.10
 
 bin:
   cmake-language-server: pypi:cmake-language-server

@@ -10,7 +10,7 @@ languages: []
 categories: []
 
 source:
-  id: pkg:github/cli/cli@v2.47.0
+  id: pkg:github/cli/cli@v2.51.0
   asset:
     - target: darwin_x64
       file: gh_{{ version | strip_prefix "v" }}_macOS_amd64.zip

@@ -11,10 +11,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vtsls/language-server@0.2.1
+  id: pkg:npm/%40vtsls/language-server@0.2.3
 
 schemas:
-  lsp: https://raw.githubusercontent.com/yioneko/vtsls/main/packages/service/configuration.schema.json
+  lsp: https://raw.githubusercontent.com/yioneko/vtsls/server-v{{version}}/packages/service/configuration.schema.json
 
 bin:
   vtsls: npm:vtsls

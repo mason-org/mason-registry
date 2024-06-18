@@ -49,21 +49,21 @@
 * Testing a package MUST be done locally prior to creating a PR. See [testing](#testing) for more information.
 
 > [!TIP]
-> Use the YAML language server combined with the [schemastore schema](https://json.schemastore.org/mason-registry.json)
-> to get diagnostics and autocompletion (see [Schema](#schema)).
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) combined with the
+> [schemastore schema](https://json.schemastore.org/mason-registry.json) to get diagnostics and autocompletion (see
+> [Schema](#schema)).
 
 # Schema
 
-Package definitions are validated against a well-defined [JSON schema](./schemas/). The full schema is hosted on
-<http://schemastore.org/>.
+Package definitions are validated against a well-defined [JSON schema](https://github.com/mason-org/registry-schema).
+The full schema is hosted on <http://schemastore.org/>.
 
-<sup>
-    Use <a href="https://github.com/b0o/SchemaStore.nvim">b0o/SchemaStore.nvim</a> and the YAML language server to
-    integrate these schemas in Neovim. This gives you diagnostics and autocompletion inside the editor when editing
-    package definitions:
-</sup>
-
-<img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
+> [!TIP]
+> Use [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim) and the [YAML language
+> server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these schemas in Neovim. This
+> gives you diagnostics and autocompletion inside the editor when editing package definitions:
+> 
+> <img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
 
 # Testing
 
@@ -91,7 +91,7 @@ window and pressing `g?` to open the help view:
 <img src="https://github.com/mason-org/mason-registry/assets/6705160/952e1b0f-6396-492e-9270-e72c26800a98" height="100" />
 
 > [!TIP]
-> You can emulate different platform ("targets") by providing the `--target=` option to `:MasonInstall`. For example:
+> You can emulate different platforms ("targets") by providing the `--target=` option to `:MasonInstall`. For example:
 > <pre><code>:MasonInstall --target=linux_arm64 my-package</code></pre>  
 > Note that this is only a soft emulation and only impacts how the package definition is parsed.
 
