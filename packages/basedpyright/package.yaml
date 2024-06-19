@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/basedpyright@1.12.6
+  id: pkg:pypi/basedpyright@1.13.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/v{{version}}/packages/vscode-pyright/package.json
