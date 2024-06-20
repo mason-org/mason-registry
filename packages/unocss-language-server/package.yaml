@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/unocss-language-server@0.1.1
+  id: pkg:npm/unocss-language-server@0.1.3
 
 bin:
   unocss-language-server: npm:unocss-language-server
