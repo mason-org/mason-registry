@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/cuelang.org/go@v0.9.1#cmd/cuepls
+  id: pkg:golang/cuelang.org/go@v0.9.2#cmd/cuepls
 
 bin:
   cuepls: golang:cuepls
