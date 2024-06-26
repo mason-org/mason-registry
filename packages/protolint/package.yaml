@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/yoheimuta/protolint@v0.49.8
+  id: pkg:github/yoheimuta/protolint@v0.50.0
   asset:
     - target: darwin_arm64
       file: protolint_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
