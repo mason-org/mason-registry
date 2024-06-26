@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/GroovyLanguageServer/groovy-language-server@4866a3f2c180f628405b1e4efbde0949a1418c10
+  id: pkg:github/GroovyLanguageServer/groovy-language-server@6b6a8a2d591208029a03e4e31e9b620a4c73ea15
   build:
     run: ./gradlew --no-daemon build
 
