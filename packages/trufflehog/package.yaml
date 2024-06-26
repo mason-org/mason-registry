@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/trufflesecurity/trufflehog@v3.78.2
+  id: pkg:github/trufflesecurity/trufflehog@v3.79.0
   asset:
     - target: darwin_x64
       file: trufflehog_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
