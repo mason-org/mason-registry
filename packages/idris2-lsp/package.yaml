@@ -10,16 +10,30 @@ categories:
   - LSP
 
 source:
-  id: pkg:generic/idris-community/idris2-lsp@nightly-231224
+  # renovate:datasource=git-refs
+  id: pkg:github/idris-community/idris2-lsp@fb388777d616874b530af8f4402beb62d5fd7aa5
   build:
     - target: unix
       run: |
-        PACK_DIR=$PWD pack -p $VERSION install-app idris2-lsp
+        DIR=$PWD
+        git submodule update --init Idris2
+        cd Idris2
+        make bootstrap SCHEME=chez PREFIX=$DIR
+        make install PREFIX=$DIR
+        make clean
+        make all PREFIX=$DIR
+        make install PREFIX=$DIR
+        make install-with-src-libs PREFIX=$DIR
+        make install-with-src-api PREFIX=$DIR
+        cd ..
+        git submodule update --init LSP-lib
+        cd LSP-lib
+        idris2 --install-with-src
+        cd ..
+        make install PREFIX=$DIR
       staged: false
-      env:
-        VERSION: "{{version}}"
       bin:
         idris2-lsp: idris2-lsp
 bin:
-  idris2-lsp: "{{source.build.bin.idris2-lsp}}"
+  idris2-lsp: idris2-lsp
 
