@@ -1,0 +1,39 @@
+---
+name: idris2-lsp
+description: Language Server for Idris2
+homepage: https://github.com/idris-community/idris2-lsp?tab=readme-ov-file
+licenses:
+  - BSD-3-Clause
+languages:
+  - Idris2
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/idris-community/idris2-lsp@fb388777d616874b530af8f4402beb62d5fd7aa5
+  build:
+    - target: unix
+      run: |
+        DIR=$PWD
+        git submodule update --init Idris2
+        cd Idris2
+        make bootstrap SCHEME=chez PREFIX=$DIR
+        make install PREFIX=$DIR
+        make clean
+        make all PREFIX=$DIR
+        make install PREFIX=$DIR
+        make install-with-src-libs PREFIX=$DIR
+        make install-with-src-api PREFIX=$DIR
+        cd ..
+        git submodule update --init LSP-lib
+        cd LSP-lib
+        idris2 --install-with-src
+        cd ..
+        make install PREFIX=$DIR
+      staged: false
+      bin:
+        idris2-lsp: idris2-lsp
+bin:
+  idris2-lsp: idris2-lsp
+
