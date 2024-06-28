@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/m68k-lsp-server@0.11.0
+  id: pkg:npm/m68k-lsp-server@0.11.1
 
 bin:
   m68k-lsp-server: npm:m68k-lsp-server
