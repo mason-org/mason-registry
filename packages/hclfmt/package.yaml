@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/hashicorp/hcl/v2@v2.20.1#cmd/hclfmt
+  id: pkg:golang/github.com/hashicorp/hcl/v2@v2.21.0#cmd/hclfmt
 
 bin:
   hclfmt: golang:hclfmt

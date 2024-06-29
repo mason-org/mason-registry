@@ -1,0 +1,30 @@
+---
+name: opa
+description: Open Policy Agent (OPA) is an open source, general-purpose policy engine.
+homepage: https://github.com/open-policy-agent/opa
+licenses:
+  - Apache-2.0
+languages:
+  - Rego
+categories:
+  - Linter
+  - Formatter
+  - Compiler
+  - Runtime
+
+source:
+  id: pkg:github/open-policy-agent/opa@v0.66.0
+  asset:
+    - target: darwin_arm64
+      file: opa_darwin_arm64_static
+    - target: darwin_x64
+      file: opa_darwin_amd64
+    - target: linux_arm64
+      file: opa_linux_arm64_static
+    - target: linux_x64
+      file: opa_linux_amd64_static
+    - target: win_x64
+      file: opa_windows_amd64.exe
+
+bin:
+  opa: "{{source.asset.file}}"

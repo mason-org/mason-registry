@@ -5,7 +5,7 @@ homepage: https://rstcheck.readthedocs.io/
 licenses:
   - MIT
 languages:
-  - Python
+  - reStructuredText
 categories:
   - Linter
 
