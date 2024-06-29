@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/yaml-language-server@1.14.0
+  id: pkg:npm/yaml-language-server@1.15.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/redhat-developer/vscode-yaml/master/package.json

@@ -10,7 +10,9 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/svelte-language-server@0.16.9
+  id: pkg:npm/svelte-language-server@0.16.13
+  extra_packages:
+    - typescript-svelte-plugin
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/sveltejs/language-tools/language-server-{{version}}/packages/svelte-vscode/package.json

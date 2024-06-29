@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/mathworks/MATLAB-language-server@0f2f84ed0fe6adfcb9fef13da993cc0ccc5aaeba
+  id: pkg:github/mathworks/MATLAB-language-server@23d0854da2c2d41b236cafca82fbf3cadea13947
   build:
     run: |
       npm install
