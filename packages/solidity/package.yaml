@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ethereum/solidity@v0.8.24
+  id: pkg:github/ethereum/solidity@v0.8.26
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: solc-macos

@@ -1,0 +1,16 @@
+---
+name: gitlab-ci-ls
+description: An experimental language server for Gitlab CI.
+homepage: https://github.com/alesbrelih/gitlab-ci-ls
+licenses:
+  - MIT
+languages:
+  - YAML
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/gitlab-ci-ls@0.19.1
+
+bin:
+  gitlab-ci-ls: cargo:gitlab-ci-ls

@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/razziel89/mdslw@0.6.1
+  id: pkg:github/razziel89/mdslw@0.8.0
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: mdslw_x86_64-apple-darwin
@@ -18,5 +18,6 @@ source:
       file: mdslw_x86_64-unknown-linux-musl
     - target: win_x64
       file: mdslw_x86_64-pc-windows-gnu.exe
+
 bin:
   mdslw: "{{source.asset.file}}"

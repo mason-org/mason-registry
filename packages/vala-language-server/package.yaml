@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/vala-lang/vala-language-server@3b5fe941bea6ecd5c8fcb84930c40b8582eea165
+  id: pkg:github/vala-lang/vala-language-server@31cb5116a4a138365feb709ebb7b8670db604991
   build:
     - target: unix
       run: |

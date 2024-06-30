@@ -1,7 +1,7 @@
 ---
 name: phpcbf
 description: phpcbf automatically corrects coding standard violations that would be detected by phpcs.
-homepage: https://github.com/squizlabs/PHP_CodeSniffer
+homepage: https://github.com/PHPCSStandards/PHP_CodeSniffer
 licenses:
   - BSD-3-Clause
 languages:
@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/squizlabs/PHP_CodeSniffer@3.7.2
+  id: pkg:github/PHPCSStandards/PHP_CodeSniffer@3.10.1
   asset:
     file: phpcbf.phar
 

@@ -1,0 +1,43 @@
+---
+name: harper-ls
+description: The Grammar Checker for Developers.
+homepage: https://github.com/elijah-potter/harper
+licenses:
+  - Apache-2.0
+languages:
+  - Markdown
+  - Rust
+  - TypeScript
+  - JavaScript
+  - Python
+  - Go
+  - C
+  - C++
+  - Ruby
+  - C#
+  - TOML
+  - Lua
+categories:
+  - LSP
+
+source:
+  id: pkg:github/elijah-potter/harper@v0.8.6
+  asset:
+    - target: linux_x64_gnu
+      file: harper-ls-x86_64-unknown-linux-gnu.tar.gz
+      bin: harper-ls
+    - target: linux_arm64_gnu
+      file: harper-ls-aarch64-unknown-linux-gnu.tar.gz
+      bin: harper-ls
+    - target: darwin_x64
+      file: harper-ls-x86_64-apple-darwin.tar.gz
+      bin: harper-ls
+    - target: darwin_arm64
+      file: harper-ls-aarch64-apple-darwin.tar.gz
+      bin: harper-ls
+    - target: win_x64
+      file: harper-ls-x86_64-pc-windows-gnu.zip
+      bin: harper-ls.exe
+
+bin:
+  harper-ls: "{{source.asset.bin}}"

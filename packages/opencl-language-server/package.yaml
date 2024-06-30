@@ -10,11 +10,16 @@ categories:
   - LSP
 
 source:
-  # renovate:versioning=loose
-  id: pkg:github/Galarius/opencl-language-server@0.6.0
+  id: pkg:github/Galarius/opencl-language-server@0.6.1
   asset:
-    - target: [darwin_arm64, darwin_x64]
+    - target: darwin_arm64
+      file: opencl-language-server-darwin-arm64.tar.gz
+      bin: opencl-language-server
+    - target: darwin_x64
       file: opencl-language-server-darwin-x86_64.tar.gz
+      bin: opencl-language-server
+    - target: linux_arm64
+      file: opencl-language-server-linux-arm64.tar.gz
       bin: opencl-language-server
     - target: linux_x64
       file: opencl-language-server-linux-x86_64.tar.gz

@@ -1,0 +1,17 @@
+---
+name: crlfmt
+description: Formatter for Go code that enforces the CockroachDB Style Guide.
+homepage: https://github.com/cockroachdb/crlfmt
+licenses:
+  - Apache-2.0
+  - BSD-3-Clause
+languages:
+  - Go
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/github.com/cockroachdb/crlfmt@v0.2.1
+
+bin:
+  crlfmt: golang:crlfmt

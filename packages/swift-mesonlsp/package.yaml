@@ -9,6 +9,10 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  message: swift-mesonlsp has been superseded by mesonlsp.
+  since: v3.1.3
+
 source:
   id: pkg:github/JCWasmx86/Swift-MesonLSP@v3.1.3
   asset:

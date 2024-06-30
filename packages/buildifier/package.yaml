@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/bazelbuild/buildtools@v6.4.0
+  id: pkg:github/bazelbuild/buildtools@v7.1.2
   asset:
     - target: darwin_x64
       file: buildifier-darwin-amd64

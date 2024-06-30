@@ -1,6 +1,6 @@
 ---
 name: ruff
-description: An extremely fast Python linter, written in Rust.
+description: An extremely fast Python linter and code formatter, written in Rust.
 homepage: https://github.com/astral-sh/ruff/
 licenses:
   - MIT
@@ -8,9 +8,11 @@ languages:
   - Python
 categories:
   - Linter
+  - Formatter
+  - LSP
 
 source:
-  id: pkg:pypi/ruff@0.3.0
+  id: pkg:pypi/ruff@0.5.0
 
 bin:
   ruff: pypi:ruff

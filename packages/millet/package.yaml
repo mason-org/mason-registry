@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/azdavis/millet@v0.14.3
+  id: pkg:github/azdavis/millet@v0.14.5
   asset:
     - target: darwin_arm64
       file: millet-ls-aarch64-apple-darwin.gz

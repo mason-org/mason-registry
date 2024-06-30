@@ -1,0 +1,34 @@
+---
+name: markdown-oxide
+description: |
+  Markdown language server with advanced linking support made to be completely compatible with Obsidian; An Obsidian
+  Language Server.
+homepage: https://github.com/Feel-ix-343/markdown-oxide
+licenses:
+  - CC0-1.0
+languages:
+  - Markdown
+categories:
+  - LSP
+
+source:
+  id: pkg:github/feel-ix-343/markdown-oxide@v0.0.21
+  asset:
+    - target: darwin_x64
+      file:  markdown-oxide-{{version}}-x86_64-apple-darwin.tar.gz
+      bin: markdown-oxide-{{version}}-x86_64-apple-darwin/markdown-oxide
+    - target: darwin_arm64
+      file:  markdown-oxide-{{version}}-aarch64-apple-darwin.tar.gz
+      bin: markdown-oxide-{{version}}-aarch64-apple-darwin/markdown-oxide
+    - target: linux_x64_gnu
+      file: markdown-oxide-{{version}}-x86_64-unknown-linux-gnu.tar.gz
+      bin: markdown-oxide-{{version}}-x86_64-unknown-linux-gnu/markdown-oxide
+    - target: linux_arm64_gnu
+      file: markdown-oxide-{{version}}-aarch64-unknown-linux-gnu.tar.gz
+      bin: markdown-oxide-{{version}}-aarch64-unknown-linux-gnu/markdown-oxide
+    - target: win_x64
+      file: markdown-oxide-{{version}}-x86_64-pc-windows-gnu.zip
+      bin: markdown-oxide-{{version}}-x86_64-pc-windows-gnu/markdown-oxide.exe
+
+bin:
+  markdown-oxide: "{{source.asset.bin}}"
