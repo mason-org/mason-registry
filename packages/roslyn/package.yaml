@@ -1,0 +1,30 @@
+---
+name: roslyn
+description: |
+  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs.
+homepage: https://github.com/dotnet/roslyn
+licenses:
+  - MIT
+languages:
+  - C#
+categories:
+  - LSP
+
+source:
+  id: pkg:github/Crashdummyy/roslynLanguageServer@4.12.0-3.24454.4
+  asset:
+    - target: darwin_x64
+      file: microsoft.codeanalysis.languageserver.osx-x64.zip:libexec/
+    - target: darwin_arm64
+      file: microsoft.codeanalysis.languageserver.osx-arm64.zip:libexec/
+    - target: linux_x64
+      file: microsoft.codeanalysis.languageserver.linux-x64.zip:libexec/
+    - target: linux_arm64
+      file: microsoft.codeanalysis.languageserver.linux-arm64.zip:libexec/
+    - target: win_x64
+      file: microsoft.codeanalysis.languageserver.win-x64.zip:libexec/
+    - target: win_arm64
+      file: microsoft.codeanalysis.languageserver.win-arm64.zip:libexec/
+
+bin:
+  roslyn: dotnet:libexec/Microsoft.CodeAnalysis.LanguageServer.dll
