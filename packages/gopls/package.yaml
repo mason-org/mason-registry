@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/golang.org/x/tools/gopls@v0.16.0
+  id: pkg:golang/golang.org/x/tools/gopls@v0.16.1
 
 bin:
   gopls: golang:gopls
