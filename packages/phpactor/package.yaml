@@ -15,9 +15,8 @@ source:
   # renovate:versioning=loose
   # renovate:datasource=github-tags
   id: pkg:github/phpactor/phpactor@2024.06.30.0
-  build:
-    - target: unix
-      run: composer install --no-interaction --no-dev --optimize-autoloader --classmap-authoritative
+  asset:
+    file: phpactor.phar
 
 bin:
-  phpactor: bin/phpactor
+  phpactor: php:phpactor.phar
