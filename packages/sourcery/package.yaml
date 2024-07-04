@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/sourcery@1.19.0
+  id: pkg:pypi/sourcery@1.20.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/swift-server/vscode-swift/main/package.json
