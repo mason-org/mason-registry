@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/web-infra-dev/oxc@oxlint_v0.0.20
+  id: pkg:github/web-infra-dev/oxc@oxlint_v0.5.2
   asset:
     - target: darwin_arm64
       file: oxlint-darwin-arm64
