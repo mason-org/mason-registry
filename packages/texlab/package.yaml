@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/latex-lsp/texlab@v5.17.0
+  id: pkg:github/latex-lsp/texlab@v5.18.0
   asset:
     - target: darwin_arm64
       file: texlab-aarch64-macos.tar.gz
