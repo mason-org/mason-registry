@@ -17,17 +17,17 @@ source:
     - target: darwin_arm64
       file: vhdl_ls-aarch64-apple-darwin.zip
       bin: vhdl_ls-aarch64-apple-darwin/bin/vhdl_ls
-      libraries: vhdl_ls-aarch64-apple-darwin/vhdl_libraries
+      libraries: vhdl_ls-aarch64-apple-darwin/vhdl_libraries/
     - target: linux_x64
       file: vhdl_ls-x86_64-unknown-linux-musl.zip
       bin: vhdl_ls-x86_64-unknown-linux-musl/bin/vhdl_ls
-      libraries: vhdl_ls-x86_64-unknown-linux-musl/vhdl_libraries
+      libraries: vhdl_ls-x86_64-unknown-linux-musl/vhdl_libraries/
     - target: win_x64
       file: vhdl_ls-x86_64-pc-windows-msvc.zip
       bin: vhdl_ls-x86_64-pc-windows-msvc/bin/vhdl_ls.exe
-      libraries: vhdl_ls-x86_64-pc-windows-msvc/bin/vhdl_libraries
+      libraries: vhdl_ls-x86_64-pc-windows-msvc/bin/vhdl_libraries/
 
 bin:
   vhdl_ls: "{{source.asset.bin}}"
 share:
-  vhdl_libraries/: "./{{source.asset.libraries}}/"
+  vhdl_libraries/: "{{source.asset.libraries}}"
