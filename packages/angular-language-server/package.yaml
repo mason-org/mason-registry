@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40angular/language-server@18.0.0
+  id: pkg:npm/%40angular/language-server@18.1.1
   extra_packages:
     - typescript@5.4.5
 
