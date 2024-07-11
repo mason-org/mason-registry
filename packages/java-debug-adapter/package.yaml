@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-java-debug@0.55.0
+  id: pkg:openvsx/vscjava/vscode-java-debug@0.58.0
   download:
     file: vscjava.vscode-java-debug-{{version}}.vsix
 
