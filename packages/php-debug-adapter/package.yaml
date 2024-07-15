@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/xdebug/vscode-php-debug@v1.34.0
+  id: pkg:github/xdebug/vscode-php-debug@v1.35.0
   asset:
     file: php-debug-{{ version | strip_prefix "v" }}.vsix
 
