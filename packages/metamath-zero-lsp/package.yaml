@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/digama0/mm0@9573d3d03a13c23edf988712188b99e77717c632
+  id: pkg:github/digama0/mm0@be23829d0fe4c1c72440afcbcd433fbdc4bf6a97
   build:
     - target: unix
       run: |
