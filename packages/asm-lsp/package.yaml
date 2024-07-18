@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/asm-lsp@0.7.1?locked=false
+  id: pkg:cargo/asm-lsp@0.7.3?locked=false
 
 bin:
   asm-lsp: cargo:asm-lsp
