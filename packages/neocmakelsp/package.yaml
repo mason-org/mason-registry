@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/neocmakelsp@0.7.8
+  id: pkg:cargo/neocmakelsp@0.7.9
 
 bin:
   neocmakelsp: cargo:neocmakelsp
