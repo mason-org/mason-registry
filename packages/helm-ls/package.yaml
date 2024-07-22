@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mrjosh/helm-ls@v0.0.19
+  id: pkg:github/mrjosh/helm-ls@v0.0.20
   asset:
     - target: darwin_x64
       file: helm_ls_darwin_amd64
