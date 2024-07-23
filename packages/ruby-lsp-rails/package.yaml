@@ -1,0 +1,17 @@
+---
+name: ruby-lsp-rails
+description: |
+  A Ruby LSP addon that adds extra editor functionality for Rails applications.
+homepage: https://github.com/Shopify/ruby-lsp-rails
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - LSP
+
+source:
+  id: pkg:gem/ruby-lsp-rails@0.3.11
+
+bin:
+  ruby-lsp: gem:ruby-lsp
