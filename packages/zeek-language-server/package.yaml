@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/bbannier/zeek-language-server@v0.46.0
+  id: pkg:github/bbannier/zeek-language-server@v0.47.0
   asset:
     - target: linux_x64_gnu
       file: zeek-language-server-x86_64-unknown-linux-gnu
