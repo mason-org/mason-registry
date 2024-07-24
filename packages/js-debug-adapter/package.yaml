@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-js-debug@v1.91.0
+  id: pkg:github/microsoft/vscode-js-debug@v1.92.0
   asset:
     file: js-debug-dap-{{version}}.tar.gz
   bin: node:js-debug/src/dapDebugServer.js
