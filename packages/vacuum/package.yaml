@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/daveshanley/vacuum@v0.9.15
+  id: pkg:github/daveshanley/vacuum@v0.11.1
   asset:
     - target: darwin_arm64
       file: vacuum_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz

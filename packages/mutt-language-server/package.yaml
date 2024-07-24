@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/mutt-language-server@0.0.3
+  id: pkg:pypi/mutt-language-server@0.0.11
 
 bin:
   mutt-language-server: pypi:mutt-language-server

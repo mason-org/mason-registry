@@ -1,0 +1,18 @@
+---
+name: shopify-cli
+description: |
+  Command-line interface tool that helps you generate and work with Shopify apps, themes and custom storefronts.
+homepage: https://shopify.dev/docs/api/shopify-cli
+licenses:
+  - MIT
+languages:
+  - Liquid
+categories:
+  - LSP
+  - Linter
+
+source:
+  id: pkg:npm/%40shopify/cli@3.64.1
+
+bin:
+  shopify: npm:shopify

@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/terraform-linters/tflint@v0.51.0
+  id: pkg:github/terraform-linters/tflint@v0.52.0
   asset:
     - target: darwin_x64
       file: tflint_darwin_amd64.zip

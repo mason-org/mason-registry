@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:composer/symplify/easy-coding-standard@12.1.14
+  id: pkg:composer/symplify/easy-coding-standard@12.3.2
 
 bin:
   ecs: composer:ecs
