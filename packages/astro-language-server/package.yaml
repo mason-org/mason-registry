@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40astrojs/language-server@2.12.7
+  id: pkg:npm/%40astrojs/language-server@2.12.8
   extra_packages:
     - typescript
     - "@astrojs/ts-plugin"
