@@ -28,7 +28,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.25.2
+  id: pkg:npm/%40ast-grep/cli@0.25.4
 
 bin:
   ast-grep: npm:ast-grep
