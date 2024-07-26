@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/shandy-sqlfmt@0.21.4?extra=jinjafmt
+  id: pkg:pypi/shandy-sqlfmt@0.22.0?extra=jinjafmt
 
 bin:
   sqlfmt: pypi:sqlfmt
