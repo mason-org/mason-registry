@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/kitagry/regols@v0.2.3
+  id: pkg:golang/github.com/kitagry/regols@v0.2.4
 
 bin:
   regols: golang:regols
