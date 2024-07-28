@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/razziel89/mdslw@0.8.0
+  id: pkg:github/razziel89/mdslw@0.8.1
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: mdslw_x86_64-apple-darwin
