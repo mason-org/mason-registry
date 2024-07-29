@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/termux-language-server@0.0.24
+  id: pkg:pypi/termux-language-server@0.0.25
 
 bin:
   termux-language-server: pypi:termux-language-server
