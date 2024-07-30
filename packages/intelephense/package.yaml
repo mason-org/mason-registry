@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/intelephense@1.11.6
+  id: pkg:npm/intelephense@1.11.7
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/bmewburn/vscode-intelephense/master/package.json
