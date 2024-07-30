@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/awslabs/smithy-language-server@0.2.4
+  id: pkg:github/awslabs/smithy-language-server@0.4.0
   asset:
     - target: unix
       file: smithy-language-server-{{version}}.zip
