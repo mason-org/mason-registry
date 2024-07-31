@@ -1,0 +1,29 @@
+---
+name: agda-language-server
+description: An implementation of language server protocol (LSP) for Agda 2.
+homepage: https://hackage.haskell.org/package/agda-language-server
+licenses:
+  - MIT
+languages:
+  - Agda
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/agda/agda-language-server@0.2.6.3.0
+  build:
+    - target: unix
+      run: |
+        stack install agda-language-server-"$VERSION" --local-bin-path="$PWD"
+      staged: false
+      env:
+        VERSION: "{{version}}"
+      bin:
+        als: als
+
+schemas:
+  lsp: "vscode:https://hackage.haskell.org/package/agda-language-server-{{version}}/src/package.yaml"
+
+bin:
+  als: "{{source.build.bin.als}}"
