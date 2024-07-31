@@ -1,0 +1,26 @@
+---
+name: agda-language-server
+description: Language Server for Agda.
+homepage: https://github.com/agda/agda-language-server.git
+licenses:
+  - MIT
+languages:
+  - Agda
+categories:
+  - LSP
+
+  source:
+  id: pkg:github/agda/agda-language-server@0.2.6.4.0.3
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: als-macos.zip
+      bin: als
+    - target: linux_x64
+      file: als-ubuntu.zip
+      bin: als
+    - target: win_x64
+      file: als-windows.zip
+      bin: als.exe
+
+bin:
+  agda-language-server: "{{source.asset.bin}}"
