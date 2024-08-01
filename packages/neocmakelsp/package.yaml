@@ -10,7 +10,18 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/neocmakelsp@0.7.9
+  id: pkg:github/Decodetalkers/neocmakelsp@v0.7.9
+  asset:
+    - target: darwin_arm64
+      file: neocmakelsp-aarch64-apple-darwin
+    - target: darwin_x64
+      file: neocmakelsp-x86_64-apple-darwin
+    - target: win_x64
+      file: neocmakelsp-x86_64-pc-windows-msvc.exe
+    - target: linux_x64_gnu
+      file: neocmakelsp-x86_64-unknown-linux-gnu
+    - target: linux_x64_musl
+      file: neocmakelsp-x86_64-unknown-linux-musl
 
 bin:
-  neocmakelsp: cargo:neocmakelsp
+  neocmakelsp: "{{source.asset.file}}"
