@@ -1,0 +1,28 @@
+---
+name: nixd
+description: Language Server for Nix.
+homepage: https://github.com/nix-community/nixd
+licenses:
+  - LGPL-3.0
+languages:
+  - Nix
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/nix-community/nixd@2.3.0
+  build:
+    - target: unix
+      run: |
+        meson setup build --prefix="$PWD"
+        meson compile -C build
+        ninja -C build install
+    - target: win
+      run: |
+        meson setup build --prefix="($pwd).path"
+        meson compile -C build
+        ninja -C build install
+
+bin:
+  nixd: "${{source.bin}}"
