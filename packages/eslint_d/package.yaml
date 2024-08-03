@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/eslint_d@13.1.2
+  id: pkg:npm/eslint_d@14.0.2
 
 bin:
   eslint_d: npm:eslint_d

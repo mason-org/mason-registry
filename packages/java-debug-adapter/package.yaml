@@ -10,10 +10,10 @@ categories:
   - DAP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-java-debug@0.55.0
+  id: pkg:openvsx/vscjava/vscode-java-debug@0.58.0
   download:
     file: vscjava.vscode-java-debug-{{version}}.vsix
 
 share:
   java-debug-adapter/: extension/server/
-  java-debug-adapter/com.microsoft.java.debug.plugin.jar: extension/server/com.microsoft.java.debug.plugin-0.50.0.jar
+  java-debug-adapter/com.microsoft.java.debug.plugin.jar: extension/server/com.microsoft.java.debug.plugin-0.53.0.jar
