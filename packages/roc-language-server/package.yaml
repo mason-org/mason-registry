@@ -1,0 +1,25 @@
+name: roc-language-server
+description: This is a basic language server for Roc.
+homepage: https://github.com/roc-lang/roc/tree/main/crates/language_server
+licenses: ["UPL-1.0"]
+languages: ["Roc"]
+categories: ["LSP"]
+
+source:
+  id: pkg:github/roc-lang/roc@nightly
+  asset:
+    - target: linux_arm64
+      file: roc_{{version}}-linux_arm64-latest.tar.gz
+      bin: roc_language_server
+    - target: linux_x64
+      file: roc_{{version}}-linux_x86_64-latest.tar.gz
+      bin: roc_language_server
+    - target: darwin_arm64
+      file: roc_{{version}}-macos_apple_silicon-latest.tar.gz
+      bin: roc_language_server
+    - target: darwin_x64
+      file: roc_{{version}}-macos_x86_64-latest.tar.gz
+      bin: roc_language_server
+
+bin:
+  roc_language_server: "{{source.asset.bin}}"
