@@ -1,0 +1,28 @@
+name: roc_language_server
+description: This is a basic language server for Roc.
+homepage: https://github.com/roc-lang/roc/tree/main/crates/language_server#roc_language_server
+licenses: ["UPL-1.0"]
+languages: ["Roc"]
+categories: ["LSP"]
+
+source:
+  id: pkg:github/roc-lang/roc@alpha4-rolling
+  asset:
+    - target: linux_arm64
+      file: roc-linux_arm64-{{version}}.tar.gz
+      bin: roc_nightly-linux_arm64-2025-09-09-d73ea10/roc_language_server
+    - target: linux_x64
+      file: roc-linux_x86_64-{{version}}.tar.gz
+      bin: roc_nightly-linux_x86_64-2025-09-09-d73ea109/roc_language_server
+    - target: darwin_arm64
+      file: roc-macos_apple_silicon-{{version}}.tar.gz
+      bin: roc_nightly-macos_apple_silicon-2025-09-09-d73ea109cc2/roc_language_server
+    - target: darwin_x64
+      file: roc-macos_x86_64-{{version}}.tar.gz
+      bin: roc_nightly-macos_x86_64-2025-09-09-d73ea109/roc_language_server
+
+bin:
+  roc_language_server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: roc_ls
