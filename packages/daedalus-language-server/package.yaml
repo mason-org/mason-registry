@@ -1,0 +1,34 @@
+---
+name: daedalus-language-server
+description: A LanguageServer implementation in Go for the scripting language Daedalus used in Gothic and Gothic II games
+homepage: https://github.com/kirides/DaedalusLanguageServer
+licenses:
+  - MIT
+languages:
+  - Daedalus
+categories:
+  - LSP
+
+source:
+  id: pkg:github/kirides/DaedalusLanguageServer@v1.0.0
+  asset:
+    - target: linux_x64_gnu
+      file: linux_amd64.zip
+      bin: DaedalusLanguageServer
+    - target: linux_arm64_gnu
+      file: linux_arm64.zip
+      bin: DaedalusLanguageServer
+    - target: darwin_x64
+      file: darwin_amd64.zip
+      bin: DaedalusLanguageServer
+    - target: darwin_arm64
+      file: darwin_arm64.zip
+      bin: DaedalusLanguageServer
+    - target: win_x64
+      file: windows_amd64.zip
+      bin: DaedalusLanguageServer.exe
+    - target: win_arm64
+      file: windows_arm64.zip
+      bin: DaedalusLanguageServer.exe
+bin:
+  daedalus: "{{source.asset.bin}}"
