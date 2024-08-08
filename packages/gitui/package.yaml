@@ -8,7 +8,7 @@ languages: []
 categories: []
 
 source:
-  id: pkg:github/extrawurst/gitui@v0.26.2
+  id: pkg:github/extrawurst/gitui@v0.26.3
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: gitui-mac.tar.gz
