@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/slint-ui/slint@v1.7.1
+  id: pkg:github/slint-ui/slint@v1.7.2
   asset:
     - target: linux_x64
       file: slint-lsp-linux.tar.gz
