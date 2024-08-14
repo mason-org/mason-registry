@@ -15,7 +15,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/shader-slang/slang@v2024.1.21
+  id: pkg:github/shader-slang/slang@v2024.1.26
   asset:
     - target: linux_x64_gnu
       file: slang-{{ version | strip_prefix "v" }}-linux-x86_64.tar.gz

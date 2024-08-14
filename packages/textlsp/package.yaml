@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/textLSP@0.3.0
+  id: pkg:pypi/textLSP@0.3.2
 
 bin:
   textlsp: pypi:textlsp
