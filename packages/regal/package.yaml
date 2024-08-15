@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/styrainc/regal@v0.24.0
+  id: pkg:golang/github.com/styrainc/regal@v0.25.0
 
 bin:
   regal: golang:regal
