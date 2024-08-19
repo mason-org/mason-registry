@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/wader/jq-lsp@v0.1.3
+  id: pkg:golang/github.com/wader/jq-lsp@v0.1.4
 
 bin:
   jq-lsp: golang:jq-lsp
