@@ -13,7 +13,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/PHP-CS-Fixer/PHP-CS-Fixer@v3.59.3
+  id: pkg:github/PHP-CS-Fixer/PHP-CS-Fixer@v3.62.0
   asset:
     file: php-cs-fixer.phar
 

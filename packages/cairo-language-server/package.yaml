@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/starkware-libs/cairo@v2.6.3
+  id: pkg:github/starkware-libs/cairo@v2.7.1
   asset:
     - target: linux_x64
       file: release-x86_64-unknown-linux-musl.tar.gz
