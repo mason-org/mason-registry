@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/golangci/golangci-lint@v1.60.1
+  id: pkg:github/golangci/golangci-lint@v1.60.2
   asset:
     - target: linux_armv6l
       file: golangci-lint-{{ version | strip_prefix "v" }}-linux-armv6.tar.gz
