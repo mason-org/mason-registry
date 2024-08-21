@@ -1,4 +1,4 @@
-name: Scheme-langserver
+name: scheme-langserver
 description: Provide scheme language features for example local identifier auto-complete and more.
 homepage: https://github.com/thqby/vscode-autohotkey2-lsp
 licenses:
@@ -11,7 +11,8 @@ categories:
 source:
   id: pkg:github/ufo5260987423/scheme-langserver@1.2.3
   asset:
-    target: linux_x64_gnu
+  - target: linux_x64_gnu
+    file: run
     bin: run
 bin:
   scheme-langserver: "{{source.asset.bin}}"
