@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:github/charmbracelet/glow@v1.5.1
+  id: pkg:github/charmbracelet/glow@v2.0.0
   asset:
     - target: darwin_arm64
       file: glow_Darwin_arm64.tar.gz
