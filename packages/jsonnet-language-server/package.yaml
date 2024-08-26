@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/grafana/jsonnet-language-server@v0.14.0
+  id: pkg:golang/github.com/grafana/jsonnet-language-server@v0.14.1
 
 bin:
   jsonnet-language-server: golang:jsonnet-language-server
