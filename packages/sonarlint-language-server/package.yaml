@@ -5,6 +5,7 @@ homepage: https://github.com/SonarSource/sonarlint-vscode
 licenses:
   - LGPL-3.0
 languages:
+  - AzureResourceManager
   - C
   - C++
   - C#
@@ -28,9 +29,9 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/SonarSource/sonarlint-vscode@4.7.0%2B76532
+  id: pkg:github/SonarSource/sonarlint-vscode@4.9.0%2B76673
   asset:
-    file: sonarlint-vscode-4.7.0.vsix
+    file: sonarlint-vscode-4.9.0.vsix
 
 bin:
   sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar
