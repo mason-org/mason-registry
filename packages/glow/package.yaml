@@ -12,29 +12,126 @@ source:
   id: pkg:github/charmbracelet/glow@v2.0.0
   asset:
     - target: darwin_arm64
-      file: glow_Darwin_arm64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Darwin_arm64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Darwin_arm64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Darwin_arm64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Darwin_arm64/completions/
+
     - target: darwin_x64
-      file: glow_Darwin_x86_64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Darwin_x86_64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Darwin_x86_64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Darwin_x86_64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Darwin_x86_64/completions/
+
     - target: linux_x64_openbsd
-      file: glow_Openbsd_x86_64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Openbsd_x86_64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Openbsd_x86_64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Openbsd_x86_64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Openbsd_x86_64/completions/
+
     - target: linux_arm64_openbsd
-      file: glow_Openbsd_arm64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Openbsd_arm64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Openbsd_arm64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Openbsd_arm64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Openbsd_arm64/completions/
+
     - target: linux_arm64
-      file: glow_Linux_arm64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Linux_arm64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Linux_arm64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Linux_arm64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Linux_arm64/completions/
+
     - target: linux_x64
-      file: glow_Linux_x86_64.tar.gz
-      bin: glow
+      file: glow_{{ version | strip_prefix "v" }}_Linux_x86_64.tar.gz
+      bin: glow_{{ version | strip_prefix "v" }}_Linux_x86_64/glow
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Linux_x86_64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Linux_x86_64/completions/
+
     - target: win_x86
-      file: glow_Windows_i386.zip
-      bin: glow.exe
+      file: glow_{{ version | strip_prefix "v" }}_Windows_i386.zip
+      bin: glow_{{ version | strip_prefix "v" }}_Windows_i386/glow.exe
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Windows_i386/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Windows_i386/completions/
+
     - target: win_x64
-      file: glow_Windows_x86_64.zip
-      bin: glow.exe
+      file: glow_{{ version | strip_prefix "v" }}_Windows_x86_64.zip
+      bin: glow_{{ version | strip_prefix "v" }}_Windows_x86_64/glow.exe
+      share:
+        man: glow_{{ version | strip_prefix "v" }}_Windows_x86_64/manpages/glow.1.gz
+        completions: glow_{{ version | strip_prefix "v" }}_Windows_x86_64/completions/
+
+  version_overrides:
+    - constraint: semver:<=v1.5.1
+      id: pkg:github/charmbracelet/glow@v1.5.1
+      asset:
+        - target: darwin_arm64
+          file: glow_Darwin_arm64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: darwin_x64
+          file: glow_Darwin_x86_64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: linux_x64_openbsd
+          file: glow_Openbsd_x86_64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: linux_arm64_openbsd
+          file: glow_Openbsd_arm64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: linux_arm64
+          file: glow_Linux_arm64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: linux_x64
+          file: glow_Linux_x86_64.tar.gz
+          bin: glow
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: win_x86
+          file: glow_Windows_i386.zip
+          bin: glow.exe
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
+
+        - target: win_x64
+          file: glow_Windows_x86_64.zip
+          bin: glow.exe
+          share:
+            man: manpages/glow.1.gz
+            completions: completions/
 
 bin:
-  glow: "{{source.asset.bin}}"
+  glow: "{{ source.asset.bin }}"
+
+share:
+  man/man1/glow.1.gz: "{{ source.asset.share.man }}"
+  bash_completions.d/glow.bash: "{{ source.asset.share.completions }}glow.bash"
+  fish-completions/glow.fish: "{{ source.asset.share.completions }}glow.fish"
+  zsh-completions/glow.fish: "{{ source.asset.share.completions }}glow.zsh"
