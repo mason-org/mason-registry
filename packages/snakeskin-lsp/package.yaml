@@ -1,5 +1,5 @@
 ---
-name: snakeskin_ls
+name: snakeskin-lsp
 description: LSP for snakeskin temaplate language.
 homepage: https://github.com/SnakeskinTpl/language-tools/tree/main/packages/cli
 licenses:
