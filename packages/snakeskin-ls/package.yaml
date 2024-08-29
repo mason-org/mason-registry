@@ -1,0 +1,16 @@
+---
+name: snakeskin_ls
+description: LSP for snakeskin temaplate language.
+homepage: https://github.com/SnakeskinTpl/language-tools/tree/main/packages/cli
+licenses:
+  - MIT
+languages:
+  - Snakeskin
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40snakeskin/cli@0.0.1
+
+bin:
+  snakeskin-cli: npm:snakeskin-cli
