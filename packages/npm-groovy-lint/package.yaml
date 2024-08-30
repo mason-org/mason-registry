@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/npm-groovy-lint@15.0.1
+  id: pkg:npm/npm-groovy-lint@15.0.2
 
 bin:
   npm-groovy-lint: npm:npm-groovy-lint
