@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/cssmodules-language-server@1.4.0
+  id: pkg:npm/cssmodules-language-server@1.4.1
 
 bin:
   cssmodules-language-server: npm:cssmodules-language-server
