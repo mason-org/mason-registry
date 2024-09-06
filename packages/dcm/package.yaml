@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/CQLabs/homebrew-dcm@1.21.2
+  id: pkg:github/CQLabs/homebrew-dcm@1.22.0
   asset:
     - target: darwin_arm64
       file: dcm-macos-arm-release.zip
