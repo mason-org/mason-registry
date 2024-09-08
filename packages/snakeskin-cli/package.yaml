@@ -1,6 +1,6 @@
 ---
-name: snakeskin-lsp
-description: LSP for snakeskin temaplate language.
+name: snakeskin-cli
+description: Snakeskin is an awesome JavaScript template engine with the best support for inheritance.
 homepage: https://github.com/SnakeskinTpl/language-tools/tree/main/packages/cli
 licenses:
   - MIT
