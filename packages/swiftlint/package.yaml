@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/realm/SwiftLint@0.56.2
+  id: pkg:github/realm/SwiftLint@0.57.0
   asset:
     - target: linux_x64_gnu
       file: swiftlint_linux.zip
