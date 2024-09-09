@@ -15,7 +15,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/rust-lang/rust-analyzer@2024-09-02
+  id: pkg:github/rust-lang/rust-analyzer@2024-09-09
   asset:
     - target: linux_x64_gnu
       file: rust-analyzer-x86_64-unknown-linux-gnu.gz
