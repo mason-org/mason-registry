@@ -1,7 +1,7 @@
 ---
 name: v-analyzer
 description: V language server.
-homepage: https://github.com/v-analyzer/v-analyzer
+homepage: https://github.com/vlang/v-analyzer
 licenses:
   - MIT
 languages:
@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/v-analyzer/v-analyzer@0.0.3-beta.1
+  id: pkg:github/vlang/v-analyzer@0.0.4-beta.1
   asset:
     - target: darwin_arm64
       file: v-analyzer-darwin-arm64.zip
@@ -26,7 +26,7 @@ source:
       bin: v-analyzer.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/v-analyzer/v-analyzer/{{version}}/editors/code/package.json
+  lsp: vscode:https://raw.githubusercontent.com/vlang/v-analyzer/{{version}}/editors/code/package.json
 
 bin:
   v-analyzer: "{{source.asset.bin}}"
