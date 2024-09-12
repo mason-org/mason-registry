@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/standard@17.1.0
+  id: pkg:npm/standard@17.1.1
 
 bin:
   standard: npm:standard
