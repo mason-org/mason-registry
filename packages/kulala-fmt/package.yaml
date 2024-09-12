@@ -1,0 +1,26 @@
+---
+name: kulala-fmt
+description: |
+  kulala-fmt
+  An opinionated .http and .rest files linter and formatter.
+homepage: https://github.com/mistweaverco/kulala-fmt
+licenses:
+  - MIT
+languages:
+  - http
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/mistweaverco/kulala-fmt@v1.3.2
+  asset:
+    - target: darwin_arm64
+      file: kulala-fmt-macos
+    - target: linux_x64
+      file: kulala-fmt-linux
+    - target: win_x64
+      file: kulala-fmt.exe
+
+bin:
+  kulala-fmt: "{{source.asset.file}}"
