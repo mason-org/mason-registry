@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:nuget/fantomas@6.3.13
+  id: pkg:nuget/fantomas@6.3.15
 
 bin:
   fantomas: nuget:fantomas
