@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40snakeskin/cli@0.0.1
+  id: pkg:npm/%40snakeskin/cli@0.0.6
 
 bin:
   snakeskin-cli: npm:snakeskin-cli
