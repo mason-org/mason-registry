@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/lkrms/pretty-php@v0.4.71
+  id: pkg:github/lkrms/pretty-php@v0.4.72
   asset:
     file: pretty-php.phar
 
