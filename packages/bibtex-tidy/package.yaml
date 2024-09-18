@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/bibtex-tidy@1.13.0
+  id: pkg:npm/bibtex-tidy@1.14.0
 
 bin:
   bibtex-tidy: npm:bibtex-tidy

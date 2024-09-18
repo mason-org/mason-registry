@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.1.1
+  id: pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.2.0
   asset:
     - target: darwin_arm64
       file: cobol-language-support-darwin-arm64-{{version}}.vsix

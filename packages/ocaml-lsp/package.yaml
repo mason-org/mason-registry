@@ -10,6 +10,6 @@ categories:
   - LSP
 
 source:
-  id: pkg:opam/ocaml-lsp-server@1.17.0
+  id: pkg:opam/ocaml-lsp-server@1.19.0
 bin:
   ocamllsp: opam:ocamllsp

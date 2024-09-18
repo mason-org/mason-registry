@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/mgechev/revive@v1.3.7
+  id: pkg:golang/github.com/mgechev/revive@v1.3.9
 
 bin:
   revive: golang:revive

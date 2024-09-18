@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/Samsung/netcoredbg@3.1.0-1031
+  id: pkg:github/Samsung/netcoredbg@3.1.1-1042
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: netcoredbg-osx-amd64.tar.gz:libexec/

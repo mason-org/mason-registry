@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/github.com/fatih/gomodifytags@v1.16.0
+  id: pkg:golang/github.com/fatih/gomodifytags@v1.17.0
 
 bin:
   gomodifytags: golang:gomodifytags

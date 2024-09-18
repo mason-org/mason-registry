@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/reorder-python-imports@3.12.0
+  id: pkg:pypi/reorder-python-imports@3.13.0
 
 bin:
   reorder-python-imports: pypi:reorder-python-imports

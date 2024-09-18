@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:golang/github.com/tmc/json-to-struct@v0.0.0-20200606071124-5576f9d7d291
+  id: pkg:golang/github.com/tmc/json-to-struct@v0.0.0-20230613234638-1f65fffbfdbb
 
 bin:
   json-to-struct: golang:json-to-struct

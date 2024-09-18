@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/FacilityApi/FacilityLanguageServer@v2.2.0
+  id: pkg:github/FacilityApi/FacilityLanguageServer@v2.3.0
   asset:
     file: Facility.LanguageServer.zip:libexec/
 
