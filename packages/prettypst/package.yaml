@@ -1,0 +1,16 @@
+---
+name: prettypst
+description: Formatter for Typst
+homepage: https://github.com/astrale-sharp/typstfmt
+licenses:
+  - MIT
+languages:
+  - Typst
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/prettypst@b8870c069ee1c5b579a08e40ac4dac1c47915b4b?repository_url=https://github.com/antonWetzel/prettypst&rev=true
+
+bin:
+  prettypst: cargo:prettypst
