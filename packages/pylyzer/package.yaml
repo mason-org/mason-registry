@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mtshiba/pylyzer@v0.0.61
+  id: pkg:github/mtshiba/pylyzer@v0.0.62
   asset:
     - target: darwin_arm64
       file: pylyzer-aarch64-apple-darwin.tar.gz
