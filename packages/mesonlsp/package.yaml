@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/JCWasmx86/mesonlsp@v4.3.4
+  id: pkg:github/JCWasmx86/mesonlsp@v4.3.5
   asset:
     - target: linux_x64
       file: mesonlsp-x86_64-unknown-linux-musl.zip
