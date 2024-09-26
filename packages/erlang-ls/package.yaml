@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/erlang-ls/erlang_ls@0.52.0
+  id: pkg:github/erlang-ls/erlang_ls@0.54.0
   build:
     - target: win
       run: |
