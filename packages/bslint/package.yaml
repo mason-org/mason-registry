@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40rokucommunity/bslint@0.8.24
+  id: pkg:npm/%40rokucommunity/bslint@0.8.25
 
 bin:
   bslint: npm:bslint
