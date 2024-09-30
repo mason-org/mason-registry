@@ -13,7 +13,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/open-policy-agent/opa@v0.68.0
+  id: pkg:github/open-policy-agent/opa@v0.69.0
   asset:
     - target: darwin_arm64
       file: opa_darwin_arm64_static
