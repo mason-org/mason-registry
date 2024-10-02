@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/cqframework/cql-language-server@v3.1.0
+  id: pkg:generic/cqframework/cql-language-server@v3.2.1
   download:
     files:
       cql-ls-service.jar: https://repo1.maven.org/maven2/org/opencds/cqf/cql/ls/cql-ls-service/{{ version | strip_prefix "v" }}/cql-ls-service-{{ version | strip_prefix "v" }}.jar

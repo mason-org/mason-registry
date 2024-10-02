@@ -15,7 +15,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/clang-format@19.1.0
+  id: pkg:pypi/clang-format@19.1.1
 
 bin:
   clang-format: pypi:clang-format
