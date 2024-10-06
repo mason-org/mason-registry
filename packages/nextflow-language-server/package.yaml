@@ -1,0 +1,20 @@
+---
+name: nextflow-language-server
+description: A language server for Nextflow.
+homepage: https://github.com/nextflow-io/language-server
+licenses:
+  - Apache-2.0
+languages:
+  - nextflow
+  - groovy
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/nextflow-io/language-server@41686be96eee6148e233989f37be00e847fb63a7
+  build:
+    run: gradle --no-daemon build
+
+bin:
+  nextflow-language-server: java-jar:build/libs/language-server-all.jar
