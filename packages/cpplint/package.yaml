@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/cpplint@1.6.1
+  id: pkg:pypi/cpplint@2.0.0
 
 bin:
   cpplint: pypi:cpplint
