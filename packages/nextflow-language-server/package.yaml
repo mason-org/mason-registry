@@ -14,8 +14,7 @@ source:
   # renovate:datasource=git-refs
   id: pkg:github/nextflow-io/vscode-language-nextflow@v1.0.0-alpha10
   asset:
-    # FIXME Talk to Ben about getting v in there?
-    file: nextflow-1.0.0-alpha10.zip
+    file: nextflow-{{ version | strip_prefix "v" }}.zip
     bin: extension/bin/language-server-all.jar
 
 schemas:
