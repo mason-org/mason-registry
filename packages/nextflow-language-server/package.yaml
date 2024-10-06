@@ -12,9 +12,13 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/nextflow-io/language-server@41686be96eee6148e233989f37be00e847fb63a7
-  build:
-    run: gradle --no-daemon build
+  id: pkg:github/nextflow-io/vscode-language-nextflow@v1.0.0-alpha10
+  asset:
+    # FIXME Talk to Ben about getting v in there?
+    file: nextflow-1.0.0-alpha10.zip
+    bin: extension/bin/language-server-all.jar
 
-bin:
-  nextflow-language-server: java-jar:build/libs/language-server-all.jar
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/{{version}}/package.json
+# bin:
+#   nextflow-language-server: "{{source.asset.bin}}"
