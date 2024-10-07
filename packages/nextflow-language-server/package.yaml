@@ -12,12 +12,12 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/nextflow-io/vscode-language-nextflow@v1.0.0-alpha10
+  id: pkg:github/edmundmiller/vscode-language-nextflow@1.0.0
   asset:
-    file: nextflow-{{ version | strip_prefix "v" }}.zip
-    bin: extension/bin/language-server-all.jar
+    file: nextflow-{{ version | strip_prefix "v" }}.vsix
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/{{version}}/package.json
-# bin:
-#   nextflow-language-server: "{{source.asset.bin}}"
+
+bin:
+  nextflow-language-server: java-jar:extension/bin/language-server-all.jar
