@@ -1,7 +1,7 @@
 ---
 name: nextflow-language-server
 description: A language server for Nextflow.
-homepage: https://github.com/nextflow-io/language-server
+homepage: https://github.com/nextflow-io/vscode-language-nextflow
 licenses:
   - Apache-2.0
 languages:
@@ -12,7 +12,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/edmundmiller/vscode-language-nextflow@1.0.0
+  id: pkg:github/nextflow-io/vscode-language-nextflow@v1.0.0-rc1
   asset:
     file: nextflow-{{ version | strip_prefix "v" }}.vsix
 
