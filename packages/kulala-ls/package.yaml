@@ -1,0 +1,13 @@
+---
+name: kulala_ls
+description: A minimal language server for HTTP syntax
+homepage: https://github.com/mistweaverco/kulala-ls
+licenses: [MIT]
+languages: [http]
+categories: [LSP]
+
+source:
+  id: pkg:npm/@mistweaverco/kulala-ls@1.0.12
+
+bin:
+  kulala-ls: npm:kulala-ls
