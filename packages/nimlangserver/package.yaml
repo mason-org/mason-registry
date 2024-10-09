@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nim-lang/langserver@v1.4.0
+  id: pkg:github/nim-lang/langserver@v1.6.0
   asset:
     - target: linux_x64
       file: nimlangserver-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
