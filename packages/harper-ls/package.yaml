@@ -17,6 +17,7 @@ languages:
   - C#
   - TOML
   - Lua
+  - Java
 categories:
   - LSP
 
@@ -36,7 +37,7 @@ source:
       file: harper-ls-aarch64-apple-darwin.tar.gz
       bin: harper-ls
     - target: win_x64
-      file: harper-ls-x86_64-pc-windows-gnu.zip
+      file: harper-ls-x86_64-pc-windows-msvc.zip
       bin: harper-ls.exe
 
 bin:
