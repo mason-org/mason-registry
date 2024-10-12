@@ -1,0 +1,20 @@
+---
+name: poryscript-pls
+description: |
+  Language server for poryscript (a high level scripting language for GBA-era Pokémon decompilation projects)
+homepage: https://github.com/huderlem/poryscript-pls
+licenses:
+  - MIT
+languages:
+  - Poryscript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/huderlem/poryscript-pls@1.0.7
+  build:
+    run: |
+      go build
+
+bin:
+  poryscript-pls: golang:poryscript-pls
