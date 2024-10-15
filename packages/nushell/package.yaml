@@ -1,0 +1,15 @@
+name: nushell
+description: A new type of shell
+homepage: https://www.nushell.sh/
+licenses:
+  - MIT
+languages:
+  - Nushell
+categories:
+  - LSP
+
+source:
+  id: pkg:github/nushell/nushell@0.91.0
+
+bin:
+  nu: nu
