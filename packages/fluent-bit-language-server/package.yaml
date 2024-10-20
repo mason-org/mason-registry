@@ -1,0 +1,39 @@
+---
+name: fluent-bit-language-server
+description: Language server for fluent-bit config file.
+homepage: https://github.com/sh-cho/fluent-bit-lsp
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - fluentbit
+categories:
+  - LSP
+
+source:
+  id: pkg:github/sh-cho/fluent-bit-lsp@0.2.45
+  asset:
+    - target: linux_x64_gnu
+      file: fluent-bit-language-server-x86_64-unknown-linux-gnu.gz
+      bin: fluent-bit-language-server-x86_64-unknown-linux-gnu
+    - target: linux_arm64_gnu
+      file: fluent-bit-language-server-aarch64-unknown-linux-gnu.gz
+      bin: fluent-bit-language-server-aarch64-unknown-linux-gnu
+    - target: linux_x64_musl
+      file: fluent-bit-language-server-x86_64-unknown-linux-musl.gz
+      bin: fluent-bit-language-server-x86_64-unknown-linux-musl
+    - target: darwin_x64
+      file: fluent-bit-language-server-x86_64-apple-darwin.gz
+      bin: fluent-bit-language-server-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: fluent-bit-language-server-aarch64-apple-darwin.gz
+      bin: fluent-bit-language-server-aarch64-apple-darwin
+    - target: win_x64
+      file: fluent-bit-language-server-x86_64-pc-windows-msvc.zip
+      bin: fluent-bit-language-server.exe
+    - target: win_arm64
+      file: fluent-bit-language-server-aarch64-pc-windows-msvc.zip
+      bin: fluent-bit-language-server.exe
+
+bin:
+  fluent-bit-language-server: "{{source.asset.bin}}"
