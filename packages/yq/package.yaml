@@ -17,12 +17,6 @@ source:
     - target: darwin_x64
       file: yq_darwin_amd64.tar.gz
       bin: yq_darwin_amd64
-    - target: linux_x64_gnu
-      file: yq_linux_amd64.tar.gz
-      bin: yq_linux_amd64
-    - target: linux_arm64_gnu
-      file: yq_linux_arm64.tar.gz
-      bin: yq_linux_arm64
     - target: linux_x64_openbsd
       file: yq_openbsd_amd64.tar.gz
       bin: yq_openbsd_amd64
@@ -32,6 +26,12 @@ source:
     - target: linux_x86_openbsd
       file: yq_openbsd_386.tar.gz
       bin: yq_openbsd_386
+    - target: linux_x64
+      file: yq_linux_amd64.tar.gz
+      bin: yq_linux_amd64
+    - target: linux_arm64
+      file: yq_linux_arm64.tar.gz
+      bin: yq_linux_arm64
     - target: win_x64
       file: yq_windows_amd64.exe
       bin: yq_windows_amd64.exe
