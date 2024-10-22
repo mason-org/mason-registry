@@ -11,5 +11,8 @@ categories:
 source:
   id: pkg:npm/basics-language-server@1.0.1
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/antonk52/basics-language-server/refs/heads/main/package.json
+
 bin:
   basics-language-server: npm:basics-language-server
