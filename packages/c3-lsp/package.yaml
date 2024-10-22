@@ -12,18 +12,17 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=github-tags
-  id: "pkg:github/pherrymason/c3-lsp@v0.3.2"
+  id: pkg:github/pherrymason/c3-lsp@v0.3.2
   asset:
-    - target: [linux_x64_gnu, linux_x64, unix]
+    - target: linux_x64_gnu
       file: c3lsp-linux-amd64.tar.gz
       bin: server/bin/release/c3lsp
-    - target: [darwin_arm64]
-      file: c3lsp-linux-amd64.tar.gz
+    - target: darwin_arm64
+      file: c3lsp-darwin-arm64.zip
       bin: server/bin/release/c3lsp
     - target: win_x64
-      file: c3lsp-linux-amd64.tar.gz
+      file: c3lsp-windows-amd64.zip
       bin: server/bin/release/c3lsp.exe
+
 bin:
   c3lsp: "{{source.asset.bin}}"
-
