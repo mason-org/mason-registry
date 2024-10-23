@@ -31,5 +31,8 @@ source:
       file: cobol-language-support-win32-x64-{{version}}-signed.vsix
       bin: extension/server/native/engine.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/eclipse-che4z/che-che4z-lsp-for-cobol/{{version}}/clients/cobol-lsp-vscode-extension/package.json
+
 bin:
   cobol-language-support: "{{source.asset.bin}}"
