@@ -29,7 +29,6 @@ source:
 
     - target: win
       run: |
-        @echo off
         for /f "delims=" %%i in ('nvim --headless -c "lua print(vim.fn.stdpath('data'))" -c q 2^>^&1') do set NVIM_DATA_PATH=%%i
         set PKG_DIR=%NVIM_DATA_PATH%\mason\packages\cppcheck
         cmake -S . -B build ^
