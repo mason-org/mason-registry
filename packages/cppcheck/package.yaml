@@ -1,0 +1,44 @@
+---
+name: cppcheck
+description: |
+  Static analysis tool for C/C++ code. It provides unique code analysis to detect
+  bugs and focuses on detecting undefined behaviour and dangerous coding constructs.
+homepage: https://github.com/danmar/cppcheck
+licenses:
+  - GPL-3.0-only
+languages:
+  - C
+  - C++
+categories:
+  - Linter
+
+source:
+  id: pkg:github/danmar/cppcheck@2.15.0
+  build:
+    - target: unix
+      run: |
+        NVIM_DATA_PATH=$(nvim --headless -c 'lua print(vim.fn.stdpath("data"))' -c 'q' 2>&1)
+        PKG_DIR=$NVIM_DATA_PATH/mason/packages/cppcheck
+        cmake -S . -B build \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=$PWD \
+          -DFILESDIR=$PKG_DIR
+        cmake --build build
+        cmake --install build
+      bin: bin/cppcheck
+
+    - target: win
+      run: |
+        @echo off
+        for /f "delims=" %%i in ('nvim --headless -c "lua print(vim.fn.stdpath('data'))" -c q 2^>^&1') do set NVIM_DATA_PATH=%%i
+        set PKG_DIR=%NVIM_DATA_PATH%\mason\packages\cppcheck
+        cmake -S . -B build ^
+          -DCMAKE_BUILD_TYPE=Release ^
+          -DCMAKE_INSTALL_PREFIX=%CD% ^
+          -DFILESDIR=%PKG_DIR%
+        cmake --build build
+        cmake --install build
+      bin: bin\cppcheck.exe
+
+bin:
+  cppcheck: "{{ source.build.bin }}"
