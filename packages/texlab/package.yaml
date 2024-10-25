@@ -28,5 +28,8 @@ source:
       file: texlab-x86_64-windows.zip
       bin: texlab.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/latex-lsp/texlab-vscode/{{version}}/package.json
+
 bin:
   texlab: "{{source.asset.bin}}"
