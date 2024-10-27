@@ -17,7 +17,7 @@ source:
   build:
     - target: unix
       run: |
-        NVIM_DATA_PATH=$(nvim --headless -c 'lua print(vim.fn.stdpath("data"))' -c 'q' 2>&1)
+        NVIM_DATA_PATH=$(nvim --headless -c "lua print(vim.fn.stdpath('data'))" -c "q" 2>&1)
         PKG_DIR=$NVIM_DATA_PATH/mason/packages/cppcheck
         cmake -S . -B build \
           -DCMAKE_BUILD_TYPE=Release \
@@ -29,12 +29,12 @@ source:
 
     - target: win
       run: |
-        for /f "delims=" %%i in ('nvim --headless -c "lua print(vim.fn.stdpath('data'))" -c q 2^>^&1') do set NVIM_DATA_PATH=%%i
-        set PKG_DIR=%NVIM_DATA_PATH%\mason\packages\cppcheck
-        cmake -S . -B build ^
-          -DCMAKE_BUILD_TYPE=Release ^
-          -DCMAKE_INSTALL_PREFIX=%CD% ^
-          -DFILESDIR=%PKG_DIR%
+        $NVIM_DATA_PATH = (nvim --headless -c "lua print(vim.fn.stdpath('data'))" -c "q" 2>&1 | Select-Object -Last 1)
+        $PKG_DIR = Join-Path $NVIM_DATA_PATH "mason\packages\cppcheck"
+        cmake -S . -B build `
+          -DCMAKE_BUILD_TYPE=Release `
+          -DCMAKE_INSTALL_PREFIX="$PWD" `
+          -DFILESDIR="$PKG_DIR"
         cmake --build build
         cmake --install build
       bin: bin\cppcheck.exe
