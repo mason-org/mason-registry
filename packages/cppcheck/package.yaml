@@ -35,8 +35,8 @@ source:
           -DCMAKE_BUILD_TYPE=Release `
           -DCMAKE_INSTALL_PREFIX="$PWD" `
           -DFILESDIR="$PKG_DIR"
-        cmake --build build
-        cmake --install build
+        cmake --build build --config Release
+        cmake --install build --config Release
       bin: bin\cppcheck.exe
 
 bin:
