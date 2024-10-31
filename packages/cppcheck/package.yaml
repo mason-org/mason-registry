@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/danmar/cppcheck@2.15.0
+  id: pkg:github/danmar/cppcheck@2.16.0
   build:
     - target: unix
       run: |
