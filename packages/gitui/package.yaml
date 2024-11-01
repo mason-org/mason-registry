@@ -10,10 +10,10 @@ categories: []
 source:
   id: pkg:github/extrawurst/gitui@v0.26.3
   asset:
-    - target: [darwin_arm64]
+    - target: darwin_arm64
       file: gitui-mac.tar.gz
       bin: gitui
-    - target: [darwin_x64]
+    - target: darwin_x64
       file: gitui-mac-x86.tar.gz
       bin: gitui
     - target: linux_x64
