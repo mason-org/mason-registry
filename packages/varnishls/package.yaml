@@ -1,0 +1,27 @@
+---
+name: varnishls
+description: Varnish VCL language server
+homepage: https://github.com/M4R7iNP/varnishls
+licenses:
+  - GPL-3.0
+  - LGPL-3.0
+languages:
+  - Varnish
+  - VCL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/M4R7iNP/varnishls@v0.0.13
+  asset:
+    - target: darwin_arm64
+      file: varnishls-aarch64-apple-darwin
+    - target: darwin_x64
+      file: varnishls-x86_64-apple-darwin
+    - target: linux_x64
+      file: varnishls-x86_64-unknown-linux-gnu
+    - target: win_x64
+      file: varnishls-x86_64-pc-windows-msvc.exe
+
+bin:
+  varnishls: "{{source.asset.file}}"
