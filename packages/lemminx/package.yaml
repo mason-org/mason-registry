@@ -25,5 +25,8 @@ source:
       file: lemminx-win32.zip
       bin: lemminx-win32.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/redhat-developer/vscode-xml/{{version}}/package.json
+
 bin:
   lemminx: "{{source.asset.bin}}"
