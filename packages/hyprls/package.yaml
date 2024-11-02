@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:golang/github.com/ewen-lbh/hyprls@v0.2.0#cmd/hyprls
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/hyprland-community/hyprls/{{version}}/vscode/package.json
+
 bin:
   hyprls: golang:hyprls
