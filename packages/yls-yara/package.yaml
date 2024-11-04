@@ -16,5 +16,8 @@ source:
     - linux
     - win
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/avast/yls/v{{version}}/editors/vscode/package.json
+
 bin:
   yls: pypi:yls
