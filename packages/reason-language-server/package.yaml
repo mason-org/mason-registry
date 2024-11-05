@@ -22,5 +22,8 @@ source:
       file: rls-windows.zip
       bin: rls-windows/reason-language-server.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/jaredly/reason-language-server/{{version}}/editor-extensions/vscode/package.json
+
 bin:
   reason-language-server: "{{source.asset.bin}}"
