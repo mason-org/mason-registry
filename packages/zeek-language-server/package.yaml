@@ -17,5 +17,8 @@ source:
     - target: darwin_x64
       file: zeek-language-server-x86_64-apple-darwin
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/bbannier/zeek-language-server/{{version}}/vscode/package.json
+
 bin:
   zeek-language-server: "{{source.asset.file}}"
