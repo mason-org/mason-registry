@@ -3,15 +3,13 @@ name: nextflow-language-server
 description: A language server for Nextflow.
 homepage: https://github.com/nextflow-io/language-server
 licenses:
-  - MIT
+  - Apache-2.0
 languages:
   - Nextflow
-  - Groovy
 categories:
   - LSP
 
 source:
-  # renovate:datasource=git-refs
   id: pkg:github/nextflow-io/language-server@v1.0.0
   asset:
     file: "language-server-all.jar"
