@@ -1,23 +1,23 @@
 ---
 name: nextflow-language-server
 description: A language server for Nextflow.
-homepage: https://github.com/nextflow-io/vscode-language-nextflow
+homepage: https://github.com/nextflow-io/language-server
 licenses:
   - MIT
 languages:
-  - nextflow
-  - groovy
+  - Nextflow
+  - Groovy
 categories:
   - LSP
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/nextflow-io/vscode-language-nextflow@v1.0.0-rc1
+  id: pkg:github/nextflow-io/language-server@v1.0.0
   asset:
-    file: nextflow-{{ version | strip_prefix "v" }}.vsix
+    file: "language-server-all.jar"
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/{{version}}/package.json
 
 bin:
-  nextflow-language-server: java-jar:extension/bin/language-server-all.jar
+  nextflow-language-server: java-jar:language-server-all.jar
