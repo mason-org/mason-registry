@@ -28,6 +28,8 @@ source:
       file: ols-x86_64-pc-windows-msvc.zip
       bin: ols-x86_64-pc-windows-msvc.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/DanielGavin/ols/{{version}}/editors/vscode/package.json
+
 bin:
   ols: "{{source.asset.bin}}"
-
