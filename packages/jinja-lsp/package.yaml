@@ -18,5 +18,8 @@ categories:
 source:
   id: pkg:cargo/jinja-lsp@0.1.83
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/uros-5/jinja-lsp/v{{version}}/editors/code/package.json
+
 bin:
   jinja-lsp: cargo:jinja-lsp
