@@ -14,5 +14,8 @@ source:
   asset:
     file: drools-lsp-server-jar-with-dependencies.jar
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/kiegroup/drools-lsp/{{version}}/client/package.json
+
 share:
   drools-lsp/drools-lsp-server-jar-with-dependencies.jar: drools-lsp-server-jar-with-dependencies.jar
