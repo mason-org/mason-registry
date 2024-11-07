@@ -9,7 +9,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/cspell@8.15.7
+  id: pkg:npm/cspell@8.16.0
 
 bin:
   cspell: npm:cspell
