@@ -23,7 +23,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/%40fsouza/prettierd@0.25.3
+  id: pkg:npm/%40fsouza/prettierd@0.25.4
 
 bin:
   prettierd: npm:prettierd
