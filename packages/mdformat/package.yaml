@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/mdformat@0.7.18
+  id: pkg:pypi/mdformat@0.7.19
 
 bin:
   mdformat: pypi:mdformat
