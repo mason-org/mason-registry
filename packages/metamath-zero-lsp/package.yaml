@@ -24,6 +24,9 @@ source:
         cargo build --release
       bin: mm0-rs/target/release/mm0-rs.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/digama0/mm0/{{version}}/vscode-mm0/package.json
+
 bin:
   mm0-rs: "{{source.build.bin}}"
 
