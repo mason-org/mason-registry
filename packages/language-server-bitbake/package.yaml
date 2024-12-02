@@ -1,0 +1,19 @@
+---
+name: language-server-bitbake
+description: A language server for BitBake.
+homepage: https://github.com/yoctoproject/vscode-bitbake
+licenses:
+  - MIT
+languages:
+  - Bitbake
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/language-server-bitbake@2.5.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/yoctoproject/vscode-bitbake/v{{version}}/server/package.json
+
+bin:
+  language-server-bitbake: npm:language-server-bitbake
