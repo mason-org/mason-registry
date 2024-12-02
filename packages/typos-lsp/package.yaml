@@ -33,5 +33,8 @@ source:
       file: typos-lsp-{{ version }}-aarch64-pc-windows-msvc.zip
       bin: target/aarch64-pc-windows-msvc/release/typos-lsp.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/tekumara/typos-lsp/{{version}}/package.json
+
 bin:
   typos-lsp: "{{source.asset.bin}}"
