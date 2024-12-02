@@ -1,0 +1,26 @@
+---
+name: vscode-autohotkey2-lsp
+description: AutoHotkey v2 language support
+homepage: https://github.com/thqby/vscode-autohotkey2-lsp
+licenses:
+  - LGPL-3.0
+languages:
+  - AutoHotkey
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=git-refs
+  id: pkg:github/thqby/vscode-autohotkey2-lsp@c40a0451e938dd71a8f067f9fd0124ff41b99c6e
+  build:
+    - target: win
+      run: |
+        Remove-Item .npmrc
+        Remove-Item package-lock.json
+        #node -e "require('fs').copyFileSync('./tools/install.js', './install.js')"
+        #node install.js
+        npm install
+        node esbuild.mjs
+
+bin:
+  vscode-autohotkey2-lsp: node:server/dist/server.js
