@@ -67,6 +67,9 @@ source:
         project: verible-{{version}}-macOS/bin/verible-verilog-project
         syntax: verible-{{version}}-macOS/bin/verible-verilog-syntax
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/chipsalliance/verible/{{version}}/verilog/tools/ls/vscode/package.json
+
 bin:
   verible-verilog-diff: "{{source.asset.bin.diff}}"
   verible-verilog-format: "{{source.asset.bin.format}}"
