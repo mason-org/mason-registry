@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:npm/m68k-lsp-server@0.11.2
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/grahambates/m68k-lsp/v{{version}}/client/package.json
+
 bin:
   m68k-lsp-server: npm:m68k-lsp-server
