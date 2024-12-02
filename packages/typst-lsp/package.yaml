@@ -44,5 +44,8 @@ source:
         - target: win_x64
           file: typst-lsp-win32-x64.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/nvarner/typst-lsp/{{version}}/editors/vscode/package.json
+
 bin:
   typst-lsp: "{{source.asset.file}}"
