@@ -6,6 +6,10 @@ licenses:
   - MIT
 languages:
   - Bash
+  - Csh
+  - Ksh
+  - Sh
+  - Zsh
 categories:
   - LSP
 
