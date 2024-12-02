@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:npm/remark-language-server@3.0.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/remarkjs/vscode-remark/{{version}}/package.json
+
 bin:
   remark-language-server: npm:remark-language-server
