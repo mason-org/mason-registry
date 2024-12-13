@@ -1,0 +1,25 @@
+---
+name: dafny
+description: Dafny is a verification-aware programming language
+homepage: https://dafny.org/
+licenses:
+  - MIT
+languages:
+  - Dafny
+categories:
+  - LSP
+
+source:
+  id: pkg:github/dafny-lang/dafny@v4.5.0
+  asset:
+    - target: darwin_arm64
+      file: dafny-{{ version | strip_prefix "v" }}-arm64-macos-11.zip
+    - target: darwin_x64
+      file: dafny-{{ version | strip_prefix "v" }}-x64-macos-11.zip
+    - target: linux_x64
+      file: dafny-{{ version | strip_prefix "v" }}-x64-ubuntu-20.04.zip
+    - target: win_x64
+      file: dafny-{{ version | strip_prefix "v" }}-x64-windows-2019.zip
+
+bin:
+  dafny: "{{source.asset.bin}}"
