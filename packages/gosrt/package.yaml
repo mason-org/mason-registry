@@ -1,0 +1,16 @@
+---
+name: gosrt
+description: A Go formatter that sorts top-level symbols like godoc.
+homepage: https://gitlab.com/biffen/gosrt
+licenses:
+  - MIT
+languages:
+  - Go
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/gitlab.com/biffen/gosrt@v0.4.2
+
+bin:
+  gosrt: golang:gosrt
