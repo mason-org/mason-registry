@@ -1,0 +1,21 @@
+---
+name: alejandra
+description: The Uncompromising Nix Code Formatter
+homepage: https://github.com/kamadorueda/alejandra
+licenses:
+  - Unlicense
+languages:
+  - Nix
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/kamadorueda/alejandra@3.0.0
+  asset:
+    - target: linux_x64
+      file: alejandra-x86_64-unknown-linux-musl
+  supported_platforms:
+    - linux_x64_musl
+
+bin:
+  alejandra: "{{source.asset.file}}"
