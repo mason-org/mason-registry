@@ -33,7 +33,7 @@ source:
         slangd: bin/slangd
         slangc: bin/slangc
     - target: win_x64
-      file: slang-{{ version | strip_prefix "v" }}-windows_x86_64.zip
+      file: slang-{{ version | strip_prefix "v" }}-windows-x86_64.zip
       bin:
         slangd: bin/slangd.exe
         slangc: bin/slangc.exe
