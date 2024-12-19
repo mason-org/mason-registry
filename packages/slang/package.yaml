@@ -23,22 +23,22 @@ source:
         slangd: bin/linux-x64/release/slangd
         slangc: bin/linux-x64/release/slangc
     - target: darwin_x64
-      file: slang-{{ version | strip_prefix "v" }}-macos-x64.zip
+      file: slang-{{ version | strip_prefix "v" }}-macos-x86_64.tar.gz
       bin:
         slangd: bin/macosx-x64/release/slangd
         slangc: bin/macosx-x64/release/slangc
     - target: darwin_arm64
-      file: slang-{{ version | strip_prefix "v" }}-macos-aarch64.zip
+      file: slang-{{ version | strip_prefix "v" }}-macos-aarch64.tar.gz
       bin:
         slangd: bin/macosx-aarch64/release/slangd
         slangc: bin/macosx-aarch64/release/slangc
     - target: win_x64
-      file: slang-{{ version | strip_prefix "v" }}-win64.zip
+      file: slang-{{ version | strip_prefix "v" }}-windows_x86_64.zip
       bin:
         slangd: bin/windows-x64/release/slangd.exe
         slangc: bin/windows-x64/release/slangc.exe
     - target: win_arm64
-      file: slang-{{ version | strip_prefix "v" }}-win-arm64.zip
+      file: slang-{{ version | strip_prefix "v" }}-windows-aarch64.zip
       bin:
         slangd: bin/windows-aarch64/release/slangd.exe
         slangc: bin/windows-aarch64/release/slangc.exe
