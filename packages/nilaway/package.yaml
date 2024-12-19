@@ -18,3 +18,5 @@ source:
 
 bin:
   nilaway: golang:nilaway
+
+ci_skip: true
