@@ -1,0 +1,21 @@
+---
+name: nextflow-language-server
+description: A language server for Nextflow.
+homepage: https://github.com/nextflow-io/language-server
+licenses:
+  - Apache-2.0
+languages:
+  - Nextflow
+categories:
+  - LSP
+
+source:
+  id: pkg:github/nextflow-io/language-server@v1.0.0
+  asset:
+    file: "language-server-all.jar"
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/{{version}}/package.json
+
+bin:
+  nextflow-language-server: java-jar:language-server-all.jar
