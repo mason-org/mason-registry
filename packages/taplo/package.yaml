@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/tamasfe/taplo@0.8.1
+  id: pkg:github/tamasfe/taplo@0.9.3
   asset:
     - target: darwin_arm64
       file: taplo-full-darwin-aarch64.gz
