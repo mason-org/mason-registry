@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/stoplightio/vscode-spectral@v1.1.2
+  id: pkg:github/stoplightio/vscode-spectral@v1.1.4
   build:
     run: |
       npm exec yarn@1 install
