@@ -35,9 +35,6 @@ source:
     - target: win_x64
       file: cpptools-windows-x64.vsix
       bin: extension/debugAdapters/bin/OpenDebugAD7.exe
-    - target: win_x86
-      file: cpptools-windows-x86.vsix
-      bin: extension/debugAdapters/bin/OpenDebugAD7.exe
 
   version_overrides:
     - constraint: semver:<=v1.20.5
