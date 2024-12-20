@@ -11,16 +11,16 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/web-infra-dev/oxc@oxlint_v0.0.20
+  id: pkg:github/web-infra-dev/oxc@oxlint_v0.5.3
   asset:
     - target: darwin_arm64
       file: oxlint-darwin-arm64
     - target: darwin_x64
       file: oxlint-darwin-x64
     - target: linux_arm64_gnu
-      file: oxlint-linux-arm64
+      file: oxlint-linux-arm64-gnu
     - target: linux_x64_gnu
-      file: oxlint-linux-x64
+      file: oxlint-linux-x64-gnu
     - target: win_arm64
       file: oxlint-win32-arm64.exe
     - target: win_x64
