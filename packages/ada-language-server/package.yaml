@@ -14,16 +14,16 @@ source:
   asset:
     - target: darwin_x64
       file: als-{{version}}-darwin-x64.tar.gz
-      bin: x64/darwin/ada_language_server
+      bin: integration/vscode/ada/x64/darwin/ada_language_server
     - target: darwin_arm64
       file: als-{{version}}-darwin-arm64.tar.gz
-      bin: arm64/darwin/ada_language_server
+      bin: integration/vscode/ada/arm64/darwin/ada_language_server
     - target: linux_arm64_gnu
       file: als-{{version}}-linux-arm64.tar.gz
-      bin: x64/linux/ada_language_server
+      bin: integration/vscode/ada/x64/linux/ada_language_server
     - target: linux_x64_gnu
       file: als-{{version}}-linux-x64.tar.gz
-      bin: x64/linux/ada_language_server
+      bin: integration/vscode/ada/x64/linux/ada_language_server
     - target: win_x64
       file: als-{{version}}-win32-x64.tar.gz
       bin: integration/vscode/ada/x64/win32/ada_language_server.exe
