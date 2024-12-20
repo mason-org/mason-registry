@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/yapf@0.40.2
+  id: pkg:pypi/yapf@0.43.0
   extra_packages:
     - toml
 

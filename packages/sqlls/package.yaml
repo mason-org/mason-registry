@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/sql-language-server@1.7.0
+  id: pkg:npm/sql-language-server@1.7.1
 
 bin:
   sql-language-server: npm:sql-language-server

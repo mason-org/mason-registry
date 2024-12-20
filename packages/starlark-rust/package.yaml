@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/starlark_bin@0.12.0
+  id: pkg:cargo/starlark_bin@0.13.0
 
 bin:
   starlark: cargo:starlark
