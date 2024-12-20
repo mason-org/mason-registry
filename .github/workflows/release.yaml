@@ -3,77 +3,14 @@ name: Release
 
 on:
   push:
-    tags:
-      - "**"
     branches:
       - main
 
 jobs:
-  tag:
-    name: Tag
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    outputs:
-      tag: ${{ steps.tag.outputs.tag }}
-      should-release: ${{ steps.tag.outputs.should-release }}
-
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-      - id: adjnoun
-        uses: mason-org/actions/adj-noun-generator@v1
-      - id: tag
-        name: Get/create tag
-        shell: bash
-        run: |
-          if [[ $GITHUB_REF =~ ^refs/tags ]]; then
-            echo "Releasing tag $GITHUB_REF_NAME"
-            printf "tag=%s\nshould-release=true" "$GITHUB_REF_NAME" >> "$GITHUB_OUTPUT"
-          elif [[ $(git diff-tree --name-only --no-commit-id HEAD -- packages | wc -l) -gt 0 ]]; then
-            declare TAG
-            TAG=$(date +%Y-%m-%d)-$ADJNOUN
-            printf "tag=%s\nshould-release=true" "$TAG" >> "$GITHUB_OUTPUT"
-            echo "Tagging and pushing $TAG"
-            git tag "$TAG" HEAD
-            git push origin "$TAG"
-          else
-            echo "No tag was pushed, and no package definition was changed."
-            echo "should-release=false" >> "$GITHUB_OUTPUT"
-          fi
-        env:
-          GITHUB_REF: ${{ github.ref }}
-          GITHUB_REF_NAME: ${{ github.ref_name }}
-          ADJNOUN: ${{ steps.adjnoun.outputs.word }}
-
   release:
-    needs: [tag]
-    if: ${{ needs.tag.outputs.should-release == 'true' }}
     name: Release
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up yq
-        shell: bash
-        run: |
-          sudo curl -fL "https://github.com/mikefarah/yq/releases/download/v4.30.6/yq_linux_amd64" -o /usr/local/bin/yq
-          sudo chmod +x /usr/local/bin/yq
-      - name: Compile
-        shell: bash
-        run: |
-          yq ea '[.]' -o json packages/*/package.yaml > registry.json
-          zip -r registry.json.zip registry.json
-          sha256sum registry.json registry.json.zip > checksums.txt
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ needs.tag.outputs.tag }}
-          fail_on_unmatched_files: true
-          generate_release_notes: false
-          files: |
-            registry.json.zip
-            checksums.txt
+      - uses: mason-org/actions/registry-release@v1
