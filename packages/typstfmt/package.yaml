@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/astrale-sharp/typstfmt@0.2.9
+  id: pkg:github/astrale-sharp/typstfmt@0.2.10
   asset:
     - target: darwin_arm64
       file: typstfmt-aarch64-apple-darwin.tar.xz

@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:golang/github.com/sqls-server/sqls@v0.2.28
 
+schemas:
+  lsp: https://raw.githubusercontent.com/sqls-server/sqls/{{version}}/schema.json
+
 bin:
   sqls: golang:sqls

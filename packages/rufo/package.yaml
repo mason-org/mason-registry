@@ -16,7 +16,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:gem/rufo@0.17.1
+  id: pkg:gem/rufo@0.18.0
 
 bin:
   rufo: gem:rufo

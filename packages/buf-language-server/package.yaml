@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/bufbuild/buf-language-server@v0.0.0-20221121155404-1e927a5df512#cmd/bufls
+  id: pkg:golang/github.com/bufbuild/buf-language-server@v0.0.0-20240213221648-8e42e5e2e24f#cmd/bufls
 
 bin:
   bufls: golang:bufls
