@@ -8,6 +8,7 @@ languages:
   - VHDL
 categories:
   - Formatter
+  - Linter
 
 source:
   id: pkg:pypi/vsg@3.24.0
