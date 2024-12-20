@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40typespec/compiler@0.62.0
+  id: pkg:npm/%40typespec/compiler@0.63.0
 
 bin:
   tsp-server: npm:tsp-server

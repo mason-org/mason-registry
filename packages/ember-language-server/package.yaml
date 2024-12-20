@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ember-tooling/ember-language-server@2.30.4
+  id: pkg:npm/%40ember-tooling/ember-language-server@2.30.5
 
 bin:
   ember-language-server: npm:ember-language-server
