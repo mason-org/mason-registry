@@ -1,5 +1,5 @@
 ---
-name: wing-language-server
+name: wing
 description: A programming language for the cloud
 homepage: https://www.winglang.io
 licenses:
@@ -7,7 +7,10 @@ licenses:
 languages:
   - Wing
 categories:
+  - Compiler
+  - DAP
   - LSP
+  - Runtime
 
 source:
   id: pkg:npm/winglang@0.85.34
