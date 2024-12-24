@@ -21,6 +21,10 @@ source:
       files:
         terraform-ls.zip: https://releases.hashicorp.com/terraform-ls/{{ version | strip_prefix "v" }}/terraform-ls_{{ version | strip_prefix "v" }}_darwin_amd64.zip
       bin: terraform-ls
+    - target: freebsd_x64
+      files:
+        terraform-ls.zip: https://releases.hashicorp.com/terraform-ls/{{ version | strip_prefix "v" }}/terraform-ls_{{ version | strip_prefix "v" }}_freebsd_amd64.zip
+      bin: terraform-ls
     - target: linux_arm64
       files:
         terraform-ls.zip: https://releases.hashicorp.com/terraform-ls/{{ version | strip_prefix "v" }}/terraform-ls_{{ version | strip_prefix "v" }}_linux_arm64.zip
