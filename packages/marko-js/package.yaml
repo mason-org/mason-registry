@@ -1,0 +1,12 @@
+name: marko-language-server
+description: Language Server for Marko
+homepage: https://github.com/marko-js/language-server
+licenses:
+  - MIT
+languages:
+  - Marko
+categories:
+  - LSP
+
+source:
+    id: pkg:npm/%40marko/language-server@1.4.7
