@@ -1,0 +1,20 @@
+---
+name: refactorex
+description: Language server allowing for refactoring Elixir code
+homepage: https://github.com/gp-pereira/refactorex
+licenses:
+  - MIT
+languages:
+  - Elixir
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/synic/refactorex-mason@v0.1.28
+  build:
+    run: ./build.sh
+    bin: exec:refactorex-release/bin/start-stdio
+
+bin:
+  refactorex: "{{source.build.bin}}"
