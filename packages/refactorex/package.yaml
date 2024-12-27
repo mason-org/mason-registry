@@ -1,0 +1,19 @@
+---
+name: refactorex
+description: Language server allowing for refactoring Elixir code
+homepage: https://github.com/gp-pereira/refactorex
+licenses:
+  - MIT
+languages:
+  - Elixir
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/gp-pereira/refactorex@0.1.29
+  build:
+    run: mix do deps.get, compile
+
+bin:
+  refactorex: exec:bin/start
