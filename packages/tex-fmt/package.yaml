@@ -1,0 +1,16 @@
+---
+name: tex-fmt
+description: LaTeX formatter written in Rust
+homepage: https://github.com/WGUNDERWOOD/tex-fmt
+licenses:
+  - MIT
+languages:
+  - LaTeX
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/tex-fmt@0.5.1
+
+bin:
+  tex-fmt: cargo:tex-fmt
