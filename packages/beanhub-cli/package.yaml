@@ -1,0 +1,16 @@
+---
+name: beanhub-cli
+description: A simple beancount formatter that keeps comments.
+homepage: https://beanhub-cli-docs.beanhub.io/
+licenses:
+  - MIT
+languages:
+  - Beancount
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/beanhub-cli@1.4.1
+
+bin:
+  bh: pypi:bh
