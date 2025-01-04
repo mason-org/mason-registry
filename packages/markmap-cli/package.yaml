@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:npm/markmap-cli@0.18.4
+  id: pkg:npm/markmap-cli@0.18.5
 
 bin:
   markmap: npm:markmap
