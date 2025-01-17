@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:cargo/htmx-lsp@0.1.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/ThePrimeagen/htmx-lsp/{{version}}/client/vscode/package.json
+
 bin:
   htmx-lsp: cargo:htmx-lsp
