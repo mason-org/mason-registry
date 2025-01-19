@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/language-server-bitbake@2.7.0
+  id: pkg:npm/language-server-bitbake@2.8.0
 
 bin:
   language-server-bitbake: npm:language-server-bitbake
