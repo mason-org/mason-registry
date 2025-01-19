@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/thqby/vscode-autohotkey2-lsp@9e59f6d6c5ac4e29924e48efd1e6a7412ca72563
+  id: pkg:github/thqby/vscode-autohotkey2-lsp@2f6de3c75ce91054b0ace0c0bc39001a4ff9e017
   build:
     - target: win
       run: |
