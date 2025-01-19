@@ -31,5 +31,25 @@ source:
       file: nimlangserver-{{ version | strip_prefix "v" }}-windows-amd64.zip
       bin: nimlangserver.exe
 
+  version_overrides:
+    - constraint: semver:>=v1.8.0
+      id: pkg:github/nim-lang/langserver@v1.8.0
+      asset:
+        - target: linux_x64
+          file: nimlangserver-linux-amd64.tar.gz
+          bin: nimlangserver
+        - target: linux_arm64
+          file: nimlangserver-linux-arm64.tar.gz
+          bin: nimlangserver
+        - target: darwin_x64
+          file: nimlangserver-macos-amd64.zip
+          bin: nimlangserver
+        - target: darwin_arm64
+          file: nimlangserver-macos-arm64.zip
+          bin: nimlangserver
+        - target: win_x64
+          file: nimlangserver-windows-amd64.zip
+          bin: nimlangserver.exe
+
 bin:
   nimlangserver: "{{source.asset.bin}}"
