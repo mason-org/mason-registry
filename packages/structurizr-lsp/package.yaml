@@ -1,0 +1,17 @@
+---
+name: structurizr-lsp
+description: |
+  Structurizr LSP is an unofficial LSP created for the Structurizr DSL written in Go
+homepage: https://pkg.go.dev/github.com/tacsiazuma/structurizr-lsp
+licenses:
+  - MIT
+languages:
+  - Structurizr
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github.com/tacsiazuma/structurizr-lsp@v0.0.3
+
+bin:
+  structurizr-lsp: golang:structurizr-lsp
