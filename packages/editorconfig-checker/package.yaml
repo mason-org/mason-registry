@@ -38,9 +38,6 @@ source:
     - target: win_arm64
       file: ec-windows-arm64.zip
       bin: bin/ec-windows-arm64.exe
-    - target: win_arm
-      file: ec-windows-arm.zip
-      bin: bin/ec-windows-arm.exe
 
   version_overrides:
     - constraint: semver:<=v3.0.3
