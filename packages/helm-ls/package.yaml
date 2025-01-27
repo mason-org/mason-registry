@@ -20,6 +20,8 @@ source:
       file: helm_ls_linux_amd64
     - target: linux_arm
       file: helm_ls_linux_arm
+    - target: linux_arm64
+      file: helm_ls_linux_arm64
     - target: win_x64
       file: helm_ls_windows_amd64.exe
 
