@@ -78,4 +78,4 @@ source:
           bin: bin/ec-windows-arm.exe
 
 bin:
-  bin/editorconfig-checker: "{{source.asset.bin}}"
+  editorconfig-checker: "{{source.asset.bin}}"
