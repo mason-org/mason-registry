@@ -17,7 +17,10 @@ source:
   build:
     # This repository has the jars pre-built and committed, but there is no repository releases.
     # Adding this here because it is required by the schema.
-    run: ''
+    run: ""
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/dgileadi/vscode-java-decompiler/{{version}}/package.json
 
 share:
-  vscode-java-decompiler/bundles/: 'server/'
+  vscode-java-decompiler/bundles/: "server/"
