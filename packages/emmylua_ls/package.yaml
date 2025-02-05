@@ -1,0 +1,16 @@
+---
+name: emmylua_ls
+description: The language server for Lua, offering extensive features for different Lua versions.
+homepage: https://github.com/CppCXY/emmylua-analyzer-rust/tree/main/crates/emmylua_ls
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/emmylua_ls@0.4.4
+
+bin:
+  emmylua_ls: cargo:emmylua_ls
