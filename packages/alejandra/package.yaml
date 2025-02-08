@@ -1,0 +1,16 @@
+---
+name: alejandra
+description: The Uncompromising Nix Code Formatter
+homepage: https://github.com/kamadorueda/alejandra
+licenses:
+  - Unlicense
+languages:
+  - Nix
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/alejandra_cli@3.1.0?repository_url=https://github.com/kamadorueda/alejandra
+
+bin:
+  alejandra: cargo:alejandra
