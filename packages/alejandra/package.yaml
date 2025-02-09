@@ -14,8 +14,8 @@ source:
   asset:
     - target: linux_x64
       file: alejandra-x86_64-unknown-linux-musl
-  supported_platforms:
-    - linux_x64_musl
+    - target: linux_arm64
+      file: alejandra-aarch64-unknown-linux-musl
 
 bin:
   alejandra: "{{source.asset.file}}"
