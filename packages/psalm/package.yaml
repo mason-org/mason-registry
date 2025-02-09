@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:composer/vimeo/psalm@5.26.1
+  id: pkg:composer/vimeo/psalm@6.5.0
 
 bin:
   psalm: composer:psalm

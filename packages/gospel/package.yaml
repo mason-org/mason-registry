@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/kortschak/gospel@v1.14.0
+  id: pkg:golang/github.com/kortschak/gospel@v1.15.0
 
 bin:
   gospel: golang:gospel
