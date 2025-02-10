@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/bandit@1.7.10
+  id: pkg:pypi/bandit@1.8.2
 
 bin:
   bandit: pypi:bandit
