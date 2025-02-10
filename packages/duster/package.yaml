@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:composer/tightenco/duster@v3.0.3
+  id: pkg:composer/tightenco/duster@v3.1.0
 
 bin:
   duster: composer:duster
