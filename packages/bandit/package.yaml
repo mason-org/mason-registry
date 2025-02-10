@@ -3,7 +3,7 @@ name: bandit
 description: Bandit, a security linter from PyCQA
 homepage: https://pypi.org/project/bandit/
 licenses:
-  - Apache license
+  - Apache-2.0
 languages:
   - Python
 categories:
