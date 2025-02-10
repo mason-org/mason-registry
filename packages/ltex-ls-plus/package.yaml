@@ -14,22 +14,41 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ltex-plus/ltex-ls-plus@18.2.0
+  id: pkg:github/ltex-plus/ltex-ls-plus@18.4.0
   asset:
     # The platform-specific releases bundle a java runtime engine, and are
     # therefore preferable to avoid external dependencies (see #2837).
-    - target: darwin
+    - target: linux_arm64_gnu
+      file: ltex-ls-plus-{{version}}-linux_aarch64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: linux_x64_gnu
+      file: ltex-ls-plus-{{version}}-linux-x64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: darwin_arm64
+      file: ltex-ls-plus-{{version}}-mac-aarch64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: darwin_x64
       file: ltex-ls-plus-{{version}}-mac-x64.tar.gz
       bin:
         lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
         cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
-    - target: win
+    - target: win_x64
       file: ltex-ls-plus-{{version}}-windows-x64.zip
       bin:
         lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus.bat
         cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus.bat
-    # using platform-independent release to support linux arm64
-    # (see https://github.com/mason-org/mason-registry/pull/2837#pullrequestreview-1686482498)
+    - target: win_arm64
+      file: ltex-ls-plus-{{version}}-windows-aarch64.zip
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus.bat
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus.bat
+    # using platform-independent release to support non-gnu linux
     - target: linux
       file: ltex-ls-plus-{{version}}.tar.gz
       bin:
