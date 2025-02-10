@@ -18,10 +18,10 @@ source:
     - target: darwin_arm64
       file: ts_query_ls-aarch64-apple-darwin.tar.gz
       bin: ts_query_ls
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: ts_query_ls-x86_64-unknown-linux-gnu.tar.gz
       bin: ts_query_ls
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file: ts_query_ls-aarch64-unknown-linux-gnu.tar.gz
       bin: ts_query_ls
     - target: win_x64
