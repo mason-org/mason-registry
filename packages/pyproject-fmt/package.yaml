@@ -1,0 +1,17 @@
+---
+name: pyproject-fmt
+description: Format your pyproject.toml file
+homepage: https://pypi.org/project/pyproject-fmt/
+licenses:
+  - MIT
+languages:
+  - Python
+  - TOML
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/pyproject-fmt@2.5.0
+
+bin:
+  pyproject-fmt: pypi:pyproject-fmt
