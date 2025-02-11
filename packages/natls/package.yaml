@@ -1,0 +1,19 @@
+---
+name: natls
+description: Language Server implementation for the Natural 4GL programming language
+homepage: https://github.com/MarkusAmshove/natls
+licenses:
+  - MIT
+languages:
+  - Natural
+categories:
+  - LSP
+
+source:
+  id: pkg:github/MarkusAmshove/natls@v0.15
+  asset:
+    - target: [win_x64, linux_x64, darwin_x64, darwin_arm64]
+      file: natls.jar
+
+bin:
+  natls: java-jar:{{source.asset.file}}
