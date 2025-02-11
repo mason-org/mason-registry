@@ -25,10 +25,7 @@ source:
     - target: darwin_x64
       file: x86_64-macos.tar.gz
       bin: x86_64-macos/superhtml
-    - target: linux_x64_musl
-      file: x86_64-linux-musl.tar.gz
-      bin: x86_64-linux-musl/superhtml
-    - target: linux_x64_gnu
+    - target: linux_x64
       file: x86_64-linux-musl.tar.gz
       bin: x86_64-linux-musl/superhtml
     - target: win_x64
