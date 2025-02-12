@@ -19,5 +19,8 @@ source:
     - target: win_x64
       file: prosemd-lsp-windows.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/kitten/prosemd-lsp/{{version}}/vscode/package.json
+
 bin:
   prosemd-lsp: "{{source.asset.file}}"
