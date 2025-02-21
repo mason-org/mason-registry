@@ -1,10 +1,13 @@
 name: air
 description: R formatter and language server
 homepage: https://posit-dev.github.io/air/
+
 licenses:
   - MIT
+
 languages:
   - R
+
 categories:
   - Formatter
   - LSP
