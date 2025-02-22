@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/M4R7iNP/varnishls@v0.0.14
+  id: pkg:github/M4R7iNP/varnishls@v0.0.15
   asset:
     - target: darwin_arm64
       file: varnishls-aarch64-apple-darwin
