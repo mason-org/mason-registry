@@ -3,15 +3,16 @@ name: local-lua-debugger-vscode
 description: A simple Lua debugger which requires no additional dependencies.
 homepage: https://github.com/tomblind/local-lua-debugger-vscode
 licenses:
- - MIT
+  - MIT
 languages:
- - Lua
+  - Lua
 categories:
- - DAP
+  - DAP
+
 source:
   id: pkg:openvsx/tomblind/local-lua-debugger-vscode@0.3.3
   download:
     file: tomblind.local-lua-debugger-vscode-{{version}}.vsix
-bin:
-  local-lua-debugger: node:extension/extension/debugAdapter.js
 
+share:
+  local-lua-debugger-vscode/: extension/
