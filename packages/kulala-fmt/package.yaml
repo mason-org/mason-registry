@@ -13,14 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/mistweaverco/kulala-fmt@latest
-  asset:
-    - target: darwin_arm64
-      file: kulala-fmt-macos
-    - target: linux_x64
-      file: kulala-fmt-linux
-    - target: win_x64
-      file: kulala-fmt.exe
+  id: pkg:npm/%40mistweaverco/kulala-fmt@2.2.0
 
 bin:
-  kulala-fmt: "{{source.asset.file}}"
+  kulala-fmt: npm:kulala-fmt
