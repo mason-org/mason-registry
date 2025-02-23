@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/cmhughes/latexindent.pl@V3.23.4
+  id: pkg:github/cmhughes/latexindent.pl@V3.24.4
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: latexindent-macos

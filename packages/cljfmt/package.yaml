@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/weavejester/cljfmt@0.12.0
+  id: pkg:github/weavejester/cljfmt@0.13.0
   asset:
     - target: darwin_arm64
       file: cljfmt-{{ version }}-darwin-aarch64.tar.gz

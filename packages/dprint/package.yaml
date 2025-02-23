@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/dprint/dprint@0.47.2
+  id: pkg:github/dprint/dprint@0.49.0
   asset:
     - target: darwin_arm64
       file: dprint-aarch64-apple-darwin.zip

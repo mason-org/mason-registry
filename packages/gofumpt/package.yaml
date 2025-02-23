@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:golang/mvdan.cc/gofumpt@v0.6.0
+  id: pkg:golang/mvdan.cc/gofumpt@v0.7.0
 
 bin:
   gofumpt: golang:gofumpt

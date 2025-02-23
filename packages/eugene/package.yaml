@@ -1,0 +1,25 @@
+---
+name: eugene
+description: Helps you write zero downtime schema migrations for postgres.
+homepage: https://github.com/kaaveland/eugene
+licenses:
+  - MIT
+languages:
+  - SQL
+categories:
+  - Linter
+
+source:
+  id: pkg:github/kaaveland/eugene@0.6.2
+  asset:
+    - target: linux_x64
+      file: eugene-x86_64-unknown-linux-musl
+    - target: linux_arm64
+      file: eugene-aarch64-unknown-linux-musl
+    - target: darwin_x64
+      file: eugene-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: eugene-aarch64-apple-darwin
+
+bin:
+  eugene: "{{source.asset.file}}"
