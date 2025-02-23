@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/prettydiff@101.0.0
+  id: pkg:npm/prettydiff@101.2.6
 
 bin:
   prettydiff: npm:prettydiff
