@@ -10,8 +10,8 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/microsoft/vscode-gradle@3.12.7
-  asset:
+  id: pkg:openvsx/vscjava/vscode-gradle@3.15.0
+  download:
     file: vscjava.vscode-gradle-{{version}}.vsix
 
 bin:

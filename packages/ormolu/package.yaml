@@ -11,16 +11,19 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/tweag/ormolu@0.7.4.0
+  id: pkg:github/tweag/ormolu@0.8.0.0
   asset:
-    - target: [darwin_x64, darwin_arm64]
-      file: ormolu-macOS.zip
+    - target: darwin_arm64
+      file: ormolu-aarch64-darwin.zip
+      bin: ormolu
+    - target: darwin_x64
+      file: ormolu-x86_64-darwin.zip
       bin: ormolu
     - target: linux_x64
-      file: ormolu-Linux.zip
+      file: ormolu-x86_64-linux.zip
       bin: ormolu
     - target: win_x64
-      file: ormolu-Windows.zip
+      file: ormolu-x86_64-windows.zip
       bin: ormolu.exe
 
 bin:
