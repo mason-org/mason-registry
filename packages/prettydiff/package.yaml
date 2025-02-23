@@ -7,7 +7,7 @@ licenses:
 languages:
   - HTML
 categories:
-  - FORMATTER
+  - Formatter
 
 source:
   id: pkg:npm/prettydiff@101.0.0
