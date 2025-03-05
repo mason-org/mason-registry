@@ -1,6 +1,6 @@
 ---
 name: gh-actions-language-server
-description: Github Actions Language Server
+description: GitHub Actions Language Server
 homepage: https://github.com/lttb/gh-actions-language-server
 licenses:
   - MIT
