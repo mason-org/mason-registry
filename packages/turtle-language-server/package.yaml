@@ -1,0 +1,16 @@
+---
+name: turtle-language-server
+description: A language server (by Stardog) for Turtle
+homepage: https://www.npmjs.com/package/turtle-language-server
+licenses:
+  - Apache-2.0
+languages:
+  - turtle
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/turtle-language-server@3.5.0
+
+bin:
+  turtle-language-server: npm:turtle-language-server
