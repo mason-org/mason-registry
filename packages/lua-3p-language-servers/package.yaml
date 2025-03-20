@@ -1,0 +1,19 @@
+# using my own package config PENDING https://github.com/mason-org/mason-registry/pull/7957
+---
+name: lua-3p-language-servers
+description: 3rd party language servers for selene and stylua
+homepage: https://github.com/antonk52/lua-3p-language-servers # also https://www.npmjs.com/package/lua-3p-language-servers
+licenses:
+  - MIT
+languages:
+  - Lua
+  - Luau
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/lua-3p-language-servers@1.0.0
+
+bin:
+  selene-3p-language-server: npm:selene-3p-language-server
+  stylua-3p-language-server: npm:stylua-3p-language-server
