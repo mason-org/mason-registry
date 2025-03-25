@@ -32,6 +32,10 @@ source:
       file: air-x86_64-pc-windows-msvc.zip
       bin: air.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/posit-dev/air/{{version}}/editors/code/package.json
+
+
 bin:
   air: "{{source.asset.bin}}"
 
