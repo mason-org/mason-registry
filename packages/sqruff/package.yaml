@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:cargo/sqruff@0.21.11
+  id: pkg:cargo/sqruff@0.25.19
 
 bin:
   sqruff: cargo:sqruff
