@@ -15,4 +15,4 @@ source:
     run: "echo already built"
 
 bin:
-  xcode-build-server: "xcode-build-server"
+  xcode-build-server: xcode-build-server
