@@ -1,5 +1,5 @@
 ---
-name: pug
+name: pug-lsp
 description: |
   An implementation of the Language Protocol Server for [Pug.js](http://pugjs.org)
 homepage: https://github.com/opa-oz/pug-lsp
