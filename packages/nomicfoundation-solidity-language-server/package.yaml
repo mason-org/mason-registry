@@ -12,5 +12,8 @@ categories:
 source:
   id: pkg:npm/%40nomicfoundation/solidity-language-server@0.8.11
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/NomicFoundation/hardhat-vscode/v{{version}}/client/package.json
+
 bin:
   nomicfoundation-solidity-language-server: npm:nomicfoundation-solidity-language-server
