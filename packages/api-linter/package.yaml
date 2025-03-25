@@ -13,4 +13,4 @@ source:
   id: pkg:golang/github.com/googleapis/api-linter@v1.67.6#cmd/api-linter
 
 bin:
-  impl: golang:api-linter
+  api-linter: golang:api-linter
