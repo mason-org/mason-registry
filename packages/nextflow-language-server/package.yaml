@@ -15,7 +15,7 @@ source:
     file: "language-server-all.jar"
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/{{version}}/package.json
+  lsp: vscode:https://raw.githubusercontent.com/nextflow-io/vscode-language-nextflow/main/package.json
 
 bin:
   nextflow-language-server: java-jar:language-server-all.jar
