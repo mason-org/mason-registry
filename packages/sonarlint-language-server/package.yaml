@@ -33,6 +33,9 @@ source:
   asset:
     file: sonarlint-vscode-4.17.0.vsix
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/{{version}}/package.json
+
 bin:
   sonarlint-language-server: java-jar:extension/server/sonarlint-ls.jar
 
