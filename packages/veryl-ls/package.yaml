@@ -26,5 +26,8 @@ source:
       file: veryl-x86_64-windows.zip
       bin: veryl-ls.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/veryl-lang/veryl/{{version}}/support/vscode/package.json
+
 bin:
   veryl-ls: "{{source.asset.bin}}"
