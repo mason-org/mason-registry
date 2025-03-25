@@ -32,10 +32,10 @@ source:
       bin: sith-lsp-x86_64-unknown-linux-musl/sith-lsp
     - target: win_x64
       file: sith-lsp-x86_64-pc-windows-msvc.zip
-      bin: sith-lsp-x86_64-pc-windows-msvc/sith-lsp.exe
+      bin: sith-lsp.exe
     - target: win_arm64
       file: sith-lsp-aarch64-pc-windows-msvc.zip
-      bin: sith-lsp-aarch64-pc-windows-msvc/sith-lsp.exe
+      bin: sith-lsp.exe
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/LaBatata101/sith-language-server/{{version}}/editors/vscode/package.json
