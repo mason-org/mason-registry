@@ -10,6 +10,7 @@
 - [ ] I have successfully tested the package after installation.
       <!-- For example: successfully starting the LSP server inside Neovim, or successfully integrated linting
       diagnostics -->
+- [ ] *(for new packages)* The package fulfills the [requirements to be added to the mason registry](https://github.com/mason-org/mason-registry/blob/main/CONTRIBUTING.md#requirements).
 
 ## Screenshots
 <!-- Leave empty if not applicable -->
