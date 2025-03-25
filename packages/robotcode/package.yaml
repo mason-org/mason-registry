@@ -13,5 +13,9 @@ categories:
 source:
   id: pkg:pypi/robotcode[all]@1.0.3
 
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/robotcodedev/robotcode/v{{version}}/package.json
+
 bin:
   robotcode: pypi:robotcode
