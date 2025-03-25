@@ -38,7 +38,7 @@ source:
       bin: sith-lsp-aarch64-pc-windows-msvc/sith-lsp.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/LaBatata101/sith-language-server/main/editors/vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/LaBatata101/sith-language-server/{{version}}/editors/vscode/package.json
 
 bin:
   sith-lsp: "{{source.asset.bin}}"
