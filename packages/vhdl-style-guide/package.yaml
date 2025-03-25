@@ -1,4 +1,4 @@
-name: vsg
+name: vhdl-style-guide
 description: Style guide enforcement for VHDL
 homepage: https://github.com/jeremiah-c-leary/vhdl-style-guide
 licenses:
