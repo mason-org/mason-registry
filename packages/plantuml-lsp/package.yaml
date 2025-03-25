@@ -10,9 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ptdewey/plantuml-lsp@v0.4.0
-  build:
-    run: go build
+  id: pkg:golang/github.com/ptdewey/plantuml-lsp@v0.4.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/ptdewey/planuml-lsp/{{version}}/editors/code/package.json
 
 bin:
   plantuml-lsp: golang:plantuml-lsp
