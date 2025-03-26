@@ -1,0 +1,21 @@
+---
+name: robotcode
+description: The Ultimate Robot Framework Toolset
+homepage: https://robotcode.io/
+licenses:
+  - Apache-2.0
+languages:
+  - Robot Framework
+categories:
+  - LSP
+  - DAP
+
+source:
+  id: pkg:pypi/robotcode[all]@1.0.3
+
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/robotcodedev/robotcode/v{{version}}/package.json
+
+bin:
+  robotcode: pypi:robotcode
