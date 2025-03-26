@@ -19,7 +19,7 @@ source:
     file: VMware.vscode-spring-boot-{{version}}.vsix
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/spring-projects/sts4/master/vscode-extensions/vscode-spring-boot/package.json
+  lsp: vscode:https://raw.githubusercontent.com/spring-projects/spring-tools/vscode-spring-boot-{{version}}-RC1/vscode-extensions/vscode-spring-boot/package.json
 
 share:
   vscode-spring-boot-tools/jdtls/: extension/jars/
