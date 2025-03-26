@@ -1,5 +1,5 @@
 ---
-name: fluent-bit-language-server
+name: fluent-bit-lsp
 description: Language server for fluent-bit config file.
 homepage: https://github.com/sh-cho/fluent-bit-lsp
 licenses:
