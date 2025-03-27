@@ -36,7 +36,7 @@ source:
       bin: fluent-bit-language-server.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/sh-cho/fluent-bit-lsp/{{version}}/client/vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/sh-cho/fluent-bit-lsp/{{version}}/clients/vscode/package.json
 
 bin:
   fluent-bit-language-server: "{{source.asset.bin}}"
