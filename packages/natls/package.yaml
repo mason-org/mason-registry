@@ -15,5 +15,8 @@ source:
     - target: [win_x64, linux_x64, darwin_x64, darwin_arm64]
       file: natls.jar
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/MarkusAmshove/vscode-natural/main/package.json
+
 bin:
   natls: java-jar:{{source.asset.file}}
