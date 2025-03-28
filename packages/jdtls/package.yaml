@@ -38,5 +38,5 @@ bin:
 share:
   jdtls/lombok.jar: lombok.jar
   jdtls/plugins/: plugins/
-  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.1000.v20250131-0606.jar
+  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.1100.v20250306-0509.jar
   jdtls/config/: "{{source.download.config}}"
