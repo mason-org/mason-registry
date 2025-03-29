@@ -1,0 +1,16 @@
+---
+name: moonbit-lsp
+description: Language Server for MoonBit implements the Language Server Protocol (LSP)
+homepage: https://www.npmjs.com/package/@moonbit/moonbit-lsp
+licenses:
+  - MIT
+languages:
+  - Moonbit
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@moonbit/moonbit-lsp@0.1.202503241
+
+bin:
+  moonbit-lsp: npm:moonbit-lsp
