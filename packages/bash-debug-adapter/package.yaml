@@ -16,3 +16,6 @@ source:
 
 bin:
   bash-debug-adapter: node:extension/out/bashDebug.js
+
+opt:
+  bashdb/: extension/bashdb_dir/
