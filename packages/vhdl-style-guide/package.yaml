@@ -8,7 +8,7 @@ languages:
 categories:
   - Formatter
 source:
-  id: pkg:pypi/vsg@3.27.0
+  id: pkg:pypi/vsg@3.31.0
 
 bin:
   vsg: pypi:vsg
