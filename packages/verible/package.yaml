@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chipsalliance/verible@v0.0-3946-g851d3ff4
+  id: pkg:github/chipsalliance/verible@v0.0-3950-g37b77330
   asset:
     - target: linux_x64
       file: verible-{{version}}-linux-static-x86_64.tar.gz
@@ -68,7 +68,7 @@ source:
         syntax: verible-{{version}}-macOS/bin/verible-verilog-syntax
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/chipsalliance/verible/{{version}}/verilog/tools/ls/vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/chipsalliance/verible/{{version}}/verible/verilog/tools/ls/vscode/package.json
 
 bin:
   verible-verilog-diff: "{{source.asset.bin.diff}}"
