@@ -10,8 +10,15 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  message: Package is no longer installable. Please use the buf package instead.
+  since: v0.0.0-20240213221648-8e42e5e2e24f
+
 source:
   id: pkg:golang/github.com/bufbuild/buf-language-server@v0.0.0-20240213221648-8e42e5e2e24f#cmd/bufls
 
 bin:
   bufls: golang:bufls
+
+# Package is no longer installable.
+ci_skip: true
