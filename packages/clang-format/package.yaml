@@ -19,3 +19,5 @@ source:
 
 bin:
   clang-format: pypi:clang-format
+  clang-format-diff: pypi:clang-format-diff.py
+  git-clang-format: pypi:git-clang-format
