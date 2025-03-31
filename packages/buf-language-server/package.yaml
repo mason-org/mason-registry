@@ -11,7 +11,7 @@ categories:
   - LSP
 
 deprecation:
-  message: This repo is no longer under active development. Please use the buf package instead
+  message: Package is no longer installable. Please use the buf package instead.
   since: v0.0.0-20240213221648-8e42e5e2e24f
 
 source:
@@ -19,3 +19,6 @@ source:
 
 bin:
   bufls: golang:bufls
+
+# Package is no longer installable.
+ci_skip: true
