@@ -1,0 +1,16 @@
+---
+name: fish-lsp
+description: Language Server for fish shell scripts.
+homepage: https://github.com/ndonfris/fish-lsp/
+licenses:
+  - MIT
+languages:
+  - Fish
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/fish-lsp@1.0.8-4
+
+bin:
+  fish-lsp: npm:fish-lsp
