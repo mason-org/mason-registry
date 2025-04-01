@@ -28,4 +28,5 @@ bin:
 
 # gzip behaves weirdly on macOS
 ci_skip:
-  - darwin
+  - darwin_arm64
+  - darwin_x64
