@@ -5,7 +5,7 @@ homepage: https://github.com/priv-kweihmann/oelint-adv
 licenses:
   - BSD-2-Clause
 languages:
-  - Bitbake
+  - BitBake
 categories:
   - Linter
 
