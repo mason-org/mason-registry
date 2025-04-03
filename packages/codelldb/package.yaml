@@ -61,4 +61,4 @@ bin:
   codelldb: "{{source.asset.bin}}"
 
 opt:
-  lldb/: lldb/
+  lldb/: extension/lldb/
