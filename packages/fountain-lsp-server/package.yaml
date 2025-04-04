@@ -1,0 +1,21 @@
+---
+name: fountain-lsp-server
+description: This is a Language Server for fountain files, a simple markup syntax for writing, editing, and sharing screenplays in plain, human-readable text.
+homepage: https://github.com/oparaskos/fountain-lsp-server
+licenses:
+  - MPL-2.0
+languages:
+  - Fountain
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/oparaskos/fountain-lsp-server@v1.0.0
+  build:
+    run: |
+      npm install
+      npm run build
+
+bin:
+  fountain-lsp-server: node:dist/main.js
