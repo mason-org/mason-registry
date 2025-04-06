@@ -35,4 +35,4 @@ source:
       bin: just-lsp
 
 bin:
-  actionlint: "{{source.asset.bin}}"
+  just-lsp: "{{source.asset.bin}}"
