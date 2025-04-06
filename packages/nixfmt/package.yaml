@@ -1,0 +1,21 @@
+---
+name: nixfmt
+description: The official formatter for Nix code
+homepage: https://github.com/NixOS/nixfmt
+licenses:
+  - MPL-2.0
+languages:
+  - Nix
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/NixOS/nixfmt@v0.6.0
+  asset:
+    - target: linux_x64
+      file: nixfmt-x86_64-linux
+  supported_platforms:
+    - linux_x64
+
+bin:
+  nixfmt: "{{source.asset.file}}"

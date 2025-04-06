@@ -15,3 +15,5 @@ source:
 
 bin:
   mypy: pypi:mypy
+  dmypy: pypi:dmypy
+  mypyc: pypi:mypyc

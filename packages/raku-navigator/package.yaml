@@ -18,5 +18,8 @@ source:
       npm run compile
       npm install --production
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/bscan/RakuNavigator/{{version}}/package.json
+
 bin:
   raku-navigator: node:server/out/server.js
