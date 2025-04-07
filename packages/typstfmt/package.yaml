@@ -13,7 +13,6 @@ categories:
 deprecation:
   message: Package is unmaintained.
   since: v0.2.10
-ci_skip: true
 
 source:
   id: pkg:github/astrale-sharp/typstfmt@0.2.10
