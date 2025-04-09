@@ -58,9 +58,7 @@ At least one of the following conditions MUST be fulfilled for new packages to b
 * Testing a package MUST be done locally prior to creating a PR. See [testing](#testing) for more information.
 
 > [!TIP]
-> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) combined with the
-> [schemastore schema](https://json.schemastore.org/mason-registry.json) to get diagnostics and autocompletion (see
-> [Schema](#schema)).
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to get diagnostics and autocompletion (see [Schema](#schema)).
 
 # Schema
 
@@ -68,9 +66,8 @@ Package definitions are validated against a well-defined [JSON schema](https://g
 The full schema is hosted on <http://schemastore.org/>.
 
 > [!TIP]
-> Use [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim) and the [YAML language
-> server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these schemas in Neovim. This
-> gives you diagnostics and autocompletion inside the editor when editing package definitions:
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these
+> schemas in Neovim. This gives you diagnostics and autocompletion inside the editor when editing package definitions:
 > 
 > <img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
 
