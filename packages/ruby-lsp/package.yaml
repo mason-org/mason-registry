@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/ruby-lsp@0.23.13
+  id: pkg:gem/ruby-lsp@0.23.14
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/Shopify/ruby-lsp/v{{version}}/vscode/package.json
