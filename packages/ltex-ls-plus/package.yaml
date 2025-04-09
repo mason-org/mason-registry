@@ -14,7 +14,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ltex-plus/ltex-ls-plus@18.5.0
+  id: pkg:github/ltex-plus/ltex-ls-plus@18.5.1
   asset:
     # The platform-specific releases bundle a java runtime engine, and are
     # therefore preferable to avoid external dependencies (see #2837).
