@@ -1,0 +1,20 @@
+---
+name: pgformatter
+description: PostgreSQL SQL syntax beautifier
+homepage: http://sqlformat.darold.net
+licenses:
+  - PostgreSQL
+languages:
+  - Postgres
+  - SQL
+categories:
+  - Formatter
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/darold/pgformatter@v5.6
+  build:
+    run: ""
+
+bin:
+  pg_format: pg_format
