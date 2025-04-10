@@ -1,0 +1,19 @@
+---
+name: plantuml-lsp
+description: Language server for PlantUML.
+homepage: https://github.com/ptdewey/plantuml-lsp
+licenses:
+  - MIT
+languages:
+  - PlantUML
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github.com/ptdewey/plantuml-lsp@v0.4.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/ptdewey/planuml-lsp/{{version}}/editors/code/package.json
+
+bin:
+  plantuml-lsp: golang:plantuml-lsp
