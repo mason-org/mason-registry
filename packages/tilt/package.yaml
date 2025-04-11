@@ -10,7 +10,7 @@ categories:
   - Runtime
   - LSP
 source:
-  id: pkg:github/tilt-dev/tilt@v0.34.1
+  id: pkg:github/tilt-dev/tilt@v0.34.2
   asset:
     - target: darwin_arm64
       file: tilt.{{ version | strip_prefix "v" }}.mac.arm64.tar.gz
