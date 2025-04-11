@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nextflow-io/language-server@v24.10.2
+  id: pkg:github/nextflow-io/language-server@v24.10.3
   asset:
     file: "language-server-all.jar"
 
