@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/oxlint@0.16.5
+  id: pkg:npm/oxlint@0.16.6
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v{{version}}/editors/vscode/package.json
