@@ -29,9 +29,9 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/SonarSource/sonarlint-vscode@4.17.0%2B77356
+  id: pkg:github/SonarSource/sonarlint-vscode@4.20.0%2B77476
   asset:
-    file: sonarlint-vscode-4.17.0.vsix
+    file: sonarlint-vscode-4.20.0.vsix
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/SonarSource/sonarlint-vscode/{{version}}/package.json
