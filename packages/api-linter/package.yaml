@@ -1,0 +1,16 @@
+---
+name: api-linter
+description: A linter for APIs defined in protocol buffers.
+homepage: https://github.com/googleapis/api-linter
+licenses:
+  - Apache-2.0
+languages:
+  - Protobuf
+categories:
+  - Linter
+
+source:
+  id: pkg:golang/github.com/googleapis/api-linter@v1.69.2#cmd/api-linter
+
+bin:
+  api-linter: golang:api-linter

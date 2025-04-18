@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40microsoft/compose-language-service@0.3.0
+  id: pkg:npm/%40microsoft/compose-language-service@0.4.0
 
 bin:
   docker-compose-langserver: npm:docker-compose-langserver

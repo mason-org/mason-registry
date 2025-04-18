@@ -15,5 +15,8 @@ source:
   asset:
     file: abl-lsp.jar
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/vscode-abl/vscode-abl/{{version}}/package.json
+
 share:
   openedge/abl-lsp.jar: abl-lsp.jar

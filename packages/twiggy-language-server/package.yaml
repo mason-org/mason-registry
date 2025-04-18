@@ -14,5 +14,8 @@ categories:
 source:
   id: pkg:npm/twiggy-language-server@0.18.0
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/moetelo/twiggy/v{{version}}/packages/vscode/package.json
+
 bin:
   twiggy-language-server: node:node_modules/twiggy-language-server/dist/server.js

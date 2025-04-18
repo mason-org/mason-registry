@@ -5,7 +5,7 @@ homepage: https://github.com/yoctoproject/vscode-bitbake
 licenses:
   - MIT
 languages:
-  - Bitbake
+  - BitBake
 categories:
   - LSP
 

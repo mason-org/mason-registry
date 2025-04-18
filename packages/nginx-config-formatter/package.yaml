@@ -1,0 +1,14 @@
+name: nginx-config-formatter
+description: nginx config file formatter/beautifier written in Python with no additional dependencies.
+homepage: https://github.com/slomkowski/nginx-config-formatter
+licenses:
+  - Apache-2.0
+languages:
+  - nginx
+categories:
+  - Formatter
+source:
+  id: pkg:pypi/nginxfmt@1.2.3
+
+bin:
+  nginxfmt: pypi:nginxfmt
