@@ -1,0 +1,15 @@
+---
+name: tabby-agent
+description: Tabby is a self-hosted AI coding assistant, offering an open-source and on-premises alternative to GitHub Copilot.
+homepage: https://github.com/TabbyML/tabby
+licenses:
+  - Apache-2.0
+languages: []
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/tabby-agent@1.8.0
+
+bin:
+  tabby-agent: npm:tabby-agent
