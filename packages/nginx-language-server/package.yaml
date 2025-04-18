@@ -5,7 +5,7 @@ homepage: https://github.com/pappasam/nginx-language-server
 licenses:
   - GPL-3.0-or-later
 languages:
-  - Nginx
+  - nginx
 categories:
   - LSP
 
