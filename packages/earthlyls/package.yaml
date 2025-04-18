@@ -29,5 +29,8 @@ source:
       file: earthlyls-{{ version }}-windows-amd64.zip
       bin: earthlyls-{{ version }}-windows-amd64/earthlyls.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/glehmann/earthlyls/{{version}}/editor/vscode/package.json
+
 bin:
   earthlyls: "{{source.asset.bin}}"
