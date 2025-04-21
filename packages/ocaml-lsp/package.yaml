@@ -14,3 +14,6 @@ source:
 
 bin:
   ocamllsp: opam:ocamllsp
+
+neovim:
+  lspconfig: ocamllsp

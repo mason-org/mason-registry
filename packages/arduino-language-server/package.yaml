@@ -33,3 +33,6 @@ source:
 
 bin:
   arduino-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: arduino_language_server

@@ -14,3 +14,6 @@ source:
 
 bin:
   docker-compose-langserver: npm:docker-compose-langserver
+
+neovim:
+  lspconfig: docker_compose_language_service

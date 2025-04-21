@@ -17,3 +17,6 @@ schemas:
 
 bin:
   custom-elements-languageserver: npm:custom-elements-languageserver
+
+neovim:
+  lspconfig: custom_elements_ls

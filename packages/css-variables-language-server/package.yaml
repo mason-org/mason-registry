@@ -16,3 +16,5 @@ source:
 
 bin:
   css-variables-language-server: npm:css-variables-language-server
+neovim:
+  lspconfig: css_variables

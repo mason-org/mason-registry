@@ -17,3 +17,6 @@ schemas:
 
 bin:
   asm-lsp: cargo:asm-lsp
+
+neovim:
+  lspconfig: asm_lsp

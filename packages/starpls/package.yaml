@@ -23,3 +23,6 @@ source:
 
 bin:
   starpls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: starpls

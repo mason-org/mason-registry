@@ -30,3 +30,6 @@ bin:
 ci_skip:
   - darwin_arm64
   - darwin_x64
+
+neovim:
+  lspconfig: zk

@@ -19,3 +19,6 @@ schemas:
 
 bin:
   twiggy-language-server: node:node_modules/twiggy-language-server/dist/server.js
+
+neovim:
+  lspconfig: twiggy_language_server

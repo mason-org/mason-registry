@@ -17,3 +17,6 @@ schemas:
 
 bin:
   elm-language-server: npm:elm-language-server
+
+neovim:
+  lspconfig: elmls

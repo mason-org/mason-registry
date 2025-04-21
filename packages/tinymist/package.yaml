@@ -29,3 +29,6 @@ source:
 
 bin:
   tinymist: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: tinymist

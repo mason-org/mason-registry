@@ -14,3 +14,6 @@ source:
 
 bin:
   openscad-lsp: cargo:openscad-lsp
+
+neovim:
+  lspconfig: openscad_lsp

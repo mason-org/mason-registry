@@ -14,3 +14,6 @@ source:
 
 bin:
   nginx-language-server: pypi:nginx-language-server
+
+neovim:
+  lspconfig: nginx_language_server

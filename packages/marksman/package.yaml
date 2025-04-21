@@ -24,3 +24,6 @@ source:
 
 bin:
   marksman: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: marksman

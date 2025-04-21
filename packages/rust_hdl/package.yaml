@@ -32,3 +32,6 @@ bin:
 
 share:
   vhdl_libraries/: "{{source.asset.libraries}}"
+
+neovim:
+  lspconfig: vhdl_ls

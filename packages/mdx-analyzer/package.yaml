@@ -16,3 +16,6 @@ source:
 
 bin:
   mdx-language-server: npm:mdx-language-server
+
+neovim:
+  lspconfig: mdx_analyzer

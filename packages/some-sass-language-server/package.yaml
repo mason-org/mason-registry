@@ -17,3 +17,6 @@ schemas:
 
 bin:
   some-sass-language-server: npm:some-sass-language-server
+
+neovim:
+  lspconfig: somesass_ls

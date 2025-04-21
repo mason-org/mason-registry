@@ -34,3 +34,6 @@ source:
 
 bin:
   glsl_analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: glsl_analyzer

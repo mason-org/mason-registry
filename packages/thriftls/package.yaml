@@ -32,3 +32,6 @@ source:
 
 bin:
   thriftls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: thriftls

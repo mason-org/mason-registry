@@ -13,3 +13,6 @@ source:
 
 bin:
   autotools-language-server: pypi:autotools-language-server
+
+neovim:
+  lspconfig: autotools_ls

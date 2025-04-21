@@ -25,3 +25,6 @@ schemas:
 
 bin:
   wgsl_analyzer: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: wgsl_analyzer

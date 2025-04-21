@@ -20,3 +20,6 @@ schemas:
 
 bin:
   typescript-language-server: npm:typescript-language-server
+
+neovim:
+  lspconfig: ts_ls

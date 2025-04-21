@@ -28,3 +28,6 @@ schemas:
 
 bin:
   slint-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: slint_lsp

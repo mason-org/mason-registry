@@ -17,3 +17,6 @@ schemas:
 
 bin:
   pest-language-server: cargo:pest-language-server
+
+neovim:
+  lspconfig: pest_ls

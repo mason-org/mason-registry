@@ -21,3 +21,6 @@ schemas:
 
 bin:
   bash-language-server: npm:bash-language-server
+
+neovim:
+  lspconfig: bashls

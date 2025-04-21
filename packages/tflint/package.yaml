@@ -34,3 +34,6 @@ source:
 
 bin:
   tflint: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: tflint

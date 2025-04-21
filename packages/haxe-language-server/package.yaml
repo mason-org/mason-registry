@@ -16,3 +16,6 @@ source:
 
 bin:
   haxe-language-server: node:extension/bin/server.js
+
+neovim:
+  lspconfig: haxe_language_server

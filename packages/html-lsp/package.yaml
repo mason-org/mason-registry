@@ -17,3 +17,6 @@ schemas:
 
 bin:
   vscode-html-language-server: npm:vscode-html-language-server
+
+neovim:
+  lspconfig: html

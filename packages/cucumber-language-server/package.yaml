@@ -14,3 +14,6 @@ source:
 
 bin:
   cucumber-language-server: npm:cucumber-language-server
+
+neovim:
+  lspconfig: cucumber_language_server

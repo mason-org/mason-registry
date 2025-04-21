@@ -19,3 +19,6 @@ schemas:
 
 bin:
   vue-language-server: npm:vue-language-server
+
+neovim:
+  lspconfig: volar

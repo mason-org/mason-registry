@@ -16,3 +16,6 @@ source:
 bin:
   lelwel-ls: cargo:lelwel-ls
   llw: cargo:llw
+
+neovim:
+  lspconfig: lelwel_ls

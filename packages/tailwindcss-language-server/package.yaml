@@ -17,3 +17,6 @@ schemas:
 
 bin:
   tailwindcss-language-server: npm:tailwindcss-language-server
+
+neovim:
+  lspconfig: tailwindcss

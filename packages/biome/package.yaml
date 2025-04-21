@@ -21,3 +21,6 @@ schemas:
 
 bin:
   biome: npm:biome
+
+neovim:
+  lspconfig: biome

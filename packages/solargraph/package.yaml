@@ -17,3 +17,6 @@ schemas:
 
 bin:
   solargraph: gem:solargraph
+
+neovim:
+  lspconfig: solargraph

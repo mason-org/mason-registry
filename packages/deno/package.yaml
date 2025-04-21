@@ -37,3 +37,6 @@ schemas:
 
 bin:
   deno: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: denols

@@ -33,3 +33,6 @@ source:
 
 bin:
   snyk-ls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: snyk_ls

@@ -24,3 +24,6 @@ source:
 bin:
   glint: npm:glint
   glint-language-server: npm:glint-language-server
+
+neovim:
+  lspconfig: glint

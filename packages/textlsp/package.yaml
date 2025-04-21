@@ -16,3 +16,6 @@ source:
 
 bin:
   textlsp: pypi:textlsp
+
+neovim:
+  lspconfig: textlsp

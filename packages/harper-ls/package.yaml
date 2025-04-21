@@ -42,3 +42,6 @@ source:
 
 bin:
   harper-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: harper_ls

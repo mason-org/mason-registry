@@ -17,3 +17,6 @@ schemas:
 
 bin:
   stylelint-lsp: npm:stylelint-lsp
+
+neovim:
+  lspconfig: stylelint_lsp

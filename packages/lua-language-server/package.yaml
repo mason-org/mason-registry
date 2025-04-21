@@ -77,3 +77,6 @@ schemas:
 
 bin:
   lua-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: lua_ls

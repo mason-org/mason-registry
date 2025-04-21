@@ -20,3 +20,6 @@ schemas:
 
 bin:
   ruby-lsp: gem:ruby-lsp
+
+neovim:
+  lspconfig: ruby_lsp

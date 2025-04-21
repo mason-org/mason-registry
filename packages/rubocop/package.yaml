@@ -16,3 +16,6 @@ source:
 
 bin:
   rubocop: gem:rubocop
+
+neovim:
+  lspconfig: rubocop

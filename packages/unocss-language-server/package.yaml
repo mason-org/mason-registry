@@ -14,3 +14,6 @@ source:
 
 bin:
   unocss-language-server: npm:unocss-language-server
+
+neovim:
+  lspconfig: unocss

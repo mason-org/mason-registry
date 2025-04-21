@@ -19,3 +19,6 @@ schemas:
 
 bin:
   sourcery: pypi:sourcery
+
+neovim:
+  lspconfig: sourcery

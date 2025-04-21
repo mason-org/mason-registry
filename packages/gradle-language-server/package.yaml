@@ -19,3 +19,6 @@ schemas:
 
 bin:
   gradle-language-server: java-jar:extension/lib/gradle-language-server.jar
+
+neovim:
+  lspconfig: gradle_ls

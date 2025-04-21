@@ -30,3 +30,6 @@ bin:
   clarity-lsp: "{{source.asset.bin}}"
 
 ci_skip: true
+
+neovim:
+  lspconfig: clarity_lsp

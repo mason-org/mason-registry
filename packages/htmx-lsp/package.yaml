@@ -14,3 +14,6 @@ source:
 
 bin:
   htmx-lsp: cargo:htmx-lsp
+
+neovim:
+  lspconfig: htmx

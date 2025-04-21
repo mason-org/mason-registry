@@ -19,3 +19,6 @@ schemas:
 
 bin:
   svelteserver: npm:svelteserver
+
+neovim:
+  lspconfig: svelte

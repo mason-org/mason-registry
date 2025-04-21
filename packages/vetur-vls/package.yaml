@@ -17,3 +17,6 @@ schemas:
 
 bin:
   vls: npm:vls
+
+neovim:
+  lspconfig: vuels

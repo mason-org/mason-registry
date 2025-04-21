@@ -19,3 +19,6 @@ source:
 
 bin:
   matlab-language-server: node:out/index.js
+
+neovim:
+  lspconfig: matlab_ls

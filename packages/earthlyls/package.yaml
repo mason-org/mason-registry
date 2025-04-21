@@ -31,3 +31,6 @@ source:
 
 bin:
   earthlyls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: earthlyls

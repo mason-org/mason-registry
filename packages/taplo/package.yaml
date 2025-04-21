@@ -36,3 +36,6 @@ source:
 
 bin:
   taplo: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: taplo

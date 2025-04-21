@@ -33,3 +33,6 @@ schemas:
 
 bin:
   ols: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: ols

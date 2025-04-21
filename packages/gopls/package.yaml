@@ -16,3 +16,6 @@ source:
 
 bin:
   gopls: golang:gopls
+
+neovim:
+  lspconfig: gopls

@@ -42,3 +42,6 @@ schemas:
 bin:
   java-language-server: "{{source.build.bin.lsp}}"
   java-language-server-debugger: "{{source.build.bin.dap}}"
+
+neovim:
+  lspconfig: java_language_server

@@ -17,3 +17,6 @@ schemas:
 
 bin:
   awk-language-server: npm:awk-language-server
+
+neovim:
+  lspconfig: awk_ls

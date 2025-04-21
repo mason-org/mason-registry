@@ -28,3 +28,6 @@ source:
 
 bin:
   Swift-MesonLSP: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: swift_mesonls

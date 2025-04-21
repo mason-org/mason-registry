@@ -16,3 +16,6 @@ source:
 
 share:
   drools-lsp/drools-lsp-server-jar-with-dependencies.jar: drools-lsp-server-jar-with-dependencies.jar
+
+neovim:
+  lspconfig: drools_lsp

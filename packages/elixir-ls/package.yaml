@@ -61,3 +61,6 @@ schemas:
 bin:
   elixir-ls: "{{source.asset.bin.lsp}}"
   elixir-ls-debugger: "{{source.asset.bin.dap}}"
+
+neovim:
+  lspconfig: elixirls

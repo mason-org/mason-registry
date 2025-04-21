@@ -16,3 +16,6 @@ source:
 
 bin:
   jq-lsp: golang:jq-lsp
+
+neovim:
+  lspconfig: jqls

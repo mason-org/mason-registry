@@ -27,3 +27,6 @@ schemas:
 
 bin:
   luau-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: luau_lsp

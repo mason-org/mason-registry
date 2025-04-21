@@ -30,3 +30,6 @@ source:
 
 bin:
   opencl-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: opencl_ls

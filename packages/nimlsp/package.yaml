@@ -22,3 +22,6 @@ source:
 
 bin:
   nimlsp: "{{source.build.bin}}"
+
+neovim:
+  lspconfig: nimls

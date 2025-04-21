@@ -17,3 +17,6 @@ schemas:
 
 bin:
   intelephense: npm:intelephense
+
+neovim:
+  lspconfig: intelephense

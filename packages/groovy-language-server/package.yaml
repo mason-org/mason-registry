@@ -20,3 +20,6 @@ schemas:
 
 bin:
   groovy-language-server: java-jar:build/libs/groovy-language-server-all.jar
+
+neovim:
+  lspconfig: groovyls

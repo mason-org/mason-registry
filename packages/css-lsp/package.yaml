@@ -19,3 +19,6 @@ schemas:
 
 bin:
   vscode-css-language-server: npm:vscode-css-language-server
+
+neovim:
+  lspconfig: cssls

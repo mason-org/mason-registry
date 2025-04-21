@@ -42,3 +42,6 @@ source:
 
 bin:
   templ: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: templ

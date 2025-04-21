@@ -17,3 +17,6 @@ schemas:
 
 bin:
   rescript-language-server: npm:rescript-language-server
+
+neovim:
+  lspconfig: rescriptls

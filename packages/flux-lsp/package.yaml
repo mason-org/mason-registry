@@ -16,3 +16,6 @@ source:
 
 bin:
   flux-lsp: cargo:flux-lsp
+
+neovim:
+  lspconfig: flux_lsp

@@ -21,3 +21,6 @@ schemas:
 
 share:
   apex-language-server/apex-jorje-lsp.jar: extension/dist/apex-jorje-lsp.jar
+
+neovim:
+  lspconfig: apex_ls

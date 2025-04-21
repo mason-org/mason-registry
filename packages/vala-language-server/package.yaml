@@ -28,3 +28,6 @@ bin:
   vala-language-server: "{{source.build.bin}}"
 
 ci_skip: true
+
+neovim:
+  lspconfig: vala_ls

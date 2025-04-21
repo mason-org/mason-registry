@@ -14,3 +14,6 @@ source:
 
 bin:
   teal-language-server: luarocks:teal-language-server
+
+neovim:
+  lspconfig: teal_ls

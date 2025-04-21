@@ -14,3 +14,6 @@ source:
 
 bin:
   robotframework_ls: pypi:robotframework_ls
+
+neovim:
+  lspconfig: robotframework_ls

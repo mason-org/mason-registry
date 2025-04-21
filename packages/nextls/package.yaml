@@ -25,3 +25,6 @@ source:
 
 bin:
   nextls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: nextls

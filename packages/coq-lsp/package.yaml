@@ -14,3 +14,6 @@ source:
 
 bin:
   coq-lsp: opam:coq-lsp
+
+neovim:
+  lspconfig: coq_lsp

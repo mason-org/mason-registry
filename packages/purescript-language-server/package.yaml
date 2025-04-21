@@ -19,3 +19,6 @@ schemas:
 
 bin:
   purescript-language-server: npm:purescript-language-server
+
+neovim:
+  lspconfig: purescriptls

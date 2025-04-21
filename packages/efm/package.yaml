@@ -35,3 +35,6 @@ schemas:
 
 bin:
   efm-langserver: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: efm

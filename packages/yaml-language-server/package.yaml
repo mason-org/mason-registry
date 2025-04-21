@@ -17,3 +17,6 @@ schemas:
 
 bin:
   yaml-language-server: npm:yaml-language-server
+
+neovim:
+  lspconfig: yamlls
