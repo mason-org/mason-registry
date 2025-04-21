@@ -19,7 +19,7 @@ source:
     - target: linux_x86
       file: zk-{{version}}-linux-i386.tar.gz
     - target: darwin_arm64
-      file: zk-{{version}}-macos-arm64.tar.gz
+      file: zk-{{version}}-macos_arm64.tar.gz
     - target: darwin_x64
       file: zk-{{version}}-macos-x86_64.tar.gz
 
@@ -28,5 +28,4 @@ bin:
 
 # gzip behaves weirdly on macOS
 ci_skip:
-  - darwin_arm64
   - darwin_x64
