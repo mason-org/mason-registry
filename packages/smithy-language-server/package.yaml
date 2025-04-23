@@ -14,19 +14,19 @@ source:
   asset:
     - target: darwin_x64
       file: smithy-language-server-darwin-x86_64.zip
-      bin: bin/smithy-language-server
+      bin: smithy-language-server/bin/smithy-language-server
     - target: darwin_arm64
       file: smithy-language-server-darwin-aarch64.zip
-      bin: bin/smithy-language-server
+      bin: smithy-language-server/bin/smithy-language-server
     - target: linux_x64
       file: smithy-language-server-linux-x86_64.zip
-      bin: bin/smithy-language-server
+      bin: smithy-language-server/bin/smithy-language-server
     - target: linux_arm64
       file: smithy-language-server-linux-aarch64.zip
-      bin: bin/smithy-language-server
+      bin: smithy-language-server/bin/smithy-language-server
     - target: win_x64
       file: smithy-language-server-windows-x64.zip
-      bin: bin/smithy-language-server.bat
+      bin: smithy-language-server/ bin/smithy-language-server.bat
 
 bin:
   smithy-language-server: "{{source.asset.bin}}"
