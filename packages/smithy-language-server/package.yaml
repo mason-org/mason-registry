@@ -26,7 +26,7 @@ source:
       bin: smithy-language-server/bin/smithy-language-server
     - target: win_x64
       file: smithy-language-server-windows-x64.zip
-      bin: smithy-language-server/ bin/smithy-language-server.bat
+      bin: smithy-language-server/bin/smithy-language-server.bat
 
 bin:
   smithy-language-server: "{{source.asset.bin}}"
