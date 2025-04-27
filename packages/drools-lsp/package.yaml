@@ -17,5 +17,6 @@ source:
 share:
   drools-lsp/drools-lsp-server-jar-with-dependencies.jar: drools-lsp-server-jar-with-dependencies.jar
 
-neovim:
-  lspconfig: drools_lsp
+# This server is not yet migrated to vim.lsp.config in nvim-lspconfig
+# neovim:
+#   lspconfig: drools_lsp
