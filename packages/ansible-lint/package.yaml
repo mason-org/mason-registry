@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/ansible-lint@25.2.1
+  id: pkg:pypi/ansible-lint@25.4.0
   supported_platforms:
     - unix
 
