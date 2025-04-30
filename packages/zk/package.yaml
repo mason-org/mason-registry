@@ -25,8 +25,3 @@ source:
 
 bin:
   zk: zk
-
-# gzip behaves weirdly on macOS
-ci_skip:
-  - darwin_arm64
-  - darwin_x64
