@@ -33,6 +33,9 @@ source:
     - target: linux_x64_musl
       file: just-lsp-{{version}}-x86_64-unknown-linux-musl.tar.gz
       bin: just-lsp
+    - target: linux_x64_gnu
+      file: just-lsp-{{version}}-x86_64-unknown-linux-gnu.tar.gz
+      bin: just-lsp
 
 bin:
   just-lsp: "{{source.asset.bin}}"
