@@ -18,8 +18,20 @@ source:
     - target: win_arm64
       file: just-lsp-{{version}}-aarch64-pc-windows-msvc.zip
       bin: just-lsp.exe
+    - target: linux_arm64_gnu
+      file: just-lsp-{{version}}-aarch64-unknown-linux-gnu.tar.gz
+      bin: just-lsp
     - target: linux_arm64_musl
       file: just-lsp-{{version}}-aarch64-unknown-linux-musl.tar.gz
+      bin: just-lsp
+    - target: linux_arm_gnu
+      file: just-lsp-{{version}}-arm-unknown-linux-gnueabihf.tar.gz
+      bin: just-lsp
+    - target: linux_arm_musl
+      file: just-lsp-{{version}}-arm-unknown-linux-musleabihf.tar.gz
+      bin: just-lsp
+    - target: linux_armv7_gnu
+      file: just-lsp-{{version}}-armv7-unknown-linux-gnueabihf.tar.gz
       bin: just-lsp
     - target: linux_arm
       file: just-lsp-{{version}}-armv7-unknown-linux-musleabihf.tar.gz
