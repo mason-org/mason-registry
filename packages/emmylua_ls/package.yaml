@@ -1,0 +1,44 @@
+---
+name: emmylua_ls
+description: The language server for Lua, offering extensive features for different Lua versions.
+homepage: https://github.com/CppCXY/emmylua-analyzer-rust/tree/main/crates/emmylua_ls
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - LSP
+
+source:
+  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.7.1
+  asset:
+    - target: darwin_arm64
+      file: emmylua_ls-darwin-arm64.tar.gz
+      bin: emmylua_ls
+    - target: darwin_x64
+      file: emmylua_ls-darwin-x64.tar.gz
+      bin: emmylua_ls
+    - target: linux_arm64_gnu
+      file: emmylua_ls-linux-aarch64-glibc.2.17.tar.gz
+      bin: emmylua_ls
+    - target: linux_x64_musl
+      file: emmylua_ls-linux-musl.tar.gz
+      bin: emmylua_ls
+    - target: linux_x64_gnu
+      file: emmylua_ls-linux-x64-glibc.2.17.tar.gz
+      bin: emmylua_ls
+    - target: linux_x64_gnu
+      file: emmylua_ls-linux-x64.tar.gz
+      bin: emmylua_ls
+    - target: win_arm64
+      file: emmylua_ls-win32-arm64.zip
+      bin: emmylua_ls.exe
+    - target: win_x86
+      file: emmylua_ls-win32-ia32.zip
+      bin: emmylua_ls.exe
+    - target: win_x64
+      file: emmylua_ls-win32-x64.zip
+      bin: emmylua_ls.exe
+
+bin:
+  emmylua_ls: "{{source.asset.bin}}"

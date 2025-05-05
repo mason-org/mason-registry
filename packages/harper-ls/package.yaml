@@ -17,11 +17,12 @@ languages:
   - C#
   - TOML
   - Lua
+  - Java
 categories:
   - LSP
 
 source:
-  id: pkg:github/elijah-potter/harper@v0.11.0
+  id: pkg:github/elijah-potter/harper@v0.32.1
   asset:
     - target: linux_x64_gnu
       file: harper-ls-x86_64-unknown-linux-gnu.tar.gz
@@ -36,7 +37,7 @@ source:
       file: harper-ls-aarch64-apple-darwin.tar.gz
       bin: harper-ls
     - target: win_x64
-      file: harper-ls-x86_64-pc-windows-gnu.zip
+      file: harper-ls-x86_64-pc-windows-msvc.zip
       bin: harper-ls.exe
 
 bin:

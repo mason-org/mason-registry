@@ -1,0 +1,16 @@
+---
+name: sleek
+description: Sleek is a CLI tool for formatting SQL.
+homepage: https://github.com/nrempel/sleek
+licenses:
+  - MIT
+languages:
+  - SQL
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/sleek@0.3.0
+
+bin:
+  sleek: cargo:sleek

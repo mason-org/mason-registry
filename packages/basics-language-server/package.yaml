@@ -1,0 +1,18 @@
+---
+name: basics-language-server
+description: Buffer, path, and snippet completions
+homepage: https://github.com/antonk52/basics-language-server
+licenses:
+  - MIT
+languages: [] # all languages
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/basics-language-server@1.1.2
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/antonk52/basics-language-server/v{{version}}/package.json
+
+bin:
+  basics-language-server: npm:basics-language-server

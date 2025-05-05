@@ -1,0 +1,50 @@
+---
+name: just-lsp
+description: just-lsp is a server implementation of the language server protocol for just, the command runner.
+homepage: https://github.com/terror/just-lsp/releases
+licenses:
+  - CC0-1.0
+languages:
+  - Just
+categories:
+  - LSP
+
+source:
+  id: pkg:github/terror/just-lsp@0.2.1
+  asset:
+    - target: darwin_arm64
+      file: just-lsp-{{version}}-aarch64-apple-darwin.tar.gz
+      bin: just-lsp
+    - target: win_arm64
+      file: just-lsp-{{version}}-aarch64-pc-windows-msvc.zip
+      bin: just-lsp.exe
+    - target: linux_arm64_gnu
+      file: just-lsp-{{version}}-aarch64-unknown-linux-gnu.tar.gz
+      bin: just-lsp
+    - target: linux_arm64_musl
+      file: just-lsp-{{version}}-aarch64-unknown-linux-musl.tar.gz
+      bin: just-lsp
+    - target: linux_arm_gnu
+      file: just-lsp-{{version}}-arm-unknown-linux-gnueabihf.tar.gz
+      bin: just-lsp
+    - target: linux_armv7_gnu
+      file: just-lsp-{{version}}-armv7-unknown-linux-gnueabihf.tar.gz
+      bin: just-lsp
+    - target: linux_arm
+      file: just-lsp-{{version}}-armv7-unknown-linux-musleabihf.tar.gz
+      bin: just-lsp
+    - target: darwin_x64
+      file: just-lsp-{{version}}-x86_64-apple-darwin.tar.gz
+      bin: just-lsp
+    - target: win_x64
+      file: just-lsp-{{version}}-x86_64-pc-windows-msvc.zip
+      bin: just-lsp.exe
+    - target: linux_x64_musl
+      file: just-lsp-{{version}}-x86_64-unknown-linux-musl.tar.gz
+      bin: just-lsp
+    - target: linux_x64_gnu
+      file: just-lsp-{{version}}-x86_64-unknown-linux-gnu.tar.gz
+      bin: just-lsp
+
+bin:
+  just-lsp: "{{source.asset.bin}}"

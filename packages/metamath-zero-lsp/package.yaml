@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/digama0/mm0@799b102cfe4e9e142d0039df4f63dbd8b203b4d0
+  id: pkg:github/digama0/mm0@872a27ee2439411e85ac448d8cc7d2c2ebf0a6df
   build:
     - target: unix
       run: |
@@ -23,6 +23,9 @@ source:
         Set-Location -Path .\mm0-rs
         cargo build --release
       bin: mm0-rs/target/release/mm0-rs.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/digama0/mm0/{{version}}/vscode-mm0/package.json
 
 bin:
   mm0-rs: "{{source.build.bin}}"

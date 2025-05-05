@@ -11,13 +11,13 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/johnnymorganz/stylua@v0.20.0
+  id: pkg:github/johnnymorganz/stylua@v2.1.0
   asset:
     - target: darwin_arm64
       file: stylua-macos-aarch64.zip
       bin: stylua
     - target: darwin_x64
-      file: stylua-macos.zip
+      file: stylua-macos-x86_64.zip
       bin: stylua
     - target: linux_x64_gnu
       file: stylua-linux-x86_64.zip
@@ -29,10 +29,32 @@ source:
       file: stylua-linux-x86_64-musl.zip
       bin: stylua
     - target: win_x64
-      file: stylua-win64.zip
+      file: stylua-windows-x86_64.zip
       bin: stylua.exe
 
   version_overrides:
+    - constraint: semver:<=v0.20.0
+      id: pkg:github/johnnymorganz/stylua@v0.20.0
+      asset:
+        - target: darwin_arm64
+          file: stylua-macos-aarch64.zip
+          bin: stylua
+        - target: darwin_x64
+          file: stylua-macos.zip
+          bin: stylua
+        - target: linux_x64_gnu
+          file: stylua-linux-x86_64.zip
+          bin: stylua
+        - target: linux_arm64_gnu
+          file: stylua-linux-aarch64.zip
+          bin: stylua
+        - target: linux_x64
+          file: stylua-linux-x86_64-musl.zip
+          bin: stylua
+        - target: win_x64
+          file: stylua-win64.zip
+          bin: stylua.exe
+
     - constraint: semver:<=v0.19.1
       id: pkg:github/johnnymorganz/stylua@v0.19.1
       asset:

@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40typespec/compiler@0.63.0
+  id: pkg:npm/%40typespec/compiler@0.67.2
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/typespec/%40typespec%2Fcompiler%40{{version}}/packages/typespec-vscode/package.json
 
 bin:
   tsp-server: npm:tsp-server

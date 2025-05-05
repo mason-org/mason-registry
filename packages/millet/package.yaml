@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/azdavis/millet@v0.14.7
+  id: pkg:github/azdavis/millet@v0.14.9
   asset:
     - target: darwin_arm64
       file: millet-ls-aarch64-apple-darwin.gz
@@ -31,6 +31,9 @@ source:
     - target: linux_x64_gnu
       file: millet-ls-x86_64-unknown-linux-gnu.gz
       bin: millet-ls-x86_64-unknown-linux-gnu
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/azdavis/millet/{{version}}/editors/vscode/package.json
 
 bin:
   millet: "{{source.asset.bin}}"

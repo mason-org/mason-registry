@@ -1,0 +1,41 @@
+---
+name: air
+description: R formatter and language server
+homepage: https://posit-dev.github.io/air/
+licenses:
+  - MIT
+languages:
+  - R
+categories:
+  - Formatter
+  - LSP
+
+source:
+  id: pkg:github/posit-dev/air@0.5.0
+  asset:
+    - target: darwin_arm64
+      file: air-aarch64-apple-darwin.tar.gz
+      bin: air-aarch64-apple-darwin/air
+    - target: darwin_x64
+      file: air-x86_64-apple-darwin.tar.gz
+      bin: air-x86_64-apple-darwin/air
+    - target: linux_arm64_gnu
+      file: air-aarch64-unknown-linux-gnu.tar.gz
+      bin: air-aarch64-unknown-linux-gnu/air
+    - target: linux_x64_gnu
+      file: air-x86_64-unknown-linux-gnu.tar.gz
+      bin: air-x86_64-unknown-linux-gnu/air
+    - target: win_x86
+      file: air-aarch64-pc-windows-msvc.zip
+      bin: air.exe
+    - target: win_x64
+      file: air-x86_64-pc-windows-msvc.zip
+      bin: air.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/posit-dev/air/{{version}}/editors/code/package.json
+
+
+bin:
+  air: "{{source.asset.bin}}"
+

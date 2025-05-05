@@ -9,6 +9,10 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  message: The CUE language server is now included in the cue language binary.
+  since: v0.11.1
+
 source:
   id: pkg:golang/cuelang.org/go@v0.10.1#cmd/cuepls
 

@@ -1,0 +1,15 @@
+---
+name: copilot-language-server
+description: The Copilot Language Server enables any editor or IDE to integrate with GitHub Copilot via the language server protocol.
+homepage: https://www.npmjs.com/package/@github/copilot-language-server
+licenses:
+  - proprietary
+languages: []
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40github/copilot-language-server@1.312.0
+
+bin:
+  copilot-language-server: npm:copilot-language-server

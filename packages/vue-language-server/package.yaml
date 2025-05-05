@@ -10,9 +10,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vue/language-server@2.1.10
+  id: pkg:npm/%40vue/language-server@2.2.8
   extra_packages:
     - typescript
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/vuejs/language-tools/v{{version}}/extensions/vscode/package.json
 
 bin:
   vue-language-server: npm:vue-language-server

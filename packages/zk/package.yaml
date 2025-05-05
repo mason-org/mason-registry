@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/zk-org/zk@v0.14.1
+  id: pkg:github/zk-org/zk@v0.15.1
   asset:
     - target: linux_arm64
       file: zk-{{version}}-linux-arm64.tar.gz
@@ -19,9 +19,9 @@ source:
     - target: linux_x86
       file: zk-{{version}}-linux-i386.tar.gz
     - target: darwin_arm64
-      file: zk-{{version}}-macos-arm64.zip
+      file: zk-{{version}}-macos-arm64.tar.gz
     - target: darwin_x64
-      file: zk-{{version}}-macos-x86_64.zip
+      file: zk-{{version}}-macos-x86_64.tar.gz
 
 bin:
   zk: zk

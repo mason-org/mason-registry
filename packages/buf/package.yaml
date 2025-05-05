@@ -12,9 +12,10 @@ languages:
 categories:
   - Linter
   - Formatter
+  - LSP
 
 source:
-  id: pkg:github/bufbuild/buf@v1.47.2
+  id: pkg:github/bufbuild/buf@v1.53.0
   asset:
     - target: darwin_x64
       file: buf-Darwin-x86_64

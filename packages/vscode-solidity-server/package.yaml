@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/vscode-solidity-server@0.0.179
+  id: pkg:npm/vscode-solidity-server@0.0.184
 
 bin:
   vscode-solidity-server: npm:vscode-solidity-server
