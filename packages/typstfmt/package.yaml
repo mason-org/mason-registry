@@ -10,6 +10,10 @@ languages:
 categories:
   - Formatter
 
+deprecation:
+  message: Package is unmaintained.
+  since: v0.2.10
+
 source:
   id: pkg:github/astrale-sharp/typstfmt@0.2.10
   asset:
