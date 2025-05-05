@@ -1,3 +1,4 @@
+---
 name: vhdl-style-guide
 description: Style guide enforcement for VHDL
 homepage: https://github.com/jeremiah-c-leary/vhdl-style-guide
@@ -7,6 +8,7 @@ languages:
   - VHDL
 categories:
   - Formatter
+
 source:
   id: pkg:pypi/vsg@3.31.0
 
