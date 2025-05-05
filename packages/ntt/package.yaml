@@ -9,6 +9,7 @@ languages:
 categories:
   - LSP
   - Runtime
+
 source:
   id: pkg:github/nokia/ntt@v0.19.1
   asset:

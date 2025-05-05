@@ -1,3 +1,4 @@
+---
 name: dotenv-linter
 description: ⚡️Lightning-fast linter for .env files. Written in Rust 🦀
 homepage: https://dotenv-linter.github.io/#/
@@ -7,6 +8,7 @@ languages:
   - Dotenv
 categories:
   - Linter
+
 source:
   id: pkg:github/dotenv-linter/dotenv-linter@v3.3.0
   asset:
