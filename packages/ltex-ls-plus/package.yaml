@@ -61,3 +61,6 @@ schemas:
 bin:
   ltex-ls-plus: "{{source.asset.bin.lsp}}"
   ltex-cli-plus: "{{source.asset.bin.cli}}"
+
+neovim:
+  lspconfig: ltex_plus
