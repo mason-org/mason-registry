@@ -17,3 +17,6 @@ schemas:
 
 bin:
   nomicfoundation-solidity-language-server: npm:nomicfoundation-solidity-language-server
+
+neovim:
+  lspconfig: solidity_ls_nomicfoundation

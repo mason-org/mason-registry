@@ -37,3 +37,6 @@ schemas:
 
 bin:
   millet: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: millet

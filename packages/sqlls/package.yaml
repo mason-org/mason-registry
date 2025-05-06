@@ -17,3 +17,6 @@ schemas:
 
 bin:
   sql-language-server: npm:sql-language-server
+
+neovim:
+  lspconfig: sqlls

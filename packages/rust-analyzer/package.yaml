@@ -44,3 +44,6 @@ schemas:
 
 bin:
   rust-analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: rust_analyzer

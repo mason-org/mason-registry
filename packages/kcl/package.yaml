@@ -44,3 +44,6 @@ source:
 bin:
   kcl: "{{source.asset.bin.kcl}}"
   kcl-language-server: "{{source.asset.bin.kcl_language_server}}"
+
+neovim:
+  lspconfig: kcl

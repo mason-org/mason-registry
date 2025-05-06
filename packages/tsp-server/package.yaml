@@ -17,3 +17,6 @@ schemas:
 
 bin:
   tsp-server: npm:tsp-server
+
+neovim:
+  lspconfig: tsp_server

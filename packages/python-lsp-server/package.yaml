@@ -17,3 +17,6 @@ schemas:
 
 bin:
   pylsp: pypi:pylsp
+
+neovim:
+  lspconfig: pylsp

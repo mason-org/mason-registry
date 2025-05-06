@@ -32,3 +32,6 @@ source:
 
 bin:
   buf: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: buf_ls

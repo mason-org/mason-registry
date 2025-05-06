@@ -17,3 +17,6 @@ source:
 
 bin:
   bsl-language-server: java-jar:{{source.asset.file}}
+
+neovim:
+  lspconfig: bsl_ls

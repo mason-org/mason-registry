@@ -21,3 +21,7 @@ schemas:
 
 share:
   apex-language-server/apex-jorje-lsp.jar: extension/dist/apex-jorje-lsp.jar
+
+# This server is not yet migrated to vim.lsp.config in nvim-lspconfig
+# neovim:
+#   lspconfig: apex_ls

@@ -20,3 +20,6 @@ bin:
 
 # CI never passes because the package has been removed from pypi.
 ci_skip: true
+
+neovim:
+  lspconfig: pkgbuild_language_server

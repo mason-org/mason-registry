@@ -35,3 +35,6 @@ source:
 
 bin:
   clojure-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: clojure_lsp

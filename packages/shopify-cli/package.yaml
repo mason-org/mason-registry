@@ -16,3 +16,6 @@ source:
 
 bin:
   shopify: npm:shopify
+
+neovim:
+  lspconfig: shopify_theme_ls

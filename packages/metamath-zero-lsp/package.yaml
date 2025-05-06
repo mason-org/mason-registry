@@ -32,3 +32,6 @@ bin:
 
 # requires rustc 1.65+
 ci_skip: true
+
+neovim:
+  lspconfig: mm0_ls

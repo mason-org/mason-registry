@@ -19,3 +19,6 @@ schemas:
 
 bin:
   visualforce-language-server: node:extension/dist/visualforceServer.js
+
+neovim:
+  lspconfig: visualforce_ls

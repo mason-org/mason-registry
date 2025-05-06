@@ -25,3 +25,6 @@ schemas:
 ci_skip:
   # freezes on Windows CI for some reason
   - win_x64
+
+neovim:
+  lspconfig: psalm

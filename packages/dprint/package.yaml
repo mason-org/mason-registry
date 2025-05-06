@@ -33,3 +33,6 @@ source:
 
 bin:
   dprint: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: dprint

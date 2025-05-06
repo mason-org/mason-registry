@@ -14,3 +14,6 @@ source:
 
 bin:
   hydra-lsp: pypi:hydra-lsp
+
+neovim:
+  lspconfig: hydra_lsp

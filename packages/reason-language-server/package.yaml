@@ -27,3 +27,6 @@ schemas:
 
 bin:
   reason-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: reason_ls

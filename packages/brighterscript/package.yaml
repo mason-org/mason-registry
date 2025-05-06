@@ -15,3 +15,6 @@ source:
 
 bin:
   bsc: npm:bsc
+
+neovim:
+  lspconfig: bright_script

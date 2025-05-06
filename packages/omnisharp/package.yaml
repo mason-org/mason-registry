@@ -32,3 +32,6 @@ schemas:
 
 bin:
   omnisharp: dotnet:libexec/OmniSharp.dll
+
+neovim:
+  lspconfig: omnisharp

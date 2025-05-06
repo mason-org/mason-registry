@@ -88,3 +88,6 @@ schemas:
 
 bin:
   zls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: zls

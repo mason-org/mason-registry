@@ -25,3 +25,6 @@ source:
 
 bin:
   zk: zk
+
+neovim:
+  lspconfig: zk

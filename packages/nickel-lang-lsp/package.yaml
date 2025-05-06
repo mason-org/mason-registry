@@ -19,3 +19,6 @@ schemas:
 
 bin:
   nls: cargo:nls
+
+neovim:
+  lspconfig: nickel_ls

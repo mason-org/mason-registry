@@ -22,3 +22,6 @@ source:
 
 bin:
   solc: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: solc

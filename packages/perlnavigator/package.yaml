@@ -17,3 +17,6 @@ schemas:
 
 bin:
   perlnavigator: node:node_modules/perlnavigator-server/out/server.js
+
+neovim:
+  lspconfig: perlnavigator

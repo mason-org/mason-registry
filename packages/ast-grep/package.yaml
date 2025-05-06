@@ -33,3 +33,6 @@ source:
 bin:
   ast-grep: npm:ast-grep
   sg: npm:sg
+
+neovim:
+  lspconfig: ast_grep

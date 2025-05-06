@@ -19,3 +19,6 @@ schemas:
 
 bin:
   prisma-language-server: npm:prisma-language-server
+
+neovim:
+  lspconfig: prismals

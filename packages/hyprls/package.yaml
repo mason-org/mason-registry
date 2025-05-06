@@ -14,3 +14,6 @@ source:
 
 bin:
   hyprls: golang:hyprls
+
+neovim:
+  lspconfig: hyprls

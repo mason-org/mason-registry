@@ -34,3 +34,6 @@ schemas:
 
 bin:
   solang: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: solang

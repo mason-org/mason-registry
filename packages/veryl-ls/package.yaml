@@ -31,3 +31,6 @@ schemas:
 
 bin:
   veryl-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: veryl_ls

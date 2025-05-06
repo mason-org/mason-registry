@@ -18,3 +18,6 @@ schemas:
 bin:
   basedpyright: pypi:basedpyright
   basedpyright-langserver: pypi:basedpyright-langserver
+
+neovim:
+  lspconfig: basedpyright

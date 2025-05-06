@@ -61,3 +61,6 @@ schemas:
 
 bin:
   ngserver: npm:ngserver
+
+neovim:
+  lspconfig: angularls

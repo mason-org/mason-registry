@@ -17,3 +17,6 @@ schemas:
 
 bin:
   fsautocomplete: nuget:fsautocomplete
+
+neovim:
+  lspconfig: fsautocomplete

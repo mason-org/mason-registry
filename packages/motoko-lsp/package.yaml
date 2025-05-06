@@ -19,3 +19,6 @@ schemas:
 
 bin:
   motoko-lsp: node:extension/out/server.js
+
+neovim:
+  lspconfig: motoko_lsp

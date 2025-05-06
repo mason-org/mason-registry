@@ -80,3 +80,6 @@ bin:
   verible-verilog-preprocessor: "{{source.asset.bin.preprocessor}}"
   verible-verilog-project: "{{source.asset.bin.project}}"
   verible-verilog-syntax: "{{source.asset.bin.syntax}}"
+
+neovim:
+  lspconfig: verible

@@ -14,3 +14,6 @@ source:
 
 bin:
   jsonnet-language-server: golang:jsonnet-language-server
+
+neovim:
+  lspconfig: jsonnet_ls

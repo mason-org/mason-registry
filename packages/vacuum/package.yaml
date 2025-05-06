@@ -42,3 +42,6 @@ source:
 
 bin:
   vacuum: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: vacuum

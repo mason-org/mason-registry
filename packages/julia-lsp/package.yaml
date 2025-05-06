@@ -24,3 +24,6 @@ schemas:
 
 bin:
   julia-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: julials

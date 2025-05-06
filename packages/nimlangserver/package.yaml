@@ -56,3 +56,6 @@ source:
 
 bin:
   nimlangserver: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: nim_langserver

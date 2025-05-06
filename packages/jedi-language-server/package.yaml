@@ -14,3 +14,6 @@ source:
 
 bin:
   jedi-language-server: pypi:jedi-language-server
+
+neovim:
+  lspconfig: jedi_language_server

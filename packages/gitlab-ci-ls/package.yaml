@@ -17,3 +17,6 @@ schemas:
 
 bin:
   gitlab-ci-ls: cargo:gitlab-ci-ls
+
+neovim:
+  lspconfig: gitlab_ci_ls

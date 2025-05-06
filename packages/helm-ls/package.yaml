@@ -40,3 +40,6 @@ source:
 
 bin:
   helm_ls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: helm_ls

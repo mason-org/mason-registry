@@ -14,3 +14,6 @@ source:
 
 bin:
   dot-language-server: npm:dot-language-server
+
+neovim:
+  lspconfig: dotls

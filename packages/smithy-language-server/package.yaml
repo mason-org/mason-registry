@@ -30,3 +30,6 @@ source:
 
 bin:
   smithy-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: smithy_ls

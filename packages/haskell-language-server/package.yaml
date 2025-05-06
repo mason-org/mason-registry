@@ -47,3 +47,6 @@ bin:
   haskell-language-server-9.8.4: "{{source.build.bin.server_9_8_4}}"
   haskell-language-server-9.10.1: "{{source.build.bin.server_9_10_1}}"
   haskell-language-server-9.12.2: "{{source.build.bin.server_9_12_2}}"
+
+neovim:
+  lspconfig: hls

@@ -25,3 +25,6 @@ source:
 
 bin:
   neocmakelsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: neocmake
