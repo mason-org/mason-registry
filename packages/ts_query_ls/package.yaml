@@ -30,3 +30,6 @@ source:
 
 bin:
   ts_query_ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: ts_query_ls

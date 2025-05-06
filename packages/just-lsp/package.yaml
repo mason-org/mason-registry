@@ -48,3 +48,6 @@ source:
 
 bin:
   just-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: just

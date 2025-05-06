@@ -42,3 +42,6 @@ source:
 
 bin:
   emmylua_ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: emmylua_ls
