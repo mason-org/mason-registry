@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nextflow-io/language-server@v24.10.3
+  id: pkg:github/nextflow-io/language-server@v24.10.4
   asset:
     file: "language-server-all.jar"
 
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   nextflow-language-server: java-jar:language-server-all.jar
+
+neovim:
+  lspconfig: nextflow_ls

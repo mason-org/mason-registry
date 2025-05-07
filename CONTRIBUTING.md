@@ -21,6 +21,8 @@
   - [`bin`](#bin)
   - [`share`](#share)
   - [`opt`](#opt)
+  - [`neovim`](#neovim)
+    - [`lspconfig`](#lspconfig)
 - [Expressions](#expressions)
 - [Examples](#examples)
   - [Common fields](#common-fields)
@@ -278,6 +280,23 @@ opt:
     solang/llvm15.0/LICENSE: doc/LICENSE
     # Links $MASON/opt/solang/llvm15.0/ -> <package>/llvm15.0/**/* (i.e. all files within the target directory)
     solang/llvm15.0/: llvm15.0/
+```
+
+## `neovim`
+
+The `neovim` property is an object that contain metadata specific for Neovim.
+
+### `lspconfig`
+
+The `lspconfig` property of `neovim` specifies the name of the LSP configuration as provided by
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/). Providing the `neovim.lspconfig` value MUST be done if the
+package contains an LSP configuration entry in nvim-lspconfig.
+
+Example:
+
+```yaml
+neovim:
+    lspconfig: lua_ls
 ```
 
 # Expressions

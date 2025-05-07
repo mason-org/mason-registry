@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/pyright@1.1.399
+  id: pkg:npm/pyright@1.1.400
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/microsoft/pyright/{{version}}/packages/vscode-pyright/package.json
@@ -18,3 +18,6 @@ schemas:
 bin:
   pyright: npm:pyright
   pyright-langserver: npm:pyright-langserver
+
+neovim:
+  lspconfig: pyright

@@ -30,3 +30,6 @@ schemas:
 
 bin:
   clangd: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: clangd

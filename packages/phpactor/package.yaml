@@ -20,3 +20,6 @@ source:
 
 bin:
   phpactor: php:phpactor.phar
+
+neovim:
+  lspconfig: phpactor

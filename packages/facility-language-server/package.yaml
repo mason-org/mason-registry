@@ -21,3 +21,6 @@ schemas:
 
 bin:
   facility-language-server: dotnet:libexec/Facility.LanguageServer.dll
+
+neovim:
+  lspconfig: facility_language_server

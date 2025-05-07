@@ -10,10 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/gitlab-ci-ls@1.0.3
+  id: pkg:cargo/gitlab-ci-ls@1.0.4
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/alesbrelih/gitlab-ci-ls/{{version}}/vscode-extension/package.json
 
 bin:
   gitlab-ci-ls: cargo:gitlab-ci-ls
+
+neovim:
+  lspconfig: gitlab_ci_ls

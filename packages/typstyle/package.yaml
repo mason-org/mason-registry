@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/Enter-tainer/typstyle@v0.13.3
+  id: pkg:github/Enter-tainer/typstyle@v0.13.5
   asset:
     - target: darwin_arm64
       file: typstyle-aarch64-apple-darwin

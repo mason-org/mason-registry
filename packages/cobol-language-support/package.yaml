@@ -36,3 +36,6 @@ schemas:
 
 bin:
   cobol-language-support: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: cobol_ls

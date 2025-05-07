@@ -11,8 +11,11 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/lelwel@0.7.1?features=lsp,cli
+  id: pkg:cargo/lelwel@0.8.0?features=lsp,cli
 
 bin:
   lelwel-ls: cargo:lelwel-ls
   llw: cargo:llw
+
+neovim:
+  lspconfig: lelwel_ls

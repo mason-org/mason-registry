@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/zk-org/zk@v0.15.0
+  id: pkg:github/zk-org/zk@v0.15.1
   asset:
     - target: linux_arm64
       file: zk-{{version}}-linux-arm64.tar.gz
@@ -26,7 +26,5 @@ source:
 bin:
   zk: zk
 
-# gzip behaves weirdly on macOS
-ci_skip:
-  - darwin_arm64
-  - darwin_x64
+neovim:
+  lspconfig: zk

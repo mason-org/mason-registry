@@ -5,12 +5,15 @@ homepage: https://github.com/pappasam/nginx-language-server
 licenses:
   - GPL-3.0-or-later
 languages:
-  - Nginx
+  - nginx
 categories:
   - LSP
 
 source:
-  id: pkg:pypi/nginx-language-server@0.8.0
+  id: pkg:pypi/nginx-language-server@0.9.0
 
 bin:
   nginx-language-server: pypi:nginx-language-server
+
+neovim:
+  lspconfig: nginx_language_server

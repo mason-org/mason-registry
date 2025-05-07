@@ -23,3 +23,6 @@ schemas:
 
 bin:
   raku-navigator: node:server/out/server.js
+
+neovim:
+  lspconfig: raku_navigator

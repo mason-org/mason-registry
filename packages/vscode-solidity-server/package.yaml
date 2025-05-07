@@ -14,3 +14,6 @@ source:
 
 bin:
   vscode-solidity-server: npm:vscode-solidity-server
+
+neovim:
+  lspconfig: solidity_ls

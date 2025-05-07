@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40neo4j-cypher/language-server@2.0.0-next.19
+  id: pkg:npm/%40neo4j-cypher/language-server@2.0.0-next.21
 
 bin:
   cypher-language-server: npm:cypher-language-server
+
+neovim:
+  lspconfig: cypher_ls

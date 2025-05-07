@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vue/language-server@2.2.8
+  id: pkg:npm/%40vue/language-server@2.2.10
   extra_packages:
     - typescript
 
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   vue-language-server: npm:vue-language-server
+
+neovim:
+  lspconfig: volar

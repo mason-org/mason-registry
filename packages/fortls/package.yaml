@@ -14,3 +14,6 @@ source:
 
 bin:
   fortls: pypi:fortls
+
+neovim:
+  lspconfig: fortls

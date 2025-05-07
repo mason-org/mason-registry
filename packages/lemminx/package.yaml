@@ -27,3 +27,6 @@ source:
 
 bin:
   lemminx: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: lemminx

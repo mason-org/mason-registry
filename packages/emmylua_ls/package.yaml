@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.7.0
+  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.7.1
   asset:
     - target: darwin_arm64
       file: emmylua_ls-darwin-arm64.tar.gz
@@ -42,3 +42,6 @@ source:
 
 bin:
   emmylua_ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: emmylua_ls

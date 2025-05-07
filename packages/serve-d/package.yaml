@@ -27,3 +27,6 @@ source:
 
 bin:
   serve-d: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: serve_d

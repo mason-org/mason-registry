@@ -16,3 +16,6 @@ source:
 
 bin:
   hdl_checker: pypi:hdl_checker
+
+neovim:
+  lspconfig: hdl_checker

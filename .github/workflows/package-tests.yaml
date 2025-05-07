@@ -28,3 +28,4 @@ jobs:
     uses: mason-org/actions/.github/workflows/package-tests.yaml@v1
     with:
       packages: ${{ github.event.inputs.packages }}
+      skip: ${{ github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci:skip-package-tests') }}

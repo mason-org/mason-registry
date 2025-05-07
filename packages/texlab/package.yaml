@@ -42,3 +42,6 @@ source:
 
 bin:
   texlab: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: texlab

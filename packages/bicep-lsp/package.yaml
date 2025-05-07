@@ -10,9 +10,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/Azure/bicep@v0.34.44
+  id: pkg:github/Azure/bicep@v0.35.1
   asset:
     file: vscode-bicep.vsix
 
 bin:
   bicep-lsp: dotnet:extension/bicepLanguageServer/Bicep.LangServer.dll
+
+neovim:
+  lspconfig: bicep

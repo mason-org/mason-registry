@@ -23,3 +23,6 @@ schemas:
 
 bin:
   jinja-lsp: cargo:jinja-lsp
+
+neovim:
+  lspconfig: jinja_lsp

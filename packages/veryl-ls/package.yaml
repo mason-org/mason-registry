@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/veryl-lang/veryl@v0.15.0
+  id: pkg:github/veryl-lang/veryl@v0.16.0
   asset:
     - target: darwin_arm64
       file: veryl-aarch64-mac.zip
@@ -31,3 +31,6 @@ schemas:
 
 bin:
   veryl-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: veryl_ls

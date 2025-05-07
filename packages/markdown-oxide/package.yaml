@@ -32,3 +32,6 @@ source:
 
 bin:
   markdown-oxide: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: markdown_oxide

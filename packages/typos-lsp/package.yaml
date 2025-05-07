@@ -21,7 +21,7 @@ source:
       file: typos-lsp-{{ version }}-x86_64-unknown-linux-gnu.tar.gz
       bin: typos-lsp
     - target: linux_x64
-      file: typos-lsp-{{ version }}-x86_64-unknown-linux-musl.tar.gz 
+      file: typos-lsp-{{ version }}-x86_64-unknown-linux-musl.tar.gz
       bin: typos-lsp
     - target: linux_arm64_gnu
       file: typos-lsp-{{ version }}-aarch64-unknown-linux-gnu.tar.gz
@@ -30,7 +30,7 @@ source:
       file: typos-lsp-{{ version }}-arm-unknown-linux-gnueabihf.tar.gz
       bin: typos-lsp
     - target: linux_arm64
-      file: typos-lsp-{{ version }}-aarch64-unknown-linux-musl.tar.gz 
+      file: typos-lsp-{{ version }}-aarch64-unknown-linux-musl.tar.gz
       bin: typos-lsp
     - target: win_x64
       file: typos-lsp-{{ version }}-x86_64-pc-windows-msvc.zip
@@ -44,3 +44,6 @@ schemas:
 
 bin:
   typos-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: typos_lsp

@@ -15,3 +15,6 @@ source:
 
 bin:
   pyre: pypi:pyre
+
+neovim:
+  lspconfig: pyre

@@ -32,3 +32,6 @@ source:
 
 bin:
   omnisharp-mono: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: omnisharp_mono

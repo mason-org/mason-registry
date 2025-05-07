@@ -55,3 +55,6 @@ schemas:
 
 bin:
   terraform-ls: "{{source.download.bin}}"
+
+neovim:
+  lspconfig: terraformls

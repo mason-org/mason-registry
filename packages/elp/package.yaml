@@ -33,3 +33,6 @@ schemas:
 
 bin:
   elp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: elp

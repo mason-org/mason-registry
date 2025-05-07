@@ -16,3 +16,6 @@ source:
 
 bin:
   nil: cargo:nil
+
+neovim:
+  lspconfig: nil_ls

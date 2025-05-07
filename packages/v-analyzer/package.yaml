@@ -30,3 +30,6 @@ schemas:
 
 bin:
   v-analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: v_analyzer
