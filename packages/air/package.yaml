@@ -39,3 +39,5 @@ schemas:
 bin:
   air: "{{source.asset.bin}}"
 
+neovim:
+  lspconfig: air

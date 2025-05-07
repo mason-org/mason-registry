@@ -20,3 +20,6 @@ schemas:
 bin:
   oxlint: npm:oxlint
   oxc_language_server: npm:oxc_language_server
+
+neovim:
+  lspconfig: oxlint

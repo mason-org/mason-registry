@@ -19,3 +19,6 @@ schemas:
 
 bin:
   nextflow-language-server: java-jar:language-server-all.jar
+
+neovim:
+  lspconfig: nextflow_ls

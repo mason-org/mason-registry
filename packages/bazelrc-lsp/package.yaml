@@ -21,3 +21,6 @@ source:
 
 bin:
   bazelrc-lsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: bazelrc_lsp
