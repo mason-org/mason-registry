@@ -13,7 +13,7 @@ source:
   id: pkg:npm/%40typespec/compiler@1.0.0
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/microsoft/typespec/%40typespec%2Fcompiler%40{{version}}/packages/typespec-vscode/package.json
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/typespec/typespec-stable%40{{version}}/packages/typespec-vscode/package.json
 
 bin:
   tsp-server: npm:tsp-server
