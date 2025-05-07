@@ -38,7 +38,6 @@ schemas:
 
 bin:
   OmniSharp: "{{source.asset.bin}}"
-  omnisharp: dotnet:libexec/OmniSharp.dll
 
 neovim:
   lspconfig: omnisharp
