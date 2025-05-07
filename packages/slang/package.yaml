@@ -46,3 +46,6 @@ source:
 bin:
   slangd: "{{source.asset.bin.slangd}}"
   slangc: "{{source.asset.bin.slangc}}"
+
+neovim:
+  lspconfig: slangd

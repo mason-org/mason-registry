@@ -14,3 +14,6 @@ source:
 
 bin:
   gh-actions-language-server: npm:gh-actions-language-server
+
+neovim:
+  lspconfig: gh_actions_ls
