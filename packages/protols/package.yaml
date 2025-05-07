@@ -14,3 +14,6 @@ source:
 
 bin:
   protols: cargo:protols
+
+neovim:
+  lspconfig: protols
