@@ -13,11 +13,11 @@ source:
   id: pkg:github/SolaWing/xcode-build-server@v1.2.0
   assets:
     - target: darwin_arm64
-      file: {{ version }}.tar.gz
+      file: "{{ version }}.tar.gz"
       bin: xcode-build-server
 
     - target: darwin_x64
-      file: {{ version }}.tar.gz
+      file: "{{ version }}.tar.gz"
       bin: xcode-build-server
 bin:
   xcode-build-server: xcode-build-server
