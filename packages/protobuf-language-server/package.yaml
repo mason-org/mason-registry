@@ -1,0 +1,18 @@
+---
+name: protobuf-language-server
+description: A language server implementation for Google Protocol Buffers
+homepage: https://github.com/lasorda/protobuf-language-server
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Protobuf
+  - c++
+categories:
+  - LSP
+
+source:
+  id: pkg:golang/github/lasorda/protobuf-language-server@v0.0.1#cmd/protobuf-language-server
+
+bin:
+  protobuf_language_server: golang:protobuf-language-server
