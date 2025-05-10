@@ -1,0 +1,26 @@
+---
+name: vscode-spring-boot-tools
+description: |
+  VS Code Language Server for Spring Boot
+  VSCode extension and Language Server providing support for working with Spring Boot application.properties, application.yml and .java files.
+
+  Note: this extension has a dependency on VS Code extension of Language Support for Java™ by Red Hat.
+homepage: https://github.com/spring-projects/spring-tools
+licenses:
+  - EPL-1.0
+languages:
+  - Java
+categories:
+  - LSP
+
+source:
+  id: pkg:openvsx/VMware/vscode-spring-boot@1.59.0
+  download:
+    file: VMware.vscode-spring-boot-{{version}}.vsix
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/spring-projects/spring-tools/vscode-spring-boot-{{version}}-RC1/vscode-extensions/vscode-spring-boot/package.json
+
+share:
+  vscode-spring-boot-tools/jdtls/: extension/jars/
+  vscode-spring-boot-tools/language-server.jar: extension/language-server/spring-boot-language-server-{{version}}-SNAPSHOT-exec.jar
