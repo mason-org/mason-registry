@@ -1,0 +1,20 @@
+---
+name: ty
+description: An extremely fast Python type checker and language server, written in Rust.
+homepage: https://github.com/astral-sh/ty
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+  - LSP
+
+source:
+  id: pkg:pypi/ty@0.0.0a8
+
+bin:
+  ty: pypi:ty
+
+neovim:
+  lspconfig: ty
