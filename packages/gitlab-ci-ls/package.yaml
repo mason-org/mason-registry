@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/gitlab-ci-ls@1.0.5
+  id: pkg:cargo/gitlab-ci-ls@1.1.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/alesbrelih/gitlab-ci-ls/{{version}}/vscode-extension/package.json
