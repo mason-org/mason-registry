@@ -1,0 +1,17 @@
+name: veridian
+description: A SystemVerilog Language Server
+homepage: https://github.com/vivekmalneedi/veridian
+licenses:
+  - MIT
+languages:
+  - SystemVerilog
+categories:
+  - LSP
+source:
+  id: pkg:cargo/veridian@nightly?repository_url=https://github.com/vivekmalneedi/veridian
+
+bin:
+  veridian: cargo:veridian
+
+schemas:
+  lsp: https://raw.githubusercontent.com/vivekmalneedi/veridian/{{version}}/extensions/vscode/package.json
