@@ -14,9 +14,14 @@ categories:
 source:
   id: pkg:npm/%40angular/language-server@20.0.0
   extra_packages:
-    - typescript@5.5.4
+    - typescript@5.8.3
 
   version_overrides:
+    - constraint: semver:<=19.2.4
+      id: pkg:npm/%40angular/language-server@19.2.4
+      extra_packages:
+        - typescript@5.8.3
+
     - constraint: semver:<=18.2.0
       id: pkg:npm/%40angular/language-server@18.2.0
       extra_packages:
