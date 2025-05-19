@@ -14,22 +14,22 @@ source:
   asset:
     - target: darwin_x64
       file: pinact_darwin_amd64.tar.gz
-      bin: actionlint
+      bin: pinact
     - target: darwin_arm64
       file: pinact_darwin_arm64.tar.gz
-      bin: actionlint
+      bin: pinact
     - target: linux_x64
       file: pinact_linux_amd64.tar.gz
-      bin: actionlint
+      bin: pinact
     - target: linux_arm64
       file: pinact_linux_arm64.tar.gz
-      bin: actionlint
+      bin: pinact
     - target: win_x64
       file: pinact_windows_amd64.zip
-      bin: actionlint.exe
+      bin: pinact.exe
     - target: win_arm64
       file: pinact_windows_arm64.zip
-      bin: actionlint.exe
+      bin: pinact.exe
 
 bin:
   pinact: "{{source.asset.bin}}"
