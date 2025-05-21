@@ -21,4 +21,4 @@ bin:
   vue-language-server: npm:vue-language-server
 
 neovim:
-  lspconfig: volar
+  lspconfig: vue_ls
