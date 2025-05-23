@@ -27,7 +27,7 @@ source:
     - target: linux_arm64
       file: taplo-linux-aarch64.gz
       bin: taplo-linux-aarch64
-    - target: linux_arm7_gnu
+    - target: linux_armv7_gnu
       file: taplo-linux-armv7.gz
       bin: taplo-linux-armv7
     - target: win_x64
