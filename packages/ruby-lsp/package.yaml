@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/ruby-lsp@0.23.21
+  id: pkg:gem/ruby-lsp@0.23.22
   extra_packages:
     - ruby-lsp-rails
 
