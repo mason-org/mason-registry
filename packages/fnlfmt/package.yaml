@@ -12,12 +12,16 @@ categories:
 source:
   # renovate:datasource=git-tags
   id: pkg:generic/https://git.sr.ht/~technomancy/fnlfmt@0.3.2
-  download:
-    files:
-      fnlfmt-{{version}}.tar.gz: https://git.sr.ht/~technomancy/fnlfmt/archive/{{version}}.tar.gz
   build:
-    run: make
-    bin: fnlfmt
+    env:
+      URL: "https://git.sr.ht/~technomancy/fnlfmt/archive/{{version}}.tar.gz"
+    run: |
+      curl -L -o fnlfmt.tar.gz "$URL"
+      tar --no-same-owner -xvf fnlfmt.tar.gz
+      cd fnlfmt-*
+      echo "#!/usr/bin/env lua" > fnlfmt
+      LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> fnlfmt
+      chmod +x fnlfmt
 
 bin:
-  fnlfmt: "{{source.build.bin}}"
+  fnlfmt: "fnlfmt-{{version}}/fnlfmt"
