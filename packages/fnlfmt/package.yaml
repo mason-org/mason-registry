@@ -1,0 +1,20 @@
+---
+name: fnlfmt
+description: Formatter for Fennel code
+homepage: https://git.sr.ht/~technomancy/fnlfmt
+licenses:
+  - MIT
+languages:
+  - Fennel
+categories:
+  - Formatter
+
+source:
+  # renovate:datasource=git-tags
+  id: pkg:git/https://git.sr.ht/~technomancy/fnlfmt@v0.3.2
+  build:
+    run: make
+    bin: fnlfmt
+
+bin:
+  fnlfmt: "{{source.build.bin}}"
