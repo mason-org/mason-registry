@@ -1,0 +1,15 @@
+---
+name: owl-ms-language-server
+description: A language server for the OWL 2 Mancherster Syntax
+homepage: https://github.com/janekx21/owl-ms-language-server
+licenses:
+  - MIT
+languages:
+  - OWL
+categories:
+  - LSP
+source:
+  id: pkg:cargo/owl-ms-language-server@0.1.3
+
+bin:
+  owl-ms-language-server: cargo:owl-ms-language-server
