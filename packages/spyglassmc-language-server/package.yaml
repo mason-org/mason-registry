@@ -14,3 +14,6 @@ source:
 
 bin:
   spyglassmc-language-server: npm:spyglassmc-language-server
+
+neovim:
+  lspconfig: spyglassmc_language_server
