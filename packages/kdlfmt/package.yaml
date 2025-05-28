@@ -1,0 +1,17 @@
+---
+name: kdlfmt
+description: A code formatter for KDL documents.
+homepage: https://github.com/hougesen/kdlfmt
+licenses:
+  - MIT
+languages:
+  - KDL
+  - Rust
+categories:
+  - Formatter
+
+source:
+  id: pkg:cargo/kdlfmt@0.0.16
+
+bin:
+  kdlfmt: cargo:kdlfmt
