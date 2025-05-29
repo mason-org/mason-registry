@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40tailwindcss/language-server@0.14.19
+  id: pkg:npm/%40tailwindcss/language-server@0.14.20
 
 schemas:
   lsp: https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v{{version}}/packages/vscode-tailwindcss/package.json
