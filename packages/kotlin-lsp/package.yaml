@@ -10,11 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:generic/jetbrains/kotlin-lsp@0.252.17811
+  # renovate:versioning=loose
+  # renovate:datasource=github-releases
+  id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v0.252.17811
   download:
     - target: unix
       files:
-        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version }}/kotlin-{{ version }}.zip
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-{{ version | strip_prefix "kotlin-lsp/v" }}.zip
       bin: kotlin-lsp.sh
 
 bin:
