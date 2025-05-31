@@ -12,9 +12,10 @@ categories:
 source:
   id: pkg:generic/jetbrains/kotlin-lsp@0.252.17811
   download:
-    files:
-      kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version }}/kotlin-{{ version }}.zip
-    bin: kotlin-lsp.sh
+    - target: unix
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version }}/kotlin-{{ version }}.zip
+      bin: kotlin-lsp.sh
 
 bin:
   kotlin-lsp: "{{source.download.bin}}"
