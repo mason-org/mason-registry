@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/styrainc/regal@v0.34.0
+  id: pkg:github/styrainc/regal@v0.34.1
   asset:
     - target: darwin_arm64
       file: regal_Darwin_arm64
