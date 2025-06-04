@@ -10,12 +10,6 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/kamadorueda/alejandra@4.0.0
-  asset:
-    - target: linux_x64
-      file: alejandra-x86_64-unknown-linux-musl
-    - target: linux_arm64
-      file: alejandra-aarch64-unknown-linux-musl
-
+  id: pkg:cargo/alejandra_cli@4.0.0?repository_url=https://github.com/kamadorueda/alejandra
 bin:
-  alejandra: "{{source.asset.file}}"
+  alejandra: cargo:alejandra
