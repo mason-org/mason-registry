@@ -8,6 +8,7 @@ languages:
   - TOML
 categories:
   - LSP
+  - Formatter
 
 source:
   id: pkg:github/tamasfe/taplo@0.10.0
