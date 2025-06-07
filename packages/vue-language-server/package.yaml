@@ -20,5 +20,8 @@ schemas:
 bin:
   vue-language-server: npm:vue-language-server
 
+share:
+  vue-language-server: node_modules/@vue/language-server
+
 neovim:
   lspconfig: vue_ls
