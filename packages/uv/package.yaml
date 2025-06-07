@@ -38,19 +38,19 @@ source:
       uvx: uv-armv7-unknown-linux-gnueabihf/uvx
     - target: win_x64
       file: uv-x86_64-pc-windows-msvc.zip
-      uv: uv-x86_64-pc-windows-msvc/uv.exe
-      uvw: uv-x86_64-pc-windows-msvc/uvw.exe
-      uvx: uv-x86_64-pc-windows-msvc/uvx.exe
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
     - target: win_x86
       file: uv-i686-pc-windows-msvc.zip
-      uv: uv-i686-pc-windows-msvc/uv.exe
-      uvw: uv-i686-pc-windows-msvc/uvw.exe
-      uvx: uv-i686-pc-windows-msvc/uvx.exe
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
     - target: win_arm64
       file: uv-aarch64-pc-windows-msvc.zip
-      uv: uv-aarch64-pc-windows-msvc/uv.exe
-      uvw: uv-aarch64-pc-windows-msvc/uvw.exe
-      uvx: uv-aarch64-pc-windows-msvc/uvx.exe
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
 
 bin:
   uv: "{{source.asset.uv}}"
