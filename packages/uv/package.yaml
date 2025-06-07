@@ -1,0 +1,58 @@
+---
+name: uv
+description: |
+  An extremely fast Python package and project manager, written in Rust
+homepage: https://docs.astral.sh/uv/
+licenses:
+  - Apache-2.0
+  - MIT
+languages: []
+categories: []
+
+source:
+  id: pkg:github/astral-sh/uv@v0.7.12
+  asset:
+    - target: darwin_x64
+      file: uv-x86_64-apple-darwin.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: darwin_arm64
+      file: uv-aarch64-apple-darwin.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: linux_x64
+      file: uv-x86_64-unknown-linux-gnu.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: linux_x86
+      file: uv-i686-unknown-linux-gnu.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: linux_arm64
+      file: uv-aarch64-unknown-linux-gnu.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: linux_arm
+      file: uv-armv7-unknown-linux-gnueabihf.tar.gz
+      uv: uv
+      uvx: uvx
+    - target: win_x64
+      file: uv-x86_64-pc-windows-msvc.zip
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
+    - target: win_x86
+      file: uv-i686-pc-windows-msvc.zip
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
+    - target: win_arm64
+      file: uv-aarch64-pc-windows-msvc.zip
+      uv: uv.exe
+      uvw: uvw.exe
+      uvx: uvx.exe
+
+bin:
+  uv: "{{source.asset.uv}}"
+  uvw: "{{source.asset.uvw}}"
+  uvx: "{{source.asset.uvx}}"
