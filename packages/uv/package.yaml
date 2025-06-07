@@ -7,7 +7,7 @@ licenses:
   - Apache-2.0
   - MIT
 languages:
-  - python
+  - Python
 categories: []
 
 source:
