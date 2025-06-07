@@ -6,8 +6,7 @@ licenses:
   - MIT
 languages:
   - YAML
-categories:
-  - Formatter
+categories: []
 
 source:
   id: pkg:github/suzuki-shunsuke/pinact@v3.1.2
