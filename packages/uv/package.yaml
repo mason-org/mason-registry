@@ -6,7 +6,8 @@ homepage: https://docs.astral.sh/uv/
 licenses:
   - Apache-2.0
   - MIT
-languages: []
+languages:
+  - python
 categories: []
 
 source:
