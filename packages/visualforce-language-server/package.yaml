@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/forcedotcom/salesforcedx-vscode@v63.16.3
+  id: pkg:github/forcedotcom/salesforcedx-vscode@v64.0.3
   asset:
     file: salesforcedx-vscode-visualforce-{{ version | strip_prefix "v" }}.vsix
 
