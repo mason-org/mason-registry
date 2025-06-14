@@ -10,10 +10,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/VectorCode@0.6.12
+  id: pkg:pypi/VectorCode@0.6.12?extra=lsp
 
 bin:
   vectorcode: pypi:VectorCode
   vectorcode-server: pypi:VectorCode
   vectorcode-mcp-server: pypi:VectorCode
 
+neovim:
+  lspconfig: vectorcode_server
