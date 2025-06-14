@@ -1,0 +1,19 @@
+---
+name: vectorcode
+description: A code repository indexing tool to supercharge your LLM experience.
+homepage: https://github.com/Davidyz/VectorCode
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/VectorCode@0.6.12
+
+bin:
+  vectorcode: pypi:VectorCode
+  vectorcode-server: pypi:VectorCode
+  vectorcode-mcp-server: pypi:VectorCode
+
