@@ -13,9 +13,9 @@ source:
   id: pkg:pypi/VectorCode@0.6.12?extra=lsp
 
 bin:
-  vectorcode: pypi:VectorCode
-  vectorcode-server: pypi:VectorCode
-  vectorcode-mcp-server: pypi:VectorCode
+  vectorcode: pypi:vectorcode
+  vectorcode-server: pypi:vectorcode-server
+  vectorcode-mcp-server: pypi:vectorcode-mcp-server
 
 neovim:
   lspconfig: vectorcode_server
