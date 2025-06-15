@@ -1,0 +1,15 @@
+name: fnlfmt
+description: Format your Fennel!
+homepage: https://git.sr.ht/~technomancy/fnlfmt#fennel-format
+licenses:
+  - MIT
+languages:
+  - Fennel
+categories:
+  - Formatter
+
+source:
+  id: pkg:luarocks/fnlfmt@0.3.1
+
+bin:
+  fnlfmt: luarocks:fnlfmt
