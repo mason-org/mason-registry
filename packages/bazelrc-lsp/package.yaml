@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/salesforce-misc/bazelrc-lsp@v0.2.4
+  id: pkg:github/salesforce-misc/bazelrc-lsp@v0.2.5
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: bazelrc-lsp-macos
