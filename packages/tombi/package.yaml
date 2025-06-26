@@ -16,7 +16,7 @@ neovim:
   lspconfig: tombi
 
 source:
-  id: pkg:pypi/tombi@0.4.13
+  id: pkg:pypi/tombi@0.4.14
 
 bin:
   tombi: pypi:tombi
