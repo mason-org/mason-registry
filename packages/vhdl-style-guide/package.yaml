@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/vsg@3.31.0
+  id: pkg:pypi/vsg@3.32.0
 
 bin:
   vsg: pypi:vsg
