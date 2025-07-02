@@ -1,0 +1,19 @@
+---
+name: flake8-pyproject
+description: |
+  Flake8 plug-in loading the configuration from pyproject.toml.
+  Mason: To be used as a replacement for package flake8, because it also provides the flake8 binary.
+homepage: https://github.com/john-hen/Flake8-pyproject
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/Flake8-pyproject@1.2.3
+
+bin:
+  flake8: pypi:flake8
+  flake8p: pypi:flake8p
