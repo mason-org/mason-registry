@@ -1,0 +1,8 @@
+{
+  "name": "asmodeus-lsp",
+  "description": "Language Server Protocol implementation for Asmodeus Machine W assembly",
+  "homepage": "https://github.com/asmod-lang/asmodeus-lsp",
+  "licenses": ["MIT"],
+  "languages": ["asmodeus", "assembly"],
+  "categories": ["LSP"]
+}

@@ -1,0 +1,32 @@
+---
+name: asmodeus-lsp
+description: Language Server Protocol implementation for Asmodeus Machine W assembly
+homepage: https://github.com/asmod-lang/asmodeus-lsp
+licenses:
+  - MIT
+languages:
+  - assembly
+categories:
+  - LSP
+
+source:
+  id: pkg:github/asmod-lang/asmodeus-lsp@v0.1.1
+  asset:
+    - target: darwin_x64
+      file: asmodeus-lsp-v0.1.1-x86_64-apple-darwin.tar.gz
+      bin: asmodeus-lsp
+    - target: darwin_arm64
+      file: asmodeus-lsp-v0.1.1-aarch64-apple-darwin.tar.gz
+      bin: asmodeus-lsp
+    - target: linux_x64
+      file: asmodeus-lsp-v0.1.1-x86_64-unknown-linux-gnu.tar.gz
+      bin: asmodeus-lsp
+    - target: linux_arm64
+      file: asmodeus-lsp-v0.1.1-aarch64-unknown-linux-gnu.tar.gz
+      bin: asmodeus-lsp
+    - target: win_x64
+      file: asmodeus-lsp-v0.1.1-x86_64-pc-windows-msvc.zip
+      bin: asmodeus-lsp.exe
+
+bin:
+  asmodeus-lsp: "{{source.asset.bin}}"
