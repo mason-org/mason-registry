@@ -12,7 +12,7 @@ categories:
 source:
   id: pkg:openvsx/vscjava/vscode-java-dependency@0.24.1
   download:
-    file: vscjava.vscode-java-dependency-0.24.1.vsix
+    file: vscjava.vscode-java-dependency-{{version}}.vsix
 
 share:
   vscode-java-dependency/: extension/server/
