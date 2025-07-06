@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/textlint@15.1.1
+  id: pkg:npm/textlint@15.2.0
 
 bin:
   textlint: npm:textlint
