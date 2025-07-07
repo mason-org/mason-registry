@@ -7,7 +7,7 @@ licenses:
 languages:
   - Java
 categories:
-  - Runtime
+  - LSP
 
 source:
   id: pkg:openvsx/vscjava/vscode-java-dependency@0.24.1
