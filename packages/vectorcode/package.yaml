@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/VectorCode@0.7.6?extra=lsp
+  id: pkg:pypi/VectorCode@0.7.7?extra=lsp
 
 bin:
   vectorcode: pypi:vectorcode
