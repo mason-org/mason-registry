@@ -26,3 +26,6 @@ source:
 
 bin:
   qmlls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: qmlls
