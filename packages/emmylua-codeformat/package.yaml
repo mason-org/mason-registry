@@ -1,6 +1,8 @@
 ---
 name: emmylua-codeformat
-description: Fast, powerful, and feature-rich Lua formatting and checking tool.
+description: |
+  Fast, powerful, and feature-rich Lua formatting and checking tool. 
+  This tool is already bundled with lua_ls, so you don’t need it if you’re using lua_ls.
 homepage: https://github.com/CppCXY/EmmyLuaCodeStyle
 licenses:
   - MIT
