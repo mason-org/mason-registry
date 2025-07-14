@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/quarylabs/sqruff@v0.28.1
+  id: pkg:github/quarylabs/sqruff@v0.28.2
   asset:
     - target: linux_x64
       file: sqruff-linux-x86_64-musl.tar.gz
