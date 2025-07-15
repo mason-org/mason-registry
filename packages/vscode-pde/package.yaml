@@ -1,0 +1,24 @@
+---
+name: vscode-pde
+description: |
+  This extension works as a plugin of Language Support for eclipse.jtl.ls. It provides the
+  ability to import Eclipse PDE projects and set up the correct target platforms.
+
+  The extension will be build from source and requires that JAVA_HOME is set to the path to JDK 21.
+homepage: https://github.com/testforstephen/vscode-pde
+licenses:
+  - EPL-2.0
+languages:
+  - Java
+categories: []
+
+source:
+  # version behind: https://github.com/testforstephen/vscode-pde/pull/58
+  id: pkg:github/PMarinov1994/vscode-pde@eb044c94527df73a7bb402b1508eb97397c254c9
+  build:
+    run: |
+      npm ci
+      npm run build-server
+
+share:
+  vscode-pde/: server/
