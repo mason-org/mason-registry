@@ -1,7 +1,7 @@
 ---
 name: turtle-language-server
 description: A language server (by Stardog) for Turtle
-homepage: https://www.npmjs.com/package/turtle-language-server
+homepage: https://github.com/stardog-union/stardog-language-servers
 licenses:
   - Apache-2.0
 languages:
