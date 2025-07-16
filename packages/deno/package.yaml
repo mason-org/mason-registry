@@ -15,7 +15,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/denoland/deno@v2.4.1
+  id: pkg:github/denoland/deno@v2.4.2
   asset:
     - target: darwin_arm64
       file: deno-aarch64-apple-darwin.zip
