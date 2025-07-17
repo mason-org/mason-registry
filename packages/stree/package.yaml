@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/syntax_tree@6.2.0
+  id: pkg:gem/syntax_tree@6.3.0
 
 bin:
   stree: gem:stree
