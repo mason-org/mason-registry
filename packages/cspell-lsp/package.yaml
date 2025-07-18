@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/@vlabo/cspell-lsp@1.1.4
+  id: pkg:npm/@vlabo/cspell-lsp@1.1.5
 
 bin:
   cspell-lsp: npm:cspell-lsp
