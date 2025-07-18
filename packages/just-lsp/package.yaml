@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/terror/just-lsp@0.2.3
+  id: pkg:github/terror/just-lsp@0.2.4
   asset:
     - target: darwin_arm64
       file: just-lsp-{{version}}-aarch64-apple-darwin.tar.gz
