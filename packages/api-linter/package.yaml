@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/googleapis/api-linter@v1.70.0#cmd/api-linter
+  id: pkg:golang/github.com/googleapis/api-linter@v1.70.1#cmd/api-linter
 
 bin:
   api-linter: golang:api-linter
