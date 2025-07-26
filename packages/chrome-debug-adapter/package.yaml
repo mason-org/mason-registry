@@ -10,6 +10,10 @@ languages:
 categories:
   - DAP
 
+deprecation:
+  since: v4.13.0
+  message: This adapter has been superseded by the js-debug-adapter.
+
 source:
   # renovate:datasource=github-tags
   id: pkg:github/Microsoft/vscode-chrome-debug@v4.13.0
