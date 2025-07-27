@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/beancount-language-server@v1.4.1?locked=false
+  id: pkg:cargo/beancount-language-server@v1.4.1?repository_url=https://github.com/polarmutex/beancount-language-server
 
 bin:
   beancount-language-server: cargo:beancount-language-server
