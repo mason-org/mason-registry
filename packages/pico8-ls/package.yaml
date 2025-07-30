@@ -11,12 +11,18 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/japhib/pico8-ls@fe6eead78f4a15732c78523e5d17b52564227892
+  id: pkg:github/japhib/pico8-ls@35fbeec734ffc2ca636df7bd4f172ec6d93afd4c
   build:
     run: |
       npm install
       npm run compile
       npm install --production
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/japhib/pico8-ls/{{version}}/package.json
+
 bin:
   pico8-ls: node:server/out-min/main.js
+
+neovim:
+  lspconfig: pico8_ls

@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nolanderc/glsl_analyzer@v1.5.1
+  id: pkg:github/nolanderc/glsl_analyzer@v1.6.0
   asset:
     - target: darwin_x64
       file: x86_64-macos.zip
@@ -34,3 +34,6 @@ source:
 
 bin:
   glsl_analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: glsl_analyzer

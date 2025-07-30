@@ -10,7 +10,21 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/neocmakelsp@0.8.12
+  id: pkg:github/neocmakelsp/neocmakelsp@v0.8.23
+  asset:
+    - target: darwin_arm64
+      file: neocmakelsp-aarch64-apple-darwin
+    - target: darwin_x64
+      file: neocmakelsp-x86_64-apple-darwin
+    - target: linux_x64
+      file: neocmakelsp-x86_64-unknown-linux-musl
+    - target: linux_arm64_gnu
+      file: neocmakelsp-aarch64-unknown-linux-gnu
+    - target: win_x64
+      file: neocmakelsp-x86_64-pc-windows-msvc.exe
 
 bin:
-  neocmakelsp: cargo:neocmakelsp
+  neocmakelsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: neocmake

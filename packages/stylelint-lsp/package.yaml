@@ -10,10 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/stylelint-lsp@2.0.0
+  id: pkg:npm/stylelint-lsp@2.0.1
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/bmatcuk/coc-stylelintplus/master/package.json
 
 bin:
   stylelint-lsp: npm:stylelint-lsp
+
+neovim:
+  lspconfig: stylelint_lsp

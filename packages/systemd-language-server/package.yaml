@@ -1,0 +1,20 @@
+---
+name: systemd-language-server
+description: |
+  Language Server for Systemd unit files
+homepage: https://github.com/psacawa/systemd-language-server
+licenses:
+  - GPL-3.0
+languages:
+  - systemd
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/systemd-language-server@0.3.5
+
+bin:
+  systemd-language-server: pypi:systemd-language-server
+
+neovim:
+  lspconfig: systemd_ls

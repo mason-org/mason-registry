@@ -13,10 +13,13 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/WhatsApp/erlang-language-platform@2024-10-08
+  id: pkg:github/WhatsApp/erlang-language-platform@2025-07-21
   asset:
     - target: linux_x64_gnu
       file: elp-linux-x86_64-unknown-linux-gnu-otp-26.2.tar.gz
+      bin: elp
+    - target: linux_arm64_gnu
+      file: elp-linux-aarch64-unknown-linux-gnu-otp-26.2.tar.gz
       bin: elp
     - target: darwin_x64
       file: elp-macos-x86_64-apple-darwin-otp-26.2.tar.gz
@@ -30,3 +33,6 @@ schemas:
 
 bin:
   elp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: elp

@@ -9,28 +9,70 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/editorconfig-checker/editorconfig-checker@v3.0.3
+  id: pkg:github/editorconfig-checker/editorconfig-checker@v3.3.0
   asset:
     - target: darwin_arm64
       file: ec-darwin-arm64.tar.gz
+      bin: bin/ec-darwin-arm64
     - target: darwin_x64
       file: ec-darwin-amd64.tar.gz
+      bin: bin/ec-darwin-amd64
     - target: linux_x64_openbsd
       file: ec-openbsd-amd64.tar.gz
+      bin: bin/ec-openbsd-amd64
     - target: linux_arm64_openbsd
       file: ec-openbsd-arm64.tar.gz
+      bin: bin/ec-openbsd-arm64
     - target: linux_arm64
       file: ec-linux-arm64.tar.gz
+      bin: bin/ec-linux-arm64
     - target: linux_x64
       file: ec-linux-amd64.tar.gz
+      bin: bin/ec-linux-amd64
     - target: win_x86
-      file: ec-windows-386.exe.tar.gz
+      file: ec-windows-386.zip
+      bin: bin/ec-windows-386.exe
     - target: win_x64
-      file: ec-windows-amd64.exe.tar.gz
+      file: ec-windows-amd64.zip
+      bin: bin/ec-windows-amd64.exe
     - target: win_arm64
-      file: ec-windows-arm64.exe.tar.gz
-    - target: win_arm
-      file: ec-windows-arm.exe.tar.gz
+      file: ec-windows-arm64.zip
+      bin: bin/ec-windows-arm64.exe
+
+  version_overrides:
+    - constraint: semver:<=v3.0.3
+      id: pkg:github/editorconfig-checker/editorconfig-checker@v3.0.3
+      asset:
+        - target: darwin_arm64
+          file: ec-darwin-arm64.tar.gz
+          bin: bin/ec-darwin-arm64
+        - target: darwin_x64
+          file: ec-darwin-amd64.tar.gz
+          bin: bin/ec-darwin-amd64
+        - target: linux_x64_openbsd
+          file: ec-openbsd-amd64.tar.gz
+          bin: bin/ec-openbsd-amd64
+        - target: linux_arm64_openbsd
+          file: ec-openbsd-arm64.tar.gz
+          bin: bin/ec-openbsd-arm64
+        - target: linux_arm64
+          file: ec-linux-arm64.tar.gz
+          bin: bin/ec-linux-arm64
+        - target: linux_x64
+          file: ec-linux-amd64.tar.gz
+          bin: bin/ec-linux-amd64
+        - target: win_x86
+          file: ec-windows-386.exe.tar.gz
+          bin: bin/ec-windows-386.exe
+        - target: win_x64
+          file: ec-windows-amd64.exe.tar.gz
+          bin: bin/ec-windows-amd64.exe
+        - target: win_arm64
+          file: ec-windows-arm64.exe.tar.gz
+          bin: bin/ec-windows-arm64.exe
+        - target: win_arm
+          file: ec-windows-arm.exe.tar.gz
+          bin: bin/ec-windows-arm.exe
 
 bin:
-  editorconfig-checker: "bin/{{ source.asset.file | strip_suffix '.tar.gz' }}"
+  editorconfig-checker: "{{source.asset.bin}}"

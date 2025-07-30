@@ -10,10 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/some-sass-language-server@2.0.2
+  id: pkg:npm/some-sass-language-server@2.3.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/wkillerud/some-sass/some-sass-language-server@{{version}}/vscode-extension/package.json
 
 bin:
   some-sass-language-server: npm:some-sass-language-server
+
+neovim:
+  lspconfig: somesass_ls

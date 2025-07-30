@@ -1,0 +1,16 @@
+---
+name: pymarkdownlnt
+description: PyMarkdown is primarily a Markdown linter.
+homepage: https://pypi.org/project/pymarkdownlnt/
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/pymarkdownlnt@0.9.31
+
+bin:
+  pymarkdownlnt: pypi:pymarkdownlnt

@@ -1,0 +1,21 @@
+---
+name: pkl-lsp
+description: Language server for Pkl, implementing the server-side of the Language Server Protocol.
+homepage: https://github.com/apple/pkl-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - Pkl
+categories:
+  - LSP
+
+source:
+  id: pkg:github/apple/pkl-lsp@0.4.0
+  asset:
+    file: pkl-lsp-{{ version }}.jar
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/apple/pkl-vscode/main/package.json
+
+bin:
+  pkl-lsp: java-jar:{{source.asset.file}}

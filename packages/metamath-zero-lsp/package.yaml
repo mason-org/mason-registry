@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/digama0/mm0@8aba8acf9f524d8f4a0401f78dba1348a3a41f2b
+  id: pkg:github/digama0/mm0@15d9e181ff48ab53f12e2ab2c70409ab94d5aefd
   build:
     - target: unix
       run: |
@@ -24,8 +24,14 @@ source:
         cargo build --release
       bin: mm0-rs/target/release/mm0-rs.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/digama0/mm0/{{version}}/vscode-mm0/package.json
+
 bin:
   mm0-rs: "{{source.build.bin}}"
 
 # requires rustc 1.65+
 ci_skip: true
+
+neovim:
+  lspconfig: mm0_ls

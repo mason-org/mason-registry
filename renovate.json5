@@ -23,6 +23,7 @@
         }
     ],
     "ignoreDeps": [
-        "rescript-lsp"
+        "rescript-lsp",
+        "cuepls"
     ]
 }

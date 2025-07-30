@@ -14,9 +14,12 @@ categories:
 source:
   # renovate:versioning=loose
   # renovate:datasource=github-tags
-  id: pkg:github/phpactor/phpactor@2024.06.30.0
+  id: pkg:github/phpactor/phpactor@2025.07.25.0
   asset:
     file: phpactor.phar
 
 bin:
   phpactor: php:phpactor.phar
+
+neovim:
+  lspconfig: phpactor

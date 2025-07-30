@@ -12,7 +12,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-cpptools@v1.21.6
+  id: pkg:github/microsoft/vscode-cpptools@v1.26.3
   asset:
     - target: darwin_x64
       file: cpptools-macOS-x64.vsix
@@ -34,9 +34,6 @@ source:
       bin: extension/debugAdapters/bin/OpenDebugAD7.exe
     - target: win_x64
       file: cpptools-windows-x64.vsix
-      bin: extension/debugAdapters/bin/OpenDebugAD7.exe
-    - target: win_x86
-      file: cpptools-windows-x86.vsix
       bin: extension/debugAdapters/bin/OpenDebugAD7.exe
 
   version_overrides:
@@ -67,6 +64,9 @@ source:
         - target: win_x86
           file: cpptools-win32.vsix
           bin: extension/debugAdapters/bin/OpenDebugAD7.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/microsoft/vscode-cpptools/{{version}}/Extension/package.json
 
 bin:
   OpenDebugAD7: "{{source.asset.bin}}"

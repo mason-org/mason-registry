@@ -1,0 +1,16 @@
+---
+name: stree
+description: A fast Ruby parser and formatter.
+homepage: https://ruby-syntax-tree.github.io/syntax_tree/
+licenses:
+  - MIT
+languages:
+  - Ruby
+categories:
+  - LSP
+
+source:
+  id: pkg:gem/syntax_tree@6.3.0
+
+bin:
+  stree: gem:stree

@@ -1,0 +1,22 @@
+---
+name: tombi
+description: |
+  TOML Formatter / Linter / Language Server
+homepage: https://github.com/tombi-toml/tombi
+licenses:
+  - MIT
+languages:
+  - TOML
+categories:
+  - Formatter
+  - Linter
+  - LSP
+
+neovim:
+  lspconfig: tombi
+
+source:
+  id: pkg:pypi/tombi@0.4.38
+
+bin:
+  tombi: pypi:tombi

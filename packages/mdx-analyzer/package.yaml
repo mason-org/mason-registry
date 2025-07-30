@@ -12,7 +12,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40mdx-js/language-server@0.5.0
+  id: pkg:npm/%40mdx-js/language-server@0.6.1
 
 bin:
   mdx-language-server: npm:mdx-language-server
+
+neovim:
+  lspconfig: mdx_analyzer

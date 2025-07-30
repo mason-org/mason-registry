@@ -1,0 +1,42 @@
+---
+name: tilt
+description: Define your dev environment as code. For microservice apps on Kubernetes.
+homepage: https://tilt.dev/
+licenses:
+  - Apache-2.0
+languages:
+  - Starlark
+categories:
+  - Runtime
+  - LSP
+
+source:
+  id: pkg:github/tilt-dev/tilt@v0.35.0
+  asset:
+    - target: darwin_arm64
+      file: tilt.{{ version | strip_prefix "v" }}.mac.arm64.tar.gz
+      bin: tilt
+    - target: darwin_x64
+      file: tilt.{{ version | strip_prefix "v" }}.mac.x86_64.tar.gz
+      bin: tilt
+    - target: linux_arm
+      file: tilt.{{ version | strip_prefix "v" }}.linux.arm.tar.gz
+      bin: tilt
+    - target: linux_arm64
+      file: tilt.{{ version | strip_prefix "v" }}.linux.arm64.tar.gz
+      bin: tilt
+    - target: linux_arm64_musl
+      file: tilt.{{ version | strip_prefix "v" }}.linux-alpine.arm64.tar.gz
+      bin: tilt
+    - target: linux_x64
+      file: tilt.{{ version | strip_prefix "v" }}.linux.x86_64.tar.gz
+      bin: tilt
+    - target: linux_x64_musl
+      file: tilt.{{ version | strip_prefix "v" }}.linux-alpine.x86_64.tar.gz
+      bin: tilt
+    - target: win_x64
+      file: tilt.{{ version | strip_prefix "v" }}.windows.x86_64.zip
+      bin: tilt.exe
+
+bin:
+  tilt: "{{source.asset.bin}}"

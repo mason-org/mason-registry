@@ -10,12 +10,31 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/bbannier/zeek-language-server@v0.56.3
+  id: pkg:github/bbannier/zeek-language-server@v0.73.2
   asset:
     - target: linux_x64_gnu
-      file: zeek-language-server-x86_64-unknown-linux-gnu
+      file: zeek-language-server-x86_64-unknown-linux-gnu.tar.xz
+      bin: zeek-language-server-x86_64-unknown-linux-gnu/zeek-language-server
+    - target: darwin_arm64
+      file: zeek-language-server-aarch64-apple-darwin.tar.xz
+      bin: zeek-language-server-aarch64-apple-darwin/zeek-language-server
     - target: darwin_x64
-      file: zeek-language-server-x86_64-apple-darwin
+      file: zeek-language-server-x86_64-apple-darwin.tar.xz
+      bin: zeek-language-server-x86_64-apple-darwin/zeek-language-server
+
+  version_overrides:
+    - constraint: semver:<=v0.64.0
+      id: pkg:github/bbannier/zeek-language-server@v0.64.0
+      asset:
+        - target: linux_x64_gnu
+          file: zeek-language-server-x86_64-unknown-linux-gnu
+          bin: zeek-language-server-x86_64-unknown-linux-gnu
+        - target: darwin
+          file: zeek-language-server-x86_64-apple-darwin
+          bin: zeek-language-server-x86_64-apple-darwin
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/bbannier/zeek-language-server/{{version}}/vscode/package.json
 
 bin:
-  zeek-language-server: "{{source.asset.file}}"
+  zeek-language-server: "{{source.asset.bin}}"

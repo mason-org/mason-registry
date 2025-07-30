@@ -9,8 +9,12 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  since: v0.0.61
+  message: please use the mason package `ruff` as replacement. The command `ruff server` supports the same feature set as ruff-lsp, but with superior performance and no installation required. ruff server was marked as stable in Ruff v0.5.3.
+
 source:
-  id: pkg:pypi/ruff-lsp@0.0.58
+  id: pkg:pypi/ruff-lsp@0.0.62
 
 bin:
   ruff-lsp: pypi:ruff-lsp

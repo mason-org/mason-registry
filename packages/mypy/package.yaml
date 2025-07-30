@@ -11,7 +11,9 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:pypi/mypy@1.12.1
+  id: pkg:pypi/mypy@1.17.0
 
 bin:
   mypy: pypi:mypy
+  dmypy: pypi:dmypy
+  mypyc: pypi:mypyc

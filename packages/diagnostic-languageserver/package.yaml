@@ -13,3 +13,6 @@ source:
 
 bin:
   diagnostic-languageserver: npm:diagnostic-languageserver
+
+neovim:
+  lspconfig: diagnosticls

@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/sqlfluff@3.2.4
+  id: pkg:pypi/sqlfluff@3.4.2
 
 bin:
   sqlfluff: pypi:sqlfluff

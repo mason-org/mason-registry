@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/joyme123/thrift-ls@v0.2.2
+  id: pkg:github/joyme123/thrift-ls@v0.2.9
   asset:
     - target: darwin_x64
       file: thriftls-darwin-amd64
@@ -32,3 +32,6 @@ source:
 
 bin:
   thriftls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: thriftls

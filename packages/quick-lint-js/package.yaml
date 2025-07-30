@@ -60,3 +60,6 @@ bin:
 
 share:
   man/: "{{source.download.man}}"
+
+neovim:
+  lspconfig: quick_lint_js
