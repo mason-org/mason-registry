@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/vala-lang/vala-language-server@31cb5116a4a138365feb709ebb7b8670db604991
+  id: pkg:github/vala-lang/vala-language-server@a5d24a8cf7b61d0d2082234034905f0f8ed96726
   build:
     - target: unix
       run: |
@@ -28,3 +28,6 @@ bin:
   vala-language-server: "{{source.build.bin}}"
 
 ci_skip: true
+
+neovim:
+  lspconfig: vala_ls

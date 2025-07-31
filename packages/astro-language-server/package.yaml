@@ -20,3 +20,6 @@ schemas:
 
 bin:
   astro-ls: npm:astro-ls
+
+neovim:
+  lspconfig: astro

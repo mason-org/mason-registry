@@ -1,0 +1,34 @@
+---
+name: postgrestools
+description: A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.
+homepage: https://pgtools.dev
+licenses:
+  - MIT
+languages:
+  - Postgres
+  - SQL
+categories:
+  - LSP
+  - Linter
+
+source:
+  id: pkg:github/supabase-community/postgres-language-server@0.10.0
+  asset:
+    - target: darwin_arm64
+      file: postgrestools_aarch64-apple-darwin
+    - target: darwin_x64
+      file: postgrestools_x86_64-apple-darwin
+    - target: linux_x64_gnu
+      file: postgrestools_x86_64-unknown-linux-gnu
+    - target: linux_arm64_gnu
+      file: postgrestools_aarch64-unknown-linux-gnu
+    - target: win_x64
+      file: postgrestools_x86_64-pc-windows-msvc
+    - target: win_arm64
+      file: postgrestools_aarch64-pc-windows-msvc
+
+bin:
+  postgrestools: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: postgres_lsp

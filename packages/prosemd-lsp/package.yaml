@@ -21,3 +21,6 @@ source:
 
 bin:
   prosemd-lsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: prosemd_lsp

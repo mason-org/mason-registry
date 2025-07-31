@@ -30,5 +30,11 @@ source:
       file: efm-langserver_{{version}}_windows_arm64.zip
       bin: efm-langserver_{{version}}_windows_arm64/efm-langserver.exe
 
+schemas:
+  lsp: https://raw.githubusercontent.com/mattn/efm-langserver/{{version}}/schema.json
+
 bin:
   efm-langserver: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: efm

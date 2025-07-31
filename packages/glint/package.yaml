@@ -17,10 +17,13 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40glint/core@1.5.1
+  id: pkg:npm/%40glint/core@1.5.2
   extra_packages:
     - typescript
 
 bin:
   glint: npm:glint
   glint-language-server: npm:glint-language-server
+
+neovim:
+  lspconfig: glint

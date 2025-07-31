@@ -14,3 +14,5 @@ source:
 
 bin:
   salt_lsp_server: pypi:salt_lsp_server
+neovim:
+  lspconfig: salt_ls

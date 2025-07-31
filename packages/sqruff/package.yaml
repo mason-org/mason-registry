@@ -1,0 +1,34 @@
+---
+name: sqruff
+description: |
+  A high-speed SQL linter written in Rust.
+homepage: https://github.com/quarylabs/sqruff
+licenses:
+  - Apache-2.0
+languages:
+  - SQL
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/quarylabs/sqruff@v0.29.2
+  asset:
+    - target: linux_x64
+      file: sqruff-linux-x86_64-musl.tar.gz
+      bin: sqruff
+    - target: linux_arm64
+      file: sqruff-linux-aarch64-musl.tar.gz
+      bin: sqruff
+    - target: win_x64
+      file: sqruff-windows-x86_64.zip
+      bin: sqruff.exe
+    - target: darwin_x64
+      file: sqruff-darwin-x86_64.tar.gz
+      bin: sqruff
+    - target: darwin_arm64
+      file: sqruff-darwin-aarch64.tar.gz
+      bin: sqruff
+
+bin:
+  sqruff: "{{source.asset.bin}}"

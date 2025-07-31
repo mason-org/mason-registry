@@ -1,0 +1,41 @@
+---
+name: prometheus-pint
+description: Prometheus rule linter/validator
+homepage: https://cloudflare.github.io/pint/
+licenses:
+  - Apache-2.0
+languages:
+  - PromQL
+categories:
+  - Linter
+
+source:
+  id: pkg:github/cloudflare/pint@v0.74.6
+  asset:
+    - target: linux_x86
+      file: pint-{{ version | strip_prefix "v" }}-linux-386.tar.gz
+      bin: pint-linux-386
+    - target: linux_x64
+      file: pint-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
+      bin: pint-linux-amd64
+    - target: linux_arm64
+      file: pint-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
+      bin: pint-linux-arm64
+    - target: darwin_x64
+      file: pint-{{ version | strip_prefix "v" }}-darwin-amd64.tar.gz
+      bin: pint-darwin-amd64
+    - target: darwin_arm64
+      file: pint-{{ version | strip_prefix "v" }}-darwin-arm64.tar.gz
+      bin: pint-darwin-arm64
+    - target: win_x86
+      file: pint-{{ version | strip_prefix "v" }}-windows-386.tar.gz
+      bin: pint-windows-386.exe
+    - target: win_x64
+      file: pint-{{ version | strip_prefix "v" }}-windows-amd64.tar.gz
+      bin: pint-windows-amd64.exe
+
+# Has to use `prometheus-pint` as name for the symlink/bin to avoid conflict 
+# with the `pint` binary (a php linter) which is also available on mason. 
+# see https://github.com/mason-org/mason-registry/pull/10126#issuecomment-2920049754
+bin:
+  prometheus-pint: "{{source.asset.bin}}"

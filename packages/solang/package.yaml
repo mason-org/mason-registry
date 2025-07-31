@@ -29,5 +29,11 @@ source:
       file: solang.exe
       bin: solang.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/hyperledger-solang/solang/{{version}}/vscode/package.json
+
 bin:
   solang: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: solang

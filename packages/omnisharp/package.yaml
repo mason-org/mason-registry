@@ -31,4 +31,7 @@ schemas:
   lsp: vscode:https://raw.githubusercontent.com/OmniSharp/omnisharp-vscode/master/package.json
 
 bin:
-  omnisharp: dotnet:libexec/OmniSharp.dll
+  OmniSharp: dotnet:libexec/OmniSharp.dll
+
+neovim:
+  lspconfig: omnisharp

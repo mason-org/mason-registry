@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/jedi-language-server@0.43.1
+  id: pkg:pypi/jedi-language-server@0.45.1
 
 bin:
   jedi-language-server: pypi:jedi-language-server
+
+neovim:
+  lspconfig: jedi_language_server

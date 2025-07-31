@@ -10,7 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40rescript/language-server@1.58.0
+  id: pkg:npm/%40rescript/language-server@1.62.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/rescript-lang/rescript-vscode/{{version}}/package.json
 
 bin:
   rescript-language-server: npm:rescript-language-server
+
+neovim:
+  lspconfig: rescriptls

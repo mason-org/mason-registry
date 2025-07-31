@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/latex-lsp/texlab@v5.21.0
+  id: pkg:github/latex-lsp/texlab@v5.23.1
   asset:
     - target: darwin_arm64
       file: texlab-aarch64-macos.tar.gz
@@ -21,12 +21,27 @@ source:
     - target: linux_x64_gnu
       file: texlab-x86_64-linux.tar.gz
       bin: texlab
+    - target: linux_x64_musl
+      file: texlab-x86_64-alpine.tar.gz
+      bin: texlab
     - target: linux_arm64_gnu
       file: texlab-aarch64-linux.tar.gz
       bin: texlab
+    - target: linux_armv7_gnu
+      file: texlab-armv7hf-linux.tar.gz
+      bin: texlab
+    - target: win_arm64
+      file: texlab-aarch64-windows.zip
+      bin: texlab.exe
     - target: win_x64
       file: texlab-x86_64-windows.zip
+      bin: texlab.exe
+    - target: win_x86
+      file: texlab-i686-windows.zip
       bin: texlab.exe
 
 bin:
   texlab: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: texlab

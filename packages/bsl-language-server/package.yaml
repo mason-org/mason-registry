@@ -11,9 +11,12 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/1c-syntax/bsl-language-server@v0.23.1
+  id: pkg:github/1c-syntax/bsl-language-server@v0.24.2
   asset:
     file: bsl-language-server-{{ version | strip_prefix "v" }}-exec.jar
 
 bin:
   bsl-language-server: java-jar:{{source.asset.file}}
+
+neovim:
+  lspconfig: bsl_ls

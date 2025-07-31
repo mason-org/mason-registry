@@ -1,0 +1,16 @@
+---
+name: refurb
+description: A tool for refurbishing and modernizing Python codebases.
+homepage: https://github.com/dosisod/refurb
+licenses:
+  - GPL-3.0-only
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/refurb@2.1.0
+
+bin:
+  refurb: pypi:refurb

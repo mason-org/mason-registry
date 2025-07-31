@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/slint-ui/slint@v1.9.2
+  id: pkg:github/slint-ui/slint@v1.12.0
   asset:
     - target: linux_x64
       file: slint-lsp-linux.tar.gz
@@ -23,5 +23,11 @@ source:
       file: slint-lsp-macos.tar.gz
       bin: slint-lsp/slint-lsp
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/slint-ui/slint/{{version}}/editors/vscode/package.json
+
 bin:
   slint-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: slint_lsp

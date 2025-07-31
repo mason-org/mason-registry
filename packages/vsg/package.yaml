@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/vsg@3.29.0
+  id: pkg:pypi/vsg@3.33.0
 
 bin:
   vsg: pypi:vsg

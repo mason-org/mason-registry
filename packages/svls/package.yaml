@@ -21,3 +21,6 @@ ci_skip:
   - win_arm64
   - win_x64
   - win_x86
+
+neovim:
+  lspconfig: svls

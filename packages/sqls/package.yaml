@@ -17,3 +17,6 @@ schemas:
 
 bin:
   sqls: golang:sqls
+
+neovim:
+  lspconfig: sqls
