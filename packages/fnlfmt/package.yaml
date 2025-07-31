@@ -21,7 +21,7 @@ source:
       cd fnlfmt-*
       echo "#!/usr/bin/env lua" > fnlfmt
       LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> fnlfmt
-      chmod +x fnlfmt
+      chmod +x fnlfmt 
 
 bin:
   fnlfmt: "fnlfmt-{{version}}/fnlfmt"
