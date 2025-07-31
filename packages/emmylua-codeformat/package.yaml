@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/CppCXY/EmmyLuaCodeStyle@1.5.6
+  id: pkg:github/CppCXY/EmmyLuaCodeStyle@1.5.7
   asset:
     - target: darwin_arm64
       file: darwin-arm64.tar.gz
