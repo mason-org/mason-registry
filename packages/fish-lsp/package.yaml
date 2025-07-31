@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/fish-lsp@1.0.9-1
+  id: pkg:npm/fish-lsp@1.0.10
 
 bin:
   fish-lsp: npm:fish-lsp

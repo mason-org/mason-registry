@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/WGUNDERWOOD/tex-fmt@v0.5.4
+  id: pkg:github/WGUNDERWOOD/tex-fmt@v0.5.5
   asset:
     - target: linux_x64_gnu
       file: tex-fmt-x86_64-linux.tar.gz
