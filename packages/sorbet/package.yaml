@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/sorbet@0.5.11810
+  id: pkg:gem/sorbet@0.5.12368
   supported_platforms:
     - unix
 
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   srb: gem:srb
+
+neovim:
+  lspconfig: sorbet

@@ -1,0 +1,55 @@
+---
+name: terraform
+description: |
+  Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available
+  tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code,
+  edited, reviewed, and versioned.
+homepage: https://www.terraform.io/
+licenses:
+  - BUSL-1.1
+languages:
+  - Terraform
+categories:
+  - Formatter
+  - Linter
+  - Runtime
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/hashicorp/terraform@v1.12.2
+  download:
+    - target: darwin_arm64
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_darwin_arm64.zip
+      bin: terraform
+    - target: darwin_x64
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_darwin_amd64.zip
+      bin: terraform
+    - target: linux_arm64
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_linux_arm64.zip
+      bin: terraform
+    - target: linux_arm
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_linux_arm.zip
+      bin: terraform
+    - target: linux_x64
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_linux_amd64.zip
+      bin: terraform
+    - target: linux_x86
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_linux_386.zip
+      bin: terraform
+    - target: win_x64
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_windows_amd64.zip
+      bin: terraform.exe
+    - target: win_x86
+      files:
+        terraform.zip: https://releases.hashicorp.com/terraform/{{ version | strip_prefix "v" }}/terraform_{{ version | strip_prefix "v" }}_windows_386.zip
+      bin: terraform.exe
+
+bin:
+  terraform: "{{source.download.bin}}"

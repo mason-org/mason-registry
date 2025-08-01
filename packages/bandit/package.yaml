@@ -1,0 +1,16 @@
+---
+name: bandit
+description: Bandit, a security linter from PyCQA
+homepage: https://pypi.org/project/bandit/
+licenses:
+  - Apache-2.0
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/bandit@1.8.6
+
+bin:
+  bandit: pypi:bandit

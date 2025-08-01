@@ -14,5 +14,11 @@ source:
   download:
     file: dfinity-foundation.vscode-motoko-{{version}}.vsix
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/dfinity/vscode-motoko/v{{version}}/package.json
+
 bin:
   motoko-lsp: node:extension/out/server.js
+
+neovim:
+  lspconfig: motoko_lsp

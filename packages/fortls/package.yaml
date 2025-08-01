@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/fortls@3.1.2
+  id: pkg:pypi/fortls@3.2.2
 
 bin:
   fortls: pypi:fortls
+
+neovim:
+  lspconfig: fortls

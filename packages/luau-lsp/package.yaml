@@ -10,20 +10,43 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/JohnnyMorganz/luau-lsp@1.38.1
+  id: pkg:github/JohnnyMorganz/luau-lsp@1.53.1
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: luau-lsp-macos.zip
       bin: luau-lsp
     - target: linux_x64
-      file: luau-lsp-linux.zip
+      file: luau-lsp-linux-x86_64.zip
+      bin: luau-lsp
+    - target: linux_arm64
+      file: luau-lsp-linux-arm64.zip
       bin: luau-lsp
     - target: win_x64
       file: luau-lsp-win64.zip
       bin: luau-lsp.exe
+
+  version_overrides:
+    - constraint: semver:<=1.52.1
+      id: pkg:github/JohnnyMorganz/luau-lsp@1.52.1
+      asset:
+        - target: [darwin_arm64, darwin_x64]
+          file: luau-lsp-macos.zip
+          bin: luau-lsp
+        - target: linux_x64
+          file: luau-lsp-linux.zip
+          bin: luau-lsp
+        - target: linux_arm64
+          file: luau-lsp-linux-arm64.zip
+          bin: luau-lsp
+        - target: win_x64
+          file: luau-lsp-win64.zip
+          bin: luau-lsp.exe
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/{{version}}/editors/code/package.json
 
 bin:
   luau-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: luau_lsp

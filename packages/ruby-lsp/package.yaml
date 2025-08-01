@@ -11,7 +11,15 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/ruby-lsp@0.23.9
+  id: pkg:gem/ruby-lsp@0.26.1
+  extra_packages:
+    - ruby-lsp-rails
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/Shopify/ruby-lsp/v{{version}}/vscode/package.json
 
 bin:
   ruby-lsp: gem:ruby-lsp
+
+neovim:
+  lspconfig: ruby_lsp

@@ -14,3 +14,6 @@ source:
 
 bin:
   cuelsp: golang:cuelsp
+
+neovim:
+  lspconfig: dagger

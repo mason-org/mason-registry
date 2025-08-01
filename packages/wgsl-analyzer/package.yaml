@@ -11,17 +11,50 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/wgsl-analyzer/wgsl-analyzer@v0.9.4
+  # renovate:versioning=loose
+  id: pkg:github/wgsl-analyzer/wgsl-analyzer@2025-06-28
   asset:
-    - target: [darwin_arm64, darwin_x64]
-      file: wgsl_analyzer-darwin-x64
-    - target: linux_x64
-      file: wgsl_analyzer-linux-x64
+    - target: linux_x64_gnu
+      file: wgsl-analyzer-x86_64-unknown-linux-gnu.gz
+      bin: wgsl-analyzer-x86_64-unknown-linux-gnu
+    - target: linux_arm64_gnu
+      file: wgsl-analyzer-aarch64-unknown-linux-gnu.gz
+      bin: wgsl-analyzer-aarch64-unknown-linux-gnu
+    - target: linux_x64_musl
+      file: wgsl-analyzer-x86_64-unknown-linux-musl.gz
+      bin: wgsl-analyzer-x86_64-unknown-linux-musl
+    - target: darwin_x64
+      file: wgsl-analyzer-x86_64-apple-darwin.gz
+      bin: wgsl-analyzer-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: wgsl-analyzer-aarch64-apple-darwin.gz
+      bin: wgsl-analyzer-aarch64-apple-darwin
     - target: win_x64
-      file: wgsl_analyzer-win32-x64.exe
+      file: wgsl-analyzer-x86_64-pc-windows-msvc.zip
+      bin: wgsl-analyzer.exe
+    - target: win_arm64
+      file: wgsl-analyzer-aarch64-pc-windows-msvc.zip
+      bin: wgsl-analyzer.exe
+
+  version_overrides:
+    - constraint: semver:<=v0.9.11
+      id: pkg:github/wgsl-analyzer/wgsl-analyzer@v0.9.11
+      asset:
+        - target: [darwin_arm64, darwin_x64]
+          file: wgsl-analyzer-darwin-x64
+          bin: wgsl-analyzer-darwin-x64
+        - target: linux_x64
+          file: wgsl-analyzer-linux-x64
+          bin: wgsl-analyzer-linux-x64
+        - target: win_x64
+          file: wgsl-analyzer-win32-x64.exe
+          bin: wgsl-analyzer-win32-x64.exe
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/wgsl-analyzer/wgsl-analyzer/{{version}}/editors/code/package.json
 
 bin:
-  wgsl_analyzer: "{{source.asset.file}}"
+  wgsl-analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: wgsl_analyzer

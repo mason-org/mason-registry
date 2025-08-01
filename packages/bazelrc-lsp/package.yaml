@@ -1,0 +1,26 @@
+---
+name: bazelrc-lsp
+description: Language Server for `.bazelrc` configuration files
+homepage: https://github.com/salesforce-misc/bazelrc-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - bazelrc
+categories:
+  - LSP
+
+source:
+  id: pkg:github/salesforce-misc/bazelrc-lsp@v0.2.5
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: bazelrc-lsp-macos
+    - target: linux_x64_gnu
+      file: bazelrc-lsp-ubuntu
+    - target: win_x64
+      file: bazelrc-lsp-windows.exe
+
+bin:
+  bazelrc-lsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: bazelrc_lsp

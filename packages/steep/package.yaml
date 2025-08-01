@@ -11,7 +11,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/steep@1.9.4
+  id: pkg:gem/steep@1.10.0
 
 bin:
   steep: gem:steep
+
+neovim:
+  lspconfig: steep

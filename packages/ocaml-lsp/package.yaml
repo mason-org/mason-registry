@@ -11,5 +11,9 @@ categories:
 
 source:
   id: pkg:opam/ocaml-lsp-server@1.22.0
+
 bin:
   ocamllsp: opam:ocamllsp
+
+neovim:
+  lspconfig: ocamllsp

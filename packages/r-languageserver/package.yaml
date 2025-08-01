@@ -28,3 +28,6 @@ schemas:
 
 bin:
   r-languageserver: "{{source.build.bin}}"
+
+neovim:
+  lspconfig: r_language_server

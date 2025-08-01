@@ -10,10 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/perlnavigator-server@0.8.15
+  id: pkg:npm/perlnavigator-server@0.8.18
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/bscan/PerlNavigator/v{{version}}/package.json
 
 bin:
   perlnavigator: node:node_modules/perlnavigator-server/out/server.js
+
+neovim:
+  lspconfig: perlnavigator

@@ -12,5 +12,11 @@ categories:
 source:
   id: pkg:npm/custom-elements-languageserver@1.0.4
 
+schemas:
+  lsp: https://raw.githubusercontent.com/Matsuuu/custom-elements-language-server/v.{{version}}/package.json
+
 bin:
   custom-elements-languageserver: npm:custom-elements-languageserver
+
+neovim:
+  lspconfig: custom_elements_ls

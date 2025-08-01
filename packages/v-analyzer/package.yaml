@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/vlang/v-analyzer@0.0.5
+  id: pkg:github/vlang/v-analyzer@0.0.6
   asset:
     - target: darwin_arm64
       file: v-analyzer-darwin-arm64.zip
@@ -30,3 +30,6 @@ schemas:
 
 bin:
   v-analyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: v_analyzer

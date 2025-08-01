@@ -28,8 +28,11 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.34.4
+  id: pkg:npm/%40ast-grep/cli@0.39.2
 
 bin:
   ast-grep: npm:ast-grep
   sg: npm:sg
+
+neovim:
+  lspconfig: ast_grep

@@ -10,9 +10,15 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/forcedotcom/salesforcedx-vscode@v62.14.1
+  id: pkg:github/forcedotcom/salesforcedx-vscode@v64.7.1
   asset:
     file: salesforcedx-vscode-visualforce-{{ version | strip_prefix "v" }}.vsix
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/forcedotcom/salesforcedx-vscode/{{version}}/packages/salesforcedx-vscode-visualforce/package.json
+
 bin:
   visualforce-language-server: node:extension/dist/visualforceServer.js
+
+neovim:
+  lspconfig: visualforce_ls
