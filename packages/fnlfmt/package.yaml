@@ -16,6 +16,10 @@ source:
     env:
       URL: "https://git.sr.ht/~technomancy/fnlfmt/archive/{{version}}.tar.gz"
     run: |
+      echo "DEBUG: URL environment variable is: '$URL'"
+      echo "DEBUG: Templated version is: {{version}}"
+      echo "DEBUG: Operating system is: $OSTYPE"
+      echo "DEBUG: Shell is: $0"
       curl -L -o fnlfmt.tar.gz "$URL"
       tar --no-same-owner -xvf fnlfmt.tar.gz
       cd fnlfmt-*
