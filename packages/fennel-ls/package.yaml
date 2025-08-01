@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:luarocks/fennel-ls@0.1.3-4
+  id: pkg:luarocks/fennel-ls@0.2.1-1
 
 bin:
   fennel-ls: luarocks:fennel-ls
