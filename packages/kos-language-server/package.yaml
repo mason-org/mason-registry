@@ -14,8 +14,5 @@ categories:
 source:
   id: pkg:npm/kos-language-server@1.1.5
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/jonnyboyC/kos-language-server/5319c84b67a195629019c555f870bbff3920f5eb/package.json
-
 bin:
   kls: npm:kls
