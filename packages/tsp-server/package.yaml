@@ -12,9 +12,6 @@ categories:
 source:
   id: pkg:npm/%40typespec/compiler@1.2.1
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/microsoft/typespec/typespec-stable%40{{version}}/packages/typespec-vscode/package.json
-
 bin:
   tsp-server: npm:tsp-server
 
