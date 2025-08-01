@@ -13,7 +13,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:npm/winglang@0.85.34
+  id: pkg:npm/winglang@0.85.49
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/winglang/wing/main/packages/vscode-wing/package.json
