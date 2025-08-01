@@ -1,7 +1,7 @@
 ---
 name: wing
 description: A programming language for the cloud
-homepage: https://www.winglang.io
+homepage: https://github.com/winglang/wing
 licenses:
   - MIT
 languages:
