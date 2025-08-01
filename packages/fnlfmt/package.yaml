@@ -20,18 +20,18 @@ source:
         curl -L -o fnlfmt.tar.gz "$URL"
         tar --no-same-owner -xvf fnlfmt.tar.gz
         cd fnlfmt-*
-        echo "#!/usr/bin/env lua" > fnlfmt
-        LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> fnlfmt
+        echo "#!/usr/bin/env lua" > ../fnlfmt
+        LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> ../fnlfmt
         chmod +x fnlfmt
-      bin: fnlfmt-{{version}}/fnlfmt
+      bin: fnlfmt
     - target: win_x64
       run: |
         curl -L -o fnlfmt.tar.gz "https://git.sr.ht/~technomancy/fnlfmt/archive/0.3.2.tar.gz"
         tar -xvf fnlfmt.tar.gz
         cd fnlfmt-*
-        echo "@echo off" > fnlfmt.bat
-        echo "lua -e \"package.path='./?.lua;'..package.path\" fennel --require-as-include --compile cli.fnl | lua" >> fnlfmt.bat
-      bin: fnlfmt-{{version}}/fnlfmt.bat
+        echo "@echo off" > ../fnlfmt.bat
+        echo "lua -e \"package.path='./?.lua;'..package.path\" fennel --require-as-include --compile cli.fnl | lua" >> ../fnlfmt.bat
+      bin: fnlfmt.bat
 
 bin:
   fnlfmt: "{{source.build.bin}}"
