@@ -13,19 +13,25 @@ source:
   # renovate:datasource=git-tags
   id: pkg:generic/https://git.sr.ht/~technomancy/fnlfmt@0.3.2
   build:
-    env:
-      URL: "https://git.sr.ht/~technomancy/fnlfmt/archive/{{version}}.tar.gz"
-    run: |
-      echo "DEBUG: URL environment variable is: '$URL'"
-      echo "DEBUG: Templated version is: {{version}}"
-      echo "DEBUG: Operating system is: $OSTYPE"
-      echo "DEBUG: Shell is: $0"
-      curl -L -o fnlfmt.tar.gz "$URL"
-      tar --no-same-owner -xvf fnlfmt.tar.gz
-      cd fnlfmt-*
-      echo "#!/usr/bin/env lua" > fnlfmt
-      LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> fnlfmt
-      chmod +x fnlfmt
+    - target: unix
+      env:
+        URL: "https://git.sr.ht/~technomancy/fnlfmt/archive/{{version}}.tar.gz"
+      run: |
+        curl -L -o fnlfmt.tar.gz "$URL"
+        tar --no-same-owner -xvf fnlfmt.tar.gz
+        cd fnlfmt-*
+        echo "#!/usr/bin/env lua" > fnlfmt
+        LUA_PATH="./?.lua" ./fennel --require-as-include --compile cli.fnl >> fnlfmt
+        chmod +x fnlfmt
+      bin: fnlfmt-{{version}}/fnlfmt
+    - target: win_x64
+      run: |
+        curl -L -o fnlfmt.tar.gz "https://git.sr.ht/~technomancy/fnlfmt/archive/0.3.2.tar.gz"
+        tar -xvf fnlfmt.tar.gz
+        cd fnlfmt-*
+        echo "@echo off" > fnlfmt.bat
+        echo "lua -e \"package.path='./?.lua;'..package.path\" fennel --require-as-include --compile cli.fnl | lua" >> fnlfmt.bat
+      bin: fnlfmt-{{version}}/fnlfmt.bat
 
 bin:
-  fnlfmt: "fnlfmt-{{version}}/fnlfmt"
+  fnlfmt: "{{source.build.bin}}"
