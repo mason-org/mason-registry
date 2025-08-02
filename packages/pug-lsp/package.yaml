@@ -1,0 +1,33 @@
+---
+name: pug-lsp
+description: |
+  An implementation of the Language Protocol Server for [Pug.js](http://pugjs.org)
+homepage: https://github.com/opa-oz/pug-lsp
+licenses:
+  - MIT
+languages:
+  - Pug
+categories:
+  - LSP
+
+source:
+  id: pkg:github/opa-oz/pug-lsp@v0.1.0
+  asset:
+    - target: darwin_arm64
+      file: pug-lsp_darwin_all.zip
+      bin: pug-lsp
+    - target: darwin_x64
+      file: pug-lsp_darwin_all.zip
+      bin: pug-lsp
+    - target: linux_arm64
+      file: pug-lsp_linux_arm64.zip
+      bin: pug-lsp
+    - target: linux_x64
+      file: pug-lsp_linux_amd64.zip
+      bin: pug-lsp
+    - target: win_x64
+      file: pug-lsp_windows_amd64.zip
+      bin: pug-lsp.exe
+
+bin:
+  pug-lsp: "{{source.asset.bin}}"
