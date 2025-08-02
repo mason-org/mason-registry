@@ -27,7 +27,7 @@ source:
       bin: pug-lsp
     - target: win_x64
       file: pug-lsp_windows_amd64.zip
-      bin: pug-lsp
+      bin: pug-lsp.exe
 
 bin:
   pug-lsp: "{{source.asset.bin}}"
