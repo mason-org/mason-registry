@@ -1,0 +1,33 @@
+---
+name: ntt
+description: Modern tools for TTCN-3
+homepage: https://nokia.github.io/ntt/
+licenses:
+  - BSD-3-Clause
+languages:
+  - TTCN-3
+categories:
+  - LSP
+  - Runtime
+
+source:
+  id: pkg:github/nokia/ntt@v0.20.3
+  asset:
+    - target: darwin_arm64
+      file: ntt_darwin_arm64.tar.gz
+      bin: ntt
+    - target: darwin_x64
+      file: ntt_darwin_x86_64.tar.gz
+      bin: ntt
+    - target: linux_arm64
+      file: ntt_linux_arm64.tar.gz
+      bin: ntt
+    - target: linux_x64
+      file: ntt_linux_x86_64.tar.gz
+      bin: ntt
+    - target: win_x64
+      file: ntt_windows_x86_64.zip
+      bin: ntt.exe
+
+bin:
+  ntt: "{{source.asset.bin}}"

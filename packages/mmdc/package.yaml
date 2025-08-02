@@ -1,0 +1,16 @@
+---
+name: mmdc
+description: Command line tool for the Mermaid library.
+homepage: https://github.com/mermaid-js/mermaid-cli
+licenses:
+  - MIT
+languages:
+  - Markdown
+  - Mermaid
+categories: []
+
+source:
+  id: pkg:npm/@mermaid-js/mermaid-cli@11.9.0
+
+bin:
+  mmdc: npm:mmdc

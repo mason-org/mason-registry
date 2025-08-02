@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/withered-magic/starpls@v0.1.20
+  id: pkg:github/withered-magic/starpls@v0.1.21
   asset:
     - target: darwin_arm64
       file: starpls-darwin-arm64
@@ -23,3 +23,6 @@ source:
 
 bin:
   starpls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: starpls

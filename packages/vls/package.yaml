@@ -21,3 +21,6 @@ source:
 
 bin:
   vls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: vls

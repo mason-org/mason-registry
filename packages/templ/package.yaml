@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/a-h/templ@v0.2.793
+  id: pkg:github/a-h/templ@v0.3.924
   asset:
     - target: linux_arm64
       file: templ_Linux_arm64.tar.gz
@@ -42,3 +42,6 @@ source:
 
 bin:
   templ: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: templ

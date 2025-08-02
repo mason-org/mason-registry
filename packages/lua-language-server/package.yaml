@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/LuaLS/lua-language-server@3.13.5
+  id: pkg:github/LuaLS/lua-language-server@3.15.0
   asset:
     - target: darwin_arm64
       file: lua-language-server-{{version}}-darwin-arm64.tar.gz:libexec/
@@ -77,3 +77,6 @@ schemas:
 
 bin:
   lua-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: lua_ls

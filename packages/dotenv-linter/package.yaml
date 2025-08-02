@@ -1,0 +1,41 @@
+---
+name: dotenv-linter
+description: ⚡️Lightning-fast linter for .env files. Written in Rust 🦀
+homepage: https://dotenv-linter.github.io/#/
+licenses:
+  - MIT
+languages:
+  - Dotenv
+categories:
+  - Linter
+
+source:
+  id: pkg:github/dotenv-linter/dotenv-linter@v3.3.0
+  asset:
+    - target: darwin_arm64
+      file: dotenv-linter-darwin-arm64.tar.gz
+      bin: dotenv-linter
+    - target: darwin_x64
+      file: dotenv-linter-darwin-x86_64.tar.gz
+      bin: dotenv-linter
+    - target: linux_arm64_gnu
+      file: dotenv-linter-linux-aarch64.tar.gz
+      bin: dotenv-linter
+    - target: linux_arm64_musl
+      file: dotenv-linter-alpine-aarch64.tar.gz
+      bin: dotenv-linter
+    - target: linux_x64_gnu
+      file: dotenv-linter-linux-x86_64.tar.gz
+      bin: dotenv-linter
+    - target: linux_x64_musl
+      file: dotenv-linter-alpine-x86_64.tar.gz
+      bin: dotenv-linter
+    - target: win_arm64
+      file: dotenv-linter-win-aarch64.zip
+      bin: dotenv-linter.exe
+    - target: win_x64
+      file: dotenv-linter-win-x64.zip
+      bin: dotenv-linter.exe
+
+bin:
+  dotenv-linter: "{{source.asset.bin}}"

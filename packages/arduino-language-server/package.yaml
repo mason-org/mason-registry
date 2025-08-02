@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/arduino/arduino-language-server@0.7.6
+  id: pkg:github/arduino/arduino-language-server@0.7.7
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: arduino-language-server_{{version}}_macOS_64bit.tar.gz
@@ -33,3 +33,6 @@ source:
 
 bin:
   arduino-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: arduino_language_server

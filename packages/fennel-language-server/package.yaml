@@ -14,3 +14,6 @@ source:
 
 bin:
   fennel-language-server: cargo:fennel-language-server
+
+neovim:
+  lspconfig: fennel_language_server

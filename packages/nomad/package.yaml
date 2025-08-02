@@ -1,0 +1,43 @@
+---
+name: nomad
+description: |
+  Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice,
+  batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul
+  and Vault integrations.
+homepage: https://www.nomadproject.io/
+licenses:
+  - BUSL-1.1
+languages:
+  - Nomad
+categories:
+  - Formatter
+  - Linter
+  - Runtime
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/hashicorp/nomad@v1.10.3
+  download:
+    - target: darwin_x64
+      files:
+        nomad.zip: https://releases.hashicorp.com/nomad/{{ version | strip_prefix "v" }}/nomad_{{ version | strip_prefix "v" }}_darwin_amd64.zip
+      bin: nomad
+    - target: darwin_arm64
+      files:
+        nomad.zip: https://releases.hashicorp.com/nomad/{{ version | strip_prefix "v" }}/nomad_{{ version | strip_prefix "v" }}_darwin_arm64.zip
+      bin: nomad
+    - target: linux_x64
+      files:
+        nomad.zip: https://releases.hashicorp.com/nomad/{{ version | strip_prefix "v" }}/nomad_{{ version | strip_prefix "v" }}_linux_amd64.zip
+      bin: nomad
+    - target: linux_arm64
+      files:
+        nomad.zip: https://releases.hashicorp.com/nomad/{{ version | strip_prefix "v" }}/nomad_{{ version | strip_prefix "v" }}_linux_arm64.zip
+      bin: nomad
+    - target: win_x64
+      files:
+        nomad: https://releases.hashicorp.com/nomad/{{ version | strip_prefix "v" }}/nomad_{{ version | strip_prefix "v" }}_windows_amd64.zip
+      bin: nomad
+
+bin:
+  nomad: "{{source.download.bin}}"

@@ -12,7 +12,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/rubocop@1.69.2
+  id: pkg:gem/rubocop@1.79.1
 
 bin:
   rubocop: gem:rubocop
+
+neovim:
+  lspconfig: rubocop

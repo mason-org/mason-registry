@@ -11,7 +11,10 @@ categories:
   - Linter
 
 source:
-  id: pkg:gem/standard@1.43.0
+  id: pkg:gem/standard@1.50.0
 
 bin:
   standardrb: gem:standardrb
+
+neovim:
+  lspconfig: standardrb

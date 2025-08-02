@@ -15,7 +15,9 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/clang-format@19.1.5
+  id: pkg:pypi/clang-format@20.1.8
 
 bin:
   clang-format: pypi:clang-format
+  clang-format-diff.py: pypi:clang-format-diff{{ take_if_not(is_platform("win"), ".py") }}
+  git-clang-format: pypi:git-clang-format

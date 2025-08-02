@@ -11,9 +11,15 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/GroovyLanguageServer/groovy-language-server@0c40ec136525b592f1d798bb52ced9d8d2d7945c
+  id: pkg:github/GroovyLanguageServer/groovy-language-server@ef83177e76bc4ca768c54965dc5c512ddb2d9a38
   build:
     run: ./gradlew --no-daemon build
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/GroovyLanguageServer/groovy-language-server/{{version}}/vscode-extension/package.json
+
 bin:
   groovy-language-server: java-jar:build/libs/groovy-language-server-all.jar
+
+neovim:
+  lspconfig: groovyls

@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/veryl-lang/veryl@v0.13.3
+  id: pkg:github/veryl-lang/veryl@v0.16.2
   asset:
     - target: darwin_arm64
       file: veryl-aarch64-mac.zip
@@ -26,5 +26,11 @@ source:
       file: veryl-x86_64-windows.zip
       bin: veryl-ls.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/veryl-lang/veryl/{{version}}/support/vscode/package.json
+
 bin:
   veryl-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: veryl_ls

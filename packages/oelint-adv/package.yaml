@@ -5,12 +5,12 @@ homepage: https://github.com/priv-kweihmann/oelint-adv
 licenses:
   - BSD-2-Clause
 languages:
-  - Bitbake
+  - BitBake
 categories:
   - Linter
 
 source:
-  id: pkg:pypi/oelint-adv@6.6.6
+  id: pkg:pypi/oelint-adv@8.2.0
 
 bin:
   oelint-adv: pypi:oelint-adv
