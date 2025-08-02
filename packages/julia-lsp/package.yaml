@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/mason-org/julia-lsp@v1.79.2
+  id: pkg:github/mason-org/julia-lsp@v1.149.2
   asset:
     - target: unix
       file: julia-lsp-{{version}}.zip:libexec/
@@ -24,3 +24,6 @@ schemas:
 
 bin:
   julia-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: julials

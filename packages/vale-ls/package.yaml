@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/errata-ai/vale-ls@v0.3.7
+  id: pkg:github/errata-ai/vale-ls@v0.4.0
   asset:
     - target: darwin_x64
       file: vale-ls-x86_64-apple-darwin.zip
@@ -31,3 +31,6 @@ source:
 
 bin:
   vale-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: vale_ls

@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/svelte-language-server@0.16.11
+  id: pkg:npm/svelte-language-server@0.17.17
   extra_packages:
     - typescript-svelte-plugin
 
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   svelteserver: npm:svelteserver
+
+neovim:
+  lspconfig: svelte

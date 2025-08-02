@@ -5,6 +5,7 @@
 <!--toc:start-->
 - [Contributing guide](#contributing-guide)
   - [Table of Contents](#table-of-contents)
+- [Requirements](#requirements)
 - [Introduction](#introduction)
 - [Schema](#schema)
 - [Testing](#testing)
@@ -20,6 +21,8 @@
   - [`bin`](#bin)
   - [`share`](#share)
   - [`opt`](#opt)
+  - [`neovim`](#neovim)
+    - [`lspconfig`](#lspconfig)
 - [Expressions](#expressions)
 - [Examples](#examples)
   - [Common fields](#common-fields)
@@ -41,6 +44,14 @@
 > RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14][bcp14],
 > [RFC2119][rfc2119], and [RFC8174][rfc8174] when, and only when, they appear in all capitals, as shown here.
 
+# Requirements
+At least one of the following conditions MUST be fulfilled for new packages to be added to the registry.
+
+1. At least 100 stars on GitHub.
+1. Evidence that the tool has a relevant user base, such as VSCode marketplace downloads.
+1. Be approved at [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig).
+1. Have a credible authority vouch for it, e.g., the tool is officially recommended by maintainers of the language.
+
 # Introduction
 
 * Make sure to follow the [naming guidelines](#name).
@@ -49,9 +60,7 @@
 * Testing a package MUST be done locally prior to creating a PR. See [testing](#testing) for more information.
 
 > [!TIP]
-> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) combined with the
-> [schemastore schema](https://json.schemastore.org/mason-registry.json) to get diagnostics and autocompletion (see
-> [Schema](#schema)).
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to get diagnostics and autocompletion (see [Schema](#schema)).
 
 # Schema
 
@@ -59,9 +68,8 @@ Package definitions are validated against a well-defined [JSON schema](https://g
 The full schema is hosted on <http://schemastore.org/>.
 
 > [!TIP]
-> Use [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim) and the [YAML language
-> server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these schemas in Neovim. This
-> gives you diagnostics and autocompletion inside the editor when editing package definitions:
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these
+> schemas in Neovim. This gives you diagnostics and autocompletion inside the editor when editing package definitions:
 > 
 > <img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
 
@@ -272,6 +280,23 @@ opt:
     solang/llvm15.0/LICENSE: doc/LICENSE
     # Links $MASON/opt/solang/llvm15.0/ -> <package>/llvm15.0/**/* (i.e. all files within the target directory)
     solang/llvm15.0/: llvm15.0/
+```
+
+## `neovim`
+
+The `neovim` property is an object that contain metadata specific for Neovim.
+
+### `lspconfig`
+
+The `lspconfig` property of `neovim` specifies the name of the LSP configuration as provided by
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/). Providing the `neovim.lspconfig` value MUST be done if the
+package contains an LSP configuration entry in nvim-lspconfig.
+
+Example:
+
+```yaml
+neovim:
+    lspconfig: lua_ls
 ```
 
 # Expressions

@@ -1,0 +1,19 @@
+---
+name: protols
+description: A Simple LSP for proto3 protobuf files.
+homepage: https://github.com/coder3101/protols
+licenses:
+  - MIT
+languages:
+  - Protobuf
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/protols@0.12.7
+
+bin:
+  protols: cargo:protols
+
+neovim:
+  lspconfig: protols

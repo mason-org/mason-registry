@@ -11,7 +11,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/brighterscript@0.67.3
+  id: pkg:npm/brighterscript@0.69.12
 
 bin:
   bsc: npm:bsc
+
+neovim:
+  lspconfig: bright_script

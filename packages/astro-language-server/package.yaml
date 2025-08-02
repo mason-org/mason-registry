@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40astrojs/language-server@2.10.0
+  id: pkg:npm/%40astrojs/language-server@2.15.4
   extra_packages:
     - typescript
     - "@astrojs/ts-plugin"
@@ -20,3 +20,6 @@ schemas:
 
 bin:
   astro-ls: npm:astro-ls
+
+neovim:
+  lspconfig: astro

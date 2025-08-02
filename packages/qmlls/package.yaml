@@ -1,0 +1,31 @@
+---
+name: qmlls
+description: |
+  QML Language Server is a tool shipped with Qt that helps you write code in your favorite (LSP-supporting) editor.
+homepage: https://doc-snapshots.qt.io/qt6-dev/qtqml-tooling-qmlls.html
+licenses:
+  - LicenseRef-Qt-Commercial
+  - GPL-3.0-only WITH Qt-GPL-exception-1.0
+languages:
+  - QML
+categories:
+  - LSP
+
+source:
+  id: pkg:github/TheQtCompanyRnD/qmlls-workflow@0.2
+  asset:
+    - target: [darwin_x64, darwin_arm64]
+      file: qmlls-macos-{{version}}.zip
+      bin: qmlls
+    - target: linux_x64_gnu
+      file: qmlls-ubuntu-{{version}}.zip
+      bin: qmlls
+    - target: win_x64
+      file: qmlls-windows-{{version}}.zip
+      bin: qmlls.exe
+
+bin:
+  qmlls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: qmlls

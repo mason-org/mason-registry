@@ -11,7 +11,10 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pyre-check@0.9.21
+  id: pkg:pypi/pyre-check@0.9.25
 
 bin:
   pyre: pypi:pyre
+
+neovim:
+  lspconfig: pyre

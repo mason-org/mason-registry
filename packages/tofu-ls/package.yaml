@@ -1,0 +1,43 @@
+---
+name: tofu-ls
+description: OpenTofu Language Server
+homepage: https://github.com/opentofu/tofu-ls
+licenses:
+  - MPL-2.0
+languages:
+  - OpenTofu
+categories:
+  - LSP
+neovim:
+  lspconfig: tofu_ls
+
+source:
+  id: pkg:github/opentofu/tofu-ls@v0.0.9
+  asset:
+    - target: darwin_arm64
+      file: tofu-ls_Darwin_arm64.tar.gz
+      bin: tofu-ls
+    - target: darwin_x64
+      file: tofu-ls_Darwin_x86_64.tar.gz
+      bin: tofu-ls
+    - target: linux_arm64
+      file: tofu-ls_Linux_arm64.tar.gz
+      bin: tofu-ls
+    - target: linux_x86
+      file: tofu-ls_Linux_i386.tar.gz
+      bin: tofu-ls
+    - target: linux_x64
+      file: tofu-ls_Linux_x86_64.tar.gz
+      bin: tofu-ls
+    - target: win_arm64
+      file: tofu-ls_Windows_arm64.tar.gz
+      bin: tofu-ls.exe
+    - target: win_x86
+      file: tofu-ls_Windows_i386.tar.gz
+      bin: tofu-ls.exe
+    - target: win_x64
+      file: tofu-ls_Windows_x86_64.tar.gz
+      bin: tofu-ls.exe
+
+bin:
+  tofu-ls: "{{source.asset.bin}}"

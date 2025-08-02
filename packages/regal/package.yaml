@@ -11,7 +11,21 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/styrainc/regal@v0.23.1
+  id: pkg:github/styrainc/regal@v0.35.1
+  asset:
+    - target: darwin_arm64
+      file: regal_Darwin_arm64
+    - target: darwin_x64
+      file: regal_Darwin_x86_64
+    - target: linux_arm64
+      file: regal_Linux_arm64
+    - target: linux_x64
+      file: regal_Linux_x86_64
+    - target: win_x64
+      file: regal_Windows_x86_64.exe
 
 bin:
-  regal: golang:regal
+  regal: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: regal

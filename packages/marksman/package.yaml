@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/artempyanykh/marksman@2023-12-09
+  id: pkg:github/artempyanykh/marksman@2024-12-18
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: marksman-macos
@@ -24,3 +24,6 @@ source:
 
 bin:
   marksman: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: marksman

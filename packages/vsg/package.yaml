@@ -1,0 +1,17 @@
+---
+name: vsg
+description: VHDL Style Guide (VSG), Coding style enforcement for VHDL.
+homepage: https://pypi.org/project/vsg/
+licenses:
+  - GPL-3.0
+languages:
+  - VHDL
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:pypi/vsg@3.33.0
+
+bin:
+  vsg: pypi:vsg

@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/tekumara/typos-vscode@v0.1.19
+  id: pkg:github/tekumara/typos-vscode@v0.1.40
   asset:
     - target: darwin_x64
       file: typos-lsp-{{ version }}-x86_64-apple-darwin.tar.gz
@@ -20,11 +20,17 @@ source:
     - target: linux_x64_gnu
       file: typos-lsp-{{ version }}-x86_64-unknown-linux-gnu.tar.gz
       bin: typos-lsp
+    - target: linux_x64
+      file: typos-lsp-{{ version }}-x86_64-unknown-linux-musl.tar.gz
+      bin: typos-lsp
     - target: linux_arm64_gnu
       file: typos-lsp-{{ version }}-aarch64-unknown-linux-gnu.tar.gz
       bin: typos-lsp
     - target: linux_arm_gnu
       file: typos-lsp-{{ version }}-arm-unknown-linux-gnueabihf.tar.gz
+      bin: typos-lsp
+    - target: linux_arm64
+      file: typos-lsp-{{ version }}-aarch64-unknown-linux-musl.tar.gz
       bin: typos-lsp
     - target: win_x64
       file: typos-lsp-{{ version }}-x86_64-pc-windows-msvc.zip
@@ -33,5 +39,11 @@ source:
       file: typos-lsp-{{ version }}-aarch64-pc-windows-msvc.zip
       bin: target/aarch64-pc-windows-msvc/release/typos-lsp.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/tekumara/typos-lsp/{{version}}/package.json
+
 bin:
   typos-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: typos_lsp

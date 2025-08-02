@@ -12,9 +12,10 @@ languages:
 categories:
   - LSP
   - Runtime
+  - Linter
 
 source:
-  id: pkg:github/denoland/deno@v1.44.4
+  id: pkg:github/denoland/deno@v2.4.3
   asset:
     - target: darwin_arm64
       file: deno-aarch64-apple-darwin.zip
@@ -37,3 +38,6 @@ schemas:
 
 bin:
   deno: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: denols

@@ -1,0 +1,31 @@
+---
+name: wasm-language-tools
+description: Language server and other tools for WebAssembly.
+homepage: https://github.com/g-plane/wasm-language-tools
+licenses:
+  - MIT
+languages:
+  - WebAssembly
+categories:
+  - LSP
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/g-plane/wasm-language-tools@v0.5.1
+  asset:
+    - target: darwin_arm64
+      file: wat_server-arm64-macos.zip
+      bin: wat_server
+    - target: darwin_x64
+      file: wat_server-x86_64-macos.zip
+      bin: wat_server
+    - target: linux_x64
+      file: wat_server-x86_64-linux.zip
+      bin: wat_server
+    - target: win_x64
+      file: wat_server-x86_64-windows.zip
+      bin: wat_server.exe
+
+bin:
+  wat_server: "{{source.asset.bin}}"

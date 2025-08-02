@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/mathworks/MATLAB-language-server@23d0854da2c2d41b236cafca82fbf3cadea13947
+  id: pkg:github/mathworks/MATLAB-language-server@0bebb79b218beb2127bdc5d2d11fba40caa206bf
   build:
     run: |
       npm install
@@ -19,3 +19,6 @@ source:
 
 bin:
   matlab-language-server: node:out/index.js
+
+neovim:
+  lspconfig: matlab_ls

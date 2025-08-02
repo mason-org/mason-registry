@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.1.1
+  id: pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.4.3
   asset:
     - target: darwin_arm64
       file: cobol-language-support-darwin-arm64-{{version}}.vsix
@@ -31,5 +31,11 @@ source:
       file: cobol-language-support-win32-x64-{{version}}-signed.vsix
       bin: extension/server/native/engine.exe
 
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/eclipse-che4z/che-che4z-lsp-for-cobol/{{version}}/clients/cobol-lsp-vscode-extension/package.json
+
 bin:
   cobol-language-support: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: cobol_ls

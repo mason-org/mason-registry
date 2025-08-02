@@ -12,10 +12,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/purescript-language-server@0.18.0
+  id: pkg:npm/purescript-language-server@0.18.5
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/nwolverson/vscode-ide-purescript/master/package.json
 
 bin:
   purescript-language-server: npm:purescript-language-server
+
+neovim:
+  lspconfig: purescriptls

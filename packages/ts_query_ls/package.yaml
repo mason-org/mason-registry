@@ -1,0 +1,35 @@
+---
+name: ts_query_ls
+description: An LSP implementation for Tree-sitter's query files
+homepage: https://github.com/ribru17/ts_query_ls
+licenses:
+  - MIT
+languages:
+  - Query
+categories:
+  - LSP
+
+source:
+  id: pkg:github/ribru17/ts_query_ls@v3.10.0
+  asset:
+    - target: darwin_x64
+      file: ts_query_ls-x86_64-apple-darwin.tar.gz
+      bin: ts_query_ls
+    - target: darwin_arm64
+      file: ts_query_ls-aarch64-apple-darwin.tar.gz
+      bin: ts_query_ls
+    - target: linux_x64_gnu
+      file: ts_query_ls-x86_64-unknown-linux-gnu.tar.gz
+      bin: ts_query_ls
+    - target: linux_arm64_gnu
+      file: ts_query_ls-aarch64-unknown-linux-gnu.tar.gz
+      bin: ts_query_ls
+    - target: win_x64
+      file: ts_query_ls-x86_64-pc-windows-msvc.zip
+      bin: ts_query_ls.exe
+
+bin:
+  ts_query_ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: ts_query_ls

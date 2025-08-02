@@ -28,3 +28,6 @@ source:
 
 bin:
   els: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: erg_language_server

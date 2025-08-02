@@ -13,7 +13,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/elixir-lsp/elixir-ls@v0.22.0
+  id: pkg:github/elixir-lsp/elixir-ls@v0.28.0
   asset:
     - target: unix
       file: elixir-ls-{{version}}.zip
@@ -61,3 +61,6 @@ schemas:
 bin:
   elixir-ls: "{{source.asset.bin.lsp}}"
   elixir-ls-debugger: "{{source.asset.bin.dap}}"
+
+neovim:
+  lspconfig: elixirls

@@ -1,0 +1,40 @@
+---
+name: superhtml
+description: HTML Language Server & Templating Language Library
+homepage: https://github.com/kristoff-it/superhtml
+licenses:
+  - MIT
+languages:
+  - HTML
+  - SuperHTML
+categories:
+  - LSP
+  - Formatter
+
+source:
+  id: pkg:github/kristoff-it/superhtml@v0.5.3
+  asset:
+    - target: darwin_arm64
+      file: aarch64-macos.tar.gz
+      bin: aarch64-macos/superhtml
+    - target: linux_arm64
+      file: aarch64-linux.tar.gz
+      bin: aarch64-linux/superhtml
+    - target: win_arm64
+      file: aarch64-windows.zip
+      bin: aarch64-windows/superhtml.exe
+    - target: darwin_x64
+      file: x86_64-macos.tar.gz
+      bin: x86_64-macos/superhtml
+    - target: linux_x64
+      file: x86_64-linux-musl.tar.gz
+      bin: x86_64-linux-musl/superhtml
+    - target: win_x64
+      file: x86_64-windows.zip
+      bin: x86_64-windows/superhtml.exe
+
+bin:
+  superhtml: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: superhtml
