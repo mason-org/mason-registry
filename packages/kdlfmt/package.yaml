@@ -1,0 +1,32 @@
+name: kdlfmt
+description: A code formatter for KDL documents.
+homepage: https://github.com/hougesen/kdlfmt
+licenses:
+  - MIT
+languages:
+  - KDL
+categories:
+  - Formatter
+source:
+  id: pkg:github/hougesen/kdlfmt@v0.1.2
+  asset:
+    - target: darwin_arm64
+      file: kdlfmt-aarch64-apple-darwin.tar.xz
+      bin: kdlfmt-aarch64-apple-darwin/kdlfmt
+    - target: darwin_x64
+      file: kdlfmt-x86_64-apple-darwin.tar.xz
+      bin: kdlfmt-x86_64-apple-darwin/kdlfmt
+    - target: linux_arm64_gnu
+      file: kdlfmt-aarch64-unknown-linux-gnu.tar.xz
+      bin: kdlfmt-aarch64-unknown-linux-gnu/kdlfmt
+    - target: linux_x64_gnu
+      file: kdlfmt-x86_64-unknown-linux-gnu.tar.xz
+      bin: kdlfmt-x86_64-unknown-linux-gnu/kdlfmt
+    - target: win_x86
+      file: kdlfmt-x86_64-pc-windows-msvc.zip
+      bin: kdlfmt.exe
+    - target: win_x64
+      file: kdlfmt-x86_64-pc-windows-msvc.zip
+      bin: kdlfmt.exe
+bin:
+  kdlfmt: "{{source.asset.bin}}"
