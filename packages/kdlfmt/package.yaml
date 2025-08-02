@@ -15,7 +15,7 @@ source:
       bin: kdlfmt-aarch64-apple-darwin/kdlfmt
     - target: darwin_x64
       file: kdlfmt-x86_64-apple-darwin.tar.xz
-      bin: kdlfmt-aarch64-apple-darwin/kdlfmt
+      bin: kdlfmt-x86_64-apple-darwin/kdlfmt
     - target: linux_arm64_gnu
       file: kdlfmt-aarch64-unknown-linux-gnu.tar.xz
       bin: kdlfmt-aarch64-unknown-linux-gnu/kdlfmt
