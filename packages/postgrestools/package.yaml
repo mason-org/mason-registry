@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/supabase-community/postgres_lsp@0.2.1
+  id: pkg:github/supabase-community/postgres-language-server@0.10.0
   asset:
     - target: darwin_arm64
       file: postgrestools_aarch64-apple-darwin
@@ -30,3 +30,5 @@ source:
 bin:
   postgrestools: "{{source.asset.file}}"
 
+neovim:
+  lspconfig: postgres_lsp

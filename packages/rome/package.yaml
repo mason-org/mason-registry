@@ -1,6 +1,6 @@
 ---
 name: rome
-deprecation: 
+deprecation:
   message: Rome is deprecated. Use biome, its successor.
   since: 12.1.3
 description: Rome is a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.
@@ -24,3 +24,6 @@ schemas:
 
 bin:
   rome: npm:rome
+
+neovim:
+  lspconfig: rome

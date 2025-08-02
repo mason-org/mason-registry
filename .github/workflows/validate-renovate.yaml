@@ -16,7 +16,7 @@ jobs:
 
       - name: Check for config changes
         id: diff
-        uses: tj-actions/changed-files@v44
+        uses: tj-actions/changed-files@v46
         with:
           files: |
             renovate.json5

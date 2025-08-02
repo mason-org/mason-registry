@@ -16,3 +16,6 @@ source:
 
 bin:
   antlersls: npm:antlersls
+
+neovim:
+  lspconfig: antlersls

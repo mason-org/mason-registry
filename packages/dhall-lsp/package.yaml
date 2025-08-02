@@ -24,3 +24,6 @@ source:
 
 bin:
   dhall-lsp-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: dhall_lsp_server

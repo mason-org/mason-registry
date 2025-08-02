@@ -31,3 +31,6 @@ source:
 
 bin:
   vale-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: vale_ls

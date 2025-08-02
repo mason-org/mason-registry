@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/vhdl-ls/rust_hdl@v0.84.0
+  id: pkg:github/vhdl-ls/rust_hdl@v0.85.0
   asset:
     - target: darwin_arm64
       file: vhdl_ls-aarch64-apple-darwin.zip
@@ -32,3 +32,6 @@ bin:
 
 share:
   vhdl_libraries/: "{{source.asset.libraries}}"
+
+neovim:
+  lspconfig: vhdl_ls

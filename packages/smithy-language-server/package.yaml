@@ -10,14 +10,26 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/awslabs/smithy-language-server@0.6.0
+  id: pkg:github/awslabs/smithy-language-server@0.7.0
   asset:
-    - target: unix
-      file: smithy-language-server-{{version}}.zip
-      bin: smithy-language-server-{{version}}/bin/smithy-language-server
-    - target: win
-      file: smithy-language-server-{{version}}.zip
-      bin: smithy-language-server-{{version}}/bin/smithy-language-server.bat
+    - target: darwin_x64
+      file: smithy-language-server-darwin-x86_64.zip
+      bin: smithy-language-server-darwin-x86_64/bin/smithy-language-server
+    - target: darwin_arm64
+      file: smithy-language-server-darwin-aarch64.zip
+      bin: smithy-language-server-darwin-aarch64/bin/smithy-language-server
+    - target: linux_x64
+      file: smithy-language-server-linux-x86_64.zip
+      bin: smithy-language-server-linux-x86_64/bin/smithy-language-server
+    - target: linux_arm64
+      file: smithy-language-server-linux-aarch64.zip
+      bin: smithy-language-server-linux-aarch64/bin/smithy-language-server
+    - target: win_x64
+      file: smithy-language-server-windows-x64.zip
+      bin: smithy-language-server-windows-x64/bin/smithy-language-server.bat
 
 bin:
   smithy-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: smithy_ls

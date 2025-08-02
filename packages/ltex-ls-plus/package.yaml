@@ -1,0 +1,66 @@
+---
+name: ltex-ls-plus
+description: |
+  LTeX Language Server+: LSP language server for LanguageTool 🔍✔️ with support for LaTeX 🎓, Markdown 📝, and others.
+homepage: https://ltex-plus.github.io/ltex-plus/
+licenses:
+  - MPL-2.0
+languages:
+  - Text
+  - Markdown
+  - LaTeX
+  - reStructuredText
+categories:
+  - LSP
+
+source:
+  id: pkg:github/ltex-plus/ltex-ls-plus@18.5.1
+  asset:
+    # The platform-specific releases bundle a java runtime engine, and are
+    # therefore preferable to avoid external dependencies (see #2837).
+    - target: linux_arm64_gnu
+      file: ltex-ls-plus-{{version}}-linux-aarch64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: linux_x64_gnu
+      file: ltex-ls-plus-{{version}}-linux-x64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: darwin_arm64
+      file: ltex-ls-plus-{{version}}-mac-aarch64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: darwin_x64
+      file: ltex-ls-plus-{{version}}-mac-x64.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+    - target: win_x64
+      file: ltex-ls-plus-{{version}}-windows-x64.zip
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus.bat
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus.bat
+    - target: win_arm64
+      file: ltex-ls-plus-{{version}}-windows-aarch64.zip
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus.bat
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus.bat
+    # using platform-independent release to support non-gnu linux
+    - target: linux
+      file: ltex-ls-plus-{{version}}.tar.gz
+      bin:
+        lsp: ltex-ls-plus-{{version}}/bin/ltex-ls-plus
+        cli: ltex-ls-plus-{{version}}/bin/ltex-cli-plus
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/ltex-plus/vscode-ltex-plus/develop/package.json
+
+bin:
+  ltex-ls-plus: "{{source.asset.bin.lsp}}"
+  ltex-cli-plus: "{{source.asset.bin.cli}}"
+
+neovim:
+  lspconfig: ltex_plus

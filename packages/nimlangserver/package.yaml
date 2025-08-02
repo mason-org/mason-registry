@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/nim-lang/langserver@v1.10.0
+  id: pkg:github/nim-lang/langserver@v1.12.0
   asset:
     - target: linux_x64
       file: nimlangserver-linux-amd64.tar.gz
@@ -56,3 +56,6 @@ source:
 
 bin:
   nimlangserver: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: nim_langserver

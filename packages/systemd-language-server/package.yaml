@@ -15,3 +15,6 @@ source:
 
 bin:
   systemd-language-server: pypi:systemd-language-server
+
+neovim:
+  lspconfig: systemd_ls

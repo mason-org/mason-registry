@@ -34,3 +34,6 @@ source:
 
 bin:
   bzl: "{{source.download.bin}}"
+
+neovim:
+  lspconfig: bzl

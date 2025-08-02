@@ -1,0 +1,22 @@
+---
+name: laravel-ls
+description: Laravel Language Server written in go.
+homepage: https://github/laravel-ls/laravel-ls
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  id: pkg:github/laravel-ls/laravel-ls@v0.0.6
+  asset:
+    - target: linux_x64_gnu
+      file: laravel-ls-{{version}}-linux-amd64
+
+bin:
+  laravel-ls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: laravel_ls

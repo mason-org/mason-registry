@@ -12,10 +12,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/nickel-lang-lsp@1.10.0
+  id: pkg:cargo/nickel-lang-lsp@1.11.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/tweag/nickel/{{version}}/lsp/vscode-extension/package.json
 
 bin:
   nls: cargo:nls
+
+neovim:
+  lspconfig: nickel_ls

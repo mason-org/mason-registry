@@ -1,0 +1,19 @@
+---
+name: fish-lsp
+description: LSP implementation for the fish shell language
+homepage: https://github.com/ndonfris/fish-lsp
+licenses:
+  - MIT
+languages:
+  - Fish
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/fish-lsp@1.0.10
+
+bin:
+  fish-lsp: npm:fish-lsp
+
+neovim:
+  lspconfig: fish_lsp

@@ -12,7 +12,10 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40shopify/cli@3.77.0
+  id: pkg:npm/%40shopify/cli@3.83.2
 
 bin:
   shopify: npm:shopify
+
+neovim:
+  lspconfig: shopify_theme_ls

@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/bacon-ls@0.19.0
+  id: pkg:cargo/bacon-ls@0.21.0
 
 bin:
   bacon-ls: cargo:bacon-ls
+
+neovim:
+  lspconfig: bacon_ls

@@ -12,5 +12,11 @@ categories:
 source:
   id: pkg:cargo/asm-lsp@0.10.0?locked=false
 
+schemas:
+  lsp: https://raw.githubusercontent.com/bergercookie/asm-lsp/v{{version}}/asm-lsp_config_schema.json
+
 bin:
   asm-lsp: cargo:asm-lsp
+
+neovim:
+  lspconfig: asm_lsp

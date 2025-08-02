@@ -14,3 +14,6 @@ source:
 
 bin:
   cmake-language-server: pypi:cmake-language-server
+
+neovim:
+  lspconfig: cmake

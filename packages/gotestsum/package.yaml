@@ -10,7 +10,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:golang/gotest.tools/gotestsum@v1.12.1
+  id: pkg:golang/gotest.tools/gotestsum@v1.12.3
 
 bin:
   gotestsum: golang:gotestsum

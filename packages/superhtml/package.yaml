@@ -35,3 +35,6 @@ source:
 
 bin:
   superhtml: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: superhtml
