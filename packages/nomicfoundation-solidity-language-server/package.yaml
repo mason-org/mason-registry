@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40nomicfoundation/solidity-language-server@0.8.18
+  id: pkg:npm/%40nomicfoundation/solidity-language-server@0.8.24
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/NomicFoundation/hardhat-vscode/v{{version}}/client/package.json

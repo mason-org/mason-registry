@@ -1,0 +1,23 @@
+---
+name: herb-language-server
+description: Powerful and seamless HTML-aware ERB parsing and tooling.
+homepage: https://github.com/marcoroth/herb
+licenses:
+  - MIT
+languages:
+  - HTML
+  - Ruby
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@herb-tools/language-server@0.4.2
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/marcoroth/herb/v{{version}}/javascript/packages/vscode/package.json
+
+bin:
+  herb-language-server: npm:herb-language-server
+
+neovim:
+  lspconfig: herb_ls

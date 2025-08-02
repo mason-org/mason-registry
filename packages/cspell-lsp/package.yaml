@@ -1,0 +1,18 @@
+---
+name: cspell-lsp
+description: Language Server Protocol implementation for CSpell, a spell checker for code.
+homepage: https://github.com/vlabo/cspell-lsp
+licenses:
+  - MIT
+languages: []
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@vlabo/cspell-lsp@1.1.5
+
+bin:
+  cspell-lsp: npm:cspell-lsp
+
+neovim:
+  lspconfig: cspell_ls

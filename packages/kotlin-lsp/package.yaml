@@ -1,0 +1,26 @@
+---
+name: kotlin-lsp
+description: Kotlin Language Server and plugin for Visual Studio Code
+homepage: https://github.com/Kotlin/kotlin-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - Kotlin
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=loose
+  # renovate:datasource=github-releases
+  id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v0.252.17811
+  download:
+    - target: unix
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-{{ version | strip_prefix "kotlin-lsp/v" }}.zip
+      bin: kotlin-lsp.sh
+
+bin:
+  kotlin-lsp: "{{source.download.bin}}"
+
+neovim:
+  lspconfig: kotlin_lsp

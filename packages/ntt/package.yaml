@@ -11,7 +11,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/nokia/ntt@v0.19.1
+  id: pkg:github/nokia/ntt@v0.20.3
   asset:
     - target: darwin_arm64
       file: ntt_darwin_arm64.tar.gz

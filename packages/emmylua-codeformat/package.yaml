@@ -1,0 +1,34 @@
+---
+name: emmylua-codeformat
+description: |
+  Fast, powerful, and feature-rich Lua formatting and checking tool. 
+  This tool is already bundled with lua_ls, so you don’t need it if you’re using lua_ls.
+homepage: https://github.com/CppCXY/EmmyLuaCodeStyle
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/CppCXY/EmmyLuaCodeStyle@1.5.7
+  asset:
+    - target: darwin_arm64
+      file: darwin-arm64.tar.gz
+      bin: darwin-arm64/bin/CodeFormat
+    - target: darwin_x64
+      file: darwin-x64.tar.gz
+      bin: darwin-x64/bin/CodeFormat
+    - target: linux_arm64_gnu
+      file: linux-aarch64.tar.gz
+      bin: linux-aarch64/bin/CodeFormat
+    - target: linux_x64_gnu
+      file: linux-x64.tar.gz
+      bin: linux-x64/bin/CodeFormat
+    - target: win_x64
+      file: win32-x64.zip
+      bin: win32-x64/bin/CodeFormat.exe
+
+bin:
+  emmylua-codeformat: "{{source.asset.bin}}"

@@ -14,7 +14,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pyflakes@3.3.2
+  id: pkg:pypi/pyflakes@3.4.0
 
 bin:
   pyflakes: pypi:pyflakes

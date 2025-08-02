@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/PMunch/nimlsp@v0.4.6
+  id: pkg:github/PMunch/nimlsp@v0.4.7
   build:
     - target: unix
       run: nimble build -y --localdeps

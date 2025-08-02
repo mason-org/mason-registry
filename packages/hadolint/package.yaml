@@ -12,7 +12,7 @@ categories:
 source:
   id: pkg:github/hadolint/hadolint@v2.12.0
   asset:
-    - target: [darwin_x64, darwin_arm64]
+    - target: darwin_x64
       file: hadolint-Darwin-x86_64
     - target: linux_x64
       file: hadolint-Linux-x86_64
