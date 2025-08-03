@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/svelte-language-server@0.17.17
+  id: pkg:npm/svelte-language-server@0.17.18
   extra_packages:
     - typescript-svelte-plugin
 
