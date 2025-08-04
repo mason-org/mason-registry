@@ -3,17 +3,30 @@ name: docker-language-server
 description: Language server for Dockerfiles, Compose files, and Bake files.
 homepage: https://github.com/docker/docker-language-server
 licenses:
-  - MIT
+  - Apache-2.0
 languages:
   - Docker
 categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/docker/docker-language-server/cmd/docker-language-server@v0.14.0
+  id: pkg:github/docker/docker-language-server@v0.14.0
+  asset:
+    - target: darwin_x64
+      file: docker-language-server-darwin-amd64-{{version}}
+    - target: darwin_arm64
+      file: docker-language-server-darwin-arm64-{{version}}
+    - target: linux_arm64_gnu
+      file: docker-language-server-linux-arm64-{{version}}
+    - target: linux_x64_gnu
+      file: docker-language-server-linux-amd64-{{version}}
+    - target: win_arm64
+      file: docker-language-server-windows-arm64-{{version}}.exe
+    - target: win_x64
+      file: docker-language-server-windows-amd64-{{version}}.exe
 
 bin:
-  docker-language-server: golang:docker-language-server
+  docker-language-server: {{source.asset.file}}
 
 neovim:
   lspconfig: docker-language-server
