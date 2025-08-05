@@ -29,5 +29,5 @@ bin:
   docker-language-server: "{{source.asset.file}}"
 
 neovim:
-  lspconfig: docker-language-server
+  lspconfig: docker_language_server
 
