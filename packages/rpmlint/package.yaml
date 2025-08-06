@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/rpmlint@2.7.0
+  id: pkg:pypi/rpmlint@2.8.0
 
 bin:
   rpmlint: pypi:rpmlint
