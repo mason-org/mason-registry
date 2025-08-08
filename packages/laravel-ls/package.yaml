@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/laravel-ls/laravel-ls@v0.0.6
+  id: pkg:github/laravel-ls/laravel-ls@v0.0.10
   asset:
     - target: linux_x64_gnu
       file: laravel-ls-{{version}}-linux-amd64
