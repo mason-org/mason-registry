@@ -14,6 +14,8 @@ source:
   asset:
     - target: linux_x64_gnu
       file: laravel-ls-{{version}}-linux-amd64
+    - target: win_x64
+      file: laravel-ls-{{version}}-windows-amd64
 
 bin:
   laravel-ls: "{{source.asset.file}}"
