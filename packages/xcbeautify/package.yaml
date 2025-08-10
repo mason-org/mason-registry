@@ -10,7 +10,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/cpisciotta/xcbeautify@2.29.0
+  id: pkg:github/cpisciotta/xcbeautify@2.30.0
   asset:
     - target: darwin_arm64
       file: xcbeautify-{{version}}-arm64-apple-macosx.zip
