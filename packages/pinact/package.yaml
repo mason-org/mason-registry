@@ -9,7 +9,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:github/suzuki-shunsuke/pinact@v3.3.2
+  id: pkg:github/suzuki-shunsuke/pinact@v3.4.1
   asset:
     - target: darwin_x64
       file: pinact_darwin_amd64.tar.gz
