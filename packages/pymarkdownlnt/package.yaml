@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pymarkdownlnt@0.9.31
+  id: pkg:pypi/pymarkdownlnt@0.9.32
 
 bin:
   pymarkdownlnt: pypi:pymarkdownlnt
