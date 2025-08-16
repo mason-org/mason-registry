@@ -1,7 +1,7 @@
 ---
 name: laravel-ls
 description: Laravel Language Server written in go.
-homepage: https://github/laravel-ls/laravel-ls
+homepage: https://github.com/laravel-ls/laravel-ls
 licenses:
   - GPL-3.0-or-later
 languages:
