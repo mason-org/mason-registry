@@ -1,0 +1,50 @@
+---
+name: codebook
+description: An unholy spell checker for code.
+homepage: https://github.com/blopker/codebook
+licenses:
+  - MIT
+languages:
+  - C
+  - CSS
+  - Go
+  - HTML
+  - Haskell
+  - Java
+  - JavaScript
+  - Lua
+  - Markdown
+  - PHP
+  - Plain
+  - Python
+  - Ruby
+  - Rust
+  - TOML
+  - TypeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/blopker/codebook@v0.3.8
+  asset:
+    - target: linux_x64_gnu
+      file: codebook-lsp-x86_64-unknown-linux-musl.tar.gz
+      bin: codebook-lsp
+    - target: linux_arm64_gnu
+      file: codebook-lsp-aarch64-unknown-linux-musl.tar.gz
+      bin: codebook-lsp
+    - target: darwin_x64
+      file: codebook-lsp-x86_64-apple-darwin.tar.gz
+      bin: codebook-lsp
+    - target: darwin_arm64
+      file: codebook-lsp-aarch64-apple-darwin.tar.gz
+      bin: codebook-lsp
+    - target: win_x64
+      file: codebook-lsp-x86_64-pc-windows-msvc.zip
+      bin: codebook-lsp.exe
+
+bin:
+  codebook-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: codebook
