@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/@herb-tools/language-server@0.4.3
+  id: pkg:npm/@herb-tools/language-server@0.5.0
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/marcoroth/herb/v{{version}}/javascript/packages/vscode/package.json
