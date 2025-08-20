@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/CircleCI-Public/circleci-yaml-language-server@0.14.2
+  id: pkg:github/CircleCI-Public/circleci-yaml-language-server@0.15.0
   asset:
     - target: darwin_arm64
       file:
