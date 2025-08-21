@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/docker/docker-language-server@v0.15.0
+  id: pkg:github/docker/docker-language-server@v0.17.0
   asset:
     - target: darwin_x64
       file: docker-language-server-darwin-amd64-{{version}}
