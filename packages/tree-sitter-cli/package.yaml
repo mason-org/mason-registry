@@ -13,9 +13,12 @@ categories:
 source:
   id: pkg:github/tree-sitter/tree-sitter@v0.25.8
   asset:
-    - target: [darwin_x64, darwin_arm64]
+    - target: darwin_x64
       file: tree-sitter-macos-x64.gz
       bin: tree-sitter-macos-x64
+    - target: darwin_arm64
+      file: tree-sitter-macos-arm64.gz
+      bin: tree-sitter-macos-arm64
     - target: linux_x64
       file: tree-sitter-linux-x64.gz
       bin: tree-sitter-linux-x64
