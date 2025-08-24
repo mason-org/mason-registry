@@ -25,34 +25,7 @@ source:
       file: google-java-format_windows-x86-64.exe
       bin: google-java-format_windows-x86-64.exe
     # All other platforms that don't have binary
-    - target: [
-        unix,
-        darwin,
-        darwin_x64,
-        linux,
-        linux_arm,
-        linux_arm64_gnu,
-        linux_arm64_musl,
-        linux_arm64_openbsd,
-        linux_arm_gnu,
-        linux_armv6_gnu,
-        linux_armv6l,
-        linux_armv7_gnu,
-        linux_armv7l,
-        linux_x64_gnu,
-        linux_x64_musl,
-        linux_x64_openbsd,
-        linux_x86,
-        linux_x86_gnu,
-        linux_x86_musl,
-        linux_x86_openbsd,
-        win,
-        win_arm,
-        win_arm64,
-        win_armv6l,
-        win_armv7l,
-        win_x86
-      ]
+    - target: [unix, win]
       file: google-java-format-{{ version | strip_prefix "v" }}-all-deps.jar
       bin: java-jar:google-java-format-{{ version | strip_prefix "v" }}-all-deps.jar
 
