@@ -13,3 +13,6 @@ source:
 
 bin:
   copilot-language-server: npm:copilot-language-server
+
+neovim:
+  lspconfig: copilot
