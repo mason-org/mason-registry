@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/NixOS/nixfmt@v0.6.0
+  id: pkg:github/NixOS/nixfmt@v1.0.0
   asset:
     - target: linux_x64
       file: nixfmt-x86_64-linux
