@@ -15,7 +15,7 @@ source:
     - target: darwin_x64
       file: hadolint-Darwin-x86_64
     - target: darwin_arm64
-      file: hadolint-Macos-arm64
+      file: hadolint-macOS-arm64
     - target: linux_x64
       file: hadolint-Linux-x86_64
     - target: linux_arm64
