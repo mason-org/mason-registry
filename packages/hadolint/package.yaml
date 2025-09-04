@@ -34,7 +34,7 @@ source:
         - target: linux_arm64
           file: hadolint-Linux-arm64
         - target: win_x64
-          file: hadolin
+          file: hadolint-Windows-x86_64.exe
 
 bin:
   hadolint: "{{source.asset.file}}"
