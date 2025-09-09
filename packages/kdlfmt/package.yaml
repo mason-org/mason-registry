@@ -8,7 +8,7 @@ languages:
 categories:
   - Formatter
 source:
-  id: pkg:github/hougesen/kdlfmt@v0.1.3
+  id: pkg:github/hougesen/kdlfmt@v0.1.4
   asset:
     - target: darwin_arm64
       file: kdlfmt-aarch64-apple-darwin.tar.xz
