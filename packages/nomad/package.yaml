@@ -16,7 +16,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/hashicorp/nomad@v1.10.4
+  id: pkg:generic/hashicorp/nomad@v1.10.5
   download:
     - target: darwin_x64
       files:
