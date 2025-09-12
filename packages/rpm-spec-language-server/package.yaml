@@ -1,0 +1,19 @@
+---
+name: rpm-spec-language-server
+description: Language server protocol (LSP) support for RPM Spec files.
+homepage: https://github.com/dcermak/rpm-spec-language-server
+licenses:
+  - GPL-2.0
+languages:
+  - Spec
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/rpm-spec-language-server@0.0.1
+
+bin:
+  rpm_lsp_server: pypi:rpm_lsp_server
+
+neovim:
+  lspconfig: rpmspec
