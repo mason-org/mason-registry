@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ribru17/ts_query_ls@v3.11.0
+  id: pkg:github/ribru17/ts_query_ls@v3.11.1
   asset:
     - target: darwin_x64
       file: ts_query_ls-x86_64-apple-darwin.tar.gz
