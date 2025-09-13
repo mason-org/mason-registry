@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/foam-language-server@0.3.5
+  id: pkg:npm/foam-language-server@0.4.6
 
 bin:
   foam-ls: npm:foam-ls
