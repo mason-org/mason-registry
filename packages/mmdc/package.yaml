@@ -10,7 +10,7 @@ languages:
 categories: []
 
 source:
-  id: pkg:npm/@mermaid-js/mermaid-cli@11.9.0
+  id: pkg:npm/@mermaid-js/mermaid-cli@11.10.1
 
 bin:
   mmdc: npm:mmdc
