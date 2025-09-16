@@ -12,7 +12,7 @@ neovim:
   lspconfig: tofu_ls
 
 source:
-  id: pkg:github/opentofu/tofu-ls@v0.1.0
+  id: pkg:github/opentofu/tofu-ls@v0.1.1
   asset:
     - target: darwin_arm64
       file: tofu-ls_Darwin_arm64.tar.gz
