@@ -10,6 +10,6 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/htmlhint@1.7.0
+  id: pkg:npm/htmlhint@1.7.1
 bin:
   htmlhint: npm:htmlhint
