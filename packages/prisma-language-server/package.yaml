@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40prisma/language-server@6.16.1
+  id: pkg:npm/%40prisma/language-server@6.16.2
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/prisma/language-tools/{{version}}/packages/vscode/package.json
