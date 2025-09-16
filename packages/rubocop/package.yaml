@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/rubocop@1.79.1
+  id: pkg:gem/rubocop@1.80.2
 
 bin:
   rubocop: gem:rubocop
