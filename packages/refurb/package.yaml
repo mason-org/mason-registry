@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/refurb@2.1.0
+  id: pkg:pypi/refurb@2.2.0
 
 bin:
   refurb: pypi:refurb
