@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/clangd/clangd@20.1.8
+  id: pkg:github/clangd/clangd@21.1.0
   asset:
     - target: [darwin_x64, darwin_arm64]
       file: clangd-mac-{{version}}.zip
