@@ -18,7 +18,11 @@ source:
       file: docker-language-server-darwin-arm64-{{version}}
     - target: linux_arm64_gnu
       file: docker-language-server-linux-arm64-{{version}}
+    - target: linux_arm64_musl
+      file: docker-language-server-linux-arm64-{{version}}
     - target: linux_x64_gnu
+      file: docker-language-server-linux-amd64-{{version}}
+    - target: linux_x64_musl
       file: docker-language-server-linux-amd64-{{version}}
     - target: win_arm64
       file: docker-language-server-windows-arm64-{{version}}.exe
