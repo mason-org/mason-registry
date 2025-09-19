@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/bacon-ls@0.22.0
+  id: pkg:cargo/bacon-ls@0.23.0
 
 bin:
   bacon-ls: cargo:bacon-ls
