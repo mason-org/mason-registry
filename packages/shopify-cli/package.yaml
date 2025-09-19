@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40shopify/cli@3.84.1
+  id: pkg:npm/%40shopify/cli@3.84.2
 
 bin:
   shopify: npm:shopify
