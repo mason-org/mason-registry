@@ -12,7 +12,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-cpptools@v1.26.5
+  id: pkg:github/microsoft/vscode-cpptools@v1.27.7
   asset:
     - target: darwin_x64
       file: cpptools-macOS-x64.vsix
