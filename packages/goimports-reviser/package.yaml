@@ -24,6 +24,9 @@ source:
     - target: linux_x64
       file: goimports-reviser_{{ version | strip_prefix "v" }}_linux_amd64.tar.gz
       bin: goimports-reviser
+    - target: linux_arm64
+      file: goimports-reviser_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz
+      bin: goimports-reviser
     - target: win_x64
       file: goimports-reviser_{{ version | strip_prefix "v" }}_windows_amd64.tar.gz
       bin: goimports-reviser.exe
