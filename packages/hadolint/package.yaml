@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/hadolint/hadolint@v2.13.1
+  id: pkg:github/hadolint/hadolint@v2.14.0
   asset:
     - target: darwin_x64
       file: hadolint-macos-x86_64
