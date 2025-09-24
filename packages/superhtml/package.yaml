@@ -12,26 +12,26 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/kristoff-it/superhtml@v0.5.3
+  id: pkg:github/kristoff-it/superhtml@v0.6.0
   asset:
     - target: darwin_arm64
-      file: aarch64-macos.tar.gz
-      bin: aarch64-macos/superhtml
+      file: aarch64-macos.zip
+      bin: superhtml
     - target: linux_arm64
-      file: aarch64-linux.tar.gz
-      bin: aarch64-linux/superhtml
+      file: aarch64-linux.tar.xz
+      bin: superhtml
     - target: win_arm64
       file: aarch64-windows.zip
-      bin: aarch64-windows/superhtml.exe
+      bin: superhtml.exe
     - target: darwin_x64
-      file: x86_64-macos.tar.gz
-      bin: x86_64-macos/superhtml
+      file: x86_64-macos.zip
+      bin: superhtml
     - target: linux_x64
-      file: x86_64-linux-musl.tar.gz
-      bin: x86_64-linux-musl/superhtml
+      file: x86_64-linux-musl.tar.xz
+      bin: superhtml
     - target: win_x64
       file: x86_64-windows.zip
-      bin: x86_64-windows/superhtml.exe
+      bin: superhtml.exe
 
 bin:
   superhtml: "{{source.asset.bin}}"
