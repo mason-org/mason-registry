@@ -1,0 +1,35 @@
+---
+name: kubescape
+description: |
+  Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD pipelines, and clusters. It includes risk analysis, security, compliance, and misconfiguration scanning, saving Kubernetes users and administrators precious time, effort, and resources. 
+homepage: https://kubescape.io/
+licenses:
+  - Apache-2.0
+languages:
+  - Helm
+  - YAML
+categories:
+  - Linter
+  - Runtime
+
+source:
+  id: pkg:github/kubescape/kubescape@v3.0.41
+  asset:
+    - target: darwin_x64
+      file: kubescape-macos-latest.tar.gz
+      bin: kubescape-macos-latest
+    - target: darwin_arm64
+      file: kubescape-arm64-macos-latest.tar.gz
+      bin: kubescape-arm64-macos-latest
+    - target: linux_x64
+      file:  kubescape-ubuntu-latest.tar.gz
+      bin:  kubescape-ubuntu-latest
+    - target: linux_arm64
+      file: kubescape-arm64-ubuntu-latest.tar.gz
+      bin: kubescape-arm64-ubuntu-latest
+    - target: win_x64
+      file: kubescape-arm64-windows-latest.tar.gz
+      bin:  kubescape-arm64-windows-latest.exe
+
+bin:
+  kubescape: "{{source.asset.bin}}"
