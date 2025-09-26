@@ -1,5 +1,5 @@
 ---
-name: rpm-spec-language-server
+name: rpm_lsp_server
 description: Language server protocol (LSP) support for RPM Spec files.
 homepage: https://github.com/dcermak/rpm-spec-language-server
 licenses:
