@@ -11,18 +11,42 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/slint-ui/slint@v1.12.0
+  id: pkg:github/slint-ui/slint@v1.13.1
   asset:
     - target: linux_x64
       file: slint-lsp-linux.tar.gz
       bin: slint-lsp/slint-lsp
     - target: win_x64
-      file: slint-lsp-windows.zip
-      bin: slint-lsp/slint-lsp.exe
+      file: slint-lsp-windows-x86_64.zip
+      bin: slint-lsp.exe
     - target: [darwin_x64, darwin_arm64]
       file: slint-lsp-macos.tar.gz
       bin: slint-lsp/slint-lsp
-
+  version_overrides:
+    - constraint: semver:<=v1.12.1
+      id: pkg:github/slint-ui/slint@v1.12.1
+      asset:
+        - target: linux_x64
+          file: slint-lsp-linux.tar.gz
+          bin: slint-lsp/slint-lsp
+        - target: win_x64
+          file: slint-lsp-windows-x86_64.zip
+          bin: slint-lsp/slint-lsp.exe
+        - target: [darwin_x64, darwin_arm64]
+          file: slint-lsp-macos.tar.gz
+          bin: slint-lsp/slint-lsp
+    - constraint: semver:<=v1.12.0
+      id: pkg:github/slint-ui/slint@v1.12.0
+      asset:
+        - target: linux_x64
+          file: slint-lsp-linux.tar.gz
+          bin: slint-lsp/slint-lsp
+        - target: win_x64
+          file: slint-lsp-windows.zip
+          bin: slint-lsp/slint-lsp.exe
+        - target: [darwin_x64, darwin_arm64]
+          file: slint-lsp-macos.tar.gz
+          bin: slint-lsp/slint-lsp
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/slint-ui/slint/{{version}}/editors/vscode/package.json
 
