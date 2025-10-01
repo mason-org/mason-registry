@@ -1,7 +1,7 @@
 ---
 name: zuban
-description: Zuban is a high-performance LSP and type checker implemented in Rust, by the author of Jedi.
-homepage: https://zubanls.com/
+description: Zuban is a high-performant Mypy-compatible LSP and type checker built in Rust.
+homepage: https://zubanls.com
 licenses:
   - AGPL-3.0
 languages:
