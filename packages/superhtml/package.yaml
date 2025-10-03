@@ -12,7 +12,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/kristoff-it/superhtml@v0.6.0
+  id: pkg:github/kristoff-it/superhtml@v0.6.1
   asset:
     - target: darwin_arm64
       file: aarch64-macos.zip
