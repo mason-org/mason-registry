@@ -32,3 +32,6 @@ source:
 
 bin:
   sqruff: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: sqruff
