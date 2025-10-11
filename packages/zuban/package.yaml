@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/zuban@0.0.25
+  id: pkg:pypi/zuban@0.1.0
 
 bin:
   zuban: pypi:zuban
