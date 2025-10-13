@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/google/google-java-format@v1.29.0
+  id: pkg:github/google/google-java-format@v1.30.0
   asset:
     - target: darwin_arm64
       file: google-java-format_darwin-arm64
