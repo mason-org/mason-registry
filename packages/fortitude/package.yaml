@@ -1,0 +1,50 @@
+---
+name: fortitude
+description: Fortran linter, written in Rust.
+homepage: https://github.com/PlasmaFAIR/fortitude
+licenses:
+  - MIT
+languages:
+  - Fortran
+categories:
+  - Linter
+
+source:
+  id: pkg:github/PlasmaFAIR/fortitude@v0.7.5
+  asset:
+    - target: darwin_arm64
+      file: fortitude-aarch64-apple-darwin.tar.gz
+      bin: fortitude-aarch64-apple-darwin/fortitude
+    - target: darwin_x64
+      file: fortitude-x86_64-apple-darwin.tar.gz
+      bin: fortitude-x86_64-apple-darwin/fortitude
+    - target: linux_arm64
+      file: fortitude-aarch64-unknown-linux-musl.tar.gz
+      bin: fortitude-aarch64-unknown-linux-musl/fortitude
+    - target: linux_x64
+      file: fortitude-x86_64-unknown-linux-musl.tar.gz
+      bin: fortitude-x86_64-unknown-linux-musl/fortitude
+    - target: linux_x86
+      file: fortitude-i686-unknown-linux-musl.tar.gz
+      bin: fortitude-i686-unknown-linux-musl/fortitude
+    - target: linux_arm64_gnu
+      file: fortitude-aarch64-unknown-linux-gnu.tar.gz
+      bin: fortitude-aarch64-unknown-linux-gnu/fortitude
+    - target: linux_x64_gnu
+      file: fortitude-x86_64-unknown-linux-gnu.tar.gz
+      bin: fortitude-x86_64-unknown-linux-gnu/fortitude
+    - target: linux_x86_gnu
+      file: fortitude-i686-unknown-linux-gnu.tar.gz
+      bin: fortitude-i686-unknown-linux-gnu/fortitude
+    - target: win_arm64
+      file: fortitude-aarch64-pc-windows-msvc.zip
+      bin: fortitude.exe
+    - target: win_x64
+      file: fortitude-x86_64-pc-windows-msvc.zip
+      bin: fortitude.exe
+    - target: win_x86
+      file: fortitude-i686-pc-windows-msvc.zip
+      bin: fortitude.exe
+
+bin:
+  fortitude: "{{source.asset.bin}}"
