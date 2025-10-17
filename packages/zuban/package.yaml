@@ -16,3 +16,5 @@ source:
 bin:
   zuban: pypi:zuban
 
+neovim:
+  lspconfig: zuban
