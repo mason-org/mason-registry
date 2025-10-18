@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/dotenv-linter/dotenv-linter@v3.3.0
+  id: pkg:github/dotenv-linter/dotenv-linter@v4.0.0
   asset:
     - target: darwin_arm64
       file: dotenv-linter-darwin-arm64.tar.gz
