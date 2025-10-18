@@ -43,5 +43,4 @@ bin:
   rshtml-analyzer: "{{source.asset.bin}}"
 
 neovim:
-  lspconfig:
-    name: rshtml_analyzer
+  lspconfig: rshtml_analyzer
