@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rshtml/rshtml-analyzer@v0.1.3
+  id: pkg:github/rshtml/rshtml-analyzer@v0.1.4
   asset:
     # Linux
     - target: linux_x64_gnu
