@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/rpm-spec-language-server@0.0.1
+  id: pkg:pypi/rpm-spec-language-server@0.0.2
 
 bin:
   rpm_lsp_server: pypi:rpm_lsp_server
