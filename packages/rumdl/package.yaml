@@ -1,6 +1,6 @@
 ---
 name: rumdl
-description: Fast Markdown linter and formatter written in Rust.
+description: Fast Markdown linter and formatter.
 homepage: https://github.com/rvben/rumdl
 licenses:
   - MIT
@@ -12,7 +12,26 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/rumdl@0.0.164
-
-bin:
-  rumdl: cargo:rumdl
+  id: pkg:github/rvben/rumdl@v0.0.164
+  asset:
+    - target: darwin_arm64
+      file: rumdl-v0.0.164-aarch64-apple-darwin.tar.gz
+      bin: rumdl
+    - target: darwin_x64
+      file: rumdl-v0.0.164-x86_64-apple-darwin.tar.gz
+      bin: rumdl
+    - target: linux_x64_gnu
+      file: rumdl-v0.0.164-x86_64-unknown-linux-gnu.tar.gz
+      bin: rumdl
+    - target: linux_arm64_gnu
+      file: rumdl-v0.0.164-aarch64-unknown-linux-gnu.tar.gz
+      bin: rumdl
+    - target: linux_x64
+      file: rumdl-v0.0.164-x86_64-unknown-linux-musl.tar.gz
+      bin: rumdl
+    - target: linux_arm64
+      file: rumdl-v0.0.164-aarch64-unknown-linux-musl.tar.gz
+      bin: rumdl
+    - target: win_x64
+      file: rumdl-v0.0.164-x86_64-pc-windows-msvc.zip
+      bin: rumdl.exe
