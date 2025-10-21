@@ -1,0 +1,18 @@
+---
+name: rumdl
+description: Fast Markdown linter and formatter written in Rust.
+homepage: https://github.com/rvben/rumdl
+licenses:
+  - MIT
+languages:
+  - Markdown
+categories:
+  - Linter
+  - Formatter
+  - LSP
+
+source:
+  id: pkg:cargo/rumdl@0.0.164
+
+bin:
+  rumdl: cargo:rumdl
