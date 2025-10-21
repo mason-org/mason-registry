@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/awslabs/smithy-language-server@0.7.0
+  id: pkg:github/awslabs/smithy-language-server@0.8.0
   asset:
     - target: darwin_x64
       file: smithy-language-server-darwin-x86_64.zip
