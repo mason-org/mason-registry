@@ -1,0 +1,22 @@
+---
+name: tsgo
+description: |
+  Native TypeScript compiler port. Language Server Protocol support with partial
+  features including errors, hover, go to definition, references, and signature help.
+homepage: https://github.com/microsoft/typescript-go
+licenses:
+  - Apache-2.0
+languages:
+  - TypeScript
+  - JavaScript
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@typescript/native-preview@7.0.0-dev.20251023.1
+
+bin:
+  tsgo: npm:tsgo
+
+neovim:
+  lspconfig: tsgo
