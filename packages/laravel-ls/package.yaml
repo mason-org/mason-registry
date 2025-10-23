@@ -16,6 +16,10 @@ source:
       file: laravel-ls-{{version}}-linux-amd64
     - target: win_x64
       file: laravel-ls-{{version}}-windows-amd64
+    - target: darwin_x64
+      file: laravel-ls-{{version}}-darwin-amd64
+    - target: darwin_arm64
+      file: laravel-ls-{{version}}-darwin-arm64
 
 bin:
   laravel-ls: "{{source.asset.file}}"
