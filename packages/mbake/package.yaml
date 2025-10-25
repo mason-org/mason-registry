@@ -1,0 +1,17 @@
+---
+name: mbake
+description: Makefile formatter and linter.
+homepage: https://github.com/EbodShojaei/bake
+licenses:
+  - MIT
+languages:
+  - Makefile
+categories:
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:pypi/mbake@1.4.3
+
+bin:
+  mbake: pypi:mbake
