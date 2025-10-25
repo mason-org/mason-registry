@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rvben/rumdl@v0.0.164
+  id: pkg:github/rvben/rumdl@v0.0.167
   asset:
     - target: darwin_arm64
       file: rumdl-v0.0.164-aarch64-apple-darwin.tar.gz
