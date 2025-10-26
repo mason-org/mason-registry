@@ -16,3 +16,6 @@ source:
 
 bin:
   djlsp: pypi:django-template-lsp
+
+neovim:
+  lspconfig: djlsp
