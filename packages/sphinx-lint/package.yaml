@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/sphinx-lint@1.0.0
+  id: pkg:pypi/sphinx-lint@1.0.1
 
 bin:
   sphinx-lint: pypi:sphinx-lint
