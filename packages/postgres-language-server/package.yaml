@@ -1,0 +1,36 @@
+---
+name: postgres-language-server
+description: A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.
+homepage: https://pg-language-server.com
+licenses:
+  - MIT
+languages:
+  - Postgres
+  - SQL
+categories:
+  - LSP
+  - Linter
+
+source:
+  id: pkg:github/supabase-community/postgres-language-server@0.17.1
+  asset:
+    - target: darwin_arm64
+      file: postgres-language-server_aarch64-apple-darwin
+    - target: darwin_x64
+      file: postgres-language-server_x86_64-apple-darwin
+    - target: linux_x64_gnu
+      file: postgres-language-server_x86_64-unknown-linux-gnu
+    - target: linux_x64_musl
+      file: postgres-language-server_x86_64-unknown-linux-musl
+    - target: linux_arm64_gnu
+      file: postgres-language-server_aarch64-unknown-linux-gnu
+    - target: win_x64
+      file: postgres-language-server_x86_64-pc-windows-msvc
+    - target: win_arm64
+      file: postgres-language-server_aarch64-pc-windows-msvc
+
+bin:
+  postgres-language-server: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: postgres_lsp
