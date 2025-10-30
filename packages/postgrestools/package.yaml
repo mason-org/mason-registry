@@ -1,5 +1,8 @@
 ---
 name: postgrestools
+deprecation:
+  message: postgrestools has been renamed to postgres-language-server. Please install the new package instead.
+  since: 17.0.0
 description: A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.
 homepage: https://pgtools.dev
 licenses:
