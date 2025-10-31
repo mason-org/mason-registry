@@ -4,10 +4,8 @@ description: JavaScript library that translates Cron expressions into human read
 homepage: https://github.com/bradymholt/cRonstrue
 licenses:
   - MIT
-languages:
-  -
-categories:
-  -
+languages: []
+categories: []
 
 source:
   id: pkg:npm/cronstrue@3.9.0
