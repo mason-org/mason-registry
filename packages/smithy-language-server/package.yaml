@@ -25,12 +25,12 @@ source:
       file: smithy-language-server-linux-aarch64.zip
       bin: bin/smithy-language-server
     - target: win_x64
-      file: smithy-language-server-windows-x64.zip
+      file: smithy-language-server-windows-x86_64.zip
       bin: bin/smithy-language-server.bat
 
   version_overrides:
     - constraint: semver:<=0.7.0
-      id: pkg:github/awslabs/smithy-language-server@0.8.0
+      id: pkg:github/awslabs/smithy-language-server@0.7.0
       asset:
         - target: darwin_x64
           file: smithy-language-server-darwin-x86_64.zip
