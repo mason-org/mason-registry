@@ -10,7 +10,23 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/googleapis/api-linter@v2.0.0#cmd/api-linter
+  id: pkg:github/googleapis/api-linter@v2.0.0
+  asset:
+    - target: darwin_x64
+      file: api-linter-{{ version | strip_prefix "v" }}-darwin-amd64.tar.gz
+      bin: api-linter
+    - target: darwin_arm64
+      file: api-linter-{{ version | strip_prefix "v" }}-darwin-arm64.tar.gz
+      bin: api-linter
+    - target: linux_x64
+      file: api-linter-{{ version | strip_prefix "v" }}-linux-amd64.tar.gz
+      bin: api-linter
+    - target: linux_arm64
+      file: api-linter-{{ version | strip_prefix "v" }}-linux-arm64.tar.gz
+      bin: api-linter
+    - target: win_x64
+      file: api-linter-{{ version | strip_prefix "v" }}-windows-amd64.tar.gz
+      bin: api-linter.exe
 
 bin:
-  api-linter: golang:api-linter
+  api-linter: "{{source.asset.bin}}"
