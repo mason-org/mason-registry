@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/rshtml/rshtml-analyzer@v0.1.4
+  id: pkg:github/rshtml/rshtml-analyzer@v0.1.5
   asset:
     # Linux
     - target: linux_x64_gnu
@@ -41,6 +41,3 @@ source:
 
 bin:
   rshtml-analyzer: "{{source.asset.bin}}"
-
-neovim:
-  lspconfig: rshtml_analyzer
