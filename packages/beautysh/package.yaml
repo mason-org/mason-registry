@@ -14,7 +14,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/beautysh@6.4.0
+  id: pkg:pypi/beautysh@6.4.1
 
 bin:
   beautysh: pypi:beautysh
