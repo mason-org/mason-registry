@@ -1,0 +1,43 @@
+name: rshtml-analyzer
+description: |
+  rshtml-analyzer is an implementation of the Language Server Protocol (LSP)
+  for the RsHtml templating language which elegantly combines Rust and HTML.
+homepage: https://github.com/rshtml/rshtml-analyzer
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - RsHtml
+categories:
+  - LSP
+
+source:
+  id: pkg:github/rshtml/rshtml-analyzer@v0.1.5
+  asset:
+    # Linux
+    - target: linux_x64_gnu
+      file: rshtml-analyzer-linux-x64.tar.gz
+      bin: rshtml-analyzer
+    - target: linux_arm64_gnu
+      file: rshtml-analyzer-linux-arm64.tar.gz
+      bin: rshtml-analyzer
+    - target: linux_x64_musl
+      file: rshtml-analyzer-linux-x64-musl.tar.gz
+      bin: rshtml-analyzer
+    # macOS
+    - target: darwin_x64
+      file: rshtml-analyzer-macos-x64.tar.gz
+      bin: rshtml-analyzer
+    - target: darwin_arm64
+      file: rshtml-analyzer-macos-arm64.tar.gz
+      bin: rshtml-analyzer
+    # Windows
+    - target: win_x64
+      file: rshtml-analyzer-windows-x64.tar.gz
+      bin: rshtml-analyzer.exe
+    - target: win_arm64
+      file: rshtml-analyzer-windows-arm64.tar.gz
+      bin: rshtml-analyzer.exe
+
+bin:
+  rshtml-analyzer: "{{source.asset.bin}}"
