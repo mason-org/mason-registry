@@ -50,7 +50,7 @@ At least one of the following conditions MUST be fulfilled for new packages to b
 1. At least 100 stars on GitHub.
 1. At least 5000 VSCode marketplace downloads.
 1. Be approved at [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig).
-1. Have a credible authority vouch for it, e.g., the tool is officially recommended by maintainers of the language.
+1. The tool is officially recommended by a reputable consortium, foundation, or company.
 
 # Introduction
 
