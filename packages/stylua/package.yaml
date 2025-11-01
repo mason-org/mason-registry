@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/johnnymorganz/stylua@v2.3.0
+  id: pkg:github/johnnymorganz/stylua@v2.3.1
   asset:
     - target: darwin_arm64
       file: stylua-macos-aarch64.zip
