@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/usort@1.0.8.post1
+  id: pkg:pypi/usort@1.1.0
 
 bin:
   usort: pypi:usort
