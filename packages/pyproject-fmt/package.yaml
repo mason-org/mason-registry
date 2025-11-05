@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/pyproject-fmt@2.11.0
+  id: pkg:pypi/pyproject-fmt@2.11.1
 
 bin:
   pyproject-fmt: pypi:pyproject-fmt
