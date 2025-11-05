@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/@typescript/native-preview@7.0.0-dev.20251104.1
+  id: pkg:npm/@typescript/native-preview@7.0.0-dev.20251105.1
 
 bin:
   tsgo: npm:tsgo
