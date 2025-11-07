@@ -13,7 +13,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/kubescape/kubescape@v3.0.43
+  id: pkg:github/kubescape/kubescape@v3.0.44
   asset:
     - target: darwin_x64
       file: kubescape-macos-latest.tar.gz
