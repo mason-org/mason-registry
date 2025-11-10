@@ -52,6 +52,9 @@ At least one of the following conditions MUST be fulfilled for new packages to b
 1. Be approved at [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig).
 1. The tool is officially recommended by a reputable consortium, foundation, or company.
 
+Even if one, or all, of the previous conditions are fulfilled, new package additions may be rejected for other 
+reasons.
+
 # Introduction
 
 * Make sure to follow the [naming guidelines](#name).
