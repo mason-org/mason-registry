@@ -35,3 +35,6 @@ source:
     - target: win_x64
       file: rumdl-v0.0.164-x86_64-pc-windows-msvc.zip
       bin: rumdl.exe
+
+bin:
+  rumdl: "{{source.asset.bin}}"
