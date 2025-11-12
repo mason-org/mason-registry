@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:cargo/bacon@3.19.0
+  id: pkg:cargo/bacon@3.20.1
 
 bin:
   bacon: cargo:bacon
