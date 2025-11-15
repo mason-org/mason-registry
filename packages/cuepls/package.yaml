@@ -10,7 +10,7 @@ categories:
   - LSP
 
 deprecation:
-  message: The CUE language server is now included in the cue language binary.
+  message: cuepls has now been renamed to cue. Please install the new package instead.
   since: v0.11.1
 
 source:
