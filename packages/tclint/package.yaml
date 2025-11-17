@@ -1,0 +1,23 @@
+---
+name: tclint
+description: Modern dev tools for Tcl • includes a linter, formatter, and editor integration.
+homepage: https://github.com/nmoroze/tclint
+licenses:
+  - MIT
+languages:
+  - Tcl
+categories:
+  - Linter
+  - Formatter
+  - LSP
+
+source:
+  id: pkg:pypi/tclint@0.6.1
+
+bin:
+  tclint: pypi:tclint
+  tclfmt: pypi:tclfmt
+  tclsp: pypi:tclsp
+
+neovim:
+  lspconfig: tclsp
