@@ -1,0 +1,18 @@
+name: dingo-lsp
+description: LSP for the Dingo language
+homepage: https://github.com/MadAppGang/dingo/tree/main/cmd/dingo-lsp
+licenses: ["MIT"]
+languages: ["Dingo"]
+categories: ["LSP"]
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/MadAppGang/dingo@v0.3.0
+  build:
+    run: go build -o dingo-lsp ./cmd/dingo-lsp
+
+bin:
+  roc_language_server: dingo-lsp
+# TODO:
+# neovim:
+#   lspconfig: dingo-lsp
