@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/css-variables-language-server@2.8.1
+  id: pkg:npm/css-variables-language-server@2.8.2
 
 bin:
   css-variables-language-server: npm:css-variables-language-server
