@@ -1,5 +1,5 @@
 ---
-name: cds_lsp
+name: cds-lsp
 description: Language server for CDS
 homepage: https://cap.cloud.sap
 licenses:
