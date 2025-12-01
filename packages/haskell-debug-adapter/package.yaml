@@ -15,7 +15,7 @@ source:
   build:
     - target: unix
       run: |
-        cabal install haskell-dap ghci-dap haskell-debug-adapter-"$VERSION" --install-method=copy --installdir="$PWD"
+        cabal update && cabal install haskell-dap ghci-dap haskell-debug-adapter-"$VERSION" --install-method=copy --installdir="$PWD"
       staged: false
       env:
         VERSION: "{{version}}"
@@ -25,7 +25,7 @@ source:
 
     - target: win
       run: |
-        cabal install haskell-dap ghci-dap haskell-debug-adapter-$env:VERSION --install-method=copy --installdir="$pwd"
+        cabal update && cabal install haskell-dap ghci-dap haskell-debug-adapter-$env:VERSION --install-method=copy --installdir="$pwd"
       staged: false
       env:
         VERSION: "{{version}}"
