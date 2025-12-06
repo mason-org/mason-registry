@@ -1,0 +1,35 @@
+---
+name: wc-language-server
+description: |
+  Language server that surfaces Web Components metadata, completions, and diagnostics.
+  Provides rich language features for HTML, JSX/TSX, Vue, Svelte, Astro, and other
+  templating languages that use Custom Elements.
+homepage: https://github.com/wc-toolkit/wc-language-server
+licenses:
+  - MIT
+languages:
+  - HTML
+  - JavaScript
+  - TypeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/wc-toolkit/wc-language-server@v{{version}}
+  asset:
+    - target: linux_x64
+      file: wc-language-server-linux-x64
+    - target: linux_arm64
+      file: wc-language-server-linux-arm64
+    - target: darwin_x64
+      file: wc-language-server-macos-x64
+    - target: darwin_arm64
+      file: wc-language-server-macos-arm64
+    - target: win_x64
+      file: wc-language-server-windows-x64.exe
+
+bin:
+  wc-language-server: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: wc_ls
