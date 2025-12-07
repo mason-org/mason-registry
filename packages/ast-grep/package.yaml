@@ -28,11 +28,11 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.40.0
+  id: pkg:pypi/ast-grep-cli@0.40.0
 
 bin:
-  ast-grep: npm:ast-grep
-  sg: npm:sg
+  ast-grep: pypi:ast-grep
+  sg: pypi:sg
 
 neovim:
   lspconfig: ast_grep
