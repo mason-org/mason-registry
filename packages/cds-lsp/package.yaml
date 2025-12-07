@@ -10,7 +10,7 @@ categories:
   - LSP
   - Formatter
 source:
-  id: pkg:npm/%40sap/cds-lsp@9.4.0
+  id: pkg:npm/%40sap/cds-lsp@9.5.1
 
 bin:
   cds-lsp: npm:cds-lsp
