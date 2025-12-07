@@ -32,6 +32,3 @@ source:
 
 bin:
   postgrestools: "{{source.asset.file}}"
-
-neovim:
-  lspconfig: postgres_lsp
