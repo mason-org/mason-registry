@@ -28,11 +28,29 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40ast-grep/cli@0.40.0
+  id: pkg:github/ast-grep/ast-grep@0.40.0
+  asset:
+    - target: darwin_arm64
+      file: app-aarch64-apple-darwin.zip
+    - target: darwin_x64
+      file: app-x86_64-apple-darwin.zip
+    - target: linux_arm64_gnu
+      file: app-aarch64-unknown-linux-gnu.zip
+    - target: linux_x64_gnu
+      file: app-x86_64-unknown-linux-gnu.zip
+    - target: win_arm64
+      file: app-aarch64-pc-windows-msvc.zip
+      ext: .exe
+    - target: win_x64
+      file: app-x86_64-pc-windows-msvc.zip
+      ext: .exe
+    - target: win_x86
+      file: app-i686-pc-windows-msvc.zip
+      ext: .exe
 
 bin:
-  ast-grep: npm:ast-grep
-  sg: npm:sg
+  ast-grep: ast-grep{{source.asset.ext}}
+  sg: sg{{source.asset.ext}}
 
 neovim:
   lspconfig: ast_grep
