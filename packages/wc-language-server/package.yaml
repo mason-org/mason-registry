@@ -29,7 +29,7 @@ source:
       file: wc-language-server-windows-x64.exe
 
 bin:
-  wc-language-server: "{{source.asset.file}}"
+  wc-language-server: {{source.asset.file}}
 
 neovim:
   lspconfig: wc_ls
