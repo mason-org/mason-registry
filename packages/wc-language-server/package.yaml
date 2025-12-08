@@ -15,7 +15,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/wc-toolkit/wc-language-server@v{{version}}
+  id: pkg:github/wc-toolkit/wc-language-server@%40wc-toolkit%2Flanguage-server%400.0.6
   asset:
     - target: linux_x64
       file: wc-language-server-linux-x64
