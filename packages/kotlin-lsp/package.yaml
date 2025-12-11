@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  # renovate:versioning=loose
+  # renovate:versioning=regex:^kotlin-lsp/v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$
   # renovate:datasource=github-releases
   id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v0.253.10629
   download:
