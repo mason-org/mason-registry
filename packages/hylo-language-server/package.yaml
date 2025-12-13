@@ -1,0 +1,46 @@
+---
+name: hylo-language-server
+description: |
+  hylo-language-server is an implementation of the Language Server Protocol for the
+  Hylo programming language. It provides features like completion and goto
+  definition for many code editors, including VS Code, Emacs and NeoVim.
+homepage: https://github.com/hylo-lang/hylo-language-server
+licenses:
+  - MIT
+languages:
+  - Hylo
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=loose
+  id: pkg:github/hylo-lang/hylo-language-server@v0.0.2
+  asset:
+    - target: linux_x64
+      file: hylo-lsp-server-linux-x64.zip
+      bin: hylo-lsp-linux-x64/hylo-lsp-server
+    - target: linux_arm64
+      file: hylo-lsp-server-linux-arm64.zip
+      bin: hylo-lsp-linux-arm64/hylo-lsp-server
+
+    - target: darwin_x64
+      file: hylo-lsp-server-macos-x64.zip
+      bin: hylo-lsp-macos-x64/hylo-lsp-server
+    - target: darwin_arm64
+      file: hylo-lsp-server-macos-arm64.zip
+      bin: hylo-lsp-macos-arm64/hylo-lsp-server
+
+    - target: win_x64
+      file: hylo-lsp-server-windows-x64.zip
+      bin: hylo-lsp-windows-x64/hylo-lsp-server.exe
+    - target: win_arm64
+      file: hylo-lsp-server-windows-arm64.zip
+      bin: hylo-lsp-windows-arm64/hylo-lsp-server.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/hylo-lang/vscode-hylo/refs/heads/lsp-integration2/package.json
+bin:
+  hylo-lsp-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: hylo
