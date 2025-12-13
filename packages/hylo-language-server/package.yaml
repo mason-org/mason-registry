@@ -1,0 +1,47 @@
+---
+name: hylo-language-server
+description: |
+  hylo-language-server is an implementation of the Language Server Protocol for the
+  Hylo programming language that provides features like semantic highlighting, 
+  go-to-definition, and more.
+
+homepage: https://github.com/hylo-lang/hylo-language-server
+licenses:
+  - MIT
+languages:
+  - Hylo
+categories:
+  - LSP
+
+source:
+  id: pkg:github/hylo-lang/hylo-language-server@v0.0.10
+  asset:
+    - target: linux_x64
+      file: hylo-language-server-linux-x64.zip
+      bin: hylo-language-server
+
+    - target: linux_arm64
+      file: hylo-language-server-linux-arm64.zip
+      bin: hylo-language-server
+
+    - target: darwin_x64
+      file: hylo-language-server-macos-x64.zip
+      bin: hylo-language-server
+
+    - target: darwin_arm64
+      file: hylo-language-server-macos-arm64.zip
+      bin: hylo-language-server
+
+    - target: win_x64
+      file: hylo-language-server-windows-x64.zip
+      bin: hylo-language-server.exe
+
+    - target: win_arm64
+      file: hylo-language-server-windows-arm64.zip
+      bin: hylo-language-server.exe
+
+bin:
+  hylo-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: hylo_ls
