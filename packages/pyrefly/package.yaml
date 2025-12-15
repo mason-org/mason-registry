@@ -14,7 +14,7 @@ schemas:
   lsp: vscode:https://raw.githubusercontent.com/facebook/pyrefly/{{version}}/lsp/package.json
 
 source:
-  id: pkg:pypi/pyrefly@0.45.2
+  id: pkg:pypi/pyrefly@0.46.0
 
 bin:
   pyrefly: pypi:pyrefly
