@@ -1,0 +1,30 @@
+---
+name: quadlet-lsp
+description: quadlet-lsp is an implementation of language server for Podman Quadlet files.
+homepage: https://github.com/onlyati/quadlet-lsp
+licenses:
+  - GPL-3.0
+languages:
+  - Podman Quadlet
+categories:
+  - LSP
+source:
+  id: pkg:github/onlyati/quadlet-lsp@v0.6.0
+  asset:
+    - target: darwin_arm64
+      file: quadlet-lsp-0.6.0-darwin-arm64.tar.gz
+      bin: quadlet-lsp
+    - target: darwin_x64
+      file: quadlet-lsp-0.6.0-darwin-amd64.tar.gz
+      bin: quadlet-lsp
+    - target: linux_arm64_gnu
+      file: quadlet-lsp-0.6.0-linux-arm64.tar.gz
+      bin: quadlet-lsp
+    - target: linux_x64_gnu
+      file: quadlet-lsp-0.6.0-linux-amd64.tar.gz
+      bin: quadlet-lsp
+    - target: win_x64
+      file: quadlet-lsp-0.6.0-windows-amd64.zip
+      bin: quadlet-lsp
+bin:
+  quadlet-lsp: "{{source.asset.bin}}"
