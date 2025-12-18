@@ -38,3 +38,6 @@ source:
 
 bin:
   rumdl: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: rumdl
