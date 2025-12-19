@@ -10,7 +10,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:gem/debug@1.11.0
+  id: pkg:gem/debug@1.11.1
 
 bin:
   rdbg: gem:rdbg
