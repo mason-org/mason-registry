@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/ty@0.0.4
+  id: pkg:pypi/ty@0.0.5
 
 bin:
   ty: pypi:ty
