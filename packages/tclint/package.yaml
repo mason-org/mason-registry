@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/tclint@0.6.2
+  id: pkg:pypi/tclint@0.7.0
 
 bin:
   tclint: pypi:tclint
