@@ -14,14 +14,14 @@ source:
   asset:
     - target: darwin_arm64
       file: swiftformat.artifactbundle.zip
-      bin: swiftformat.artifactbundle.swiftformat-{{version}}-macos.bin.swiftformat
+      bin: swiftformat.artifactbundle/swiftformat-{{version}}-macos/bin/swiftformat
 
     - target: linux_arm64_gnu
       file: swiftformat.artifactbundle.zip
-      bin: swiftformat.artifactbundle.swiftformat-{{version}}-linux-gnu.bin.swiftformat_linux_aarch64
+      bin: swiftformat.artifactbundle/swiftformat-{{version}}-linux-gnu/bin/swiftformat_linux_aarch64
 
     - target: linux_x64_gnu
       file: swiftformat.artifactbundle.zip
-      bin: swiftformat.artifactbundle.swiftformat-{{version}}-linux-gnu.bin.swiftformat_linux
+      bin: swiftformat.artifactbundle/swiftformat-{{version}}-linux-gnu/bin/swiftformat_linux
 bin:
   swiftformat: "{{source.asset.bin}}"
