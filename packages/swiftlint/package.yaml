@@ -14,15 +14,15 @@ source:
   asset:
     - target: darwin_arm64
       file: SwiftLintBinary.artifactbundle.zip
-      bin: SwiftLintBinary.macos.swiftlint
+      bin: SwiftLintBinary.artifactbundle.macos.swiftlint
 
     - target: linux_arm64_gnu
       file: SwiftLintBinary.artifactbundle.zip
-      bin: SwiftLintBinary.arm64.swiftlint
+      bin: SwiftLintBinary.artifactbundle.arm64.swiftlint
 
     - target: linux_x64_gnu
       file: SwiftLintBinary.artifactbundle.zip
-      bin: SwiftLintBinary.amd64.swiftlint
+      bin: SwiftLintBinary.artifactbundle.amd64.swiftlint
     #
     # - target: linux_x64_gnu
     #   file: swiftlint_linux.zip
