@@ -12,12 +12,24 @@ categories:
 source:
   id: pkg:github/realm/SwiftLint@0.62.2
   asset:
-    - target: linux_x64_gnu
-      file: swiftlint_linux.zip
-      bin: swiftlint
-    - target: darwin
-      file: portable_swiftlint.zip
-      bin: swiftlint
+    - target: darwin_arm64
+      file: SwiftLintBinary.artifactbundle.zip
+      bin: SwiftLintBinary.macos.swiftlint
 
+    - target: linux_arm64_gnu
+      file: SwiftLintBinary.artifactbundle.zip
+      bin: SwiftLintBinary.arm64.swiftlint
+
+    - target: linux_x64_gnu
+      file: SwiftLintBinary.artifactbundle.zip
+      bin: SwiftLintBinary.amd64.swiftlint
+    #
+    # - target: linux_x64_gnu
+    #   file: swiftlint_linux.zip
+    #   bin: swiftlint
+    # - target: darwin_arm64
+    #   file: portable_swiftlint.zip
+    #   bin: swiftlint
+    #
 bin:
   swiftlint: "{{source.asset.bin}}"

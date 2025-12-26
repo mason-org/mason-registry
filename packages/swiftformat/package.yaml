@@ -12,11 +12,16 @@ categories:
 source:
   id: pkg:github/nicklockwood/SwiftFormat@0.58.7
   asset:
+    - target: darwin_arm64
+      file: swiftformat.artifactbundle.zip
+      bin: swiftformat.macos.swiftformat
+
+    - target: linux_arm64_gnu
+      file: swiftformat.artifactbundle.zip
+      bin: swiftformat.arm64.swiftformat_linux_aarch64
+
     - target: linux_x64_gnu
-      file: swiftformat_linux.zip
-      bin: swiftformat
-    - target: darwin
-      file: portable_swiftformat.zip
-      bin: swiftformat
+      file: swiftformat.artifactbundle.zip
+      bin: swiftformat.amd64.swiftformat_linux
 bin:
   swiftformat: "{{source.asset.bin}}"
