@@ -1,0 +1,22 @@
+---
+name: swiftformat
+description: A command-line tool and Xcode Extension for formatting Swift code.
+homepage: https://github.com/nicklockwood/SwiftFormat
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/nicklockwood/SwiftFormat@0.58.7
+  asset:
+    - target: linux_x64_gnu
+      file: swiftformat_linux.zip
+      bin: swiftformat
+    - target: darwin
+      file: portable_swiftformat.zip
+      bin: swiftformat
+bin:
+  swiftformat: "{{source.asset.bin}}"

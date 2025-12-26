@@ -16,8 +16,8 @@ source:
       file: swiftlint_linux.zip
       bin: swiftlint
     - target: darwin
-      file: SwiftLintBinary.artifactbundle.zip
-      bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
+      file: portable_swiftlint.zip
+      bin: swiftlint
 
   version_overrides:
     - constraint: semver:<=0.57.1
@@ -28,7 +28,7 @@ source:
           bin: swiftlint
         - target: darwin
           file: SwiftLintBinary-macos.artifactbundle.zip
-          bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
+          bin: SwiftLintBinary.artifactbundle/swiftlint/macos/bin/swiftlint
 
 bin:
   swiftlint: "{{source.asset.bin}}"
