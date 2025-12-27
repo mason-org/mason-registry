@@ -15,13 +15,4 @@ source:
     target: darwin
     run: |
       ln -s "$MASON/packages/xcode-build-server/xcode-build-server" "$MASON/bin"
-    # bin: xcode-build-server
-  # asset:
-  #   - target: darwin
-  #     file: "{{version}}.zip"
-  #     bin: xcode-build-server
-  # xcode-build-server: "{{source.build.bin}}"
-  # bin:
-    # xcode-build-server: "{{source.build.bin}}"
-
 ci_skip: true

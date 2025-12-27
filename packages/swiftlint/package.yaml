@@ -23,13 +23,5 @@ source:
     - target: linux_x64_gnu
       file: SwiftLintBinary.artifactbundle.zip
       bin: SwiftLintBinary.artifactbundle/linux/amd64/swiftlint
-    #
-    # - target: linux_x64_gnu
-    #   file: swiftlint_linux.zip
-    #   bin: swiftlint
-    # - target: darwin_arm64
-    #   file: portable_swiftlint.zip
-    #   bin: swiftlint
-    #
 bin:
   swiftlint: "{{source.asset.bin}}"
