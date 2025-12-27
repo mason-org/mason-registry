@@ -1,0 +1,29 @@
+---
+name: xcodeprojectcli
+description: A lightweight command-line tool for managing Xcode projects, built entirely in Swift. Also available as a Swift Package.
+homepage: https://github.com/wojciech-kulik/XcodeProjectCLI
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Runtime
+source:
+  id: pkg:github/wojciech-kulik/XcodeProjectCLI@v1.2.1
+  build:
+    target: darwin
+    run: |
+      make install
+      # ln -s "$MASON/packages/xcode-build-server/xcode-build-server" "$MASON/bin"
+    bin: bin/xcp
+
+    # bin: xcode-build-server
+  # asset:
+  #   - target: darwin
+  #     file: "{{version}}.zip"
+  #     bin: xcode-build-server
+  # xcode-build-server: "{{source.build.bin}}"
+  bin:
+    xcp: "{{source.build.bin}}"
+
+ci_skip: true
