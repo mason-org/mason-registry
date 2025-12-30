@@ -1,7 +1,7 @@
 ---
 name: pymobiledevice3
 description: Pure python3 implementation for working with iDevices (iPhone, etc...).
-homepage: https://github.com/doronz88/pymobiledevice3?tab=readme-ov-file#installation
+homepage: https://github.com/doronz88/pymobiledevice3
 licenses:
   - GPL-3.0
 languages:
