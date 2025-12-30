@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/cuelang.org/go@v0.15.1#cmd/cue
+  id: pkg:golang/cuelang.org/go@v0.15.3#cmd/cue
 
 bin:
   cue: golang:cue
