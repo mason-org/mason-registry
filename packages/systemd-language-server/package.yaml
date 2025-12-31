@@ -1,5 +1,8 @@
 ---
 name: systemd-language-server
+deprecation:
+  message: systemd-language-server is deprecated in favor of systemd-lsp
+  since: 0.3.5
 description: |
   Language Server for Systemd unit files
 homepage: https://github.com/psacawa/systemd-language-server
