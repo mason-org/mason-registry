@@ -13,10 +13,7 @@ source:
   build:
     target: darwin_arm64
     run: |
-      swift build -c release &&
-      rm -rf .release &&
-      mkdir -p .release &&
-      cp .build/release/xcp .release/xcp
-    bin: .release/xcp
+      swift build -c release
+    bin: .build/release/xcp
 bin:
   xcp: "{{source.build.bin}}"
