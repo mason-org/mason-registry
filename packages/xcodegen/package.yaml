@@ -15,5 +15,14 @@ source:
     - target: darwin_arm64
       file: xcodegen.artifactbundle.zip
       bin: xcodegen.artifactbundle/xcodegen-{{version}}-macosx/bin/xcodegen
+
+    - target: linux_x64_gnu
+      file: xcodegen.zip
+      bin: xcodegen/bin/xcodegen
+
+    - target: linux_arm64_gnu
+      file: xcodegen.zip
+      bin: xcodegen/bin/xcodegen
+
 bin:
   xcodegen: "{{source.asset.bin}}"
