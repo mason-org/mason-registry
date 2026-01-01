@@ -8,10 +8,11 @@ languages:
   - Swift
 categories:
   - LSP
-
 source:
   id: pkg:github/SolaWing/xcode-build-server@v1.2.0
   build:
-    target: darwin
+    target: darwin_arm64
     run: |
-      ln -s "$MASON/packages/xcode-build-server/xcode-build-server" "$MASON/bin"
+    bin: xcode-build-server
+bin:
+  xcode-build-server: "{{source.build.bin}}"
