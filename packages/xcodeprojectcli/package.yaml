@@ -11,11 +11,12 @@ categories:
 source:
   id: pkg:github/wojciech-kulik/XcodeProjectCLI@v1.2.1
   build:
-    target: darwin
+    target: darwin_arm64
     run: |
-      make install
-    bin: bin/xcp
-  bin:
-    xcp: "{{source.build.bin}}"
-
-ci_skip: true
+      swift build -c release &&
+      rm -rf .release &&
+      mkdir -p .release &&
+      cp .build/release/xcp .release/xcp
+    bin: .release/xcp
+bin:
+  xcp: "{{source.build.bin}}"
