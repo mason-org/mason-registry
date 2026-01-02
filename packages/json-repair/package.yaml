@@ -13,4 +13,4 @@ source:
   id: pkg:pypi/json-repair@0.54.3
 
 bin:
-  json_repair: pypi:json-repair
+  json-repair: pypi:json-repair

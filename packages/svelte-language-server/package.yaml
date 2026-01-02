@@ -14,9 +14,6 @@ source:
   extra_packages:
     - typescript-svelte-plugin
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/sveltejs/language-tools/language-server-{{version}}/packages/svelte-vscode/package.json
-
 bin:
   svelteserver: npm:svelteserver
 
