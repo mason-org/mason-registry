@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/json-repair@0.54.3
+  id: pkg:pypi/json-repair@0.55.0
 
 bin:
   json_repair: pypi:json_repair
