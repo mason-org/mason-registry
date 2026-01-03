@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/realm/SwiftLint@0.62.2
+  id: pkg:github/realm/SwiftLint@0.63.0
   asset:
     - target: darwin_arm64
       file: SwiftLintBinary.artifactbundle.zip
