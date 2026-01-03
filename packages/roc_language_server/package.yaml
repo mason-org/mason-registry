@@ -1,3 +1,4 @@
+---
 name: roc_language_server
 description: This is a basic language server for Roc.
 homepage: https://github.com/roc-lang/roc/tree/main/crates/language_server#roc_language_server

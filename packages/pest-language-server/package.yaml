@@ -12,9 +12,6 @@ categories:
 source:
   id: pkg:cargo/pest-language-server@0.3.12
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/pest-parser/pest-ide-tools/v{{version}}/vscode/package.json
-
 bin:
   pest-language-server: cargo:pest-language-server
 

@@ -61,8 +61,6 @@ source:
       id: pkg:npm/%40angular/language-server@11.2.14
       extra_packages:
         - typescript@4.1.5
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/angular/vscode-ng-language-service/v{{version}}/package.json
 
 bin:
   ngserver: npm:ngserver
