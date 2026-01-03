@@ -10,6 +10,8 @@ categories:
   - Runtime
 source:
   id: pkg:github/wojciech-kulik/XcodeProjectCLI@v1.2.1
+  supported_platforms:
+    - unix
   build:
     target: darwin_arm64
     run: |
