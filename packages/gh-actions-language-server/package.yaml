@@ -1,7 +1,7 @@
 ---
 name: gh-actions-language-server
 description: GitHub Actions Language Server
-homepage: https://github.com/lttb/gh-actions-language-server
+homepage: https://github.com/actions/languageservices
 licenses:
   - MIT
 languages:
@@ -10,10 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/gh-actions-language-server@0.0.3
+  id: pkg:npm/%40actions/languageserver@0.3.31
 
 bin:
-  gh-actions-language-server: npm:gh-actions-language-server
+  gh-actions-language-server: npm:actions-languageserver
 
 neovim:
   lspconfig: gh_actions_ls
