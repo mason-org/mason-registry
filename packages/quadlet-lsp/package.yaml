@@ -25,6 +25,6 @@ source:
       bin: quadlet-lsp
     - target: win_x64
       file: quadlet-lsp-0.6.0-windows-amd64.zip
-      bin: quadlet-lsp
+      bin: quadlet-lsp.exe
 bin:
   quadlet-lsp: "{{source.asset.bin}}"
