@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40actions/languageserver@0.3.31
+  id: pkg:npm/%40actions/languageserver@0.3.32
 
 bin:
   gh-actions-language-server: npm:actions-languageserver
