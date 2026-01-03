@@ -1,3 +1,4 @@
+---
 name: rshtml-analyzer
 description: |
   rshtml-analyzer is an implementation of the Language Server Protocol (LSP)
