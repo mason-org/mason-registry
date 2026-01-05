@@ -9,7 +9,7 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:github/SolaWing/xcode-build-server@v1.2.0
+  id: pkg:github/SolaWing/xcode-build-server@v1.3.0
   build:
     target: darwin_arm64
     run: |
