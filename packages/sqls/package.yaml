@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/sqls-server/sqls@v0.2.43
+  id: pkg:golang/github.com/sqls-server/sqls@v0.2.45
 
 schemas:
   lsp: https://raw.githubusercontent.com/sqls-server/sqls/{{version}}/schema.json
