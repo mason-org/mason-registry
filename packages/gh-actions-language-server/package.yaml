@@ -16,7 +16,7 @@ bin:
   # gh-actions-language-server is the old executable name from the previous 3rd party distribution.
   # It's retained for now to avoid breaking configurations.
   gh-actions-language-server: npm:actions-languageserver
-  actions-language-server: npm:actions-languageserver
+  actions-languageserver: npm:actions-languageserver
 
 neovim:
   lspconfig: gh_actions_ls
