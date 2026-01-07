@@ -13,7 +13,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/MadAppGang/dingo/cmd/dingo-lsp@v0.7.0
+  id: pkg:golang/github.com/MadAppGang/dingo/cmd/dingo-lsp@v0.8.0
 
 bin:
   dingo-lsp: golang:dingo-lsp
