@@ -17,6 +17,7 @@
   - [`licenses`](#licenses)
   - [`languages`](#languages)
   - [`categories`](#categories)
+  - [`deprecation`](#deprecation)
   - [`source`](#source)
   - [`bin`](#bin)
   - [`share`](#share)
@@ -207,6 +208,22 @@ The categories the package belongs to. MAY be empty. If not empty, each entry MU
 - `Linter`
 - `Runtime`
 
+## `deprecation`
+
+If a package has been deprecated it SHOULD be marked as such through the `deprecation` field. Deprecated packages MAY be
+removed from a registry and SHOULD be done no sooner than 3 months after the deprecation was first applied.
+
+The `since` field MUST be formatted as a `full-date` per [RFC3339][rfc3339]. The `message` field MUST be included and
+SHOULD inform users of officially recommended replacements/alternatives if applicable.
+
+Examples:
+
+```yaml
+deprecation:
+  since: 2026-01-07
+  message: bash-language-server is no longer maintained.
+```
+
 ## `source`
 
 The source of the package. The `source` entry contains all necessary information to properly install the package. At the
@@ -332,13 +349,6 @@ bin:
 
 Expressions use basic Lua syntax with the additional ability to pipe values to a limited set of transformation
 functions. All expressions are evaluated in a context, where values are accessed through normal variable access.
-
-[bcp14]: https://tools.ietf.org/html/bcp14
-[purl]: https://github.com/package-url/purl-spec
-[renovate]: https://github.com/renovatebot/renovate
-[rfc1738]: https://www.rfc-editor.org/rfc/rfc1738
-[rfc2119]: https://tools.ietf.org/html/rfc2119
-[rfc8174]: https://tools.ietf.org/html/rfc8174
 
 # Examples
 
@@ -842,3 +852,11 @@ source:
 ```
 
 </details>
+
+[bcp14]: https://tools.ietf.org/html/bcp14
+[purl]: https://github.com/package-url/purl-spec
+[renovate]: https://github.com/renovatebot/renovate
+[rfc1738]: https://www.rfc-editor.org/rfc/rfc1738
+[rfc2119]: https://tools.ietf.org/html/rfc2119
+[rfc3339]: https://tools.ietf.org/html/rfc3339
+[rfc8174]: https://tools.ietf.org/html/rfc8174
