@@ -11,7 +11,7 @@ categories:
 
 deprecation:
   message: The CUE language server is now included in the cue language binary.
-  since: v0.11.1
+  since: 2026-01-07
 
 source:
   id: pkg:golang/cuelang.org/go@v0.10.1#cmd/cuepls

@@ -2,7 +2,7 @@
 name: typst-lsp
 deprecation:
   message: typst-lsp is no longer maintained. Use tinymist instead.
-  since: v0.13.0
+  since: 2026-01-07
 description: A brand-new language server for Typst.
 homepage: https://github.com/nvarner/typst-lsp
 licenses:

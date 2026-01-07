@@ -11,7 +11,7 @@ categories:
   - Linter
 
 deprecation:
-  since: v0.41.0
+  since: 2026-01-07
   message: xo should now be installed locally in the project where it's used.
 
 source:

@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 deprecation:
-  since: v1.5.1
+  since: 2026-01-07
   message: rustfmt should now be installed via rustup.
 
 source:

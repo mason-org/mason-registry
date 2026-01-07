@@ -10,7 +10,7 @@ categories:
   - LSP
 deprecation:
   message: pkgbuild-language-server is no longer available.
-  since: 0.0.6
+  since: 2026-01-07
 
 source:
   id: pkg:pypi/pkgbuild-language-server@0.0.6
