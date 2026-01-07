@@ -220,7 +220,7 @@ Examples:
 
 ```yaml
 deprecation:
-  since: 2026-01-07
+  since: "2026-01-07"
   message: bash-language-server is no longer maintained.
 ```
 
