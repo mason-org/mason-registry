@@ -11,7 +11,7 @@ categories:
 
 deprecation:
   message: The Clarity language server is no longer available via this package.
-  since: 2026-01-07
+  since: "2026-01-07"
 
 source:
   id: pkg:github/hirosystems/clarity-lsp@v0.8.0

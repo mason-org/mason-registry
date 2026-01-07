@@ -11,7 +11,7 @@ categories:
   - DAP
 
 deprecation:
-  since: 2026-01-07
+  since: "2026-01-07"
   message: This adapter has been superseded by the js-debug-adapter.
 
 source:

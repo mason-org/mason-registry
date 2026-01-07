@@ -10,7 +10,7 @@ categories:
   - LSP
 
 deprecation:
-  since: 2026-01-07
+  since: "2026-01-07"
   message: please use the mason package `ruff` as replacement. The command `ruff server` supports the same feature set as ruff-lsp, but with superior performance and no installation required. ruff server was marked as stable in Ruff v0.5.3.
 
 source:
