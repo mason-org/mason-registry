@@ -16,7 +16,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:golang/github.com/MadAppGang/dingo/cmd/dingo@v0.7.0
+  id: pkg:golang/github.com/MadAppGang/dingo/cmd/dingo@v0.8.0
 
 bin:
   dingo: golang:dingo
