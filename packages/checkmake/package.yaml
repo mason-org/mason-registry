@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/mrtazz/checkmake@0.2.2
+  id: pkg:github/mrtazz/checkmake@v0.3.0
   asset:
     - target: [darwin_x64, darwin_arm64]
       file:
