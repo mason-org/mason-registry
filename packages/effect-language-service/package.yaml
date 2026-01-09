@@ -9,7 +9,7 @@ licenses:
 languages:
   - TypeScript
 categories:
-  - LSP
+  - Linter
 
 source:
   id: pkg:npm/@effect/language-service@0.47.0
