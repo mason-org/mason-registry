@@ -8,8 +8,7 @@ licenses:
   - MIT
 languages:
   - TypeScript
-categories:
-  - Linter
+categories: []
 
 source:
   id: pkg:npm/@effect/language-service@0.47.0
