@@ -28,7 +28,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ast-grep/ast-grep@0.40.4
+  id: pkg:github/ast-grep/ast-grep@0.40.5
   asset:
     - target: darwin_arm64
       file: app-aarch64-apple-darwin.zip
