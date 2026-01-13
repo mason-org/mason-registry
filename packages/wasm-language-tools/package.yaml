@@ -20,8 +20,17 @@ source:
     - target: darwin_x64
       file: wat_server-x86_64-macos.zip
       bin: wat_server
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: wat_server-x86_64-linux.zip
+      bin: wat_server
+    - target: linux_x64
+      file: wat_server-x86_64-alpine.zip
+      bin: wat_server
+    - target: linux_arm64_gnu
+      file: wat_server-arm64-linux.zip
+      bin: wat_server
+    - target: linux_arm64
+      file: wat_server-arm64-alpine.zip
       bin: wat_server
     - target: win_x64
       file: wat_server-x86_64-windows.zip
@@ -29,3 +38,6 @@ source:
 
 bin:
   wat_server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: wasm_language_tools
