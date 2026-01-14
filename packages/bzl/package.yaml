@@ -4,6 +4,10 @@ description: |
   Autocompletion, hover documentation, and debugging for BUILD files. Get a huge productivity boost with rule,
   attribute, and function definitions right in your IDE.
 homepage: https://bzl.io/
+deprecation:
+  since: "2025-12-01"
+  message: Servers offline and homepage no longer available. Use starpls instead.
+
 licenses:
   - proprietary
 languages:
