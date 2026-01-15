@@ -41,3 +41,6 @@ bin:
 
 neovim:
   lspconfig: bzl
+
+# Package is no longer installable.
+ci_skip: true
