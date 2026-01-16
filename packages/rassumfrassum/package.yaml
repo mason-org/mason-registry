@@ -14,6 +14,3 @@ source:
 
 bin:
   rass: pypi:rass
-
-neovim:
-  lspconfig: rass
