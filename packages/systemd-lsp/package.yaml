@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/JFryy/systemd-lsp@v2026.01.06
+  id: pkg:github/JFryy/systemd-lsp@v2026.01.17
   asset:
     - target: darwin_x64
       file: systemd-lsp-x86_64-apple-darwin
