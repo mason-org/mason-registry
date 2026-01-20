@@ -11,6 +11,7 @@ languages:
   - Snyk
 categories:
   - LSP
+ci_skip: true
 
 source:
   # renovate:versioning=loose
