@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/rassumfrassum@0.3.1
+  id: pkg:pypi/rassumfrassum@0.3.2
 
 bin:
   rass: pypi:rass
