@@ -1,0 +1,35 @@
+---
+name: amber-lsp
+description: Amber's Language Server Protocol
+homepage: https://github.com/amber-lang/amber-lsp
+licenses:
+  - GPL-3.0
+languages:
+  - Amber
+categories:
+  - LSP
+
+source:
+  id: pkg:github/amber-lang/amber-lsp@v0.1.16
+  asset:
+    - target: darwin_arm64
+      file: amber-lsp-aarch64-apple-darwin.tar.gz
+      bin: amber-lsp-aarch64-apple-darwin/amber-lsp
+    - target: darwin_x64
+      file: amber-lsp-x86_64-apple-darwin.tar.gz
+      bin: amber-lsp-x86_64-apple-darwin/amber-lsp
+    - target: linux_x64_gnu
+      file: amber-lsp-x86_64-unknown-linux-gnu.tar.gz
+      bin: amber-lsp-x86_64-unknown-linux-gnu/amber-lsp
+    - target: linux_x64_musl
+      file: amber-lsp-x86_64-unknown-linux-musl.tar.gz
+      bin: amber-lsp-x86_64-unknown-linux-musl/amber-lsp
+    - target: win_x64
+      file: amber-lsp-x86_64-pc-windows-msvc.zip
+      bin: amber-lsp-x86_64-pc-windows-msvc/amber-lsp.exe
+
+bin:
+  amber-lsp: "{{source.asset.bin}}"
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/amber-lang/amber-lsp/{{version}}/clients/vscode/package.json
