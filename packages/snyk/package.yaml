@@ -32,7 +32,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/snyk/cli@v1.1302.0
+  id: pkg:github/snyk/cli@v1.1302.1
   asset:
     - target: darwin_x64
       file: snyk-macos
