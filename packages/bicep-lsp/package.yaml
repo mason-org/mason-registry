@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/Azure/bicep@v0.39.26
+  id: pkg:github/Azure/bicep@v0.40.2
   asset:
     file: vscode-bicep.vsix
 
