@@ -26,7 +26,7 @@ source:
       bin: amber-lsp-x86_64-unknown-linux-musl/amber-lsp
     - target: win_x64
       file: amber-lsp-x86_64-pc-windows-msvc.zip
-      bin: amber-lsp-x86_64-pc-windows-msvc/amber-lsp.exe
+      bin: amber-lsp.exe
 
 bin:
   amber-lsp: "{{source.asset.bin}}"
