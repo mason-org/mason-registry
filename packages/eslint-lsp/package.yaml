@@ -20,3 +20,6 @@ schemas:
 
 bin:
   vscode-eslint-language-server: npm:vscode-eslint-language-server
+
+neovim:
+  lspconfig: eslint

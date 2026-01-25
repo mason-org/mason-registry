@@ -1,0 +1,21 @@
+---
+name: xcodeprojectcli
+description: A lightweight command-line tool for managing Xcode projects, built entirely in Swift. Also available as a Swift Package.
+homepage: https://github.com/wojciech-kulik/XcodeProjectCLI
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Runtime
+source:
+  id: pkg:github/wojciech-kulik/XcodeProjectCLI@v1.2.1
+  supported_platforms:
+    - darwin
+  build:
+    target: darwin_arm64
+    run: |
+      swift build -c release
+    bin: .build/release/xcp
+bin:
+  xcp: "{{source.build.bin}}"

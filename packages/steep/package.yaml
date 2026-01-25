@@ -15,3 +15,6 @@ source:
 
 bin:
   steep: gem:steep
+
+neovim:
+  lspconfig: steep

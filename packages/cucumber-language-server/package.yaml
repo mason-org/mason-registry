@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40cucumber/language-server@1.6.0
+  id: pkg:npm/%40cucumber/language-server@1.7.0
 
 bin:
   cucumber-language-server: npm:cucumber-language-server
+
+neovim:
+  lspconfig: cucumber_language_server

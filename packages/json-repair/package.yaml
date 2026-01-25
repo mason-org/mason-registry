@@ -1,0 +1,16 @@
+---
+name: json-repair
+description: A package to repair broken json strings
+homepage: https://pypi.org/project/json-repair/
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Formatter
+
+source:
+  id: pkg:pypi/json-repair@0.55.1
+
+bin:
+  json_repair: pypi:json_repair

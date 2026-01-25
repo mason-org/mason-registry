@@ -1,0 +1,29 @@
+---
+name: systemd-lsp
+description: a language server implementation for systemd unit files made in rust
+homepage: https://github.com/JFryy/systemd-lsp
+licenses:
+  - MIT
+languages:
+  - systemd
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=loose
+  id: pkg:github/JFryy/systemd-lsp@v2026.01.17
+  asset:
+    - target: darwin_x64
+      file: systemd-lsp-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: systemd-lsp-x86_64-apple-darwin
+    - target: linux_x64_gnu
+      file: systemd-lsp-x86_64-unknown-linux-gnu
+    - target: win_x64
+      file: systemd-lsp-x86_64-pc-windows-msvc.exe
+
+bin:
+  systemd-lsp: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: systemd_lsp

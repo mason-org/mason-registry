@@ -12,7 +12,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/django-template-lsp@1.1.0
+  id: pkg:pypi/django-template-lsp@1.2.2
 
 bin:
   djlsp: pypi:django-template-lsp
+
+neovim:
+  lspconfig: djlsp

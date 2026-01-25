@@ -33,3 +33,6 @@ source:
 
 bin:
   pylyzer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: pylyzer

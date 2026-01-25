@@ -17,10 +17,13 @@
   - [`licenses`](#licenses)
   - [`languages`](#languages)
   - [`categories`](#categories)
+  - [`deprecation`](#deprecation)
   - [`source`](#source)
   - [`bin`](#bin)
   - [`share`](#share)
   - [`opt`](#opt)
+  - [`neovim`](#neovim)
+    - [`lspconfig`](#lspconfig)
 - [Expressions](#expressions)
 - [Examples](#examples)
   - [Common fields](#common-fields)
@@ -46,9 +49,12 @@
 At least one of the following conditions MUST be fulfilled for new packages to be added to the registry.
 
 1. At least 100 stars on GitHub.
-1. Evidence that the tool has a relevant user base, such as VSCode marketplace downloads.
+1. At least 5000 VSCode marketplace downloads.
 1. Be approved at [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig).
-1. Have a credible authority vouch for it, e.g., the tool is officially recommended by maintainers of the language.
+1. The tool is officially recommended by a reputable consortium, foundation, or company.
+
+Even if one, or all, of the previous conditions are fulfilled, new package additions may be rejected for other 
+reasons.
 
 # Introduction
 
@@ -58,9 +64,7 @@ At least one of the following conditions MUST be fulfilled for new packages to b
 * Testing a package MUST be done locally prior to creating a PR. See [testing](#testing) for more information.
 
 > [!TIP]
-> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) combined with the
-> [schemastore schema](https://json.schemastore.org/mason-registry.json) to get diagnostics and autocompletion (see
-> [Schema](#schema)).
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to get diagnostics and autocompletion (see [Schema](#schema)).
 
 # Schema
 
@@ -68,9 +72,8 @@ Package definitions are validated against a well-defined [JSON schema](https://g
 The full schema is hosted on <http://schemastore.org/>.
 
 > [!TIP]
-> Use [b0o/SchemaStore.nvim](https://github.com/b0o/SchemaStore.nvim) and the [YAML language
-> server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these schemas in Neovim. This
-> gives you diagnostics and autocompletion inside the editor when editing package definitions:
+> Use the [YAML language server](https://mason-registry.dev/registry/list#yaml-language-server) to integrate these
+> schemas in Neovim. This gives you diagnostics and autocompletion inside the editor when editing package definitions:
 > 
 > <img src="https://user-images.githubusercontent.com/6705160/230375252-40dfcd78-dcd3-43c4-8967-c7452384b818.png" height="100" />
 
@@ -205,6 +208,22 @@ The categories the package belongs to. MAY be empty. If not empty, each entry MU
 - `Linter`
 - `Runtime`
 
+## `deprecation`
+
+If a package has been deprecated it SHOULD be marked as such through the `deprecation` field. Deprecated packages MAY be
+removed from a registry and SHOULD be done no sooner than 3 months after the deprecation was first applied.
+
+The `since` field MUST be formatted as a `full-date` per [RFC3339][rfc3339]. The `message` field MUST be included and
+SHOULD inform users of officially recommended replacements/alternatives if applicable.
+
+Examples:
+
+```yaml
+deprecation:
+  since: "2026-01-07"
+  message: bash-language-server is no longer maintained.
+```
+
 ## `source`
 
 The source of the package. The `source` entry contains all necessary information to properly install the package. At the
@@ -283,6 +302,23 @@ opt:
     solang/llvm15.0/: llvm15.0/
 ```
 
+## `neovim`
+
+The `neovim` property is an object that contain metadata specific for Neovim.
+
+### `lspconfig`
+
+The `lspconfig` property of `neovim` specifies the name of the LSP configuration as provided by
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/). Providing the `neovim.lspconfig` value MUST be done if the
+package contains an LSP configuration entry in nvim-lspconfig.
+
+Example:
+
+```yaml
+neovim:
+    lspconfig: lua_ls
+```
+
 # Expressions
 
 When specified, a component of a package definition may include expressions. These expressions can only be used in
@@ -313,13 +349,6 @@ bin:
 
 Expressions use basic Lua syntax with the additional ability to pipe values to a limited set of transformation
 functions. All expressions are evaluated in a context, where values are accessed through normal variable access.
-
-[bcp14]: https://tools.ietf.org/html/bcp14
-[purl]: https://github.com/package-url/purl-spec
-[renovate]: https://github.com/renovatebot/renovate
-[rfc1738]: https://www.rfc-editor.org/rfc/rfc1738
-[rfc2119]: https://tools.ietf.org/html/rfc2119
-[rfc8174]: https://tools.ietf.org/html/rfc8174
 
 # Examples
 
@@ -823,3 +852,11 @@ source:
 ```
 
 </details>
+
+[bcp14]: https://tools.ietf.org/html/bcp14
+[purl]: https://github.com/package-url/purl-spec
+[renovate]: https://github.com/renovatebot/renovate
+[rfc1738]: https://www.rfc-editor.org/rfc/rfc1738
+[rfc2119]: https://tools.ietf.org/html/rfc2119
+[rfc3339]: https://tools.ietf.org/html/rfc3339
+[rfc8174]: https://tools.ietf.org/html/rfc8174

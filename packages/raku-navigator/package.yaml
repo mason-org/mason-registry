@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/bscan/RakuNavigator@1c8f92d6adca66a1dcb206e9a604d38eab3d64d9
+  id: pkg:github/bscan/RakuNavigator@dbdac13f1e7b73b00cad6adec51bfcebe4d3005c
   build:
     run: |
       npm install
@@ -23,3 +23,6 @@ schemas:
 
 bin:
   raku-navigator: node:server/out/server.js
+
+neovim:
+  lspconfig: raku_navigator

@@ -1,0 +1,28 @@
+---
+name: xcodegen
+description: A Swift command line tool for generating your Xcode project
+homepage: https://github.com/yonaskolb/XcodeGen
+licenses:
+  - MIT
+languages:
+  - Swift
+categories:
+  - Runtime
+
+source:
+  id: pkg:github/yonaskolb/XcodeGen@2.44.1
+  asset:
+    - target: darwin_arm64
+      file: xcodegen.artifactbundle.zip
+      bin: xcodegen.artifactbundle/xcodegen-{{version}}-macosx/bin/xcodegen
+
+    - target: linux_x64_gnu
+      file: xcodegen.zip
+      bin: xcodegen/bin/xcodegen
+
+    - target: linux_arm64_gnu
+      file: xcodegen.zip
+      bin: xcodegen/bin/xcodegen
+
+bin:
+  xcodegen: "{{source.asset.bin}}"

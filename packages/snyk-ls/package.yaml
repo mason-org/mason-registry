@@ -11,6 +11,7 @@ languages:
   - Snyk
 categories:
   - LSP
+ci_skip: true
 
 source:
   # renovate:versioning=loose
@@ -33,3 +34,6 @@ source:
 
 bin:
   snyk-ls: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: snyk_ls

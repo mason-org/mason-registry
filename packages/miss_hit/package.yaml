@@ -1,0 +1,18 @@
+---
+name: miss_hit
+description: Free and open source code quality tools for MATLAB and Octave.
+homepage: https://misshit.org
+licenses:
+  - AGPL-3.0-or-later
+  - GPL-3.0-or-later
+languages:
+  - Matlab
+  - Octave
+categories:
+  - Formatter
+  - Linter
+source:
+  id: pkg:pypi/miss-hit@0.9.44
+bin:
+  mh_style: pypi:mh_style
+  mh_lint: pypi:mh_lint

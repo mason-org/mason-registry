@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/digama0/mm0@799b102cfe4e9e142d0039df4f63dbd8b203b4d0
+  id: pkg:github/digama0/mm0@6d5f0d4fae8e2e3ae0b998bcbaa9d059cad99fad
   build:
     - target: unix
       run: |
@@ -32,3 +32,6 @@ bin:
 
 # requires rustc 1.65+
 ci_skip: true
+
+neovim:
+  lspconfig: mm0_ls

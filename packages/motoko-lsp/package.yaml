@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:openvsx/dfinity-foundation/vscode-motoko@0.16.16
+  id: pkg:openvsx/dfinity-foundation/vscode-motoko@0.18.7
   download:
     file: dfinity-foundation.vscode-motoko-{{version}}.vsix
 
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   motoko-lsp: node:extension/out/server.js
+
+neovim:
+  lspconfig: motoko_lsp

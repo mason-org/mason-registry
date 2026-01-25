@@ -12,12 +12,16 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/Myriad-Dreamin/tinymist@v0.13.10
+  id: pkg:github/Myriad-Dreamin/tinymist@v0.14.10
   asset:
     - target: linux_x64_gnu
       file: tinymist-linux-x64
+    - target: linux_x64_musl
+      file: tinymist-alpine-x64
     - target: linux_arm64_gnu
       file: tinymist-linux-arm64
+    - target: linux_arm64_musl
+      file: tinymist-alpine-arm64
     - target: darwin_x64
       file: tinymist-darwin-x64
     - target: darwin_arm64
@@ -29,3 +33,6 @@ source:
 
 bin:
   tinymist: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: tinymist

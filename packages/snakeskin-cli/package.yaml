@@ -14,3 +14,6 @@ source:
 
 bin:
   snakeskin-cli: npm:snakeskin-cli
+
+neovim:
+  lspconfig: snakeskin_ls

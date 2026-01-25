@@ -1,0 +1,46 @@
+---
+name: kotlin-lsp
+description: Kotlin Language Server and plugin for Visual Studio Code
+homepage: https://github.com/Kotlin/kotlin-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - Kotlin
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=regex:^kotlin-lsp/v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$
+  # renovate:datasource=github-releases
+  id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v261.13587.0
+  download:
+    - target: darwin_x64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-mac-x64.zip
+      bin: kotlin-lsp.sh
+    - target: darwin_arm64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-mac-aarch64.zip
+      bin: kotlin-lsp.sh
+    - target: linux_x64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-linux-x64.zip
+      bin: kotlin-lsp.sh
+    - target: linux_arm64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-linux-aarch64.zip
+      bin: kotlin-lsp.sh
+    - target: win_x64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-win-x64.zip
+      bin: kotlin-lsp.cmd
+    - target: win_arm64
+      files:
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-lsp-{{ version | strip_prefix "kotlin-lsp/v" }}-win-aarch64.zip
+      bin: kotlin-lsp.cmd
+
+bin:
+  kotlin-lsp: "{{source.download.bin}}"
+
+neovim:
+  lspconfig: kotlin_lsp

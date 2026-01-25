@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/elm-format@0.8.7
+  id: pkg:npm/elm-format@0.8.8
 
 bin:
   elm-format: npm:elm-format

@@ -10,25 +10,18 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/realm/SwiftLint@0.58.2
+  id: pkg:github/realm/SwiftLint@0.63.1
   asset:
-    - target: linux_x64_gnu
-      file: swiftlint_linux.zip
-      bin: swiftlint
-    - target: darwin
+    - target: darwin_arm64
       file: SwiftLintBinary.artifactbundle.zip
-      bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
+      bin: SwiftLintBinary.artifactbundle/macos/swiftlint
 
-  version_overrides:
-    - constraint: semver:<=0.57.1
-      id: pkg:github/realm/SwiftLint@0.57.1
-      asset:
-        - target: linux_x64_gnu
-          file: swiftlint_linux.zip
-          bin: swiftlint
-        - target: darwin
-          file: SwiftLintBinary-macos.artifactbundle.zip
-          bin: SwiftLintBinary.artifactbundle/swiftlint-{{ version }}-macos/bin/swiftlint
+    - target: linux_arm64_gnu
+      file: SwiftLintBinary.artifactbundle.zip
+      bin: SwiftLintBinary.artifactbundle/linux/arm64/swiftlint
 
+    - target: linux_x64_gnu
+      file: SwiftLintBinary.artifactbundle.zip
+      bin: SwiftLintBinary.artifactbundle/linux/amd64/swiftlint
 bin:
   swiftlint: "{{source.asset.bin}}"

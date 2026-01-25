@@ -1,5 +1,8 @@
 ---
 name: systemd-language-server
+deprecation:
+  message: systemd-language-server is deprecated in favor of systemd-lsp
+  since: "2026-01-07"
 description: |
   Language Server for Systemd unit files
 homepage: https://github.com/psacawa/systemd-language-server
@@ -15,3 +18,6 @@ source:
 
 bin:
   systemd-language-server: pypi:systemd-language-server
+
+neovim:
+  lspconfig: systemd_ls

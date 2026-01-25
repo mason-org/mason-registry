@@ -10,7 +10,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/protols@0.11.5
+  id: pkg:cargo/protols@0.13.1
 
 bin:
   protols: cargo:protols
+
+neovim:
+  lspconfig: protols

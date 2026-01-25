@@ -1,0 +1,29 @@
+---
+name: bqls
+description: BigQuery language server
+homepage: https://github.com/kitagry/bqls/
+licenses:
+  - Apache-2.0
+languages:
+  - SQL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/kitagry/bqls@v0.4.3
+  asset:
+    - target: darwin_arm64
+      file: bqls_darwin_arm64.zip
+      bin: bqls
+    - target: darwin_x64
+      file: bqls_darwin_amd64.zip
+      bin: bqls
+    - target: linux_x64
+      file: bqls_linux_amd64.zip
+      bin: bqls
+
+bin:
+  bqls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: bqls

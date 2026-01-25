@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/FacilityApi/FacilityLanguageServer@v2.4.0
+  id: pkg:github/FacilityApi/FacilityLanguageServer@v2.5.1
   asset:
     file: Facility.LanguageServer.zip:libexec/
 
@@ -21,3 +21,6 @@ schemas:
 
 bin:
   facility-language-server: dotnet:libexec/Facility.LanguageServer.dll
+
+neovim:
+  lspconfig: facility_language_server

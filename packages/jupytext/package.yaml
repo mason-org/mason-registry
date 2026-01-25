@@ -13,7 +13,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:pypi/jupytext@1.17.0
+  id: pkg:pypi/jupytext@1.19.0
 
 bin:
   jupytext: pypi:jupytext

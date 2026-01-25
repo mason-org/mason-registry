@@ -10,6 +10,7 @@
 
 ### Checklist before requesting a review
 <!-- Refer to the CONTRIBUTING.md for details on testing -->
+- [ ] If the package is available at nvim-lspconfig, I also added the respective name to `neovim.lspconfig`.
 - [ ] I have successfully tested installation of the package.
 - [ ] I have successfully tested the package after installation.
       <!-- For example: successfully starting the LSP server inside Neovim, or successfully integrated linting

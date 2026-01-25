@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/AdaCore/ada_language_server@26.0.202504012
+  id: pkg:github/AdaCore/ada_language_server@2026.1.202601121
   asset:
     - target: darwin_x64
       file: als-{{version}}-darwin-x64.tar.gz

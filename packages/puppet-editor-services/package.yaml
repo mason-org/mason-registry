@@ -21,3 +21,6 @@ schemas:
 bin:
   puppet-languageserver: ruby:libexec/puppet-languageserver
   puppet-debugserver: ruby:libexec/puppet-debugserver
+
+neovim:
+  lspconfig: puppet

@@ -26,3 +26,6 @@ source:
 
 bin:
   erlang_ls: "{{source.build.erlang_ls}}"
+
+neovim:
+  lspconfig: erlangls

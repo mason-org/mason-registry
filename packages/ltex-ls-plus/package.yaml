@@ -14,7 +14,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/ltex-plus/ltex-ls-plus@18.5.0
+  id: pkg:github/ltex-plus/ltex-ls-plus@18.6.1
   asset:
     # The platform-specific releases bundle a java runtime engine, and are
     # therefore preferable to avoid external dependencies (see #2837).
@@ -61,3 +61,6 @@ schemas:
 bin:
   ltex-ls-plus: "{{source.asset.bin.lsp}}"
   ltex-cli-plus: "{{source.asset.bin.cli}}"
+
+neovim:
+  lspconfig: ltex_plus

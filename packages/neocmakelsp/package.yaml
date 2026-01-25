@@ -1,7 +1,7 @@
 ---
 name: neocmakelsp
 description: CMake LSP implementation based on Tower and Tree-sitter.
-homepage: https://github.com/Decodetalkers/neocmakelsp
+homepage: https://github.com/neocmakelsp/neocmakelsp
 licenses:
   - MIT
 languages:
@@ -10,18 +10,32 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/neocmakelsp/neocmakelsp@v0.8.21
+  id: pkg:github/neocmakelsp/neocmakelsp@v0.9.1
   asset:
-    - target: darwin_arm64
-      file: neocmakelsp-aarch64-apple-darwin
-    - target: darwin_x64
-      file: neocmakelsp-x86_64-apple-darwin
-    - target: linux_x64
-      file: neocmakelsp-x86_64-unknown-linux-musl
+    - target: darwin
+      file: neocmakelsp-universal-apple-darwin.tar.gz
+      bin: neocmakelsp
     - target: linux_arm64_gnu
-      file: neocmakelsp-aarch64-unknown-linux-gnu
+      file: neocmakelsp-aarch64-unknown-linux-gnu.tar.gz
+      bin: neocmakelsp
+    - target: linux_x64_gnu
+      file: neocmakelsp-x86_64-unknown-linux-gnu.tar.gz
+      bin: neocmakelsp
+    - target: linux_arm64
+      file: neocmakelsp-aarch64-unknown-linux-musl.tar.gz
+      bin: neocmakelsp
+    - target: linux_x64
+      file: neocmakelsp-x86_64-unknown-linux-musl.tar.gz
+      bin: neocmakelsp
+    - target: win_arm64
+      file: neocmakelsp-aarch64-pc-windows-msvc.zip
+      bin: neocmakelsp.exe
     - target: win_x64
-      file: neocmakelsp-x86_64-pc-windows-msvc.exe
+      file: neocmakelsp-x86_64-pc-windows-msvc.zip
+      bin: neocmakelsp.exe
 
 bin:
-  neocmakelsp: "{{source.asset.file}}"
+  neocmakelsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: neocmake

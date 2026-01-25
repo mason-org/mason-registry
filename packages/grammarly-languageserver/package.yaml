@@ -2,6 +2,11 @@
 name: grammarly-languageserver
 description: A language server implementation on top of Grammarly's SDK.
 homepage: https://github.com/znck/grammarly
+
+deprecation:
+  since: "0.0.4"
+  message: Repo archived in 2024.
+
 licenses:
   - MIT
 languages:
@@ -18,3 +23,6 @@ schemas:
 
 bin:
   grammarly-languageserver: npm:grammarly-languageserver
+
+neovim:
+  lspconfig: grammarly

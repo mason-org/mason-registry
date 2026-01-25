@@ -20,3 +20,6 @@ schemas:
 
 bin:
   stimulus-language-server: npm:stimulus-language-server
+
+neovim:
+  lspconfig: stimulus_ls

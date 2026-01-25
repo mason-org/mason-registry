@@ -14,3 +14,6 @@ source:
 
 bin:
   azure-pipelines-language-server: node:node_modules/azure-pipelines-language-server/out/server.js
+
+neovim:
+  lspconfig: azure_pipelines_ls

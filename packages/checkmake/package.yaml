@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/mrtazz/checkmake@0.2.2
+  id: pkg:github/mrtazz/checkmake@v0.3.2
   asset:
     - target: [darwin_x64, darwin_arm64]
       file:
@@ -22,6 +22,12 @@ source:
         - checkmake-{{ version }}.linux.amd64
         - checkmake.1:man1/
       bin: checkmake-{{ version }}.linux.amd64
+    - target: win_arm64
+      file: checkmake-{{ version }}.windows.arm64.exe
+      bin: checkmake-{{ version }}.windows.arm64.exe
+    - target: win_x64
+      file: checkmake-{{ version }}.windows.amd64.exe
+      bin: checkmake-{{ version }}.windows.amd64.exe
 
 share:
   man/man1/: man1/

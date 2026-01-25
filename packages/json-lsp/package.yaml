@@ -17,3 +17,6 @@ schemas:
 
 bin:
   vscode-json-language-server: npm:vscode-json-language-server
+
+neovim:
+  lspconfig: jsonls

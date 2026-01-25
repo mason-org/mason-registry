@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chipsalliance/verible@v0.0-3958-g7aae5c08
+  id: pkg:github/chipsalliance/verible@v0.0-4051-g9fdb4057
   asset:
     - target: linux_x64
       file: verible-{{version}}-linux-static-x86_64.tar.gz
@@ -80,3 +80,6 @@ bin:
   verible-verilog-preprocessor: "{{source.asset.bin.preprocessor}}"
   verible-verilog-project: "{{source.asset.bin.project}}"
   verible-verilog-syntax: "{{source.asset.bin.syntax}}"
+
+neovim:
+  lspconfig: verible

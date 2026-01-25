@@ -14,3 +14,6 @@ source:
 
 bin:
   hoon-language-server: npm:hoon-language-server
+
+neovim:
+  lspconfig: hoon_ls

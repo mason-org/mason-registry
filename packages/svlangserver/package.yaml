@@ -19,3 +19,6 @@ schemas:
 
 bin:
   svlangserver: npm:svlangserver
+
+neovim:
+  lspconfig: svlangserver

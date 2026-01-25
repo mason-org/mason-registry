@@ -14,3 +14,6 @@ source:
 
 bin:
   vim-language-server: npm:vim-language-server
+
+neovim:
+  lspconfig: vimls

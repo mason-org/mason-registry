@@ -1,0 +1,16 @@
+---
+name: rassumfrassum
+description: Connect an LSP client to multiple LSP servers.
+homepage: https://github.com/joaotavora/rassumfrassum
+licenses:
+  - GPL-3.0
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/rassumfrassum@0.3.3
+
+bin:
+  rass: pypi:rass

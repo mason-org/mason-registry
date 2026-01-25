@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/posit-dev/air@0.4.1
+  id: pkg:github/posit-dev/air@0.8.1
   asset:
     - target: darwin_arm64
       file: air-aarch64-apple-darwin.tar.gz
@@ -39,3 +39,5 @@ schemas:
 bin:
   air: "{{source.asset.bin}}"
 
+neovim:
+  lspconfig: air

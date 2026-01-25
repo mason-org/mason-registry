@@ -1,5 +1,8 @@
 ---
 name: postgrestools
+deprecation:
+  message: postgrestools has been renamed to postgres-language-server. Please install the new package instead.
+  since: "2026-01-07"
 description: A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.
 homepage: https://pgtools.dev
 licenses:
@@ -12,7 +15,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/supabase-community/postgres-language-server@0.3.1
+  id: pkg:github/supabase-community/postgres-language-server@0.19.0
   asset:
     - target: darwin_arm64
       file: postgrestools_aarch64-apple-darwin
@@ -29,4 +32,3 @@ source:
 
 bin:
   postgrestools: "{{source.asset.file}}"
-

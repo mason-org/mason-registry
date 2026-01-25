@@ -10,7 +10,20 @@ categories:
   - LSP
 
 source:
-  id: pkg:golang/github.com/hyprland-community/hyprls@v0.5.2#cmd/hyprls
+  id: pkg:github/hyprland-community/hyprls@v0.12.0
+  asset:
+    - target: darwin_arm64
+      file: hyprls-macos
+      bin: hyprls-macos
+    - target: win_x64
+      file: hyprls.exe
+      bin: hyprls.exe
+    - target: linux_x64_gnu
+      file: hyprls
+      bin: hyprls
 
 bin:
-  hyprls: golang:hyprls
+  hyprls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: hyprls

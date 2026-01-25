@@ -17,3 +17,6 @@ schemas:
 
 bin:
   starlark: cargo:starlark
+
+neovim:
+  lspconfig: starlark_rust

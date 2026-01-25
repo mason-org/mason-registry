@@ -24,3 +24,6 @@ schemas:
 
 bin:
   kotlin-language-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: kotlin_language_server

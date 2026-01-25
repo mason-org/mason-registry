@@ -26,3 +26,6 @@ source:
 
 bin:
   ginko_ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: ginko_ls

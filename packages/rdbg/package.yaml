@@ -1,0 +1,16 @@
+---
+name: rdbg
+description: Debug Adapter Protocol implementation for Ruby, powered by rdbg.
+homepage: https://github.com/ruby/debug
+licenses:
+  - BSD-2-Clause
+languages:
+  - Ruby
+categories:
+  - DAP
+
+source:
+  id: pkg:gem/debug@1.11.1
+
+bin:
+  rdbg: gem:rdbg

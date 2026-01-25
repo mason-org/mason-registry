@@ -14,8 +14,6 @@ source:
   asset:
     - target: linux_x64
       file: nixfmt-x86_64-linux
-  supported_platforms:
-    - linux_x64
 
 bin:
   nixfmt: "{{source.asset.file}}"

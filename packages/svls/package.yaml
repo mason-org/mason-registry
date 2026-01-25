@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/svls@0.2.12
+  id: pkg:cargo/svls@0.2.14
 
 bin:
   svls: cargo:svls
@@ -21,3 +21,6 @@ ci_skip:
   - win_arm64
   - win_x64
   - win_x86
+
+neovim:
+  lspconfig: svls

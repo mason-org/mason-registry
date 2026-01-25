@@ -6,20 +6,33 @@ homepage: https://github.com/snyk/cli
 licenses:
   - Apache-2.0
 languages:
+  - .NET
+  - Apex
+  - C#
+  - C++
+  - Dart
   - Docker
+  - Elixir
   - Go
+  - Groovy
   - Helm
+  - Java
   - JavaScript
+  - Kotlin
+  - PHP
   - Python
   - Ruby
   - Rust
+  - Scala
+  - Swift
   - Terraform
   - TypeScript
 categories:
+  - LSP
   - Linter
 
 source:
-  id: pkg:github/snyk/cli@v1.1296.1
+  id: pkg:github/snyk/cli@v1.1302.1
   asset:
     - target: darwin_x64
       file: snyk-macos
@@ -34,3 +47,6 @@ source:
 
 bin:
   snyk: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: snyk_ls

@@ -9,10 +9,12 @@ languages:
 categories:
   - LSP
   - Formatter
-
 source:
-  id: pkg:npm/%40sap/cds-lsp@8.9.0
+  id: pkg:npm/%40sap/cds-lsp@9.6.3
 
 bin:
   cds-lsp: npm:cds-lsp
   format-cds: npm:format-cds
+
+neovim:
+  lspconfig: cds_lsp
