@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/neocmakelsp/neocmakelsp@v0.9.1
+  id: pkg:github/neocmakelsp/neocmakelsp@v0.9.2
   asset:
     - target: darwin
       file: neocmakelsp-universal-apple-darwin.tar.gz
