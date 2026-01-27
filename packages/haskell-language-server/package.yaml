@@ -42,7 +42,7 @@ bin:
   # https://github.com/haskell/haskell-language-server/issues/3162
   haskell-language-server-9.6.7: "{{source.build.bin.server_9_6_7}}"
   haskell-language-server-9.8.4: "{{source.build.bin.server_9_8_4}}"
-  haskell-language-server-9.10.2: "{{source.build.bin.server_9_10_3}}"
+  haskell-language-server-9.10.3: "{{source.build.bin.server_9_10_3}}"
   haskell-language-server-9.12.2: "{{source.build.bin.server_9_12_2}}"
 
 neovim:
