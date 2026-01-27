@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/haskell/haskell-language-server@2.12.0.0
+  id: pkg:generic/haskell/haskell-language-server@2.13.0.0
   build:
     - target: unix
       run: ghcup --url-source=https://raw.githubusercontent.com/haskell/ghcup-metadata/master/ghcup-vanilla-0.0.9.yaml install hls "$VERSION" -i "$PWD"
@@ -24,6 +24,7 @@ source:
         server_9_8_4: bin/haskell-language-server-9.8.4
         server_9_10_3: bin/haskell-language-server-9.10.3
         server_9_12_2: bin/haskell-language-server-9.12.2
+        server_9_14_1: bin/haskell-language-server-9.14.1
 
     - target: win
       run: ghcup install hls $env:VERSION -i ($pwd).path
@@ -36,6 +37,7 @@ source:
         server_9_8_4: haskell-language-server-9.8.4.exe
         server_9_10_3: haskell-language-server-9.10.3.exe
         server_9_12_2: haskell-language-server-9.12.2.exe
+        server_9_14_1: haskell-language-server-9.14.1.exe
 
 bin:
   haskell-language-server-wrapper: "{{source.build.bin.wrapper}}"
@@ -44,6 +46,7 @@ bin:
   haskell-language-server-9.8.4: "{{source.build.bin.server_9_8_4}}"
   haskell-language-server-9.10.3: "{{source.build.bin.server_9_10_3}}"
   haskell-language-server-9.12.2: "{{source.build.bin.server_9_12_2}}"
+  haskell-language-server-9.14.1: "{{source.build.bin.server_9_14_1}}"
 
 neovim:
   lspconfig: hls
