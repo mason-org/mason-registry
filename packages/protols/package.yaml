@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/protols@0.13.1
+  id: pkg:cargo/protols@0.13.2
 
 bin:
   protols: cargo:protols
