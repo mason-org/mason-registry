@@ -1,0 +1,29 @@
+---
+name: oxfmt
+description:  Prettier-compatible code formatter powered by Oxc
+homepage: https://oxc.rs/docs/guide/usage/formatter
+licenses:
+  - MIT
+languages:
+  - Angular
+  - CSS
+  - Flow
+  - GraphQL
+  - HTML
+  - JSON
+  - JSX
+  - JavaScript
+  - LESS
+  - Markdown
+  - SCSS
+  - TypeScript
+  - Vue
+  - YAML
+categories:
+  - Formatter
+
+source:
+  id: pkg:npm/oxfmt@0.17.0
+
+bin:
+  oxfmt: npm:oxfmt
