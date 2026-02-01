@@ -23,7 +23,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:npm/oxfmt@0.17.0
+  id: pkg:npm/oxfmt@0.27.0
 
 bin:
   oxfmt: npm:oxfmt
