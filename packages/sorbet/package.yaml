@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/sorbet@0.6.12908
+  id: pkg:gem/sorbet@0.6.12913
   supported_platforms:
     - unix
 
