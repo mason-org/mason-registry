@@ -9,7 +9,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40github/copilot-language-server@1.419.0
+  id: pkg:npm/%40github/copilot-language-server@1.420.0
 
 bin:
   copilot-language-server: npm:copilot-language-server
