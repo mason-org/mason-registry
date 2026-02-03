@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:pypi/robotcode[all]@1.8.0
+  id: pkg:pypi/robotcode@2.2.0?extra=all
 
 
 schemas:
@@ -19,3 +19,6 @@ schemas:
 
 bin:
   robotcode: pypi:robotcode
+
+neovim:
+  lspconfig: robotcode
