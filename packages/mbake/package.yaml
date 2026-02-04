@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/mbake@1.4.4
+  id: pkg:pypi/mbake@1.4.5
 
 bin:
   mbake: pypi:mbake
