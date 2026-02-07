@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:nuget/csharpier@1.2.5
+  id: pkg:nuget/csharpier@1.2.6
 
 bin:
   csharpier: nuget:csharpier
