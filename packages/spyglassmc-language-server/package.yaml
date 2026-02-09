@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40spyglassmc/language-server@0.4.55
+  id: pkg:npm/%40spyglassmc/language-server@0.4.56
 
 bin:
   spyglassmc-language-server: npm:spyglassmc-language-server
