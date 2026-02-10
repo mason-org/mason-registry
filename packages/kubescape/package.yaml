@@ -13,23 +13,26 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/kubescape/kubescape@v3.0.46
+  id: pkg:github/kubescape/kubescape@v4.0.0
   asset:
-    - target: darwin_x64
-      file: kubescape-macos-latest.tar.gz
-      bin: kubescape-macos-latest
-    - target: darwin_arm64
-      file: kubescape-arm64-macos-latest.tar.gz
-      bin: kubescape-arm64-macos-latest
-    - target: linux_x64
-      file:  kubescape-ubuntu-latest.tar.gz
-      bin:  kubescape-ubuntu-latest
-    - target: linux_arm64
-      file: kubescape-arm64-ubuntu-latest.tar.gz
-      bin: kubescape-arm64-ubuntu-latest
-    - target: win_x64
-      file: kubescape-arm64-windows-latest.tar.gz
-      bin:  kubescape-arm64-windows-latest.exe
+  - target: darwin_x64
+    file:  kubescape_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
+    bin: kubescape
+  - target: darwin_arm64
+    file: kubescape_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
+    bin: kubescape
+  - target: linux_x64
+    file: kubescape_{{ version | strip_prefix "v" }}_linux_amd64.tar.gz
+    bin:  kubescape
+  - target: linux_arm64
+    file: kubescape_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz 
+    bin: kubescape
+  - target: win_x64
+    file: kubescape_{{ version | strip_prefix "v" }}_windows_amd64.tar.gz
+    bin:  kubescape.exe
+  - target: win_arm64
+    file: kubescape_{{ version | strip_prefix "v" }}_windows_arm64.tar.gz
+    bin: kubescape.exe
 
 bin:
   kubescape: "{{source.asset.bin}}"
