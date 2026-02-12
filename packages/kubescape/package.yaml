@@ -13,7 +13,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/kubescape/kubescape@v4.0.0
+  id: pkg:github/kubescape/kubescape@v4.0.1
   asset:
   - target: darwin_x64
     file:  kubescape_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
