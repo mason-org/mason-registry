@@ -15,7 +15,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/supabase-community/postgres-language-server@0.20.1
+  id: pkg:github/supabase-community/postgres-language-server@0.21.0
   asset:
     - target: darwin_arm64
       file: postgrestools_aarch64-apple-darwin
