@@ -14,9 +14,6 @@ categories:
 source:
   id: pkg:npm/oxlint@1.48.0
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v{{version}}/editors/vscode/package.json
-
 bin:
   oxlint: npm:oxlint
   oxc_language_server: npm:oxc_language_server
