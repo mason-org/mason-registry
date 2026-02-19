@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/oxlint@1.48.0
+  id: pkg:npm/oxlint@1.49.0
 
 bin:
   oxlint: npm:oxlint
