@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/oelint-adv@9.3.3
+  id: pkg:pypi/oelint-adv@9.4.0
 
 bin:
   oelint-adv: pypi:oelint-adv
