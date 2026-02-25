@@ -3,7 +3,7 @@ name: django-language-server
 description: A language server for the Django web framework 
 homepage: https://github.com/joshuadavidthomas/django-language-server
 licenses:
-  - Apache-2.0 license
+  - Apache-2.0
 languages:
   - Python
 categories:
