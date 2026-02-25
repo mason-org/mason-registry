@@ -9,7 +9,6 @@ languages:
   - Luau
 categories:
   - Formatter
-  - LSP
 
 source:
   id: pkg:github/johnnymorganz/stylua@v2.3.1
