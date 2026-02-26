@@ -11,7 +11,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/sbdchd/squawk@v2.41.0
+  id: pkg:github/sbdchd/squawk@v2.42.0
   asset:
     - target: darwin_x64
       file: squawk-darwin-x64
