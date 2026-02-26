@@ -10,9 +10,9 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/facebook/ktfmt@0.61
+  id: pkg:github/facebook/ktfmt@v0.61
   asset:
-    file: ktfmt-{{ version }}-with-dependencies.jar
+    file: ktfmt-{{ version | strip_prefix "v" }}-with-dependencies.jar
 
 bin:
   ktfmt: java-jar:{{source.asset.file}}
