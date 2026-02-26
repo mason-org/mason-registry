@@ -8,7 +8,7 @@ languages: []
 categories: []
 
 source:
-  id: pkg:npm/cronstrue@3.12.0
+  id: pkg:npm/cronstrue@3.13.0
 
 bin:
   cronstrue: npm:cronstrue
