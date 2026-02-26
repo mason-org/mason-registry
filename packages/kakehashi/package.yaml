@@ -1,0 +1,33 @@
+---
+name: kakehashi
+description: Language server that bridges the gap between languages, editors, and tooling
+homepage: https://github.com/atusy/kakehashi
+licenses:
+  - MIT
+languages: []
+categories:
+  - LSP
+source:
+  id: pkg:github/atusy/kakehashi@v0.3.0
+  asset:
+    - target: darwin_x64
+      file: kakehashi-{{ version }}-x86_64-apple-darwin.tar.gz
+      bin: kakehashi
+    - target: darwin_arm64
+      file: kakehashi-{{ version }}-aarch64-apple-darwin.tar.gz
+      bin: kakehashi
+    - target: linux_x64
+      file: kakehashi-{{ version }}-x86_64-unknown-linux-gnu.tar.gz
+      bin: kakehashi
+    - target: linux_arm64
+      file: kakehashi-{{ version }}-aarch64-unknown-linux-gnu.tar.gz
+      bin: kakehashi
+    - target: win_x64
+      file: kakehashi-{{ version }}-x86_64-pc-windows-msvc.zip
+      bin: kakehashi.exe
+
+bin:
+  kakehashi: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: kakehashi
