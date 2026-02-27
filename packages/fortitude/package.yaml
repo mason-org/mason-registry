@@ -48,3 +48,6 @@ source:
 
 bin:
   fortitude: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: fortitude
