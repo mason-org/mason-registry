@@ -1,0 +1,17 @@
+---
+name: effect-language-service
+description: |-
+  TypeScript language service plugin that provides additional refactors and diagnostics for Effect-TS projects.
+  Supports code actions, completions, and enhanced type information for Effect code.
+homepage: https://github.com/Effect-TS/language-service
+licenses:
+  - MIT
+languages:
+  - TypeScript
+categories: []
+
+source:
+  id: pkg:npm/@effect/language-service@0.47.0
+
+bin:
+  effect-language-service: npm:effect-language-service
