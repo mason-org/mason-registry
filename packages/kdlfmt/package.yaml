@@ -9,7 +9,7 @@ languages:
 categories:
   - Formatter
 source:
-  id: pkg:github/hougesen/kdlfmt@v0.1.5
+  id: pkg:github/hougesen/kdlfmt@v0.1.6
   asset:
     - target: darwin_arm64
       file: kdlfmt-aarch64-apple-darwin.tar.xz
