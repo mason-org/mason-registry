@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/hyprland-community/hyprls@v0.12.0
+  id: pkg:github/hyprland-community/hyprls@v0.13.0
   asset:
     - target: darwin_arm64
       file: hyprls-macos
