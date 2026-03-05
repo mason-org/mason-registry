@@ -10,7 +10,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:github/yonaskolb/XcodeGen@2.45.1
+  id: pkg:github/yonaskolb/XcodeGen@2.45.2
   asset:
     - target: darwin_arm64
       file: xcodegen.artifactbundle.zip
