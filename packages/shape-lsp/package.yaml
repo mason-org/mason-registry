@@ -1,0 +1,19 @@
+---
+name: shape-lsp
+description: Language server for the Shape programming language
+homepage: https://github.com/shape-lang/shape
+licenses:
+  - MIT
+languages:
+  - Shape
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/shape-lsp@0.1.0
+
+bin:
+  shape-lsp: cargo:shape-lsp
+
+neovim:
+  lspconfig: shape_lsp
