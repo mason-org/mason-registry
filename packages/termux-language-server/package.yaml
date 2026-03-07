@@ -14,3 +14,6 @@ source:
 
 bin:
   termux-language-server: pypi:termux-language-server
+
+neovim:
+  lspconfig: termux_language_server
