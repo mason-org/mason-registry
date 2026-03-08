@@ -14,8 +14,8 @@ source:
   id: pkg:github/GDQuest/GDScript-formatter@0.18.2
   asset:
     - target: darwin_x64
-      file: gdscript-formatter-{{ version }}_macos-x86_64.zip
-      bin: gdscript-formatter-{{ version }}_macos-x86_64
+      file: gdscript-formatter-{{ version }}-macos-x86_64.zip 
+      bin: gdscript-formatter-{{ version }}-macos-x86_64
     - target: darwin_arm64
       file: gdscript-formatter-{{ version }}-macos-aarch64.zip
       bin: gdscript-formatter-{{ version }}-macos-aarch64
