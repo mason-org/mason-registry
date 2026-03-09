@@ -11,13 +11,10 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/weavejester/cljfmt@0.16.0
+  id: pkg:github/weavejester/cljfmt@0.16.1
   asset:
     - target: darwin_arm64
       file: cljfmt-{{ version }}-darwin-aarch64.tar.gz
-      bin: cljfmt
-    - target: darwin_x64
-      file: cljfmt-{{ version }}-darwin-amd64.tar.gz
       bin: cljfmt
     - target: linux_arm64_gnu
       file: cljfmt-{{ version }}-linux-aarch64.tar.gz
