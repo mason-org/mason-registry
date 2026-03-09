@@ -16,9 +16,6 @@ source:
     - target: darwin_arm64
       file: cljfmt-{{ version }}-darwin-aarch64.tar.gz
       bin: cljfmt
-    - target: darwin_x64
-      file: cljfmt-{{ version }}-darwin-amd64.tar.gz
-      bin: cljfmt
     - target: linux_arm64_gnu
       file: cljfmt-{{ version }}-linux-aarch64.tar.gz
       bin: cljfmt
