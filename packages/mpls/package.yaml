@@ -1,0 +1,35 @@
+---
+name: mpls
+description: Markdown Preview Language Server
+homepage: https://github.com/mhersson/mpls
+licenses:
+  - Apache-2.0
+languages:
+  - Markdown
+categories:
+  - LSP
+source:
+  id: pkg:github/mhersson/mpls@v0.20.1
+  asset:
+    - target: darwin_arm64
+      file: mpls_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
+      bin: mpls
+    - target: darwin_x64
+      file: mpls_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
+      bin: mpls
+    - target: linux_arm64_gnu
+      file: mpls_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz
+      bin: mpls
+    - target: linux_x64_gnu
+      file: mpls_{{ version | strip_prefix "v" }}_linux_amd64.tar.gz
+      bin: mpls
+    - target: win_arm64
+      file: mpls_{{ version | strip_prefix "v" }}_windows_arm64.zip
+      bin: mpls.exe
+    - target: win_x64
+      file: mpls_{{ version | strip_prefix "v" }}_windows_amd64.zip
+      bin: mpls.exe
+bin:
+  mpls: "{{source.asset.bin}}"
+neovim:
+  lspconfig: mpls
