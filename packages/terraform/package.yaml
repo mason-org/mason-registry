@@ -16,7 +16,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/hashicorp/terraform@v1.14.6
+  id: pkg:generic/hashicorp/terraform@v1.14.7
   download:
     - target: darwin_arm64
       files:
