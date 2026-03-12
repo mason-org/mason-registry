@@ -28,9 +28,6 @@ source:
     - target: win_x64
       file: gdscript-formatter-{{ version }}-windows-x86_64.exe.zip
       bin: gdscript-formatter-{{ version }}-windows-x86_64.exe
-    - target: win_x86
-      file: gdscript-formatter-{{ version }}-windows-x86_64.exe.zip
-      bin: gdscript-formatter-{{ version }}-windows-x86_64.exe
     - target: win_arm64
       file: gdscript-formatter-{{ version }}-windows-aarch64.exe.zip
       bin: gdscript-formatter-{{ version }}-windows-aarch64.exe
