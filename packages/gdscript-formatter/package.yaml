@@ -22,9 +22,6 @@ source:
     - target: linux_x64
       file: gdscript-formatter-{{ version }}-linux-x86_64.zip
       bin: gdscript-formatter-{{ version }}-linux-x86_64
-    - target: linux_x86
-      file: gdscript-formatter-{{ version }}-linux-x86_64.zip
-      bin: gdscript-formatter-{{ version }}-linux-x86_64
     - target: linux_arm64
       file: gdscript-formatter-{{ version }}-linux-aarch64.zip
       bin: gdscript-formatter-{{ version }}-linux-aarch64
