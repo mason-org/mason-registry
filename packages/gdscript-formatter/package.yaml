@@ -1,0 +1,36 @@
+---
+name: gdscript-formatter
+description: |
+  A faster code formatter for GDScript and Godot 4.
+homepage: https://www.gdquest.com/library/gdscript_formatter
+licenses:
+  - MIT
+languages:
+  - GDScript
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/GDQuest/GDScript-formatter@0.18.2
+  asset:
+    - target: darwin_x64
+      file: gdscript-formatter-{{ version }}-macos-x86_64.zip 
+      bin: gdscript-formatter-{{ version }}-macos-x86_64
+    - target: darwin_arm64
+      file: gdscript-formatter-{{ version }}-macos-aarch64.zip
+      bin: gdscript-formatter-{{ version }}-macos-aarch64
+    - target: linux_x64
+      file: gdscript-formatter-{{ version }}-linux-x86_64.zip
+      bin: gdscript-formatter-{{ version }}-linux-x86_64
+    - target: linux_arm64
+      file: gdscript-formatter-{{ version }}-linux-aarch64.zip
+      bin: gdscript-formatter-{{ version }}-linux-aarch64
+    - target: win_x64
+      file: gdscript-formatter-{{ version }}-windows-x86_64.exe.zip
+      bin: gdscript-formatter-{{ version }}-windows-x86_64.exe
+    - target: win_arm64
+      file: gdscript-formatter-{{ version }}-windows-aarch64.exe.zip
+      bin: gdscript-formatter-{{ version }}-windows-aarch64.exe
+
+bin:
+  gdscript-formatter: "{{source.asset.bin}}"
