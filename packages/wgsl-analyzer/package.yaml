@@ -32,32 +32,6 @@ source:
     - target: win_arm64
       file: wgsl-analyzer-aarch64-pc-windows-msvc.zip
       bin: wgsl-analyzer.exe
-      
-  version_overrides:
-    - constraint: semver:<=2025-11-14
-      id: pkg:github/wgsl-analyzer/wgsl-analyzer@2025-11-14
-      asset:
-        - target: linux_x64_gnu
-          file: wgsl-analyzer-x86_64-unknown-linux-gnu.gz
-          bin: wgsl-analyzer-x86_64-unknown-linux-gnu
-        - target: linux_arm64_gnu
-          file: wgsl-analyzer-aarch64-unknown-linux-gnu.gz
-          bin: wgsl-analyzer-aarch64-unknown-linux-gnu
-        - target: linux_x64_musl
-          file: wgsl-analyzer-x86_64-unknown-linux-musl.gz
-          bin: wgsl-analyzer-x86_64-unknown-linux-musl
-        - target: darwin_x64
-          file: wgsl-analyzer-x86_64-apple-darwin.gz
-          bin: wgsl-analyzer-x86_64-apple-darwin
-        - target: darwin_arm64
-          file: wgsl-analyzer-aarch64-apple-darwin.gz
-          bin: wgsl-analyzer-aarch64-apple-darwin
-        - target: win_x64
-          file: wgsl-analyzer-x86_64-pc-windows-msvc.zip
-          bin: wgsl-analyzer.exe
-        - target: win_arm64
-          file: wgsl-analyzer-aarch64-pc-windows-msvc.zip
-          bin: wgsl-analyzer.exe
 
   version_overrides:
     - constraint: semver:<=v0.9.11
