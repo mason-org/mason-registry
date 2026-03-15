@@ -12,7 +12,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/wgsl-analyzer/wgsl-analyzer@2025-11-14
+  id: pkg:github/wgsl-analyzer/wgsl-analyzer@2026-03-13
   asset:
     - target: linux_x64_gnu
       file: wgsl-analyzer-x86_64-unknown-linux-gnu.gz
@@ -23,9 +23,6 @@ source:
     - target: linux_x64_musl
       file: wgsl-analyzer-x86_64-unknown-linux-musl.gz
       bin: wgsl-analyzer-x86_64-unknown-linux-musl
-    - target: darwin_x64
-      file: wgsl-analyzer-x86_64-apple-darwin.gz
-      bin: wgsl-analyzer-x86_64-apple-darwin
     - target: darwin_arm64
       file: wgsl-analyzer-aarch64-apple-darwin.gz
       bin: wgsl-analyzer-aarch64-apple-darwin
