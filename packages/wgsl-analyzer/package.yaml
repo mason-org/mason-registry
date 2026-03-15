@@ -34,7 +34,6 @@ source:
       bin: wgsl-analyzer.exe
       
   version_overrides:
-  # renovate:versioning=loose
     - constraint: semver:<=2025-11-14
       id: pkg:github/wgsl-analyzer/wgsl-analyzer@2025-11-14
       asset:
