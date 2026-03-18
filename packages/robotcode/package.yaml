@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:pypi/robotcode@2.3.1?extra=all
+  id: pkg:pypi/robotcode@2.4.0?extra=all
 
 
 schemas:
