@@ -1,0 +1,19 @@
+---
+name: stan-language-server
+description: Language server for the Stan probabilistic programming language.
+homepage: https://github.com/tomatitito/stan-language-server
+licenses:
+  - MIT
+languages:
+  - Stan
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/stan-language-server-bin@0.4.5
+
+bin:
+  stan-language-server: npm:stan-language-server
+
+neovim:
+  lspconfig: stan_ls
