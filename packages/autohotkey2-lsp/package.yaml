@@ -1,0 +1,20 @@
+---
+name: autohotkey2-lsp
+description: AutoHotkey 2.0 Language Server Protocol implementation for VSCode.
+homepage: https://github.com/thqby/vscode-autohotkey2-lsp
+licenses:
+  - MIT
+languages:
+  - autohotkey
+categories:
+  - LSP
+  - autohotkey
+  - node
+source:
+  id: pkg:openvsx/thqby/vscode-autohotkey2-lsp@<version>
+  download:
+    file: thqby.vscode-autohotkey2-lsp-{{version}}.vsix
+bin:
+  autohotkey2-lsp: node:extension/dist/server.js
+neovim:
+  lspconfig: autohotkey_lsp
