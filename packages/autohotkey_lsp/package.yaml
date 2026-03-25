@@ -1,0 +1,21 @@
+---
+name: autohotkey_lsp
+description: |
+  Autohotkey v2 Language Support using vscode-lsp.
+homepage: https://github.com/thqby/vscode-autohotkey2-lsp
+licenses:
+  - MIT
+languages:
+  - AutoHotkey
+categories:
+  - LSP
+
+source:
+  id: pkg:openvsx/thqby/vscode-autohotkey2-lsp@3.0.4
+  download:
+    file: thqby.vscode-autohotkey2-lsp-{{version}}.vsix
+bin:
+  # lspconfig assumes there is a autohotkey_lsp bin.
+  autohotkey_lsp: node:extension/server/dist/server.js
+neovim:
+  lspconfig: autohotkey_lsp
