@@ -4,12 +4,11 @@ description: |
   Autohotkey v2 Language Support using vscode-lsp.
 homepage: https://github.com/thqby/vscode-autohotkey2-lsp
 licenses:
-  - MIT
+  - LGPL-3.0
 languages:
   - AutoHotkey
 categories:
   - LSP
-
 source:
   id: pkg:openvsx/thqby/vscode-autohotkey2-lsp@3.0.4
   download:
