@@ -1,7 +1,7 @@
 ---
 name: stylelint-lsp
 description: A stylelint Language Server.
-homepage: https://github.com/bmatcuk/stylelint-lsp
+homepage: https://github.com/stylelint/vscode-stylelint
 licenses:
   - MIT
 languages:
@@ -10,13 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/stylelint-lsp@2.0.1
+  id: pkg:npm/@stylelint/language-server@1.1.0
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/bmatcuk/coc-stylelintplus/master/package.json
+  lsp: vscode:https://raw.githubusercontent.com/stylelint/vscode-stylelint/main/package.json
 
 bin:
-  stylelint-lsp: npm:stylelint-lsp
+  stylelint-language-server: npm:stylelint-language-server
 
 neovim:
   lspconfig: stylelint_lsp
