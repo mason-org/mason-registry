@@ -1,0 +1,22 @@
+---
+name: stylelint-language-server
+description: A stylelint Language Server.
+homepage: https://github.com/stylelint/vscode-stylelint
+licenses:
+  - MIT
+languages:
+  - Stylelint
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/@stylelint/language-server@1.1.0
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/stylelint/vscode-stylelint/main/package.json
+
+bin:
+  stylelint-language-server: npm:stylelint-language-server
+
+neovim:
+  lspconfig: stylelint_lsp
