@@ -9,7 +9,7 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:github/mhersson/mpls@v0.20.1
+  id: pkg:github/mhersson/mpls@v0.21.0
   asset:
     - target: darwin_arm64
       file: mpls_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
