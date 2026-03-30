@@ -10,9 +10,9 @@ languages:
 categories:
   - LSP
 source:
-  id: pkg:openvsx/thqby/vscode-autohotkey2-lsp@3.0.4
-  download:
-    file: thqby.vscode-autohotkey2-lsp-{{version}}.vsix
+  id: pkg:github/thqby/vscode-autohotkey2-lsp@v3.0.4
+  asset:
+    file: vscode-autohotkey2-lsp-{{ version | strip_prefix "v" }}.vsix
 bin:
   # lspconfig assumes there is a autohotkey_lsp bin.
   autohotkey_lsp: node:extension/server/dist/server.js
