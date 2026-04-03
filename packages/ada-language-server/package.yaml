@@ -76,3 +76,6 @@ schemas:
 
 bin:
   ada_language_server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: ada_language_server
