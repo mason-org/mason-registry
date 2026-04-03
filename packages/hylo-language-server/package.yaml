@@ -14,7 +14,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/hylo-lang/hylo-language-server@v0.0.10
+  id: pkg:github/hylo-lang/hylo-language-server@v0.0.15
   asset:
     - target: linux_x64
       file: hylo-language-server-linux-x64.zip
