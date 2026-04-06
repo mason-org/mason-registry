@@ -10,6 +10,6 @@ categories:
   - Runtime
 
 source:
-  id: pkg:pypi/pymobiledevice3@9.8.2
+  id: pkg:pypi/pymobiledevice3@9.9.0
 bin:
   pymobiledevice3: pypi:pymobiledevice3
