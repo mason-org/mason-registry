@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:luarocks/luacheck@1.1.0
+  id: pkg:luarocks/luacheck@1.2.0
 
 bin:
   luacheck: luarocks:luacheck
