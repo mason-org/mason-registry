@@ -1,0 +1,35 @@
+---
+name: csskit
+description: |
+  Beautiful, fast, and powerful CSS tooling with zero configuration
+homepage: https://csskit.rs
+licenses:
+  - MIT
+languages:
+  - CSS
+categories:
+  - LSP
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/csskit/csskit@v0.0.20
+  asset:
+    - target: darwin_arm64
+      file: csskit-darwin-arm64
+    - target: darwin_x64
+      file: csskit-darwin-x64
+    - target: linux_arm64_gnu
+      file: csskit-linux-arm64
+    - target: linux_x64_gnu
+      file: csskit-linux-x64
+    - target: win_arm64
+      file: csskit-win32-arm64.exe
+    - target: win_x64
+      file: csskit-win32-x64.exe
+
+bin:
+  csskit: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: csskit
