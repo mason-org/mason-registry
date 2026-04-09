@@ -17,22 +17,16 @@ source:
   asset:
     - target: darwin_arm64
       file: csskit-darwin-arm64
-      bin: csskit-darwin-arm64
     - target: darwin_x64
       file: csskit-darwin-x64
-      bin: csskit-darwin-x64
     - target: linux_arm64_gnu
       file: csskit-linux-arm64
-      bin: csskit-linux-arm64
     - target: linux_x64_gnu
       file: csskit-linux-x64
-      bin: csskit-linux-x64
     - target: win_arm64
       file: csskit-win32-arm64.exe
-      bin: csskit.exe
     - target: win_x64
       file: csskit-win32-x64.exe
-      bin: csskit.exe
 
 bin:
-  csskit: "{{source.asset.bin}}"
+  csskit: "{{source.asset.file}}"
