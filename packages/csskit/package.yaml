@@ -30,3 +30,6 @@ source:
 
 bin:
   csskit: "{{source.asset.file}}"
+
+neovim:
+  lspconfig: csskit
