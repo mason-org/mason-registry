@@ -29,11 +29,11 @@ source:
       file: tree-sitter-linux-arm64.gz
       bin: tree-sitter-linux-arm64
     - target: win_x64
-      file: tree-sitter-windows-x64.gz:tree-sitter-windows-x64.exe.gz
-      bin: tree-sitter-windows-x64.exe
+      file: tree-sitter-cli-windows-x64.zip
+      bin: tree-sitter.exe
     - target: win_x86
-      file: tree-sitter-windows-x86.gz:tree-sitter-windows-x86.exe.gz
-      bin: tree-sitter-windows-x86.exe
+      file: tree-sitter-cli-windows-x86.zip
+      bin: tree-sitter.exe
 
 bin:
   tree-sitter: "{{source.asset.bin}}"
