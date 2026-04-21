@@ -15,7 +15,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/bufbuild/buf@v1.68.2
+  id: pkg:github/bufbuild/buf@v1.68.3
   asset:
     - target: darwin_x64
       file: buf-Darwin-x86_64
