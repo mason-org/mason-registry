@@ -12,16 +12,16 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/TheQtCompanyRnD/qmlls-workflow@0.5
+  id: pkg:github/TheQtCompanyRnD/qmlls-workflow@0.7
   asset:
     - target: [darwin_x64, darwin_arm64]
-      file: qmlls-macos-{{version}}.zip
+      file: qmlls-macos-nightly-{{version}}.zip
       bin: qmlls
     - target: linux_x64_gnu
-      file: qmlls-ubuntu-{{version}}.zip
+      file: qmlls-ubuntu-nightly-{{version}}.zip
       bin: qmlls
     - target: win_x64
-      file: qmlls-windows-{{version}}.zip
+      file: qmlls-windows-nightly-{{version}}.zip
       bin: qmlls.exe
 
 bin:
