@@ -26,7 +26,6 @@ source:
   id: pkg:openvsx/vscjava/vscode-java-test@0.45.0
   download:
     file: vscjava.vscode-java-test-{{version}}.vsix
-    plugin_version: 0.45.0
 
 share:
   java-test/: extension/server/
