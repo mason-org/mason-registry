@@ -16,7 +16,7 @@ neovim:
   lspconfig: tombi
 
 source:
-  id: pkg:github/tombi-toml/tombi@v0.9.21
+  id: pkg:github/tombi-toml/tombi@v0.9.22
   asset:
     - target: darwin_x64
       file: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-apple-darwin.gz
