@@ -12,9 +12,6 @@ categories:
 source:
   id: pkg:github/remoteoss/dexter@v0.6.0
   asset:
-    - target: darwin_x64
-      file: dexter_Darwin_x86_64.tar.gz
-      bin: dexter_Darwin_x86_64/dexter
     - target: darwin_arm64
       file: dexter_Darwin_arm64.tar.gz
       bin: dexter_Darwin_arm64/dexter
