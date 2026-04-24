@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/elixir-lang/expert@v0.1.0
+  id: pkg:github/elixir-lang/expert@v0.1.1
   asset:
     - target: darwin_x64
       file: expert_darwin_amd64
