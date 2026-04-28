@@ -1,0 +1,29 @@
+---
+name: dexter
+description: A fast, full-featured Elixir LSP optimized for large codebases.
+homepage: https://github.com/remoteoss/dexter
+licenses:
+  - MIT
+languages:
+  - Elixir
+categories:
+  - LSP
+
+source:
+  id: pkg:github/remoteoss/dexter@v0.6.0
+  asset:
+    - target: darwin_arm64
+      file: dexter_Darwin_arm64.tar.gz
+      bin: dexter_Darwin_arm64/dexter
+    - target: linux_x64
+      file: dexter_Linux_x86_64.tar.gz
+      bin: dexter_Linux_x86_64/dexter
+    - target: linux_arm64
+      file: dexter_Linux_arm64.tar.gz
+      bin: dexter_Linux_arm64/dexter
+
+bin:
+  dexter: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: dexter
