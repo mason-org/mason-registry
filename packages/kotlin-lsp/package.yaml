@@ -40,7 +40,7 @@ source:
       bin: kotlin-server-{{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server.exe
 
 bin:
-  kotlin-lsp: "{{source.download.bin}}"
+  intellij-server: "{{source.download.bin}}"
 
 neovim:
   lspconfig: kotlin_lsp
