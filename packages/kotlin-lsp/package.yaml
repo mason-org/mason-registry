@@ -33,11 +33,11 @@ source:
     - target: win_x64
       files:
         kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.win.zip
-      bin: kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server.exe
+      bin: bin/intellij-server.exe
     - target: win_arm64
       files:
         kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.win.zip
-      bin: kotlin-server-{{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server.exe
+      bin: bin/intellij-server.exe
 
 bin:
   intellij-server: "{{source.download.bin}}"
