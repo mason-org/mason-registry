@@ -14,3 +14,6 @@ source:
 
 bin:
   statix: cargo:statix
+
+neovim:
+  lspconfig: statix
