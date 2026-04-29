@@ -5,12 +5,12 @@ homepage: https://github.com/oppiliappan/statix
 licenses:
   - MIT
 languages:
-  - nix
+  - Nix
 categories:
   - Linter
 
 source:
-  id: pkg:cargo/statix@4.8.3
+  id: pkg:cargo/statix@v0.5.8?repository_url=https://github.com/oppiliappan/statix
 
 bin:
   statix: cargo:statix
