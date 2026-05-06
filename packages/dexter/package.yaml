@@ -24,6 +24,3 @@ source:
 
 bin:
   dexter: "{{source.asset.bin}}"
-
-neovim:
-  lspconfig: dexter
