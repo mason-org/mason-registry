@@ -20,19 +20,19 @@ source:
   asset:
     - target: darwin_x64
       file: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-apple-darwin.tar.gz
-      bin: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-apple-darwin
+      bin: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-apple-darwin/tombi
     - target: darwin_arm64
       file: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-apple-darwin.tar.gz
-      bin: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-apple-darwin
+      bin: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-apple-darwin/tombi
     - target: linux_x64
       file: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-unknown-linux-musl.tar.gz
-      bin: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-unknown-linux-musl
+      bin: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-unknown-linux-musl/tombi
     - target: linux_arm64
       file: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-unknown-linux-musl.tar.gz
-      bin: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-unknown-linux-musl
+      bin: tombi-cli-{{ version | strip_prefix "v" }}-aarch64-unknown-linux-musl/tombi
     - target: linux_armv7_gnu
       file: tombi-cli-{{ version | strip_prefix "v" }}-arm-unknown-linux-gnueabihf.tar.gz
-      bin: tombi-cli-{{ version | strip_prefix "v" }}-arm-unknown-linux-gnueabihf
+      bin: tombi-cli-{{ version | strip_prefix "v" }}-arm-unknown-linux-gnueabihf/tombi
     - target: win_x64
       file: tombi-cli-{{ version | strip_prefix "v" }}-x86_64-pc-windows-msvc.zip
       bin: tombi.exe
