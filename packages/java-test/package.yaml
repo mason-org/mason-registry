@@ -28,12 +28,12 @@ source:
     file: vscjava.vscode-java-test-{{version}}.vsix
     plugin_version: 0.43.1
 
-version_overrides:
-  - constraint: semver:<=0.43.1
-    id: pkg:openvsx/vscjava/vscode-java-test@0.43.1
-    download:
-      file: vscjava.vscode-java-test-{{version}}.vsix
-      plugin_version: "{{version}}"
+  version_overrides:
+    - constraint: semver:<=0.43.1
+      id: pkg:openvsx/vscjava/vscode-java-test@0.43.1
+      download:
+        file: vscjava.vscode-java-test-{{version}}.vsix
+        plugin_version: "{{version}}"
 
 share:
   java-test/: extension/server/
