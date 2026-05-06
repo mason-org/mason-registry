@@ -23,7 +23,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-java-test@0.44.0
+  id: pkg:openvsx/vscjava/vscode-java-test@0.45.0
   download:
     file: vscjava.vscode-java-test-{{version}}.vsix
     plugin_version: 0.43.1
