@@ -23,18 +23,10 @@ categories:
   - DAP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-java-test@0.44.0
+  id: pkg:openvsx/vscjava/vscode-java-test@0.45.0
   download:
     file: vscjava.vscode-java-test-{{version}}.vsix
-    plugin_version: 0.43.1
-
-  version_overrides:
-    - constraint: semver:<=0.43.1
-      id: pkg:openvsx/vscjava/vscode-java-test@0.43.1
-      download:
-        file: vscjava.vscode-java-test-{{version}}.vsix
-        plugin_version: "{{version}}"
 
 share:
   java-test/: extension/server/
-  java-test/com.microsoft.java.test.plugin.jar: extension/server/com.microsoft.java.test.plugin-{{ source.download.plugin_version }}.jar
+  java-test/com.microsoft.java.test.plugin.jar: extension/server/com.microsoft.java.test.plugin-0.43.1.jar
