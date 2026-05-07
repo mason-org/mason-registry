@@ -1,0 +1,51 @@
+---
+name: panache
+description: An LSP, formatter, and linter for Markdown, Quarto, and R Markdown.
+homepage: https://panache.bz
+licenses:
+  - MIT
+languages:
+  - Markdown
+  - Quarto
+  - R Markdown
+categories:
+  - LSP
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/jolars/panache@v2.43.1
+  asset:
+    - target: darwin_arm64
+      file: panache-aarch64-apple-darwin.tar.gz
+      bin: panache
+    - target: darwin_x64
+      file: panache-x86_64-apple-darwin.tar.gz
+      bin: panache
+    - target: linux_arm64_gnu
+      file: panache-aarch64-unknown-linux-gnu.tar.gz
+      bin: panache
+    - target: linux_x64_gnu
+      file: panache-x86_64-unknown-linux-gnu.tar.gz
+      bin: panache
+    - target: linux_arm64_musl
+      file: panache-aarch64-unknown-linux-musl.tar.gz
+      bin: panache
+    - target: linux_x64_musl
+      file: panache-x86_64-unknown-linux-musl.tar.gz
+      bin: panache
+    - target: win_arm64
+      file: panache-aarch64-pc-windows-msvc.zip
+      bin: panache.exe
+    - target: win_x64
+      file: panache-x86_64-pc-windows-msvc.zip
+      bin: panache.exe
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/jolars/panache/{{version}}/editors/code/package.json
+
+bin:
+  panache: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: panache
