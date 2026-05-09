@@ -14,7 +14,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/jolars/panache@v2.44.0
+  id: pkg:github/jolars/panache@v2.45.0
   asset:
     - target: darwin_arm64
       file: panache-aarch64-apple-darwin.tar.gz
