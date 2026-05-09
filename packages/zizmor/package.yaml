@@ -1,0 +1,19 @@
+---
+name: zizmor
+description: Static analysis for GitHub Actions
+homepage: https://github.com/zizmorcore/zizmor
+licenses:
+  - MIT
+languages:
+  - YAML
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/zizmor@1.24.1
+
+bin:
+  zizmor: pypi:zizmor
+
+neovim:
+  lspconfig: zizmor
