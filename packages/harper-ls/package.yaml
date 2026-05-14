@@ -18,6 +18,7 @@ languages:
   - TOML
   - Lua
   - Java
+  - LaTeX
 categories:
   - LSP
 
