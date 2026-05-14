@@ -1,0 +1,21 @@
+---
+name: roslyn-language-server
+description: |
+  Roslyn-based C# language server providing rich IntelliSense, refactoring, and diagnostics.
+  Requires dotnet to be installed.
+homepage: https://github.com/dotnet/roslyn
+licenses:
+  - MIT
+languages:
+  - C#
+categories:
+  - LSP
+
+source:
+  id: pkg:nuget/roslyn-language-server@5.8.0-1.26262.10
+
+bin:
+  roslyn-language-server: nuget:roslyn-language-server
+
+neovim:
+  lspconfig: roslyn_ls
