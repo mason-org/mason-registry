@@ -23,8 +23,8 @@ source:
       file:
         - jls-linux-x64.tar.gz
         - jls-linux-x64.tar.gz.sha256
-      lsp: lang_server_linux.sh
-      dap: debug_adapter_linux.sh
+      lsp: exec:lang_server_linux.sh
+      dap: exec:debug_adapter_linux.sh
     - target: win_x64
       file:
         - jls-windows-x64.zip
