@@ -12,10 +12,6 @@ categories:
 
 source:
   id: pkg:github/idelice/jls@v0.5.1
-  supported_platforms:
-    - darwin_arm64
-    - linux_x64_gnu
-    - win_x64
   asset:
     - target: darwin_arm64
       file:
