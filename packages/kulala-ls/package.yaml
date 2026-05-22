@@ -1,0 +1,13 @@
+---
+name: kulala-ls
+description: Language server for kulala / HTTP files
+homepage: https://github.com/mistweaverco/kulala-ls
+licenses: [MIT]
+languages: [http]
+categories: [LSP]
+source:
+  id: pkg:npm/%40mistweaverco/kulala-ls@1.11.1
+bin:
+  kulala-ls: npm:kulala-ls
+neovim:
+  lspconfig: kulala_ls
