@@ -17,8 +17,8 @@ source:
       file:
         - jls-macos-aarch64.tar.gz
         - jls-macos-aarch64.tar.gz.sha256
-      lsp: lang_server_mac.sh
-      dap: debug_adapter_mac.sh
+      lsp: exec:lang_server_mac.sh
+      dap: exec:debug_adapter_mac.sh
     - target: linux_x64_gnu
       file:
         - jls-linux-x64.tar.gz
