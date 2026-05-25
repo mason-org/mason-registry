@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/kitagry/bqls@v0.4.3
+  id: pkg:github/kitagry/bqls@v0.5.1
   asset:
     - target: darwin_arm64
       file: bqls_darwin_arm64.zip
