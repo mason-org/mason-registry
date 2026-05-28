@@ -1,0 +1,40 @@
+---
+name: slang-server
+description: A SystemVerilog language server based on the Slang library.
+homepage: https://github.com/hudson-trading/slang-server
+licenses:
+  - MIT
+languages:
+  - SystemVerilog
+  - Verilog
+categories:
+  - LSP
+
+source:
+  id: pkg:github/hudson-trading/slang-server@v0.2.6
+  asset:
+    - target: linux_x64
+      file: slang-server-old-linux-x64-gcc.tar.gz
+      bin: slang-server
+
+    - target: linux_arm64
+      file: slang-server-linux-arm64-clang.tar.gz
+      bin: slang-server
+
+    - target: win_x64
+      file: slang-server-windows-x64.zip
+      bin: slang-server.exe
+
+    - target: win_arm64
+      file: slang-server-windows-arm64.zip
+      bin: slang-server.exe
+
+    - target: darwin_arm64
+      file: slang-server-macos.tar.gz
+      bin: slang-server
+
+bin:
+  slang-server: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: slang_server
