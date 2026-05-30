@@ -1,0 +1,24 @@
+---
+name: vespa-language-server
+description: |
+  Language support for the Vespa Schema language.
+homepage: https://github.com/vespa-engine/vespa/tree/master/integration/schema-language-server
+licenses:
+  - Apache-2.0
+languages:
+  - sd
+  - yql
+categories:
+  - LSP
+
+source:
+  # renovate:versioning=regex:^lsp-v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$
+  id: pkg:github/vespa-engine/vespa@lsp-v2.4.9
+  asset:
+    file: vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
+
+share:
+  vespa-language-server/vespa-language-server.jar: vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
+
+neovim:
+  lspconfig: vespa_ls
