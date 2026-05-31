@@ -17,8 +17,8 @@ source:
   asset:
     file: vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
 
-share:
-  vespa-language-server/vespa-language-server.jar: vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
+bin:
+  vespa-language-server: java-jar:vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
 
 neovim:
   lspconfig: vespa_ls
