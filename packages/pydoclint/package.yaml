@@ -1,0 +1,16 @@
+---
+name: pydoclint
+description: A very fast Python docstring linter.
+homepage: https://github.com/jsh9/pydoclint
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/pydoclint@0.8.4
+
+bin:
+  pydoclint: pypi:pydoclint
