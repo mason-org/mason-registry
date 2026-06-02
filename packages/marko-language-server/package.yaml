@@ -13,7 +13,7 @@ source:
   id: pkg:npm/@marko/language-server@3.0.1
 
 bin:
-  marko-language-server: node_modules/.bin/marko-language-server
+  marko-language-server: npm:marko-language-server
 
 neovim:
   lspconfig: marko-js
