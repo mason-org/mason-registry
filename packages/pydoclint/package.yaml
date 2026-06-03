@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/pydoclint@0.8.4
+  id: pkg:pypi/pydoclint@0.8.5
 
 bin:
   pydoclint: pypi:pydoclint
