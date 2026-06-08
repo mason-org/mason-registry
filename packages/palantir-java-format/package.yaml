@@ -1,0 +1,29 @@
+---
+name: palantir-java-format
+description: A modern, lambda-friendly, 120 character Java formatter.
+homepage: https://github.com/palantir/palantir-java-format
+licenses:
+  - Apache-2.0
+languages:
+  - Java
+categories:
+  - Formatter
+
+source:
+  id: pkg:maven/com.palantir.javaformat/palantir-java-format-native@2.91.0
+  download:
+    - target: darwin_arm64
+      files:
+        palantir-java-format: https://repo1.maven.org/maven2/com/palantir/javaformat/palantir-java-format-native/{{version}}/palantir-java-format-native-{{version}}-nativeImage-macos_aarch64.bin
+      bin: palantir-java-format
+    - target: linux_arm64
+      files:
+        palantir-java-format: https://repo1.maven.org/maven2/com/palantir/javaformat/palantir-java-format-native/{{version}}/palantir-java-format-native-{{version}}-nativeImage-linux-glibc_aarch64.bin
+      bin: palantir-java-format
+    - target: linux_x64
+      files:
+        palantir-java-format: https://repo1.maven.org/maven2/com/palantir/javaformat/palantir-java-format-native/{{version}}/palantir-java-format-native-{{version}}-nativeImage-linux-glibc_x86-64.bin
+      bin: palantir-java-format
+
+bin:
+  palantir-java-format: "{{source.download.bin}}"
