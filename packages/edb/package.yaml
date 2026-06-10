@@ -1,0 +1,26 @@
+---
+name: edb
+description: Modern step-debugger for Erlang and Elixir using DAP.
+homepage: https://github.com/WhatsApp/edb
+licenses:
+  - Apache-2.0
+languages:
+  - Erlang
+  - Elixir
+categories:
+  - DAP
+
+source:
+  id: pkg:github/WhatsApp/edb@0.5.0
+  build:
+    - target: win
+      run: |
+        rebar3 escriptize
+      edb: _build/default/bin/edb.cmd
+    - target: unix
+      run: |
+        </dev/null rebar3 escriptize
+      edb: _build/default/bin/edb
+
+bin:
+  edb: "{{source.build.edb}}"
