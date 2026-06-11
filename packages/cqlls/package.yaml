@@ -1,0 +1,22 @@
+---
+name: cqlls
+description: The Best Open Source Language Server for CQL (Cassandra Query Language) ^_^
+homepage: https://github.com/Akzestia/cqlls
+licenses:
+  - MIT
+languages:
+  - CQL
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/cqlls@4.1.0
+  supported_platforms:
+    - darwin
+    - linux
+
+bin:
+  cqlls: cargo:cqlls
+
+neovim:
+  lspconfig: cqlls
