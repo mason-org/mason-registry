@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=regex:^lsp-v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$
-  id: pkg:github/vespa-engine/vespa@lsp-v2.4.9
+  id: pkg:github/vespa-engine/vespa@lsp-v2.4.10
   asset:
     file: vespa-language-server_{{ version | strip_prefix "lsp-v" }}.jar
 
