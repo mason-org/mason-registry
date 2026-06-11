@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:openvsx/nadako/vshaxe@2.34.1
+  id: pkg:openvsx/nadako/vshaxe@2.34.2
   download:
     file: nadako.vshaxe-{{version}}.vsix
 
