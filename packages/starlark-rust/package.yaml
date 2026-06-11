@@ -12,9 +12,6 @@ categories:
 source:
   id: pkg:cargo/starlark_bin@0.14.2
 
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/facebook/starlark-rust/v{{version}}/vscode/package.json
-
 bin:
   starlark: cargo:starlark
 
