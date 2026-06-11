@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-gradle@3.15.0
+  id: pkg:openvsx/vscjava/vscode-gradle@3.17.3
   download:
     file: vscjava.vscode-gradle-{{version}}.vsix
 
