@@ -25,10 +25,10 @@ source:
       file: cobol-language-support-linux-x64-{{version}}.vsix
       bin: extension/server/native/server-linux
     - target: win_arm64
-      file: cobol-language-support-win32-arm64-{{version}}-signed.vsix
+      file: cobol-language-support-win32-arm64-{{version}}.vsix
       bin: extension/server/native/engine.exe
     - target: win_x64
-      file: cobol-language-support-win32-x64-{{version}}-signed.vsix
+      file: cobol-language-support-win32-x64-{{version}}.vsix
       bin: extension/server/native/engine.exe
 
 schemas:
