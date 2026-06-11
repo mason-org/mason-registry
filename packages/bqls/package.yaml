@@ -13,14 +13,31 @@ source:
   id: pkg:github/kitagry/bqls@v0.5.1
   asset:
     - target: darwin_arm64
-      file: bqls_darwin_arm64.zip
+      file: bqls_darwin_arm64.tar.gz
       bin: bqls
     - target: darwin_x64
-      file: bqls_darwin_amd64.zip
+      file: bqls_darwin_amd64.tar.gz
       bin: bqls
     - target: linux_x64
-      file: bqls_linux_amd64.zip
+      file: bqls_linux_amd64.tar.gz
       bin: bqls
+    - target: linux_arm64
+      file: bqls_linux_arm64.tar.gz
+      bin: bqls
+
+  version_overrides:
+    - constraint: semver:<=v0.4.3
+      id: pkg:github/kitagry/bqls@v0.4.3
+      asset:
+        - target: darwin_arm64
+          file: bqls_darwin_arm64.zip
+          bin: bqls
+        - target: darwin_x64
+          file: bqls_darwin_amd64.zip
+          bin: bqls
+        - target: linux_x64
+          file: bqls_linux_amd64.zip
+          bin: bqls
 
 bin:
   bqls: "{{source.asset.bin}}"
