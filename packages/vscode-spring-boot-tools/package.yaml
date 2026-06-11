@@ -20,4 +20,4 @@ source:
 
 share:
   vscode-spring-boot-tools/jdtls/: extension/jars/
-  vscode-spring-boot-tools/language-server.jar: extension/language-server/spring-boot-language-server-{{version}}-SNAPSHOT-exec.jar
+  vscode-spring-boot-tools/language-server.jar: extension/language-server/spring-boot-language-server-2.2.0-SNAPSHOT-exec.jar
