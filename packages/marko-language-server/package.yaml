@@ -1,0 +1,19 @@
+---
+name: marko-language-server
+description: A language server (implementing the language server protocol) for Marko.
+homepage: https://github.com/marko-js/language-server
+licenses:
+  - MIT
+languages:
+  - Marko
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/%40marko/language-server@3.0.1
+
+bin:
+  marko-language-server: npm:marko-language-server
+
+neovim:
+  lspconfig: marko-js
