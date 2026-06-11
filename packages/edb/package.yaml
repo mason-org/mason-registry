@@ -1,0 +1,24 @@
+---
+name: edb
+description: Modern step-debugger for Erlang and Elixir using DAP.
+homepage: https://github.com/WhatsApp/edb
+licenses:
+  - Apache-2.0
+languages:
+  - Erlang
+  - Elixir
+categories:
+  - DAP
+
+source:
+  id: pkg:github/WhatsApp/edb@0.5.0
+  asset:
+    - target: darwin
+      file: edb-macos-latest-otp-27.tar.gz
+      bin: edb
+    - target: linux
+      file: edb-ubuntu-22.04-otp-27.tar.gz
+      bin: edb
+
+bin:
+  edb: "{{source.asset.bin}}"
