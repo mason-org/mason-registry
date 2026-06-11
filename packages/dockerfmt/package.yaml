@@ -1,0 +1,16 @@
+---
+name: dockerfmt
+description: An opinionated Dockerfile formatter.
+homepage: https://github.com/reteps/dockerfmt
+licenses:
+  - MIT
+languages:
+  - Dockerfile
+categories:
+  - Formatter
+
+source:
+  id: pkg:golang/github.com/reteps/dockerfmt@v0.5.2
+
+bin:
+  dockerfmt: golang:dockerfmt
