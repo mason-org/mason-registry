@@ -8,6 +8,7 @@ languages:
   - Odin
 categories:
   - LSP
+  - Formatter
 
 source:
   id: pkg:github/DanielGavin/ols@nightly
@@ -15,27 +16,34 @@ source:
     - target: darwin_arm64
       file: ols-arm64-darwin.zip
       bin: ols-arm64-darwin
+      fmt_bin: odinfmt-arm64-darwin
     - target: darwin_x64
       file: ols-x86_64-darwin.zip
       bin: ols-x86_64-darwin
+      fmt_bin: odinfmt-x86_64-darwin
     - target: linux_x64_gnu
       file: ols-x86_64-unknown-linux-gnu.zip
       bin: ols-x86_64-unknown-linux-gnu
+      fmt_bin: odinfmt-x86_64-unknown-linux-gnu
     - target: linux_arm64_gnu
       file: ols-arm64-unknown-linux-gnu.zip
       bin: ols-arm64-unknown-linux-gnu
+      fmt_bin: odinfmt-arm64-unknown-linux-gnu
     - target: win_x86
       file: ols-x86_64-pc-windows-msvc.zip
       bin: ols-x86_64-pc-windows-msvc.exe
+      fmt_bin: odinfmt-x86_64-pc-windows-msvc.exe
     - target: win_x64
       file: ols-x86_64-pc-windows-msvc.zip
       bin: ols-x86_64-pc-windows-msvc.exe
+      fmt_bin: odinfmt-x86_64-pc-windows-msvc.exe
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/DanielGavin/ols/{{version}}/editors/vscode/package.json
 
 bin:
   ols: "{{source.asset.bin}}"
+  odinfmt: "{{source.asset.fmt_bin}}"
 
 neovim:
   lspconfig: ols

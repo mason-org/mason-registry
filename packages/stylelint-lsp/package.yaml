@@ -1,5 +1,8 @@
 ---
 name: stylelint-lsp
+deprecation:
+  message: stylelint-lsp is deprecated in favor of stylelint-language-server
+  since: "2026-03-27"
 description: A stylelint Language Server.
 homepage: https://github.com/bmatcuk/stylelint-lsp
 licenses:
