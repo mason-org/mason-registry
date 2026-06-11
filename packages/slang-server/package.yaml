@@ -13,11 +13,11 @@ categories:
 source:
   id: pkg:github/hudson-trading/slang-server@v0.2.6
   asset:
-    - target: linux_x64
+    - target: linux_x64_gnu
       file: slang-server-old-linux-x64-gcc.tar.gz
       bin: slang-server
 
-    - target: linux_arm64
+    - target: linux_arm64_gnu
       file: slang-server-linux-arm64-clang.tar.gz
       bin: slang-server
 
