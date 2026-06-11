@@ -10,10 +10,13 @@ categories:
   - LSP
 
 source:
-  id: pkg:luarocks/teal-language-server@dev-1?dev=true
+  id: pkg:luarocks/teal-language-server@0.1.3-1
 
 bin:
   teal-language-server: luarocks:teal-language-server
 
 neovim:
   lspconfig: teal_ls
+
+ci_skip:
+  - win_x64
