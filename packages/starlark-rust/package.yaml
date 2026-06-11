@@ -10,10 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/starlark_bin@0.13.0
-
-schemas:
-  lsp: vscode:https://raw.githubusercontent.com/facebook/starlark-rust/v{{version}}/vscode/package.json
+  id: pkg:cargo/starlark_bin@0.14.2
 
 bin:
   starlark: cargo:starlark
