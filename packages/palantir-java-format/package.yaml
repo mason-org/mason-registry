@@ -10,7 +10,8 @@ categories:
   - Formatter
 
 source:
-  id: pkg:maven/com.palantir.javaformat/palantir-java-format-native@2.91.0
+  # renovate:datasource=github-releases
+  id: pkg:generic/palantir/palantir-java-format@2.92.0
   download:
     - target: darwin_arm64
       files:
