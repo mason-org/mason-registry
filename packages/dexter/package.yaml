@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/remoteoss/dexter@v0.7.0
+  id: pkg:github/remoteoss/dexter@v0.7.1
   asset:
     - target: darwin_arm64
       file: dexter_Darwin_arm64.tar.gz
