@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/stan-language-server-bin@0.4.9
+  id: pkg:npm/stan-language-server-bin@0.4.10
 
 bin:
   stan-language-server: npm:stan-language-server
