@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:versioning=loose
-  id: pkg:github/chipsalliance/verible@v0.0-4071-g8d9f2c97
+  id: pkg:github/chipsalliance/verible@v0.0-4075-g795c204a
   asset:
     - target: linux_x64
       file: verible-{{version}}-linux-static-x86_64.tar.gz
