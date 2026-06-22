@@ -1,0 +1,31 @@
+name: holocron-lsp
+description: LSP server for Holocron — a declarative schema and query compiler that type-checks SQL queries against a YAML rulebook with rich rustc-style diagnostics.
+homepage: https://github.com/extinctCoder/holocron
+licenses:
+  - MPL-2.0
+languages:
+  - YAML
+categories:
+  - LSP
+
+source:
+  id: pkg:github/extinctCoder/holocron@v0.3.0
+  asset:
+    - target: darwin_x64
+      file: holocron-v{{ version }}-x86_64-apple-darwin.tar.gz
+      bin: holocron-lsp
+    - target: darwin_arm64
+      file: holocron-v{{ version }}-aarch64-apple-darwin.tar.gz
+      bin: holocron-lsp
+    - target: linux_x64_gnu
+      file: holocron-v{{ version }}-x86_64-unknown-linux-gnu.tar.gz
+      bin: holocron-lsp
+    - target: linux_arm64_gnu
+      file: holocron-v{{ version }}-aarch64-unknown-linux-gnu.tar.gz
+      bin: holocron-lsp
+    - target: win_x64
+      file: holocron-v{{ version }}-x86_64-pc-windows-msvc.zip
+      bin: holocron-lsp.exe
+
+bin:
+  holocron-lsp: "{{ source.asset.bin }}"
