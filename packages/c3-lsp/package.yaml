@@ -26,3 +26,6 @@ source:
 
 bin:
   c3lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: c3_lsp
