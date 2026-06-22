@@ -53,7 +53,7 @@ source:
       bin: jinja-lsp-i686-pc-windows-msvc.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/uros-5/jinja-lsp/v{{version}}/editors/code/package.json
+  lsp: vscode:https://raw.githubusercontent.com/uros-5/jinja-lsp/{{version}}/editors/code/package.json
 
 bin:
   jinja-lsp: "{{source.asset.bin}}"
