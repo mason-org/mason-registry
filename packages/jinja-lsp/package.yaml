@@ -16,7 +16,7 @@ categories:
   - Compiler
 
 source:
-  id: pkg:github/uros-5/jinja-lsp@v0.2.0
+  id: pkg:github/uros-5/jinja-lsp@v0.2.1
   asset:
     - target: linux_x64_gnu
       file: jinja-lsp-x86_64-unknown-linux-gnu
