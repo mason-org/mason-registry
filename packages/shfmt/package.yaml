@@ -1,6 +1,6 @@
 ---
 name: shfmt
-description: A shell formatter (sh/bash/mksh).
+description: A shell formatter (sh/bash/zsh/mksh).
 homepage: https://github.com/mvdan/sh
 licenses:
   - BSD-3-Clause
@@ -8,6 +8,7 @@ languages:
   - Bash
   - Mksh
   - Shell
+  - Zsh
 categories:
   - Formatter
 
