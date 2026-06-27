@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/Hessesian/kmp-lsp@v0.21.0
+  id: pkg:github/Hessesian/kmp-lsp@v0.24.0
   asset:
     - target: darwin_x64
       file: kmp-lsp-darwin-x86_64.tar.gz
