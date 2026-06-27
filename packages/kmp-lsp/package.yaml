@@ -1,0 +1,38 @@
+---
+name: kmp-lsp
+description: Kotlin Multiplatform Language Server
+homepage: https://github.com/Hessesian/kmp-lsp
+licenses:
+  - Apache-2.0
+languages:
+  - Kotlin
+  - Java
+  - Swift
+categories:
+  - LSP
+
+source:
+  id: pkg:github/Hessesian/kmp-lsp@v0.21.0
+  asset:
+    - target: darwin_x64
+      file: kmp-lsp-darwin-x86_64.tar.gz
+      bin: kmp-lsp
+    - target: darwin_arm64
+      file: kmp-lsp-darwin-aarch64.tar.gz
+      bin: kmp-lsp
+    - target: linux_x64_gnu
+      file: kmp-lsp-linux-x86_64.tar.gz
+      bin: kmp-lsp
+    - target: linux_arm64_gnu
+      file: kmp-lsp-linux-aarch64.tar.gz
+      bin: kmp-lsp
+    - target: win_x64
+      file: kmp-lsp-windows-x86_64.zip
+      bin: kmp-lsp-windows-x86_64.exe
+    - target: win_arm64
+      file: kmp-lsp-windows-aarch64.zip
+      bin: kmp-lsp-windows-aarch64.exe
+
+bin:
+  kmp-lsp: "{{source.asset.bin}}"
+
