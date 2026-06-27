@@ -16,13 +16,47 @@ categories:
   - Compiler
 
 source:
-  id: pkg:cargo/jinja-lsp@0.2.1
+  id: pkg:github/uros-5/jinja-lsp@v0.2.0
+  asset:
+    - target: linux_x64_gnu
+      file: jinja-lsp-x86_64-unknown-linux-gnu
+      bin: jinja-lsp-x86_64-unknown-linux-gnu
+    - target: linux_arm64_gnu
+      file: jinja-lsp-aarch64-unknown-linux-gnu
+      bin: jinja-lsp-aarch64-unknown-linux-gnu
+    - target: linux_x64_musl
+      file: jinja-lsp-x86_64-unknown-linux-musl
+      bin: jinja-lsp-x86_64-unknown-linux-musl
+    - target: linux_arm64_musl
+      file: jinja-lsp-aarch64-unknown-linux-musl
+      bin: jinja-lsp-aarch64-unknown-linux-musl
+    - target: linux_arm_gnu
+      file: jinja-lsp-armv7-unknown-linux-gnueabihf
+      bin: jinja-lsp-armv7-unknown-linux-gnueabihf
+    - target: linux_arm64_musl
+      file: jinja-lsp-armv7-unknown-linux-musleabihf
+      bin: jinja-lsp-armv7-unknown-linux-musleabihf
+    - target: darwin_x64
+      file: jinja-lsp-x86_64-apple-darwin
+      bin: jinja-lsp-x86_64-apple-darwin
+    - target: darwin_arm64
+      file: jinja-lsp-aarch64-apple-darwin
+      bin: jinja-lsp-aarch64-apple-darwin
+    - target: win_x64
+      file: jinja-lsp-x86_64-pc-windows-msvc.exe
+      bin: jinja-lsp-x86_64-pc-windows-msvc.exe
+    - target: win_arm64
+      file: jinja-lsp-aarch64-pc-windows-msvc.exe
+      bin: jinja-lsp-aarch64-pc-windows-msvc.exe
+    - target: win_x86
+      file: jinja-lsp-i686-pc-windows-msvc.exe
+      bin: jinja-lsp-i686-pc-windows-msvc.exe
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/uros-5/jinja-lsp/v{{version}}/editors/code/package.json
+  lsp: vscode:https://raw.githubusercontent.com/uros-5/jinja-lsp/{{version}}/editors/code/package.json
 
 bin:
-  jinja-lsp: cargo:jinja-lsp
+  jinja-lsp: "{{source.asset.bin}}"
 
 neovim:
   lspconfig: jinja_lsp
