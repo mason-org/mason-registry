@@ -12,31 +12,31 @@ categories:
 source:
   # renovate:versioning=regex:^kotlin-lsp/v(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)$
   # renovate:datasource=github-releases
-  id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v262.7569.0
+  id: pkg:generic/Kotlin/kotlin-lsp@kotlin-lsp/v262.8190.0
   download:
     - target: darwin_x64
       files:
-        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.sit
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.sit
       bin: kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server
     - target: darwin_arm64
       files:
-        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.sit
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.sit
       bin: kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server
     - target: linux_x64
       files:
-        kotlin-lsp.tar.gz: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.tar.gz
+        kotlin-lsp.tar.gz: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.tar.gz
       bin: kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server
     - target: linux_arm64
       files:
-        kotlin-lsp.tar.gz: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.tar.gz
+        kotlin-lsp.tar.gz: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.tar.gz
       bin: kotlin-server-{{{ version | strip_prefix "kotlin-lsp/v" }}/bin/intellij-server
     - target: win_x64
       files:
-        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.win.zip
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}.win.zip
       bin: bin/intellij-server.exe
     - target: win_arm64
       files:
-        kotlin-lsp.zip: https://download-cdn.jetbrains.com/kotlin-lsp/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.win.zip
+        kotlin-lsp.zip: https://download-cdn.jetbrains.com/language-server/kotlin-server/{{ version | strip_prefix "kotlin-lsp/v" }}/kotlin-server-{{ version | strip_prefix "kotlin-lsp/v" }}-aarch64.win.zip
       bin: bin/intellij-server.exe
 
 bin:
