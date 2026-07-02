@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/%40mistweaverco/kulala-fmt@4.3.3
+  id: pkg:npm/%40mistweaverco/kulala-fmt@4.3.4
 
 bin:
   kulala-fmt: npm:kulala-fmt
