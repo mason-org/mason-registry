@@ -1,0 +1,12 @@
+---
+name: claude-agent-acp
+description: ACP adapter for the Claude Agent SDK
+homepage: https://github.com/agentclientprotocol/claude-agent-acp
+licenses:
+  - Apache-2.0
+languages: []
+categories: []
+source:
+  id: pkg:npm/@agentclientprotocol/claude-agent-acp@0.55.0
+bin:
+  claude-agent-acp: npm:claude-agent-acp
