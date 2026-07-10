@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/palantir/palantir-java-format@2.95.0
+  id: pkg:generic/palantir/palantir-java-format@2.96.0
   download:
     - target: darwin_arm64
       files:
