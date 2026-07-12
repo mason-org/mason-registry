@@ -7,6 +7,6 @@ licenses:
 languages: []
 categories: []
 source:
-  id: pkg:npm/@agentclientprotocol/claude-agent-acp@0.57.0
+  id: pkg:npm/@agentclientprotocol/claude-agent-acp@0.58.1
 bin:
   claude-agent-acp: npm:claude-agent-acp
