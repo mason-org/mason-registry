@@ -1,0 +1,38 @@
+---
+name: terragrunt-ls
+description: Language server for Terragrunt configuration files.
+homepage: https://github.com/gruntwork-io/terragrunt-ls
+licenses:
+  - MPL-2.0
+languages:
+  - HCL
+categories:
+  - LSP
+
+source:
+  id: pkg:github/gruntwork-io/terragrunt-ls@v0.0.6
+  asset:
+    - target: darwin_x64
+      file: terragrunt-ls_darwin_amd64.tar.gz
+      bin: terragrunt-ls
+    - target: darwin_arm64
+      file: terragrunt-ls_darwin_arm64.tar.gz
+      bin: terragrunt-ls
+    - target: linux_x64_gnu
+      file: terragrunt-ls_linux_amd64.tar.gz
+      bin: terragrunt-ls
+    - target: linux_arm64_gnu
+      file: terragrunt-ls_linux_arm64.tar.gz
+      bin: terragrunt-ls
+    - target: win_x64
+      file: terragrunt-ls_windows_amd64.zip
+      bin: terragrunt-ls.exe
+    - target: win_arm64
+      file: terragrunt-ls_windows_arm64.zip
+      bin: terragrunt-ls.exe
+
+bin:
+  terragrunt-ls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: terragrunt_ls
