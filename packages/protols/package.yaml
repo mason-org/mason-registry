@@ -10,10 +10,25 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/protols@0.14.1
-
+  id: pkg:github/coder3101/protols@0.14.1
+  asset:
+    - target: darwin_arm64
+      file: protols-aarch64-apple-darwin.tar.gz
+      bin: protols
+    - target: darwin_x64
+      file: protols-x86_64-apple-darwin.tar.gz
+      bin: protols
+    - target: linux_arm64
+      file: protols-aarch64-unknown-linux-gnu.tar.gz
+      bin: protols
+    - target: linux_x64
+      file: protols-x86_64-unknown-linux-gnu.tar.gz
+      bin: protols
+    - target: win_x64
+      file: protols-x86_64-pc-windows-msvc.zip
+      bin: protols.exe
 bin:
-  protols: cargo:protols
+  protols: "{{source.asset.bin}}"
 
 neovim:
   lspconfig: protols
