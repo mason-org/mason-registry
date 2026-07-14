@@ -1,0 +1,22 @@
+---
+name: pyfun
+description: |
+  Pyfun is an F#-inspired, functional-first language for the Python ecosystem that compiles to readable Python.
+  The pyfun binary provides both the compiler and the language server.
+homepage: https://github.com/simontreanor/Pyfun
+licenses:
+  - Apache-2.0
+languages:
+  - Pyfun
+categories:
+  - LSP
+  - Compiler
+
+source:
+  id: pkg:pypi/pyfun-lang@0.0.9
+
+bin:
+  pyfun: pypi:pyfun
+
+neovim:
+  lspconfig: pyfun
