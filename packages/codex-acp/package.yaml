@@ -1,0 +1,12 @@
+---
+name: codex-acp
+description: ACP adapter for Codex CLI
+homepage: https://github.com/agentclientprotocol/codex-acp
+licenses:
+  - Apache-2.0
+languages: []
+categories: []
+source:
+  id: pkg:npm/@agentclientprotocol/codex-acp@1.1.2
+bin:
+  codex-acp: npm:codex-acp
