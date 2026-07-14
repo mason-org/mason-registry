@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/hudson-trading/slang-server@v0.2.8
+  id: pkg:github/hudson-trading/slang-server@v0.2.9
   asset:
     - target: linux_x64_gnu
       file: slang-server-old-linux-x64-gcc.tar.gz
