@@ -12,7 +12,8 @@ categories:
 source:
   id: pkg:npm/%40vue/language-server@3.3.7
   extra_packages:
-    - typescript
+    # vue_ls doesn't support typescript v7, yet. See https://github.com/mason-org/mason-registry/issues/15934
+    - "typescript@6.0.3"
     - "@vue/typescript-plugin"
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/vuejs/language-tools/v{{version}}/extensions/vscode/package.json
