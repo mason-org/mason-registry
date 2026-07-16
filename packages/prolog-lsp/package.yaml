@@ -1,0 +1,39 @@
+---
+name: prolog-lsp
+description: |
+  Language Server Protocol server for SWI-Prolog. Provides completion, hover, go-to-definition, find references,
+  document highlighting, formatting, and diagnostics. Requires SWI-Prolog (swipl) to be installed and available on PATH.
+homepage: https://github.com/jamesnvc/lsp_server
+licenses:
+  - BSD-2-Clause
+languages:
+  - Prolog
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/jamesnvc/lsp_server@v3.17.0
+  supported_platforms:
+    - darwin
+    - linux
+  build:
+    - target: unix
+      run: |
+        cat > prolog-lsp <<EOF
+        #!/usr/bin/env sh
+        exec swipl \
+          -p library="$PWD/prolog" \
+          -g "use_module(library(lsp_server))." \
+          -g "lsp_server:main" \
+          -t halt \
+          -- "\$@"
+        EOF
+        chmod +x prolog-lsp
+      bin: prolog-lsp
+
+bin:
+  prolog-lsp: "{{source.build.bin}}"
+
+neovim:
+  lspconfig: prolog_ls
