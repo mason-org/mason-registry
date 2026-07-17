@@ -1,0 +1,20 @@
+---
+name: sharpdbg
+description: |
+  SharpDbg is a .NET managed code debugger supporting the Debug Adapter Protocol, implemented completely in C#/.NET
+  Requires dotnet SDK to be installed.
+homepage: https://github.com/MattParkerDev/sharpdbg
+licenses:
+  - MIT
+languages:
+  - .NET
+  - C#
+  - F#
+categories:
+  - DAP
+
+source:
+  id: pkg:nuget/SharpDbg.Cli@0.1.2
+
+bin:
+  sharpdbg: nuget:sharpdbg
