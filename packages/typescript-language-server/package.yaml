@@ -13,7 +13,9 @@ categories:
 source:
   id: pkg:npm/typescript-language-server@5.3.0
   extra_packages:
-    - typescript
+    # The latest TS 7 removed lib/tsserver.js which is required by ts_ls.
+    # See: https://github.com/mason-org/mason-registry/issues/15985
+    - "typescript@6.0.3"
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/microsoft/vscode/main/extensions/typescript-language-features/package.json
