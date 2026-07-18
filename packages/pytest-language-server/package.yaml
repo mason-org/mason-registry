@@ -1,0 +1,19 @@
+---
+name: pytest-language-server
+description: A language server for pytest
+homepage: https://github.com/bellini666/pytest-language-server
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/pytest-language-server@0.24.0
+
+bin:
+  pytest-language-server: pypi:pytest-language-server
+
+neovim:
+  lspconfig: pytest_language_server
