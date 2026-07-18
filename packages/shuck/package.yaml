@@ -8,6 +8,7 @@ languages:
   - Bash
   - Zsh
   - Sh
+  - Mksh
 categories:
   - LSP
   - Linter
