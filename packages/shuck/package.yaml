@@ -1,0 +1,43 @@
+---
+name: shuck
+description: A lightning fast shell linter, formatter, and LSP server for bash, zsh, posix, and mksh dialects.
+homepage: https://ewhauser.github.io/shuck/
+licenses:
+  - MIT
+languages:
+  - Bash
+  - Zsh
+  - Sh
+  - Mksh
+categories:
+  - LSP
+  - Linter
+  - Formatter
+
+source:
+  id: pkg:github/ewhauser/shuck@v0.0.45
+  asset:
+    - target: darwin_arm64
+      file: shuck-cli-aarch64-apple-darwin.tar.xz
+      bin: shuck-cli-aarch64-apple-darwin/shuck
+    - target: linux_arm64_gnu
+      file: shuck-cli-aarch64-unknown-linux-gnu.tar.xz
+      bin: shuck-cli-aarch64-unknown-linux-gnu/shuck
+    - target: linux_arm64_musl
+      file: shuck-cli-aarch64-unknown-linux-musl.tar.xz
+      bin: shuck-cli-aarch64-unknown-linux-musl/shuck
+    - target: linux_x64_gnu
+      file: shuck-cli-x86_64-unknown-linux-gnu.tar.xz
+      bin: shuck-cli-x86_64-unknown-linux-gnu/shuck
+    - target: linux_x64_musl
+      file: shuck-cli-x86_64-unknown-linux-musl.tar.xz
+      bin: shuck-cli-x86_64-unknown-linux-musl/shuck
+    - target: win_x64
+      file: shuck-cli-x86_64-pc-windows-msvc.zip
+      bin: shuck.exe
+
+bin:
+  shuck: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: shuck
