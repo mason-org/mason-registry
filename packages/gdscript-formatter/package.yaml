@@ -11,7 +11,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/GDQuest/GDScript-formatter@0.21.0
+  id: pkg:github/GDQuest/GDScript-formatter@0.22.0
   asset:
     - target: darwin_x64
       file: gdscript-formatter-{{ version }}-macos-x86_64.zip 
