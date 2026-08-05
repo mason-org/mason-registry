@@ -12,10 +12,44 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/ruff@0.16.1
+  id: pkg:github/astral-sh/ruff@0.16.1
+  asset:
+    - target: darwin_x64
+      file: ruff-x86_64-apple-darwin.tar.gz
+      bin: ruff-x86_64-apple-darwin/ruff
+    - target: darwin_arm64
+      file: ruff-aarch64-apple-darwin.tar.gz
+      bin: ruff-aarch64-apple-darwin/ruff
+    - target: linux_x64
+      file: ruff-x86_64-unknown-linux-musl.tar.gz
+      bin: ruff-x86_64-unknown-linux-musl/ruff
+    - target: linux_arm64
+      file: ruff-aarch64-unknown-linux-gnu.tar.gz
+      bin: ruff-aarch64-unknown-linux-gnu/ruff
+    - target: linux_x64_musl
+      file: ruff-x86_64-unknown-linux-musl.tar.gz
+      bin: ruff-x86_64-unknown-linux-musl/ruff
+    - target: linux_arm64_musl
+      file: ruff-aarch64-unknown-linux-musl.tar.gz
+      bin: ruff-aarch64-unknown-linux-musl/ruff
+    - target: linux_x86
+      file: ruff-i686-unknown-linux-gnu.tar.gz
+      bin: ruff-i686-unknown-linux-gnu/ruff
+    - target: linux_armv7_gnu
+      file: ruff-armv7-unknown-linux-gnueabihf.tar.gz
+      bin: ruff-armv7-unknown-linux-gnueabihf/ruff
+    - target: win_x64
+      file: ruff-x86_64-pc-windows-msvc.zip
+      bin: ruff.exe
+    - target: win_arm64
+      file: ruff-aarch64-pc-windows-msvc.zip
+      bin: ruff.exe
+    - target: win_x86
+      file: ruff-i686-pc-windows-msvc.zip
+      bin: ruff.exe
 
 bin:
-  ruff: pypi:ruff
+  ruff: "{{source.asset.bin}}"
 
 neovim:
   lspconfig: ruff
