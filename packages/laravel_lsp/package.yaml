@@ -1,0 +1,20 @@
+---
+name: laravel_lsp
+description: The Laravel language server.
+homepage: https://github.com/laravel/lsp
+licenses:
+  - MIT
+languages:
+  - PHP
+  - Blade
+categories:
+  - LSP
+
+source:
+  id: pkg:composer/laravel/lsp@v0.0.29
+
+bin:
+  laravel-lsp: composer:laravel-lsp
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/laravel/vs-code-extension/main/package.json
