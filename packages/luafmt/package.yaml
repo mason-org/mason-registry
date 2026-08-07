@@ -1,0 +1,44 @@
+---
+name: luafmt
+description: A command-line tool for formatting Lua code.
+homepage: https://github.com/EmmyLuaLs/emmylua-analyzer-rust/tree/main/crates/emmylua_formatter
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/EmmyLuaLs/emmylua-analyzer-rust@0.25.0
+  asset:
+    - target: darwin_arm64
+      file: luafmt-darwin-arm64.tar.gz
+      bin: luafmt
+    - target: darwin_x64
+      file: luafmt-darwin-x64.tar.gz
+      bin: luafmt
+    - target: linux_arm64_gnu
+      file: luafmt-linux-aarch64-glibc.2.17.tar.gz
+      bin: luafmt
+    - target: linux_x64_gnu
+      file: luafmt-linux-x64-glibc.2.17.tar.gz
+      bin: luafmt
+    - target: linux_x64_musl
+      file: luafmt-linux-musl.tar.gz
+      bin: luafmt
+    - target: linux_x64
+      file: luafmt-linux-musl.tar.gz
+      bin: luafmt
+    - target: win_arm64
+      file: luafmt-win32-arm64.zip
+      bin: luafmt.exe
+    - target: win_x86
+      file: luafmt-win32-ia32.zip
+      bin: luafmt.exe
+    - target: win_x64
+      file: luafmt-win32-x64.zip
+      bin: luafmt.exe
+
+bin:
+  luafmt: "{{source.asset.bin}}"
