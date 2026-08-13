@@ -1,0 +1,24 @@
+---
+name: tsc
+description: |
+  TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support
+  tools for large-scale JavaScript applications for any browser, for any host, on any OS. Includes a built-in language
+  server with Language Server Protocol support.
+homepage: https://www.typescriptlang.org/
+licenses:
+  - Apache-2.0
+languages:
+  - TypeScript
+  - JavaScript
+categories:
+  - Compiler
+  - LSP
+
+source:
+  id: pkg:npm/typescript@7.0.2
+
+bin:
+  tsc: npm:tsc
+
+neovim:
+  lspconfig: tsc
