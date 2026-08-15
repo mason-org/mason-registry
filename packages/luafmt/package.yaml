@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/EmmyLuaLs/emmylua-analyzer-rust@0.25.0
+  id: pkg:github/EmmyLuaLs/emmylua-analyzer-rust@0.25.1
   asset:
     - target: darwin_arm64
       file: luafmt-darwin-arm64.tar.gz
