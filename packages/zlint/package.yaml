@@ -1,0 +1,33 @@
+---
+name: zlint
+description: An opinionated linter for the Zig programming language
+homepage: https://donisaac.github.io/zlint/
+licenses:
+  - MIT
+languages:
+  - Zig
+categories:
+  - Linter
+
+source:
+  id: pkg:github/DonIsaac/zlint@v0.9.1
+  asset:
+    - target: linux_arm64
+      file: zlint-linux-aarch64
+    - target: linux_x64
+      file: zlint-linux-x86_64
+    # - target: linux_riscv64  
+    #   file: zlint-linux-riscv64  
+    # - target: linux_loong64  
+    #   file: zlint-linux-loongarch64  
+    - target: darwin_arm64
+      file: zlint-macos-aarch64
+    - target: darwin_x64
+      file: zlint-macos-x86_64
+    - target: win_arm64
+      file: zlint-windows-aarch64.exe
+    - target: win_x64
+      file: zlint-windows-x86_64.exe
+
+bin:
+  zlint: "{{source.asset.file}}"
