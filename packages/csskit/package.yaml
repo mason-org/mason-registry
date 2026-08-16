@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/csskit/csskit@v0.0.28
+  id: pkg:github/csskit/csskit@v0.0.29
   asset:
     - target: darwin_arm64
       file: csskit-darwin-arm64
