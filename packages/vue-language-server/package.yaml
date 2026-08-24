@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40vue/language-server@3.3.10
+  id: pkg:npm/%40vue/language-server@3.3.11
   extra_packages:
     # vue_ls doesn't support typescript v7, yet. See https://github.com/mason-org/mason-registry/issues/15934
     - "typescript@6.0.3"
