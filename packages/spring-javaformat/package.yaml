@@ -14,7 +14,7 @@ source:
   id: pkg:generic/spring-io/spring-javaformat@v0.0.48
   download:
     files:
-      spring-javaformat-vscode-extension-{{ version | strip_prefix "v" }}.vsix: https://repo1.maven.org/maven2/io/spring/javaformat/spring-javaformat-vscode-extension/{{ version | strip_prefix "v" }}/spring-javaformat-vscode-extension-{{ version | strip_prefix "v" }}.vsix
+      spring-javaformat.vsix: https://repo1.maven.org/maven2/io/spring/javaformat/spring-javaformat-vscode-extension/{{ version | strip_prefix "v" }}/spring-javaformat-vscode-extension-{{ version | strip_prefix "v" }}.vsix
 
 bin:
   spring-javaformat: java-jar:extension/runtime/spring-java-format.jar
