@@ -13,7 +13,7 @@ source:
   id: pkg:npm/%40astrojs/language-server@2.16.13
   extra_packages:
     # Not support typescript v7 yet.
-    # See https://github.com/withastro/astro/issues/17268
+    # See https://github.com/withastro/roadmap/discussions/1321
     - "typescript@6.0.3"
     - "@astrojs/ts-plugin"
 
