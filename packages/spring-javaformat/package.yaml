@@ -1,0 +1,20 @@
+---
+name: spring-javaformat
+description: A source formatter that applies Spring wrapping and whitespace conventions.
+homepage: https://github.com/spring-io/spring-javaformat
+licenses:
+  - Apache-2.0
+languages:
+  - Java
+categories:
+  - Formatter
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/spring-io/spring-javaformat@v0.0.48
+  download:
+    files:
+      spring-javaformat.vsix: https://repo1.maven.org/maven2/io/spring/javaformat/spring-javaformat-vscode-extension/{{ version | strip_prefix "v" }}/spring-javaformat-vscode-extension-{{ version | strip_prefix "v" }}.vsix
+
+bin:
+  spring-javaformat: java-jar:extension/runtime/spring-java-format.jar
