@@ -1,0 +1,39 @@
+---
+name: symfony-lsp
+description: A language server for Symfony applications.
+homepage: https://github.com/symfony/language-tools
+licenses:
+  - MIT
+languages:
+  - PHP
+  - Twig
+  - YAML
+  - JavaScript
+  - TypeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/symfony/language-tools@v0.10.0
+  asset:
+    - target: darwin_arm64
+      file: symfony-lsp-{{version}}-macos-arm64.tar.gz
+      bin: exec:symfony-lsp-{{version}}-macos-arm64/symfony-lsp
+    - target: darwin_x64
+      file: symfony-lsp-{{version}}-macos-x64.tar.gz
+      bin: exec:symfony-lsp-{{version}}-macos-x64/symfony-lsp
+    - target: linux_arm64
+      file: symfony-lsp-{{version}}-linux-arm64.tar.gz
+      bin: exec:symfony-lsp-{{version}}-linux-arm64/symfony-lsp
+    - target: linux_x64
+      file: symfony-lsp-{{version}}-linux-x64.tar.gz
+      bin: exec:symfony-lsp-{{version}}-linux-x64/symfony-lsp
+    - target: win_x64
+      file: symfony-lsp-{{version}}-windows-x64.zip
+      bin: symfony-lsp-{{version}}-windows-x64/symfony-lsp.exe
+
+bin:
+  symfony-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: symfony_lsp
