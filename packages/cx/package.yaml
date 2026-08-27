@@ -1,0 +1,23 @@
+name: cx
+description: CX — the data and code language. One binary carries the CLI, the language server (cx lsp), and libcx.
+homepage: https://cxhome.org
+licenses:
+  - Apache-2.0
+languages:
+  - CX
+categories:
+  - LSP
+  - Compiler
+
+source:
+  id: pkg:github/cx-home/cx@v0.17.0
+  asset:
+    - target: darwin_arm64
+      file: cx-darwin-arm64.tar.gz
+      bin: cx
+    - target: linux_arm64
+      file: cx-linux-arm64.tar.gz
+      bin: cx
+
+bin:
+  cx: "{{source.asset.bin}}"
