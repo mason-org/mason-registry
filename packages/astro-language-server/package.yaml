@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/%40astrojs/language-server@2.16.14
+  id: pkg:npm/%40astrojs/language-server@2.16.15
   extra_packages:
     # Not support typescript v7 yet.
     # See https://github.com/withastro/roadmap/discussions/1321
