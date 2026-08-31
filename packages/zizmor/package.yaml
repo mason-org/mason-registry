@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/zizmor@1.29.0
+  id: pkg:pypi/zizmor@1.30.0
 
 bin:
   zizmor: pypi:zizmor
