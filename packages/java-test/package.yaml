@@ -12,7 +12,7 @@ description: |
   - JUnit 4 (v4.8.0+)
   - JUnit 5 (v5.1.0+)
   - JUnit 6 (v6.0.1+)
-  - TestNG (v6.8.0+)
+  - TestNG (v6.9.13.3+)
 
 homepage: https://github.com/microsoft/vscode-java-test
 licenses:
@@ -23,7 +23,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:openvsx/vscjava/vscode-java-test@0.45.0
+  id: pkg:openvsx/vscjava/vscode-java-test@0.46.0
   download:
     file: vscjava.vscode-java-test-{{version}}.vsix
     plugin_version: 0.43.1
