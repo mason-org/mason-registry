@@ -12,7 +12,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:composer/tightenco/tlint@v9.6.1
+  id: pkg:composer/tightenco/tlint@v9.7.0
 
 bin:
   tlint: composer:tlint
