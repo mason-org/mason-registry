@@ -1,0 +1,34 @@
+---
+name: laravel_lsp
+description: The Laravel language server.
+homepage: https://github.com/laravel/lsp
+licenses:
+  - MIT
+languages:
+  - PHP
+  - Blade
+categories:
+  - LSP
+
+source:
+  id: pkg:github/laravel/lsp@v0.0.29
+  asset:
+    - target: darwin_arm64
+      file: server-{{version}}-arm64-darwin
+    - target: darwin_x64
+      file: server-{{version}}-x64-darwin
+    - target: linux_arm64
+      file: server-{{version}}-arm64-linux
+    - target: linux_x64
+      file: server-{{version}}-x64-linux
+    - target: win_x64
+      file: server-{{version}}-x64-win32.exe
+
+bin:
+  laravel-lsp: "{{source.asset.file}}"
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/laravel/vs-code-extension/main/package.json
+
+neovim:
+  lspconfig: laravel_lsp
