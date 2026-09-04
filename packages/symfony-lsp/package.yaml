@@ -14,7 +14,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/symfony/language-tools@v0.18.1
+  id: pkg:github/symfony/language-tools@v0.19.0
   asset:
     - target: darwin_arm64
       file: symfony-lsp-{{version}}-macos-arm64.tar.gz
