@@ -1,0 +1,46 @@
+---
+name: armls
+description: A language server for Arm Assembly
+homepage: https://github.com/arm/armls
+licenses:
+  - proprietary
+languages:
+  - Assembly
+categories:
+  - LSP
+
+source:
+  id: pkg:openvsx/arm/armls@0.16.0
+  download:
+    - target: linux_x64_gnu
+      file: arm.armls-{{ version }}@linux-x64.vsix
+      target_platform: linux-x64
+      bin: extension/tools/armls/armls
+
+    - target: linux_arm64_gnu
+      file: arm.armls-{{ version }}@linux-arm64.vsix
+      target_platform: linux-arm64
+      bin: extension/tools/armls/armls
+
+    - target: darwin_x64
+      file: arm.armls-{{ version }}@darwin-x64.vsix
+      target_platform: darwin-x64
+      bin: extension/tools/armls/armls
+
+    - target: darwin_arm64
+      file: arm.armls-{{ version }}@darwin-arm64.vsix
+      target_platform: darwin-arm64
+      bin: extension/tools/armls/armls
+
+    - target: win_x64
+      file: arm.armls-{{ version }}@win32-x64.vsix
+      target_platform: win32-x64
+      bin: extension/tools/armls/armls.exe
+
+    - target: win_arm64
+      file: arm.armls-{{ version }}@win32-arm64.vsix
+      target_platform: win32-arm64
+      bin: extension/tools/armls/armls.exe
+
+bin:
+  armls: "{{source.download.bin}}"
