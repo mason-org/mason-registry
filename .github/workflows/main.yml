@@ -1,0 +1,37 @@
+name: debug-jetls-win
+on: workflow_dispatch
+
+jobs:
+  probe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: aviatesk/JETLS.jl
+          ref: <the pinned commit/tag from your purl>
+          path: jetls-src
+
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.11'   # match whatever you're targeting
+
+      - name: Run the build script logic
+        working-directory: jetls-src
+        shell: pwsh
+        run: |
+          $env:JULIA_DEPOT_PATH = "$PWD" + ";" + (julia -e 'print(DEPOT_PATH[end])')
+          julia -e "using Pkg; Pkg.Apps.add(path=raw`"$PWD`")"
+
+      - name: Inspect what got generated
+        working-directory: jetls-src
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse bin
+          Get-ChildItem -Recurse environments
+          Get-Content -Raw (Get-ChildItem -Recurse bin -Filter "jetls*")
+
+      - name: Try running it directly
+        working-directory: jetls-src
+        shell: pwsh
+        run: |
+          & .\bin\jetls.cmd serve --help  # adjust filename once you see what's actually there
