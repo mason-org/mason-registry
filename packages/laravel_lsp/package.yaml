@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/laravel/lsp@v0.0.29
+  id: pkg:github/laravel/lsp@v0.0.31
   asset:
     - target: darwin_arm64
       file: server-{{version}}-arm64-darwin
