@@ -1,0 +1,37 @@
+---
+name: rust-glancer
+description: |
+  An experimental Rust LSP implementation that is optimized for low memory usage and near-instant editor restarts.
+homepage: https://github.com/rust-glancer/rust-glancer
+licenses:
+  - Apache-2.0
+  - MIT
+languages:
+  - Rust
+categories:
+  - LSP
+
+source:
+  id: pkg:github/rust-glancer/rust-glancer@v0.2.0
+  asset:
+    - target: linux_x64_gnu
+      file: rust-glancer-0.2.0-x86_64-unknown-linux-gnu.tar.gz
+      bin: rust-glancer
+    - target: linux_arm64_gnu
+      file: rust-glancer-0.2.0-aarch64-unknown-linux-gnu.tar.gz
+      bin: rust-glancer
+    - target: darwin_x64
+      file: rust-glancer-0.2.0-x86_64-apple-darwin.tar.gz
+      bin: rust-glancer
+    - target: darwin_arm64
+      file: rust-glancer-0.2.0-aarch64-apple-darwin.tar.gz
+      bin: rust-glancer
+    - target: win_x64
+      file: rust-glancer-0.2.0-x86_64-pc-windows-msvc.tar.gz
+      bin: rust-glancer.exe
+
+bin:
+  rust-glancer: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: rust_glancer
