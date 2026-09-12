@@ -1,0 +1,41 @@
+---
+name: topiary
+description: |
+  Topiary is designed for formatter authors and formatter users. Authors can create a formatter for a language without
+  having to write their own formatting engine or even their own parser.
+homepage: https://topiary.tweag.io
+licenses:
+  - MIT
+languages:
+  - Bash
+  - JSON
+  - Nickel
+  - OCaml
+  - OCaml-interface
+  - OCamllex
+  - TOML
+  - Query
+categories:
+  - Formatter
+
+source:
+  id: pkg:github/topiary/topiary@v0.7.3
+  asset:
+    - target: darwin_arm64
+      file: topiary-cli-aarch64-apple-darwin.tar.xz
+      bin: topiary-cli-aarch64-apple-darwin/topiary
+    - target: darwin_x64
+      file: topiary-cli-x86_64-apple-darwin.tar.xz
+      bin: topiary-cli-x86_64-apple-darwin/topiary
+    - target: win_x64
+      file: topiary-cli-x86_64-pc-windows-msvc.zip
+      bin: topiary.exe
+    - target: linux_arm64_gnu
+      file: topiary-cli-aarch64-unknown-linux-gnu.tar.xz
+      bin: topiary-cli-aarch64-unknown-linux-gnu/topiary
+    - target: linux_x64_gnu
+      file: topiary-cli-x86_64-unknown-linux-gnu.tar.xz
+      bin: topiary-cli-x86_64-unknown-linux-gnu/topiary
+
+bin:
+  topiary: '{{source.asset.bin}}'
