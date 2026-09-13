@@ -1,0 +1,14 @@
+---
+name: pyupgrade
+description: A tool (and pre-commit hook) to automatically upgrade syntax for newer versions of the language.
+homepage: https://github.com/asottile/pyupgrade
+licenses:
+  - MIT
+languages:
+  - Python
+categories:
+  - Formatter
+source:
+  id: pkg:pypi/pyupgrade@3.21.2
+bin:
+  pyupgrade: pypi:pyupgrade
