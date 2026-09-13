@@ -1,0 +1,16 @@
+---
+name: docker-compose-linter
+description: A command-line tool for validating and enforcing best practices in Docker Compose files.
+homepage: https://github.com/zavoloklom/docker-compose-linter
+licenses:
+  - MIT
+languages:
+  - yaml.docker-compose
+categories:
+  - Linter
+
+source:
+  id: pkg:npm/dclint@3.1.0
+
+bin:
+  dclint: npm:dclint
