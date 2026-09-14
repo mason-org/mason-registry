@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:nuget/roslyn-language-server@5.11.0-1.26380.4
+  id: pkg:nuget/roslyn-language-server@5.12.0-1.26426.8
 
 bin:
   roslyn-language-server: nuget:roslyn-language-server
