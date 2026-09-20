@@ -11,8 +11,12 @@ categories:
   - Compiler
 
 source:
-  # renovate:datasource=github-tags
-  id: pkg:cargo/clpp@v0.3.3?repository_url=https://github.com/KartzRbx/CLPP
+  # renovate:datasource=github-releases
+  id: pkg:github/KartzRbx/CLPP@v0.3.3
+  asset:
+    - target: win_x64
+      file: clpp.exe
+      bin: clpp.exe
 
 bin:
-  clpp: cargo:clpp
+  clpp: "{{source.asset.bin}}"
