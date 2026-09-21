@@ -35,3 +35,6 @@ source:
 
 bin:
   clice: "{{source.asset.bin}}"
+  
+neovim:
+  lspconfig: clice
