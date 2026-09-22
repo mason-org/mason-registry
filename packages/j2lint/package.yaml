@@ -1,0 +1,16 @@
+---
+name: j2lint
+description: Command-line utility that validates jinja2 syntax according to Arista's AVD style guide.
+homepage: https://github.com/aristanetworks/j2lint
+licenses:
+  - MIT
+languages:
+  - Jinja
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/j2lint@1.3.0
+
+bin:
+  j2lint: pypi:j2lint
