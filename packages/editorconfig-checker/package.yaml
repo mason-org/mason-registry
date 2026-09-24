@@ -11,7 +11,7 @@ categories:
 source:
   id: pkg:github/editorconfig-checker/editorconfig-checker@v4.0.2
   asset:
-    - target: [darwin_arm64, darwin_x64]
+    - target: [darwin_x64, darwin_arm64]
       file: editorconfig-checker-darwin-all.tar.gz
       bin: editorconfig-checker
     - target: linux_armv6_gnu
@@ -35,6 +35,7 @@ source:
     - target: win_arm64
       file: editorconfig-checker-windows-arm64.zip
       bin: editorconfig-checker.exe
+
   version_overrides:
     - constraint: semver:<=v3.11.2
       id: pkg:github/editorconfig-checker/editorconfig-checker@v3.11.2
@@ -66,9 +67,6 @@ source:
         - target: win_arm64
           file: ec-windows-arm64.zip
           bin: bin/ec-windows-arm64.exe
-  
-
-  version_overrides:
     - constraint: semver:<=v3.0.3
       id: pkg:github/editorconfig-checker/editorconfig-checker@v3.0.3
       asset:
