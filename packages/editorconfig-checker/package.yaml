@@ -9,37 +9,64 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/editorconfig-checker/editorconfig-checker@v3.11.2
+  id: pkg:github/editorconfig-checker/editorconfig-checker@v4.0.2
   asset:
-    - target: darwin_arm64
-      file: ec-darwin-arm64.tar.gz
-      bin: bin/ec-darwin-arm64
-    - target: darwin_x64
-      file: ec-darwin-amd64.tar.gz
-      bin: bin/ec-darwin-amd64
-    - target: linux_x64_openbsd
-      file: ec-openbsd-amd64.tar.gz
-      bin: bin/ec-openbsd-amd64
-    - target: linux_arm64_openbsd
-      file: ec-openbsd-arm64.tar.gz
-      bin: bin/ec-openbsd-arm64
+    - target: [darwin_x64, darwin_arm64]
+      file: editorconfig-checker-darwin-all.tar.gz
+      bin: editorconfig-checker
+    - target: linux_armv6_gnu
+      file: editorconfig-checker-linux-armv6.tar.gz
+      bin: editorconfig-checker
     - target: linux_arm64
-      file: ec-linux-arm64.tar.gz
-      bin: bin/ec-linux-arm64
+      file: editorconfig-checker-linux-arm64.tar.gz
+      bin: editorconfig-checker
+    - target: linux_x86
+      file: editorconfig-checker-linux-386.tar.gz
+      bin: editorconfig-checker
     - target: linux_x64
-      file: ec-linux-amd64.tar.gz
-      bin: bin/ec-linux-amd64
+      file: editorconfig-checker-linux-amd64.tar.gz
+      bin: editorconfig-checker
     - target: win_x86
-      file: ec-windows-386.zip
-      bin: bin/ec-windows-386.exe
+      file: editorconfig-checker-windows-386.zip
+      bin: editorconfig-checker.exe
     - target: win_x64
-      file: ec-windows-amd64.zip
-      bin: bin/ec-windows-amd64.exe
+      file: editorconfig-checker-windows-amd64.zip
+      bin: editorconfig-checker.exe
     - target: win_arm64
-      file: ec-windows-arm64.zip
-      bin: bin/ec-windows-arm64.exe
+      file: editorconfig-checker-windows-arm64.zip
+      bin: editorconfig-checker.exe
 
   version_overrides:
+    - constraint: semver:<=v3.11.2
+      id: pkg:github/editorconfig-checker/editorconfig-checker@v3.11.2
+      asset:
+        - target: darwin_arm64
+          file: ec-darwin-arm64.tar.gz
+          bin: bin/ec-darwin-arm64
+        - target: darwin_x64
+          file: ec-darwin-amd64.tar.gz
+          bin: bin/ec-darwin-amd64
+        - target: linux_x64_openbsd
+          file: ec-openbsd-amd64.tar.gz
+          bin: bin/ec-openbsd-amd64
+        - target: linux_arm64_openbsd
+          file: ec-openbsd-arm64.tar.gz
+          bin: bin/ec-openbsd-arm64
+        - target: linux_arm64
+          file: ec-linux-arm64.tar.gz
+          bin: bin/ec-linux-arm64
+        - target: linux_x64
+          file: ec-linux-amd64.tar.gz
+          bin: bin/ec-linux-amd64
+        - target: win_x86
+          file: ec-windows-386.zip
+          bin: bin/ec-windows-386.exe
+        - target: win_x64
+          file: ec-windows-amd64.zip
+          bin: bin/ec-windows-amd64.exe
+        - target: win_arm64
+          file: ec-windows-arm64.zip
+          bin: bin/ec-windows-arm64.exe
     - constraint: semver:<=v3.0.3
       id: pkg:github/editorconfig-checker/editorconfig-checker@v3.0.3
       asset:
