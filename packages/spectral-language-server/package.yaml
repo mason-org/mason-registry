@@ -17,7 +17,7 @@ source:
   build:
     run: |
       npm exec yarn@1 install
-      npm exec --package=yarn@1 'node make package'
+      npm exec --package=yarn@1 -c 'node make package'
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/stoplightio/vscode-spectral/{{version}}/package.json
