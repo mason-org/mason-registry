@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:gem/steep@2.0.0
+  id: pkg:gem/steep@2.1.0
 
 bin:
   steep: gem:steep
