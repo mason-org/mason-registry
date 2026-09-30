@@ -12,7 +12,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/georgewfraser/java-language-server@v0.2.39
+  id: pkg:github/georgewfraser/java-language-server@v0.2.48
   build:
     - target: [darwin_x64, darwin_arm64]
       run: |
