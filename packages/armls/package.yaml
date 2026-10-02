@@ -1,0 +1,43 @@
+---
+name: armls
+description: A language server for Arm Assembly
+homepage: https://github.com/arm/armls
+licenses:
+  - proprietary
+languages:
+  - Assembly
+categories:
+  - LSP
+
+source:
+  id: pkg:github/arm/armls@v0.11.0
+  asset:
+    - target: linux_x64_gnu
+      file: armls-x86_64-unknown-linux-gnu.tar.gz
+      bin: armls
+
+    - target: linux_arm64_gnu
+      file: armls-aarch64-unknown-linux-gnu.tar.gz
+      bin: armls
+
+    - target: darwin_x64
+      file: armls-x86_64-apple-darwin.tar.gz
+      bin: armls
+
+    - target: darwin_arm64
+      file: armls-aarch64-apple-darwin.tar.gz
+      bin: armls
+
+    - target: win_x64
+      file: armls-x86_64-pc-windows-gnullvm.zip
+      bin: armls.exe
+
+    - target: win_arm64
+      file: armls-aarch64-pc-windows-gnullvm.zip
+      bin: armls.exe
+
+bin:
+  armls: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: armls
