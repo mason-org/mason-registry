@@ -7,6 +7,6 @@ licenses:
 languages: []
 categories: []
 source:
-  id: pkg:npm/@agentclientprotocol/codex-acp@2.1.0
+  id: pkg:npm/@agentclientprotocol/codex-acp@2.1.1
 bin:
   codex-acp: npm:codex-acp
