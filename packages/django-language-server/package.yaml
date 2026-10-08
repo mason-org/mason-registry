@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/django-language-server@6.1.0
+  id: pkg:pypi/django-language-server@6.1.1
 
 bin:
   djls: pypi:djls
