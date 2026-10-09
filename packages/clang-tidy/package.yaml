@@ -1,0 +1,22 @@
+---
+name: clang-tidy
+description: |
+  clang-tidy is a clang-based C and C++ linter tool. It provides an extensible framework for diagnosing and fixing
+  typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis.
+homepage: https://clang.llvm.org/extra/clang-tidy/
+licenses:
+  - Apache-2.0
+languages:
+  - C
+  - C++
+categories:
+  - Linter
+
+source:
+  id: pkg:pypi/clang-tidy@22.1.8
+
+bin:
+  clang-tidy: pypi:clang-tidy
+  clang-apply-replacements: pypi:clang-apply-replacements
+  run-clang-tidy.py: pypi:run-clang-tidy{{ take_if_not(is_platform("win"), ".py") }}
+  clang-tidy-diff.py: pypi:clang-tidy-diff{{ take_if_not(is_platform("win"), ".py") }}
