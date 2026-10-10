@@ -9,6 +9,6 @@ languages:
 categories:
   - Formatter
 source:
-  id: pkg:pypi/pyupgrade@3.21.2
+  id: pkg:pypi/pyupgrade@3.22.0
 bin:
   pyupgrade: pypi:pyupgrade
