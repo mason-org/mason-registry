@@ -1,0 +1,16 @@
+---
+name: nlpplus-language-server
+description: Language server for NLP++, the programming language for natural language processing.
+homepage: https://visualtext.org/nlp/
+licenses:
+  - MIT
+languages:
+  - NLP++
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/nlpplus-language-server@4.3.2
+
+bin:
+  nlpplus-language-server: npm:nlpplus-language-server
