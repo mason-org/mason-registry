@@ -14,3 +14,6 @@ source:
 
 bin:
   nlpplus-language-server: npm:nlpplus-language-server
+
+neovim:
+  lspconfig: nlpplus_ls
