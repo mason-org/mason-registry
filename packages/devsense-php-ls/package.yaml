@@ -1,0 +1,19 @@
+---
+name: devsense-php-ls
+description: Devsense PHP Language Server
+homepage: https://www.devsense.com
+licenses:
+  - ISC
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  id: pkg:npm/devsense-php-ls@1.0.19231
+
+bin:
+  devsense-php-ls: npm:devsense-php-ls
+
+neovim:
+  lspconfig: phptools
