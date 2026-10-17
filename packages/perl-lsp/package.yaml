@@ -1,0 +1,35 @@
+---
+name: perl-lsp
+description: A fast Perl language server in Rust with cross-file type inference, completion, goto-def, and rename.
+homepage: https://github.com/tree-sitter-perl/perl-lsp
+licenses:
+  - MIT
+languages:
+  - Perl
+categories:
+  - LSP
+
+source:
+  id: pkg:github/tree-sitter-perl/perl-lsp@v0.7.0
+  asset:
+    - target: darwin_arm64
+      file: perl-lsp-aarch64-apple-darwin.tar.gz
+      bin: perl-lsp
+    - target: darwin_x64
+      file: perl-lsp-x86_64-apple-darwin.tar.gz
+      bin: perl-lsp
+    - target: linux_arm64
+      file: perl-lsp-aarch64-unknown-linux-musl.tar.gz
+      bin: perl-lsp
+    - target: linux_x64
+      file: perl-lsp-x86_64-unknown-linux-musl.tar.gz
+      bin: perl-lsp
+    - target: win_x64
+      file: perl-lsp-x86_64-pc-windows-msvc.zip
+      bin: perl-lsp.exe
+
+bin:
+  perl-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: perl_lsp
