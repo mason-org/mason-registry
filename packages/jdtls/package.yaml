@@ -20,7 +20,7 @@ source:
       config: config_mac/
     - target: linux
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/snapshots/jdt-language-server-{{ version | strip_prefix "v" }}-202609031315.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/snapshots/jdt-language-server-{{ version | strip_prefix "v" }}-202610131109.tar.gz
         lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_linux/
     - target: win
