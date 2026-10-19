@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/cqlls@4.1.0
+  id: pkg:cargo/cqlls@4.2.0
   supported_platforms:
     - darwin
     - linux
