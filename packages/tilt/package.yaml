@@ -40,3 +40,6 @@ source:
 
 bin:
   tilt: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: tilt_ls
