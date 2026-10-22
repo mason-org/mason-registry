@@ -1,0 +1,42 @@
+---
+name: dbt
+description: |
+  dbt enables data analysts and engineers to transform their data using the same practices that software engineers use
+  to build applications.
+homepage: https://www.getdbt.com/
+licenses:
+  - proprietary
+languages:
+  - SQL
+categories:
+  - Formatter
+  - LSP
+  - Linter
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:generic/dbt-labs/dbt@v2.0.9
+  download:
+    - target: darwin_arm64
+      files:
+        dbt.tar.gz: https://public.cdn.getdbt.com/fs/cli/fs-{{version}}-aarch64-apple-darwin.tar.gz
+      bin: dbt
+    - target: darwin_x64
+      files:
+        dbt.tar.gz: https://public.cdn.getdbt.com/fs/cli/fs-{{version}}-x86_64-apple-darwin.tar.gz
+      bin: dbt
+    - target: linux_arm64_gnu
+      files:
+        dbt.tar.gz: https://public.cdn.getdbt.com/fs/cli/fs-{{version}}-aarch64-unknown-linux-gnu.tar.gz
+      bin: dbt
+    - target: linux_x64_gnu
+      files:
+        dbt.tar.gz: https://public.cdn.getdbt.com/fs/cli/fs-{{version}}-x86_64-unknown-linux-gnu.tar.gz
+      bin: dbt
+    - target: win_x64
+      files:
+        dbt.zip: https://public.cdn.getdbt.com/fs/cli/fs-{{version}}-x86_64-pc-windows-msvc.zip
+      bin: dbt.exe
+
+bin:
+  dbt: "{{source.download.bin}}"
