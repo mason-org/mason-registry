@@ -1,0 +1,30 @@
+---
+name: jetls
+description: A new Static Analysis Language Server for the Julia Language.
+homepage: https://github.com/aviatesk/JETLS.jl
+languages:
+  - Julia
+licenses:
+  - MIT
+categories:
+  - LSP
+
+source:
+  id: pkg:github/aviatesk/JETLS.jl@2026-09-06
+  build:
+    - target: unix
+      run: |
+        export JULIA_DEPOT_PATH="$(pwd):$(julia -e 'print(DEPOT_PATH[end])')"
+        julia -e 'using Pkg; Pkg.Apps.add(path=raw"'"$(pwd)"'")'
+        sed -i 's#dirname -- "\$0"#dirname -- "$(readlink -f -- "$0")"#' bin/jetls
+    - target: win
+      run: |
+        $env:JETLS_BUILD_DIR = "$PWD"
+        $env:JULIA_DEPOT_PATH = "$env:JETLS_BUILD_DIR;" + (julia -e 'print(DEPOT_PATH[end])')
+        julia -e 'using Pkg; Pkg.Apps.add(path=ENV["JETLS_BUILD_DIR"])'
+
+bin:
+  jetls: bin/jetls
+
+neovim:
+  lspconfig: jetls
