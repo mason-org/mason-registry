@@ -1,7 +1,7 @@
 ---
 name: golines
 description: A golang formatter that fixes long lines.
-homepage: https://github.com/segmentio/golines
+homepage: https://github.com/golangci/golines
 licenses:
   - MIT
 languages:
