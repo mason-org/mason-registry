@@ -1,9 +1,10 @@
 ---
 name: devsense-php-ls
 description: Devsense PHP Language Server
-homepage: https://www.devsense.com
+homepage: https://docs.devsense.com/other/lsp/docs/
 licenses:
   - ISC
+  - MIT
 languages:
   - PHP
 categories:
