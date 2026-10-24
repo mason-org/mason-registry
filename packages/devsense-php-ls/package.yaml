@@ -11,7 +11,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/devsense-php-ls@1.0.19231
+  id: pkg:npm/devsense-php-ls@1.0.19439
 
 bin:
   devsense-php-ls: npm:devsense-php-ls
