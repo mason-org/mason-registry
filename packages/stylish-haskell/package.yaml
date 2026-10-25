@@ -1,0 +1,24 @@
+---
+name: stylish-haskell
+description: Haskell code prettifier.
+homepage: https://github.com/haskell/stylish-haskell
+licenses:
+  - BSD-3-Clause
+languages:
+  - Haskell
+categories:
+  - Formatter
+
+source:
+  # renovate:versioning=loose
+  id: pkg:github/haskell/stylish-haskell@v0.15.1.0
+  asset:
+    - target: darwin_arm64
+      file: stylish-haskell-{{version}}-darwin-arm64.zip
+      bin: stylish-haskell-{{version}}-darwin-arm64/stylish-haskell
+    - target: linux_x64
+      file: stylish-haskell-{{version}}-linux-x86_64.tar.gz
+      bin: stylish-haskell-{{version}}-linux-x86_64/stylish-haskell
+
+bin:
+  stylish-haskell: "{{source.asset.bin}}"

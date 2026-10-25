@@ -12,7 +12,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/clice-io/clice@v0.1.2026082603
+  id: pkg:github/clice-io/clice@v0.1.2026101507
   asset:
     - target: darwin_arm64
       file: clice-{{ version | strip_prefix "v" }}.aarch64-apple-darwin.tar.gz
@@ -27,10 +27,10 @@ source:
       file: clice-{{ version | strip_prefix "v" }}.x86_64-unknown-linux-gnu.tar.gz
       bin: clice/bin/clice
     - target: win_arm64
-      file: clice-{{ version | strip_prefix "v" }}.aarch64-pc-windows-msvc.zip
+      file: clice-{{ version | strip_prefix "v" }}.aarch64-w64-mingw32.zip
       bin: clice/bin/clice.exe
     - target: win_x64
-      file: clice-{{ version | strip_prefix "v" }}.x86_64-pc-windows-msvc.zip
+      file: clice-{{ version | strip_prefix "v" }}.x86_64-w64-mingw32.zip
       bin: clice/bin/clice.exe
 
 bin:

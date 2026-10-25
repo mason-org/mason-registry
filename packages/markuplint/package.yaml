@@ -10,7 +10,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:npm/markuplint@5.2.0
+  id: pkg:npm/markuplint@5.3.0
 
 bin:
   markuplint: npm:markuplint
