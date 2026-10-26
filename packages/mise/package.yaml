@@ -1,0 +1,45 @@
+---
+name: mise
+description: |
+  Dev tools, env vars, and task runner. The `mise lsp` command runs a language server for mise config files.
+homepage: https://mise.jdx.dev
+licenses:
+  - MIT
+languages:
+  - TOML
+categories:
+  - LSP
+
+source:
+  id: pkg:github/jdx/mise@v2026.10.20
+  asset:
+    - target: darwin_arm64
+      file: mise-{{version}}-macos-arm64.tar.gz
+      bin: mise/bin/mise
+    - target: darwin_x64
+      file: mise-{{version}}-macos-x64.tar.gz
+      bin: mise/bin/mise
+    - target: linux_arm64_gnu
+      file: mise-{{version}}-linux-arm64.tar.gz
+      bin: mise/bin/mise
+    - target: linux_arm64_musl
+      file: mise-{{version}}-linux-arm64-musl.tar.gz
+      bin: mise/bin/mise
+    - target: linux_armv7_gnu
+      file: mise-{{version}}-linux-armv7.tar.gz
+      bin: mise/bin/mise
+    - target: linux_x64_gnu
+      file: mise-{{version}}-linux-x64.tar.gz
+      bin: mise/bin/mise
+    - target: linux_x64_musl
+      file: mise-{{version}}-linux-x64-musl.tar.gz
+      bin: mise/bin/mise
+    - target: win_arm64
+      file: mise-{{version}}-windows-arm64.zip
+      bin: mise/bin/mise.exe
+    - target: win_x64
+      file: mise-{{version}}-windows-x64.zip
+      bin: mise/bin/mise.exe
+
+bin:
+  mise: "{{source.asset.bin}}"
