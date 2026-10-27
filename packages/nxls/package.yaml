@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/nxls@1.11.2
+  id: pkg:npm/nxls@1.11.3
 
 bin:
   nxls: npm:nxls
