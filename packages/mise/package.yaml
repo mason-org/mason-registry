@@ -43,3 +43,6 @@ source:
 
 bin:
   mise: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: mise
