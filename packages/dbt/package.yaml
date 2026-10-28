@@ -40,3 +40,6 @@ source:
 
 bin:
   dbt: "{{source.download.bin}}"
+
+neovim:
+  lspconfig: dbt
