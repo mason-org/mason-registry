@@ -1,0 +1,47 @@
+---
+name: badness
+description: A language server, formatter, and linter for LaTeX
+homepage: https://badness.dev/
+licenses:
+  - MIT
+languages:
+  - LaTeX
+  - BibTeX
+categories:
+  - LSP
+  - Formatter
+  - Linter
+
+source:
+  id: pkg:github/jolars/badness@v0.28.0
+  asset:
+    - target: darwin_arm64
+      file: badness-aarch64-apple-darwin.tar.gz
+      bin: badness
+    - target: darwin_x64
+      file: badness-x86_64-apple-darwin.tar.gz
+      bin: badness
+    - target: linux_arm64_gnu
+      file: badness-aarch64-unknown-linux-gnu.tar.gz
+      bin: badness
+    - target: linux_arm64_musl
+      file: badness-aarch64-unknown-linux-musl.tar.gz
+      bin: badness
+    - target: linux_x64_gnu
+      file: badness-x86_64-unknown-linux-gnu.tar.gz
+      bin: badness
+    - target: linux_x64_musl
+      file: badness-x86_64-unknown-linux-musl.tar.gz
+      bin: badness
+    - target: win_arm64
+      file: badness-aarch64-pc-windows-msvc.zip
+      bin: badness.exe
+    - target: win_x64
+      file: badness-x86_64-pc-windows-msvc.zip
+      bin: badness.exe
+
+bin:
+  badness: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: badness
