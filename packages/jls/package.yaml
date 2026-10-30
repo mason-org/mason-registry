@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/idelice/jls@v0.10.0
+  id: pkg:github/idelice/jls@v0.11.0
   asset:
     - target: darwin_arm64
       file:
