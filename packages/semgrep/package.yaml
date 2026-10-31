@@ -21,7 +21,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:pypi/semgrep@1.182.1
+  id: pkg:pypi/semgrep@1.183.0
   supported_platforms:
     - unix
 
