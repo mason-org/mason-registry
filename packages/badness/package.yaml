@@ -13,7 +13,7 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/jolars/badness@v0.28.0
+  id: pkg:github/jolars/badness@v0.29.0
   asset:
     - target: darwin_arm64
       file: badness-aarch64-apple-darwin.tar.gz
