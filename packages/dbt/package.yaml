@@ -15,7 +15,7 @@ categories:
 
 source:
   # renovate:datasource=github-releases
-  id: pkg:generic/dbt-labs/dbt@v2.0.9
+  id: pkg:generic/dbt-labs/dbt@v2.0.11
   download:
     - target: darwin_arm64
       files:
