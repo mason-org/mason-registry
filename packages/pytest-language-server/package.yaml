@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/pytest-language-server@0.25.0
+  id: pkg:pypi/pytest-language-server@0.26.0
 
 bin:
   pytest-language-server: pypi:pytest-language-server
