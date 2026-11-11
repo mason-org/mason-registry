@@ -11,7 +11,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/WhatsApp/edb@0.5.0
+  id: pkg:github/WhatsApp/edb@1.0.0
   asset:
     - target: darwin
       file: edb-macos-latest-otp-27.tar.gz
