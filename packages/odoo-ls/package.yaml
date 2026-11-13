@@ -1,0 +1,63 @@
+---
+name: odoo-ls
+description: |
+  Language server for the Odoo framework that provides autocompletion, file validation, hover requests, go to
+  definition, and more.
+homepage: https://github.com/odoo/odoo-ls
+licenses:
+  - LGPL-3.0-only
+languages:
+  - Python
+  - XML
+  - CSV
+  - JavaScript
+  - TypeScript
+categories:
+  - LSP
+
+source:
+  id: pkg:github/odoo/odoo-ls@1.6.2
+  asset:
+    - target: darwin_arm64
+      file:
+        - odoo-darwin-aarch64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: darwin_x64
+      file:
+        - odoo-darwin-x86_64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: linux_arm64_gnu
+      file:
+        - odoo-linux-aarch64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: linux_x64_gnu
+      file:
+        - odoo-linux-x86_64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: linux_arm64_musl
+      file:
+        - odoo-alpine-aarch64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: linux_x64_musl
+      file:
+        - odoo-alpine-x86_64-{{version}}.tar.gz:libexec/
+        - typeshed.zip:libexec/typeshed/
+      bin: exec:libexec/odoo_ls_server
+    - target: win_arm64
+      file:
+        - odoo-win32-aarch64-{{version}}.zip
+        - typeshed.zip:typeshed/
+      bin: odoo_ls_server.exe
+    - target: win_x64
+      file:
+        - odoo-win32-x86_64-{{version}}.zip
+        - typeshed.zip:typeshed/
+      bin: odoo_ls_server.exe
+
+bin:
+  odoo_ls_server: "{{source.asset.bin}}"
