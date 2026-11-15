@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:npm/nlpplus-language-server@4.3.2
+  id: pkg:npm/nlpplus-language-server@4.3.19
 
 bin:
   nlpplus-language-server: npm:nlpplus-language-server
