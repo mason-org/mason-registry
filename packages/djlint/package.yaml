@@ -28,3 +28,6 @@ source:
 
 bin:
   djlint: pypi:djlint
+
+neovim:
+  lspconfig: djlint
