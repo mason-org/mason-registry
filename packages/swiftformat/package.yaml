@@ -10,7 +10,7 @@ categories:
   - Formatter
 
 source:
-  id: pkg:github/nicklockwood/SwiftFormat@0.64.6
+  id: pkg:github/nicklockwood/SwiftFormat@0.64.7
   asset:
     - target: darwin_arm64
       file: swiftformat.artifactbundle.zip
