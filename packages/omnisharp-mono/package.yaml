@@ -11,8 +11,12 @@ languages:
 categories:
   - LSP
 
+deprecation:
+  since: "2026-09-18"
+  message: "2.0.0 removes the separate Mono version of OmniSharp in favor of a single OmniSharp release that runs on .NET. See https://github.com/OmniSharp/omnisharp-roslyn/issues/2647 and https://github.com/OmniSharp/omnisharp-roslyn/pull/2721" 
+
 source:
-  id: pkg:github/OmniSharp/omnisharp-roslyn@v2.0.0
+  id: pkg:github/OmniSharp/omnisharp-roslyn@v1.40.0
   asset:
     - target: [darwin_arm64, darwin_x64]
       file: omnisharp-osx.tar.gz
