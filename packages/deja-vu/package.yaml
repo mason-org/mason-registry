@@ -1,0 +1,33 @@
+---
+name: deja-vu
+description: Shared local memory, session history search, cross-agent handoff, and code recovery across 46 coding agents.
+homepage: https://github.com/vshulcz/deja-vu
+licenses:
+  - MIT
+languages: []
+categories: []
+
+source:
+  id: pkg:github/vshulcz/deja-vu@v0.24.2
+  asset:
+    - target: darwin_arm64
+      file: deja-vu_{{ version | strip_prefix "v" }}_darwin_arm64.tar.gz
+      bin: deja
+    - target: darwin_x64
+      file: deja-vu_{{ version | strip_prefix "v" }}_darwin_amd64.tar.gz
+      bin: deja
+    - target: linux_arm64
+      file: deja-vu_{{ version | strip_prefix "v" }}_linux_arm64.tar.gz
+      bin: deja
+    - target: linux_x64
+      file: deja-vu_{{ version | strip_prefix "v" }}_linux_amd64.tar.gz
+      bin: deja
+    - target: win_arm64
+      file: deja-vu_{{ version | strip_prefix "v" }}_windows_arm64.zip
+      bin: deja.exe
+    - target: win_x64
+      file: deja-vu_{{ version | strip_prefix "v" }}_windows_amd64.zip
+      bin: deja.exe
+
+bin:
+  deja: "{{source.asset.bin}}"
