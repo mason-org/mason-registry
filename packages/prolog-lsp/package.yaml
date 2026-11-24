@@ -13,7 +13,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/jamesnvc/lsp_server@v3.18.1
+  id: pkg:github/jamesnvc/lsp_server@v3.18.2
   supported_platforms:
     - darwin
     - linux
