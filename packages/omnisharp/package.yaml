@@ -1,7 +1,7 @@
 ---
 name: omnisharp
 description: |
-  OmniSharp language server based on Roslyn workspaces. This version of Omnisharp requires dotnet (.NET 6.0) to be
+  OmniSharp language server based on Roslyn workspaces. This version of Omnisharp requires dotnet (.NET 10.0) to be
   installed.
 homepage: https://github.com/OmniSharp/omnisharp-roslyn
 licenses:
