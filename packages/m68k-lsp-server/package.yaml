@@ -1,7 +1,7 @@
 ---
 name: m68k-lsp-server
 description: Language Server Protocol implementation for Motorola 68000 assembly
-homepage: https://github.com/grahambates/m68k-lsp
+homepage: https://github.com/grahambates/m68k-tools
 licenses:
   - MIT
 languages:
@@ -13,7 +13,10 @@ source:
   id: pkg:npm/m68k-lsp-server@0.17.0
 
 schemas:
-  lsp: vscode:https://raw.githubusercontent.com/grahambates/m68k-lsp/v{{version}}/client/package.json
+  lsp: vscode:https://raw.githubusercontent.com/grahambates/m68k-tools/m68k-lsp-server@{{version}}/apps/m68k-lsp/package.json
 
 bin:
   m68k-lsp-server: npm:m68k-lsp-server
+
+neovim:
+  lspconfig: m68k
