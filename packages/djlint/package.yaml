@@ -1,7 +1,7 @@
 ---
 name: djlint
-description: HTML Template Linter and Formatter. Django - Jinja - Nunjucks - Handlebars - GoLang.
-homepage: https://github.com/Riverside-Healthcare/djLint
+description: HTML template linter and formatter for Django, Jinja, Twig, Nunjucks, Handlebars, Mustache, Liquid, Go templates, Angular, Tera, Askama and Mako.
+homepage: https://github.com/djlint/djLint
 licenses:
   - GPL-3.0-or-later
 languages:
@@ -13,12 +13,21 @@ languages:
   - Mustache
   - Angular
   - Jinja
+  - HTML
+  - Liquid
+  - Tera
+  - Askama
+  - Mako
 categories:
   - Formatter
   - Linter
+  - LSP
 
 source:
   id: pkg:pypi/djlint@1.54.0
 
 bin:
   djlint: pypi:djlint
+
+neovim:
+  lspconfig: djlint
