@@ -24,7 +24,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:pypi/djlint@1.52.0
+  id: pkg:pypi/djlint@1.54.0
 
 bin:
   djlint: pypi:djlint
