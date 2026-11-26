@@ -15,35 +15,40 @@ categories:
   - Linter
 
 source:
-  id: pkg:github/kcl-lang/kcl@v0.13.3
-  asset:
+  # Update after both upstream repositories publish matching releases.
+  id: pkg:generic/kcl-lang/kcl@v0.13.3
+  download:
     - target: darwin_x64
-      file: kclvm-{{version}}-darwin-amd64.tar.gz
-      bin:
-        kcl: exec:kclvm/bin/kclvm_cli
-        kcl_language_server: exec:kclvm/bin/kcl-language-server
+      files:
+        kcl.tar.gz: https://github.com/kcl-lang/cli/releases/download/{{version}}/kcl-{{version}}-darwin-amd64.tar.gz
+        kcl-language-server.tar.gz: https://github.com/kcl-lang/kcl/releases/download/{{version}}/kcl-language-server-{{version}}-darwin-amd64.tar.gz
+      bin: kcl-language-server
+      cli: kcl
 
     - target: darwin_arm64
-      file: kclvm-{{version}}-darwin-arm64.tar.gz
-      bin:
-        kcl: exec:kclvm/bin/kclvm_cli
-        kcl_language_server: exec:kclvm/bin/kcl-language-server
+      files:
+        kcl.tar.gz: https://github.com/kcl-lang/cli/releases/download/{{version}}/kcl-{{version}}-darwin-arm64.tar.gz
+        kcl-language-server.tar.gz: https://github.com/kcl-lang/kcl/releases/download/{{version}}/kcl-language-server-{{version}}-darwin-arm64.tar.gz
+      bin: kcl-language-server
+      cli: kcl
 
     - target: linux_x64_gnu
-      file: kclvm-{{version}}-linux-amd64.tar.gz
-      bin:
-        kcl: exec:kclvm/bin/kclvm_cli
-        kcl_language_server: exec:kclvm/bin/kcl-language-server
+      files:
+        kcl.tar.gz: https://github.com/kcl-lang/cli/releases/download/{{version}}/kcl-{{version}}-linux-amd64.tar.gz
+        kcl-language-server.tar.gz: https://github.com/kcl-lang/kcl/releases/download/{{version}}/kcl-language-server-{{version}}-linux-amd64.tar.gz
+      bin: kcl-language-server
+      cli: kcl
 
     - target: win_x64
-      file: kclvm-{{version}}-windows.zip
-      bin:
-        kcl: bin/kclvm_cli.exe
-        kcl_language_server: bin/kcl-language-server.exe
+      files:
+        kcl.zip: https://github.com/kcl-lang/cli/releases/download/{{version}}/kcl-{{version}}-windows-amd64.zip
+        kcl-language-server.zip: https://github.com/kcl-lang/kcl/releases/download/{{version}}/kcl-language-server-{{version}}-windows-amd64.zip
+      bin: kcl-language-server.exe
+      cli: kcl.exe
 
 bin:
-  kcl: "{{source.asset.bin.kcl}}"
-  kcl-language-server: "{{source.asset.bin.kcl_language_server}}"
+  kcl: "{{source.download.cli}}"
+  kcl-language-server: "{{source.download.bin}}"
 
 neovim:
   lspconfig: kcl
