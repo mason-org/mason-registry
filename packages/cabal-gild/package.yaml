@@ -1,0 +1,33 @@
+---
+name: cabal-gild
+description: Format Haskell package descriptions.
+homepage: https://github.com/tfausak/cabal-gild
+licenses:
+  - MIT
+languages:
+  - Haskell
+categories:
+  - Formatter
+
+source:
+  # renovate:versioning=loose
+  id: pkg:github/tfausak/cabal-gild@1.8.4.2
+  asset:
+    - target: darwin_arm64
+      file: cabal-gild-{{version}}-darwin-arm64.tar.gz
+      bin: cabal-gild
+    - target: darwin_x64
+      file: cabal-gild-{{version}}-darwin-x64.tar.gz
+      bin: cabal-gild
+    - target: linux_arm64_gnu
+      file: cabal-gild-{{version}}-linux-arm64.tar.gz
+      bin: cabal-gild
+    - target: linux_x64_gnu
+      file: cabal-gild-{{version}}-linux-x64.tar.gz
+      bin: cabal-gild
+    - target: win_x64
+      file: cabal-gild-{{version}}-win32-x64.tar.gz
+      bin: cabal-gild.exe
+
+bin:
+  cabal-gild: "{{source.asset.bin}}"
