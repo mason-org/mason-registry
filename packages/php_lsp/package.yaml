@@ -1,0 +1,41 @@
+---
+name: php_lsp
+description: A high-performance PHP language server written in Rust.
+homepage: https://github.com/jorgsowa/php-lsp
+licenses:
+  - MIT
+languages:
+  - PHP
+categories:
+  - LSP
+
+source:
+  id: pkg:github/jorgsowa/php-lsp@v0.33.0
+  asset:
+    - target: darwin_arm64
+      file: php-lsp-aarch64-apple-darwin.tar.gz
+      bin: php-lsp
+    - target: darwin_x64
+      file: php-lsp-x86_64-apple-darwin.tar.gz
+      bin: php-lsp
+    - target: linux_arm64_gnu
+      file: php-lsp-aarch64-unknown-linux-gnu.tar.gz
+      bin: php-lsp
+    - target: linux_arm64_musl
+      file: php-lsp-aarch64-unknown-linux-musl.tar.gz
+      bin: php-lsp
+    - target: linux_x64_gnu
+      file: php-lsp-x86_64-unknown-linux-gnu.tar.gz
+      bin: php-lsp
+    - target: linux_x64_musl
+      file: php-lsp-x86_64-unknown-linux-musl.tar.gz
+      bin: php-lsp
+    - target: win_x64
+      file: php-lsp-x86_64-pc-windows-msvc.zip
+      bin: php-lsp.exe
+
+bin:
+  php-lsp: "{{source.asset.bin}}"
+
+neovim:
+  lspconfig: php_lsp
